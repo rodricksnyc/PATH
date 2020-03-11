@@ -1,16 +1,24 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
+
 
 body {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     position: relative;
     color: #141e79;
     font-size: 14px;
 }
 
 body * {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     word-break: break-word;
     transition: 0.4s all;
+}
+
+.logo {
+    max-width: 25em;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right:1em;
 }
 
 i{
@@ -42,7 +50,16 @@ i{
 }
 
 .text--blue {
-    color: #141e79 !important;
+    color: black;
+}
+
+span.heading {
+  color:#00559b;
+  font-weight:bold;
+  font-size:30px;
+  padding-left: .5em;
+  border-left: 1px solid #7bc043;
+
 }
 
 .header-container {
@@ -61,7 +78,13 @@ i{
 .overflow-hidden{
     overflow: hidden !important;
 }
-/* 
+.landing {
+  display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/*
 .survey-container {
     width: 100%;
     position: relative;
@@ -107,8 +130,8 @@ i{
 
 .btnSaveExit,
 .btnBegin {
-    color: #ffffff;
-    background-image: linear-gradient(30deg, #0071ba,#0071ba,rgba(0, 113, 186, .8), #a0defe);
+    color: black;
+    background: #7bc043;
     left: 0px;
     /* transition: all .5s; */
 }
@@ -153,17 +176,42 @@ i{
 }
 
 .btnBegin {
-    width: 120px;
-    left: calc(50% - 60px);
-    bottom: 30px;
-    padding: 5px;
-    border-radius: 8px;
+  width: 100px;
+    left: calc(50% - 50px);
+    bottom: 35px;
+    padding: 7px;
+    border-radius: 20px;
+    font-size: 15px;
 }
 
 .hero-img {
     width: 100%;
     height: 600px;
-    padding-top: 80px;
+    padding-top: 140px;
+    background-image: url(./images/background.png);
+    height: inherit;
+    min-height: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px 100%;
+    /* width: 100%;
+    left: 0;
+    top: 0px;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    max-height: 78rem; */
+}
+
+.hero-img-container {
+    height: calc(100vh - 4rem);
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 40rem;
+    /* padding-left: 1em;
+    padding-right: 1em; */
+    max-height: 78rem;
 }
 
 .landing-panel {
@@ -175,6 +223,36 @@ i{
     padding: 40px 40px 100px;
     position: relative;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1), 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+    color:black;
+}
+
+
+.hero-img-container2 {
+    /* height: calc(100vh - 4rem); */
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 18rem;
+    /* padding-left: 1em;
+    padding-right: 1em; */
+    margin-bottom: 4em;
+}
+
+.hero-img2 {
+    background-image: url(./images/strip.svg);
+    height: inherit;
+    min-height: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 160px !important;
+    /* padding-top: 303px; */
+    margin-top: 2em;
+      background-position: 0px 34%;
 }
 
 .landing-panel-p1 {
@@ -216,18 +294,18 @@ i{
 }
 
 .landing-panel .checkbox label img {
-    margin-top: -2px;
+    margin-top: -6px;
 }
 
 .form-login-a{
-    font-size: 14px;
-    float: right;
-    margin: 0px 8px;
+  font-size: 12px;
+      float: right;
+      margin: 0px 0px;
 }
 
 .menu-buttons {
-    width: 475px;
-    margin: -105px auto 95px;
+    width: 60%;
+    margin: -300px auto 200px;
     position: relative;
 }
 
@@ -239,15 +317,19 @@ i{
     padding: 0;
 }
 
+.top {
+  margin-top:-10px;
+}
+
 .menu-buttons-list li {
-    font-size: 18px;
-    font-weight: 600;
-    color: #141e79;
-    width: 96px;
-    height: 96px;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  width: 26%;
+  height: 140px;
     text-align: center;
-    background: #fea821;
-    border-radius: 50%;
+    background: #0069aa;
+    border-radius: 10px;
     z-index: 3;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1), 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
     cursor: pointer;
@@ -256,6 +338,14 @@ i{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+.menu-buttons-list li .fas{
+color:#7bc043
+}
+
+.green {
+  color:#7bc043
 }
 
 .menu-buttons-list li a {
@@ -269,7 +359,7 @@ i{
     background-color: #fe8225;
     opacity: 1;
     transform-style: preserve-3d;
-    animation: flip .4s;
+    /* animation: flip .4s; */
     outline: none;
 }
 
@@ -329,23 +419,26 @@ i{
 }
 
 .landing-sec-H {
-    font-size: 28px;
-    font-weight: 800;
-    color: #141e79;
-    padding-bottom: 5px;
-    border-bottom: 3px solid #fe8225;
-    position: relative;
-    width: 280px;
-    margin: 0 auto;
-    text-align: center;
+
+      font-size: 28px;
+      font-weight: 800;
+      color: #00559b;
+      padding-bottom: 5px;
+      border-bottom: 3px solid #7bc043;
+      position: relative;
+      /* width: 280px; */
+      margin: 0 auto;
+      text-align: left;
+
 }
 
 #Guide{
-    background-image: url(/assets/bg_gradient-middle.svg);
+    /* background-image: url(/assets/bg_gradient-middle.svg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 100px 30px;
+    padding: 0px;
+    margin-top: 0px;
 }
 
 .guide-list {
@@ -369,10 +462,10 @@ i{
     text-align: right;
     font-size: 50pt;
     padding-right: 20px;
-    border-right: 2px solid rgba(0, 92, 170, 0.85);
+    border-right: 2px solid #7bc043;
     margin: 0;
     line-height: 70px;
-    color: #ed1c2b;
+    color: #00559b;
     font-weight: 700;
 }
 
@@ -802,7 +895,7 @@ i{
 .menu-buttons-768{
     display: none;
     opacity: 0;
-    position: fixed; 
+    position: fixed;
     bottom: 0px;
     left: 0px;
     width: 100%;
@@ -900,7 +993,7 @@ i{
     justify-content: space-between
 }
 
-.survey-btn-grp div{   
+.survey-btn-grp div{
     width: 50%;
 }
 
@@ -1315,7 +1408,7 @@ html, body{
 
 .nav-link i{
     font-size: 20px;
-    display: none; 
+    display: none;
 }
 
 .img-h-dashboard{
@@ -1330,7 +1423,7 @@ html, body{
 }
 
 .li-task-list-item[data-showing~="available"] .p-task-info span{
-    display: none; 
+    display: none;
 }
 
 .d-account-info{
@@ -1395,7 +1488,7 @@ html, body{
 }
 
 .d-gift-card{
-    margin: 8px 0px; 
+    margin: 8px 0px;
     cursor: pointer;
 }
 
@@ -1488,7 +1581,7 @@ html, body{
         color: #19a664;
     }
 
-.d-dash-header span{    
+.d-dash-header span{
     font-size: 16px;
     font-weight: initial;
 }
@@ -1621,7 +1714,7 @@ button.close {
         width: 175px;
         height: 500px;
     }
-    
+
     .img-r{
         right: -100px;
         top: -550px;
@@ -1641,7 +1734,7 @@ button.close {
         width: 175px;
         height: 500px;
     }
-    
+
     .img-r{
         right: 0px;
         top: -500px;
@@ -1659,7 +1752,7 @@ button.close {
         width: 150px;
         height: 400px;
     }
-    
+
     .img-r{
         right: -100px;
         top: -550px;
@@ -1686,7 +1779,7 @@ button.close {
         min-width: 100% !important;
     }
 
-    .btnContact, 
+    .btnContact,
     .menu-buttons-floating,
     .menu-buttons,
     .guide-list-N {
@@ -1825,7 +1918,7 @@ button.close {
         padding: 0em 1em 1em;
     }
 
-    .survey-btn-grp div{   
+    .survey-btn-grp div{
         width: 100%;
         text-align: center !important;
     }
@@ -1878,7 +1971,7 @@ button.close {
     }
 
     .nav-link i{
-        display: block; 
+        display: block;
     }
 
     .nav-link span{
@@ -1989,7 +2082,7 @@ button.close {
         margin: 0px 4px;
         padding: 0px 2px;
     }
-    
+
     .p-amount-value, .p-point-value{
         font-size: 12px;
         font-weight: 700;
@@ -2013,7 +2106,7 @@ button.close {
 
     .li-levels-view-all-item i {
         font-size: 14px;
-    
+
     }
 
     .span-strt-survey{
