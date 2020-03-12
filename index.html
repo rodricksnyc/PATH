@@ -8,7 +8,7 @@
 	<title>PATH</title>
 
 	<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
 	<link rel="stylesheet" href="vendorlibs/normalize.min.css">
 	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -34,27 +34,31 @@
 						<label for="MainContent_txtAccessCode1" id="MainContent_Label1" class="form-signin-heading">Please enter your PIN to begin.</label>
 						<div class="position-relative form-signin-input">
 							<input name="ctl00$MainContent$txtAccessCode1" type="password" maxlength="50" size="8" id="MainContent_txtAccessCode1"
-							class="form-control access" placeholder="Enter your PIN" autofocus="autofocus" autocomplete="false">
+							class="form-control access" placeholder="Enter your PIN" autocomplete="false">
 							<div class="checkbox" tabindex="0">
-								<label>
-									<input id="togglepwd" type="checkbox" value="1" onchange="showPWD()"><img src="images/show-access.svg" alt="Icon for show access code"
-									width="20" height="20">&nbsp;&nbsp;Show Pin
+								<label class="togglePassword">
+									<img id="eye" src="images/show-access.svg" alt="Icon for show access code"
+									width="18" height="18">
+									<input id="togglepwd" type="checkbox" value="1"></input>
+									  <span id="access" tabindex="0" aria-hidden="false" aria-label="Show Access Code" role="button">Show PIN</span>
 								</label>
 							</div>
-							<a href="#login" class="form-login-a text--blue">Already a Participant?</a>
+							<a href="#login" class="form-login-a" id="blue">Already a Participant?</a>
 						</div>
 						<div class="position-relative form-login-input">
-							<input name="ctl00$MainContent$txtAccessCode1" type="username" maxlength="50" size="8" id="MainContent_txtAccessCode1"
+							<input name="ctl00$MainContent$txtAccessCode1" type="username" maxlength="50" size="8" id="MainContent_txtAccessCode"
 							class="form-control access" placeholder="Username" autofocus="autofocus" autocomplete="false">
-							<input name="ctl00$MainContent$txtAccessCode1" type="password" maxlength="50" size="8" id="MainContent_txtAccessCode1"
+							<input name="ctl00$MainContent$txtAccessCode1" type="password" maxlength="50" size="8" id="MainContent_txtAccessCode2"
 							class="form-control access" placeholder="Password" autofocus="autofocus" autocomplete="false">
 							<div class="checkbox" tabindex="0">
-								<label>
-									<input id="togglepwd" type="checkbox" value="1" onchange="showPWD()"><img src="assets/eye.svg" alt="Icon for show access code"
-									width="16" height="16">&nbsp;&nbsp;Show Password
+								<label class="togglePassword">
+									<img id="eye2" src="images/show-access.svg" alt="Icon for show access code"
+									width="18" height="18">
+									<input id="togglepwd2" type="checkbox" value="1"></input>
+										<span id="access2" tabindex="0" aria-hidden="false" aria-label="Show Access Code" role="button">Show PIN</span>
 								</label>
 							</div>
-							<a href="#signin" class="form-login-a text--blue">New Participant?</a>
+							<a href="#signin" class="form-login-a text--blue">New Participant</a>
 							<a href="#" class="form-login-a text--blue">Forgot Password?</a>
 						</div>
 						<input type="submit" name="ctl00$MainContent$btnContinue" value="Begin" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$btnContinue&quot;, &quot;&quot;, true, &quot;LoginUserValidationGroup&quot;, &quot;&quot;, false, false))"
@@ -133,8 +137,8 @@
 
 
 
-
-		<div id="FAQ" class="landing-sec">
+<section class="block5">
+		<div id="FAQ" class="landing-sec heros">
 			<div class="container">
 				<h2 class="landing-sec-H alt">FAQs</h2>
 				<div class="faq-list">
@@ -259,7 +263,7 @@
 			</div>
 		</div>
 
-
+</section>
 		<section class="block50" id="Contact">
 			<div class="heros">
 				<div class="row">
@@ -397,9 +401,158 @@
 				<li tabindex="0" data-target="#Home" onclick="btnContact()" onkeypress="btnContact()"><i class="fas fa-envelope"></i><span>CONTACT</span></li>
 			</ul>
 		</div>
+
+
+		</div>
 		<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
 		<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
 		<script type="text/javascript">
+
+
+	  document.getElementById("access").addEventListener("keyup", function (e) {
+
+  // $('#eye').css('box-shadow', '0px 0px 5px 5px rgba(0,0,255,1)');
+
+  var code = (e.keyCode ? e.keyCode : e.which);
+  if (code == 13 ) {
+
+    if (pwShown == 0) {
+      pwShown = 1;
+      show();
+
+      $("#eye").attr('src',"images/close-eye.svg");
+
+
+      $('#access').html('Hide PIN')
+
+    } else {
+      pwShown = 0;
+      hide();
+
+      $("#eye").attr('src',"images/show-access.svg");
+
+
+
+      $('#access').html('Show PIN')
+    }
+
+
+  }
+})
+
+
+    function show() {
+      var p = document.getElementById('MainContent_txtAccessCode1');
+      p.setAttribute('type', 'text');
+    }
+
+    function hide() {
+      var p = document.getElementById('MainContent_txtAccessCode1');
+      p.setAttribute('type', 'password');
+    }
+
+		function show2() {
+			var p2 = document.getElementById('MainContent_txtAccessCode2');
+			p2.setAttribute('type', 'text');
+		}
+
+		function hide2() {
+			var p2 = document.getElementById('MainContent_txtAccessCode2');
+			p2.setAttribute('type', 'password');
+		}
+
+    var pwShown = 0;
+
+		var pwShown2 = 0;
+
+    document.getElementById("togglepwd").addEventListener("click", function () {
+      if (pwShown == 0) {
+        pwShown = 1;
+        show();
+
+        $("#eye").attr('src',"images/close-eye.svg");
+        // $('#eye').css('margin-top', '2px');
+
+        $('#access').html('Hide PIN')
+
+      } else {
+        pwShown = 0;
+        hide();
+
+        $("#eye").attr('src',"images/show-access.svg");
+
+        // $('#eye').css('margin-top', '-2px');
+
+        $('#access').html('Show PIN')
+      }
+
+    }, false);
+
+
+		document.getElementById("togglepwd2").addEventListener("click", function () {
+			if (pwShown2 == 0) {
+				pwShown2 = 1;
+				show2();
+
+				$("#eye2").attr('src',"images/close-eye.svg");
+				// $('#eye').css('margin-top', '2px');
+
+				$('#access2').html('Hide PIN')
+
+			} else {
+				pwShown2 = 0;
+				hide2();
+
+				$("#eye2").attr('src',"images/show-access.svg");
+
+				// $('#eye').css('margin-top', '-2px');
+
+				$('#access2').html('Show PIN')
+			}
+
+		}, false);
+
+
+
+
+
+		$(window).on('scroll', function() {
+      var screenTop = $(window).scrollTop();
+      var screenBottom = $(window).scrollTop() + window.innerHeight;
+
+      $('section').each(function() {
+        var elementTop = $(this).offset().top;
+        var elementBottom = $(this).offset().top + $(this).outerHeight();
+
+        if ((screenBottom > elementTop + ($(this).find('.heros').height() / 3 )) && (screenTop < elementBottom)) {
+          $('section').removeClass('active')
+          $(this).addClass('active')
+        }
+        else {
+          $(this).removeClass('active')
+        }
+      })
+
+
+			if ($('.block50').hasClass('active')) {
+
+
+        $('#slideOut').addClass('showSlideOut');
+
+      }
+
+
+
+      if (!$('.block50').hasClass('active') || $('.block5').hasClass('active')) {
+
+
+        $('#slideOut').removeClass('showSlideOut')
+      }
+
+
+
+		})
+
 
 		function btnContact() {
 			$('.contactUs_wrapper').height(window.innerHeight - (window.innerWidth < 768 ? 132 : 64));
@@ -533,24 +686,24 @@
 			toggleBegin(this);
 		})
 
-		//For screens with width < 768px
-		function setMobileView() {
-			$('.form-signin-input .checkbox label').html($('.form-signin-input .checkbox label').html().replace('Show Access Code', ''))
-			$('.form-login-input .checkbox label').html($('.form-login-input .checkbox label').html().replace('Show Password', ''))
-		}
+		// //For screens with width < 768px
+		// function setMobileView() {
+		// 	$('.form-signin-input .checkbox label').html($('.form-signin-input .checkbox label').html().replace('Show Access Code', ''))
+		// 	$('.form-login-input .checkbox label').html($('.form-login-input .checkbox label').html().replace('Show Password', ''))
+		// }
+		//
+		// function setDesktopView() {
+		// 	$('.form-signin-input .checkbox label').html().indexOf('Show') > -1 ? '' : $('.form-signin-input .checkbox label').append('Show Access Code')
+		// 	$('.form-login-input .checkbox label').html().indexOf('Show') > -1 ? '' : $('.form-login-input .checkbox label').append('Show Password')
+		// }
 
-		function setDesktopView() {
-			$('.form-signin-input .checkbox label').html().indexOf('Show') > -1 ? '' : $('.form-signin-input .checkbox label').append('Show Access Code')
-			$('.form-login-input .checkbox label').html().indexOf('Show') > -1 ? '' : $('.form-login-input .checkbox label').append('Show Password')
-		}
-
-		$(window).resize(function () {
-			if (window.innerWidth < 768) { setMobileView() } else { setDesktopView() };
-		})
-
-		$(window).ready(function () {
-			if (window.innerWidth < 768) { setMobileView() } else { setDesktopView() };
-		})
+		// $(window).resize(function () {
+		// 	if (window.innerWidth < 768) { setMobileView() } else { setDesktopView() };
+		// })
+		//
+		// $(window).ready(function () {
+		// 	if (window.innerWidth < 768) { setMobileView() } else { setDesktopView() };
+		// })
 		</script>
 	</body>
 
