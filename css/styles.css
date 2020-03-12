@@ -1568,6 +1568,10 @@ p.modalFooter {
 
 /* Dashboard */
 
+.mobile {
+  display:none;
+}
+
 html, body{
     overflow-x: hidden;
 }
@@ -2321,6 +2325,56 @@ h6.blue {
 }
 
 @media (max-width: 767px) {
+
+
+  h6.blue {
+
+      font-size: 20px;
+
+    }
+
+    .blue br {
+      display: none;
+    }
+
+    .heavy br:first-child {
+      display: inline-block;
+    }
+
+
+  .mobile {
+    display:inline-flex;
+  }
+
+
+  .hero-img-container.secondOne {
+    max-height: none !important;
+}
+.hero-img-container.secondOne {
+    min-height: 12rem;
+    padding-left: 0em;
+    padding-right: 0em;
+    height: calc(129vh + 10rem);
+}
+
+.bottom-overlay {
+    top: 0;
+}
+
+.pt13 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#slideOut {
+    width: 100%;
+}
+
+#slideOut {
+    height: auto;
+    left: 0;
+}
+
   .text--blue br {
    display: none;
  }
@@ -2806,10 +2860,12 @@ span.heading {
     }
 
 
-    .modal-content{
+
+
+    /* .modal-content{
         padding: 36px 6px 48px;
         background-color: #ffffff;
-    }
+    } */
 
     button.close{
         top: 4px;

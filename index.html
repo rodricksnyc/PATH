@@ -225,7 +225,7 @@
 							<div class="bottom-overlay" id="whiteBlock">
 								<div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-xs-12 ml-auto pt13">
 									<h6 class="blue" id="contact">
-										<span class="blue">Contact us with any questions<br> or comments about the <span class="heavy">Population<br>Assessment of Tobacco and<br>Health Youth Questionnaire!</span>
+										<span class="blue">Contact us with any questions<br> or comments about the <span class="heavy">Population<br>Assessment of Tobacco and<br><span class="mobile">&nbsp;</span>Health Youth Questionnaire!</span>
 
 									</h6>
 								</div>
@@ -359,6 +359,41 @@
 		<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
 		<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
 		<script type="text/javascript">
+
+
+		if ($(document).innerWidth() <= 767) {
+
+	$("#slideOut").css("left" , 0);
+
+	$('#slideOut').removeClass('showSlideOut')
+
+	$("#slideOut").css("bottom" , -$('#slideOut').height() );
+
+	var overlay = document.getElementById('whiteBlock');
+
+	// console.log(window.getComputedStyle(overlay).height);
+
+
+	$(window).on("scroll", function() {
+		var docHeight = $(document).height();
+		var winScrolled = $(window).height() + $(window).scrollTop(); // Sum never quite reaches
+		if ((docHeight - winScrolled) > 10) {
+
+			var setHeight = $("#whiteBlock").height();
+
+			$("#slideOut").delay(100).animate({
+				bottom:'0',
+				top: setHeight
+
+			}, 500);
+
+		}
+
+
+	});
+
+
+}
 
 
 		$('#sendMessage').click(function (e) {
