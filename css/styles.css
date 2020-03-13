@@ -16,8 +16,8 @@ body * {
 .logo {
     max-width: 25em;
     padding-left: 1em;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
     padding-right:1em;
 }
 
