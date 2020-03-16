@@ -699,7 +699,7 @@ $('.english').on('click', function() {
 		scrollfn($(this).attr('data-target'));
 	});
 
-	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li)').on('keypress', function (e) {
+	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('keypress', function (e) {
 		closeContact();
 		e.preventDefault();
 		scrollfn($(this).attr('data-target'));
