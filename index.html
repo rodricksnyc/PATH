@@ -63,8 +63,8 @@
 								<a href="#signin" class="form-login-a">New Participant</a>
 								<a href="#" class="form-login-a">Forgot Password?</a>
 							</div>
-							<input type="submit" name="ctl00$MainContent$btnContinue" value="Begin" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$btnContinue&quot;, &quot;&quot;, true, &quot;LoginUserValidationGroup&quot;, &quot;&quot;, false, false))"
-							id="MainContent_btnContinue" class="btnBegin" onkeypress="return submitForm();">
+							<input type="submit" name="ctl00$MainContent$btnContinue" value="Begin"
+							id="MainContent_btnContinue" class="btnBegin">
 						</div>
 					</div>
 					<!-- <button class="btnContact" role="button" onclick="btnContact()" onkeypress="btnContact()"><img src="assets/envelope.svg"
@@ -139,7 +139,7 @@
 
 			</div>
 
-		</div>
+
 
 
 		<section class="block5">
@@ -223,9 +223,9 @@
 
 						<div class="hero-img-container secondOne" id="bottomBlock">
 							<div class="bottom-overlay" id="whiteBlock">
-								<div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-xs-12 ml-auto pt13">
+								<div class="col-xl-6 col-lg-6 col-sm-4 col-xs-12 ml-auto pt13">
 									<h6 class="blue" id="contact">
-										<span class="blue">Contact us with any questions<br> or comments about the <span class="heavy">Population<br>Assessment of Tobacco and<br><span class="mobile">&nbsp;</span>Health Youth Questionnaire!</span>
+										<span class="blue">Contact us with any questions<br> or comments about the <span class="heavy">Population<span class="mobile">&nbsp;</span><br>Assessment of Tobacco and<br><span class="mobile">&nbsp;</span>Health Youth Questionnaire!</span>
 
 									</h6>
 								</div>
@@ -377,15 +377,15 @@
 		$(window).on("scroll", function() {
 			var docHeight = $(document).height();
 			var winScrolled = $(window).height() + $(window).scrollTop(); // Sum never quite reaches
-			if ((docHeight - winScrolled) > 10) {
+			if ((docHeight - winScrolled) > 1) {
 
-				var setHeight = $("#whiteBlock").height();
+				var setHeight = $("#contact").height() + 40;
 
-				$("#slideOut").delay(100).animate({
+				$("#slideOut").animate({
 					bottom:'0',
 					top: setHeight
 
-				}, 500);
+				}, 10);
 
 			}
 
@@ -576,7 +576,7 @@
 	}, false);
 
 
-
+	if ($(document).innerWidth() >= 768) {
 
 
 	$(window).on('scroll', function() {
@@ -615,6 +615,9 @@
 
 
 	})
+
+
+}
 
 
 	function btnContact() {
