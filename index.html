@@ -25,9 +25,9 @@
 			<img src="images/path-logo.svg" class="img-responsive logo" alt="Population Assessment of Tobacco and Health Logo"><span class="heading">Youth Questionnaire</span>
 
 		<div class="end">
-			<div class="activeDot"><p class="initials">EN</p></div>
+			<div class="english activeDot"><p class="initials">EN</p></div>
 			<div class="flip"></div>
-			<div class="inactiveDot"><p class="initials">ES</p></div>
+			<div class="spanish inactiveDot"><p class="initials">ES</p></div>
 		</div>
 		</header>
 
@@ -402,6 +402,20 @@
 
 	}
 
+
+$('.spanish').on('click', function() {
+
+	$(this).removeClass('inactiveDot').addClass('activeDot')
+	$('.english').removeClass('activeDot').addClass('inactiveDot')
+
+})
+
+$('.english').on('click', function() {
+
+	$(this).removeClass('inactiveDot').addClass('activeDot')
+	$('.spanish').removeClass('activeDot').addClass('inactiveDot')
+
+})
 
 	$('#sendMessage').click(function (e) {
 
