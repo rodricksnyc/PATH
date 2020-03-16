@@ -114,7 +114,9 @@ span.heading {
     border:1px solid #00559b;
 
 }
-
+.selectpicker {
+  display:none;
+}
 .flip {
     background: #00559b;
     writing-mode: tb-rl;
@@ -1471,7 +1473,7 @@ p.modalFooter {
 }
 
 .menu-buttons-768-list{
-  background: #ffffff;
+  background: transparent;
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -1489,7 +1491,7 @@ p.modalFooter {
   cursor: pointer;
   background: #00559b;
   color: #7bc043;
-  border-radius: 5px;
+
 }
 
 .menu-buttons-768-list li i{
@@ -1504,9 +1506,50 @@ p.modalFooter {
 
 .menu-buttons-768-list li:hover,
 .menu-buttons-768-list li:focus {
-  /* background-image: linear-gradient(30deg, #0071ba,#0071ba,rgba(0, 113, 186, .8), #a0defe);
-  color: #ffffff; */
+  font-weight: 800;
+      background: #125086;
+      box-shadow: 0px 0px 9px rgba(0, 0, 0, .85);
+      opacity: 1;
+      color: #a4e371;
 }
+
+.menu-buttons-768-list li:nth-of-type(4):focus {
+  font-weight: 800;
+      background: #125086;
+      box-shadow: 0px 0px 9px rgba(0, 0, 0, .85);
+      opacity: 1;
+      color: #a4e371;
+}
+
+.menu-buttons-768-list li:nth-of-type(1) {
+  width:26%;
+    border-top-left-radius: 5px;
+}
+
+.menu-buttons-768-list li:nth-of-type(2) {
+  width:26%;
+}
+
+.menu-buttons-768-list li:nth-of-type(3) {
+  width:26%;
+    border-top-right-radius: 5px;
+}
+
+.menu-buttons-768-list li:nth-of-type(4) {
+  width:19%;
+  margin-left:3%;
+  color: #00559b;
+  background:#7bc043;
+    border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+
+
+.custom-select{
+  display:none;
+  /* background: #e5eef5 */
+}
+
 
 
 /* Questionnaire Page*/
@@ -2401,6 +2444,63 @@ button.close {
 }
 
 @media (max-width: 767px) {
+
+.initials {
+  font-size:9px;
+}
+
+.flip {
+  display:none
+}
+
+
+.end {
+  position: absolute;
+    right: 0px;
+    display:block;
+    width: auto;
+    min-width: 1em;
+    top: 0;
+}
+
+.english, .spanish {
+    display:none
+}
+.custom-select{
+  display:block;
+  /* background: #e5eef5 */
+}
+
+.custom-select {
+  display: inline-block;
+      width: 53px;
+      height: 23px;
+      padding: 0rem 1rem 0rem 1rem;
+      line-height: 1.5;
+      color: #00559b;
+      vertical-align: middle;
+      background-size: 7px 11px;
+      border: none;
+      border-radius: 0rem;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      font-size: 11px;
+      background-color: #e5eef5;
+
+}
+
+select.custom-select {
+  background-image:
+    linear-gradient(45deg, transparent 50%, #00559b 60%),
+    linear-gradient(135deg, #00559b 40%, transparent 50%) !important;
+background-position: calc(100% - 12px) 9px, calc(100% - 6px) 9px, 100% 0;
+  background-size:6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
   .around .vertical:nth-of-type(3) {
       width: 33%;
   }

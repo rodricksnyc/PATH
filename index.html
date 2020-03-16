@@ -28,11 +28,18 @@
 			<div class="english activeDot"><p class="initials">EN</p></div>
 			<div class="flip"></div>
 			<div class="spanish inactiveDot"><p class="initials">ES</p></div>
+			<select class="custom-select">
+
+				<option>EN</option></i>
+				<option>ES</option></i>
+
+			</select>
+
 		</div>
 		</header>
 
 
-		<div class="hero-img-container">
+		<div class="hero-img-container" id="Home">
 
 			<div class="hero-img">
 				<div class="landing-panel">
@@ -357,7 +364,7 @@
 				<li tabindex="0" data-target="#Guide"><i class="fas fa-info-circle"></i></li>
 				<li tabindex="0" data-target="#FAQ"><i class="fas fa-question"></i></li>
 				<li tabindex="0" data-target="#Contact"><i class="fas fa-envelope"></i></li>
-				<li tabindex="0" data-target="#Home"><i class="fal fa-angle-up"></i></li>
+				<li tabindex="0" data-target="#Home"><i class="fas fa-angle-up"></i></li>
 			</ul>
 		</div>
 
@@ -398,6 +405,7 @@
 
 
 		});
+
 
 
 	}
@@ -684,14 +692,14 @@ $('.english').on('click', function() {
 		}, 1300);
 	}
 
-	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li:not(:last-child)').on('click', function (e) {
+	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('click', function (e) {
 
 		closeContact();
 		e.preventDefault();
 		scrollfn($(this).attr('data-target'));
 	});
 
-	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li:not(:last-child)').on('keypress', function (e) {
+	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li)').on('keypress', function (e) {
 		closeContact();
 		e.preventDefault();
 		scrollfn($(this).attr('data-target'));
