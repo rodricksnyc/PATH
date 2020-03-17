@@ -25,9 +25,9 @@
 			<img src="images/path-logo.svg" class="img-responsive logo" alt="Population Assessment of Tobacco and Health Logo"><span class="heading">Youth Questionnaire</span>
 
 		<div class="end">
-			<div class="english activeDot"><p class="initials">EN</p></div>
+			<div class="english activeDot" tabindex="0" aria-hidden="false" role="button"><p class="initials">EN</p></div>
 			<div class="flip"></div>
-			<div class="spanish inactiveDot"><p class="initials">ES</p></div>
+			<div class="spanish inactiveDot" tabindex="0" aria-hidden="false" role="button"><p class="initials">ES</p></div>
 			<select class="custom-select">
 
 				<option>EN</option></i>
@@ -160,7 +160,7 @@
 
 					<section class="verse3">
         <h2></h2>
-				
+
     </section>
 
 		<section class="stop">
@@ -435,6 +435,32 @@ $('.english').on('click', function() {
 	$('.spanish').removeClass('activeDot').addClass('inactiveDot')
 
 })
+
+$('.spanish').on('keyup', function(e) {
+
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 13 ) {
+		$(this).removeClass('inactiveDot').addClass('activeDot')
+		$('.english').removeClass('activeDot').addClass('inactiveDot')
+
+	}
+
+})
+
+
+$('.english').on('keyup', function(e) {
+
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 13 ) {
+		$(this).removeClass('inactiveDot').addClass('activeDot')
+		$('.spanish').removeClass('activeDot').addClass('inactiveDot')
+
+	}
+
+})
+
+
+
 
 	$('#sendMessage').click(function (e) {
 
