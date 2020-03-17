@@ -22,7 +22,8 @@
 
 		<header class="landing">
 
-			<img src="images/path-logo.svg" class="img-responsive logo" alt="Population Assessment of Tobacco and Health Logo"><span class="heading">Youth Questionnaire</span>
+			<img src="images/path-logo.svg" class="img-responsive logo" alt="Population Assessment of Tobacco and Health Logo">	<span class="heading">Youth Questionnaire</span>
+
 
 		<div class="end">
 			<div class="english activeDot" tabindex="0" aria-hidden="false" role="button"><p class="initials">EN</p></div>
@@ -570,6 +571,37 @@ $('.english').on('keyup', function(e) {
 	})
 
 
+	document.getElementById("access2").addEventListener("keyup", function (e) {
+
+
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 13 ) {
+
+			if (pwShown == 0) {
+				pwShown = 1;
+				show2();
+
+				$("#eye2").attr('src',"images/close-eye.svg");
+
+
+				$('#access2').html('Hide PIN')
+
+			} else {
+				pwShown = 0;
+				hide2();
+
+				$("#eye2").attr('src',"images/show-access.svg");
+
+
+
+				$('#access2').html('Show PIN')
+			}
+
+
+		}
+	})
+
+
 	function show() {
 		var p = document.getElementById('MainContent_txtAccessCode1');
 		p.setAttribute('type', 'text');
@@ -592,7 +624,7 @@ $('.english').on('keyup', function(e) {
 
 	var pwShown = 0;
 
-	var pwShown2 = 0;
+	// var pwShown2 = 0;
 
 	document.getElementById("togglepwd").addEventListener("click", function () {
 		if (pwShown == 0) {
