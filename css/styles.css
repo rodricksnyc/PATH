@@ -486,7 +486,9 @@ height: 30px;
 .menu-buttons-list li:hover,
 .menu-buttons-list li:focus {
   font-weight: 800;
-  background: #125086;
+  /* background: #125086; */
+
+  background: radial-gradient(circle farthest-side, #2281be, #125086);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   color: #a4e371;
