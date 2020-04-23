@@ -309,7 +309,7 @@ height: 30px;
   position: relative;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1), 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
   color:black;
-  height:24em;
+  height:27em;
 }
 
 
@@ -410,6 +410,7 @@ height: 30px;
   float: right;
   margin: 0px 0px 0px 5px;
   margin-top: -5px;
+  text-decoration: none !important;
 }
 .menu-buttons {
   width: 60%;
