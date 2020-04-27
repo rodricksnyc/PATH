@@ -2731,7 +2731,7 @@ background-position: calc(100% - 12px) 9px, calc(100% - 6px) 9px, 100% 0;
     padding-right: 1em;
     padding-top:1em;
     padding-bottom:1em;
-    opacity: 1;
+    /* opacity: 1; */
   }
 
   .text--blue br {
