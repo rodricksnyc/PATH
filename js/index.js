@@ -1,6 +1,64 @@
 
 	if ($(document).innerWidth() <= 767) {
 
+		$(window).on('scroll', function() {
+			var screenTop = $(window).scrollTop();
+			var screenBottom = $(window).scrollTop() + window.innerHeight;
+
+			$('section').each(function() {
+				var elementTop = $(this).offset().top;
+				var elementBottom = $(this).offset().top + $(this).outerHeight();
+
+				if ((screenBottom > elementTop + ($(this).find('.heros').height() / 3 )) && (screenTop < elementBottom)) {
+					$('section').removeClass('active')
+					$(this).addClass('active')
+				}
+				else {
+					$(this).removeClass('active')
+				}
+			})
+		if ($('.block10').hasClass('active')) {
+
+				$('.menu-buttons-768-list li:eq(0)').addClass('activated')
+			}
+
+			else {
+
+				$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
+			}
+
+
+	if ($('.block5').hasClass('active')) {
+
+		$('.menu-buttons-768-list li:eq(1)').addClass('activated')
+	}
+
+	else {
+
+		$('.menu-buttons-768-list li:eq(1)').removeClass('activated')
+	}
+
+
+	if ($('.block50').hasClass('active')) {
+
+		$('.menu-buttons-768-list li:eq(2)').addClass('activated')
+	}
+
+	else {
+
+		$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
+	}
+
+	if ($('.block0').hasClass('active')) {
+
+		$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
+		$('.menu-buttons-768-list li:eq(1)').removeClass('activated')
+		$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
+		$('.menu-buttons-768-list li:eq(3)').removeClass('activated')
+	}
+
+
+})
 
 		$('.pin').attr('src',"images/pin-mobile.svg")
 		$('.reward').attr('src',"images/Reward-mobile.svg")
