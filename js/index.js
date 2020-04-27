@@ -568,7 +568,7 @@ $('.form-login-a').on('keypress', function (e) {
 
 $('.form-login-a').on('click', function (e) {
 	$('#access2').html('Show password')
-	$('#MainContent_btnContinue').val('Begin');
+	$('#MainContent_btnContinue').val('Login');
 	$('#MainContent_Label1').addClass('hidden')
 
 })
@@ -576,7 +576,7 @@ $('.form-login-a').on('click', function (e) {
 $('.form-login-a.second').on('click', function (e) {
 
 
-	$('#MainContent_btnContinue').val('Login');
+	$('#MainContent_btnContinue').val('Begin');
 	$('#MainContent_Label1').removeClass('hidden')
 
 })
