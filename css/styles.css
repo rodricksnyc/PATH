@@ -13,7 +13,7 @@
     opacity:.95
 }
 
-p {
+.landing-panel p {
   font-size:15px;
 }
 
@@ -894,6 +894,18 @@ padding-top: 0px;
 }
 .menu-buttons-floating-list li:focus,
 .btn-guide:focus  {
+  font-weight: 800;
+  background: #125086;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, .85);
+  opacity: 1;
+  color: #a4e371;
+  transform: scale(1.13);
+  outline: none;
+
+}
+
+.menu-buttons-floating-list li:active,
+.btn-guide:active  {
   font-weight: 800;
   background: #125086;
   box-shadow: 0px 0px 9px rgba(0, 0, 0, .85);
