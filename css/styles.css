@@ -1629,6 +1629,7 @@ p.modalFooter {
   cursor: pointer;
   background: #0069aa;
   color: #7bc043;
+  border-radius: 5px;
 
 }
 
