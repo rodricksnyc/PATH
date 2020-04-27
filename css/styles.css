@@ -2591,6 +2591,17 @@ button.close {
 
 @media (max-width: 767px) {
 
+  .activated {
+    font-weight: 800;
+    background: #125086 !important;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, .85);
+    opacity: 1;
+    color: #a4e371 !important;
+    transform: scale(1.13) !important;
+    outline: none;
+    border-radius: 5px;
+}
+
   #FAQ {
     padding: 35px;
     padding-top: 0px;
