@@ -319,28 +319,34 @@ $('.english').on('keyup', function(e) {
 
 	if ($('.block10').hasClass('active')) {
 			$('.menu-buttons-floating-list li:eq(1)').addClass('activated')
+			$('.menu-buttons-768-list li:eq(0)').addClass('activated')
 		}
 
 		else {
 			$('.menu-buttons-floating-list li:eq(1)').removeClass('activated')
+			$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
 		}
 
 
 if ($('.block5').hasClass('active')) {
 	$('.menu-buttons-floating-list li:eq(2)').addClass('activated')
+	$('.menu-buttons-768-list li:eq(1)').addClass('activated')
 }
 
 else {
 	$('.menu-buttons-floating-list li:eq(2)').removeClass('activated')
+	$('.menu-buttons-768-list li:eq(1)').removeClass('activated')
 }
 
 
 if ($('.block50').hasClass('active')) {
 	$('.menu-buttons-floating-list li:eq(3)').addClass('activated')
+	$('.menu-buttons-768-list li:eq(2)').addClass('activated')
 }
 
 else {
 	$('.menu-buttons-floating-list li:eq(3)').removeClass('activated')
+	$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
 }
 
 if ($('.block0').hasClass('active')) {
@@ -348,6 +354,12 @@ if ($('.block0').hasClass('active')) {
 	$('.menu-buttons-floating-list li:eq(1)').removeClass('activated')
 	$('.menu-buttons-floating-list li:eq(2)').removeClass('activated')
 	$('.menu-buttons-floating-list li:eq(3)').removeClass('activated')
+
+
+	$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
+	$('.menu-buttons-768-list li:eq(1)').removeClass('activated')
+	$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
+	$('.menu-buttons-768-list li:eq(3)').removeClass('activated')
 }
 
 		if ($('.block50').hasClass('active')) {

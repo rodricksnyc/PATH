@@ -947,6 +947,45 @@ padding-top: 0px;
 
 }
 
+
+
+.menu-buttons-768-list li:hover,
+
+.btn-guide:hover{
+  outline: none;
+  background:#a5e371;
+  color: #0071ba;
+}
+.menu-buttons-768-list li:focus,
+.btn-guide:focus  {
+  font-weight: 800;
+  background: #125086;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, .85);
+  opacity: 1;
+  color: #a4e371;
+
+  outline: none;
+
+}
+
+.menu-buttons-768-list li:active,
+.btn-guide:active  {
+  font-weight: 800;
+  background: #125086;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, .85);
+  opacity: 1;
+  color: #a4e371;
+
+  outline: none;
+
+}
+
+.menu-buttons-768-list li:hover, .btn-guide:hover {
+    outline: none;
+    background: #a5e371;
+    color: #0071ba;
+}
+
 .activated
   {
   font-weight: 800;
@@ -1588,7 +1627,7 @@ p.modalFooter {
   /* color: #0071ba; */
   width: 24%;
   cursor: pointer;
-  background: #00559b;
+  background: #0069aa;
   color: #7bc043;
 
 }
