@@ -2503,9 +2503,26 @@ button.close {
 
 .initials {
   font-size:9px;
+  top: 6px;
+left: 5px;
 }
 
-.flip {
+.activeDot, .inactiveDot {
+  height: 25px;
+  width: 25px;
+}
+
+.end {
+    position: absolute;
+    right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    min-width: 6em;
+}
+
+/* .flip {
   display:none
 }
 
@@ -2521,7 +2538,7 @@ button.close {
 
 .english, .spanish {
     display:none
-}
+} */
 .custom-select{
   display:block;
   /* background: #e5eef5 */

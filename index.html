@@ -30,12 +30,12 @@
 			<div class="english activeDot" tabindex="0" aria-hidden="false" role="button"><p class="initials">EN</p></div>
 			<div class="flip"></div>
 			<div class="spanish inactiveDot" tabindex="0" aria-hidden="false" role="button"><p class="initials">ES</p></div>
-			<select class="custom-select">
+			<!-- <select class="custom-select">
 
 				<option>EN</option></i>
 				<option>ES</option></i>
 
-			</select>
+			</select> -->
 
 		</div>
 		</header>
@@ -108,7 +108,7 @@
 							<div class="guide-wrapper">
 								<p class="guide-list-N">1</p>
 								<p class="guide-list-T text--blue"><span class="guide-list-H">PIN</span><br>Log in using the unique PIN which was<br>included in your invitation letter.</p>
-								<img class="guide-list-I" src="images/Pin.svg" alt="" />
+								<img class="guide-list-I pin" src="images/Pin.svg" alt="" />
 							</div>
 						</li>
 						<li class="guide">
@@ -140,7 +140,7 @@
 							<div class="guide-wrapper">
 								<p class="guide-list-N">5</p>
 								<p class="guide-list-T text--blue"><span class="guide-list-H">Thank You</span><br>Once your survey is submitted, we will mail<br>you a token of appreciation as a thank you<br>for your participation.</p>
-								<img class="guide-list-I" src="images/Reward.svg" alt="" />
+								<img class="guide-list-I reward" src="images/Reward.svg" alt="" />
 							</div>
 						</li>
 					</ul>
@@ -389,6 +389,10 @@
 
 	if ($(document).innerWidth() <= 767) {
 
+
+		$('.pin').attr('src',"images/pin-mobile.svg")
+		$('.reward').attr('src',"images/Reward-mobile.svg")
+
 		$("#slideOut").css("left" , 0);
 
 		$('#slideOut').removeClass('showSlideOut')
@@ -624,7 +628,7 @@ $('.english').on('keyup', function(e) {
 
 	var pwShown = 0;
 
-	// var pwShown2 = 0;
+	var pwShown2 = 0;
 
 	document.getElementById("togglepwd").addEventListener("click", function () {
 		if (pwShown == 0) {
@@ -648,6 +652,8 @@ $('.english').on('keyup', function(e) {
 		}
 
 	}, false);
+
+	$('.form-login-a')
 
 
 	document.getElementById("togglepwd2").addEventListener("click", function () {
@@ -850,6 +856,11 @@ $('.english').on('keyup', function(e) {
 
 	$('.form-login-a').on('keypress', function (e) {
 		toggleBegin(this);
+	})
+
+	$('.form-login-a').on('click', function (e) {
+$('#access2').html('Show password')
+
 	})
 
 	// //For screens with width < 768px
