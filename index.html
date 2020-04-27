@@ -65,10 +65,10 @@
 							<div class="position-relative form-login-input">
 								<label for="MainContent_txtAccessCode">Username</label>
 								<input name="ctl00$MainContent$txtAccessCode1" type="username" maxlength="50" size="8" id="MainContent_txtAccessCode"
-								class="form-control access" placeholder="Username" autofocus="autofocus" autocomplete="false">
+								class="form-control access" placeholder="" autofocus="autofocus" autocomplete="false">
 								<label for="MainContent_txtAccessCode2">Password</label>
 								<input name="ctl00$MainContent$txtAccessCode1" type="password" maxlength="50" size="8" id="MainContent_txtAccessCode2"
-								class="form-control access" placeholder="Password" autofocus="autofocus" autocomplete="false">
+								class="form-control access" placeholder="" autofocus="autofocus" autocomplete="false">
 								<div class="checkbox" tabindex="0">
 									<label class="togglePassword">
 										<img id="eye2" src="images/show-access.svg" alt="Icon for show access code"
@@ -77,11 +77,15 @@
 										<span id="access2" tabindex="0" aria-hidden="false" aria-label="Show Access Code" role="button">Show PIN</span>
 									</label>
 								</div>
-								<a href="#signin" class="form-login-a second">New Participant</a>
-								<a href="#" class="form-login-a second">Forgot Password?</a>
+
+								<span class="right"><a href="#signin" class="form-login-a second">New Participant</a></span>
+								<span class="left"><a href="#signin" class="form-login-a second">Forgot Password?</a></span>
+
 							</div>
-							<input type="submit" name="ctl00$MainContent$btnContinue" value="Login"
+							<input type="submit" name="ctl00$MainContent$btnContinue" value="Begin"
 							id="MainContent_btnContinue" class="btnBegin">
+
+							<!-- <button class="btn btn-secondary"><a href="#login">Already a Participant?&nbsp;Login</a></button> -->
 						</div>
 					</div>
 					<!-- <button class="btnContact" role="button" onclick="btnContact()" onkeypress="btnContact()"><img src="assets/envelope.svg"

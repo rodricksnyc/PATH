@@ -102,6 +102,12 @@ i{
   color: black;
 }
 
+/* .spaceBetween {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+} */
+
 span.heading {
   color:#00559b;
   font-weight:bold;
@@ -400,7 +406,34 @@ height: 30px;
   margin-bottom: 12px;
 }
 
+.btn-secondary {
+
+    background: #7bc043;
+    padding: 0em .5em .3em .5em;
+    position: absolute;
+    /* left: 40%; */
+    left: calc(50% - 71px);
+    bottom: 20px;
+    width: 140px;
+    border:none;
+    border-radius:1rem
+}
+
+.btn-secondary a {
+  font-size:10px;
+  color: black;
+}
+
+.left {
+  float:left
+}
+
+.right {
+  float:right
+}
+
 .form-login-input{
+  margin-top: -1em;
   display: none;
 }
 
@@ -714,12 +747,12 @@ h1.white.sentMessage {
 
 .form-login-input label {
     font-size: 12px;
-    margin-bottom: 0px;
+    margin-bottom: 4px;
 }
 
-/* .fa-question:before {
-content: "" !important;
-} */
+.right .second {
+  font-size:13px;
+}
 
 .ques {
   color: #00559b !important;
@@ -1643,14 +1676,13 @@ p.modalFooter {
   font-weight: 600;
 }
 
-.menu-buttons-768-list li:hover,
-.menu-buttons-768-list li:focus {
+.menu-buttons-768-list li:hover {
   font-weight: 800;
       background: #125086;
       box-shadow: 0px 0px 9px rgba(0, 0, 0, .85);
       opacity: 1;
       color: #a4e371;
-    
+
 }
 
 .menu-buttons-768-list li:nth-of-type(4):focus {
