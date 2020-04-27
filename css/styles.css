@@ -13,6 +13,14 @@
     opacity:.95
 }
 
+p {
+  font-size:15px;
+}
+
+.form-signin label {
+  font-weight:700;
+}
+
 h2 {
     padding: 7% 0;
     text-align: center;
@@ -358,8 +366,9 @@ height: 30px;
 }
 
 .landing-panel-p1 {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 21px;
+    font-weight: 600;
+    color: #00559b;
 }
 
 .landing-panel label {
