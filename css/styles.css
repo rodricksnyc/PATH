@@ -13,6 +13,20 @@
     opacity:.95
 }
 
+.card-header {
+    padding: 0rem;
+    margin-bottom: 0;
+    background-color: transparent;
+    border-bottom: none;
+}
+
+.card {
+  border:none;
+}
+::placeholder {
+  font-size:12px;
+}
+
 .landing-panel p {
   font-size:15px;
 }
@@ -936,11 +950,11 @@ padding-top: 0px;
 .activated
   {
   font-weight: 800;
-  background: #125086;
+  background: #125086 !important;
   box-shadow: 0px 0px 9px rgba(0, 0, 0, .85);
   opacity: 1;
-  color: #a4e371;
-  transform: scale(1.13);
+  color: #a4e371 !important;
+  transform: scale(1.13) !important;
   outline: none;
 
 }
