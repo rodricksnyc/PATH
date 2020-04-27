@@ -17,37 +17,37 @@ if ($(document).innerWidth() <= 767) {
 				$(this).removeClass('active')
 			}
 		})
-		// if ($('.block10').hasClass('active')) {
-		//
-		// 	$('.menu-buttons-768-list li:eq(0)').addClass('activated')
-		// }
-		//
-		// else {
-		//
-		// 	$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
-		// }
-		//
-		//
-		// if ($('.block5').hasClass('active')) {
-		//
-		// 	$('.menu-buttons-768-list li:eq(1)').addClass('activated')
-		// }
-		//
-		// else {
-		//
-		// 	$('.menu-buttons-768-list li:eq(1)').removeClass('activated')
-		// }
-		//
-		//
-		// if ($('.block50').hasClass('active')) {
-		//
-		// 	$('.menu-buttons-768-list li:eq(2)').addClass('activated')
-		// }
-		//
-		// else {
-		//
-		// 	$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
-		// }
+		if ($('.block10').hasClass('active')) {
+
+			$('.menu-buttons-768-list li:eq(0)').addClass('activated')
+		}
+
+		else {
+
+			$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
+		}
+
+
+		if ($('.block5').hasClass('active')) {
+
+			$('.menu-buttons-768-list li:eq(1)').addClass('activated')
+		}
+
+		else {
+
+			$('.menu-buttons-768-list li:eq(1)').removeClass('activated')
+		}
+
+
+		if ($('.block50').hasClass('active')) {
+
+			$('.menu-buttons-768-list li:eq(2)').addClass('activated')
+		}
+
+		else {
+
+			$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
+		}
 
 		if ($('.block0').hasClass('active')) {
 
@@ -59,6 +59,33 @@ if ($(document).innerWidth() <= 767) {
 
 
 	})
+
+
+$('.menu-buttons-768-list li:eq(0)').click(function() {
+	$('.menu-buttons-768-list li:eq(1)').removeClass('activated')
+	$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
+	$('.menu-buttons-768-list li:eq(3)').removeClass('activated')
+})
+
+$('.menu-buttons-768-list li:eq(1)').click(function() {
+	$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
+	$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
+	$('.menu-buttons-768-list li:eq(3)').removeClass('activated')
+})
+
+$('.menu-buttons-768-list li:eq(2)').click(function() {
+	$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
+	$('.menu-buttons-768-list li:eq(1)').removeClass('activated')
+	$('.menu-buttons-768-list li:eq(3)').removeClass('activated')
+})
+
+$('.menu-buttons-768-list li:eq(3)').click(function() {
+	$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
+	$('.menu-buttons-768-list li:eq(1)').removeClass('activated')
+	$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
+})
+
+
 
 	$('.pin').attr('src',"images/pin-mobile.svg")
 	$('.reward').attr('src',"images/Reward-mobile.svg")
