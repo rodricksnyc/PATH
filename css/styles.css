@@ -17,6 +17,10 @@
   font-size:15px;
 }
 
+/* .ques:focus {
+  border:1px solid blue;
+} */
+
 .form-signin label {
   font-weight:700;
 }
@@ -691,7 +695,7 @@ content: "" !important;
 } */
 
 .ques {
-  color: #00559b;
+  color: #00559b !important;
   font-size: 18px;
   text-decoration: none;
   font-weight: 600;
@@ -906,6 +910,18 @@ padding-top: 0px;
 
 .menu-buttons-floating-list li:active,
 .btn-guide:active  {
+  font-weight: 800;
+  background: #125086;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, .85);
+  opacity: 1;
+  color: #a4e371;
+  transform: scale(1.13);
+  outline: none;
+
+}
+
+.activated
+  {
   font-weight: 800;
   background: #125086;
   box-shadow: 0px 0px 9px rgba(0, 0, 0, .85);
@@ -2586,21 +2602,24 @@ background-position: calc(100% - 12px) 9px, calc(100% - 6px) 9px, 100% 0;
   -moz-appearance: none;
 }
 
-  .around .vertical:nth-of-type(3) {
-      width: 33%;
+  /* .around .vertical:nth-of-type(3) {
+      width: 33% !important;
   }
   .around .vertical:nth-of-type(2) {
-    width: 33%;
+    width: 33% !important;
 }
 .around .vertical:nth-of-type(1) {
-    width: 33%;
-}
+    width: 33% !important;
+} */
 .around .vertical {
     height: 82px;
     border-radius: 0px;
     padding: 0px;
     padding-top: 1em;
-    padding-left: 32px;
+    padding-left: 20px;
+}
+.radio-inline {
+  font-size:14px;
 }
 
   h6.blue {
