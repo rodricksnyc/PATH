@@ -25,10 +25,10 @@
 			var winScrolled = $(window).height() + $(window).scrollTop(); // Sum never quite reaches
 			if ((docHeight - winScrolled) > 1) {
 
-				var setHeight = $("#contact").height() + 40;
+				var setHeight = $("#contact").height() + 25;
 
 				$("#slideOut").animate({
-					bottom:'0',
+					bottom:'75',
 					top: setHeight
 
 				}, 10);
@@ -440,5 +440,12 @@ $('.english').on('keyup', function(e) {
 
 	$('.form-login-a').on('click', function (e) {
 $('#access2').html('Show password')
+$('#MainContent_Label1').addClass('hidden')
 
 	})
+
+  $('.form-login-a.second').on('click', function (e) {
+
+$('#MainContent_Label1').removeClass('hidden')
+
+  })
