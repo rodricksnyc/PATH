@@ -85,7 +85,7 @@ if ($(document).innerWidth() <= 767) {
 // 	$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
 // })
 
-$('input, textarea').focus(function () {
+$('.landing-panel input').focus(function () {
 	 $('html, body').animate({ scrollTop: ($('.landing-panel input').offset().top - 500) }, 500);
 	 return false;
  });
