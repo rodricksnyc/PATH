@@ -989,7 +989,7 @@ padding-top: 0px;
   background:#a5e371;
   color: #0071ba;
 }
-.menu-buttons-768-list li:focus,
+/* .menu-buttons-768-list li:focus,
 .btn-guide:focus  {
   font-weight: 800;
   background: #125086;
@@ -1017,7 +1017,7 @@ padding-top: 0px;
     outline: none;
     background: #a5e371;
     color: #0071ba;
-}
+} */
 
 .activated
   {
