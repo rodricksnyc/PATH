@@ -85,14 +85,12 @@ if ($(document).innerWidth() <= 767) {
 // 	$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
 // })
 
-// $('.landing-panel .form-control.access').focus(function () {
-// 	 $('html, body').animate({ scrollTop: ($('.landing-panel .form-control.access').offset().top - 500) }, 500);
-// 	 return false;
-//  });
+$('.landing-panel .form-control.access').focus(function () {
+	 $('html, body').animate({ scrollTop: ($('.landing-panel .form-control.access').offset().top - 10) }, 100);
+	 return false;
+ });
 
-$('.landing-panel .form-control.access').on('focus', function() {
-    document.body.scrollTop = $(this).offset().top;
-});
+
 
 	$('.pin').attr('src',"images/pin-mobile.svg")
 	$('.reward').attr('src',"images/Reward-mobile.svg")
