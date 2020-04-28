@@ -86,7 +86,7 @@ if ($(document).innerWidth() <= 767) {
 // })
 
 $('input, textarea').focus(function () {
-	 $('html, body').animate({ scrollTop: ($('input, textarea').offset().top - 500) }, 500);
+	 $('html, body').animate({ scrollTop: ($('.landing-panel input').offset().top - 500) }, 500);
 	 return false;
  });
 
