@@ -90,7 +90,9 @@ if ($(document).innerWidth() <= 767) {
 // 	 return false;
 //  });
 
-
+$('.landing-panel .form-control.access').on('focus', function() {
+   document.body.scrollTop += this.getBoundingClientRect().top - 10
+});
 
 	$('.pin').attr('src',"images/pin-mobile.svg")
 	$('.reward').attr('src',"images/Reward-mobile.svg")
