@@ -91,7 +91,7 @@ if ($(document).innerWidth() <= 767) {
 //  });
 
 $('.landing-panel .form-control.access').on('focus', function() {
-   document.body.scrollTop += this.getBoundingClientRect().top - 10
+    document.body.scrollTop = $(this).offset().top;
 });
 
 	$('.pin').attr('src',"images/pin-mobile.svg")
