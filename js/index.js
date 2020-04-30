@@ -61,34 +61,34 @@ if ($(document).innerWidth() <= 767) {
 	})
 
 
-// $('.menu-buttons-768-list li:eq(0)').click(function() {
-// 	$('.menu-buttons-768-list li:eq(1)').removeClass('activated')
-// 	$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
-// 	$('.menu-buttons-768-list li:eq(3)').removeClass('activated')
-// })
-//
-// $('.menu-buttons-768-list li:eq(1)').click(function() {
-// 	$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
-// 	$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
-// 	$('.menu-buttons-768-list li:eq(3)').removeClass('activated')
-// })
-//
-// $('.menu-buttons-768-list li:eq(2)').click(function() {
-// 	$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
-// 	$('.menu-buttons-768-list li:eq(1)').removeClass('activated')
-// 	$('.menu-buttons-768-list li:eq(3)').removeClass('activated')
-// })
-//
-// $('.menu-buttons-768-list li:eq(3)').click(function() {
-// 	$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
-// 	$('.menu-buttons-768-list li:eq(1)').removeClass('activated')
-// 	$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
-// })
+	// $('.menu-buttons-768-list li:eq(0)').click(function() {
+	// 	$('.menu-buttons-768-list li:eq(1)').removeClass('activated')
+	// 	$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
+	// 	$('.menu-buttons-768-list li:eq(3)').removeClass('activated')
+	// })
+	//
+	// $('.menu-buttons-768-list li:eq(1)').click(function() {
+	// 	$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
+	// 	$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
+	// 	$('.menu-buttons-768-list li:eq(3)').removeClass('activated')
+	// })
+	//
+	// $('.menu-buttons-768-list li:eq(2)').click(function() {
+	// 	$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
+	// 	$('.menu-buttons-768-list li:eq(1)').removeClass('activated')
+	// 	$('.menu-buttons-768-list li:eq(3)').removeClass('activated')
+	// })
+	//
+	// $('.menu-buttons-768-list li:eq(3)').click(function() {
+	// 	$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
+	// 	$('.menu-buttons-768-list li:eq(1)').removeClass('activated')
+	// 	$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
+	// })
 
-$('.landing-panel .form-control.access').focus(function () {
-	 $('html, body').animate({ scrollTop: ($('.landing-panel .form-control.access').offset().top - 10) }, 100);
-	 return false;
- });
+	$('.landing-panel .form-control.access').focus(function () {
+		$('html, body').animate({ scrollTop: ($('.landing-panel .form-control.access').offset().top - 10) }, 100);
+		return false;
+	});
 
 
 
@@ -577,10 +577,10 @@ $('.form-login-a').on('click', function (e) {
 	$('#MainContent_Label1').addClass('hidden')
 	$('#blue').html('New participant? Enter PIN')
 
-$('#blue').hide()
-$('.landing-panel-p2').hide()
-$('.form-login-a.second').show().css('display', 'flex')
-$('.landing-panel-p1.text-center').html('Welcome back to the PATH Study!')
+	$('#blue').hide()
+	$('.landing-panel-p2').hide()
+	$('.form-login-a.second').show().css('display', 'flex')
+	$('.landing-panel-p1.text-center').html('Welcome back to the PATH Study!')
 })
 
 $('.form-login-a.second').on('click', function (e) {
