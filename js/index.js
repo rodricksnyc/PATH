@@ -585,7 +585,7 @@ $('.landing-panel-p1.text-center').html('Welcome back to the PATH Study!')
 
 $('.form-login-a.second').on('click', function (e) {
 
-	$('#blue').html('Already a participant? Login')
+	$('#blue').html('Already a participant? Log in')
 	$('#MainContent_btnContinue').val('Begin');
 	$('#MainContent_Label1').removeClass('hidden')
 
