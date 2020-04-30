@@ -578,6 +578,7 @@ $('.form-login-a').on('click', function (e) {
 	$('#blue').html('New participant? Enter pin')
 
 $('#blue').hide()
+$('.landing-panel-p2').hide()
 $('.form-login-a.second').show().css('display', 'flex')
 })
 
@@ -588,6 +589,7 @@ $('.form-login-a.second').on('click', function (e) {
 	$('#MainContent_Label1').removeClass('hidden')
 
 	$('#blue').show()
+	$('.landing-panel-p2').show()
 	$('.form-login-a.second').hide()
 
 })
