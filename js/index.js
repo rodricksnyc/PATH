@@ -575,13 +575,19 @@ $('.form-login-a').on('click', function (e) {
 	$('#access2').html('Show password')
 	$('#MainContent_btnContinue').val('Login');
 	$('#MainContent_Label1').addClass('hidden')
+	$('#blue').html('New participant? Enter pin')
 
+$('#blue').hide()
+$('.form-login-a.second').show().css('display', 'flex')
 })
 
 $('.form-login-a.second').on('click', function (e) {
 
-
+	$('#blue').html('Already a Participant? Login')
 	$('#MainContent_btnContinue').val('Begin');
 	$('#MainContent_Label1').removeClass('hidden')
+
+	$('#blue').show()
+	$('.form-login-a.second').hide()
 
 })
