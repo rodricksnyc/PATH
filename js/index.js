@@ -263,7 +263,7 @@ document.getElementById("access").addEventListener("keyup", function (e) {
 			$("#eye").attr('src',"images/close-eye.svg");
 
 
-			$('#access').html('Hide PIN')
+			$('#access').html('Hide')
 
 		} else {
 			pwShown = 0;
@@ -273,7 +273,7 @@ document.getElementById("access").addEventListener("keyup", function (e) {
 
 
 
-			$('#access').html('Show PIN')
+			$('#access').html('Show')
 		}
 
 
@@ -294,7 +294,7 @@ document.getElementById("access2").addEventListener("keyup", function (e) {
 			$("#eye2").attr('src',"images/close-eye.svg");
 
 
-			$('#access2').html('Hide PIN')
+			$('#access2').html('Hide')
 
 		} else {
 			pwShown = 0;
@@ -304,7 +304,7 @@ document.getElementById("access2").addEventListener("keyup", function (e) {
 
 
 
-			$('#access2').html('Show PIN')
+			$('#access2').html('Show')
 		}
 
 
@@ -344,7 +344,7 @@ document.getElementById("togglepwd").addEventListener("click", function () {
 		$("#eye").attr('src',"images/close-eye.svg");
 		// $('#eye').css('margin-top', '2px');
 
-		$('#access').html('Hide PIN')
+		$('#access').html('Hide')
 
 	} else {
 		pwShown = 0;
@@ -354,7 +354,7 @@ document.getElementById("togglepwd").addEventListener("click", function () {
 
 		// $('#eye').css('margin-top', '-2px');
 
-		$('#access').html('Show PIN')
+		$('#access').html('Show')
 	}
 
 }, false);
@@ -370,7 +370,7 @@ document.getElementById("togglepwd2").addEventListener("click", function () {
 		$("#eye2").attr('src',"images/close-eye.svg");
 		// $('#eye').css('margin-top', '2px');
 
-		$('#access2').html('Hide password')
+		$('#access2').html('Hide')
 
 	} else {
 		pwShown2 = 0;
@@ -380,7 +380,7 @@ document.getElementById("togglepwd2").addEventListener("click", function () {
 
 		// $('#eye').css('margin-top', '-2px');
 
-		$('#access2').html('Show password')
+		$('#access2').html('Show')
 	}
 
 }, false);
@@ -572,7 +572,7 @@ $('.form-login-a').on('keypress', function (e) {
 })
 
 $('.form-login-a').on('click', function (e) {
-	$('#access2').html('Show password')
+	// $('#access2').html('Show password')
 	$('#MainContent_btnContinue').val('Login');
 	$('#MainContent_Label1').addClass('hidden')
 	$('#blue').html('New participant? Enter PIN')
