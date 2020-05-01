@@ -585,10 +585,15 @@ $('.form-login-a').on('click', function (e) {
 	$('.landing-panel-p2').hide()
 	$('.form-login-a.second').show().css('display', 'flex')
 	$('.landing-panel-p1.text-center').html('Welcome back to the PATH Study!')
+	$('.position-relative.form-login-input input:eq(0)').focus()
+
+
 })
 
-$('.form-login-a.second').on('click', function (e) {
 
+
+$('.form-login-a.second').on('click', function (e) {
+	$('.form-signin input:eq(0)').focus()
 	$('#blue').html('Already a participant? Log in')
 	$('#MainContent_btnContinue').val('Begin');
 	$('#MainContent_Label1').removeClass('hidden')
