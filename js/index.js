@@ -1,6 +1,8 @@
+$(document).ready(function () {
+
 const prefersColorSchemeDark = window.matchMedia('(prefers-color-scheme: dark)');
 if (prefersColorSchemeDark.matches) {
-  // Apply a dark color scheme
+	// Apply a dark color scheme
 }
 
 if ($(document).innerWidth() <= 767) {
@@ -602,5 +604,7 @@ $('.form-login-a.second').on('click', function (e) {
 	$('.landing-panel-p2').show()
 	$('.form-login-a.second').hide()
 	$('.landing-panel-p1.text-center').html('Welcome to the PATH Study!')
+
+})
 
 })
