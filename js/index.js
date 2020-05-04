@@ -92,7 +92,7 @@ if ($(document).innerWidth() <= 767) {
 	// })
 
 	$('.landing-panel .form-control.access').focus(function () {
-		$('html, body').animate({ scrollTop: ($('.landing-panel .form-control.access').offset().top - 40) }, 100);
+		$('html, body').animate({ scrollTop: ($('.landing-panel .form-control.access').offset().top - 40) }, 600);
 		return false;
 	});
 
