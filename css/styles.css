@@ -2872,7 +2872,7 @@ h6.blue {
 
 .logo {
   max-width: 60%;
-  padding-left: .5em;
+  padding-left: 1.2em;
   padding-top: .5em;
   padding-bottom: .5em;
   padding-right: .5em;
@@ -3431,6 +3431,14 @@ body{
 
 .radio-inline {
     font-size: 12px;
+}
+
+.logo {
+    max-width: 65%;
+    padding-left: 1.3em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-right: .5em;
 }
 
 
