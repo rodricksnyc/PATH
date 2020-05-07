@@ -2871,11 +2871,11 @@ h6.blue {
 }
 
 .logo {
-  max-width: 50%;
-  padding-left: 1em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-right: 1em;
+  max-width: 60%;
+  padding-left: .5em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-right: .5em;
 }
 
 span.heading {
@@ -3424,6 +3424,14 @@ body{
     padding-bottom: 1em;
     opacity: 1;
   }
+.landing-panel {
+  min-height: 25.5em;
+  height: auto;
+}
+
+.radio-inline {
+    font-size: 12px;
+}
 
 
 }
