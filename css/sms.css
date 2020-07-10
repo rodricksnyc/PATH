@@ -752,7 +752,7 @@ z-index: 1;
     box-shadow: 0px 0px 14px 2px rgba(191,210,223,.66);
     z-index: 1;
     border-radius: .8em;
-    margin:1em 0em
+    margin:1em 0em 2em 0em;
 
 }
 
@@ -2753,6 +2753,24 @@ button.close {
     padding-bottom: 2em;
   }
 
+  p.navy {
+    padding:0em 1em;
+  }
+
+  .noPadding .navy {
+    padding: 0em 0em;
+    margin-top: 0em;
+}
+
+  p {
+    margin:1em;
+    padding:0em 1em;
+  }
+
+  .guides {
+    margin:2em 0em
+  }
+
   h6.blue {
     color: #00467f;
     font-weight: 600;
@@ -2772,6 +2790,24 @@ button.close {
 }
 
 @media (max-width: 767px) {
+
+  p.navy {
+    padding:0em;
+  }
+
+  p {
+    margin:1em;
+    padding:0em 1em;
+  }
+
+    .noPadding .navy {
+      padding: 0em 2em;
+      margin-top: 0em;
+  }
+
+  .guides {
+    margin:2em 0em
+  }
 
   .activated {
     font-weight: 800;
@@ -3080,7 +3116,7 @@ body{
   font-weight: 800;
   color: #00559b;
   padding-bottom: 10px;
-  border-bottom: 2px solid #7bc043;
+
   position: relative;
   /* width: 280px; */
   margin: 0 auto;
