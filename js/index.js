@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
-const prefersColorSchemeDark = window.matchMedia('(prefers-color-scheme: dark)');
-if (prefersColorSchemeDark.matches) {
-	// Apply a dark color scheme
-}
+// const prefersColorSchemeDark = window.matchMedia('(prefers-color-scheme: dark)');
+// if (prefersColorSchemeDark.matches) {
+// 	// Apply a dark color scheme
+// }
 
 if ($(document).innerWidth() <= 767) {
 

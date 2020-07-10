@@ -1,16 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.27 16"><defs>
   <style>
 
-   @media (prefers-color-scheme: light) {
    .cls-1{
    fill:#0069aa !important;
    }
-   }
-   @media (prefers-color-scheme: dark) {
-   .cls-1{
-   fill:#7BC043 !important;
-   }
-   }
+
 
   </style>
 </defs>
