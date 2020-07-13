@@ -405,28 +405,88 @@ height: 30px;
 .stickyNav {
     position: fixed;
     top: 14em;
-    z-index: 1;
+    z-index: 10;
     max-width: 220px;
     left:3%;
 }
 
 .stickyNav .nav {
   background: #b4e1fe;
-  padding: 1.3em 1em;
+  padding: 0em .2em;
   border-radius: 3rem;
 }
 
 .stickyNav .nav .nav-item {
-  margin:1em 0em;
+  margin:1.5em 0em;
+  position: relative;
+}
+
+.stickyNav .nav .nav-item:last-child i {
+  font-size: 17px;
+  color: #00559b;
+}
+
+.stickyNav .nav .nav-item:last-child {
+  margin:1.5em 0em 0em 0em;
 }
 
 .stickyNav .nav i {
   font-size:2rem;
+  color:#1b3765;
 }
 
-.nav-link.active {
+
+.greenBubble {
   background: #8bd355;
+  position: absolute;
+    width: 6.2rem;
+    height: 6.2rem;
+    border-radius: 50%;
+    left: -12px;
+    top: -25px;
+    z-index: 0;
 }
+.nav-link {
+  position: relative;
+  z-index:5;
+}
+
+
+.stickyNav .nav .nav-item:nth-of-type(2):after {
+    content: "ADULT";
+    font-size: 14px;
+    /* margin-top: 7em; */
+    position: absolute;
+    bottom: -28%;
+    color: black;
+    width: 100%;
+    margin-bottom: 0em;
+    left: 9px;
+    font-family: 'Public Sans', sans-serif;
+    color: #1b3765;
+    font-weight: 500;
+}
+
+.stickyNav .nav .nav-item:nth-of-type(3):after {
+    content: "YOUTH";
+    font-size: 14px;
+    /* margin-top: 7em; */
+    position: absolute;
+    bottom: -28%;
+    color: black;
+    width: 100%;
+    margin-bottom: 0em;
+    left: 5px;
+    font-family: 'Public Sans', sans-serif;
+    color: #1b3765;
+    font-weight: 500;
+}
+
+
+
+/* .nav-link.active {
+  background: #8bd355;
+} */
 
 .whiteBubble .img-fluid {
    border: 1px solid #00559b;
