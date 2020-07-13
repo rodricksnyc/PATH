@@ -402,7 +402,35 @@ height: 30px;
   overflow: hidden;
 }
 
+.stickyNav {
+    position: fixed;
+    top: 14em;
+    z-index: 1;
+    max-width: 220px;
+    left:3%;
+}
 
+.stickyNav .nav {
+  background: #b4e1fe;
+  padding: 1.3em 1em;
+  border-radius: 3rem;
+}
+
+.stickyNav .nav .nav-item {
+  margin:1em 0em;
+}
+
+.stickyNav .nav i {
+  font-size:2rem;
+}
+
+.nav-link.active {
+  background: #8bd355;
+}
+
+.whiteBubble .img-fluid {
+   border: 1px solid #00559b;
+}
 
 .gray {
   background-color: #f8f9fa!important;
