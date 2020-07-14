@@ -3518,15 +3518,24 @@ body{
     background: #8bd355;
     position: absolute;
     width: 96%;
-    height: 120%;
+    height: 130%;
     border-radius: 50%;
     left: 0px;
-    top: -10%;
+    top: -15%;
     left: 2%;
 
   }
 
+  .stickyNav {
+      bottom: 1.25%;
+      top: unset;
+      width: 75%;
+      left: 1%;
+  }
+
 }
+
+
 
 @media (max-width: 320px) {
   html, body{
@@ -3811,6 +3820,18 @@ body{
 }
 
 @media (max-width: 375px) {
+
+  .greenBubble {
+    background: #8bd355;
+    position: absolute;
+    width: 96%;
+    height: 120%;
+    border-radius: 50%;
+    left: 0px;
+    top: -10%;
+    left: 2%;
+
+  }
   .menu-buttons-768-list li:nth-of-type(1) {
     width:50px;
     height:50px;
