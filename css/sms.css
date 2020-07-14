@@ -116,6 +116,15 @@ h2 {
   font-size: 38px;
   text-shadow: 2px 2px 5px rgb(255, 255, 255);
 }
+
+.filter h2 {
+  padding: 0%;
+}
+
+.filter {
+  padding: 7% 0 0 0;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
@@ -467,7 +476,51 @@ a:hover {
   text-decoration: none;
 }
 
+.filter-attr-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0em !important;
+}
 
+.light {
+  font-weight:300 !important;
+}
+
+.filter-attr-list li.selected{
+    padding: 0.3rem 1rem;
+    margin: 0rem .5rem;
+    background: #8bd355;
+    border-radius: 2rem;
+    color: #1b3765;
+    cursor: pointer;
+    max-width: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.filter-attr-list li {
+  list-style-type: none;
+margin: 0rem .5rem;
+  font-size: 14px;
+}
+
+a:focus {
+  outline:none;
+}
+
+.flip {
+    background: #00559b;
+    writing-mode: tb-rl;
+    width: 2px;
+    height: 18px;
+margin: 0rem .5rem;
+    margin-top: 2px;
+}
 
 .greenBubble {
   background: #8bd355;

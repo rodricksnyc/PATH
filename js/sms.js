@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("a").on("keyup", function (e) {
+  $('a, [tabIndex="0"]').on("keyup", function (e) {
 
     var code = (e.keyCode ? e.keyCode : e.which);
     if (code == 9) {
@@ -8,9 +8,11 @@ $(document).ready(function () {
     }
 
   })
-  $("a").on('focusout', function() {
+  $('a, [tabIndex="0"]').on('focusout', function() {
     $(this).css('outline', 'none')
   })
+
+
 
 
   var path = window.location.href;

@@ -34,83 +34,94 @@
 					<div class="landing-sec container-fluid heros">
 
 						<div class="guide-overlay container">
-							<div class="d-flex justify-content-between align-items-center">
+							<div class="filter d-flex justify-content-between align-items-center">
 								<div class="d-flex justify-content-start align-items-center">
 									<h2 class="landing-sec-H">Adult Surveys</h2>
 
-										<h2 class="landing-sec-H">Adult Surveys</h2>
+									<ul class="filter-attr-list">
+										<li data-tag-id="" tabindex="0" class="selected">
+											<i class="far fa-file-search"></i>Summary
+										</li>
+										<i class="fas fa-filter light blue"></i>
+										<li data-tag-id="" tabindex="0" class="blue">All&nbsp;(<span id="ctl00_ContentMain_DataGrid1_lblRecordCount">400</span>)
 
+										</li>
+										<div class="flip"></div>
+										<li data-tag-id="" tabindex="0" class="blue">Not Started&nbsp;(<span id="ctl00_ContentMain_DataGrid1_lblRecordCount">314</span>)</li>
+
+										<li data-tag-id="" tabindex="0" class="blue">Started, not submitted&nbsp;(<span id="ctl00_ContentMain_DataGrid1_lblRecordCount">83</span>)</li>
+
+										<li data-tag-id="" tabindex="0" class="blue">Submitted&nbsp;(<span id="ctl00_ContentMain_DataGrid1_lblRecordCount">3</span>)</li>
+									</ul>
+
+
+								</div>
+
+								<div class="d-flex justify-content-end align-items-center">
+
+									<div class="ibox-tools">
+										<span id="ctl00_ContentMain_DataGrid1_ExcelCommand">
+											<a id="ctl00_ContentMain_DataGrid1_lnkExcel" title="Export All Records to Excel" href="javascript:__doPostBack('ctl00$ContentMain$DataGrid1$lnkExcel','')">
+												<i class="fa fa-file-excel-o"></i>
+												Excel</a>
+											</span>
+
+											<label class="text-muted">
+												Records per Page
+												<select name="ctl00$ContentMain$DataGrid1$ddlPageSize" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentMain$DataGrid1$ddlPageSize\',\'\')', 0)" id="ctl00_ContentMain_DataGrid1_ddlPageSize">
+													<option value="10">10</option>
+													<option value="20">20</option>
+													<option value="30">30</option>
+													<option value="40">40</option>
+													<option value="50">50</option>
+													<option selected="selected" value="100">100</option>
+
+												</select>
+											</label>
+
+										</div>
+
+									</div>
+
+								</div>
+								<div class="whiteBubble">
+									<p class="guide-list-T text--blue">1. Select Adult Cases or Youth Cases in the left navigation</p>
+								</div>
+
+
+
+							</div>
 
 						</div>
-
-						<div class="d-flex justify-content-end align-items-center">
-							<h2 class="landing-sec-H">Adult Surveys</h2>
-
-								<h2 class="landing-sec-H">Adult Surveys</h2>
-
-
-				</div>
-
-
-						</div>
-							<div class="whiteBubble">
-								<p class="guide-list-T text--blue">1. Select Adult Cases or Youth Cases in the left navigation</p>
-							</div>
-
-
-							<div class="whiteBubble">
-								<p class="guide-list-T text--blue">1. Select Adult Cases or Youth Cases in the left navigation</p>
-							</div>
-
-
-							<div class="whiteBubble">
-								<p class="guide-list-T text--blue">1. Select Adult Cases or Youth Cases in the left navigation</p>
-							</div>
-
-
-
-
-							<div class="whiteBubble">
-								<p class="guide-list-T text--blue">1. Select Adult Cases or Youth Cases in the left navigation</p>
-							</div>
-
-
-						</div>
-
 					</div>
+
+				</section>
+
+				<div class="stickyNav">
+					<ul class="nav flex-column d-flex align-items-center">
+						<li class="nav-item">
+							<a class="nav-link active" href="sms-landing.html" title="Home" tabindex="0">
+								<img class="img-fluid" src="images/Group.svg">
+							</a>
+							<span class="title">HOW TO</span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="adult.html" title="Adult Summary" tabindex="0">
+								<img class="img-fluid" src="images/Group.svg">
+							</a>
+							<span class="title">ADULT</span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="youth.html" title="Youth Summary" tabindex="0">
+								<img class="img-fluid" src="images/Group.svg">
+							</a>
+							<span class="title">YOUTH</span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" ><i class="far fa-compress-arrows-alt"></i></a>
+						</li>
+					</ul>
 				</div>
-
-					</section>
-
-
-
-
-
-						<div class="stickyNav">
-							<ul class="nav flex-column d-flex align-items-center">
-							  <li class="nav-item">
-							    <a class="nav-link active" href="sms-landing.html" title="Home">
-										<img class="img-fluid" src="images/Group.svg">
-									</a>
-									<span class="title">HOW TO</span>
-							  </li>
-							  <li class="nav-item">
-							    <a class="nav-link" href="adult.html" title="Adult Summary">
-											<img class="img-fluid" src="images/Group.svg">
-									</a>
-										<span class="title">ADULT</span>
-							  </li>
-							  <li class="nav-item">
-							    <a class="nav-link" href="youth.html" title="Youth Summary">
-										<img class="img-fluid" src="images/Group.svg">
-									</a>
-									<span class="title">YOUTH</span>
-							  </li>
-							  <li class="nav-item">
-							    <a class="nav-link"><i class="far fa-compress-arrows-alt"></i></a>
-							  </li>
-							</ul>
-						</div>
 
 				<div class="menu-buttons-768">
 					<ul class="menu-buttons-768-list">

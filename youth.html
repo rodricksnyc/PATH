@@ -34,83 +34,68 @@
 					<div class="landing-sec container-fluid heros">
 
 						<div class="guide-overlay container">
-							<h2 class="landing-sec-H">Home</h2>
-							<div class="whiteBubble">
-								<p class="guide-list-T text--blue">1. Select Adult Cases or Youth Cases in the left navigation</p>
-							</div>
-							<div class="whiteBubble">
-								<p class="guide-list-T text--blue">2. See summary or filter results</p>
-								<div class="row">
-									<div class="col-lg-6">
-										<p class="text-center bold larger">Summary</p>
-										<p class="navy">Eventually, the test cases will be categorized as in the example below (Adult Cigarette Smoker,
-											Adult Non-Smoker, etc.). Currently, these are just placeholders and all test cases are the same.</p>
-											<p class="navy">Clicking a cell will list cases that fit that category. Selecting the cell circled below will list Adult
-												Cigarette Smoker cases that have not yet started the survey.</p>
+							<div class="filter d-flex justify-content-between align-items-center">
+								<div class="d-flex justify-content-start align-items-center">
+									<h2 class="landing-sec-H">Adult Surveys</h2>
 
-											</div>
-											<div class="col-lg-6">
-												<img class="img-fluid guides" src="images/top.png">
+									<ul class="filter-attr-list">
+										<li data-tag-id="" tabindex="0" class="selected">
+											<i class="far fa-file-search"></i>Summary
+										</li>
+										<i class="fas fa-filter light blue"></i>
+										<li data-tag-id="" tabindex="0" class="blue">All&nbsp;(<span id="ctl00_ContentMain_DataGrid1_lblRecordCount">400</span>)
 
-											</div>
-										</div>
-										<hr>
-										<div class="row noPadding">
-											<div class="col-lg-4 col-sm-4">
-												<p class="text-center bold larger">Web Survey Not Started</p>
-												<p class="navy text-center">Listing of “fresh” cases where the survey has not yet been started</p>
+										</li>
+										<div class="flip"></div>
+										<li data-tag-id="" tabindex="0" class="blue">Not Started&nbsp;(<span id="ctl00_ContentMain_DataGrid1_lblRecordCount">314</span>)</li>
 
-											</div>
-											<div class="col-lg-4 col-sm-4">
-												<p class="text-center bold larger">Web Survey Started</p>
-												<p class="navy text-center">Listing of cases where the survey has been started but not yet completed</p>
+										<li data-tag-id="" tabindex="0" class="blue">Started, not submitted&nbsp;(<span id="ctl00_ContentMain_DataGrid1_lblRecordCount">83</span>)</li>
 
-											</div>
-											<div class="col-lg-4 col-sm-4">
-												<p class="text-center bold larger">Web Survey Submitted</p>
-												<p class="navy text-center">Listing of completed cases where the survey has been submitted</p>
-
-											</div>
+										<li data-tag-id="" tabindex="0" class="blue">Submitted&nbsp;(<span id="ctl00_ContentMain_DataGrid1_lblRecordCount">3</span>)</li>
+									</ul>
 
 
-										</div>
-									</div>
+								</div>
 
+								<div class="d-flex justify-content-end align-items-center">
 
-									<div class="whiteBubble">
-										<p class="guide-list-T text--blue">3. Launch the survey</p>
-										<div class="row">
-											<div class="col-lg-6">
-												<p class="navy">Click on the ID in the first column to select a case.</p>
-												<img class="img-fluid" src="images/bottom.png">
+									<div class="ibox-tools">
+										<span id="ctl00_ContentMain_DataGrid1_ExcelCommand">
+											<a id="ctl00_ContentMain_DataGrid1_lnkExcel" title="Export All Records to Excel" href="javascript:__doPostBack('ctl00$ContentMain$DataGrid1$lnkExcel','')">
+												<i class="fa fa-file-excel-o"></i>
+												Excel</a>
+											</span>
 
-											</div>
-											<div class="col-lg-6">
-												<div class="row">
-													<div class="col-lg-6">
-														<p>To launch the survey, select the “Go to Survey” button. At the end of the survey, it should redirect automatically to the SMS. If your session in the SMS has timed out, then you will be required to sign in before working more test cases.</p>
+											<label class="text-muted">
+												Records per Page
+												<select name="ctl00$ContentMain$DataGrid1$ddlPageSize" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentMain$DataGrid1$ddlPageSize\',\'\')', 0)" id="ctl00_ContentMain_DataGrid1_ddlPageSize">
+													<option value="10">10</option>
+													<option value="20">20</option>
+													<option value="30">30</option>
+													<option value="40">40</option>
+													<option value="50">50</option>
+													<option selected="selected" value="100">100</option>
 
-													</div>
-
-													<div class="col-lg-6">
-														<img class="img-fluid" src="images/bottom-right.png">
-
-													</div>
-												</div>
-
-											</div>
+												</select>
+											</label>
 
 										</div>
+
 									</div>
 
 								</div>
+								<div class="whiteBubble">
+									<p class="guide-list-T text--blue">1. Select Adult Cases or Youth Cases in the left navigation</p>
+								</div>
+
+
+
 							</div>
 
 						</div>
+					</div>
 
-					</section>
-
-
+				</section>
 
 					<section class="block10">
 						<div id="Guide" class="landing-sec container-fluid heros">
@@ -140,25 +125,25 @@
 						<div class="stickyNav">
 							<ul class="nav flex-column d-flex align-items-center">
 							  <li class="nav-item">
-							    <a class="nav-link active" href="sms-landing.html" title="Home">
+							    <a class="nav-link active" href="sms-landing.html" title="Home" tabindex="0">
 										<img class="img-fluid" src="images/Group.svg">
 									</a>
 									<span class="title">HOW TO</span>
 							  </li>
 							  <li class="nav-item">
-							    <a class="nav-link" href="adult.html" title="Adult Summary">
+							    <a class="nav-link" href="adult.html" title="Adult Summary" tabindex="0">
 											<img class="img-fluid" src="images/Group.svg">
 									</a>
 										<span class="title">ADULT</span>
 							  </li>
 							  <li class="nav-item">
-							    <a class="nav-link" href="youth.html" title="Youth Summary">
+							    <a class="nav-link" href="youth.html" title="Youth Summary" tabindex="0">
 										<img class="img-fluid" src="images/Group.svg">
 									</a>
 									<span class="title">YOUTH</span>
 							  </li>
 							  <li class="nav-item">
-							    <a class="nav-link"><i class="far fa-compress-arrows-alt"></i></a>
+							    <a class="nav-link" tabindex="0"><i class="far fa-compress-arrows-alt"></i></a>
 							  </li>
 							</ul>
 						</div>
