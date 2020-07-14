@@ -87,7 +87,7 @@ $(document).ready(function () {
       })
 
       $('.nav-item .nav-link').last().css({
-        'padding' : '1.5rem 1rem'
+        'padding' : '1.6rem 1rem'
       })
 
       $('.nav-item i').last().css('font-size', '27px')
