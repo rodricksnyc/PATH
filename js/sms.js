@@ -36,6 +36,9 @@ $(document).ready(function () {
 
     }
 
+
+
+
     if (!$('.nav-link:eq(0)').hasClass('active')) {
 
       $('.nav-link:eq(0)  img').remove()
@@ -118,7 +121,14 @@ $(document).ready(function () {
   );
 
 
+
+
+
   if ($(document).innerWidth() <= 767) {
+
+
+  $('.nav-link.active').closest('.nav-item').find('.title').hide()
+
 
 
     $('.nav-item').css({

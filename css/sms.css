@@ -3017,6 +3017,7 @@ opacity: 1;
     bottom:1%;
     top:unset;
     width:75%;
+    left:1%
   }
 
   .stickyNav .nav .nav-item:last-child{
@@ -3050,12 +3051,12 @@ opacity: 1;
   }
 
   .stickyNav .nav .nav-item {
-    flex-direction: row !important;
+    /* flex-direction: row !important; */
     margin:0em;
   }
 
   .title {
-    display: none;
+  font-size:12px;
   }
 
   /* p.guide-list-T.text--blue {
