@@ -206,10 +206,16 @@ span.heading {
   overflow: hidden !important;
 }
 .landing {
+  background: white;
   position:relative;
   display: flex;
   align-items: center;
   /* justify-content: flex-start; */
+}
+
+body{
+  background: rgb(229,235,241);
+  background: radial-gradient(circle, rgba(229,235,241,0.8225665266106442) 33%, rgba(255,255,255,0.8757878151260504) 85%);
 }
 
 .end {
@@ -395,12 +401,13 @@ height: 30px;
 }
 
 .wrapper {
-  background: rgb(229,235,241);
-  background: radial-gradient(circle, rgba(229,235,241,0.8225665266106442) 33%, rgba(255,255,255,0.8757878151260504) 85%);
+
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
+
+
 
 .stickyNav {
   position: fixed;
@@ -2143,6 +2150,7 @@ html, body{
   overflow-x: hidden;
 }
 
+
 .header-wrapper{
   display: flex;
   width: 100%;
@@ -2784,7 +2792,13 @@ button.close {
   .questionnaire-container{
     min-height: calc(100vh - 205px);
   }
+
+.container {
+    max-width: 1340px !important;
 }
+}
+
+
 
 @media (max-width: 1599px) and (min-width: 1200px){
   .img-l{
