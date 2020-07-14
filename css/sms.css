@@ -456,6 +456,11 @@ height: 30px;
   color:#1b3765;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+
 
 .greenBubble {
   background: #8bd355;
