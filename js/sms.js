@@ -72,5 +72,53 @@ $(document).ready(function () {
   });
 
 
+  var clickLastNav = function() {
+
+    // $('.nav-link:eq(3)').on('click', function() {
+    if (!$('.nav-link:eq(3)').hasClass('bars')) {
+      $('.nav-link:eq(3)').html('<i class="fas fa-bars"></i>').addClass('bars')
+      $('.nav-item:not(:last-child)').hide()
+
+      $('.nav-item').last().css({
+        'margin' : '0em'
+      })
+
+      $('.nav-item .nav-link').last().css({
+        'padding' : '1.5rem 1rem'
+      })
+
+      $('.nav-item i').last().css('font-size', '27px')
+    }
+
+    else {
+      $('.nav-item:not(:last-child)').show()
+
+      $('.nav-link:eq(3)').html('<i class="far fa-compress-arrows-alt"></i>').removeClass('bars')
+
+      $('.nav-item').last().css({
+        'margin' : '1.5em 0em -3em 0em'
+      })
+      $('.nav-item .nav-link').last().css({
+        'padding' : '.5rem 1rem'
+      })
+
+      $('.nav-item i').last().css('font-size', '17px')
+
+    }
+
+    // })
+
+  }
+
+  $('.nav-link:eq(3)').keypress(
+    clickLastNav
+
+  ).click(
+    clickLastNav
+  );
+
+
+
+
 
 })
