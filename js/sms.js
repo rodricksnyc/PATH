@@ -118,6 +118,16 @@ $(document).ready(function () {
   );
 
 
+  if ($(document).innerWidth() <= 767) {
+
+
+$('.logout').html('')
+
+
+
+  }
+
+
 
 
 

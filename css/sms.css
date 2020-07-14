@@ -2829,6 +2829,21 @@ button.close {
   }
 }
 
+/* @media (max-width:991px) {
+
+.stickyNav {
+display:none;
+}
+
+.menu-buttons-768 {
+    display: block;
+    opacity: 1;
+}
+
+
+
+} */
+
 
 
 @media (max-width: 1199px) and (min-width: 997px){
@@ -2856,7 +2871,9 @@ button.close {
 
 }
 
-@media (max-width: 997px) and (min-width: 768px){    .page_nav{
+@media (max-width: 997px) and (min-width: 768px){
+
+.page_nav{
   display: none;
 }
 .img-l{
@@ -2904,6 +2921,11 @@ button.close {
     padding-bottom: 2em;
   }
 
+  .guide-overlay {
+    position: relative;
+    padding-left: 7em;
+}
+
   p.navy {
     padding:0em 1em;
   }
@@ -2916,7 +2938,17 @@ button.close {
   p {
     margin:1em;
     padding:0em 1em;
+
   }
+
+  p {
+    text-align: center;
+    font-size:15px;
+  }
+
+  /* p.guide-list-T.text--blue {
+    text-align:left
+  } */
 
   .guides {
     margin:2em 0em
@@ -2938,9 +2970,35 @@ button.close {
     margin-top: -0px;
   }
 
+  .guide-list-T{
+    /* width: 50%; */
+    padding: 0em 2em;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
 }
 
 @media (max-width: 767px) {
+
+  .stickyNav {
+    display: none;
+  }
+
+header .gray a span {
+font-size:0px;
+}
+
+p {
+  text-align: center;
+  font-size:15px;
+}
+
+/* p.guide-list-T.text--blue {
+  text-align:left
+} */
+
+  /* ctl00_LoginName1 */
 
   p.navy {
     padding:0em;
@@ -3298,7 +3356,7 @@ body{
 
 .guide-list-T{
   /* width: 50%; */
-  padding: 0px;
+  padding: 0em 2em;
   font-size: 16px;
   line-height: 20px;
 }
