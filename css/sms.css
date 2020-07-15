@@ -482,14 +482,14 @@ a:hover {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 0em !important;
-  margin-left:-2em;
+
 }
 
 .light {
   font-weight:300 !important;
 }
 
-.filter-attr-list li.selected{
+.filter-attr-list a.NavItem--is-active{
   padding: 0.3rem 1rem;
   margin: 0rem .5rem;
   background: #8bd355;
@@ -504,7 +504,7 @@ a:hover {
 
 }
 
-.filter-attr-list li {
+.filter-attr-list a {
   list-style-type: none;
   margin: 0rem .5rem;
   font-size: 14px;
@@ -1106,6 +1106,14 @@ h1.white.sentMessage {
 
 
 /* tables */
+
+.optionListWindow {
+  position: relative;
+}
+
+.hidden {
+    display: none !important;
+}
 #no-more-tables {
   width:100%;
 }
