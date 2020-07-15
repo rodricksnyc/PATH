@@ -1074,6 +1074,10 @@ h1.white.sentMessage {
   margin-top: 1em;
 }
 
+.blockTitle .larger  {
+  margin-top: 0em;
+}
+
 .guides {
   margin-top: 4em;
 
@@ -1083,6 +1087,96 @@ h1.white.sentMessage {
 .bold {
   font-weight:700;
 }
+
+.adult .whiteBubble  {
+  padding:0em;
+}
+
+.adult .blockTitle {
+  padding:0em 1em;
+}
+
+.navySmaller {
+  font-weight: 100;
+    font-size: 12px;
+    padding: .2em;
+        color: #1b3765;
+}
+
+
+/* tables */
+	#no-more-tables {
+    width:100%;
+  }
+
+  #no-more-tables tr {
+        border-bottom: 1px solid #dee2e6;
+  }
+
+  #no-more-tables tr:last-child {
+        border-bottom: none;
+  }
+  #no-more-tables .caseDetails {
+        border-right: 1px solid #dee2e6;
+        padding-left:1em;
+  }
+
+  #no-more-tables .status {
+        border-right: 1px solid #dee2e6;
+
+  }
+
+@media only screen and (max-width: 800px) {
+
+    /* Force table to not be like tables anymore */
+	#no-more-tables table,
+	#no-more-tables thead,
+	#no-more-tables tbody,
+	#no-more-tables th,
+	#no-more-tables td,
+	#no-more-tables tr {
+		display: block;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	#no-more-tables thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	#no-more-tables tr { border: 1px solid #ccc; }
+
+	#no-more-tables td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+		white-space: normal;
+		text-align:left;
+	}
+
+	#no-more-tables td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+	}
+
+	/*
+	Label the data
+	*/
+	#no-more-tables td:before { content: attr(data-title); }
+}
+
+
 
 .guide-list-I {
   width: 30%;
