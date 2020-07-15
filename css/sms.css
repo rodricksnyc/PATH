@@ -1092,16 +1092,16 @@ h1.white.sentMessage {
   font-weight:700;
 }
 
-.adult .black {
+.surveyStatus .black {
   color: black !important;
   margin-top: .5em;
 }
 
-.adult .whiteBubble  {
+.surveyStatus .whiteBubble  {
   padding:0em;
 }
 
-.adult .blockTitle {
+.surveyStatus .blockTitle {
   padding:0em 1em;
 }
 
