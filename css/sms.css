@@ -3423,9 +3423,59 @@ flex-direction: column !important
 
 @media (max-width: 767px) {
 
-  /* .stickyNav {
-  display: none;
-  } */
+  .no-more-tables td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 2%;
+    white-space: normal;
+    text-align: left;
+    padding-top: 2.4em;
+    min-height: 4em;
+}
+.no-more-tables .no {
+    text-align: center;
+}
+.no-more-tables .some {
+    text-align: center;
+}
+
+.no-more-tables .all {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  /* align-content: center; */
+  align-items: center;
+  /* padding: 1em 0em 1em 0em; */
+  padding: 1em 0em;
+}
+
+.no-more-tables .yes {
+    text-align: center;
+}
+
+
+.no-more-tables .all:before {
+  color: #00559b !important;
+      font-weight: 700;
+      position: relative;
+      width: 4em;
+      margin: 0em;
+      padding: 0em;
+      top: 0;
+      left: 0;
+}
+
+.no-more-tables td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 100%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: center;
+    font-weight: bold;
+}
 
   .block0 .landing-sec {
     padding-top:0px;
