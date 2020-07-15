@@ -3197,7 +3197,52 @@ button.close {
   }
 }
 
+@media (min-width:992px) and (max-width:1024px) {
+
+  .surveyStatus .justify-content-between {
+    flex-direction: column !important
+  }
+
+  .surveyStatus .justify-content-start {
+  flex-direction: column !important
+  }
+  .filter h2 {
+      padding: 0%;
+      margin-bottom: 1em;
+  }
+  .surveyStatus .ibox-tools {
+      margin: 1em 0em;
+  }
+  .filterIcon {
+      margin: 0em 0rem 0rem 1rem;
+  }
+
+  .no-more-tables td{
+    max-width: 18rem;
+  }
+
+}
+
 @media (max-width:991px) {
+
+  .no-more-tables tr {
+    border: none;
+    margin-bottom: 3em;
+    -webkit-box-shadow: 0px 0px 14px 2px rgba(191,210,223,.66);
+    -moz-box-shadow: 0px 0px 14px 2px rgba(191,210,223,.66);
+    box-shadow: 0px 0px 14px 2px rgba(191,210,223,.66);
+    background: white;
+  }
+
+  .surveyStatus .blockTitle {
+    padding: 0em 0em;
+}
+
+  .surveyStatus .whiteBubble {
+    background: transparent !important;
+    padding: 0em !important;
+    box-shadow: none !important;
+  }
 
 .surveyStatus .justify-content-between {
   flex-direction: column !important
