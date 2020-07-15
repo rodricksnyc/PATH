@@ -515,30 +515,30 @@ a:hover {
 }
 
 .ibox-tools {
-color:#1b3765
+  color:#1b3765
 }
 
 .ibox-tools a {
-color:#1b3765
+  color:#1b3765
 }
 .ibox-tools i {
-color:#1b3765
+  color:#1b3765
 }
 
 .ibox-tools span {
-color:#1b3765
+  color:#1b3765
 }
 
 .ibox-tools label{
-color:#1b3765
+  color:#1b3765
 }
 
 
 .ibox-tools select{
-color:#1b3765;
-font-size:12px;
-border-radius: 1rem;
-background-color: transparent;
+  color:#1b3765;
+  font-size:12px;
+  border-radius: 1rem;
+  background-color: transparent;
 }
 
 .ibox-tools .flip {
@@ -1098,82 +1098,114 @@ h1.white.sentMessage {
 
 .navySmaller {
   font-weight: 100;
-    font-size: 12px;
-    padding: .2em;
-        color: #1b3765;
+  font-size: 12px;
+  padding: .2em;
+  color: #1b3765;
 }
 
 
 /* tables */
-	#no-more-tables {
-    width:100%;
-  }
+#no-more-tables {
+  width:100%;
+}
 
-  #no-more-tables tr {
-        border-bottom: 1px solid #dee2e6;
-  }
+#no-more-tables tr {
+  border-bottom: 1px solid #dee2e6;
 
-  #no-more-tables tr:last-child {
-        border-bottom: none;
-  }
-  #no-more-tables .caseDetails {
-        border-right: 1px solid #dee2e6;
-        padding-left:1em;
-  }
+}
 
-  #no-more-tables .status {
-        border-right: 1px solid #dee2e6;
 
-  }
+#no-more-tables td {
+  padding:.8em 1em;
+  border-right: 1px solid #dee2e6;
+
+}
+
+#no-more-tables tr:last-child {
+  border-bottom: none;
+}
+#no-more-tables .caseDetails {
+  border-right: 1px solid #dee2e6;
+  padding-left:1em;
+}
+
+#no-more-tables .status {
+  padding:.5em 0em;
+  border-right: 1px solid #dee2e6;
+
+}
+
+#no-more-tables .notStarted {
+  border-right: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  padding:.5em;
+}
+
+#no-more-tables .started {
+  border-bottom: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+  padding:.5em;
+}
+
+#no-more-tables .total {
+  padding:.5em;
+}
+
+#no-more-tables .submitted {
+  border-bottom: 1px solid #dee2e6;
+
+  padding:.5em;
+}
+
 
 @media only screen and (max-width: 800px) {
 
-    /* Force table to not be like tables anymore */
-	#no-more-tables table,
-	#no-more-tables thead,
-	#no-more-tables tbody,
-	#no-more-tables th,
-	#no-more-tables td,
-	#no-more-tables tr {
-		display: block;
-	}
+  /* Force table to not be like tables anymore */
+  #no-more-tables table,
+  #no-more-tables thead,
+  #no-more-tables tbody,
+  #no-more-tables th,
+  #no-more-tables td,
+  #no-more-tables tr {
+    display: block;
+  }
 
-	/* Hide table headers (but not display: none;, for accessibility) */
-	#no-more-tables thead tr {
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
+  /* Hide table headers (but not display: none;, for accessibility) */
+  #no-more-tables thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
 
-	#no-more-tables tr { border: 1px solid #ccc; }
+  #no-more-tables tr { border: 1px solid #ccc; }
 
-	#no-more-tables td {
-		/* Behave  like a "row" */
-		border: none;
-		border-bottom: 1px solid #eee;
-		position: relative;
-		padding-left: 50%;
-		white-space: normal;
-		text-align:left;
-	}
+  #no-more-tables td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    white-space: normal;
+    text-align:left;
+  }
 
-	#no-more-tables td:before {
-		/* Now like a table header */
-		position: absolute;
-		/* Top/left values mimic padding */
-		top: 6px;
-		left: 6px;
-		width: 45%;
-		padding-right: 10px;
-		white-space: nowrap;
-		text-align:left;
-		font-weight: bold;
-	}
+  #no-more-tables td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align:left;
+    font-weight: bold;
+  }
 
-	/*
-	Label the data
-	*/
-	#no-more-tables td:before { content: attr(data-title); }
+  /*
+  Label the data
+  */
+  #no-more-tables td:before { content: attr(data-title); }
 }
 
 
