@@ -1261,6 +1261,22 @@ h1.white.sentMessage {
   border-right: none;
 }
 
+.secondTable .no-more-tables a {
+
+color:#00559b !important
+
+}
+.secondTable .no-more-tables .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondTable .no-more-tables .pagination li {
+  margin:0em .5em;
+}
+
+
 
 @media only screen and (max-width: 800px) {
 
