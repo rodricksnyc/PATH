@@ -482,6 +482,7 @@ a:hover {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 0em !important;
+  margin-left:-2em;
 }
 
 .light {
@@ -511,6 +512,37 @@ a:hover {
 
 .ibox-tools label {
   margin-bottom:0rem;
+}
+
+.ibox-tools {
+color:#1b3765
+}
+
+.ibox-tools a {
+color:#1b3765
+}
+.ibox-tools i {
+color:#1b3765
+}
+
+.ibox-tools span {
+color:#1b3765
+}
+
+.ibox-tools label{
+color:#1b3765
+}
+
+
+.ibox-tools select{
+color:#1b3765;
+font-size:12px;
+border-radius: 1rem;
+background-color: transparent;
+}
+
+.ibox-tools .flip {
+  background: #1b3765
 }
 
 a:focus {
