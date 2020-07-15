@@ -220,28 +220,24 @@ $(document).ready(function () {
   $('.option[data-type="notStarted"]').addClass('hidden').show();
   $('.option[data-type="started"]').addClass('hidden').show();
   $('.option[data-type="submitted"]').addClass('hidden').show();
-
-// $('.views[data-type="horizontal"]').removeClass('hidden').show()
-// $('.views[data-type="blocks"]').addClass('hidden').show().css('display', 'flex');
-
-// $('.viewType').click(function(evt) {
-//   evt.preventDefault();
-//   evt.stopPropagation();
-//
-//
-//   var viewType = $(this),
-//   allViewItems = $('.viewType'),
-//   currentClass = 'current';
-//
-//   allViewItems.removeClass(currentClass);
-//   viewType.addClass(currentClass);
-//
-//   var type = $(this).data('type');
-//   $('.views').addClass('hidden');
-//   $('.views[data-type="'+type+'"]').removeClass('hidden');
-//
-// })
-
+  //
+  // $('.youthFilters').on('click', function() {
+  //
+  //   if($(".toggleDiv").is(':visible')) {
+  //     $(".button-red").text('FULL CASE STUDY');
+  //     console.log('slide up')
+  //     $(".toggleDiv").slideUp();
+  //
+  //
+  //   }
+  //
+  //   else if ($(".toggleDiv").is(':hidden')){
+  //     $(".button-red").text('READ LESS')
+  //     console.log('slide no')
+  //     $(".toggleDiv").slideDown();
+  //   }
+  //
+  // });
 
 
 

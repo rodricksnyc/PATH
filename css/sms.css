@@ -1233,6 +1233,10 @@ h1.white.sentMessage {
 }
 
 
+.youth .ibox-tools {
+    color: #1b3765;
+    margin-top: 1em;
+}
 
 .secondTable .no-more-tables  td {
   padding: .8em 1em;
@@ -1279,6 +1283,7 @@ color:#00559b !important
 
 .youthFilters {
   margin-left:2em;
+
 }
 
 
