@@ -1101,6 +1101,7 @@ h1.white.sentMessage {
   font-size: 12px;
   padding: .2em;
   color: #1b3765;
+  margin-bottom:0em;
 }
 
 
@@ -1118,8 +1119,53 @@ h1.white.sentMessage {
 #no-more-tables td {
   padding:.8em 1em;
   border-right: 1px solid #dee2e6;
+  color: #1b3765 !important;
+  font-weight: 100 !important;
 
 }
+
+#no-more-tables .no a {
+  color:#00559b !important;
+
+}
+
+#no-more-tables .no  {
+  text-align: right
+}
+
+#no-more-tables .all a {
+  color:#00559b !important;
+  font-weight:700;
+
+}
+
+#no-more-tables .all  {
+  text-align: right
+}
+
+
+#no-more-tables .some a {
+  color:#1b3765 !important;
+
+}
+
+#no-more-tables .some {
+  text-align: right
+}
+
+#no-more-tables .yes a {
+  color:#1b3765 !important;
+
+}
+
+#no-more-tables .yes {
+  text-align: right
+}
+
+#no-more-tables .pivottotal a {
+  font-weight: 700 !important
+}
+
 
 #no-more-tables tr:last-child {
   border-bottom: none;
@@ -1149,6 +1195,10 @@ h1.white.sentMessage {
 
 #no-more-tables .total {
   padding:.5em;
+}
+
+#no-more-tables .total p{
+font-weight:600 !important;
 }
 
 #no-more-tables .submitted {
