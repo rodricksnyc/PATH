@@ -1092,6 +1092,11 @@ h1.white.sentMessage {
   font-weight:700;
 }
 
+.adult .black {
+    color: black !important;
+    margin-top: .5em;
+}
+
 .adult .whiteBubble  {
   padding:0em;
 }
@@ -1109,6 +1114,7 @@ h1.white.sentMessage {
 }
 
 
+
 /* tables */
 
 .optionListWindow {
@@ -1118,130 +1124,165 @@ h1.white.sentMessage {
 .hidden {
     display: none !important;
 }
-#no-more-tables {
+.no-more-tables {
   width:100%;
 }
 
-#no-more-tables tr {
+.no-more-tables tr {
   border-bottom: 1px solid #dee2e6;
 
 }
 
 
-#no-more-tables td {
+.no-more-tables td {
   padding:.8em 1em;
   border-right: 1px solid #dee2e6;
   color: #1b3765 !important;
   font-weight: 100 !important;
+    border-top: 1px solid #dee2e6;
+}
+
+.no-more-tables th {
+  padding:.8em 1em;
+  /* border-right: 1px solid #dee2e6; */
 
 }
 
-#no-more-tables .no a {
+.no-more-tables .no a {
   color:#00559b !important;
 
 }
 
-#no-more-tables .no  {
+.no-more-tables .no  {
   text-align: right
 }
 
-#no-more-tables .all a {
+.no-more-tables .all a {
   color:#00559b !important;
   font-weight:700;
 
 }
 
-#no-more-tables .all  {
+.no-more-tables .all  {
   text-align: right
 }
 
 
-#no-more-tables .some a {
+.no-more-tables .some a {
   color:#1b3765 !important;
 
 }
 
-#no-more-tables .some {
+.no-more-tables .some {
   text-align: right
 }
 
-#no-more-tables .yes a {
+.no-more-tables .yes a {
   color:#1b3765 !important;
 
 }
 
-#no-more-tables .yes {
+.no-more-tables .yes {
   text-align: right
 }
 
-#no-more-tables .pivottotal a {
+.no-more-tables .pivottotal a {
   font-weight: 700 !important
 }
 
 
-#no-more-tables tr:last-child {
+.no-more-tables tr:last-child {
   border-bottom: none;
 }
-#no-more-tables .caseDetails {
+.no-more-tables .caseDetails {
   border-right: 1px solid #dee2e6;
   padding-left:1em;
 }
 
-#no-more-tables .status {
+.no-more-tables .status {
   padding:.5em 0em;
   border-right: 1px solid #dee2e6;
 
 }
 
-#no-more-tables .notStarted {
+.no-more-tables .notStarted {
   border-right: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
   padding:.5em;
 }
 
-#no-more-tables .started {
+.no-more-tables .started {
   border-bottom: 1px solid #dee2e6;
   border-right: 1px solid #dee2e6;
   padding:.5em;
 }
 
-#no-more-tables .total {
-  padding:.5em;
+.no-more-tables .total {
+  padding:1.5em;
 }
 
-#no-more-tables .total p{
+.no-more-tables .total p{
 font-weight:600 !important;
 }
 
-#no-more-tables .submitted {
+.no-more-tables .submitted {
   border-bottom: 1px solid #dee2e6;
 
   padding:.5em;
+}
+
+
+
+.secondTable .no-more-tables  td {
+  padding: .8em 1em;
+  max-width:28rem !important;
+  text-align: center
+}
+
+.secondTable .no-more-tables .caseNumber {
+  text-align:left
+}
+.secondTable .no-more-tables .status {
+  text-align:left
+}
+
+.secondTable .no-more-tables .details {
+  text-align:left
+}
+
+.secondTable .no-more-tables .caseDetails {
+    padding: .5em 0em;
+    border-right: none;
+}
+
+.secondTable .no-more-tables .status {
+    padding: .5em 0em;
+    border-right: none;
 }
 
 
 @media only screen and (max-width: 800px) {
 
   /* Force table to not be like tables anymore */
-  #no-more-tables table,
-  #no-more-tables thead,
-  #no-more-tables tbody,
-  #no-more-tables th,
-  #no-more-tables td,
-  #no-more-tables tr {
+  .no-more-tables table,
+  .no-more-tables thead,
+  .no-more-tables tbody,
+  .no-more-tables th,
+  .no-more-tables td,
+  .no-more-tables tr {
     display: block;
   }
 
   /* Hide table headers (but not display: none;, for accessibility) */
-  #no-more-tables thead tr {
+  .no-more-tables thead tr {
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
 
-  #no-more-tables tr { border: 1px solid #ccc; }
+  .no-more-tables tr { border: 1px solid #ccc; }
 
-  #no-more-tables td {
+  .no-more-tables td {
     /* Behave  like a "row" */
     border: none;
     border-bottom: 1px solid #eee;
@@ -1251,7 +1292,7 @@ font-weight:600 !important;
     text-align:left;
   }
 
-  #no-more-tables td:before {
+  .no-more-tables td:before {
     /* Now like a table header */
     position: absolute;
     /* Top/left values mimic padding */
@@ -1267,7 +1308,7 @@ font-weight:600 !important;
   /*
   Label the data
   */
-  #no-more-tables td:before { content: attr(data-title); }
+  .no-more-tables td:before { content: attr(data-title); }
 }
 
 
