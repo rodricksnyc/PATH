@@ -486,7 +486,7 @@ a:hover {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 0em !important;
-margin-left:1em;
+  margin-left:1em;
 }
 
 .light {
@@ -1093,8 +1093,8 @@ h1.white.sentMessage {
 }
 
 .adult .black {
-    color: black !important;
-    margin-top: .5em;
+  color: black !important;
+  margin-top: .5em;
 }
 
 .adult .whiteBubble  {
@@ -1122,7 +1122,7 @@ h1.white.sentMessage {
 }
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 .no-more-tables {
   width:100%;
@@ -1139,7 +1139,8 @@ h1.white.sentMessage {
   border-right: 1px solid #dee2e6;
   color: #1b3765 !important;
   font-weight: 100 !important;
-    border-top: 1px solid #dee2e6;
+  border-top: 1px solid #dee2e6;
+  max-width: 40rem;
 }
 
 .no-more-tables th {
@@ -1222,7 +1223,7 @@ h1.white.sentMessage {
 }
 
 .no-more-tables .total p{
-font-weight:600 !important;
+  font-weight:600 !important;
 }
 
 .no-more-tables .submitted {
@@ -1242,7 +1243,7 @@ font-weight:600 !important;
 .secondTable .no-more-tables .caseNumber {
   text-align:left
 }
-.secondTable .no-more-tables .status {
+.secondTable .no-more-tables .adultStatus {
   text-align:left
 }
 
@@ -1251,13 +1252,13 @@ font-weight:600 !important;
 }
 
 .secondTable .no-more-tables .caseDetails {
-    padding: .5em 0em;
-    border-right: none;
+  padding: .5em 0em;
+  border-right: none;
 }
 
 .secondTable .no-more-tables .status {
-    padding: .5em 0em;
-    border-right: none;
+  padding: .5em 0em;
+  border-right: none;
 }
 
 
