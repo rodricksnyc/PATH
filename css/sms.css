@@ -476,13 +476,17 @@ a:hover {
   text-decoration: none;
 }
 
+.filterIcon {
+  margin:0em .2rem;
+}
+
 .filter-attr-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 0em !important;
-
+margin-left:1em;
 }
 
 .light {
@@ -491,7 +495,7 @@ a:hover {
 
 .filter-attr-list a.NavItem--is-active{
   padding: 0.3rem 1rem;
-  margin: 0rem .5rem;
+  margin: 0rem;
   background: #8bd355;
   border-radius: 2rem;
   color: #1b3765;
@@ -506,7 +510,7 @@ a:hover {
 
 .filter-attr-list a {
   list-style-type: none;
-  margin: 0rem .5rem;
+  margin: 0rem 1rem;
   font-size: 14px;
 }
 
