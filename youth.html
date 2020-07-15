@@ -2,166 +2,1209 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-	<title>PATH</title>
-	<link rel="shortcut icon" href="images/favicon.svg" />
-	<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/sms.css">
-	<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
-	<link rel="stylesheet" href="vendorlibs/normalize.min.css">
-	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"> -->
+<meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+<title>PATH</title>
+<link rel="shortcut icon" href="images/favicon.svg" />
+<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/sms.css">
+<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
+<link rel="stylesheet" href="vendorlibs/normalize.min.css">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"> -->
 </head>
 
 <body>
-	<div class="container-fluid overflow-hidden position-relative">
-		<header class="landing d-flex" id="Home">
-			<a href="#">
-				<img src="images/path-logo.svg" class="img-responsive logo" alt="Population Assessment of Tobacco and Health Logo">
-			</a>
-			<div class="d-flex justify-content-between align-items-center gray">
-				<a class="user blue" id="ctl00_hypProfile" href="../User/Profile.aspx"><span id="ctl00_LoginName1">ElizabethRodricks@westat.com</span></a>
-				<div class="flip"></div>
-				<a class="logout blue" href="#" id="ctl00_LoginStatus1" href="javascript:__doPostBack('ctl00$LoginStatus1$ctl00','')">Logout</a>
-			</div>
-		</header>
+<div class="container-fluid overflow-hidden position-relative">
+<header class="landing d-flex" id="Home">
+<a href="#">
+	<img src="images/path-logo.svg" class="img-responsive logo" alt="Population Assessment of Tobacco and Health Logo">
+</a>
+<div class="d-flex justify-content-between align-items-center gray">
+	<a class="user blue" id="ctl00_hypProfile" href="../User/Profile.aspx"><span id="ctl00_LoginName1">ElizabethRodricks@westat.com</span></a>
+	<div class="flip"></div>
+	<a class="logout blue" href="#" id="ctl00_LoginStatus1" href="javascript:__doPostBack('ctl00$LoginStatus1$ctl00','')">Logout</a>
+</div>
+</header>
 
-		<div class="wrapper">
+<div class="wrapper surveyStatus">
 
-			<section class="block0">
-				<div class="heros">
-					<div class="landing-sec container-fluid heros">
+<section class="block0">
+	<div class="heros">
+		<div class="landing-sec container-fluid heros">
 
-						<div class="guide-overlay container">
-							<div class="filter d-flex justify-content-between align-items-center">
-								<div class="d-flex justify-content-start align-items-center">
-									<h2 class="landing-sec-H">Adult Surveys</h2>
+			<div class="guide-overlay container">
+				<div class="filter d-flex justify-content-start align-items-center">
+					<div class="d-flex justify-content-start align-items-center">
+						<h2 class="landing-sec-H">Youth Surveys</h2>
 
-									<ul class="filter-attr-list">
-										<li data-tag-id="" tabindex="0" class="selected">
-											<i class="far fa-file-search"></i>Summary
-										</li>
-										<i class="fas fa-filter light blue"></i>
-										<li data-tag-id="" tabindex="0" class="blue">All&nbsp;(<span id="ctl00_ContentMain_DataGrid1_lblRecordCount">400</span>)
+						<div class="filter-attr-list">
+							<a tabindex="0" href="#summary" data-type="summary" class="NavItem NavItem--is-active selected blue" role="button" data-toggle="tab" tabindex="0">
+								<i class="far fa-file-search"></i>Summary
+							</a>
 
-										</li>
-										<div class="flip"></div>
-										<li data-tag-id="" tabindex="0" class="blue">Not Started&nbsp;(<span id="ctl00_ContentMain_DataGrid1_lblRecordCount">314</span>)</li>
+							<div class="filterIcon"><i class="fas fa-filter light blue"></i></div>
 
-										<li data-tag-id="" tabindex="0" class="blue">Started, not submitted&nbsp;(<span id="ctl00_ContentMain_DataGrid1_lblRecordCount">83</span>)</li>
+							<a href="#allItems" data-type="allItems" class="NavItem blue" role="button" data-toggle="tab" tabindex="0">All&nbsp;(<span id="ctl00_ContentMain_DataGrid1_lblRecordCount">400</span>)
 
-										<li data-tag-id="" tabindex="0" class="blue">Submitted&nbsp;(<span id="ctl00_ContentMain_DataGrid1_lblRecordCount">3</span>)</li>
-									</ul>
+							</a>
 
+							<div class="flip"></div>
 
-								</div>
+							<a href="#notStarted" data-type="notStarted" class="NavItem blue" role="button" data-toggle="tab" tabindex="0">Not Started&nbsp;(<span id="ctl00_ContentMain_DataGrid1_lblRecordCount">314</span>)
+							</a>
 
-								<div class="d-flex justify-content-end align-items-center">
+							<a href="#started" data-type="started" class="NavItem blue" role="button" data-toggle="tab" tabindex="0">Started, not submitted&nbsp;(<span id="ctl00_ContentMain_DataGrid1_lblRecordCount">83</span>)</a>
 
-									<div class="ibox-tools">
-										<span id="ctl00_ContentMain_DataGrid1_ExcelCommand">
-											<a id="ctl00_ContentMain_DataGrid1_lnkExcel" title="Export All Records to Excel" href="javascript:__doPostBack('ctl00$ContentMain$DataGrid1$lnkExcel','')"><i class="fal fa-arrow-to-bottom"></i>&nbsp;Excel</a>
-											</span>
-
-											<label>
-												Records per Page
-												<select name="ctl00$ContentMain$DataGrid1$ddlPageSize" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentMain$DataGrid1$ddlPageSize\',\'\')', 0)" id="ctl00_ContentMain_DataGrid1_ddlPageSize">
-													<option value="10">10</option>
-													<option value="20">20</option>
-													<option value="30">30</option>
-													<option value="40">40</option>
-													<option value="50">50</option>
-													<option selected="selected" value="100">100</option>
-
-												</select>
-											</label>
-
-										</div>
-
-									</div>
-
-								</div>
-								<div class="whiteBubble">
-									<p class="guide-list-T text--blue">1. Select Adult Cases or Youth Cases in the left navigation</p>
-								</div>
-
-
-
-							</div>
-
+							<a href="#submitted" data-type="submitted" class="NavItem blue" role="button" data-toggle="tab" tabindex="0">Submitted&nbsp;(<span id="ctl00_ContentMain_DataGrid1_lblRecordCount">3</span>)</a>
 						</div>
+
+						<span id="ctl00_ContentMain_pnlFilter" class="blue youthFilters">Continuing Youth&nbsp;<i class="far fa-expand-arrows-alt"></i></span>
+
+
 					</div>
 
-				</section>
-
-					<section class="block10">
-						<div id="Guide" class="landing-sec container-fluid heros">
-
-
-						</div>
-					</section>
-
-
-					<section class="block5">
-
-
-					</section>
-
-					<section class="block50" id="Contact">
-						<div class="heros">
-							<div class="row">
-
-
-							</div>
-							<a href="#bottomLastAnchor" id="topLastAnchor" aria-hidden="true"></a>
-						</div>
-					</div>
-				</section>
-
-
-						<div class="stickyNav">
-							<ul class="nav flex-column d-flex align-items-center">
-							  <li class="nav-item">
-							    <a class="nav-link active" href="sms-landing.html" title="Home" tabindex="0">
-										<img class="img-fluid" src="images/Group.svg">
-									</a>
-									<span class="title">HOW TO</span>
-							  </li>
-							  <li class="nav-item">
-							    <a class="nav-link" href="adult.html" title="Adult Summary" tabindex="0">
-											<img class="img-fluid" src="images/Group.svg">
-									</a>
-										<span class="title">ADULT</span>
-							  </li>
-							  <li class="nav-item">
-							    <a class="nav-link" href="youth.html" title="Youth Summary" tabindex="0">
-										<img class="img-fluid" src="images/Group.svg">
-									</a>
-									<span class="title">YOUTH</span>
-							  </li>
-							  <li class="nav-item">
-							    <a class="nav-link" tabindex="0"><i class="far fa-compress-arrows-alt"></i></a>
-							  </li>
-							</ul>
-						</div>
-
-				<div class="menu-buttons-768">
-					<ul class="menu-buttons-768-list">
-
-						<li tabindex="0" data-target="#Home"><i class="fas fa-angle-up"></i></li>
-					</ul>
 				</div>
 
+
+				<div class="d-flex justify-content-end align-items-center">
+
+					<div class="ibox-tools">
+						<span id="ctl00_ContentMain_DataGrid1_ExcelCommand">
+
+							<a id="ctl00_ContentMain_DataGrid1_lnkExcel" title="Export All Records to Excel" href="javascript:__doPostBack('ctl00$ContentMain$DataGrid1$lnkExcel','')">	<i class="fal fa-arrow-to-bottom"></i>&nbsp;Excel</a>
+
+						</span>
+
+						<label>
+							records per page
+
+							<select name="ctl00$ContentMain$DataGrid1$ddlPageSize" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentMain$DataGrid1$ddlPageSize\',\'\')', 0)" id="ctl00_ContentMain_DataGrid1_ddlPageSize">
+								<option selected="selected" value="10">10</option>
+								<option value="20">20</option>
+								<option value="30">30</option>
+								<option value="40">40</option>
+								<option value="50">50</option>
+								<option value="100">100</option>
+
+							</select>
+						</label>
+
+					</div>
+
+				</div>
+
+
+				<div class="optionListWindow">
+
+					<div class="option" data-type="summary">
+						<div class="whiteBubble">
+							<div class="row blockTitle">
+								<div class="no-more-tables">
+									<table class="col-md-12 col-lg-12 col-xs-12  table-condensed cf">
+										<thead class="cf">
+											<tr>
+												<th rowspan="2" scope="column" class="caseDetails">
+													<p class="text-left bold larger">Case Details</p>
+												</th>
+												<th colspan="3" class="status">
+													<p class="text-center bold larger">Overall Status</p>
+												</th>
+												<th class="total" rowspan="3" scope="column" class="total">
+													<p class="text-center bold larger blue">Total</p>
+												</th>
+											</tr>
+											<tr>
+												<th title="Overall Status: Web Survey Not Started" scope="column" class="notStarted">
+													<p class="navySmaller text-right">Web Survey<br>Not Started</p>
+												</th>
+												<th title="Overall Status: Web Survey Started, not submitted" scope="column" class="started">
+													<p class="navySmaller text-right">Web Survey Started,<br>not submitted</p>
+												</th>
+												<th title="Overall Status: Web Survey Submitted" scope="column" class="submitted">
+													<p class="navySmaller text-right">Web Survey<br>Submitted</p>
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+
+												<td data-title="Category">Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used alcohol, marijuana</td>
+												<td data-title="Number" class="numeric no">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Not Started&amp;EqualTosrchStratumName=Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used  alcohol, marijuana&amp;EqualTosrchSampleTypeName=Adult">16</a>
+												</td>
+												<td data-title="Number" class="numeric some">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Started, not submitted&amp;EqualTosrchStratumName=Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used  alcohol, marijuana&amp;EqualTosrchSampleTypeName=Adult">4</a>
+												</td>
+												<td data-title="Number" class="numeric yes"></td>
+												<td data-title="row-total number" class="numeric all">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchStratumName=Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used  alcohol, marijuana&amp;EqualTosrchSampleTypeName=Adult">20</a>
+												</td>
+
+											</tr>
+											<tr>
+
+												<td data-title="Category">Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used alcohol, marijuana</td>
+												<td data-title="Number" class="numeric no">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Not Started&amp;EqualTosrchStratumName=Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used alcohol, marijuana&amp;EqualTosrchSampleTypeName=Adult">16</a>
+												</td>
+												<td data-title="Number" class="numeric some">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Started, not submitted&amp;EqualTosrchStratumName=Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used alcohol, marijuana&amp;EqualTosrchSampleTypeName=Adult">4</a>
+												</td>
+												<td data-title="Number" class="numeric yes"></td>
+												<td data-title="row-total number" class="numeric all">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchStratumName=Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used alcohol, marijuana&amp;EqualTosrchSampleTypeName=Adult">20</a>
+												</td>
+
+											</tr>
+											<tr>
+
+												<td data-title="Category">Current: Cigarillo, Filtered cigar Recent former: Hookah Used painkillers</td>
+												<td data-title="Number" class="numeric no">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Not Started&amp;EqualTosrchStratumName=Current: Cigarillo, Filtered cigar Recent former: Hookah Used painkillers&amp;EqualTosrchSampleTypeName=Adult">31</a>
+												</td>
+												<td data-title="Number" class="numeric some">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Started, not submitted&amp;EqualTosrchStratumName=Current: Cigarillo, Filtered cigar Recent former: Hookah Used painkillers&amp;EqualTosrchSampleTypeName=Adult">7</a>
+												</td>
+												<td data-title="Number" class="numeric yes">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Submitted&amp;EqualTosrchStratumName=Current: Cigarillo, Filtered cigar Recent former: Hookah Used painkillers&amp;EqualTosrchSampleTypeName=Adult">2</a>
+												</td>
+												<td data-title="row-total number" class="numeric all">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchStratumName=Current: Cigarillo, Filtered cigar Recent former: Hookah Used painkillers&amp;EqualTosrchSampleTypeName=Adult">40</a>
+												</td>
+
+											</tr>
+											<tr>
+
+												<td data-title="Category">Current: Hookah, Snus Exp current: Cig Exp former: ENDS Ever: Cigarillos as blunts Used alcohol, marijuana, Ritalin</td>
+												<td data-title="Number" class="numeric no">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Not Started&amp;EqualTosrchStratumName=Current: Hookah, Snus  Exp current: Cig Exp former: ENDS Ever: Cigarillos as blunts Used alcohol, marijuana, Ritalin&amp;EqualTosrchSampleTypeName=Adult">16</a>
+												</td>
+												<td data-title="Number" class="numeric some">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Started, not submitted&amp;EqualTosrchStratumName=Current: Hookah, Snus  Exp current: Cig Exp former: ENDS Ever: Cigarillos as blunts Used alcohol, marijuana, Ritalin&amp;EqualTosrchSampleTypeName=Adult">4</a>
+												</td>
+												<td data-title="Number" class="numeric yes"></td>
+												<td data-title="row-total number" class="numeric all">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchStratumName=Current: Hookah, Snus  Exp current: Cig Exp former: ENDS Ever: Cigarillos as blunts Used alcohol, marijuana, Ritalin&amp;EqualTosrchSampleTypeName=Adult">20</a>
+												</td>
+
+											</tr>
+											<tr>
+
+												<td data-title="Category">Current: Hookah, Snus Exp current: Cig Exp former: ENDS Ever use: Cigarillos as blunts Used alcohol, marijuana, Ritalin</td>
+												<td data-title="Number" class="numeric no">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Not Started&amp;EqualTosrchStratumName=Current: Hookah, Snus Exp current: Cig Exp former: ENDS Ever use: Cigarillos as blunts Used alcohol, marijuana, Ritalin&amp;EqualTosrchSampleTypeName=Adult">16</a>
+												</td>
+												<td data-title="Number" class="numeric some">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Started, not submitted&amp;EqualTosrchStratumName=Current: Hookah, Snus Exp current: Cig Exp former: ENDS Ever use: Cigarillos as blunts Used alcohol, marijuana, Ritalin&amp;EqualTosrchSampleTypeName=Adult">4</a>
+												</td>
+												<td data-title="Number" class="numeric yes"></td>
+												<td data-title="row-total number" class="numeric all">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchStratumName=Current: Hookah, Snus Exp current: Cig Exp former: ENDS Ever use: Cigarillos as blunts Used alcohol, marijuana, Ritalin&amp;EqualTosrchSampleTypeName=Adult">20</a>
+												</td>
+
+											</tr>
+											<tr>
+
+												<td data-title="Category">Current: Pipe Exp current: Smokeless Exp former: Traditional cigar Used alcohol, marijuana, ritalin, painkillers, cocaine, stimulants, other drug</td>
+												<td data-title="Number" class="numeric no">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Not Started&amp;EqualTosrchStratumName=Current: Pipe Exp current: Smokeless Exp former: Traditional cigar Used alcohol, marijuana, ritalin, painkillers, cocaine, stimulants, other  drug&amp;EqualTosrchSampleTypeName=Adult">17</a>
+												</td>
+												<td data-title="Number" class="numeric some">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Started, not submitted&amp;EqualTosrchStratumName=Current: Pipe Exp current: Smokeless Exp former: Traditional cigar Used alcohol, marijuana, ritalin, painkillers, cocaine, stimulants, other  drug&amp;EqualTosrchSampleTypeName=Adult">3</a>
+												</td>
+												<td data-title="Number" class="numeric yes"></td>
+												<td data-title="row-total number" class="numeric all">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchStratumName=Current: Pipe Exp current: Smokeless Exp former: Traditional cigar Used alcohol, marijuana, ritalin, painkillers, cocaine, stimulants, other  drug&amp;EqualTosrchSampleTypeName=Adult">20</a>
+												</td>
+
+											</tr>
+											<tr>
+
+												<td data-title="Category">Current: Pipe Exp current: Smokeless Exp former: Traditional cigar Used alcohol, marijuana, ritalin, painkillers, cocaine, stimulants, other drugs</td>
+												<td data-title="Number" class="numeric no">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Not Started&amp;EqualTosrchStratumName=Current: Pipe Exp current: Smokeless Exp former: Traditional cigar Used alcohol, marijuana, ritalin, painkillers, cocaine, stimulants, other drugs&amp;EqualTosrchSampleTypeName=Adult">16</a>
+												</td>
+												<td data-title="Number" class="numeric some">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Started, not submitted&amp;EqualTosrchStratumName=Current: Pipe Exp current: Smokeless Exp former: Traditional cigar Used alcohol, marijuana, ritalin, painkillers, cocaine, stimulants, other drugs&amp;EqualTosrchSampleTypeName=Adult">3</a>
+												</td>
+												<td data-title="Number" class="numeric yes">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Submitted&amp;EqualTosrchStratumName=Current: Pipe Exp current: Smokeless Exp former: Traditional cigar Used alcohol, marijuana, ritalin, painkillers, cocaine, stimulants, other drugs&amp;EqualTosrchSampleTypeName=Adult">1</a>
+												</td>
+												<td data-title="row-total number" class="numeric all">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchStratumName=Current: Pipe Exp current: Smokeless Exp former: Traditional cigar Used alcohol, marijuana, ritalin, painkillers, cocaine, stimulants, other drugs&amp;EqualTosrchSampleTypeName=Adult">20</a>
+												</td>
+
+											</tr>
+											<tr>
+
+												<td data-title="Category">Current: Traditional cigars, Smokeless Exp former: Pipe Used Cocaine, stimulants, other drugs</td>
+												<td data-title="Number" class="numeric no">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Not Started&amp;EqualTosrchStratumName=Current: Traditional cigars, Smokeless Exp former: Pipe Used Cocaine, stimulants, other drugs&amp;EqualTosrchSampleTypeName=Adult">33</a>
+												</td>
+												<td data-title="Number" class="numeric some">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Started, not submitted&amp;EqualTosrchStratumName=Current: Traditional cigars, Smokeless Exp former: Pipe Used Cocaine, stimulants, other drugs&amp;EqualTosrchSampleTypeName=Adult">7</a>
+												</td>
+												<td data-title="Number" class="numeric yes"></td>
+												<td data-title="row-total number" class="numeric all">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchStratumName=Current: Traditional cigars, Smokeless Exp former: Pipe Used Cocaine, stimulants, other drugs&amp;EqualTosrchSampleTypeName=Adult">40</a>
+												</td>
+
+											</tr>
+											<tr>
+
+												<td data-title="Category">Exp current: Cigarillo Recent former: Filtered cigar Used Ritalin, painkillers, stimulants</td>
+												<td data-title="Number" class="numeric no">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Not Started&amp;EqualTosrchStratumName=Exp current: Cigarillo Recent former: Filtered cigar Used Ritalin, painkillers, stimulants&amp;EqualTosrchSampleTypeName=Adult">32</a>
+												</td>
+												<td data-title="Number" class="numeric some">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Started, not submitted&amp;EqualTosrchStratumName=Exp current: Cigarillo Recent former: Filtered cigar Used Ritalin, painkillers, stimulants&amp;EqualTosrchSampleTypeName=Adult">8</a>
+												</td>
+												<td data-title="Number" class="numeric yes"></td>
+												<td data-title="row-total number" class="numeric all">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchStratumName=Exp current: Cigarillo Recent former: Filtered cigar Used Ritalin, painkillers, stimulants&amp;EqualTosrchSampleTypeName=Adult">40</a>
+												</td>
+
+											</tr>
+											<tr>
+
+												<td data-title="Category">Exp current: Filtered cigar Recent former: Cigarillo Ever use: Dissbl Used Cocaine, stimulants</td>
+												<td data-title="Number" class="numeric no">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Not Started&amp;EqualTosrchStratumName=Exp current: Filtered cigar Recent former: Cigarillo Ever use: Dissbl Used Cocaine, stimulants&amp;EqualTosrchSampleTypeName=Adult">33</a>
+												</td>
+												<td data-title="Number" class="numeric some">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Started, not submitted&amp;EqualTosrchStratumName=Exp current: Filtered cigar Recent former: Cigarillo Ever use: Dissbl Used Cocaine, stimulants&amp;EqualTosrchSampleTypeName=Adult">7</a>
+												</td>
+												<td data-title="Number" class="numeric yes"></td>
+												<td data-title="row-total number" class="numeric all">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchStratumName=Exp current: Filtered cigar Recent former: Cigarillo Ever use: Dissbl Used Cocaine, stimulants&amp;EqualTosrchSampleTypeName=Adult">40</a>
+												</td>
+
+											</tr>
+											<tr>
+
+												<td data-title="Category">Exp current: Pipe Recent former: Traditional cigar, Smokeless Used alcohol, stimulants</td>
+												<td data-title="Number" class="numeric no"><a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Not Started&amp;EqualTosrchStratumName=Exp current: Pipe Recent former: Traditional cigar, Smokeless Used alcohol, stimulants&amp;EqualTosrchSampleTypeName=Adult">33</a></td>
+												<td data-title="Number" class="numeric some"><a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Started, not submitted&amp;EqualTosrchStratumName=Exp current: Pipe Recent former: Traditional cigar, Smokeless Used alcohol, stimulants&amp;EqualTosrchSampleTypeName=Adult">7</a></td>
+												<td data-title="Number" class="numeric yes"></td>
+												<td data-title="row-total number" class="numeric all"><a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchStratumName=Exp current: Pipe Recent former: Traditional cigar, Smokeless Used alcohol, stimulants&amp;EqualTosrchSampleTypeName=Adult">40</a></td>
+
+											</tr>
+											<tr>
+
+												<td data-title="Category">Exp current: Snus Exp former: Hookah Recent former: Cig, ENDS Ever: Filtered cigars as blunts. marijuanas</td>
+												<td data-title="Number" class="numeric no">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Not Started&amp;EqualTosrchStratumName=Exp current: Snus Exp former: Hookah Recent former: Cig, ENDS Ever: Filtered cigars as blunts. marijuana&amp;EqualTosrchSampleTypeName=Adult">16</a>
+												</td>
+												<td data-title="Number" class="numeric some">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Started, not submitted&amp;EqualTosrchStratumName=Exp current: Snus Exp former: Hookah Recent former: Cig, ENDS Ever: Filtered cigars as blunts. marijuana&amp;EqualTosrchSampleTypeName=Adult">4</a>
+												</td>
+												<td data-title="Number" class="numeric yes"></td>
+												<td data-title="row-total number" class="numeric all">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchStratumName=Exp current: Snus Exp former: Hookah Recent former: Cig, ENDS Ever: Filtered cigars as blunts. marijuana&amp;EqualTosrchSampleTypeName=Adult">20</a>
+												</td>
+
+											</tr>
+											<tr>
+
+												<td data-title="Category">Exp current: SnusExp former: Hookah Recent former: Cig, ENDS Ever use: Filtered cig ars as blunts Used marijuana</td>
+												<td data-title="Number" class="numeric no">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Not Started&amp;EqualTosrchStratumName=Exp current: SnusExp former: Hookah Recent former: Cig, ENDS Ever use: Filtered cig ars as blunts Used marijuana&amp;EqualTosrchSampleTypeName=Adult">16</a>
+												</td>
+												<td data-title="Number" class="numeric some">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Started, not submitted&amp;EqualTosrchStratumName=Exp current: SnusExp former: Hookah Recent former: Cig, ENDS Ever use: Filtered cig ars as blunts Used marijuana&amp;EqualTosrchSampleTypeName=Adult">4</a>
+												</td>
+												<td data-title="Number" class="numeric yes"></td>
+												<td data-title="row-total number" class="numeric all">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchStratumName=Exp current: SnusExp former: Hookah Recent former: Cig, ENDS Ever use: Filtered cig ars as blunts Used marijuana&amp;EqualTosrchSampleTypeName=Adult">20</a>
+												</td>
+
+											</tr>
+											<tr>
+
+												<td data-title="Category">Never any tobacco Never drugs/alcohol</td>
+												<td data-title="Number" class="numeric no">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Not Started&amp;EqualTosrchStratumName=Never  any tobacco Never  drugs/alcohol&amp;EqualTosrchSampleTypeName=Adult">23</a>
+												</td>
+												<td data-title="Number" class="numeric some">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Started, not submitted&amp;EqualTosrchStratumName=Never  any tobacco Never  drugs/alcohol&amp;EqualTosrchSampleTypeName=Adult">17</a>
+												</td>
+												<td data-title="Number" class="numeric yes"></td>
+												<td data-title="row-total number" class="numeric all">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchStratumName=Never  any tobacco Never  drugs/alcohol&amp;EqualTosrchSampleTypeName=Adult">40</a>
+												</td>
+
+											</tr>
+											<tr class="pivottotal">
+												<td class="total" colspan="1">Total</td>
+												<td class="col-total number no">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Not Started">314</a>
+												</td>
+												<td class="col-total number some">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Started, not submitted">83</a>
+												</td>
+												<td class="col-total number yes">
+													<a href="datagrid.aspx?pgname=adultall&amp;EqualTosrchResultCodeName=Web Survey Submitted">3</a>
+												</td>
+												<td class="col-total number all">
+
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="option" data-type="allItems">
+
+						<div class="ibox-title">
+							<p class="black">Records shown - <span id="ctl00_ContentMain_DataGrid1_lblRecordCount">400</span></p>
+						</div>
+
+						<div class="whiteBubble">
+
+							<div class="row blockTitle secondTable">
+								<div class="no-more-tables">
+									<table class="col-md-12 col-lg-12 col-xs-12  table-condensed cf">
+										<thead class="cf">
+											<tr>
+												<th rowspan="2" scope="column" class="caseNumber">
+													<p class="text-left bold">Case</p>
+												</th>
+												<th colspan="1" class="status">
+													<p class="text-center bold">Overall Status</p>
+												</th>
+												<th rowspan="1" scope="column" class="caseDetails">
+													<p class="text-center bold">Case Details</p>
+												</th>
+												<th rowspan="1" scope="column" class="firstName">
+													<p class="text-center bold">First Name</p>
+												</th>
+												<th rowspan="1" scope="column" class="lastName">
+													<p class="text-center bold">Last Name</p>
+												</th>
+												<th rowspan="2" scope="column" class="lastUpdated">
+													<p class="text-center bold">Last <br>Updated</p>
+												</th>
+												<th rowspan="2" scope="column" class="lastUpdatedBy">
+													<p class="text-center bold">Last <br>Updated By</p>
+												</th>
+											</tr>
+
+										</thead>
+										<tbody>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Started, not submitted
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used  alcohol, marijuana
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Not started
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used  alcohol, marijuana
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Not started
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used  alcohol, marijuana
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Started, not submitted
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used  alcohol, marijuana
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Submitted
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used  alcohol, marijuana
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Not started
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used  alcohol, marijuana
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Started, not submitted
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used  alcohol, marijuana
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Started, not submitted
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used  alcohol, marijuana
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Submitted
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used  alcohol, marijuana
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Not started
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used  alcohol, marijuana
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+
+											<tr>
+												<td colspan="13">
+													<nav>
+														<ul class="pagination">
+															<li>
+
+																<a id="ctl00_ContentMain_DataGrid1_grvTest_ctl103_LinkButton2" aria-label="First" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentMain$DataGrid1$grvTest$ctl103$LinkButton2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">First</a>
+
+															</li>
+															<li>
+																<a id="ctl00_ContentMain_DataGrid1_grvTest_ctl103_LinkButton3" aria-label="Previous" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentMain$DataGrid1$grvTest$ctl103$LinkButton3&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">« Previous</a>
+															</li>
+
+															<li>
+																<a id="ctl00_ContentMain_DataGrid1_grvTest_ctl103_LinkButton4" aria-label="Last" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentMain$DataGrid1$grvTest$ctl103$LinkButton4&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Next »</a>
+															</li>
+															<li>
+																<a id="ctl00_ContentMain_DataGrid1_grvTest_ctl103_LinkButton5" aria-label="Last" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentMain$DataGrid1$grvTest$ctl103$LinkButton5&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Last</a>
+															</li>
+														</ul>
+													</nav>
+													Page 2  of 4
+												</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+
+					<div class="option" data-type="notStarted">
+
+						<div class="ibox-title">
+							<p class="black">Records shown - <span id="ctl00_ContentMain_DataGrid1_lblRecordCount">313</span></p>
+						</div>
+
+						<div class="whiteBubble">
+
+							<div class="row blockTitle secondTable">
+								<div class="no-more-tables">
+									<table class="col-md-12 col-lg-12 col-xs-12  table-condensed cf">
+										<thead class="cf">
+											<tr>
+												<th rowspan="2" scope="column" class="caseNumber">
+													<p class="text-left bold">Case</p>
+												</th>
+												<th colspan="1" class="status">
+													<p class="text-center bold">Overall Status</p>
+												</th>
+												<th rowspan="1" scope="column" class="caseDetails">
+													<p class="text-center bold">Case Details</p>
+												</th>
+												<th rowspan="1" scope="column" class="firstName">
+													<p class="text-center bold">First Name</p>
+												</th>
+												<th rowspan="1" scope="column" class="lastName">
+													<p class="text-center bold">Last Name</p>
+												</th>
+												<th rowspan="2" scope="column" class="lastUpdated">
+													<p class="text-center bold">Last <br>Updated</p>
+												</th>
+												<th rowspan="2" scope="column" class="lastUpdatedBy">
+													<p class="text-center bold">Last <br>Updated By</p>
+												</th>
+											</tr>
+
+										</thead>
+										<tbody>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Not started
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used  alcohol, marijuana
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Not started
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used alcohol, marijuana
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Not started
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Pipe Exp current: Smokeless Exp former: Traditional cigar Used alcohol, marijuana, ritalin, painkillers, cocaine, stimulants, other drug
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Not started
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Traditional cigars, Smokeless Exp former: Pipe Used Cocaine, stimulants, other drugs
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Not started
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Hookah, Snus Exp current: Cig Exp former: ENDS Ever use: Cigarillos as blunts Used alcohol, marijuana, Ritalin
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Not started
+												</td>
+												<td data-title="details" class="numeric details">
+													Exp current: Pipe Recent former: Traditional cigar, Smokeless Used alcohol, stimulants
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Not started
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used  alcohol, marijuana
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Not started
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used  alcohol, marijuana
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Not started
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used  alcohol, marijuana
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Not started
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used  alcohol, marijuana
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td colspan="13">
+													<nav>
+														<ul class="pagination">
+															<li>
+
+																<a id="ctl00_ContentMain_DataGrid1_grvTest_ctl103_LinkButton2" aria-label="First" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentMain$DataGrid1$grvTest$ctl103$LinkButton2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">First</a>
+
+															</li>
+															<li>
+																<a id="ctl00_ContentMain_DataGrid1_grvTest_ctl103_LinkButton3" aria-label="Previous" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentMain$DataGrid1$grvTest$ctl103$LinkButton3&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">« Previous</a>
+															</li>
+
+															<li>
+																<a id="ctl00_ContentMain_DataGrid1_grvTest_ctl103_LinkButton4" aria-label="Last" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentMain$DataGrid1$grvTest$ctl103$LinkButton4&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Next »</a>
+															</li>
+															<li>
+																<a id="ctl00_ContentMain_DataGrid1_grvTest_ctl103_LinkButton5" aria-label="Last" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentMain$DataGrid1$grvTest$ctl103$LinkButton5&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Last</a>
+															</li>
+														</ul>
+													</nav>
+													Page 2  of 4
+												</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="option" data-type="started">
+
+						<div class="ibox-title">
+							<p class="black">Records shown - <span id="ctl00_ContentMain_DataGrid1_lblRecordCount">84</span></p>
+						</div>
+
+						<div class="whiteBubble">
+
+							<div class="row blockTitle secondTable">
+								<div class="no-more-tables">
+									<table class="col-md-12 col-lg-12 col-xs-12  table-condensed cf">
+										<thead class="cf">
+											<tr>
+												<th rowspan="2" scope="column" class="caseNumber">
+													<p class="text-left bold">Case</p>
+												</th>
+												<th colspan="1" class="status">
+													<p class="text-center bold">Overall Status</p>
+												</th>
+												<th rowspan="1" scope="column" class="caseDetails">
+													<p class="text-center bold">Case Details</p>
+												</th>
+												<th rowspan="1" scope="column" class="firstName">
+													<p class="text-center bold">First Name</p>
+												</th>
+												<th rowspan="1" scope="column" class="lastName">
+													<p class="text-center bold">Last Name</p>
+												</th>
+												<th rowspan="2" scope="column" class="lastUpdated">
+													<p class="text-center bold">Last <br>Updated</p>
+												</th>
+												<th rowspan="2" scope="column" class="lastUpdatedBy">
+													<p class="text-center bold">Last <br>Updated By</p>
+												</th>
+											</tr>
+
+										</thead>
+										<tbody>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Started, not submitted
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used  alcohol, marijuana
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Started, not submitted
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used alcohol, marijuana
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Started, not submitted
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Pipe Exp current: Smokeless Exp former: Traditional cigar Used alcohol, marijuana, ritalin, painkillers, cocaine, stimulants, other drug
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Started, not submitted
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Traditional cigars, Smokeless Exp former: Pipe Used Cocaine, stimulants, other drugs
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Started, not submitted
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cigarillo, Filtered cigar Recent former: Hookah Used painkillers
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Started, not submitted
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Pipe Exp current: Smokeless Exp former: Traditional cigar Used alcohol, marijuana, ritalin, painkillers, cocaine, stimulants, other drugs
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Started, not submitted
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used  alcohol, marijuana
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Started, not submitted
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used  alcohol, marijuana
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Started, not submitted
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Pipe Exp current: Smokeless Exp former: Traditional cigar Used alcohol, marijuana, ritalin, painkillers, cocaine, stimulants, other drugs
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Started, not submitted
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cig, ENDS Exp former: Snus Ever use: Traditional cigars as blunts, Dissbl Used  alcohol, marijuana
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+
+											<tr>
+												<td colspan="13">
+													<nav>
+														<ul class="pagination">
+															<li>
+
+																<a id="ctl00_ContentMain_DataGrid1_grvTest_ctl103_LinkButton2" aria-label="First" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentMain$DataGrid1$grvTest$ctl103$LinkButton2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">First</a>
+
+															</li>
+															<li>
+																<a id="ctl00_ContentMain_DataGrid1_grvTest_ctl103_LinkButton3" aria-label="Previous" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentMain$DataGrid1$grvTest$ctl103$LinkButton3&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">« Previous</a>
+															</li>
+
+															<li>
+																<a id="ctl00_ContentMain_DataGrid1_grvTest_ctl103_LinkButton4" aria-label="Last" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentMain$DataGrid1$grvTest$ctl103$LinkButton4&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Next »</a>
+															</li>
+															<li>
+																<a id="ctl00_ContentMain_DataGrid1_grvTest_ctl103_LinkButton5" aria-label="Last" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentMain$DataGrid1$grvTest$ctl103$LinkButton5&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Last</a>
+															</li>
+														</ul>
+													</nav>
+													Page 2  of 4
+												</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+
+					<div class="option" data-type="submitted">
+
+						<div class="ibox-title">
+							<p class="black">Records shown - <span id="ctl00_ContentMain_DataGrid1_lblRecordCount">3</span></p>
+						</div>
+
+						<div class="whiteBubble">
+
+							<div class="row blockTitle secondTable">
+								<div class="no-more-tables">
+									<table class="col-md-12 col-lg-12 col-xs-12  table-condensed cf">
+										<thead class="cf">
+											<tr>
+												<th rowspan="2" scope="column" class="caseNumber">
+													<p class="text-left bold">Case</p>
+												</th>
+												<th colspan="1" class="status">
+													<p class="text-center bold">Overall Status</p>
+												</th>
+												<th rowspan="1" scope="column" class="caseDetails">
+													<p class="text-center bold">Case Details</p>
+												</th>
+												<th rowspan="1" scope="column" class="firstName">
+													<p class="text-center bold">First Name</p>
+												</th>
+												<th rowspan="1" scope="column" class="lastName">
+													<p class="text-center bold">Last Name</p>
+												</th>
+												<th rowspan="2" scope="column" class="lastUpdated">
+													<p class="text-center bold">Last <br>Updated</p>
+												</th>
+												<th rowspan="2" scope="column" class="lastUpdatedBy">
+													<p class="text-center bold">Last <br>Updated By</p>
+												</th>
+											</tr>
+
+										</thead>
+										<tbody>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Submitted
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Pipe Exp current: Smokeless Exp former: Traditional cigar Used alcohol, marijuana, ritalin, painkillers, cocaine, stimulants, other drugs
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Submitted
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cigarillo, Filtered cigar Recent former: Hookah Used painkillers
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td data-title="caseNumber" class="caseNumber">
+													<a href="Survey/CaseDetails.aspx?s=104&amp;p=104" title="view participant">88800001</a>
+												</td>
+												<td data-title="status" class="numeric adultStatus">
+													Submitted
+												</td>
+												<td data-title="details" class="numeric details">
+													Current: Cigarillo, Filtered cigar Recent former: Hookah Used painkillers
+												</td>
+												<td data-title="firstName" class="numeric first">Kale</td>
+												<td data-title="lastName" class="numeric last">Alice</td>
+												<td data-title="updated" class="numeric updated">6/10/2020<br>1:23:00 PM</td>
+												<td data-title="updatedBy" class="numeric updatedBy">CurtisCooper@westat.com</td>
+											</tr>
+											<tr>
+												<td colspan="13">
+													<nav>
+														<ul class="pagination">
+															<li>
+
+																<a id="ctl00_ContentMain_DataGrid1_grvTest_ctl103_LinkButton2" aria-label="First" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentMain$DataGrid1$grvTest$ctl103$LinkButton2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">First</a>
+
+															</li>
+															<li>
+																<a id="ctl00_ContentMain_DataGrid1_grvTest_ctl103_LinkButton3" aria-label="Previous" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentMain$DataGrid1$grvTest$ctl103$LinkButton3&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">« Previous</a>
+															</li>
+
+															<li>
+																<a id="ctl00_ContentMain_DataGrid1_grvTest_ctl103_LinkButton4" aria-label="Last" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentMain$DataGrid1$grvTest$ctl103$LinkButton4&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Next »</a>
+															</li>
+															<li>
+																<a id="ctl00_ContentMain_DataGrid1_grvTest_ctl103_LinkButton5" aria-label="Last" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentMain$DataGrid1$grvTest$ctl103$LinkButton5&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Last</a>
+															</li>
+														</ul>
+													</nav>
+													Page 2  of 4
+												</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
 
 
 			</div>
 
 		</div>
-		<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/sms.js"></script>
-	</body>
+	</div>
 
-	</html>
+</section>
+
+<div class="stickyNav">
+	<ul class="nav flex-column d-flex align-items-center">
+		<li class="nav-item">
+			<a class="nav-link active" href="sms-landing.html" title="Home" tabindex="0">
+				<img class="img-fluid" src="images/Group.svg">
+			</a>
+			<span class="title">HOW TO</span>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="adult.html" title="Adult Summary" tabindex="0">
+				<img class="img-fluid" src="images/Group.svg">
+			</a>
+			<span class="title">ADULT</span>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="youth.html" title="Youth Summary" tabindex="0">
+				<img class="img-fluid" src="images/Group.svg">
+			</a>
+			<span class="title">YOUTH</span>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" ><i class="far fa-compress-arrows-alt"></i></a>
+		</li>
+	</ul>
+</div>
+
+<div class="menu-buttons-768">
+	<ul class="menu-buttons-768-list">
+
+		<li tabindex="0" data-target="#Home"><i class="fas fa-angle-up"></i></li>
+	</ul>
+</div>
+
+
+
+</div>
+
+</div>
+<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/sms.js"></script>
+</body>
+
+</html>
