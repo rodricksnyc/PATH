@@ -3572,7 +3572,7 @@ button.close {
     /* padding: .8em 1em;
     max-width: 100% !important;
     text-align: center !important; */
-
+  max-width: 40rem !important;
     min-height: 4em;
   }
   .no-more-tables .no {
