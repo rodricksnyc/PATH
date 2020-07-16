@@ -1234,8 +1234,8 @@ h1.white.sentMessage {
 
 
 .youth .ibox-tools {
-    color: #1b3765;
-    margin-top: 1em;
+  color: #1b3765;
+  margin-top: 1em;
 }
 
 .secondTable .no-more-tables  td {
@@ -1251,22 +1251,37 @@ h1.white.sentMessage {
 .secondTable .no-more-tables .details {
   text-align:left
 }
+
 .secondTable .no-more-tables .progressStatus {
+  text-align:left;
+  position: relative;
+
+}
+
+.option[data-type="allItems"] .secondTable .no-more-tables .progressStatus {
   text-align:left;
   position: relative;
   padding-left: 2em;
 }
 
- .progressStatus:before {
-   content: '';
-   border-radius: 50%;
+
+
+.option[data-type="allItems"] .progressStatus:before {
+  content: '';
+  border-radius: 50%;
   background: #ececec;
   height: 1.25em;
-    width: 1.25em;
-    left: 5px;
-    position: absolute;
+  width: 1.25em;
+  left: 5px;
+  position: absolute;
 
-  }
+}
+
+.option[data-type="allItems"] .progressStatus.cunt:before {
+  background: red;
+}
+
+
 
 .secondTable .no-more-tables .details {
   text-align:left
@@ -1284,7 +1299,7 @@ h1.white.sentMessage {
 
 .secondTable .no-more-tables a {
 
-color:#00559b !important
+  color:#00559b !important
 
 }
 .secondTable .no-more-tables .pagination {
@@ -3230,17 +3245,17 @@ button.close {
   }
 
   .surveyStatus .justify-content-start {
-  flex-direction: column !important
+    flex-direction: column !important
   }
   .filter h2 {
-      padding: 0%;
-      margin-bottom: 1em;
+    padding: 0%;
+    margin-bottom: 1em;
   }
   .surveyStatus .ibox-tools {
-      margin: 1em 0em;
+    margin: 1em 0em;
   }
   .filterIcon {
-      margin: 0em 0rem 0rem 1rem;
+    margin: 0em 0rem 0rem 1rem;
   }
 
   .no-more-tables td{
@@ -3262,7 +3277,7 @@ button.close {
 
   .surveyStatus .blockTitle {
     padding: 0em 0em;
-}
+  }
 
   .surveyStatus .whiteBubble {
     background: transparent !important;
@@ -3270,15 +3285,15 @@ button.close {
     box-shadow: none !important;
   }
 
-.surveyStatus .justify-content-between {
-  flex-direction: column !important
-}
+  .surveyStatus .justify-content-between {
+    flex-direction: column !important
+  }
 
-.surveyStatus .justify-content-start {
-flex-direction: column !important
-}
+  .surveyStatus .justify-content-start {
+    flex-direction: column !important
+  }
 
-.surveyStatus .flip {
+  .surveyStatus .flip {
     background: #00559b;
     writing-mode: horizontal-tb;
     width: 100%;
@@ -3287,28 +3302,28 @@ flex-direction: column !important
     margin-top: 2px;
     margin-top: 1em;
     margin-bottom:1rem;
-}
+  }
 
-.surveyStatus .filter-attr-list {
+  .surveyStatus .filter-attr-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-bottom: 0em !important;
     margin-left: 0em;
-}
+  }
 
-.filter h2 {
+  .filter h2 {
     padding: 0%;
     margin-bottom: 1em;
-}
-.filterIcon {
+  }
+  .filterIcon {
     margin: 0em 0rem 0rem 1rem;
-}
+  }
 
-.surveyStatus .ibox-tools {
+  .surveyStatus .ibox-tools {
     margin: 1em 0em;
-}
+  }
 
 }
 
@@ -3449,7 +3464,7 @@ flex-direction: column !important
 
 @media (max-width: 767px) {
   .secondTable .no-more-tables .details {
-      text-align: left !important;
+    text-align: left !important;
   }
   .no-more-tables td {
     border: none;
@@ -3460,9 +3475,9 @@ flex-direction: column !important
     text-align: left;
     padding-top: 2.2em;
     min-height: 4em;
-}
+  }
 
-.no-more-tables .no a {
+  .no-more-tables .no a {
     color: #00559b !important;
     background: #ececec;
     padding: .5em;
@@ -3475,9 +3490,9 @@ flex-direction: column !important
     width: 2.25em;
     left: 45%;
     position: relative;
-}
+  }
 
-.no-more-tables .some a {
+  .no-more-tables .some a {
     color: #00559b !important;
     background: #d9f0fe;
     padding: .5em;
@@ -3491,9 +3506,9 @@ flex-direction: column !important
     width: 2.25em;
     left: 45%;
     position: relative;
-}
+  }
 
-.no-more-tables .yes a {
+  .no-more-tables .yes a {
     color: #00559b !important;
     background: #ccf1b0;
     padding: .5em;
@@ -3507,50 +3522,50 @@ flex-direction: column !important
     left: 45%;
     position: relative;
     /* padding: .5em .7rem; */
-}
+  }
 
-.secondTable .no-more-tables td {
+  .secondTable .no-more-tables td {
     padding: .8em 1em;
     max-width: 28rem !important;
     text-align: center !important;
     /* padding-top: 2em; */
     padding-top: 2.4em;
     min-height: 4em;
-}
-.no-more-tables .no {
+  }
+  .no-more-tables .no {
     text-align: center;
-}
-.no-more-tables .some {
+  }
+  .no-more-tables .some {
     text-align: center;
-}
+  }
 
-.no-more-tables .all {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  /* align-content: center; */
-  align-items: center;
-  /* padding: 1em 0em 1em 0em; */
-  padding: 1em 0em;
-}
-
-.no-more-tables .yes {
+  .no-more-tables .all {
     text-align: center;
-}
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    align-items: center;
+    /* padding: 1em 0em 1em 0em; */
+    padding: 1em 0em;
+  }
+
+  .no-more-tables .yes {
+    text-align: center;
+  }
 
 
-.no-more-tables .all:before {
-  color: #00559b !important;
-      font-weight: 700;
-      position: relative;
-      width: 4em;
-      margin: 0em;
-      padding: 0em;
-      top: 0;
-      left: 0;
-}
+  .no-more-tables .all:before {
+    color: #00559b !important;
+    font-weight: 700;
+    position: relative;
+    width: 4em;
+    margin: 0em;
+    padding: 0em;
+    top: 0;
+    left: 0;
+  }
 
-.no-more-tables td:before {
+  .no-more-tables td:before {
     position: absolute;
     top: 10px;
     left: 6px;
@@ -3562,7 +3577,7 @@ flex-direction: column !important
     font-size: 11px;
     text-transform: uppercase;
 
-}
+  }
 
   .block0 .landing-sec {
     padding-top:0px;

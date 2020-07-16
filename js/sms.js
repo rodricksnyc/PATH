@@ -231,50 +231,43 @@ $(document).ready(function () {
   // });
 
 
-
-$('a').click(function() {
-  var gkadi = $('[data-title="Status"]').val();
-
-  var dkadi = "Not started";
-
-  if (gkadi == dkadi) {
-      console.log("a")
-
-  } else {
-      console.log("d")
-  }
+  var thing = 'Web Survey Started, not submitted'
 
 
+  $("td[data-title='Status']").each(function () {
+
+    if ($(this).html() === thing) {
+        $(this).addClass('cunt')
+        alert("weyuvfvuyefwvyiuefwvyi")
+    }
+});
+
+$("[data-title='Status']").each(function() {
+
+
+
+
+
+
+// if($("[data-title='Status']:contains('Started')").length) {
+// $(this).addClass('cunt')
+//     console.log("ifufufuffyfyu")
+//
+//   }
+//
+//   if($("[data-title='Status']:contains('Not')").length) {
+// $(this).addClass('bitch')
+//       console.log("jhvjyu")
+//
+//     }
+//
+//
+//       if($("[data-title='Status']:contains('Submitted')").length) {
+//     $(this).addClass('whire')
+//           console.log("kugiuiuyvvuhvjyu")
+//
+//         }
 
 })
-
-
-var Opt01 = "";
-$('[data-title="Status"]').each(function() {
-	Opt01 = $(this).html();
-
-
-$('a').click(function() {
-
-  if ($(this).html() == 'Not started') {
-    console.log("ifufufuffyfyu")
-    // $(this).closest('.col-lg-2').find('.percentageCircle').css('background', '#fbb03b')
-    // $(this).closest('.newBlocks').find('.progressBarFull').css({
-    // 	'background' : '#fbb03b',
-    // 	'width': '75%'
-    // })
-  }
-
-
-})
-
-
-})
-
-
-
-
-
-
 
 })
