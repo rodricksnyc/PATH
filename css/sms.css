@@ -3436,6 +3436,53 @@ flex-direction: column !important
     min-height: 4em;
 }
 
+.no-more-tables .no a {
+    color: #00559b !important;
+    background: #ececec;
+    padding: .5em;
+    border-radius: 50%;
+    padding: .4em;
+    border-radius: 50%;
+    /* padding: .5em .7rem; */
+    display: block;
+    height: 2.25em;
+    width: 2.25em;
+    left: 45%;
+    position: relative;
+}
+
+.no-more-tables .some a {
+    color: #00559b !important;
+    background: #d9f0fe;
+    padding: .5em;
+    border-radius: 50%;
+    /* padding: .5em .7rem; */
+    padding: .4em;
+    border-radius: 50%;
+    /* padding: .5em .7rem; */
+    display: block;
+    height: 2.25em;
+    width: 2.25em;
+    left: 45%;
+    position: relative;
+}
+
+.no-more-tables .yes a {
+    color: #00559b !important;
+    background: #ccf1b0;
+    padding: .5em;
+    border-radius: 50%;
+    padding: .4em;
+    border-radius: 50%;
+    /* padding: .5em .7rem; */
+    display: block;
+    height: 2.25em;
+    width: 2.25em;
+    left: 45%;
+    position: relative;
+    /* padding: .5em .7rem; */
+}
+
 .secondTable .no-more-tables td {
     padding: .8em 1em;
     max-width: 28rem !important;
