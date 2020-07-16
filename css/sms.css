@@ -3432,7 +3432,7 @@ flex-direction: column !important
     padding-left: 2%;
     white-space: normal;
     text-align: left;
-    padding-top: 2.4em;
+    padding-top: 2.2em;
     min-height: 4em;
 }
 
@@ -3526,7 +3526,7 @@ flex-direction: column !important
 
 .no-more-tables td:before {
     position: absolute;
-    top: 6px;
+    top: 10px;
     left: 6px;
     width: 100%;
     padding-right: 10px;
