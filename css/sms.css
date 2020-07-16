@@ -1261,11 +1261,11 @@ h1.white.sentMessage {
 .option[data-type="allItems"] .secondTable .no-more-tables .progressStatus {
   text-align:left;
   position: relative;
-  padding-left: 2em;
+  /* padding-left: 2em; */
 }
 
 
-
+/* 
 .option[data-type="allItems"] .progressStatus:before {
   content: '';
   border-radius: 50%;
@@ -1275,11 +1275,8 @@ h1.white.sentMessage {
   left: 5px;
   position: absolute;
 
-}
+} */
 
-.option[data-type="allItems"] .progressStatus.cunt:before {
-  background: red;
-}
 
 
 

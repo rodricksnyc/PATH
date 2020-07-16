@@ -211,63 +211,22 @@ $(document).ready(function () {
   $('.option[data-type="notStarted"]').addClass('hidden').show();
   $('.option[data-type="started"]').addClass('hidden').show();
   $('.option[data-type="submitted"]').addClass('hidden').show();
-  //
-  // $('.youthFilters').on('click', function() {
-  //
-  //   if($(".toggleDiv").is(':visible')) {
-  //     $(".button-red").text('FULL CASE STUDY');
-  //     console.log('slide up')
-  //     $(".toggleDiv").slideUp();
-  //
-  //
-  //   }
-  //
-  //   else if ($(".toggleDiv").is(':hidden')){
-  //     $(".button-red").text('READ LESS')
-  //     console.log('slide no')
-  //     $(".toggleDiv").slideDown();
-  //   }
-  //
-  // });
 
 
-  var thing = 'Web Survey Started, not submitted'
+$("td[data-title='Status']").each(function() {
+var textStuff = $(this).html()
+console.log(textStuff)
 
 
-  $("td[data-title='Status']").each(function () {
-
-    if ($(this).html() === thing) {
-        $(this).addClass('cunt')
-        alert("weyuvfvuyefwvyiuefwvyi")
-    }
-});
-
-$("[data-title='Status']").each(function() {
-
-
-
-
-
-
-// if($("[data-title='Status']:contains('Started')").length) {
-// $(this).addClass('cunt')
-//     console.log("ifufufuffyfyu")
-//
-//   }
-//
-//   if($("[data-title='Status']:contains('Not')").length) {
-// $(this).addClass('bitch')
-//       console.log("jhvjyu")
-//
-//     }
-//
-//
-//       if($("[data-title='Status']:contains('Submitted')").length) {
-//     $(this).addClass('whire')
-//           console.log("kugiuiuyvvuhvjyu")
-//
-//         }
+if ($(textStuff).val()  == 'Web Survey Started, not submitted') {
+  alert("sdjhdbv")
+}
 
 })
+
+
+
+
+
 
 })
