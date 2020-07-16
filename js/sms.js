@@ -131,8 +131,6 @@ $(document).ready(function () {
 
   $('.nav-link.active').closest('.nav-item').find('.title').hide()
 
-
-
     $('.nav-item').css({
       'background' : 'none',
       'height': 'auto',
@@ -151,9 +149,6 @@ $(document).ready(function () {
     //   'width' : bubbleHeight
     //
     // })
-
-
-
 
   }
 
@@ -175,9 +170,7 @@ $(document).ready(function () {
 
 
   $('.menu-buttons-768-list li').click(function() {
-
     $(this).addClass('activated')
-
     setTimeout(function(){
 
       $('.menu-buttons-768-list li').removeClass('activated')
@@ -186,9 +179,7 @@ $(document).ready(function () {
   })
 
 
-
   $('.menu-buttons-768-list li').on('keypress', function (e) {
-
     e.preventDefault();
     scrollfn($(this).attr('data-target'));
   });
@@ -238,6 +229,50 @@ $(document).ready(function () {
   //   }
   //
   // });
+
+
+
+$('a').click(function() {
+  var gkadi = $('[data-title="Status"]').val();
+
+  var dkadi = "Not started";
+
+  if (gkadi == dkadi) {
+      console.log("a")
+
+  } else {
+      console.log("d")
+  }
+
+
+
+})
+
+
+var Opt01 = "";
+$('[data-title="Status"]').each(function() {
+	Opt01 = $(this).html();
+
+
+$('a').click(function() {
+
+  if ($(this).html() == 'Not started') {
+    console.log("ifufufuffyfyu")
+    // $(this).closest('.col-lg-2').find('.percentageCircle').css('background', '#fbb03b')
+    // $(this).closest('.newBlocks').find('.progressBarFull').css({
+    // 	'background' : '#fbb03b',
+    // 	'width': '75%'
+    // })
+  }
+
+
+})
+
+
+})
+
+
+
 
 
 

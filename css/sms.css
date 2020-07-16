@@ -1254,6 +1254,7 @@ h1.white.sentMessage {
 .secondTable .no-more-tables .progressStatus {
   text-align:left;
   position: relative;
+  padding-left: 2em;
 }
 
  .progressStatus:before {
@@ -1262,7 +1263,7 @@ h1.white.sentMessage {
   background: #ececec;
   height: 1.25em;
     width: 1.25em;
-    left: 0;
+    left: 5px;
     position: absolute;
 
   }
@@ -1272,13 +1273,13 @@ h1.white.sentMessage {
 }
 
 .secondTable .no-more-tables .details {
-  padding: .5em 0em;
-  border-right: none;
+  /* padding: .5em 0em; */
+  /* border-right: none; */
 }
 
 .secondTable .no-more-tables .status {
   padding: .5em 0em;
-  border-right: none;
+  /* border-right: none; */
 }
 
 .secondTable .no-more-tables a {
@@ -3196,7 +3197,13 @@ button.close {
 
 }
 
+@media (min-width:1600px)  {
+  .container {
+    max-width: 1400px !important;
 
+  }
+
+}
 
 @media (max-width: 1320px) and (min-width: 1130px) {
 
