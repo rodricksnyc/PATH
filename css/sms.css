@@ -3422,7 +3422,9 @@ flex-direction: column !important
 }
 
 @media (max-width: 767px) {
-
+  .secondTable .no-more-tables .details {
+      text-align: left !important;
+  }
   .no-more-tables td {
     border: none;
     border-bottom: 1px solid #eee;
@@ -3430,6 +3432,15 @@ flex-direction: column !important
     padding-left: 2%;
     white-space: normal;
     text-align: left;
+    padding-top: 2.4em;
+    min-height: 4em;
+}
+
+.secondTable .no-more-tables td {
+    padding: .8em 1em;
+    max-width: 28rem !important;
+    text-align: center !important;
+    /* padding-top: 2em; */
     padding-top: 2.4em;
     min-height: 4em;
 }
@@ -3474,7 +3485,10 @@ flex-direction: column !important
     padding-right: 10px;
     white-space: nowrap;
     text-align: center;
-    font-weight: bold;
+    font-weight: 100;
+    font-size: 11px;
+    text-transform: uppercase;
+
 }
 
   .block0 .landing-sec {
