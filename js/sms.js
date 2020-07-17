@@ -13,12 +13,6 @@ $(document).ready(function () {
   })
 
 
-  $('a').each(function() {
-
-
-
-  })
-
 
   var path = window.location.href;
 
@@ -233,6 +227,50 @@ $(document).ready(function () {
 //
 // }
 // })
+
+
+
+
+//  $("td[data-title='Status']").each(function() {
+//
+//
+//  if ($('.progressStatus').html() == 'Web Survey Started, not submitted') {
+//  console.log("eiufgierugivgirgvivugrirgeiuvgigr")
+//
+// }
+//
+//
+//
+//  if ($('.progressStatus').html() == 50) {
+//  console.log("bitch")
+//
+// }
+//
+//
+//
+// })
+
+
+
+// var Opt01 = "";
+// $('td').each(function() {
+// 	Opt01 = $(this).text();
+//
+//
+//
+// 	if ($(this).text() == 50) {
+//     console.log("seubdsiubv")
+// 		$(this).css('background', 'red')
+// 	}
+//
+//
+//   if ($(this).text() == 'Web Survey Started, not submitted') {
+//     $(this).css('background', 'red')
+//   }
+//
+//
+// });
+
 
 
 
