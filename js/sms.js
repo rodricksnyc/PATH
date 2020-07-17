@@ -13,6 +13,11 @@ $(document).ready(function () {
   })
 
 
+  $('a').each(function() {
+
+
+
+  })
 
 
   var path = window.location.href;
@@ -29,8 +34,6 @@ $(document).ready(function () {
         'min-height' : '5rem',
         'width': '-webkit-fill-available'
       })
-
-
 
     }
     else {
@@ -213,18 +216,23 @@ $(document).ready(function () {
   $('.option[data-type="submitted"]').addClass('hidden').show();
 
 
-$("td[data-title='Status']").each(function() {
-var textStuff = $(this).html()
-console.log(textStuff)
-
-
-if ($(textStuff).val()  == 'Web Survey Started, not submitted') {
-  alert("sdjhdbv")
-}
-
-})
-
-
+// $("td[data-title='Status']").each(function() {
+// // var textStuff = $(this).html()
+// // console.log(textStuff)
+// //
+// //
+// // if ($(textStuff).val()  == 'Web Survey Started, not submitted') {
+// //   alert("sdjhdbv")
+// // }
+//
+// })
+//
+// $('a').click(function() {
+//   if ($('.progressStatus').html() == 'Web Survey Started, not submitted') {
+//
+//
+// }
+// })
 
 
 

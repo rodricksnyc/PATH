@@ -489,6 +489,9 @@ a:hover {
   margin-left:1em;
 }
 
+
+
+
 .light {
   font-weight:300 !important;
 }
@@ -513,6 +516,7 @@ a:hover {
   margin: 0rem .5rem;
   font-size: 14px;
 }
+
 
 .ibox-tools label {
   margin-bottom:0rem;
@@ -3496,6 +3500,12 @@ button.close {
     min-height: 4em;
   } */
 
+  .filter-attr-list a {
+
+    margin: 0rem .2rem;
+
+  }
+
 
   .no-more-tables td {
     border: none;
@@ -3530,7 +3540,8 @@ button.close {
     height: 2.25em;
     width: 2.25em;
     /* left: 45%; */
-        left:80%;
+    /* left:80%; */
+    left:70%;
     position: relative;
   }
 
@@ -3547,7 +3558,8 @@ button.close {
     height: 2.25em;
     width: 2.25em;
     /* left: 45%; */
-    left:80%;
+    /* left:80%; */
+    left:70%;
     position: relative;
   }
 
@@ -3564,7 +3576,8 @@ button.close {
     width: 2.25em;
     /* left: 45%; */
     position: relative;
-    left:80%;
+    /* left:80%; */
+    left:70%;
     /* padding: .5em .7rem; */
   }
 
@@ -3600,7 +3613,8 @@ button.close {
     /* align-content: center; */
     align-items: center;
     /* padding: 1em 0em 1em 0em; */
-    padding: 1em 1.2em;
+    /* padding: 1em 1.2em; */
+    padding: 1em 2.8em;
 }
 
   .no-more-tables .yes {
@@ -3635,7 +3649,8 @@ button.close {
   .no-more-tables td:before {
     position: absolute;
     top: 40%;
-    left: 10px;
+    /* left: 10px; */
+    left:25px;
     width: 45%;
     padding-right: 10px;
     white-space: nowrap;
