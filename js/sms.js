@@ -13,6 +13,43 @@ $(document).ready(function () {
   })
 
 
+  $(window).on('load', function() {
+
+    if ($('.wrapper').hasClass('adult-participant')) {
+
+      $('.nav-link:eq(1)').addClass('active')
+      $('.nav-link:eq(2)').removeClass('active')
+      $('.nav-link:eq(0)').removeClass('active')
+
+      var parent = $('.nav-link:eq(1)').closest('.nav-item')
+      var span = $('.nav-link:eq(1)').closest('.nav-item').find('span')
+
+    $('<div class="greenBubble"></div>').appendTo(parent).after(span);
+    }
+
+  })
+
+
+  $(window).on('load', function() {
+
+    if ($('.wrapper').hasClass('youth-participant')) {
+
+
+      $('.nav-link:eq(2)').addClass('active')
+      $('.nav-link:eq(1)').removeClass('active')
+      $('.nav-link:eq(0)').removeClass('active')
+      var parent = $('.nav-link:eq(2)').closest('.nav-item')
+      var span = $('.nav-link:eq(2)').closest('.nav-item').find('span')
+
+    $('<div class="greenBubble"></div>').appendTo(parent).after(span)
+
+    $('.nav-link:eq(1)').html('<i class="fas fa-briefcase"></i>')
+
+
+  }
+
+  })
+
 
   var path = window.location.href;
 
@@ -68,6 +105,9 @@ $(document).ready(function () {
       $('.nav-link:eq(2)  img').remove()
       $('.nav-link:eq(2)').html('<i class="fas fa-backpack"></i>')
     }
+
+
+
 
 
 
