@@ -92,6 +92,11 @@
         padding: 0em 0em .5em 1em;
 }
 
+.noPadding {
+  padding:0em !important;
+  margin-bottom:0em;
+}
+
 .adult-participant .whiteBubble {
   padding:1em
 }
