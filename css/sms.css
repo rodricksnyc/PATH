@@ -77,11 +77,24 @@
 }
 
 .grayLine {
-  border-right:1px solid #dedede
+  border-right:1px solid #dedede;
+  height: auto;
+min-height: 10em;
 }
 
+
+
+/* .grayLine {
+  background: #dedede;
+    writing-mode: tb-rl;
+    width: 1px;
+    height: 10em;
+
+} */
+
 .grayUnderline {
-  border-bottom:1px solid #dedede
+  border-bottom:1px solid #dedede;
+
 }
 
 .padding1 {
@@ -105,7 +118,21 @@
     color: #00559b!important;
     font-size:18px;
     margin-top:.6em;
-    border:2px solid #00559b
+    border:2px solid #00559b;
+    -webkit-transition: all .3s ease-in-out;
+-o-transition: all .3s ease-in-out;
+transition: all .3s ease-in-out
+}
+
+
+.btn.btn-primary.new:hover {
+    background: #00559b!important;
+    border-color: #00559b!important;
+    color: white!important;
+    -webkit-transition: all .3s ease-in-out;
+-o-transition: all .3s ease-in-out;
+transition: all .3s ease-in-out
+
 }
 
 .noPadding {
@@ -3344,6 +3371,30 @@ button.close {
 }
 
 @media (max-width:991px) {
+.lightGreen {
+      margin-right: 0em;
+}
+  .userInfo {
+  flex-direction: column;
+  align-items: center !important
+  }
+
+  .adult-participant .align-items-start {
+    align-items: center !important
+  }
+
+  .man {
+    font-size:3rem;
+  }
+
+  .light {
+    font-size:14px;
+  }
+
+  .padding1 {
+    padding: 1em;
+    margin-top: 0em;
+}
 
   .no-more-tables tr {
     border: none;
@@ -3542,6 +3593,16 @@ button.close {
 }
 
 @media (max-width: 767px) {
+.grayLine {
+min-height: 0em;
+border-right: none;
+}
+.adult-participant .justify-content-start {
+  justify-content: center !important
+}
+
+
+
   .secondTable .no-more-tables .details {
     text-align: left !important;
   }
