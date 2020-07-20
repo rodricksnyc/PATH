@@ -47,6 +47,69 @@
 
 .hiddenDiv {
   display: none;
+  max-width:95em;
+  padding:1em;
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+
+.youthFilters .form-check-inline {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+  align-items: baseline;
+  padding-left: 0;
+  margin-right: .75rem;
+}
+
+.youthFilters input[type="checkbox"] {
+  margin: 0px 35px !important;
+}
+
+.youthFilters label {
+  display: inline-block;
+  margin-bottom: .5rem;
+  margin-left: 2em;
+}
+.mr1 {
+  margin-right:1em;
+}
+
+.compress {
+  font-family: "Font Awesome 5 Pro";
+  content: "\f78c";
+}
+
+.scroll_checkboxes {
+  height: 120px;
+  padding: 1em;
+  overflow: auto;
+  border: 1px solid #00559b;
+  background: white;
+}
+
+
+.youthFilters span {
+  padding: .5em 1em .5em 1em;
+
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+.youthFilters {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
+
+@media (min-width:1320px) {
+  .youthFilters {
+    margin-top: -2.2em;
+    margin-right:-1em;
+  }
 }
 
 .user:before {
@@ -87,7 +150,7 @@
 }
 
 .rel {
-    position: relative;
+  position: relative;
 }
 
 
@@ -1440,10 +1503,8 @@ position: absolute;
 }
 
 
-.youthFilters {
-  margin-left:2em;
 
-}
+
 
 
 @media only screen and (max-width: 800px) {
@@ -3377,8 +3438,15 @@ button.close {
     flex-direction: column !important
   }
 
-  .surveyStatus .justify-content-start {
+
+
+  .surveyStatus  .justify-content-start {
     flex-direction: column !important
+  }
+
+  .surveyStatus .checkboxType.justify-content-start {
+    justify-content: flex-start!important;
+    flex-direction: row !important
   }
   .filter h2 {
     padding: 0%;
@@ -3567,6 +3635,16 @@ button.close {
 
   }
 
+  .youthFilters input[type="checkbox"] {
+    margin: 0px 55px !important;
+  }
+
+
+  .surveyStatus .checkboxType.justify-content-start {
+    justify-content: flex-start!important;
+    flex-direction: row !important
+  }
+
   .no-more-tables .no a {
     color: #00559b !important;
     background: #ececec;
@@ -3752,6 +3830,39 @@ button.close {
     justify-content: center !important
   }
 
+  .surveyStatus .checkboxType.justify-content-start {
+    justify-content: flex-start!important;
+    flex-direction: row !important
+  }
+
+  .surveyStatus .checkboxType .small {
+    font-size:9px;
+    margin:0em !important
+  }
+
+  .youthFilters input[type="checkbox"] {
+    margin: 0px 32px !important;
+  }
+
+  .youthFilters span {
+    padding: .5em 0em .5em 0em;
+
+    font-size: 13px;
+    margin-top: 1em;
+  }
+
+  .filter-attr-list a {
+    font-size: 13px;
+  }
+
+  .filter-attr-list a.NavItem--is-active{
+    font-size: 13px;
+  }
+
+  .surveyStatus .ibox-tools {
+    margin-bottom:0em;
+  }
+
 
   .secondTable .no-more-tables .details {
     text-align: left !important;
@@ -3881,7 +3992,10 @@ button.close {
     align-items: center;
     /* padding: 1em 0em 1em 0em; */
     /* padding: 1em 1.2em; */
-    padding: 1em 2.8em;
+    /* padding: 1em 2.8em; */
+    padding: 1em 0em;
+    padding-right: 10%;
+
   }
 
   .no-more-tables .yes {
@@ -4887,8 +5001,9 @@ body{
     padding-left: 0em;
     padding-top: .5em;
     padding-bottom: .5em;
-    padding-right: 4em;
-    max-height: 3.4em
+    padding-right: 6em;
+    max-height: 3em;
+
   }
 
 

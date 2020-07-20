@@ -13,12 +13,31 @@ $(document).ready(function () {
   })
 
 
-$('.youthFilters').click(function() {
 
-  $('.hiddenDiv').slideToggle()
-})
+  $('.dropToggle').on('click', function(e) {
+e.stopPropagation()
+
+  if($(".hiddenDiv").is(':visible')) {
+
+    $('.hiddenDiv').css('background', 'transparent')
+    $('.youthFilters span').css('background', 'transparent')
+
+   $(this).find('i').replaceWith('<i class="far fa-expand-arrows-alt"></i>')
+    $(".hiddenDiv").slideUp();
 
 
+  }
+
+  else if ($(".hiddenDiv").is(':hidden')){
+    e.stopPropagation()
+
+     $(this).find('i').replaceWith('<i class="far fa-compress-arrows-alt"></i>')
+     $('.hiddenDiv').css('background', '#d9f0fe')
+     $('.youthFilters span').css('background', '#d9f0fe')
+    $(".hiddenDiv").slideDown();
+  }
+
+});
 
 
 
@@ -26,22 +45,19 @@ $('.youthFilters').click(function() {
 
 
 
-    if ($('.wrapper').hasClass('adult-participant')) {
+  if ($('.wrapper').hasClass('adult-participant')) {
 
+    $('.nav-link:eq(1)').addClass('active')
+    $('.nav-link:eq(2)').removeClass('active')
+    $('.nav-link:eq(0)').removeClass('active')
 
-
-
-      $('.nav-link:eq(1)').addClass('active')
-      $('.nav-link:eq(2)').removeClass('active')
-      $('.nav-link:eq(0)').removeClass('active')
-
-      var parent = $('.nav-link:eq(1)').closest('.nav-item')
-      var span = $('.nav-link:eq(1)').closest('.nav-item').find('span')
+    var parent = $('.nav-link:eq(1)').closest('.nav-item')
+    var span = $('.nav-link:eq(1)').closest('.nav-item').find('span')
 
     $('<div class="greenBubble"></div>').appendTo(parent).after(span);
 
-      $(span).hide()
-    }
+    $(span).hide()
+  }
 
 
 
@@ -52,23 +68,23 @@ $('.youthFilters').click(function() {
   //
   // $('a').on('click', function() {
 
-    if ($('.wrapper').hasClass('youth-participant')) {
+  if ($('.wrapper').hasClass('youth-participant')) {
 
-      $('.nav-link:eq(2)').addClass('active')
-      $('.nav-link:eq(1)').removeClass('active')
-      $('.nav-link:eq(0)').removeClass('active')
-      var parent = $('.nav-link:eq(2)').closest('.nav-item')
-      var span = $('.nav-link:eq(2)').closest('.nav-item').find('span')
+    $('.nav-link:eq(2)').addClass('active')
+    $('.nav-link:eq(1)').removeClass('active')
+    $('.nav-link:eq(0)').removeClass('active')
+    var parent = $('.nav-link:eq(2)').closest('.nav-item')
+    var span = $('.nav-link:eq(2)').closest('.nav-item').find('span')
 
     //     var img = $('.nav-link:eq(2)').closest('.nav-item').find('img')
     //
     // $('<div class="greenBubble"></div>').appendTo(parent).after(img)
 
-        $(span).hide()
+    $(span).hide()
 
-        $('<div class="greenBubble"></div>').appendTo(parent).after(span);
+    $('<div class="greenBubble"></div>').appendTo(parent).after(span);
 
-          $(span).hide()
+    $(span).hide()
     //
     // $('.nav-link:eq(2)  img').remove()
     //
@@ -199,7 +215,7 @@ $('.youthFilters').click(function() {
   if ($(document).innerWidth() <= 767) {
 
 
-  $('.nav-link.active').closest('.nav-item').find('.title').hide()
+    $('.nav-link.active').closest('.nav-item').find('.title').hide()
 
     $('.nav-item').css({
       'background' : 'none',
@@ -257,23 +273,23 @@ $('.youthFilters').click(function() {
 
 
   $('.NavItem').click(function(evt) {
-  evt.preventDefault();
-  evt.stopPropagation();
+    evt.preventDefault();
+    evt.stopPropagation();
 
 
 
-  var navItem = $(this),
-  allNavItems = $('.NavItem'),
-  activeClass = 'NavItem--is-active';
+    var navItem = $(this),
+    allNavItems = $('.NavItem'),
+    activeClass = 'NavItem--is-active';
 
-  allNavItems.removeClass(activeClass);
-  navItem.addClass(activeClass);
+    allNavItems.removeClass(activeClass);
+    navItem.addClass(activeClass);
 
-  var type = $(this).data('type');
-  $('.option').addClass('hidden');
-  $('.option[data-type="'+type+'"]').removeClass('hidden');
+    var type = $(this).data('type');
+    $('.option').addClass('hidden');
+    $('.option[data-type="'+type+'"]').removeClass('hidden');
 
-})
+  })
 
 
 
@@ -283,66 +299,66 @@ $('.youthFilters').click(function() {
   $('.option[data-type="submitted"]').addClass('hidden').show();
 
 
-// $("td[data-title='Status']").each(function() {
-// // var textStuff = $(this).html()
-// // console.log(textStuff)
-// //
-// //
-// // if ($(textStuff).val()  == 'Web Survey Started, not submitted') {
-// //   alert("sdjhdbv")
-// // }
-//
-// })
-//
-// $('a').click(function() {
-//   if ($('.progressStatus').html() == 'Web Survey Started, not submitted') {
-//
-//
-// }
-// })
+  // $("td[data-title='Status']").each(function() {
+  // // var textStuff = $(this).html()
+  // // console.log(textStuff)
+  // //
+  // //
+  // // if ($(textStuff).val()  == 'Web Survey Started, not submitted') {
+  // //   alert("sdjhdbv")
+  // // }
+  //
+  // })
+  //
+  // $('a').click(function() {
+  //   if ($('.progressStatus').html() == 'Web Survey Started, not submitted') {
+  //
+  //
+  // }
+  // })
 
 
 
 
-//  $("td[data-title='Status']").each(function() {
-//
-//
-//  if ($('.progressStatus').html() == 'Web Survey Started, not submitted') {
-//  console.log("eiufgierugivgirgvivugrirgeiuvgigr")
-//
-// }
-//
-//
-//
-//  if ($('.progressStatus').html() == 50) {
-//  console.log("bitch")
-//
-// }
-//
-//
-//
-// })
+  //  $("td[data-title='Status']").each(function() {
+  //
+  //
+  //  if ($('.progressStatus').html() == 'Web Survey Started, not submitted') {
+  //  console.log("eiufgierugivgirgvivugrirgeiuvgigr")
+  //
+  // }
+  //
+  //
+  //
+  //  if ($('.progressStatus').html() == 50) {
+  //  console.log("bitch")
+  //
+  // }
+  //
+  //
+  //
+  // })
 
 
 
-// var Opt01 = "";
-// $('td').each(function() {
-// 	Opt01 = $(this).text();
-//
-//
-//
-// 	if ($(this).text() == 50) {
-//     console.log("seubdsiubv")
-// 		$(this).css('background', 'red')
-// 	}
-//
-//
-//   if ($(this).text() == 'Web Survey Started, not submitted') {
-//     $(this).css('background', 'red')
-//   }
-//
-//
-// });
+  // var Opt01 = "";
+  // $('td').each(function() {
+  // 	Opt01 = $(this).text();
+  //
+  //
+  //
+  // 	if ($(this).text() == 50) {
+  //     console.log("seubdsiubv")
+  // 		$(this).css('background', 'red')
+  // 	}
+  //
+  //
+  //   if ($(this).text() == 'Web Survey Started, not submitted') {
+  //     $(this).css('background', 'red')
+  //   }
+  //
+  //
+  // });
 
 
 
