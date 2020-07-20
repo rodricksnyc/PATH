@@ -25,9 +25,11 @@ $(document).ready(function () {
       var span = $('.nav-link:eq(1)').closest('.nav-item').find('span')
 
     $('<div class="greenBubble"></div>').appendTo(parent).after(span);
+
+      $(span).hide()
     }
 
-    $(span).hide()
+
 
 
 
