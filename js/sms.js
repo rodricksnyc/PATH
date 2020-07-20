@@ -27,6 +27,10 @@ $(document).ready(function () {
     $('<div class="greenBubble"></div>').appendTo(parent).after(span);
     }
 
+    $(span).hide()
+
+
+
   })
 
 
@@ -41,10 +45,20 @@ $(document).ready(function () {
       var parent = $('.nav-link:eq(2)').closest('.nav-item')
       var span = $('.nav-link:eq(2)').closest('.nav-item').find('span')
 
-    $('<div class="greenBubble"></div>').appendTo(parent).after(span)
+        var img = $('.nav-link:eq(2)').closest('.nav-item').find('img')
 
+    $('<div class="greenBubble"></div>').appendTo(parent).after(img)
+
+        $(span).hide()
+        //   if ($('.nav-link:eq(2)').hasClass('active')) {
+        //     $('<img class="img-fluid" src="images/child.svg">').appendTo(parent).before(span)
+        //
+        // }
+        //
     $('.nav-link:eq(1)').html('<i class="fas fa-briefcase"></i>')
+    $('<a class="nav-link" href="youth.html" title="Youth Summary" tabindex="0"><img class="img-fluid" src="images/child.svg"></a>').appendTo(parent).before(span).css('transform' , 'scale(1.3)')
 
+    $('.nav-link:eq(2)').html('<i class="fas fa-backpack"></i>').remove()
 
   }
 
@@ -94,19 +108,21 @@ $(document).ready(function () {
     }
 
 
-    if (!$('.nav-link:eq(2)').hasClass('active') && $('.nav-link:eq(0)').hasClass('active')) {
+    if (!$('.nav-link:eq(2)').hasClass('active') && $('.nav-link:eq(0)').hasClass('active') && !$('.nav-link:eq(1)').hasClass('active')) {
+
+
 
       $('.nav-link:eq(2)  img').remove()
       $('.nav-link:eq(2)').html('<i class="fas fa-backpack"></i>')
     }
 
-    if (!$('.nav-link:eq(2)').hasClass('active') && $('.nav-link:eq(1)').hasClass('active')) {
+
+
+    if ( $('.nav-link:eq(1)').hasClass('active') && !$('.nav-link:eq(0)').hasClass('active')) {
 
       $('.nav-link:eq(2)  img').remove()
       $('.nav-link:eq(2)').html('<i class="fas fa-backpack"></i>')
     }
-
-
 
 
 
