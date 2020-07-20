@@ -13,6 +13,15 @@ $(document).ready(function () {
   })
 
 
+$('.youthFilters').click(function() {
+
+  $('.hiddenDiv').slideToggle()
+})
+
+
+
+
+
   // $('a').on('click', function() {
 
 
