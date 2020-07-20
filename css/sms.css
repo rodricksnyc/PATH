@@ -1341,17 +1341,22 @@ h1.white.sentMessage {
 
 }
 
-.no-more-tables .no a {
+.no-more-tables a {
   color:#00559b !important;
 
 }
+
+.no-more-tables a:hover {
+text-decoration: underline;
+
+}
+
 
 .no-more-tables .no  {
   text-align: right
 }
 
 .no-more-tables .all a {
-  color:#00559b !important;
   font-weight:700;
 
 }
@@ -1361,19 +1366,13 @@ h1.white.sentMessage {
 }
 
 
-.no-more-tables .some a {
-  color:#1b3765 !important;
 
-}
 
 .no-more-tables .some {
   text-align: right
 }
 
-.no-more-tables .yes a {
-  color:#1b3765 !important;
 
-}
 
 .no-more-tables .yes {
   text-align: right
