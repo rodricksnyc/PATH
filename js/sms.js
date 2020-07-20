@@ -13,9 +13,14 @@ $(document).ready(function () {
   })
 
 
-  $(window).on('load', function() {
+  // $('a').on('click', function() {
+
+
 
     if ($('.wrapper').hasClass('adult-participant')) {
+
+
+
 
       $('.nav-link:eq(1)').addClass('active')
       $('.nav-link:eq(2)').removeClass('active')
@@ -32,14 +37,13 @@ $(document).ready(function () {
 
 
 
+  //
+  // })
 
-  })
-
-
-  $(window).on('load', function() {
+  //
+  // $('a').on('click', function() {
 
     if ($('.wrapper').hasClass('youth-participant')) {
-
 
       $('.nav-link:eq(2)').addClass('active')
       $('.nav-link:eq(1)').removeClass('active')
@@ -47,24 +51,26 @@ $(document).ready(function () {
       var parent = $('.nav-link:eq(2)').closest('.nav-item')
       var span = $('.nav-link:eq(2)').closest('.nav-item').find('span')
 
-        var img = $('.nav-link:eq(2)').closest('.nav-item').find('img')
-
-    $('<div class="greenBubble"></div>').appendTo(parent).after(img)
+    //     var img = $('.nav-link:eq(2)').closest('.nav-item').find('img')
+    //
+    // $('<div class="greenBubble"></div>').appendTo(parent).after(img)
 
         $(span).hide()
-        //   if ($('.nav-link:eq(2)').hasClass('active')) {
-        //     $('<img class="img-fluid" src="images/child.svg">').appendTo(parent).before(span)
-        //
-        // }
-        //
-    $('.nav-link:eq(1)').html('<i class="fas fa-briefcase"></i>')
-    $('<a class="nav-link" href="youth.html" title="Youth Summary" tabindex="0"><img class="img-fluid" src="images/child.svg"></a>').appendTo(parent).before(span).css('transform' , 'scale(1.3)')
 
-    $('.nav-link:eq(2)').html('<i class="fas fa-backpack"></i>').remove()
+        $('<div class="greenBubble"></div>').appendTo(parent).after(span);
+
+          $(span).hide()
+    //
+    // $('.nav-link:eq(2)  img').remove()
+    //
+    // $('.nav-link:eq(1)').html('<i class="fas fa-briefcase"></i>')
+    // $('<a class="nav-link" href="youth.html" title="Youth Summary" tabindex="0"><img class="img-fluid" src="images/child.svg"></a>').appendTo(parent).before(span).css('transform' , 'scale(1.3)')
+
+    // $('.nav-link:eq(2)').html('<i class="fas fa-backpack"></i>').remove()
 
   }
 
-  })
+  // })
 
 
   var path = window.location.href;
