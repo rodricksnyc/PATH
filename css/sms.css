@@ -145,6 +145,11 @@ transition: all .3s ease-in-out
   padding:1em
 }
 
+.youth-participant .whiteBubble {
+  padding:1em
+}
+
+
 .man {
   font-size: 4rem;
   color: #00559b !important;
