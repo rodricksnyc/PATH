@@ -1330,7 +1330,7 @@ h1.white.sentMessage {
   padding:.8em 1em;
   border-right: 1px solid #dee2e6;
   color: #1b3765 !important;
-  font-weight: 100 !important;
+  font-weight: 300 !important;
   border-top: 1px solid #dee2e6;
   max-width: 40rem;
 }
@@ -4036,7 +4036,7 @@ button.close {
     padding-right: 10px;
     white-space: nowrap;
     text-align: left;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 11px;
     text-transform: uppercase;
     /* padding: 1em 0em; */
