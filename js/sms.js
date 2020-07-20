@@ -214,6 +214,22 @@ e.stopPropagation()
 
   if ($(document).innerWidth() <= 767) {
 
+    var Opt01 = "";
+    $('.no-more-tables a').each(function() {
+    	Opt01 = $(this).html();
+
+    	if ($(this).html() > 99) {
+
+        $(this).css({
+          'padding':'.5em .3em',
+          'height':'2.55em',
+          'width' : '2.55em'
+        })
+    }
+
+  })
+
+
 
     $('.nav-link.active').closest('.nav-item').find('.title').hide()
 
