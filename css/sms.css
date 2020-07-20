@@ -3397,6 +3397,11 @@ button.close {
     align-items: center !important
   }
 
+  .youth-participant .align-items-start {
+    align-items: center !important
+  }
+
+
   .man {
     font-size:3rem;
   }
@@ -3615,6 +3620,9 @@ border-right: none;
   justify-content: center !important
 }
 
+.youth-participant .justify-content-start {
+  justify-content: center !important
+}
 
 
   .secondTable .no-more-tables .details {
