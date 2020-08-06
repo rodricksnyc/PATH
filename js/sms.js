@@ -13,31 +13,42 @@ $(document).ready(function () {
   })
 
 
+var toggle = function() {
 
-  $('.dropToggle').on('click', function(e) {
-e.stopPropagation()
+  //
+  // $('.dropToggle').on('click', function(e) {
+    // e.stopPropagation()
 
   if($(".hiddenDiv").is(':visible')) {
-
-    $('.hiddenDiv').css('background', 'transparent')
+    //
+    // $('.hiddenDiv').css('background', 'transparent')
     $('.youthFilters span').css('background', 'transparent')
 
-   $(this).find('i').replaceWith('<i class="far fa-expand-arrows-alt"></i>')
-    $(".hiddenDiv").slideUp();
+   $(this).find('.expand i').replaceWith('<i class="far fa-expand-alt"></i>')
+    $(".hiddenDiv").slideUp().css('display', 'flex');
 
 
   }
 
   else if ($(".hiddenDiv").is(':hidden')){
-    e.stopPropagation()
+    // e.stopPropagation()
 
-     $(this).find('i').replaceWith('<i class="far fa-compress-arrows-alt"></i>')
-     $('.hiddenDiv').css('background', '#d9f0fe')
+     $(this).find('.expand i').replaceWith('<i class="far fa-compress-arrows-alt"></i>')
+     // $('.hiddenDiv').css('background', '#d9f0fe')
      $('.youthFilters span').css('background', '#d9f0fe')
-    $(".hiddenDiv").slideDown();
+    $(".hiddenDiv").slideDown().css('display', 'flex');
   }
 
-});
+// });
+
+}
+$('.dropToggle').keypress(
+toggle
+
+).click(
+	toggle
+);
+
 
 
 
