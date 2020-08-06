@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $('a, [tabIndex="0"]').on("keyup", function (e) {
+  $('a, [tabIndex="0"], input').on("keyup", function (e) {
 
     var code = (e.keyCode ? e.keyCode : e.which);
     if (code == 9) {
@@ -8,20 +8,61 @@ $(document).ready(function () {
     }
 
   })
-  $('a, [tabIndex="0"]').on('focusout', function() {
+  $('a, [tabIndex="0"], input').on('focusout', function() {
     $(this).css('outline', 'none')
   })
 
 
-// var toggle = function() {
-//
-//   //
-  $('.dropToggle').not('.wrappingDiv').on('click', function(e) {
-    e.stopPropagation()
+
+
+  $('.dropToggle').on('click', function(e) {
+
+    if($(".hiddenDiv").is(':visible')) {
+
+      $('.youthFilters span').css('background', 'transparent')
+
+      $('.changeWord').html('Filter')
+      $('.notVisible').css('visibility', 'hidden')
+
+      $('.surveyStatus .black').hide()
+
+      $(this).find('.expand i').replaceWith('<i class="far fa-expand-alt"></i>')
+      $(".hiddenDiv").slideUp().css('display', 'flex');
+
+
+    }
+
+    else if ($(".hiddenDiv").is(':hidden')){
+
+      $('.notVisible').css('visibility', 'visible')
+      $('.surveyStatus .black').show().css('display', 'flex');
+
+      $('.changeWord').html('Continuing Youth')
+
+      $(this).find('.expand i').replaceWith('<i class="far fa-compress-arrows-alt blue"></i>')
+
+      $('.youthFilters span').css('background', '#d9f0fe')
+      $(".hiddenDiv").slideDown().css({
+        'display': 'flex',
+        'flex-wrap': 'wrap'
+      });
+    }
+
+  }).on('click', '.wrappingDiv', function(e) {
+
+    e.stopPropagation();
+});
+
+
+
+
+$('.dropToggle').on('keyup', function (e) {
+
+    var code = (e.keyCode ? e.keyCode : e.which);
+    if (code == 13) {
 
   if($(".hiddenDiv").is(':visible')) {
-      e.stopPropagation()
-    // $('.hiddenDiv').css('background', 'transparent')
+
     $('.youthFilters span').css('background', 'transparent')
 
     $('.changeWord').html('Filter')
@@ -29,43 +70,39 @@ $(document).ready(function () {
 
     $('.surveyStatus .black').hide()
 
-   $(this).find('.expand i').replaceWith('<i class="far fa-expand-alt"></i>')
+    $(this).find('.expand i').replaceWith('<i class="far fa-expand-alt"></i>')
     $(".hiddenDiv").slideUp().css('display', 'flex');
 
 
   }
 
   else if ($(".hiddenDiv").is(':hidden')){
-    e.stopPropagation()
 
-$('.notVisible').css('visibility', 'visible')
-$('.surveyStatus .black').show().css('display', 'flex');
+    $('.notVisible').css('visibility', 'visible')
+    $('.surveyStatus .black').show().css('display', 'flex');
 
     $('.changeWord').html('Continuing Youth')
 
-     $(this).find('.expand i').replaceWith('<i class="far fa-compress-arrows-alt blue"></i>')
-     // $('.hiddenDiv').css('background', '#d9f0fe')
-     $('.youthFilters span').css('background', '#d9f0fe')
+    $(this).find('.expand i').replaceWith('<i class="far fa-compress-arrows-alt blue"></i>')
+
+    $('.youthFilters span').css('background', '#d9f0fe')
     $(".hiddenDiv").slideDown().css({
       'display': 'flex',
       'flex-wrap': 'wrap'
     });
   }
 
+}
+
+}).on('keyup', '.wrappingDiv', function (e) {
+
+    var code = (e.keyCode ? e.keyCode : e.which);
+    if (code == 13) {
+
+  e.stopPropagation();
+
+}
 });
-
-// }
-// $('.dropToggle').keypress(
-// toggle
-//
-// ).click(
-// 	toggle
-// );
-
-
-
-
-  // $('a').on('click', function() {
 
 
 
@@ -240,18 +277,18 @@ $('.surveyStatus .black').show().css('display', 'flex');
 
     var Opt01 = "";
     $('.no-more-tables a').each(function() {
-    	Opt01 = $(this).html();
+      Opt01 = $(this).html();
 
-    	if ($(this).html() > 99) {
+      if ($(this).html() > 99) {
 
         $(this).css({
           'padding':'.5em .3em',
           'height':'2.55em',
           'width' : '2.55em'
         })
-    }
+      }
 
-  })
+    })
 
 
 
