@@ -691,7 +691,7 @@ span.across {
   padding: 0.3rem 0.6rem;
   margin: 0rem .2em;
   font-size: 14px;
-  background: #d9f0fe;
+  /* background: #d9f0fe; */
   border-radius: 2rem;
   color: #1b3765;
   cursor: pointer;
@@ -701,6 +701,15 @@ span.across {
   font-size: 14px;
   font-weight: 500;
 }
+
+.smallWhiteBubble .filter-attr-list a {
+  background: #d9f0fe;
+}
+
+.smallWhiteBubble .filter-attr-list a.NavItem--is-active {
+    background: #ccf1b0;
+}
+
 span.across a:first-child {
     margin: 0rem .6em 0rem 0rem;
 }
