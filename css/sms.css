@@ -46,7 +46,10 @@
 }
 
 .hiddenDiv {
+  margin-top:1em;
+  margin-left:1em;
   width:100%;
+  /* margin-top: -1.6em; */
   display: none;
   /* max-width:95em;
   padding:1em;
@@ -73,8 +76,9 @@
   margin-bottom: .5rem;
   margin-left: 2em;
 }
-.mr1 {
+.m1 {
   margin-right:1em;
+  margin-left:1em;
 }
 
 .compress {
@@ -656,19 +660,30 @@ a:hover {
 
 .smallWhiteBubble .filter-attr-list {
   width:100%;
+  margin-left:0em;
+}
+
+.smallWhiteBubble .hiddenDiv .filter-attr-list a {
+    background: #d9f0fe;
+    margin-bottom: .5em;
 }
 
 .expand i {
-    padding-right: 15px;
-    font-size: 18px;
+    float:right;
+    padding-right: 0px;
+    font-size: 15px;
     font-weight: 400 !important;
+}
+
+.notVisible {
+  visibility: hidden;
 }
 
 span.across {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: center;
+  align-items: baseline;
 }
 .filter .landing-sec-H {
   margin-right:.6em;
@@ -681,6 +696,11 @@ span.across {
 .padding0{
   padding:0em !important;
   margin:0em .4em !important
+}
+
+.padding-0{
+  padding:0em !important;
+  margin:0em !important
 }
 
 .filter-attr-list a.NavItem--is-active{
@@ -1346,7 +1366,9 @@ h1.white.sentMessage {
 
 .surveyStatus .black {
   color: black !important;
-  margin-top: .5em;
+  margin-top: 0em;
+  margin-bottom:0em;
+  display:none;
 }
 
 .surveyStatus .whiteBubble  {
@@ -3533,27 +3555,6 @@ button.close {
     align-items: center !important
   }
 
-  .adult-participant .align-items-start {
-    align-items: center !important
-  }
-
-  .youth-participant .align-items-start {
-    align-items: center !important
-  }
-
-  span.across a:first-child {
-    margin: 0rem 0em 0rem 0rem;
-}
-span.across {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-  span.across a {
-    margin:.2rem .5rem !important
-  }
 
 
   .man {
@@ -3587,10 +3588,10 @@ span.across {
     padding: 0em !important;
     box-shadow: none !important;
   }
-
+/*
   .surveyStatus .justify-content-between {
     flex-direction: column !important
-  }
+  } */
 
   .surveyStatus .justify-content-start {
     justify-content: center!important;
@@ -3622,13 +3623,13 @@ span.across {
     justify-content: center;
     align-items: center;
     margin-bottom: 0em !important;
-    margin-left: 0em;
-    width: 100%;
+    /* margin-left: 0em;
+    width: 100%; */
 }
 
   .filter h2 {
     padding: 0%;
-    margin-bottom: 1em;
+    margin-bottom: 0em;
   }
   /* .filterIcon {
     margin: 0em 0rem 0rem 1rem;
@@ -3901,6 +3902,47 @@ span.across {
 }
 
 @media (max-width: 767px) {
+  .filter {
+    padding: 0% 0 0 0;
+}
+.filter .landing-sec-H {
+    margin-right: 0em;
+    margin-top: 0em;
+}
+
+  .adult-participant .align-items-start {
+    align-items: center !important
+  }
+
+  .youth-participant .align-items-start {
+    align-items: center !important
+  }
+
+  span.across a:first-child {
+    margin: 0rem 0em 0rem 0rem;
+}
+span.across {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+  span.across a {
+    margin:.2rem .5rem !important
+  }
+
+  .surveyStatus .filter-attr-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0em !important;
+    margin-left: 0em;
+    width: 100%;
+}
+
+
   .grayLine {
     min-height: 0em;
     border-right: none;
@@ -4565,7 +4607,7 @@ body{
 
 .landing-sec-H{
   font-size: 22px;
-  width: 90%;
+  width: 100%;
 }
 
 .guide-wrapper{

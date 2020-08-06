@@ -24,6 +24,11 @@ var toggle = function() {
     // $('.hiddenDiv').css('background', 'transparent')
     $('.youthFilters span').css('background', 'transparent')
 
+    $('.changeWord').html('Filter')
+    $('.notVisible').css('visibility', 'hidden')
+
+    $('.surveyStatus .black').hide()
+
    $(this).find('.expand i').replaceWith('<i class="far fa-expand-alt"></i>')
     $(".hiddenDiv").slideUp().css('display', 'flex');
 
@@ -33,10 +38,18 @@ var toggle = function() {
   else if ($(".hiddenDiv").is(':hidden')){
     // e.stopPropagation()
 
-     $(this).find('.expand i').replaceWith('<i class="far fa-compress-arrows-alt"></i>')
+$('.notVisible').css('visibility', 'visible')
+$('.surveyStatus .black').show().css('display', 'flex');
+
+    $('.changeWord').html('Continuing Youth')
+
+     $(this).find('.expand i').replaceWith('<i class="far fa-compress-arrows-alt blue"></i>')
      // $('.hiddenDiv').css('background', '#d9f0fe')
      $('.youthFilters span').css('background', '#d9f0fe')
-    $(".hiddenDiv").slideDown().css('display', 'flex');
+    $(".hiddenDiv").slideDown().css({
+      'display': 'flex',
+      'flex-wrap': 'wrap'
+    });
   }
 
 // });

@@ -45,22 +45,34 @@
 									</div>
 								</div>
 
-								<div class="smallWhiteBubble">
+								<div class="smallWhiteBubble dropToggle">
 									<div class="row">
-									<div class="filter-attr-list dropToggle d-flex justify-content-between align-items-center toggleFilters" tabindex="0" role="button">
-
+									<div class="filter-attr-list d-flex align-items-center toggleFilters" tabindex="0" role="button">
+									<div class="col-lg-9 col-md-9 col-sm-6 col-xs-12">
 										<span class="across">
 											<div class="filterIcon">
 												<i class="fas fa-filter light blue"></i>
 											</div>
-												<p class="navy padding0">
-													<span id="ctl00_ContentMain_pnlFilter" class="blue">Filter</span>
-												</p>
+												<p class="navy padding0 changeWord">
+												<span id="ctl00_ContentMain_pnlFilter">Filter
+												</span>
+											</p>
+
+											<p class="black small m1">R: Responder</p>
+
+											<p class="black small m1">NR: Non-Responder</p>
 
 										</span>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 d-flex align-items-center justify-content-between">
+
+										<p class="navy padding-0 notVisible">Status</p>
+
 										<span class="expand">
 											<i class="far fa-expand-alt light blue"></i>
 										</span>
+
+									</div>
 
 
 									</div>
@@ -68,17 +80,21 @@
 
 								<div class="rel row">
 									<div class="hiddenDiv">
-									<div class="col-lg-9 col-md-8 col-sm-6 col-xs-12">
+
+									<div class="col-lg-9 col-md-9 col-sm-6 col-xs-12">
+												<!-- <p class="navy padding0">
+													<span id="ctl00_ContentMain_pnlFilter">Continuing Youth</span>
+												</p> -->
 
 											<div class="scroll_checkboxes">
 
-												<div class="checkboxType d-flex justify-content-start align-items-center">
+												<!-- <div class="checkboxType d-flex justify-content-start align-items-center">
 													<p class="black small mr1">RESPONDER</p>
 
 													<p class="black small mr1">NON-RESPONDER</p>
 
 													<p class="black small mr1">EVER USED...</p>
-												</div>
+												</div> -->
 
 												<table id="ctl00_ContentMain_chkContinuingYouthWaveNonResponderEverUsed" class="FormText" datafield="description" border="0">
 													<tbody class="d-flex flex-column">
@@ -172,8 +188,10 @@
 										</div>
 
 
-									<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-										<div class="d-flex flex-column align-items-start">
+									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+										<!-- <p class="navy moveUp">Status</p> -->
+
+										<div class="filter-attr-list d-flex flex-column align-items-start">
 										<a href="#notStarted" data-type="notStarted" class="NavItem blue" role="button" data-toggle="tab" tabindex="0">Not Started&nbsp;(<span id="ctl00_ContentMain_DataGrid1_lblRecordCount">314</span>)
 										</a>
 
@@ -182,7 +200,7 @@
 										<a href="#submitted" data-type="submitted" class="NavItem blue" role="button" data-toggle="tab" tabindex="0">Submitted&nbsp;(<span id="ctl00_ContentMain_DataGrid1_lblRecordCount">3</span>)</a>
 									</div>
 									</div>
-													</div>
+										</div>
 								</div>
 								</div>
 
