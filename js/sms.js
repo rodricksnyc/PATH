@@ -13,14 +13,14 @@ $(document).ready(function () {
   })
 
 
-var toggle = function() {
-
-  //
-  // $('.dropToggle').on('click', function(e) {
-    // e.stopPropagation()
+// var toggle = function() {
+//
+//   //
+  $('.dropToggle').not('.wrappingDiv').on('click', function(e) {
+    e.stopPropagation()
 
   if($(".hiddenDiv").is(':visible')) {
-    //
+      e.stopPropagation()
     // $('.hiddenDiv').css('background', 'transparent')
     $('.youthFilters span').css('background', 'transparent')
 
@@ -36,7 +36,7 @@ var toggle = function() {
   }
 
   else if ($(".hiddenDiv").is(':hidden')){
-    // e.stopPropagation()
+    e.stopPropagation()
 
 $('.notVisible').css('visibility', 'visible')
 $('.surveyStatus .black').show().css('display', 'flex');
@@ -52,15 +52,15 @@ $('.surveyStatus .black').show().css('display', 'flex');
     });
   }
 
-// });
+});
 
-}
-$('.dropToggle').keypress(
-toggle
-
-).click(
-	toggle
-);
+// }
+// $('.dropToggle').keypress(
+// toggle
+//
+// ).click(
+// 	toggle
+// );
 
 
 
