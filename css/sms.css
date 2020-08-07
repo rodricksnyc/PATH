@@ -3643,7 +3643,7 @@ button.close {
 
 
   .hiddenDiv thead tr th{
-    margin-right: calc(4rem - 12px);
+    margin-right: calc(4rem - 9px);
   }
 
   .hiddenDiv .form-check-inline input {
