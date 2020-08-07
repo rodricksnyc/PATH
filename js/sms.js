@@ -271,8 +271,6 @@ $('.dropToggle').on('keyup', function (e) {
 
 
 
-
-
   if ($(document).innerWidth() <= 991) {
 
     var Opt01 = "";
@@ -290,6 +288,13 @@ $('.dropToggle').on('keyup', function (e) {
 
     })
 
+  }
+
+
+
+
+
+  if ($(document).innerWidth() <= 767) {
 
 
     $('.nav-link.active').closest('.nav-item').find('.title').hide()
