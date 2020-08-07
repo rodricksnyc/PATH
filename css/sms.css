@@ -3789,6 +3789,11 @@ button.close {
 
 @media (max-width: 767px) {
 
+  .m1 {
+    margin-right: 0em;
+    margin-left: 0em;
+}
+
   .col-xs-2 {
       -ms-flex: 0 0 16.666667%;
       flex: 0 0 16.666667%;
