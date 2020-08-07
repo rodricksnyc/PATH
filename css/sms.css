@@ -1299,6 +1299,7 @@ h1.white.sentMessage {
   color: #1b3765;
   font-size: 1.1em;
   padding-left: 2.2em;
+  font-weight:500;
 }
 
 .noPadding .navy {
@@ -1326,9 +1327,10 @@ h1.white.sentMessage {
 }
 
 .surveyStatus .black {
-  color: black !important;
+  color: #1b3765 !important;
   margin-top: 0em;
   margin-bottom:0em;
+  font-weight:500;
   display:none;
 }
 
