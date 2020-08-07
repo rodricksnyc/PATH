@@ -85,7 +85,7 @@
 }
 
 .hiddenDiv thead tr th{
-  margin-right: calc(1rem - 7px);
+  margin-right: calc(1rem - 4px);
 }
 
 .compress {
@@ -1501,7 +1501,7 @@ h1.white.sentMessage {
 }
 
 
-/* 
+/*
 .option[data-type="allItems"] .progressStatus:before {
 content: '';
 border-radius: 50%;
