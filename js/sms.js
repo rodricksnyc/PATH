@@ -13,7 +13,7 @@ $(document).ready(function () {
   })
 
 
-  $(".hiddenDiv .form-check-inline input").change(function(){
+  $(".hiddenDiv .form-check-inline input").click(function(){
 
 
     if($(this).prop("checked")==true){
@@ -38,6 +38,9 @@ $(document).ready(function () {
       $(this).closest('.form-check-inline').removeClass('activeCheckbox ')
       // $(".filter-attr-list li[data-year=" + this.value + "]").remove()
     };
+
+
+
 
     $('.dropToggle span.across').on('click', '.removeTag', function() {
 
