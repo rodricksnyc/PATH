@@ -110,6 +110,10 @@
   width:100%;
 }
 
+.smallWhiteBubble:hover {
+  cursor:grab;
+}
+
 
 .youthFilters span {
   padding: .5em 1em .5em 1em;
