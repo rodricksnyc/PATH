@@ -273,7 +273,7 @@ $('.dropToggle').on('keyup', function (e) {
 
 
 
-  if ($(document).innerWidth() <= 767) {
+  if ($(document).innerWidth() <= 991) {
 
     var Opt01 = "";
     $('.no-more-tables a').each(function() {
