@@ -12,8 +12,8 @@ $(document).ready(function () {
     $(this).css('outline', 'none')
   })
 
-
-  $(".hiddenDiv .form-check-inline input").click(function(){
+    var ifSaved = false;
+  $(".hiddenDiv .form-check-inline input").change(function(){
 
 
     if($(this).prop("checked")==true){
@@ -21,33 +21,45 @@ $(document).ready(function () {
 
       $(this).closest('.form-check-inline').addClass('activeCheckbox ')
 
-      var text =  $(this).closest('.form-check-inline').find('label').html()
-
-      $('.dropToggle span.across').append(`<li id="${this.id}" class='results hidden'>${text}</li>`);
-
-      $('.results').each(function(){
-
-          var truncated = $(this).html().substr(0, 30);
-          //Updating with ellipsis if the string was truncated
-          $(this).html(truncated+(truncated.length<30?'':'[...]<div class="removeTag"><i class="fal fa-times ml-1"></i></div> '));
-      });
+      // var text =  $(this).closest('.form-check-inline').find('label').html()
+      //
+      // $('.dropToggle span.across').append(`<li id="${this.id}" class='results hidden'>${text}</li>`);
+      //
+      // $('.results').each(function(){
+      //
+      //     var truncated = $(this).html().substr(0, 30);
+      //     //Updating with ellipsis if the string was truncated
+      //     $(this).html(truncated+(truncated.length<30?'':'[...]<div class="removeTag"><i class="fal fa-times ml-1"></i></div> '));
+      // });
 
     }
 
-    else{
+
+     // if ($('.hiddenDiv .form-check-inline input:checked').length ==  0){
+     //
+     //  $(this).closest('.form-check-inline').removeClass('activeCheckbox ')
+     // }
+
+    if($(this).prop("checked")==false){
+
       $(this).closest('.form-check-inline').removeClass('activeCheckbox ')
       // $(".filter-attr-list li[data-year=" + this.value + "]").remove()
     };
 
 
+    //
+    // var isChecked = document.querySelectorAll('input:checked').length === 0 ? false : true;
+    // return isChecked;
+    //
 
 
-    $('.dropToggle span.across').on('click', '.removeTag', function() {
-
-
-    $(".hiddenDiv .form-check-inline input[id=" + $(this).attr("id") + "]").prop("checked",false);
-      $(this).closest('li').remove()
-    })
+    //
+    // $('.dropToggle span.across').on('click', '.removeTag', function() {
+    //
+    //
+    // $(".hiddenDiv .form-check-inline input[id=" + $(this).attr("id") + "]").prop("checked",false);
+    //   $(this).closest('li').remove()
+    // })
 
   });
 
