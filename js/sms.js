@@ -13,6 +13,48 @@ $(document).ready(function () {
   })
 
 
+  $(".hiddenDiv .form-check-inline input").change(function(){
+
+    if($(this).prop("checked")==true){
+
+
+      $(this).closest('.form-check-inline').addClass('activeCheckbox ')
+
+      // var text =   $(this).closest('.form-check-inline').find('label').html()
+      //
+      // $('.dropToggle span.across').append(`<li class='results hidden'>${text}</li>`);
+      //
+      // $('.results').each(function(){
+      //
+      //     var truncated = $(this).html().substr(0, 30);
+      //     //Updating with ellipsis if the string was truncated
+      //     $(this).html(truncated+(truncated.length<30?'':'[...]<div class="removeTag"><i class="fal fa-times ml-1"></i></div> '));
+      // });
+
+    }
+
+    else{
+      $(this).closest('.form-check-inline').removeClass('activeCheckbox ')
+      // $(".filter-attr-list li[data-year=" + this.value + "]").remove()
+    };
+    //
+    // $('.dropToggle span.across').on('click', '.removeTag', function() {
+    // $("input[name='stat-analysis'][value=" + $(this).attr("data-stat") + "]").prop("checked",false);
+    //   $(this).closest('li').remove()
+    // })
+    //
+
+    // $(".filter-attr-list [data-year]").on('click',  function(){
+    //   $("input[name=addall]").prop('checked', false);
+    //   var yearName = $(this).attr("data-year");
+    //
+    //   $(".years :checkbox[value=" + $(this).attr("data-year") + "]").prop("checked",false);
+    //
+    //   $(this).remove();
+    // });
+  });
+
+
 
 
   $('.dropToggle').on('click', function(e) {
@@ -25,6 +67,10 @@ $(document).ready(function () {
       $('.notVisible').css('visibility', 'hidden')
 
       $('.surveyStatus .black').hide()
+      setTimeout(function() {
+        $('.results').removeClass('hidden')
+      }, 500)
+
 
       $(this).find('.expand i').replaceWith('<i class="far fa-expand-alt"></i>')
       $(".hiddenDiv").slideUp().css('display', 'flex');
@@ -33,6 +79,8 @@ $(document).ready(function () {
     }
 
     else if ($(".hiddenDiv").is(':hidden')){
+
+      $('.results').addClass('hidden')
 
       $('.notVisible').css('visibility', 'visible')
       $('.surveyStatus .black').show().css('display', 'flex');
@@ -51,58 +99,61 @@ $(document).ready(function () {
   }).on('click', '.wrappingDiv', function(e) {
 
     e.stopPropagation();
-});
+  }).on('click', '.results', function(e) {
+    e.preventDefault()
+    e.stopPropagation();
+  })
 
 
 
 
-$('.dropToggle').on('keyup', function (e) {
-
-    var code = (e.keyCode ? e.keyCode : e.which);
-    if (code == 13) {
-
-  if($(".hiddenDiv").is(':visible')) {
-
-    $('.youthFilters span').css('background', 'transparent')
-
-    $('.changeWord').html('Filter')
-    $('.notVisible').css('visibility', 'hidden')
-
-    $('.surveyStatus .black').hide()
-
-    $(this).find('.expand i').replaceWith('<i class="far fa-expand-alt"></i>')
-    $(".hiddenDiv").slideUp().css('display', 'flex');
-
-
-  }
-
-  else if ($(".hiddenDiv").is(':hidden')){
-
-    $('.notVisible').css('visibility', 'visible')
-    $('.surveyStatus .black').show().css('display', 'flex');
-
-    $('.changeWord').html('Continuing Youth')
-
-    $(this).find('.expand i').replaceWith('<i class="far fa-compress-arrows-alt blue"></i>')
-
-    $('.youthFilters span').css('background', '#d9f0fe')
-    $(".hiddenDiv").slideDown().css({
-      'display': 'flex',
-      'flex-wrap': 'wrap'
-    });
-  }
-
-}
-
-}).on('keyup', '.wrappingDiv', function (e) {
+  $('.dropToggle').on('keyup', function (e) {
 
     var code = (e.keyCode ? e.keyCode : e.which);
     if (code == 13) {
 
-  e.stopPropagation();
+      if($(".hiddenDiv").is(':visible')) {
 
-}
-});
+        $('.youthFilters span').css('background', 'transparent')
+
+        $('.changeWord').html('Filter')
+        $('.notVisible').css('visibility', 'hidden')
+
+        $('.surveyStatus .black').hide()
+
+        $(this).find('.expand i').replaceWith('<i class="far fa-expand-alt"></i>')
+        $(".hiddenDiv").slideUp().css('display', 'flex');
+
+
+      }
+
+      else if ($(".hiddenDiv").is(':hidden')){
+
+        $('.notVisible').css('visibility', 'visible')
+        $('.surveyStatus .black').show().css('display', 'flex');
+
+        $('.changeWord').html('Continuing Youth')
+
+        $(this).find('.expand i').replaceWith('<i class="far fa-compress-arrows-alt blue"></i>')
+
+        $('.youthFilters span').css('background', '#d9f0fe')
+        $(".hiddenDiv").slideDown().css({
+          'display': 'flex',
+          'flex-wrap': 'wrap'
+        });
+      }
+
+    }
+
+  }).on('keyup', '.wrappingDiv', function (e) {
+
+    var code = (e.keyCode ? e.keyCode : e.which);
+    if (code == 13) {
+
+      e.stopPropagation();
+
+    }
+  });
 
 
 
@@ -268,6 +319,21 @@ $('.dropToggle').on('keyup', function (e) {
   ).click(
     clickLastNav
   );
+
+
+
+  $('.smallWhiteBubble .filter-attr-list a').click(function() {
+    // var tag = $('<i class="fal fa-times removeTag"></i>')
+    // $(this).append(tag)
+
+    //
+    // else {
+    //   $(this).remove(tag)
+    // }
+
+  })
+
+
 
 
 
