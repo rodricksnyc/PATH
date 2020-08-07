@@ -499,24 +499,18 @@ $(document).ready(function () {
 
 
   // var Opt01 = "";
-  // $('td').each(function() {
-  // 	Opt01 = $(this).text();
+  // $('td.progressStatus').each(function() {
+  // 	Opt01 = $(this).find('p').html();
   //
   //
+  //   if (	Opt01 == 'Web Survey Not Started') {
+  //     $(this).addClass('pink')
   //
-  // 	if ($(this).text() == 50) {
-  //     console.log("seubdsiubv")
-  // 		$(this).css('background', 'red')
-  // 	}
-  //
-  //
-  //   if ($(this).text() == 'Web Survey Started, not submitted') {
-  //     $(this).css('background', 'red')
   //   }
   //
   //
   // });
-
+  //
 
 
 
