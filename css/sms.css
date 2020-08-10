@@ -558,19 +558,23 @@ body{
 
 
 .stickyNav .nav .nav-item:last-child i {
-  font-size: 17px;
+  font-size: 1.5rem;
   color: #00559b;
+  padding-top:1.3rem;
 }
 
 .stickyNav .nav .nav-item:last-child {
-  margin:1.5em 0em -3em 0em;
+ /* margin:1.5em 0em -3em 0em; */
+
+margin:1em 0em 0em 0em
 }
 
 
 .stickyNav .nav .nav-item:last-child:hover {
-  margin:1.5em 0em -3em 0em;
-  background: none;
-  height: auto;
+   /* margin:1.5em 0em -3em 0em;
+   background: none;
+  height: auto; */
+  margin:1em 0em 0em 0em
 }
 
 .stickyNav .nav i {
