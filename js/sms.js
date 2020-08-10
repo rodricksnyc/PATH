@@ -348,7 +348,7 @@ $(document).ready(function () {
       $('.nav-link:eq(3)').html('<i class="far fa-compress-arrows-alt"></i>').removeClass('bars')
 
       $('.nav-item').last().css({
-        'margin' : '1em 0em 0em 0em'
+        'margin' : '0em 0em 1em 0em'
       })
       $('.nav-item .nav-link').last().css({
         'padding' : '.5rem 1rem'
