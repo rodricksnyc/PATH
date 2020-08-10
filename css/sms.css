@@ -560,13 +560,14 @@ body{
 .stickyNav .nav .nav-item:last-child i {
   font-size: 1.5rem;
   color: #00559b;
-  padding-top:1.3rem;
+  padding-top:1.1rem;
 }
 
 .stickyNav .nav .nav-item:last-child {
   /* margin:1.5em 0em -3em 0em; */
 
-  margin:1em 0em 0em 0em
+  margin:0em 0em 1em 0em;
+
 }
 
 
@@ -574,7 +575,7 @@ body{
   /* margin:1.5em 0em -3em 0em;
   background: none;
   height: auto; */
-  margin:1em 0em 0em 0em
+  margin:0em 0em 1em 0em
 }
 
 .stickyNav .nav i {
