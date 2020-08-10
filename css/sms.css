@@ -564,15 +564,15 @@ body{
 }
 
 .stickyNav .nav .nav-item:last-child {
- /* margin:1.5em 0em -3em 0em; */
+  /* margin:1.5em 0em -3em 0em; */
 
-margin:1em 0em 0em 0em
+  margin:1em 0em 0em 0em
 }
 
 
 .stickyNav .nav .nav-item:last-child:hover {
-   /* margin:1.5em 0em -3em 0em;
-   background: none;
+  /* margin:1.5em 0em -3em 0em;
+  background: none;
   height: auto; */
   margin:1em 0em 0em 0em
 }
@@ -1517,8 +1517,8 @@ position: absolute;
 
 }
 .option[data-type="allItems"] .pink:before{
-   background: pink;
- } */
+background: pink;
+} */
 
 
 

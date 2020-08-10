@@ -12,7 +12,7 @@ $(document).ready(function () {
     $(this).css('outline', 'none')
   })
 
-    var ifSaved = false;
+  var ifSaved = false;
   $(".hiddenDiv .form-check-inline input").change(function(){
 
 
@@ -35,10 +35,10 @@ $(document).ready(function () {
     }
 
 
-     // if ($('.hiddenDiv .form-check-inline input:checked').length ==  0){
-     //
-     //  $(this).closest('.form-check-inline').removeClass('activeCheckbox ')
-     // }
+    // if ($('.hiddenDiv .form-check-inline input:checked').length ==  0){
+    //
+    //  $(this).closest('.form-check-inline').removeClass('activeCheckbox ')
+    // }
 
     if($(this).prop("checked")==false){
 
@@ -289,29 +289,29 @@ $(document).ready(function () {
     if ($('.nav-link:eq(3)').hasClass('bars')) {
       $('.stickyNav .nav .nav-item').last().css('background', 'transparent')
 
-  }
+    }
 
     if (!$('.nav-link:eq(3)').hasClass('bars')) {
       $('.stickyNav .nav .nav-item').last().css('background', '#94d678')
 
-  }
+    }
 
 
   })
 
 
-    $('.stickyNav .nav .nav-item').last().on('mouseleave', function() {
+  $('.stickyNav .nav .nav-item').last().on('mouseleave', function() {
 
-      if ($('.nav-link:eq(3)').hasClass('bars')) {
-        $('.stickyNav .nav .nav-item').last().css('background', 'transparent')
-
-    }
-
-      if (!$('.nav-link:eq(3)').hasClass('bars')) {
-        $('.stickyNav .nav .nav-item').last().css('background', 'transparent')
+    if ($('.nav-link:eq(3)').hasClass('bars')) {
+      $('.stickyNav .nav .nav-item').last().css('background', 'transparent')
 
     }
-    })
+
+    if (!$('.nav-link:eq(3)').hasClass('bars')) {
+      $('.stickyNav .nav .nav-item').last().css('background', 'transparent')
+
+    }
+  })
 
 
   var clickLastNav = function() {
@@ -321,7 +321,7 @@ $(document).ready(function () {
     // $('.nav-link:eq(3)').on('click', function() {
     if (!$('.nav-link:eq(3)').hasClass('bars')) {
 
-        $('.stickyNav .nav .nav-item').last().css('background', 'transparent')
+      $('.stickyNav .nav .nav-item').last().css('background', 'transparent')
 
 
       $('.nav-link:eq(3)').html('<i class="fas fa-bars"></i>').addClass('bars')
@@ -341,7 +341,7 @@ $(document).ready(function () {
 
     else {
 
-        $('.stickyNav .nav .nav-item').last().css('background', 'transparent')
+      $('.stickyNav .nav .nav-item').last().css('background', 'transparent')
 
       $('.nav-item:not(:last-child)').show()
 
