@@ -175,7 +175,29 @@ span.heading {
   position:relative;
   display: flex;
   align-items: center;
-  /* justify-content: flex-start; */
+  -webkit-box-shadow: 0px 0px 14px 2px rgba(191,210,223,1);
+      -moz-box-shadow: 0px 0px 14px 2px rgba(191,210,223,1);
+      box-shadow: 0px 0px 14px 2px rgba(191,210,223,1);
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 0px 14px 2px rgba(191,210,223,1);
+      -moz-box-shadow: 0px 0px 14px 2px rgba(191,210,223,1);
+      box-shadow: 0px 0px 14px 2px rgba(191,210,223,1);
+}
+
+/* .navbar {
+  -webkit-box-shadow: 0px 0px 14px 2px rgba(191,210,223,1);
+      -moz-box-shadow: 0px 0px 14px 2px rgba(191,210,223,1);
+      box-shadow: 0px 0px 14px 2px rgba(191,210,223,1);
+} */
+
+a.nav-item {
+  color:#06639C !important
+}
+
+*:focus {
+  outline:none
 }
 
 .end {
@@ -238,6 +260,88 @@ span.heading {
   top: 24%;
   left: 24%;
   font-weight: 600;
+}
+
+
+.navbar .activeDot {
+    border-radius: 1rem;
+    background: #e5eef5;
+    height: auto;
+    width: auto;
+    position: relative;
+    z-index: 2;
+    border: 1px solid #00559b;
+    padding: .2em .3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0em .5em;
+}
+
+.navbar .inactiveDot {
+    border-radius: 1rem;
+    background: transparent;
+    height: auto;
+    width: auto;
+    position: relative;
+    z-index: 2;
+
+    padding: .2em .3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0em .5em;
+}
+
+.language {
+    color: #00559b;
+
+    font-size: 15px;
+
+    font-weight: 400;
+    margin: 0em !important;
+}
+
+.loginButton {
+    border-radius: 1rem;
+    background: transparent;
+    height: auto;
+    width: auto;
+    position: relative;
+    z-index: 2;
+    border: 1px solid #00559b;
+    padding: .2em 1.75em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width:3rem !important;
+    color: #00559b;
+    font-weight:500;
+    font-size:16px;
+}
+
+.loginButton:hover {
+  text-decoration: none;
+}
+
+.rounded-lg {
+  border-radius: 1rem;
+}
+
+.nav-pills .nav-link {
+  color: #555;
+}
+
+.nav-pills .nav-link.active {
+  color: #fff;
+}
+
+#creditCard .form-control {
+  font-size:large;
+    color: #00559b;
+
+    border: 1px solid #00559b;
+
 }
 
 /*
@@ -906,25 +1010,44 @@ h1.white.sentMessage {
   position: relative;
   width: 100%;
   padding: 16px 0px;
-  background-color: #f1f1ef;
+  background: #004F7F;
   display: flex;
   align-items: center;
   box-shadow: 0px -5px 10px rgba(0,0,0,0.1);
+  min-height:8em;
 }
 
-.survey-footer .container{
+.survey-footer .two{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background: #004F7F; */
+  width:100%;
+  padding-top: 4em;
+  min-height: 9em;
+}
+
+
+.survey-footer .one{
+  position: absolute;
+  width:100%;
+  top:0;
+  max-height:4em;
+  background: #0069AA;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding:1em
+
 }
 
 .survey-footer img {
   height: 36px;
 }
 
-.survey-footer  a:nth-child(2) img, .survey-footer  img:nth-child(2){
+/* .survey-footer  a:nth-child(2) img, .survey-footer  img:nth-child(2){
   height: 18px;
-}
+} */
 
 .iques {
   opacity: 0.4;
@@ -1158,6 +1281,69 @@ color: #0071ba;
   /* overflow: auto; */
 }
 
+#one {
+    text-align: center;
+    top: 335px;
+    position: fixed;
+    right: -60px;
+    z-index: 99999;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+.openTab {
+    background-color: #00559B;
+    color: white;
+    position: fixed;
+    right: -1.8rem;
+    top: 9rem;
+    transform: rotate(-90deg);
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    border-radius: 0px;
+    z-index: 100;
+    cursor: pointer;
+
+}
+#slideOut2 {
+    position: fixed;
+
+    right: -600px;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    margin: 0;
+    height: 100vh;
+    top: 0;
+    z-index: 999999999;
+
+}
+
+.showslideOut2{
+  right:0px !important
+}
+
+
+
+.toast {
+
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    padding: 1.25em;
+    position: fixed;
+    right: -335px;
+    top: 1em;
+    transition: 0.15s ease-in-out;
+    width: 335px;
+    height: 100px;
+    font-size: 17px;
+    background: #fbb03b;
+    color: #071D49;
+    z-index: 99999999999;
+}
+
+
+
 label.togglePassword {
   display:flex;
   align-items: center;
@@ -1197,6 +1383,59 @@ label.togglePassword {
   padding-right: 2em;
   opacity:.85
 }
+
+#slideOut2 .modal-content {
+  position: relative;
+  background-color: #0a5799;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: none;
+  border-radius: 0;
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .6);
+  box-shadow: none;
+  z-index: 99999;
+  height: 930px;
+  /* height: 100%; */
+  width: 600px;
+  margin: 0;
+  padding-left: 2em;
+  padding-right: 2em;
+  opacity:1
+}
+
+
+#slideOut2 button.close {
+  color: #A3E56A;
+  text-shadow: none;
+  font-size:1.8rem
+}
+
+.whiteLarger{
+  font-size:22px;
+  margin-top:0rem;
+  color:white
+}
+
+.update {
+    border-radius: 1rem;
+    background: transparent;
+    height: auto;
+    width: auto;
+    position: relative;
+    z-index: 2;
+    border: 1px solid white;
+    padding: .2em 1.75em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 3rem !important;
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+}
+
 
 .secondBlock {
   display: none;
@@ -1785,7 +2024,7 @@ p.modalFooter {
   background-color: transparent !important;
 }
 
-.questionnaire-wrapper{
+/* .questionnaire-wrapper{
   width: 100%;
   height: 100%;
   background-image: linear-gradient(135deg, rgba(254, 169, 33, .8),rgba(254, 130, 37, .8),rgba(247, 92, 66, .8), rgba(149, 83, 173, .8));
@@ -1800,7 +2039,7 @@ p.modalFooter {
   padding: 36px;
   border-radius: 10px;
   box-shadow: 0px 3px 7px rgba(0,0,0,0.2), 0px 0px 20px rgba(0,0,0,0.1);
-}
+} */
 
 .survey-title{
   border-bottom: 3px solid #fe8225;
@@ -1936,9 +2175,9 @@ html, body{
   font-weight: 700;
 }
 
-.nav-link:focus, .nav-link:hover{
+/* .nav-link:focus, .nav-link:hover{
   font-weight: 700;
-}
+} */
 
 .nav-pills .nav-link{
   height: 90px;
@@ -2515,6 +2754,117 @@ button.close {
   transform: translate3d(calc(100% - 24px), 0, 0);
 }
 
+/* login page */
+
+.lightBlue {
+  background: #F1F8FD;
+}
+
+.black {
+  color:black;
+  font-size:16px;
+  margin-top:.5em;
+}
+
+.survey-container {
+    width: 100%;
+    min-height: calc(100vh - 28rem);
+    position: relative;
+    /* box-shadow: inset 0px 5rem 5rem -4rem rgba(0,0,0,0.75), inset 0rem -5rem 5rem -4rem rgba(0,0,0,0.75); */
+}
+
+.survey-wrapper {
+    background: #fafdff;
+    position: relative;
+    margin: 3rem auto;
+    max-width: 90%;
+    border-radius: .78rem;
+    padding: 2rem 2rem !important;
+    -webkit-box-shadow: 0px 0px 14px 2px rgba(191,210,223,1);
+    -moz-box-shadow: 0px 0px 14px 2px rgba(191,210,223,1);
+    box-shadow: 0px 0px 14px 2px rgba(191,210,223,1);
+}
+
+.ques-wrapper {
+    position: relative;
+    margin: 0rem auto 1.5rem;
+    /* padding: 0rem 2rem 2rem; */
+    border-top: none;
+    margin-bottom: 1em;
+    padding-bottom: 0em;
+}
+
+.tab-content {
+      background: #fafdff;
+      border: none;
+    outline: none;
+
+}
+#creditCard,
+#creditCard .form-group{
+  border: none !important;
+  outline: none !important;
+    background: #fafdff;
+    border-radius: 0px;
+    box-shadow: none !important
+}
+#creditCard label{
+  font-size:18px !important;
+  color:#004F7F;
+  margin-bottom:0px
+}
+
+#creditCard .form-group {
+  margin-bottom: 20px;
+}
+
+.padding-0 {
+  padding:0
+}
+
+.enterBtn {
+    color:#002D44;
+    width: auto;
+    border-color:#7bc043;
+    padding: .3em 2.5em;
+    border-radius: 1.5rem;
+    font-size: 19px;
+    background: #7bc043;
+    margin:1rem 0rem 2rem 0rem
+}
+
+.ccPadding {
+  padding:4em 1em
+}
+
+.blue {
+  color:#004F7F
+}
+
+.white {
+  color:white;
+}
+
+.greenSquare{
+  background: #A3E56A;
+  padding:.2rem 1.2rem;
+  border-radius:1rem;
+
+}
+.greenSquare h3 {
+  font-size:3em
+
+}
+
+.right{
+  background: #0e68a8;
+  height:100%;
+  padding-top:5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+      padding: 3em 1em 0em 1em;
+}
 
 @media (min-width: 1600px) {
 
