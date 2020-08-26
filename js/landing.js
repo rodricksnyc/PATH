@@ -16,6 +16,28 @@ $("a, button, input, [tabindex='0']").on('focusout', function() {
 // 	// Apply a dark color scheme
 // }
 
+//make the nav item have active line on current page
+
+var path = window.location.href;
+// $('.navbar-nav li a').each(function() {
+//   if (this.href === path) {
+//     $(this).addClass('active');
+//   }
+//   else {
+//     $(this).removeClass('active');
+//   }
+//
+// });
+
+$('.navbar-nav li .nav-link').each(function() {
+	if (this.href === path) {
+		$(this).addClass('active');
+	}
+	else {
+		$(this).removeClass('active');
+	}
+
+});
 
 
 
@@ -95,10 +117,12 @@ $('.radio-inline input').on('keyup', function(e) {
 		function setReasonActive() {
 			$('.radio-inline input').each(function () {
 				if ($(this).prop('checked')) {
-					$(this).parents('.vertical').css('background' ,'#166da1');
+					$(this).parents('.vertical').css('background' ,'#A3E56A');
+						$(this).closest('label').css('color', '#0a5799')
 
 				} else {
 					$(this).parents('.vertical').css( 'background' ,'transparent')
+								$(this).closest('label').css('color', 'white')
 				}
 			})
 		}
@@ -122,12 +146,13 @@ $('.radio-inline input').change(function (e) {
 function setReasonActive() {
 	$('.radio-inline input').each(function () {
 		if ($(this).prop('checked')) {
-			$(this).closest('.vertical').find('.fas').css('color', '#7bc043')
-			$(this).parents('.vertical').css('background' ,'#166da1');
 
+			$(this).parents('.vertical').css('background' ,'#A3E56A');
+			$(this).closest('label').css('color', '#0a5799')
 		} else {
 			$(this).parents('.vertical').css( 'background' ,'transparent')
-			$(this).closest('.vertical').find('.fas').css('color', 'white')
+			$(this).closest('label').css('color', 'white')
+
 		}
 	})
 }

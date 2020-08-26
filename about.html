@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
 	<link rel="stylesheet" href="vendorlibs/normalize.min.css">
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap" rel="stylesheet">
 
 </head>
 
@@ -32,17 +31,17 @@
 					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 						<div class="navbar-nav d-block d-lg-flex ml-auto text-right d-flex align-items-center">
 							<li class="nav-item">
-								<a class="nav-link active" href="login.html">Home</a>
+							<a class="nav-link" href="login.html">Home</a>
+						 </li>
+						 	<li class="nav-item">
+							<a class="nav-link" href="about.html">About the Study</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="about.html">About the Study</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="participants.html">Participants</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="researchers.html">Researchers</a>
-							</li>
+							<a class="nav-link" href="participants.html">Participants</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="researchers.html">Researchers</a>
+						</li>
 
 							<div class="d-flex justify-content-center align-items-center">
 								<div class="english activeDot" tabindex="0" aria-hidden="false" role="button"><p class="language">English</p></div>
@@ -95,15 +94,15 @@
 </div> -->
 
 
-<div id="Guide" class="landing-sec container-fluid heros">
+	<div id="Guide" class="landing-sec container-fluid heros">
 
-	<div class="guide-overlay container">
-		<h2 class="landing-sec-H">Study Participant Login</h2>
-		<p class="black">Please enter your First Name and Last Name as given to the PATH interviewer. If you have a VISA debit card, please enter the last four numbers of the card number, as shown in the green circle.</p>
+		<div class="guide-overlay container">
+			<h2 class="landing-sec-H">Study Participant Login</h2>
+			<p class="black">Please enter your First Name and Last Name as given to the PATH interviewer. If you have a VISA debit card, please enter the last four numbers of the card number, as shown in the green circle.</p>
 
 
+		</div>
 	</div>
-</div>
 
 <div id="slideOut2">
 
@@ -128,61 +127,55 @@
 
 		</div>
 		<div class="modal-body">
-			<div class="row topContent">
+			<div class="row">
 				<div class="col-lg-8">
-					<div class="text">
-						<p class="white">For general questions or comments, media inquiries, requests for materials, and/or technical comments or questions about the website, please fill out the form here and click the ‘Send Email’ button at the bottom. For details on the site’s use of this information, see Privacy/Disclaimer.</p>
-						<p class="white">Additional information for researchers  not government site is available on the National Addiction & HIV Data Archive Program  not government site website. Among other information this includes how to access PATH Study data and details about the study design.</p>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="right">
-						<img src="images/email-icon.svg" class="img-fluid">
-						<p class="white text-center">A copy of this communication will be sent to you be email.</p>
-					</div>
+				<div class="text"><p class="white">For general questions or comments, media inquiries, requests for materials, and/or technical comments or questions about the website, please fill out the form here and click the ‘Send Email’ button at the bottom. For details on the site’s use of this information, see Privacy/Disclaimer.</p>
+					<p class="white">Additional information for researchers  not government site is available on the National Addiction & HIV Data Archive Program  not government site website. Among other information this includes how to access PATH Study data and details about the study design.</p>
 				</div>
 			</div>
+				<div class="col-lg-4">
+				<div class="right">
+					<div class="greenSquare">
 
-			<form method="post" data-form-title="CONTACT US" class="slideForm">
+						<h3>@</h3>
+					</div>
+					<p class="white text-center">A copy of this communication will be sent to you be email.</p>
+				</div>
+			</div>
+			</div>
+
+			<form method="post" data-form-title="CONTACT US" class="slideForm" id="theform">
 				<!-- <p class="modalFooter">*Required Field</p> -->
 				<div class="form-group">
-					<legend>Email</legend>
-					<label for="formControl1">Email</label>
-					<input id="formControl1" type="text" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="Email" data-form-field="Email">
+					<label for="formControl1">Name</label>
+					<input id="formControl1" type="text" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="name" data-form-field="Name">
 				</div>
 				<div class="form-group">
-					<legend>Affiliated company, institution, or organization</legend>
-					<label for="formControl2">Affiliated company, institution, or organization<span class="light"> (if you are not affiliated enter “None” or “NA”):</span></label>
+					<label for="formControl2">Email</label>
 					<input type="email" id="formControl2" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="email" data-form-field="Email">
 				</div>
 
 				<div class="form-group">
 					<fieldset>
-						<label for="general-inquiry">Contact Category</label>
-						<div class="around2">
+						<label for="general-inquiry">Reason for Contact</label>
+						<div class="around">
 							<div class="vertical">
-								<!-- <i class="fas fa-info-circle"></i> -->
-								<legend>Contact Categor</legend>
+								<i class="fas fa-info-circle"></i>
+								<legend>Reason for Contact</legend>
 								<label class="radio-inline">
-									<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false" id="general-inquiry" checked>Comment about the study
+									<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false" id="general-inquiry" checked>General<br>Inquiry
 								</label>
 							</div>
 							<div class="vertical">
-								<!-- <i class="fas fa-question-circle"></i> -->
+								<i class="fas fa-question-circle"></i>
 								<label class="radio-inline">
-									<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">problem with this website
+									<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Questions
 								</label>
 							</div>
 							<div class="vertical">
-								<!-- <i class="fas fa-user-headset"></i> -->
+								<i class="fas fa-user-headset"></i>
 								<label class="radio-inline">
-									<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">media inquiry
-								</label>
-							</div>
-							<div class="vertical">
-								<!-- <i class="fas fa-user-headset"></i> -->
-								<label class="radio-inline">
-									<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">other
+									<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Technical<br>Issues
 								</label>
 							</div>
 						</div>
@@ -192,21 +185,13 @@
 					<label for="formControl4">Message</label>
 					<textarea class="form-control thirdOne required mandatoryfields" id="formControl4" tabindex="-1" aria-hidden="false" name="message"  rows="4" data-form-field="Message"></textarea>
 				</div>
-
-				<div class="d-flex justify-content-between align-items-center">
-					<div class="left">
-						<div class="form-check form-check-inline">
-							<legend>Print Copy</legend>
-							<input class="form-check-input position-static" type="checkbox" id="print-copy" value="" aria-label="Print Copy">
-						</div>
-						<label for="print-copy"><p class="white">Check to print a copy for your records</p></label>
-					</div>
-
-					<button type="submit" class="btn btn-info button-outlined" id="sendMessage" tabindex="-1" aria-hidden="false"><i class="fal fa-envelope brightBlue"></i>&nbsp;Send</button>
-
+				<center>
+					<button type="submit" class="btn btn-info button-outlined" id="sendMessage" tabindex="-1" aria-hidden="false">Submit</button>
+				</center>
+				<div class="emailInfo">
+					<h6 class="white pt1">Email</h6>
+					<p class="white"><i class="fal fa-envelope"></i>&nbsp;<a  href="mailto:ecls@westat.com">ecls@Westat.com</a></p>
 				</div>
-
-
 			</form>
 
 		</div>
@@ -323,40 +308,34 @@
 <div class="survey-footer">
 	<div class="one">
 
-		<div class="d-flex justify-content-between">
-			<p class="white">Site Map</p>
-			<div class="flip2"></div>
-			<p class="white">Accessibility</p>
-			<div class="flip2"></div>
-			<p class="white">Privacy/Disclaimer</p>
-			<div class="flip2"></div>
-			<p class="white">FOIA</p>
+			<div class="d-flex justify-content-between align-items-center">
+				<p class="white">Site Map</p>
+					<p class="white">Accessibility</p>
+						<p class="white">Privacy/Disclaimer</p>
+							<p class="white">FOIA</p>
 
-		</div>
+			</div>
 
-		<div class="d-flex justify-content-between align-items-center">
-			<p class="white">last updated: 8/10/2020</p>
+			<div class="d-flex justify-content-between align-items-center">
+				<p class="white">last updated: 8/10/2020</p>
 
 
-		</div>
-		<div class="d-flex justify-content-between align-items-center">
-			<p class="white">Download Acrobat Reader</p>
+			</div>
+			<div class="d-flex justify-content-between align-items-center">
+				<p class="white">Download Acrobat Reader</p>
 
-		</div>
+			</div>
 
 	</div>
 	<div class="two">
-		<a href="" target="_blank" title="HHS">
-			<img src="images/hhs.png" alt="HHS Logo">
+		<a href="" target="_blank" title="Westat">
+			<img src="assets/logo_Westat.svg" alt="Logo">
 		</a>
-		<a href="" target="_blank" title="NIH">
-			<img src="images/nih.png" alt="NIH Logo">
+		<a href="" target="_blank" title="NIJ">
+			<img src="assets/logo_Westat.svg" alt="Logo">
 		</a>
-		<a href="" target="_blank" title="NIH Drug">
-			<img src="images/drug.svg" alt="National Institute of Drug Abuse Logo">
-		</a>
-		<a href="" target="_blank" title="FDA">
-			<img src="images/fda.svg" alt="Food and Drug Administration Logo">
+		<a href="" target="_blank" title="NYU">
+			<img src="assets/logo_Westat.svg" alt="Logo">
 		</a>
 	</div>
 </div>
