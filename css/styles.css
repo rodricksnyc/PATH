@@ -1571,6 +1571,14 @@ label.togglePassword {
   margin: 1rem 0rem 2rem 0rem;
   font-weight:500;
 }
+.slideForm #sendMessage:hover {
+background: white;
+border-color:white;
+color:#0069AA;
+}
+.slideForm #sendMessage:hover .brightBlue{
+  color:#7bc043
+}
 
 .brightBlue{
   color:#0069AA;
