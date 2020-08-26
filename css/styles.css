@@ -3284,6 +3284,8 @@ margin-left: -19%;
 .slideForm .radio-inline input[type="radio"] {
     margin-left: -17px;
     margin-top: 5px;
+    width: 12px;
+    height: 12px;
 }
 
   .nav-link:after {
