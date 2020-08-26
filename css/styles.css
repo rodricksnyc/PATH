@@ -1585,6 +1585,11 @@ color:#0069AA;
   font-weight:900 !important
 }
 
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
 
 #slideOut2 button.close {
   color: #A3E56A;
