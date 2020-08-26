@@ -1403,8 +1403,10 @@ color: #0071ba;
   font-weight:300;
 
 }
-
-.slideForm .around2 .vertical:nth-of-type(1) {
+.slideForm .form-group .around2 .vertical label {
+max-width:7rem
+}
+/* .slideForm .around2 .vertical:nth-of-type(1) {
   width: 28%;
 }
 
@@ -1413,7 +1415,21 @@ color: #0071ba;
 }
 .slideForm.around2 .vertical:nth-of-type(3) {
   width: 17%;
+} */
+
+.slideForm .around2 .vertical:nth-of-type(1) {
+    width: auto;
 }
+.slideForm .around2 .vertical:nth-of-type(2) {
+    width: auto;
+}
+.slideForm .around2 .vertical:nth-of-type(3) {
+    width: auto;
+}
+.slideForm .around2 .vertical:nth-of-type(4) {
+    width: auto;
+}
+
 
 .slideForm .radio-inline input[type='radio']:checked:after {
   width: 14px;
@@ -1556,7 +1572,7 @@ label.togglePassword {
   -moz-justify-content: space-around;
   -ms-justify-content: space-around;
   justify-content: space-around;
-  margin-left: -10px;
+  margin-left: 0;
   margin-top: 10px;
 }
 
@@ -3235,6 +3251,41 @@ button.close {
 }
 
 @media (max-width: 767px) {
+
+.slideForm .around2 {
+  flex-wrap: wrap;
+  margin-left:0
+}
+.slideForm .around2 .vertical:nth-of-type(1) {
+  min-width: 44%;
+  margin-left: 4%;
+}
+.slideForm .around2 .vertical:nth-of-type(2) {
+    width: auto;
+    min-width:32%;
+}
+.slideForm .around2 .vertical:nth-of-type(3) {
+    width: auto;
+    min-width: 38%;
+    margin-right: 12%;
+}
+.slideForm .around2 .vertical:nth-of-type(4) {
+      width: auto;
+  min-width: 26%;
+  margin-right: 12%;
+margin-left: -19%;
+
+}
+.slideForm .around2 .vertical {
+  margin-bottom:1em;
+
+}
+
+.slideForm .radio-inline input[type="radio"] {
+    margin-left: -17px;
+    margin-top: 5px;
+}
+
   .nav-link:after {
     border-bottom: none;
     content: "";
@@ -3278,16 +3329,17 @@ button.close {
 
     margin-bottom: .5em;
 
-    margin-top: 1em;
+    margin-top: 0em;
   }
 
   .printSend, .contactInfo {
     flex-direction: column;
   }
-
-  .around2 .vertical {
-    max-width:24% !important
+  .slideForm .form-group .vertical label {
+    max-width:8rem
   }
+
+
 
   .survey-footer {
     min-height:16em;
