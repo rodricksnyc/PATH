@@ -352,6 +352,11 @@ a.nav-item {
 }
 
 .loginButton:hover {
+  background: #00559b;
+  color:white;
+}
+
+.loginButton:hover {
   text-decoration: none;
 }
 
