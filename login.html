@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
@@ -10,21 +9,18 @@
 	<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
 	<link rel="stylesheet" href="vendorlibs/normalize.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+
 	<link rel="shortcut icon" href="images/path-favicon_blue.png">
 </head>
-
 <body>
 
-
 	<div class="container-fluid overflow-hidden position-relative shadow">
-
 		<header id="Home">
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container-fluid">
 					<a class="pb-0" href="">
 						<img src="images/path-logo.svg" class="img-responsive logo" alt="Population Assessment of Tobacco and Health Logo">
 					</a>
-
 					<button class="navbar-toggler collapsed mr-2" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -96,248 +92,237 @@
 								<div class="col-lg-7">
 									<div class="bg-white rounded-lg">
 
-										<form role="form" id="creditCard">
+							 <form role="form" novalidate id="creditCard">
 											<div class="form-group">
 												<legend>First Name</legend>
-												<label for="first-name">First Name</label>
-												<input id="first-name" type="text" name="first-name" placeholder="" required class="form-control">
+												<label for="firstName">First Name</label>
+												<input id="firstName" type="text" name="first-name" class="form-control" required>
+												<!-- <div class="invalid-feedback">
+													<i class="far fa-info-circle"></i> Required
+												</div> -->
 
 											</div>
 
 											<div class="form-group">
 												<legend>Last Name</legend>
-												<label for="last-name">Last Name</label>
-												<input id="last-name" type="text" name="last-name" placeholder="" required class="form-control">
+												<label for="lastName">Last Name</label>
+												<input id="lastName" type="text" name="last-name" class="form-control" required>
+												<!-- <div class="invalid-feedback">
+													<i class="far fa-info-circle"></i> Required
+												</div> -->
 
 											</div>
 											<div class="form-group">
 												<legend>VISA last four digits</legend>
 												<label for="cardNumber">VISA last four digits</label>
-												<div class="input-group col-lg-2 col-xs-2 padding-0">
-													<input type="text" name="cardNumber" placeholder="" class="form-control" required>
+												<div class="form-group col-lg-2 col-xs-2 padding-0">
+													<input id="cardNumber" type="text" name="cardNumber" class="form-control" required maxlength="4">
+
+													<!-- <div class="invalid-feedback">
+														<i class="far fa-info-circle"></i> Required
+													</div> -->
 
 												</div>
 											</div>
-											<!-- <div class="row">
-											<div class="col-sm-8">
-											<div class="form-group">
-											<label><span class="hidden-xs">Expiration</span></label>
-											<div class="input-group">
-											<input type="number" placeholder="MM" name="" class="form-control" required>
-											<input type="number" placeholder="YY" name="" class="form-control" required>
-										</div>
+
+
+											<button type="submit" class="subscribe btn btn-primary rounded-pill enterBtn">Log In</button>
+
+										</form>
+
+
+
 									</div>
 								</div>
-								<div class="col-sm-4">
-								<div class="form-group mb-4">
-								<label data-toggle="tooltip" title="Three-digits code on the back of your card">CVV
-								<i class="fa fa-question-circle"></i>
-							</label>
-							<input type="text" required class="form-control">
+
+								<div class="col-lg-5">
+									<img src="images/cc.png" class="img-fluid ccPadding">
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-12">
+									<p class="small blue">Call 1-888-311-1819 if your card was misplaced.</p>
+									<p class="small blue">You are accessing a U.S. Government information system. System usage may be monitored, recorded, and subject to audit. Unauthorized use of the system is prohibited and subject to criminal and civil penalties. Use of the system indicates consent to monitoring and recording.</p>
+								</div>
+
+							</div>
+
 						</div>
 					</div>
+				</div>
 
-
-
-				</div> -->
-
-				<button type="button" class="subscribe btn btn-primary rounded-pill enterBtn">Log In</button>
-
-			</form>
-
-
-
+			</main>
 		</div>
 	</div>
 
-	<div class="col-lg-5">
-		<img src="images/cc.png" class="img-fluid ccPadding">
-	</div>
-</div>
+	<div id="slideOut2">
 
-<div class="row">
-	<div class="col-lg-12">
-		<p class="small blue">Call 1-888-311-1819 if your card was misplaced.</p>
-		<p class="small blue">You are accessing a U.S. Government information system. System usage may be monitored, recorded, and subject to audit. Unauthorized use of the system is prohibited and subject to criminal and civil penalties. Use of the system indicates consent to monitoring and recording.</p>
-	</div>
-
-</div>
-
-</div>
-</div>
-</div>
-
-</main>
-</div>
-</div>
-
-<div id="slideOut2">
-
-	<div id="one" class="openTab" role="button" tabindex="0" aria-label="Contact">
-		<p class="plum"><i class="fas fa-envelope plum"></i>&nbsp;&nbsp;Contact Us</p>
-
-	</div>
-
-	<div class="modal-content">
-		<div class="modal-header">
-			<div class="closeThisPlease" id="close">
-				<button role="button" role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
-					&#10005;
-				</button>
-			</div>
-			<br>
-			<div class="d-flex justify-content-between align-items-center contactInfo">
-
-				<p class="whiteLarger">Contact Us</p>
-				<p class="white update">Update Your Contact Info</p>
-			</div>
+		<div id="one" class="openTab" role="button" tabindex="0" aria-label="Contact">
+			<p class="plum"><i class="fas fa-envelope plum"></i>&nbsp;&nbsp;Contact Us</p>
 
 		</div>
-		<div class="modal-body">
-			<div class="row topContent">
-				<div class="col-lg-8">
-					<div class="text">
-						<p class="white">For general questions or comments, media inquiries, requests for materials, and/or technical comments or questions about the website, please fill out the form here and click the ‘Send Email’ button at the bottom. For details on the site’s use of this information, see Privacy/Disclaimer.</p>
-						<p class="white">Additional information for researchers  not government site is available on the National Addiction & HIV Data Archive Program  not government site website. Among other information this includes how to access PATH Study data and details about the study design.</p>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="right">
-						<img src="images/email-icon.svg" class="img-fluid">
-						<p class="white text-center">A copy of this communication will be sent to you be email.</p>
-					</div>
-				</div>
-			</div>
 
-			<form method="post" data-form-title="CONTACT US" class="slideForm">
-
-				<div class="form-group">
-					<legend>Email</legend>
-					<label for="formControl1">Email</label>
-					<input id="formControl1" type="text" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="Email" data-form-field="Email">
-				</div>
-				<div class="form-group">
-					<legend>Affiliated company, institution, or organization</legend>
-					<label for="formControl2">Affiliated company, institution, or organization<span class="light"> (if you are not affiliated enter “None” or “NA”):</span></label>
-					<input type="email" id="formControl2" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="email" data-form-field="Email">
-				</div>
-
-				<div class="form-group">
-					<fieldset>
-						<label for="general-inquiry">Contact Category</label>
-						<div class="around2">
-							<div class="vertical">
-
-								<legend>Contact Category</legend>
-								<label class="radio-inline">
-									<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false" id="general-inquiry" checked>Comment about the study
-								</label>
-							</div>
-							<div class="vertical">
-
-								<label class="radio-inline">
-									<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">problem with this website
-								</label>
-							</div>
-							<div class="vertical">
-
-								<label class="radio-inline">
-									<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">media inquiry
-								</label>
-							</div>
-							<div class="vertical">
-								<!-- <i class="fas fa-user-headset"></i> -->
-								<label class="radio-inline">
-									<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">other
-								</label>
-							</div>
-						</div>
-					</fieldset>
-				</div>
-				<div class="form-group">
-					<label for="formControl4">Message</label>
-					<textarea class="form-control thirdOne required mandatoryfields" id="formControl4" tabindex="-1" aria-hidden="false" name="message"  rows="4" data-form-field="Message"></textarea>
-				</div>
-
-				<div class="d-flex justify-content-between align-items-center printSend">
-					<div class="left">
-						<div class="form-check form-check-inline">
-							<legend>Print Copy</legend>
-							<input class="form-check-input position-static" type="checkbox" id="print-copy" value="" aria-label="Print Copy">
-						</div>
-						<label for="print-copy"><p class="white">Check to print a copy for your records</p></label>
-					</div>
-
-					<button type="submit" class="btn btn-info button-outlined" id="sendMessage" tabindex="-1" aria-hidden="false">
-						<i class="fal fa-envelope brightBlue"></i>&nbsp;Send
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="closeThisPlease" id="close">
+					<button role="button" role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
+						&#10005;
 					</button>
+				</div>
+				<br>
+				<div class="d-flex justify-content-between align-items-center contactInfo">
 
+					<p class="whiteLarger">Contact Us</p>
+					<p class="white update">Update Your Contact Info</p>
 				</div>
 
+			</div>
+			<div class="modal-body">
+				<div class="row topContent">
+					<div class="col-lg-8">
+						<div class="text">
+							<p class="white">For general questions or comments, media inquiries, requests for materials, and/or technical comments or questions about the website, please fill out the form here and click the ‘Send Email’ button at the bottom. For details on the site’s use of this information, see Privacy/Disclaimer.</p>
+							<p class="white">Additional information for researchers  not government site is available on the National Addiction & HIV Data Archive Program  not government site website. Among other information this includes how to access PATH Study data and details about the study design.</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="right">
+							<img src="images/email-icon.svg" class="img-fluid">
+							<p class="white text-center">A copy of this communication will be sent to you be email.</p>
+						</div>
+					</div>
+				</div>
 
-			</form>
+				<form method="post" data-form-title="CONTACT US" class="slideForm">
 
-		</div>
-		<div class="modal-footer">
+					<div class="form-group">
+						<legend>Email</legend>
+						<label for="formControl1">Email</label>
+						<input id="formControl1" type="email" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="Email" data-form-field="Email" required>
+					</div>
+					<div class="form-group">
+						<legend>Affiliated company, institution, or organization</legend>
+						<label for="formControl2">Affiliated company, institution, or organization<span class="light"> (if you are not affiliated enter “None” or “NA”):</span></label>
+						<input type="text" id="formControl2" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="email" data-form-field="Email" required>
+					</div>
+
+					<div class="form-group">
+						<fieldset>
+							<label for="general-inquiry">Contact Category</label>
+							<div class="around2">
+								<div class="vertical">
+
+									<legend>Contact Category</legend>
+									<label class="radio-inline">
+										<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false" id="general-inquiry" checked required>Comment about the study
+									</label>
+								</div>
+								<div class="vertical">
+
+									<label class="radio-inline">
+										<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">problem with this website
+									</label>
+								</div>
+								<div class="vertical">
+
+									<label class="radio-inline">
+										<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">media inquiry
+									</label>
+								</div>
+								<div class="vertical">
+
+									<label class="radio-inline">
+										<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">other
+									</label>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+					<div class="form-group">
+						<label for="formControl4">Message</label>
+						<textarea class="form-control thirdOne required mandatoryfields" id="formControl4" tabindex="-1" aria-hidden="false" name="message" rows="4" data-form-field="Message" required></textarea>
+					</div>
+
+					<div class="d-flex justify-content-between align-items-center printSend">
+						<div class="left">
+							<div class="form-check form-check-inline">
+								<legend>Print Copy</legend>
+								<input class="form-check-input position-static" type="checkbox" id="print-copy" value="" aria-label="Print Copy">
+							</div>
+							<label for="print-copy"><p class="white">Check to print a copy for your records</p></label>
+						</div>
+
+						<button type="submit" class="btn btn-info button-outlined" id="sendMessage" tabindex="-1" aria-hidden="false">
+							<i class="fal fa-envelope brightBlue"></i>&nbsp;Send
+						</button>
+
+					</div>
+
+
+				</form>
+
+			</div>
+			<div class="modal-footer">
+
+			</div>
 
 		</div>
 
 	</div>
 
-</div>
-
-<div class="toast transparent-opacity" role="alert" aria-live="assertive" aria-atomic="true">
-	&#x2713; Thank you.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message sent successfully.
-</div>
-
-
-
-<div class="footer-img">
-	<div class="container-fluid">
-		<img class="" src="images/bottom.svg" alt="Overlay">
+	<div class="toast transparent-opacity" role="alert" aria-live="assertive" aria-atomic="true">
+		&#x2713; Thank you.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message sent successfully.
 	</div>
-</div>
 
-<div class="survey-footer">
-	<div class="one">
 
-		<div class="d-flex justify-content-between">
-			<p class="white">Site Map</p>
-			<div class="flip2"></div>
-			<p class="white">Accessibility</p>
-			<div class="flip2"></div>
-			<p class="white">Privacy/Disclaimer</p>
-			<div class="flip2"></div>
-			<p class="white">FOIA</p>
+
+	<div class="footer-img">
+		<div class="container-fluid">
+			<img class="" src="images/bottom.svg" alt="Overlay">
+		</div>
+	</div>
+
+	<div class="survey-footer">
+		<div class="one">
+
+			<div class="d-flex justify-content-between">
+				<p class="white">Site Map</p>
+				<div class="flip2"></div>
+				<p class="white">Accessibility</p>
+				<div class="flip2"></div>
+				<p class="white">Privacy/Disclaimer</p>
+				<div class="flip2"></div>
+				<p class="white">FOIA</p>
+
+			</div>
+
+			<div class="d-flex justify-content-between align-items-center">
+				<p class="white">last updated: 8/10/2020</p>
+
+
+			</div>
+			<div class="d-flex justify-content-between align-items-center">
+				<p class="white">Download Acrobat Reader</p>
+
+			</div>
 
 		</div>
-
-		<div class="d-flex justify-content-between align-items-center">
-			<p class="white">last updated: 8/10/2020</p>
-
-
+		<div class="two">
+			<a href="" target="_blank" title="HHS">
+				<img src="images/hhs.png" alt="HHS Logo">
+			</a>
+			<a href="" target="_blank" title="NIH">
+				<img src="images/nih.png" alt="NIH Logo">
+			</a>
+			<a href="" target="_blank" title="NIH Drug">
+				<img src="images/drug.svg" alt="National Institute of Drug Abuse Logo">
+			</a>
+			<a href="" target="_blank" title="FDA">
+				<img src="images/fda.svg" alt="Food and Drug Administration Logo">
+			</a>
 		</div>
-		<div class="d-flex justify-content-between align-items-center">
-			<p class="white">Download Acrobat Reader</p>
-
-		</div>
-
 	</div>
-	<div class="two">
-		<a href="" target="_blank" title="HHS">
-			<img src="images/hhs.png" alt="HHS Logo">
-		</a>
-		<a href="" target="_blank" title="NIH">
-			<img src="images/nih.png" alt="NIH Logo">
-		</a>
-		<a href="" target="_blank" title="NIH Drug">
-			<img src="images/drug.svg" alt="National Institute of Drug Abuse Logo">
-		</a>
-		<a href="" target="_blank" title="FDA">
-			<img src="images/fda.svg" alt="Food and Drug Administration Logo">
-		</a>
-	</div>
-</div>
 
 </div>
 </div>
@@ -346,6 +331,9 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/landing.js"></script>
+
+<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+
 </body>
 
 </html>

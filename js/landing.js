@@ -40,6 +40,106 @@ $(document).ready(function () {
 	});
 
 
+// 	var dataAttr = $('#inputName').attr('data-error')
+//
+// 	console.log(dataAttr)
+//
+//
+//
+//
+// $("#inputName").attr({"data-error": "required"})
+//
+
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  "use strict";
+  window.addEventListener("load", function() {
+    var form = document.getElementById("creditCard");
+    form.addEventListener("submit", function(event) {
+      if (form.checkValidity() == false) {
+        event.preventDefault();
+        event.stopPropagation();
+
+				// alert('no')
+				// $('.invalid-feedback').closest('.form-group').css('background', '#faede9')
+      }
+
+		  if (form.checkValidity() == true) {
+
+			// $('.invalid-feedback').closest('.form-group').css('background', 'white')
+			}
+      form.classList.add("was-validated");
+    }, false);
+  }, false);
+}());
+
+
+
+    $("#creditCard").validate(
+      {
+        rules:
+        {
+          cardNumber:
+          {
+            required: true,
+            maxlength: 4,
+						minlength:4
+          }
+
+        }
+      });
+
+
+
+  // $("#creditCard").validate({
+  //   // Specify validation rules
+  //   rules: {
+  //     lastName: "required",
+  //     lastName: "required",
+  //     cardNumber: {
+  //       required: true,
+	// 			maxlength: 4,
+	// 			minlength:4
+  //     },
+  //   //   phone: {
+  //   //     required: true,
+  //   //     digits: true,
+  //   //     minlength: 10,
+  //   //     maxlength: 10,
+  //   //   },
+  //   //   password: {
+  //   //     required: true,
+  //   //     minlength: 5,
+  //   //   }
+  //   // },
+  //   messages: {
+  //     firstName: {
+  //     required: "Please enter first name",
+  //    },
+  //    lastName: {
+  //     required: "Please enter last name",
+  //    },
+	// 	 cardNumber: {
+	// 		  required: "Please enter 4 digits",
+	// 	 }
+  //    // phone: {
+  //    //  required: "Please enter phone number",
+  //    //  digits: "Please enter valid phone number",
+  //    //  minlength: "Phone number field accept only 10 digits",
+  //    //  maxlength: "Phone number field accept only 10 digits",
+  //    // },
+  //    // email: {
+  //    //  required: "Please enter email address",
+  //    //  email: "Please enter a valid email address.",
+  //    // },
+  //   }
+	// }
+	//
+  // });
+
+
+
+
 
 	$('.spanish').on('click', function(e) {
 		// e.preventDefault()

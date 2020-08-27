@@ -375,9 +375,26 @@ a.nav-item {
 #creditCard .form-control {
   font-size:large;
   color: #00559b;
-
+  position: relative;
   border: 1px solid #00559b;
 
+}
+
+.invalid-feedback {
+/*
+    margin-top: -25px; */
+    font-size: 80%;
+    color: #CC473A;
+    padding-left: 5px;
+    /* margin-bottom: 25px; */
+}
+.custom-select.is-invalid, .form-control.is-invalid, .was-validated .custom-select:invalid, .was-validated .form-control:invalid {
+    border-color: #CC473A !important;
+}
+label.error{
+  font-size: 12px !important;
+  color: #CC473A !important;
+  min-width:320px !important
 }
 
 /*
@@ -1877,6 +1894,7 @@ p.modalFooter {
 .form-group label {
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
+  font-size:20px;
 }
 .form-group {
   margin-bottom: 15px;
@@ -3015,7 +3033,7 @@ button.close {
   box-shadow: none !important
 }
 #creditCard label{
-  font-size:18px !important;
+  /* font-size:18px !important; */
   color:#004F7F;
   margin-bottom:0px
 }
