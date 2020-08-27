@@ -83,7 +83,8 @@ $(document).ready(function () {
           {
             required: true,
             maxlength: 4,
-						minlength:4
+						minlength:4,
+						 digits: true
           }
 
         }
