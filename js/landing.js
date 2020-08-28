@@ -16,7 +16,9 @@ $(document).ready(function () {
 	// 	// Apply a dark color scheme
 	// }
 
-	var path = window.location.href;
+
+
+	var path = window.location.href
 
 
 	$('.navbar-nav li .nav-link').each(function() {
@@ -125,10 +127,24 @@ $(document).ready(function () {
 			//
 			// });
 
+// var defaultState = {
+//    current: window.location.pathname
+// };
+//
+// var requestParameters = [
+//    '#googtrans(en|es)'
+// ];
+//
+//
+//
+//
+// var path = window.location.pathname + requestParameters.join("");
+// window.history.pushState(defaultState, 'Title', path);
+//
 			var mainURL = window.location.href;
 
 
-			// $('#ingles').attr('href' , mainURL)
+			$('#ingles').attr('href' , mainURL)
 
 			$(window).on('load', function() {
 				if(mainURL.includes('googtrans(en|es)')) {
