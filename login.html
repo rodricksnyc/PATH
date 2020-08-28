@@ -338,13 +338,24 @@ new google.translate.TranslateElement({
 }
 </script> -->
 <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-				pageLanguage: 'en',
-				autoDisplay: false,
-				includedLanguages: 'en,es',
-				layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
-    }
+    // function googleTranslateElementInit() {
+    //   new google.translate.TranslateElement({
+		// 		pageLanguage: 'en',
+		// 		autoDisplay: false,
+		// 		includedLanguages: 'en,es',
+		// 		layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+    // }
+
+
+		//Google provides this function
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: "en",
+        includedLanguages: "es",
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+    }, "google_translate_element")
+}
 
 	function triggerHtmlEvent(element, eventName) {
 	  var event;
