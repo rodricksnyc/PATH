@@ -326,6 +326,17 @@ a.nav-item {
   display: none !important
 }
 
+#google_translate_element {
+  display:none !important;
+}
+#goog-gt-tt, .goog-te-balloon-frame{
+  display: none !important;
+}
+.goog-text-highlight {
+  background: none !important;
+  box-shadow: none !important;
+}
+
 body {
   top:0 !important
 }
