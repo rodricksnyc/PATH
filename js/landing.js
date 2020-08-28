@@ -127,6 +127,9 @@ $(document).ready(function () {
 
 			var mainURL = window.location.href;
 
+
+			$('#ingles').attr('href' , mainURL)
+
 			$(window).on('load', function() {
 				if(mainURL.includes('googtrans(en|es)')) {
 
