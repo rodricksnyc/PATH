@@ -293,6 +293,46 @@ a.nav-item {
   font-weight: 600;
 }
 
+.translate-toggle {
+  display:none
+}
+.goog-te-gadget {
+
+    font-size: 0px !important;
+
+}
+.goog-logo-link, .goog-logo-link:link, .goog-logo-link:visited, .goog-logo-link:hover, .goog-logo-link:active{
+  display: none !important
+}
+
+.goog-te-banner-frame {
+  display: none !important
+}
+.goog-te-gadget-simple img {
+  display: none !important
+}
+
+.translate-a {
+  height:0px !important
+}
+.utility-nav {
+  position: relative;
+}
+
+.wrap-a {
+  position: absolute;
+  z-index:9999999;
+  right:0;
+  display: none !important
+}
+
+body {
+  top:0 !important
+}
+
+a {
+  text-decoration: none !important
+}
 
 .navbar .activeDot {
   border-radius: 1rem;
@@ -346,15 +386,24 @@ a.nav-item {
   justify-content: center;
   align-items: center;
   min-width:3rem !important;
-  color: #00559b;
+
+}
+.loginButton p {
+  color: #00559b !important;
   font-weight:500;
   font-size:16px;
+  margin:0em
 }
 
 .loginButton:hover {
   background: #00559b;
-  color:white;
+
+
 }
+.loginButton:hover p{
+  color:white !important;
+  margin:0em
+  }
 
 .loginButton:hover {
   text-decoration: none;
@@ -394,6 +443,12 @@ a.nav-item {
 label.error{
   font-size: 12px !important;
   color: #CC473A !important;
+  min-width:320px !important
+}
+
+.slideForm label.error{
+  font-size: 12px !important;
+  color: #FF9F96 !important;
   min-width:320px !important
 }
 

@@ -14,7 +14,15 @@
 </head>
 <body>
 
-	<div class="container-fluid overflow-hidden position-relative shadow">
+<div id="translate-a">
+<div class="wrap-a">
+	<div id="google_translate_element"></div>
+</div>
+</div>
+
+
+
+ <div class="container-fluid overflow-hidden position-relative shadow">
 		<header id="Home">
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container-fluid">
@@ -41,19 +49,27 @@
 							</li>
 
 							<div class="d-flex justify-content-center align-items-center">
-								<div class="english activeDot" tabindex="0" aria-hidden="false" role="button"><p class="language">English</p></div>
+
+
+						 <a id="ingles" href="#googtrans(en|en)" class="lang-en lang-select english activeDot" data-lang="en" tabindex="0" aria-hidden="false" role="button">
+							 <!-- <div class="english activeDot" tabindex="0" aria-hidden="false" role="button"> -->
+							 <p class="language">English</p>
+						 <!-- </div> -->
+					 </a>
 								<div class="flip"></div>
-								<div class="spanish inactiveDot" tabindex="0" aria-hidden="false" role="button"><p class="language">Espa&ntilde;ol</p></div>
-								<!-- <select class="custom-select">
+								<a id="espanol" href="#googtrans(en|es)" class="lang-es lang-select spanish inactiveDot" data-lang="es" tabindex="0" aria-hidden="false" role="button">
+									<!-- <div class="spanish inactiveDot" tabindex="0" aria-hidden="false" role="button"> -->
+										<p class="language">Espa&ntilde;ol</p>
+									<!-- </div> -->
+								</a>
 
-								<option>EN</option></i>
-								<option>ES</option></i>
 
-							</select> -->
 						</div>
 
 
-						<a class="loginButton" href="">LOG IN</a>
+
+						<a class="loginButton" href=""><p>LOG IN</p></a>
+
 					</div>
 				</div>
 			</div>
@@ -62,15 +78,18 @@
 	</header>
 </div>
 
+
+
 <div class="container-fluid lightBlue">
 
 
 	<div id="Guide" class="landing-sec container-fluid heros">
 
+
+
 		<div class="guide-overlay container">
 			<h2 class="landing-sec-H">Study Participant Login</h2>
 			<p class="black">Please enter your First Name and Last Name as given to the PATH interviewer. If you have a VISA debit card, please enter the last four numbers of the card number, as shown in the green circle.</p>
-
 
 		</div>
 	</div>
@@ -199,12 +218,12 @@
 					<div class="form-group">
 						<legend>Email</legend>
 						<label for="formControl1">Email</label>
-						<input id="formControl1" type="email" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="Email" data-form-field="Email" required>
+						<input id="formControl1" type="email" class="form-control required" tabindex="-1" aria-hidden="false" name="Email" data-form-field="Email" required>
 					</div>
 					<div class="form-group">
 						<legend>Affiliated company, institution, or organization</legend>
 						<label for="formControl2">Affiliated company, institution, or organization<span class="light"> (if you are not affiliated enter “None” or “NA”):</span></label>
-						<input type="text" id="formControl2" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="email" data-form-field="Email" required>
+						<input type="text" id="formControl2" class="form-control" tabindex="-1" aria-hidden="false" name="company">
 					</div>
 
 					<div class="form-group">
@@ -215,25 +234,25 @@
 
 									<legend>Contact Category</legend>
 									<label class="radio-inline">
-										<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false" id="general-inquiry" checked required>Comment about the study
+										<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false" id="general-inquiry" checked required>Comment about the study
 									</label>
 								</div>
 								<div class="vertical">
 
 									<label class="radio-inline">
-										<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">problem with this website
+										<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">problem with this website
 									</label>
 								</div>
 								<div class="vertical">
 
 									<label class="radio-inline">
-										<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">media inquiry
+										<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">media inquiry
 									</label>
 								</div>
 								<div class="vertical">
 
 									<label class="radio-inline">
-										<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">other
+										<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">other
 									</label>
 								</div>
 							</div>
@@ -241,7 +260,7 @@
 					</div>
 					<div class="form-group">
 						<label for="formControl4">Message</label>
-						<textarea class="form-control thirdOne required mandatoryfields" id="formControl4" tabindex="-1" aria-hidden="false" name="message" rows="4" data-form-field="Message" required></textarea>
+						<textarea class="form-control" id="formControl4" tabindex="-1" aria-hidden="false" name="message" rows="4" data-form-field="Message"></textarea>
 					</div>
 
 					<div class="d-flex justify-content-between align-items-center printSend">
@@ -331,8 +350,51 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/landing.js"></script>
-
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&amp;languages=en,es"></script>
 <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+
+<!-- <script>
+
+
+
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({
+	pageLanguage: 'en',
+	autoDisplay: false,
+	includedLanguages: 'en,es',
+	layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+},
+'google_translate_element');
+}
+</script> -->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+    }
+
+	function triggerHtmlEvent(element, eventName) {
+	  var event;
+	  if (document.createEvent) {
+		event = document.createEvent('HTMLEvents');
+		event.initEvent(eventName, true, true);
+		element.dispatchEvent(event);
+	  } else {
+		event = document.createEventObject();
+		event.eventType = eventName;
+		element.fireEvent('on' + event.eventType, event);
+	  }
+	}
+
+	jQuery('.lang-select').click(function() {
+	  var theLang = jQuery(this).attr('data-lang');
+	  jQuery('.goog-te-combo').val(theLang);
+
+	  //alert(jQuery(this).attr('href'));
+	  window.location = jQuery(this).attr('href');
+	  location.reload();
+
+	});
+  </script>
 
 </body>
 

@@ -16,18 +16,8 @@ $(document).ready(function () {
 	// 	// Apply a dark color scheme
 	// }
 
-	//make the nav item have active line on current page
-
 	var path = window.location.href;
-	// $('.navbar-nav li a').each(function() {
-	//   if (this.href === path) {
-	//     $(this).addClass('active');
-	//   }
-	//   else {
-	//     $(this).removeClass('active');
-	//   }
-	//
-	// });
+
 
 	$('.navbar-nav li .nav-link').each(function() {
 		if (this.href === path) {
@@ -39,41 +29,24 @@ $(document).ready(function () {
 
 	});
 
-
-// 	var dataAttr = $('#inputName').attr('data-error')
+// (function() {
+//   "use strict";
+//   window.addEventListener("load", function() {
+//     var form = document.getElementById("creditCard");
+//     form.addEventListener("submit", function(event) {
+//       if (form.checkValidity() == false) {
+//         event.preventDefault();
+//         event.stopPropagation();
 //
-// 	console.log(dataAttr)
+//       }
 //
+// 		  if (form.checkValidity() == true) {
 //
-//
-//
-// $("#inputName").attr({"data-error": "required"})
-//
-
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
-  "use strict";
-  window.addEventListener("load", function() {
-    var form = document.getElementById("creditCard");
-    form.addEventListener("submit", function(event) {
-      if (form.checkValidity() == false) {
-        event.preventDefault();
-        event.stopPropagation();
-
-				// alert('no')
-				// $('.invalid-feedback').closest('.form-group').css('background', '#faede9')
-      }
-
-		  if (form.checkValidity() == true) {
-
-			// $('.invalid-feedback').closest('.form-group').css('background', 'white')
-			}
-      form.classList.add("was-validated");
-    }, false);
-  }, false);
-}());
-
-
+// 			}
+//       form.classList.add("was-validated");
+//     }, false);
+//   }, false);
+// }());
 
     $("#creditCard").validate(
       {
@@ -84,11 +57,25 @@ $(document).ready(function () {
             required: true,
             maxlength: 4,
 						minlength:4,
-						 digits: true
+						digits: true
           }
-
         }
       });
+
+
+			    $(".slideForm").validate(
+			      {
+			        rules:
+			        {
+			          email:
+			          {
+			            required: true,
+									email: true
+
+			          }
+
+			        }
+			      });
 
 
 
@@ -138,21 +125,42 @@ $(document).ready(function () {
 	//
   // });
 
+var mainURL = window.location.href;
 
+$(window).on('load', function() {
+	if(mainURL.includes('googtrans(en|es)')) {
 
+	$('#espanol').removeClass('inactiveDot').addClass('activeDot')
+	$('#ingles').removeClass('activeDot').addClass('inactiveDot')
+
+	$('#espanol').on('keyup', function(e) {
+
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 13 ) {
+			$(this).removeClass('inactiveDot').addClass('activeDot')
+			$('.english').removeClass('activeDot').addClass('inactiveDot')
+
+		}
+
+	})
+
+}
+
+})
 
 
 	$('.spanish').on('click', function(e) {
 		// e.preventDefault()
-		$(this).removeClass('navbar inactiveDot').addClass('navbar activeDot')
-		$('.english').removeClass('navbar activeDot').addClass('navbar inactiveDot')
+
+		$(this).removeClass('inactiveDot').addClass('activeDot')
+		$('.english').removeClass('activeDot').addClass('inactiveDot')
 
 	})
 
 	$('.english').on('click', function(e) {
 		// e.preventDefault()
-		$(this).removeClass('navbar inactiveDot').addClass('navbar activeDot')
-		$('.spanish').removeClass('navbar activeDot').addClass('navbar inactiveDot')
+		$(this).removeClass('inactiveDot').addClass('activeDot')
+		$('.spanish').removeClass('activeDot').addClass('inactiveDot')
 
 	})
 
@@ -183,7 +191,7 @@ $(document).ready(function () {
 
 	$('#sendMessage').click(function (e) {
 
-		if(!$('#formControl1').val() == '' && !$('#formControl2').val() =='' && !$('#general-inquiry').val() =='' && !$('#formControl4').val() =='')    {
+		if(!$('#formControl1').val() == '')    {
 
 			e.preventDefault()
 
@@ -218,7 +226,7 @@ $(document).ready(function () {
 		var code = (e.keyCode ? e.keyCode : e.which);
 		if (code == 13 ) {
 
-			if(!$('#formControl1').val() == '' && !$('#formControl2').val() =='' && !$('#general-inquiry').val() =='' && !$('#formControl4').val() =='')    {
+			if(!$('#formControl1').val() == '')    {
 
 				e.preventDefault()
 
