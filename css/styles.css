@@ -298,7 +298,7 @@ a.nav-item {
 }
 .goog-te-gadget {
 
-    font-size: 0px !important;
+  font-size: 0px !important;
 
 }
 .goog-logo-link, .goog-logo-link:link, .goog-logo-link:visited, .goog-logo-link:hover, .goog-logo-link:active{
@@ -403,7 +403,7 @@ a {
 .loginButton:hover p{
   color:white !important;
   margin:0em
-  }
+}
 
 .loginButton:hover {
   text-decoration: none;
@@ -430,15 +430,15 @@ a {
 }
 
 .invalid-feedback {
-/*
-    margin-top: -25px; */
-    font-size: 80%;
-    color: #CC473A;
-    padding-left: 5px;
-    /* margin-bottom: 25px; */
+  /*
+  margin-top: -25px; */
+  font-size: 80%;
+  color: #CC473A;
+  padding-left: 5px;
+  /* margin-bottom: 25px; */
 }
 .custom-select.is-invalid, .form-control.is-invalid, .was-validated .custom-select:invalid, .was-validated .form-control:invalid {
-    border-color: #CC473A !important;
+  border-color: #CC473A !important;
 }
 label.error{
   font-size: 12px !important;
@@ -677,7 +677,10 @@ height: 30px;
 }
 
 .left {
-  float:left
+  padding:1em;
+  background: #0e68a8;
+  margin-top: -1em;
+  float:left;
 }
 
 .right {
@@ -1476,30 +1479,30 @@ color: #0071ba;
 
 }
 .slideForm .form-group .around2 .vertical label {
-max-width:7rem
+  max-width:7rem
 }
 /* .slideForm .around2 .vertical:nth-of-type(1) {
-  width: 28%;
+width: 28%;
 }
 
 .slideForm .around2 .vertical:nth-of-type(2) {
-  width: 28%;
+width: 28%;
 }
 .slideForm.around2 .vertical:nth-of-type(3) {
-  width: 17%;
+width: 17%;
 } */
 
 .slideForm .around2 .vertical:nth-of-type(1) {
-    width: auto;
+  width: auto;
 }
 .slideForm .around2 .vertical:nth-of-type(2) {
-    width: auto;
+  width: auto;
 }
 .slideForm .around2 .vertical:nth-of-type(3) {
-    width: auto;
+  width: auto;
 }
 .slideForm .around2 .vertical:nth-of-type(4) {
-    width: auto;
+  width: auto;
 }
 
 
@@ -1660,9 +1663,9 @@ label.togglePassword {
   font-weight:500;
 }
 .slideForm #sendMessage:hover {
-background: white;
-border-color:white;
-color:#0069AA;
+  background: white;
+  border-color:white;
+  color:#0069AA;
 }
 .slideForm #sendMessage:hover .brightBlue{
   color:#7bc043
@@ -1674,8 +1677,8 @@ color:#0069AA;
 }
 
 ::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 
@@ -3325,41 +3328,41 @@ button.close {
 
 @media (max-width: 767px) {
 
-.slideForm .around2 {
-  flex-wrap: wrap;
-  margin-left:0
-}
-.slideForm .around2 .vertical:nth-of-type(1) {
-  min-width: 44%;
-  margin-left: 4%;
-}
-.slideForm .around2 .vertical:nth-of-type(2) {
+  .slideForm .around2 {
+    flex-wrap: wrap;
+    margin-left:0
+  }
+  .slideForm .around2 .vertical:nth-of-type(1) {
+    min-width: 44%;
+    margin-left: 4%;
+  }
+  .slideForm .around2 .vertical:nth-of-type(2) {
     width: auto;
     min-width:32%;
-}
-.slideForm .around2 .vertical:nth-of-type(3) {
+  }
+  .slideForm .around2 .vertical:nth-of-type(3) {
     width: auto;
     min-width: 38%;
     margin-right: 12%;
-}
-.slideForm .around2 .vertical:nth-of-type(4) {
-      width: auto;
-  min-width: 26%;
-  margin-right: 12%;
-margin-left: -19%;
+  }
+  .slideForm .around2 .vertical:nth-of-type(4) {
+    width: auto;
+    min-width: 26%;
+    margin-right: 12%;
+    margin-left: -19%;
 
-}
-.slideForm .around2 .vertical {
-  margin-bottom:1em;
+  }
+  .slideForm .around2 .vertical {
+    margin-bottom:1em;
 
-}
+  }
 
-.slideForm .radio-inline input[type="radio"] {
+  .slideForm .radio-inline input[type="radio"] {
     margin-left: -17px;
     margin-top: 5px;
     width: 12px;
     height: 12px;
-}
+  }
 
   .nav-link:after {
     border-bottom: none;
