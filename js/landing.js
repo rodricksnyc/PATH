@@ -149,6 +149,7 @@ $(document).ready(function () {
 			})
 
 
+			// $('a').not('#espanol').prop('hash','#googtrans(en|en)'); 
 
 
 			$('.spanish').on('click', function(e) {
