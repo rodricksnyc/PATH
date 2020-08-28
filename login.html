@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" translate="no">
+<html lang="en">
 <head>
 	<meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
@@ -338,7 +338,10 @@ new google.translate.TranslateElement({
 </script> -->
 <script type="text/javascript">
     function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+      new google.translate.TranslateElement({
+				pageLanguage: 'en',
+				autoDisplay: false,
+				layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
     }
 
 	function triggerHtmlEvent(element, eventName) {

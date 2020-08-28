@@ -149,6 +149,8 @@ $(document).ready(function () {
 			})
 
 
+
+
 			$('.spanish').on('click', function(e) {
 				// e.preventDefault()
 
