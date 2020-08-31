@@ -217,7 +217,7 @@ $(document).ready(function () {
 					if( !emailReg.test( emil ) ) {
 						alert('Please enter valid email');
 					} else {
-						alert('Thank you for your valid email');
+						// alert('Thank you for your valid email');
 					}
 				})
 			});
