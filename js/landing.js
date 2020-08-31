@@ -17,9 +17,7 @@ $(document).ready(function () {
 	// }
 
 
-
 	var path = window.location.href
-
 
 	$('.navbar-nav li .nav-link').each(function() {
 		if (this.href === path) {
@@ -127,20 +125,20 @@ $(document).ready(function () {
 			//
 			// });
 
-// var defaultState = {
-//    current: window.location.pathname
-// };
-//
-// var requestParameters = [
-//    '#googtrans(en|es)'
-// ];
-//
-//
-//
-//
-// var path = window.location.pathname + requestParameters.join("");
-// window.history.pushState(defaultState, 'Title', path);
-//
+			// var defaultState = {
+			//    current: window.location.pathname
+			// };
+			//
+			// var requestParameters = [
+			//    '#googtrans(en|es)'
+			// ];
+			//
+			//
+			//
+			//
+			// var path = window.location.pathname + requestParameters.join("");
+			// window.history.pushState(defaultState, 'Title', path);
+			//
 			var mainURL = window.location.href;
 
 
@@ -168,9 +166,9 @@ $(document).ready(function () {
 			})
 
 
-// $(window).on('load', function() {
-// 			$('a').not('#espanol').prop('hash','#googtrans(en|en)');
-// })
+			// $(window).on('load', function() {
+			// 			$('a').not('#espanol').prop('hash','#googtrans(en|en)');
+			// })
 
 
 
@@ -202,7 +200,6 @@ $(document).ready(function () {
 
 
 			$('.english').on('keyup', function(e) {
-
 				var code = (e.keyCode ? e.keyCode : e.which);
 				if (code == 13 ) {
 					$(this).removeClass('inactiveDot').addClass('activeDot')
@@ -212,14 +209,24 @@ $(document).ready(function () {
 
 			})
 
+			$('#formControl1').focusout(function(){
+
+				$('#formControl1').filter(function(){
+					var emil=$('#formControl1').val();
+					var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+					if( !emailReg.test( emil ) ) {
+						alert('Please enter valid email');
+					} else {
+						alert('Thank you for your valid email');
+					}
+				})
+			});
 
 
 			$('#sendMessage').click(function (e) {
 
 				if(!$('#formControl1').val() == '')    {
-
 					e.preventDefault()
-
 
 					$("#slideOut2").removeClass('showslideOut2');
 					setTimeout(function () {
@@ -254,7 +261,6 @@ $(document).ready(function () {
 
 						e.preventDefault()
 
-
 						$("#slideOut2").removeClass('showslideOut2');
 						setTimeout(function () {
 							$('.toast').css('right', '0px')
@@ -271,8 +277,6 @@ $(document).ready(function () {
 							$('.toast').css('right', '-335px')
 							$('.toast').addClass('animated slideOutRight')
 						}, 4900)
-
-
 
 					}
 
@@ -308,16 +312,11 @@ $(document).ready(function () {
 
 					setReasonActive()
 
-
 				}
 			})
 
 
-
-
-
 			$('.radio-inline input').change(function (e) {
-
 				setReasonActive();
 
 			})
@@ -338,7 +337,6 @@ $(document).ready(function () {
 
 			setReasonActive()
 
-
 			var open = function() {
 
 				$('.contactUsOverlay').show();
@@ -356,7 +354,6 @@ $(document).ready(function () {
 
 				$('#sendMessage').attr('tabindex', '0');
 
-
 				$('.modal-content').addClass('opened')
 				$("#slideOut2").addClass('showslideOut2');
 				setTimeout(function() {
@@ -373,20 +370,9 @@ $(document).ready(function () {
 
 
 
-
-
-
 			$('.contactUsOverlay').on('click', function(e) {
 
 				if($('body').hasClass('showContact')) {
-
-					// $('#theform input').each(function () {
-					// 	$(this).attr('tabindex', '-1');
-					// });
-
-					// $('.radio-inline input').each(function () {
-					// 	$(this).attr('tabindex', '-1');
-					// });
 
 					$('#slideOut2 .form-control').attr('tabindex', '-1');
 
@@ -404,28 +390,12 @@ $(document).ready(function () {
 			})
 
 
-
-
-
 			var close = function() {
-
 				$('.contactUsOverlay').hide();
-				// $('#theform input').each(function () {
-				// 	$(this).attr('tabindex', '-1');
-				// });
-				//
-				// $('.radio-inline input').each(function () {
-				// 	$(this).attr('tabindex', '-1');
-				// });
-
 				$('#slideOut2 .form-control').attr('tabindex', '-1');
-
 				$('#closeThisPlease').attr('tabindex', '-1');
-
 				$('#sendMessage').attr('tabindex', '-1');
-
 				$("#slideOut2").removeClass('showslideOut2');
-
 
 			}
 
@@ -438,7 +408,6 @@ $(document).ready(function () {
 
 
 			$("#closeThisPlease").on("keyup", function (e) {
-
 				var code = (e.keyCode ? e.keyCode : e.which);
 				if (code == 13) {
 
@@ -447,20 +416,8 @@ $(document).ready(function () {
 
 			})
 
-			// $("#one").on("keyup", function (e) {
-			//
-			// 	var code = (e.keyCode ? e.keyCode : e.which);
-			// 	if (code == 9) {
-			//
-			// 		$('input').focus().css('outline', 'dashed 3px #4599ff')
-			// 	}
-			//
-			// })
-
-
 
 			if ($(document).innerWidth() <= 767) {
-
 
 				$('.openTab .plum').html('<i class="fas fa-envelope"></i>')
 				$('#one').css('right', '-20px')

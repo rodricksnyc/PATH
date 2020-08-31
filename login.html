@@ -17,90 +17,90 @@
 	<script type="text/javascript" src="js/landing.js"></script>
 
 	<script type="text/javascript">
-	  function googleTranslateElementInit() {
-	    new google.translate.TranslateElement({pageLanguage: 'ro',
-	      includedLanguages: 'af,ar,de,en,es,fr,hu,it,ja,no,ro,ru,tr,zh-CN',
-	      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-	      autoDisplay: false}, 'google_translate_element');
-	  }
+	function googleTranslateElementInit() {
+		new google.translate.TranslateElement({pageLanguage: 'ro',
+		includedLanguages: 'af,ar,de,en,es,fr,hu,it,ja,no,ro,ru,tr,zh-CN',
+		layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+		autoDisplay: false}, 'google_translate_element');
+	}
 
-	  function loadGoogleTranslate() {
-	    var googleTranslateScript = document.createElement('script');
-	    googleTranslateScript.type = 'text/javascript';
-	    googleTranslateScript.async = true;
-	    googleTranslateScript.src = 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-	    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild(googleTranslateScript);
-	  }
-		$('.lang-select').click(function() {
-			  var theLang = jQuery(this).attr('data-lang');
-			  $('.goog-te-combo').val(theLang);
+	function loadGoogleTranslate() {
+		var googleTranslateScript = document.createElement('script');
+		googleTranslateScript.type = 'text/javascript';
+		googleTranslateScript.async = true;
+		googleTranslateScript.src = 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild(googleTranslateScript);
+	}
+	$('.lang-select').click(function() {
+		var theLang = jQuery(this).attr('data-lang');
+		$('.goog-te-combo').val(theLang);
 
-			  window.location = jQuery(this).attr('href');
-			  location.reload();
+		window.location = jQuery(this).attr('href');
+		location.reload();
 
-			});
+	});
 	</script>
 </head>
 <body>
 
-<!-- <div id="translate-a">
-<div class="wrap-a">
+	<!-- <div id="translate-a">
+	<div class="wrap-a">
 	<div id="google_translate_element"></div>
 </div>
 </div> -->
 
- <div class="container-fluid overflow-hidden position-relative shadow">
-		<header id="Home">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container-fluid">
-					<a class="pb-0" href="">
-						<img src="images/path-logo.svg" class="img-responsive logo" alt="Population Assessment of Tobacco and Health Logo">
-					</a>
-					<button class="navbar-toggler collapsed mr-2" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
+<div class="container-fluid overflow-hidden position-relative shadow">
+	<header id="Home">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+				<a class="pb-0" href="">
+					<img src="images/path-logo.svg" class="img-responsive logo" alt="Population Assessment of Tobacco and Health Logo">
+				</a>
+				<button class="navbar-toggler collapsed mr-2" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-						<div class="navbar-nav d-block d-lg-flex ml-auto text-right d-flex align-items-center">
-							<li class="nav-item">
-								<a class="nav-link active" href="login.html">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="about.html">About the Study</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="participants.html">Participants</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="researchers.html">Researchers</a>
-							</li>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav d-block d-lg-flex ml-auto text-right d-flex align-items-center">
+						<li class="nav-item">
+							<a class="nav-link active" href="login.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About the Study</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="participants.html">Participants</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="researchers.html">Researchers</a>
+						</li>
 
-							<div class="d-flex justify-content-center align-items-center">
+						<div class="d-flex justify-content-center align-items-center">
 
-								<a id="ingles" href="" class="english activeDot" data-lang="en" tabindex="0" aria-hidden="false" role="button">
+							<a id="ingles" href="" class="english activeDot notranslate" data-lang="en" tabindex="0" aria-hidden="false" role="button" translate="no">
 
-									<p class="language">English</p>
+								<p class="language notranslate" translate="no">English</p>
 
 							</a>
 
-						 <!-- <a id="ingles" href="#googtrans(en|en)" class="lang-en lang-select english activeDot" data-lang="en" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
+							<!-- <a id="ingles" href="#googtrans(en|en)" class="lang-en lang-select english activeDot" data-lang="en" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
 
-							 <p class="language">English</p>
+							<p class="language">English</p>
 
-					 </a> -->
-								<div class="flip"></div>
-								<a id="espanol" href="#googtrans(en|es)" class="lang-es lang-select spanish inactiveDot" data-lang="es" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
+						</a> -->
+						<div class="flip"></div>
+						<a id="espanol" href="#googtrans(en|es)" class="lang-es lang-select spanish inactiveDot" data-lang="es" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
 
-										<p class="language">Espa&ntilde;ol</p>
+							<p class="language">Espa&ntilde;ol</p>
 
-								</a>
-						</div>
-						<a class="loginButton" href=""><p>LOG IN</p></a>
+						</a>
 					</div>
+					<a class="loginButton" href=""><p>LOG IN</p></a>
 				</div>
 			</div>
-		</nav>
-	</header>
+		</div>
+	</nav>
+</header>
 </div>
 
 <div class="container-fluid lightBlue">
@@ -127,7 +127,7 @@
 								<div class="col-lg-7">
 									<div class="bg-white rounded-lg">
 
-							 <form role="form" novalidate id="creditCard" method="POST" action="">
+										<form role="form" novalidate id="creditCard" method="POST" action="">
 											<div class="form-group">
 												<legend>First Name</legend>
 												<label for="firstName">First Name</label>
@@ -367,37 +367,37 @@
 
 
 function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-        pageLanguage: "en",
+new google.translate.TranslateElement({
+pageLanguage: "en",
 
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
 
-    }, "google_translate_element")
+}, "google_translate_element")
 }
 
 
-	function triggerHtmlEvent(element, eventName) {
-	  var event;
-	  if (document.createEvent) {
-		event = document.createEvent('HTMLEvents');
-		event.initEvent(eventName, true, true);
-		element.dispatchEvent(event);
-	  } else {
-		event = document.createEventObject();
-		event.eventType = eventName;
-		element.fireEvent('on' + event.eventType, event);
-	  }
-	}
+function triggerHtmlEvent(element, eventName) {
+var event;
+if (document.createEvent) {
+event = document.createEvent('HTMLEvents');
+event.initEvent(eventName, true, true);
+element.dispatchEvent(event);
+} else {
+event = document.createEventObject();
+event.eventType = eventName;
+element.fireEvent('on' + event.eventType, event);
+}
+}
 
 $('.lang-select').click(function() {
-	  var theLang = jQuery(this).attr('data-lang');
-	  $('.goog-te-combo').val(theLang);
+var theLang = jQuery(this).attr('data-lang');
+$('.goog-te-combo').val(theLang);
 
-	  window.location = jQuery(this).attr('href');
-	  location.reload();
+window.location = jQuery(this).attr('href');
+location.reload();
 
-	});
-  </script> -->
+});
+</script> -->
 
 </body>
 

@@ -3344,11 +3344,11 @@ button.close {
     background: #0e68a8;
     margin-top: 0em;
     float: left;
-}
+  }
 
-.right {
-      padding: 2em 1em 1em 1em;
-}
+  .right {
+    padding: 2em 1em 1em 1em;
+  }
 
   .slideForm .around2 {
     flex-wrap: wrap;
