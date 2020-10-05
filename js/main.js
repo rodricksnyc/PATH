@@ -29,116 +29,6 @@ $(document).ready(function () {
 
 	});
 
-	// (function() {
-	//   "use strict";
-	//   window.addEventListener("load", function() {
-	//     var form = document.getElementById("creditCard");
-	//     form.addEventListener("submit", function(event) {
-	//       if (form.checkValidity() == false) {
-	//         event.preventDefault();
-	//         event.stopPropagation();
-	//
-	//       }
-	//
-	// 		  if (form.checkValidity() == true) {
-	//
-	// 			}
-	//       form.classList.add("was-validated");
-	//     }, false);
-	//   }, false);
-	// }());
-
-	$("#creditCard").validate(
-		{
-			rules:
-			{
-				cardNumber:
-				{
-					required: true,
-					maxlength: 4,
-					minlength:4,
-					digits: true
-				}
-			}
-		});
-
-
-		$(".slideForm").validate(
-			{
-				rules:
-				{
-					email:
-					{
-						required: true,
-						email: true
-
-					}
-
-				}
-			});
-
-
-
-			// $("#creditCard").validate({
-			//   // Specify validation rules
-			//   rules: {
-			//     lastName: "required",
-			//     lastName: "required",
-			//     cardNumber: {
-			//       required: true,
-			// 			maxlength: 4,
-			// 			minlength:4
-			//     },
-			//   //   phone: {
-			//   //     required: true,
-			//   //     digits: true,
-			//   //     minlength: 10,
-			//   //     maxlength: 10,
-			//   //   },
-			//   //   password: {
-			//   //     required: true,
-			//   //     minlength: 5,
-			//   //   }
-			//   // },
-			//   messages: {
-			//     firstName: {
-			//     required: "Please enter first name",
-			//    },
-			//    lastName: {
-			//     required: "Please enter last name",
-			//    },
-			// 	 cardNumber: {
-			// 		  required: "Please enter 4 digits",
-			// 	 }
-			//    // phone: {
-			//    //  required: "Please enter phone number",
-			//    //  digits: "Please enter valid phone number",
-			//    //  minlength: "Phone number field accept only 10 digits",
-			//    //  maxlength: "Phone number field accept only 10 digits",
-			//    // },
-			//    // email: {
-			//    //  required: "Please enter email address",
-			//    //  email: "Please enter a valid email address.",
-			//    // },
-			//   }
-			// }
-			//
-			// });
-
-			// var defaultState = {
-			//    current: window.location.pathname
-			// };
-			//
-			// var requestParameters = [
-			//    '#googtrans(en|es)'
-			// ];
-			//
-			//
-			//
-			//
-			// var path = window.location.pathname + requestParameters.join("");
-			// window.history.pushState(defaultState, 'Title', path);
-			//
 			var mainURL = window.location.href;
 
 
@@ -423,5 +313,117 @@ $(document).ready(function () {
 				$('#one').css('right', '-20px')
 
 			}
+
+
+				// (function() {
+				//   "use strict";
+				//   window.addEventListener("load", function() {
+				//     var form = document.getElementById("creditCard");
+				//     form.addEventListener("submit", function(event) {
+				//       if (form.checkValidity() == false) {
+				//         event.preventDefault();
+				//         event.stopPropagation();
+				//
+				//       }
+				//
+				// 		  if (form.checkValidity() == true) {
+				//
+				// 			}
+				//       form.classList.add("was-validated");
+				//     }, false);
+				//   }, false);
+				// }());
+
+				$("#creditCard").validate(
+					{
+						rules:
+						{
+							cardNumber:
+							{
+								required: true,
+								maxlength: 4,
+								minlength:4,
+								digits: true
+							}
+						}
+					});
+
+
+					$(".slideForm").validate(
+						{
+							rules:
+							{
+								email:
+								{
+									required: true,
+									email: true
+
+								}
+
+							}
+						});
+
+
+
+						// $("#creditCard").validate({
+						//   // Specify validation rules
+						//   rules: {
+						//     lastName: "required",
+						//     lastName: "required",
+						//     cardNumber: {
+						//       required: true,
+						// 			maxlength: 4,
+						// 			minlength:4
+						//     },
+						//   //   phone: {
+						//   //     required: true,
+						//   //     digits: true,
+						//   //     minlength: 10,
+						//   //     maxlength: 10,
+						//   //   },
+						//   //   password: {
+						//   //     required: true,
+						//   //     minlength: 5,
+						//   //   }
+						//   // },
+						//   messages: {
+						//     firstName: {
+						//     required: "Please enter first name",
+						//    },
+						//    lastName: {
+						//     required: "Please enter last name",
+						//    },
+						// 	 cardNumber: {
+						// 		  required: "Please enter 4 digits",
+						// 	 }
+						//    // phone: {
+						//    //  required: "Please enter phone number",
+						//    //  digits: "Please enter valid phone number",
+						//    //  minlength: "Phone number field accept only 10 digits",
+						//    //  maxlength: "Phone number field accept only 10 digits",
+						//    // },
+						//    // email: {
+						//    //  required: "Please enter email address",
+						//    //  email: "Please enter a valid email address.",
+						//    // },
+						//   }
+						// }
+						//
+						// });
+
+						// var defaultState = {
+						//    current: window.location.pathname
+						// };
+						//
+						// var requestParameters = [
+						//    '#googtrans(en|es)'
+						// ];
+						//
+						//
+						//
+						//
+						// var path = window.location.pathname + requestParameters.join("");
+						// window.history.pushState(defaultState, 'Title', path);
+						//
 
 		})
