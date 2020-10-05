@@ -211,13 +211,33 @@ height: inherit;
 min-height: inherit;
 
 height: auto;
-bottom: 0;
+bottom: 100px;
 right: 0;
 
 background-position: right;
-min-height: 50vh;
+/* min-height: 50vh; */
+min-height:375px;
 width: -webkit-fill-available;
 background-size: contain;
+}
+
+
+.bottomCenter{
+  position: relative;
+      background-repeat: no-repeat;
+      background-image: url(../images/papers.svg);
+      height: inherit;
+      min-height: inherit;
+      height: auto;
+      bottom: 133px;
+      right: 0;
+      background-position:left;
+      /* min-height: 50vh; */
+      min-height: 280px;
+      width: -webkit-fill-available;
+      background-size: contain;
+      left: 200px;
+
 }
 
 .leftTop{
@@ -231,13 +251,63 @@ min-height: inherit;
 height: auto;
 bottom: 0;
 left: 0;
-
+/* min-height: 50vh; */
 background-position: left;
-min-height: 50vh;
+height:100%;
+min-height: 385px;
 width: -webkit-fill-available;
 background-size: contain;
 
 }
+
+.leftTop #number {
+  position: absolute;
+  left: 360px;
+top: 15%;
+
+}
+
+
+
+
+.larger {
+  font-size:28px;
+
+}
+
+.leftTop #description {
+  position: absolute;
+    left: 360px;
+      max-width: 12em;
+      top: 24%;
+
+
+}
+
+.rightBottom #description {
+  position: absolute;
+    right: 320px;
+      max-width: 12em;
+      top: 24%;
+
+
+}
+
+.bottomCenter #number {
+  position: absolute;
+  left: 285px;
+  top: 13%;
+
+}
+
+.bottomCenter #description {
+  position: absolute;
+    left: 284px;
+  max-width: 16em;
+  top: 28%;
+
+}
+
 
 .menu-buttons.noMargin .menu-buttons-list li:hover .showHover{
   display: block !important
