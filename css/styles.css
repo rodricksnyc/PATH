@@ -321,7 +321,7 @@ body * {
   right: 0;
   background-position: top;
   /* min-height: 50vh; */
-  min-height: 2300px;
+  min-height: 800px;
   /* width: -webkit-fill-available; */
   background-size: cover;
   left: 0;
@@ -332,8 +332,8 @@ body * {
 
 .rightTop #title{
   position: absolute;
-    right: 300px;
-    top: -60px;
+  right: 300px;
+  top: -60px;
 
 }
 
@@ -408,8 +408,8 @@ body * {
 
 .leftBottom #title{
   position: absolute;
-    left: 340px;
-    top: -60px;
+  left: 340px;
+  top: -60px;
 
 }
 .leftBottom #number1 {
@@ -421,14 +421,14 @@ body * {
 .leftBottom #description1 {
   position: absolute;
   top: -8%;
-    left: 171px;
+  left: 171px;
 
 }
 
 .leftBottom #number2 {
   position: absolute;
   top: 6%;
-      left: 281px;
+  left: 281px;
 
 
 }
@@ -458,19 +458,19 @@ body * {
 .leftBottom #number4 {
   position: absolute;
   top: 23%;
-left: 476px;
+  left: 476px;
 }
 
 .leftBottom #description4 {
   position: absolute;
   top: 32%;
-      left: 464px;
+  left: 464px;
 }
 
 .leftBottom #number5 {
   position: absolute;
   top: 2%;
-      left: 578px;
+  left: 578px;
 
 }
 
@@ -505,8 +505,8 @@ left: 476px;
 
 .rightMiddle #title{
   position: absolute;
-    right: 225px;
-    top: -60px;
+  right: 225px;
+  top: -60px;
 
 }
 
@@ -519,9 +519,9 @@ left: 476px;
 .rightMiddle #description2 {
   position: absolute;
   top: 7%;
-      right: 114px;
-      max-width: 7em;
-      line-height: 1;
+  right: 114px;
+  max-width: 7em;
+  line-height: 1;
 }
 
 .rightMiddle #number {
@@ -533,24 +533,255 @@ left: 476px;
 .rightMiddle #description {
   position: absolute;
   right: 295px;
-      max-width: 9em;
-      line-height: 1;
-      top: 3%;
+  max-width: 9em;
+  line-height: 1;
+  top: 3%;
 
 }
 
 .rightMiddle #description .textBlue {
-    color: #004F7F;
-    font-size: 19px;
-    font-weight: 400;
+  color: #004F7F;
+  font-size: 19px;
+  font-weight: 400;
 }
 
 
+.leftBottom2 {
+  position: relative;
+  background-repeat: no-repeat;
+
+  background-image: url(../images/race.svg);
+  height: inherit;
+  min-height: inherit;
+
+  height: auto;
+  bottom: 0;
+  left: 0;
+  /* min-height: 50vh; */
+  background-position: left;
+  height:100%;
+  min-height: 385px;
+  width: -webkit-fill-available;
+  background-size: contain;
+
+}
+
+
+.leftBottom2 #title{
+  position: absolute;
+  left: 285px;
+  top: -60px;
+
+}
+.leftBottom2 #number1 {
+  position: absolute;
+  top: 75%;
+  left: 137px;
+}
+
+.leftBottom2 #description1 {
+  position: absolute;
+  top: 83%;
+  left: 135px;
+}
+
+.leftBottom2 #number2 {
+  position: absolute;
+  top: 75%;
+  left: 228px;
+
+}
+
+.leftBottom2 #description2 {
+  position: absolute;
+  top: 84%;
+  left: 194px;
+  max-width: 9em;
+  line-height: 1;
+  text-align: center
+}
+
+
+.leftBottom2 #description2 p {
+  font-size:18px
+}
+
+.leftBottom2 #number3 {
+  position: absolute;
+  top: 75%;
+  left: 336px;
+}
+
+.leftBottom2 #description3 {
+  position: absolute;
+  top: 84%;
+  left: 331px;
+
+
+}
+
+
+.leftBottom2 #number4 {
+  position: absolute;
+  top: 75%;
+  left: 445px;
+
+}
+
+.leftBottom2 #description4 {
+  position: absolute;
+  top: 85%;
+  left: 415px;
+  max-width: 12em;
+  line-height: 1;
+}
+
+.leftBottom2 #description4 p {
+  font-size:18px
+}
+
+.leftBottom2 #number5 {
+  position: absolute;
+  top: 2%;
+  left: 578px;
+
+}
+
+.leftBottom2 #description5 {
+  position: absolute;
+  top: 11%;
+  left: 588px;
+}
+
+
+
+.rightBottom2 {
+  position: relative;
+  background-repeat: no-repeat;
+
+  background-image: url(../images/trees.svg);
+  height: inherit;
+  min-height: inherit;
+
+  height: auto;
+  bottom: 0;
+  left: 0;
+  /* min-height: 50vh; */
+  background-position: right;
+  height:100%;
+  min-height: 385px;
+  width: -webkit-fill-available;
+  background-size: contain;
+
+}
+
+
+.rightBottom2 #title{
+  position: absolute;
+  right: 340px;
+  top: -60px;
+
+}
+.rightBottom2 #number1 {
+  position: absolute;
+  right: 618px;
+  top: 75%;
+
+
+}
+
+.rightBottom2 #description1 {
+  position: absolute;
+  top: 83%;
+  right: 628px;
+}
+
+.rightBottom2 #number2 {
+  position: absolute;
+  top: 75%;
+  right: 444px;
+
+}
+
+.rightBottom2 #description2 {
+  top: 84%;
+  right: 439px;
+  position: absolute
+}
+
+
+.rightBottom2 #description2 p {
+  font-size:19px
+}
+
+.rightBottom2 #number3 {
+  position: absolute;
+  top: 75%;
+  right: 270px;
+}
+
+.rightBottom2 #description3 {
+  position: absolute;
+  top: 84%;
+  right: 275px;
+}
+
+
+.rightBottom2 #number4 {
+  position: absolute;
+  top: 75%;
+  right: 100px;
+
+}
+
+.rightBottom2 #description4 {
+  position: absolute;
+  top: 83%;
+  right: 83px;
+}
+
+.rightBottom2 #number5 {
+  position: absolute;
+  top: 2%;
+  right: 578px;
+
+}
+
+.rightBottom2 #description5 {
+  position: absolute;
+  top: 11%;
+  right: 588px;
+}
+
+.veryBottom{
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  position: relative;
+  background-image: url(../images/city.svg);
+  height: inherit;
+  min-height: inherit;
+  background-size: contain;
+  left: 0;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background-position: bottom;
+  min-height: 800px;
+  top: 0;
+}
+
+.pageWrapper{
+  height: 100%;
+padding-bottom: 4em !important;
+}
 
 
 .navy{
   color:#002D44
 }
+
 
 
 .menu-buttons.noMargin .menu-buttons-list li:hover .showHover{
@@ -1634,6 +1865,14 @@ h1.white.sentMessage {
   box-shadow: 0px -5px 10px rgba(0,0,0,0.1);
   min-height:8em;
 }
+
+
+.absoluteFooter{
+  position: absolute;
+  z-index: 999999;
+    bottom: 0;
+}
+
 
 .survey-footer .two{
   display: flex;
