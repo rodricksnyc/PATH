@@ -429,7 +429,7 @@ body * {
   position: absolute;
   top: 6%;
       left: 281px;
-  
+
 
 }
 
@@ -479,6 +479,73 @@ left: 476px;
   top: 11%;
   left: 588px;
 }
+
+
+
+.rightMiddle{
+  position: relative;
+  background-repeat: no-repeat;
+
+
+  background-image: url(../images/ethnicity.svg);
+  height: inherit;
+  min-height: inherit;
+
+  height: auto;
+  top:60px;
+  right: 0;
+
+  background-position: right;
+  /* min-height: 50vh; */
+  min-height:440px;
+  width: -webkit-fill-available;
+  background-size: contain;
+}
+
+
+.rightMiddle #title{
+  position: absolute;
+    right: 225px;
+    top: -60px;
+
+}
+
+.rightMiddle #number2 {
+  position: absolute;
+  top: 7%;
+  right: 220px;
+}
+
+.rightMiddle #description2 {
+  position: absolute;
+  top: 7%;
+      right: 114px;
+      max-width: 7em;
+      line-height: 1;
+}
+
+.rightMiddle #number {
+  position: absolute;
+  top: 3%;
+  right: 424px;
+}
+
+.rightMiddle #description {
+  position: absolute;
+  right: 295px;
+      max-width: 9em;
+      line-height: 1;
+      top: 3%;
+
+}
+
+.rightMiddle #description .textBlue {
+    color: #004F7F;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+
 
 
 .navy{
