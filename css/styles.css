@@ -778,22 +778,22 @@ body * {
 
 .veryBottom #number1 {
   position: absolute;
-  top: 19%;
-  left: 277px;
+  top: 17%;
+  left: 300px;
+  line-height: 1;
 
 }
 
 .veryBottom #description1 {
   position: absolute;
-  top: 23%;
-
-    left: 274px;
+  top: 17%;
+left: 17%
 }
 
 .veryBottom #number2 {
   position: absolute;
-  top: 55%;
-  right: 560px;
+  top: 60%;
+  right: 30%;
 }
 
 .veryBottom #description2 {
