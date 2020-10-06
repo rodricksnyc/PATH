@@ -772,6 +772,36 @@ body * {
   top: 0;
 }
 
+
+
+
+
+.veryBottom #number1 {
+  position: absolute;
+  top: 19%;
+  left: 277px;
+
+}
+
+.veryBottom #description1 {
+  position: absolute;
+  top: 23%;
+
+    left: 274px;
+}
+
+.veryBottom #number2 {
+  position: absolute;
+  top: 55%;
+  right: 560px;
+}
+
+.veryBottom #description2 {
+  position: absolute;
+  top: 55.75%;
+  right: 439px;
+}
+
 .pageWrapper{
   height: 100%;
 padding-bottom: 4em !important;
