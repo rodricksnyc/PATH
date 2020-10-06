@@ -332,7 +332,7 @@ body * {
 
 .rightTop #title{
   position: absolute;
-    right: 266px;
+    right: 300px;
     top: -60px;
 
 }
@@ -381,6 +381,105 @@ body * {
   width: -webkit-fill-available;
   background-size: contain;
 }
+
+
+
+.leftBottom {
+  position: relative;
+  background-repeat: no-repeat;
+
+  background-image: url(../images/age.svg);
+  height: inherit;
+  min-height: inherit;
+
+  height: auto;
+  bottom: 0;
+  left: 0;
+  /* min-height: 50vh; */
+  background-position: left;
+  height:100%;
+  min-height: 385px;
+  width: -webkit-fill-available;
+  background-size: contain;
+
+}
+
+
+
+.leftBottom #title{
+  position: absolute;
+    left: 340px;
+    top: -60px;
+
+}
+.leftBottom #number1 {
+  position: absolute;
+  top: -17%;
+  left: 184px;
+}
+
+.leftBottom #description1 {
+  position: absolute;
+  top: -8%;
+    left: 171px;
+
+}
+
+.leftBottom #number2 {
+  position: absolute;
+  top: 6%;
+      left: 281px;
+  
+
+}
+
+.leftBottom #description2 {
+  position: absolute;
+  top: 16%;
+  left: 270px;
+}
+
+
+.leftBottom #number3 {
+  position: absolute;
+  top: 23%;
+  left: 385px;
+
+}
+
+.leftBottom #description3 {
+  position: absolute;
+  top: 32%;
+  left: 367px;
+
+}
+
+
+.leftBottom #number4 {
+  position: absolute;
+  top: 23%;
+left: 476px;
+}
+
+.leftBottom #description4 {
+  position: absolute;
+  top: 32%;
+      left: 464px;
+}
+
+.leftBottom #number5 {
+  position: absolute;
+  top: 2%;
+      left: 578px;
+
+}
+
+.leftBottom #description5 {
+  position: absolute;
+  top: 11%;
+  left: 588px;
+}
+
 
 .navy{
   color:#002D44
