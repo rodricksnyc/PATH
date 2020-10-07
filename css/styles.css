@@ -4937,6 +4937,36 @@ body{
   transform: rotate(0deg);
   z-index: 80
 }
+
+.leftTop {
+    left: 0;
+    top: 0;
+    transform: scale(1);
+}
+.leftTop #number {
+
+    left: 47%;
+
+}
+.leftTop #description {
+
+    left: 48%;
+
+}
+
+.rightBottom {
+    right: 0;
+    top: 0;
+    transform: scale(1);
+}
+.rightBottom #description {
+  
+    right: 0;
+
+}
+
+
+
 }
 
 @media (max-width: 320px) {
