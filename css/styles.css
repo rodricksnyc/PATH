@@ -4960,12 +4960,53 @@ body{
     transform: scale(1);
 }
 .rightBottom #description {
-  
+
     right: 0;
 
 }
+.bottomCenter {
+    left: 0;
+    top: 0;
+    transform: scale(1);
+}
+.bottomCenter #number {
 
+    left: 40%;
 
+}
+
+.bottomCenter #description {
+
+    left: 40%;
+
+}
+
+.noBorder {
+  margin-bottom: -9em !important;
+    font-size: 28px;
+    width: 100%;
+}
+
+.rightTop {
+    top: 400px;
+    right: 0;
+    transform: scale(1);
+}
+.rightTop #title {
+    position: absolute;
+    right: 45%;
+    top: -50px;
+}
+.rightTop #number, .rightTop #description {
+
+    right: 10%;
+}
+.rightTop #number2{
+  right:77%;
+}
+.rightTop #description2{
+  right:80%;
+}
 
 }
 
