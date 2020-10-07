@@ -60,6 +60,11 @@ $(document).ready(function () {
 			// 			$('a').not('#espanol').prop('hash','#googtrans(en|en)');
 			// })
 
+			if ($(document).innerWidth() <= 767) {
+				$('#ingles p').html('EN')
+				$('#espanol p').html('ES')
+
+			}
 
 
 			$('.spanish').on('click', function(e) {

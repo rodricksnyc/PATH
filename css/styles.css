@@ -4354,6 +4354,11 @@ padding-left: 1em;
 
 @media (max-width: 767px) {
 
+  .centerImage {
+    height: 60px;
+    margin: 20px 20px;
+}
+
   .left {
     padding: 1em 1em 0em 1em;
     background: #0e68a8;
