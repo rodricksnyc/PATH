@@ -4965,19 +4965,19 @@ body{
 
 }
 .bottomCenter {
-    left: 0;
+      left: -20px;
     top: 0;
     transform: scale(1);
 }
 .bottomCenter #number {
 
-    left: 40%;
+    left: 48%;
 
 }
 
 .bottomCenter #description {
-
-    left: 40%;
+  top: 25%;
+    left: 49%;
 
 }
 
@@ -4988,24 +4988,83 @@ body{
 }
 
 .rightTop {
-    top: 400px;
+    top: 350px;
     right: 0;
     transform: scale(1);
 }
 .rightTop #title {
     position: absolute;
     right: 45%;
-    top: -50px;
+    top: -9%;
 }
 .rightTop #number, .rightTop #description {
 
     right: 10%;
 }
+.rightTop #description, .rightTop #description2 {
+top: 63%;
+
+}
+
 .rightTop #number2{
   right:77%;
 }
 .rightTop #description2{
   right:80%;
+}
+.leftBottom {
+    left: 0;
+    top: 450px;
+    transform: scale(1);
+}
+
+.leftBottom .textBlue {
+    font-size: 16px;
+}
+.leftBottom .larger {
+    font-size: 20px;
+}
+
+
+.leftBottom .navy.larger {
+    font-size: 26px;
+}
+.leftBottom #title {
+    position: absolute;
+    left: 32%;
+    top: -3%;
+}
+.leftBottom #number1 {
+    position: absolute;
+    top: 13%;
+    left: 23%;
+}
+.leftBottom #description1 {
+    position: absolute;
+    top: 19%;
+      left: 20%;
+
+}
+.leftBottom #number2 {
+    position: absolute;
+    top: 25%;
+    left: 36%;
+
+}
+.leftBottom #description2 {
+    position: absolute;
+    top: 31%;
+    left: 32%;
+
+}
+
+.textBlue {
+
+    font-size: 19px;
+
+}
+.larger {
+    font-size: 26px;
 }
 
 }
