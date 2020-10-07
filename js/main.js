@@ -63,6 +63,7 @@ $(document).ready(function () {
 			if ($(document).innerWidth() <= 767) {
 				$('#ingles p').html('EN')
 				$('#espanol p').html('ES')
+				$('.loginButton').html('<i class="fas fa-sign-in-alt"></i>').addClass('addMobile')
 
 			}
 

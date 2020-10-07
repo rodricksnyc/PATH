@@ -787,7 +787,7 @@ body * {
 .veryBottom #description1 {
   position: absolute;
   top: 17%;
-left: 17%
+  left: 17%
 }
 
 .veryBottom #number2 {
@@ -804,7 +804,7 @@ left: 17%
 
 .pageWrapper{
   height: 100%;
-padding-bottom: 4em !important;
+  padding-bottom: 4em !important;
 }
 
 
@@ -1900,7 +1900,7 @@ h1.white.sentMessage {
 .absoluteFooter{
   position: absolute;
   z-index: 999999;
-    bottom: 0;
+  bottom: 0;
 }
 
 
@@ -4015,36 +4015,36 @@ button.close {
 
 @media (max-width: 997px) and (min-width: 768px){
   .page_nav{
-  display: none;
-}
-.img-l{
-  left: -50px;
-  top: -500px;
-  width: 150px;
-  height: 400px;
-}
+    display: none;
+  }
+  .img-l{
+    left: -50px;
+    top: -500px;
+    width: 150px;
+    height: 400px;
+  }
 
-.img-r{
-  right: -100px;
-  top: -550px;
-  width: 200px;
-  height: 500px;
-}
+  .img-r{
+    right: -100px;
+    top: -550px;
+    width: 200px;
+    height: 500px;
+  }
 
-#Guide .img-r{
-  bottom: -200px;
-  top: unset;
-  width: 170px;
-  height: 250px;
-}
+  #Guide .img-r{
+    bottom: -200px;
+    top: unset;
+    width: 170px;
+    height: 250px;
+  }
 
-.menu-buttons-floating {
-  transform: scale(0.8);
-}
+  .menu-buttons-floating {
+    transform: scale(0.8);
+  }
 
-.menu-buttons {
-  width: 96%;
-}
+  .menu-buttons {
+    width: 96%;
+  }
 
 
 }
@@ -4086,7 +4086,7 @@ button.close {
   .veryBottom #number2 {
     top: 68%;
 
-}
+  }
 }
 
 @media (max-width:1024px) and (min-width:992px) {
@@ -4096,32 +4096,32 @@ button.close {
   .noBorder {
     border-bottom: none !important;
     margin-bottom: -4em !important;
-}
-.rightTop {
+  }
+  .rightTop {
     top: 400px;
-}
-.leftBottom {
+  }
+  .leftBottom {
     top: 260px;
-}
-.rightMiddle {
+  }
+  .rightMiddle {
     top: 300px;
-}
-.leftBottom2 {
+  }
+  .leftBottom2 {
     top: 150px;
-}
-.rightBottom2 {
+  }
+  .rightBottom2 {
     top: 260px;
 
-}
-.veryBottom{
-  min-height: 880px;
-}
-.veryBottom #number1 {
+  }
+  .veryBottom{
+    min-height: 880px;
+  }
+  .veryBottom #number1 {
     top: 45%;
-}
-.veryBottom #number2 {
+  }
+  .veryBottom #number2 {
     top: 74%;
-}
+  }
 
 }
 
@@ -4129,27 +4129,27 @@ button.close {
 @media (max-width:991px){
   .menu-buttons.noMargin .menu-buttons-list {
     flex-direction: column;
-}
-.menu-buttons.noMargin .menu-buttons-list li{
-  width:100% !important;
-  margin-bottom:1em;
+  }
+  .menu-buttons.noMargin .menu-buttons-list li{
+    width:100% !important;
+    margin-bottom:1em;
 
-display: flex;
-justify-content: flex-start;
-align-items: center;
-flex-direction: row;
-padding-top: 0px;
-max-height: 5em;
-position: relative;
-padding-left: 1em;
-}
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 0px;
+    max-height: 5em;
+    position: relative;
+    padding-left: 1em;
+  }
 
 
-.menu-buttons.noMargin .menu-buttons-list li p {
+  .menu-buttons.noMargin .menu-buttons-list li p {
     margin-top: 0;
     margin-bottom: 0rem;
-}
-.limeCircle {
+  }
+  .limeCircle {
     background: #A3E56A;
     position: relative;
     padding: 1em;
@@ -4159,8 +4159,8 @@ padding-left: 1em;
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 1em;
-}
-.showHover {
+  }
+  .showHover {
     width: 2em;
     position: absolute;
     left: auto;
@@ -4168,140 +4168,140 @@ padding-left: 1em;
     color: #A3E56A;
     display: flex !important;
     right: 1%;
-}
-.menu-buttons.noMargin {
+  }
+  .menu-buttons.noMargin {
     width: 80%;
     margin: 50px auto 100px;
     position: relative;
-}
+  }
 
-.acrossNavbar.navbar-nav{
-  flex-direction: row;
-}
-.imgLC {
+  .acrossNavbar.navbar-nav{
+    flex-direction: row;
+  }
+  .imgLC {
     position: absolute;
     left: 0px;
     top: 8%;
-}
-.imgRC {
+  }
+  .imgRC {
     position: absolute;
     right: -19%;
     top: -76px;
-}
+  }
 
-.acrossNavbar.navbar-nav .loginButton {
+  .acrossNavbar.navbar-nav .loginButton {
     margin-bottom: 0em;
-}
-.leftTop {
+  }
+  .leftTop {
     left: 0;
     top: 0;
     transform: scale(1.2);
-}
-.rightBottom {
+  }
+  .rightBottom {
     right: 0;
     top: 150px;
     transform: scale(1.2);
-}
-.bottomCenter {
-  left: 100px;
-      top: 300px;
-      transform: scale(1.2);
+  }
+  .bottomCenter {
+    left: 100px;
+    top: 300px;
+    transform: scale(1.2);
 
-}
-.noBorder {
+  }
+  .noBorder {
 
     margin-bottom: -5em !important;
     margin-top: 11em;
     font-size: 36px;
 
-}
-.rightTop {
+  }
+  .rightTop {
     top: 400px;
     right: 112px;
     transform: scale(1.3);
-}
-.leftBottom {
+  }
+  .leftBottom {
     left: 0;
     top: 650px;
     transform: scale(1.2);
 
-}
-.rightMiddle {
+  }
+  .rightMiddle {
     top: 900px;
     right: 0;
     transform: scale(1.3);
-}
+  }
 
-.leftBottom2 {
+  .leftBottom2 {
     left: 0;
     top: 1200px;
     transform: scale(1.3);
-}
-.rightBottom2 {
+  }
+  .rightBottom2 {
 
-  top: 1400px;
-      transform: scale(1.2);
-      left: -72px;
-}
-.veryBottom{
-  top:1100px;
-}
-.relativeImage{
-  min-height:3800px
-}
-.veryBottom #number1 {
+    top: 1400px;
+    transform: scale(1.2);
+    left: -72px;
+  }
+  .veryBottom{
+    top:1100px;
+  }
+  .relativeImage{
+    min-height:3800px
+  }
+  .veryBottom #number1 {
     top: 56%;
     left: 22%;
-}
-.veryBottom #number2 {
+  }
+  .veryBottom #number2 {
     top: 56%;
     right: 14%;
-}
-.rightBottom2 #title {
+  }
+  .rightBottom2 #title {
     position: absolute;
-      right: 220px;
+    right: 220px;
     top: 0px;
-}
-.rightBottom2 #number1 {
+  }
+  .rightBottom2 #number1 {
     position: absolute;
     right: 465px;
     top: 69%;
-}
-.rightBottom2 #description1 {
+  }
+  .rightBottom2 #description1 {
     position: absolute;
     top: 77%;
     right: 483px;
-}
-.rightBottom2 #number2 {
+  }
+  .rightBottom2 #number2 {
     position: absolute;
     top: 69%;
     right: 335px;
-}
-.rightBottom2 #description2 {
+  }
+  .rightBottom2 #description2 {
     top: 78%;
     right: 332px;
     position: absolute;
-}
-.rightBottom2 #number3 {
+  }
+  .rightBottom2 #number3 {
     position: absolute;
     top: 69%;
     right: 200px;
-}
-.rightBottom2 #description3 {
+  }
+  .rightBottom2 #description3 {
     position: absolute;
     top: 78%;
     right: 207px;
-}
-.rightBottom2 #number4 {
+  }
+  .rightBottom2 #number4 {
     position: absolute;
     top: 69%;
     right: 73px;
-}
-.rightBottom2 #description4 {
+  }
+  .rightBottom2 #description4 {
     position: absolute;
     top: 78%;
     right: 53px;
-}
+  }
 
 }
 
@@ -4357,7 +4357,7 @@ padding-left: 1em;
   .centerImage {
     height: 60px;
     margin: 20px 20px;
-}
+  }
 
   .left {
     padding: 1em 1em 0em 1em;
@@ -4939,70 +4939,70 @@ body{
 }
 
 .leftTop {
-    left: 0;
-    top: 0;
-    transform: scale(1);
+  left: 0;
+  top: 0;
+  transform: scale(1);
 }
 .leftTop #number {
 
-    left: 47%;
+  left: 47%;
 
 }
 .leftTop #description {
 
-    left: 48%;
+  left: 48%;
 
 }
 
 .rightBottom {
-    right: 0;
-    top: 0;
-    transform: scale(1);
+  right: 0;
+  top: 0;
+  transform: scale(1);
 }
 .rightBottom #description {
 
-    right: 0;
+  right: 0;
 
 }
 .bottomCenter {
-      left: -20px;
-    top: 0;
-    transform: scale(1);
+  left: -20px;
+  top: 0;
+  transform: scale(1);
 }
 .bottomCenter #number {
 
-    left: 48%;
+  left: 48%;
 
 }
 
 .bottomCenter #description {
   top: 25%;
-    left: 49%;
+  left: 49%;
 
 }
 
 .noBorder {
   margin-bottom: -9em !important;
-    font-size: 28px;
-    width: 100%;
+  font-size: 28px;
+  width: 100%;
 }
 
 .rightTop {
-    top: 350px;
-    right: 0;
-    transform: scale(1);
+  top: 350px;
+  right: 0;
+  transform: scale(1);
 }
 .rightTop #title {
-    position: absolute;
-    right: 45%;
-    top: -9%;
+  position: absolute;
+  right: 45%;
+  top: -9%;
 }
 .rightTop #number, .rightTop #description {
 
-    right: 10%;
+  right: 10%;
 }
 .rightTop #description, .rightTop #description2 {
-top: 63%;
+  top: 63%;
 
 }
 
@@ -5013,58 +5013,78 @@ top: 63%;
   right:80%;
 }
 .leftBottom {
-    left: 0;
-    top: 450px;
-    transform: scale(1);
+  left: 0;
+  top: 400px;
+  transform: scale(1);
 }
 
 .leftBottom .textBlue {
-    font-size: 16px;
+  font-size: 16px;
 }
 .leftBottom .larger {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 
 .leftBottom .navy.larger {
-    font-size: 26px;
+  font-size: 26px;
 }
 .leftBottom #title {
-    position: absolute;
-    left: 32%;
-    top: -3%;
+  position: absolute;
+  left: 32%;
+  top: -3%;
 }
 .leftBottom #number1 {
-    position: absolute;
-    top: 13%;
-    left: 23%;
+  position: absolute;
+  top: 13%;
+  left: 23%;
 }
 .leftBottom #description1 {
-    position: absolute;
-    top: 19%;
-      left: 20%;
+  position: absolute;
+  top: 19%;
+  left: 20%;
 
 }
 .leftBottom #number2 {
-    position: absolute;
-    top: 25%;
-    left: 36%;
+  position: absolute;
+  top: 25%;
+  left: 36%;
 
 }
 .leftBottom #description2 {
-    position: absolute;
-    top: 31%;
-    left: 32%;
+  position: absolute;
+  top: 31%;
+  left: 32%;
 
 }
 
 .textBlue {
 
-    font-size: 19px;
+  font-size: 19px;
 
 }
 .larger {
-    font-size: 26px;
+  font-size: 26px;
+}
+
+
+.loginButton.addMobile{
+
+  border-radius: 1rem;
+  background: transparent;
+  height: auto;
+  width: auto;
+  position: relative;
+  z-index: 2;
+  border: none;
+  padding: 0em .6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0px;
+  font-size: 2em;
+  color: #00559b;
+
 }
 
 }
