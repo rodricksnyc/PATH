@@ -216,7 +216,7 @@ body * {
 
   background-position: right;
   /* min-height: 50vh; */
-  min-height:375px;
+  min-height:440px;
   width: -webkit-fill-available;
   background-size: contain;
 }
@@ -283,7 +283,7 @@ body * {
 
 .rightBottom #description {
   position: absolute;
-  right: 325px;
+  right: 388px;
   max-width: 12em;
   top: 24%;
 
