@@ -4960,8 +4960,8 @@ body{
   transform: scale(1);
 }
 .rightBottom #description {
-
-  right: 0;
+    max-width: 9em;
+  right: 9%;
 
 }
 .bottomCenter {
@@ -5016,47 +5016,170 @@ body{
   left: 0;
   top: 400px;
   transform: scale(1);
+  transform: scale(1.2);
+  left: -20px;
 }
 
 .leftBottom .textBlue {
   font-size: 16px;
+    transform: scale(.8);
 }
 .leftBottom .larger {
   font-size: 20px;
+  transform: scale(1);
 }
 
 
 .leftBottom .navy.larger {
   font-size: 26px;
+    transform: scale(.8) !important;
 }
 .leftBottom #title {
   position: absolute;
-  left: 32%;
+  left: 36%;
   top: -3%;
 }
 .leftBottom #number1 {
   position: absolute;
-  top: 13%;
+  top: 15%;
   left: 23%;
 }
 .leftBottom #description1 {
   position: absolute;
-  top: 19%;
+  top: 20%;
   left: 20%;
 
 }
 .leftBottom #number2 {
   position: absolute;
-  top: 25%;
+  top: 27%;
   left: 36%;
 
 }
 .leftBottom #description2 {
   position: absolute;
-  top: 31%;
-  left: 32%;
+  top: 32%;
+  left: 32.5%;
 
 }
+
+.leftBottom #number3 {
+    position: absolute;
+    top: 35%;
+  left: 50%;
+}
+.leftBottom #description3 {
+    position: absolute;
+    top: 40%;
+      left: 45%;
+
+}
+.leftBottom #number4 {
+    position: absolute;
+    top: 35%;
+    left: 63%;
+}
+
+.leftBottom #description4 {
+    position: absolute;
+    top: 40%;
+    left: 61%;
+}
+.leftBottom #description5 {
+    position: absolute;
+    top: 29%;
+    left: 78%;
+}
+
+.leftBottom #number5 {
+    position: absolute;
+    top: 24%;
+    left: 77%;
+}
+
+.rightMiddle {
+    top: 400px;
+    right: -6%;
+    transform: scale(1);
+}
+.rightMiddle #title {
+    position: absolute;
+    right: 41%;
+    top: -6%;
+}
+
+.rightMiddle #number {
+    position: absolute;
+    top: 12%;
+    right: 85%;
+}
+
+.rightMiddle #description .textBlue {
+    color: #004F7F;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.rightMiddle #description2 .textBlue {
+    color: #004F7F;
+    font-size: 13px;
+    font-weight: 400;
+}
+.rightMiddle #number {
+    position: absolute;
+    top: 12%;
+    right: 85%;
+}
+.rightMiddle #description {
+    position: absolute;
+    right: 61%;
+    max-width: 6em;
+    line-height: 1;
+    top: 14%;
+}
+
+.rightMiddle #number2 {
+    position: absolute;
+    top: 15%;
+    right: 161px;
+}
+.rightMiddle #description2 {
+    position: absolute;
+    top: 17%;
+    right: 98px;
+    max-width: 4em;
+    line-height: 1;
+}
+
+.leftBottom2 {
+    left: 0;
+    top: 500px;
+    transform: scale(1.2);
+}
+
+.leftBottom2 #title {
+    position: absolute;
+    left: 45%;
+    top: -2%;
+}
+
+.rightBottom2 {
+    top: 600px;
+    transform: scale(1.4);
+    left: -14%;
+}
+.rightBottom2 #title {
+    position: absolute;
+    right: 23%;
+    top: 12%;
+}
+.veryBottom {
+    top: 86px;
+}
+.relativeImage {
+    min-height: 2975px;
+}
+
 
 .textBlue {
 
