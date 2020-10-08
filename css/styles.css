@@ -838,6 +838,10 @@ body * {
   min-height: 14em
 }
 
+.tiles1 .whiteBubble{
+  min-height: 11em
+}
+
 .grayLine{
   width:100%;
   height:1px;
