@@ -822,7 +822,28 @@ body * {
   max-width: 22em
 }
 
+.last-logos {
+  max-width:12em
+}
 
+.bottom-logos.smaller{
+  max-width: 15em
+}
+
+.last-logos.smaller{
+  max-width: 8em
+}
+
+.tiles2 .whiteBubble{
+  min-height: 14em
+}
+
+.grayLine{
+  width:100%;
+  height:1px;
+  background: #E6E6E6;
+  margin:1em 0em
+}
 
 .veryBottom #number1 {
   position: absolute;
