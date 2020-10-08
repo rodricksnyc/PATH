@@ -14,7 +14,7 @@
 	<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/landing.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 
 	<script type="text/javascript">
 	function googleTranslateElementInit() {
@@ -61,12 +61,13 @@
 				</button>
 
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav d-block d-lg-flex ml-auto text-right d-flex align-items-center">
+					<ul class="navbar-nav d-block d-lg-flex ml-auto text-right d-flex align-items-center">
+
 						<li class="nav-item">
-							<a class="nav-link" href="login.html">Home</a>
+							<a class="nav-link active" href="login.html">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" href="about.html">About the Study</a>
+							<a class="nav-link" href="about.html">About the Study</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="participants.html">Participants</a>
@@ -74,6 +75,7 @@
 						<li class="nav-item">
 							<a class="nav-link" href="researchers.html">Researchers</a>
 						</li>
+
 
 						<div class="d-flex justify-content-center align-items-center">
 
@@ -96,7 +98,7 @@
 						</a>
 					</div>
 					<a class="loginButton" href=""><p>LOG IN</p></a>
-				</div>
+				</ul>
 			</div>
 		</div>
 	</nav>
@@ -128,27 +130,32 @@
 									<div class="bg-white rounded-lg">
 
 										<form role="form" novalidate id="creditCard" method="POST" action="">
+											<fieldset>
+											<legend>Enter your information</legend>
 											<div class="form-group">
-												<legend>First Name</legend>
+
 												<label for="firstName">First Name</label>
 												<input id="firstName" type="text" name="first-name" class="form-control" required>
 
 											</div>
 
 											<div class="form-group">
-												<legend>Last Name</legend>
+
 												<label for="lastName">Last Name</label>
 												<input id="lastName" type="text" name="last-name" class="form-control" required>
 
 											</div>
+
 											<div class="form-group">
-												<legend>VISA last four digits</legend>
+
+
+												<div class="form-group col-lg-5 col-md-5 col-xs-2 padding-0">
 												<label for="cardNumber">VISA last four digits</label>
-												<div class="form-group col-lg-2 col-xs-2 padding-0">
-													<input id="cardNumber" type="text" name="cardNumber" class="form-control" required maxlength="4">
+												<input id="cardNumber" type="text" name="cardNumber" class="form-control" required maxlength="4">
 
 												</div>
 											</div>
+										</fieldset>
 
 											<button type="submit" class="subscribe btn btn-primary rounded-pill enterBtn">Log In</button>
 
@@ -160,7 +167,7 @@
 								</div>
 
 								<div class="col-lg-5">
-									<img src="images/cc.png" class="img-fluid ccPadding">
+									<img src="images/cc.png" class="img-fluid ccPadding" alt="image of a credit card">
 								</div>
 							</div>
 
@@ -190,7 +197,7 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<div class="closeThisPlease" id="close">
-					<button role="button" role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
+					<button role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
 						&#10005;
 					</button>
 				</div>
@@ -233,11 +240,12 @@
 
 					<div class="form-group">
 						<fieldset>
+
+							<legend>Contact Category</legend>
 							<label for="general-inquiry">Contact Category</label>
 							<div class="around2">
 								<div class="vertical">
 
-									<legend>Contact Category</legend>
 									<label class="radio-inline">
 										<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false" id="general-inquiry" checked required>Comment about the study
 									</label>
@@ -261,17 +269,19 @@
 									</label>
 								</div>
 							</div>
-						</fieldset>
+
 					</div>
 					<div class="form-group">
 						<label for="formControl4">Message</label>
 						<textarea class="form-control" id="formControl4" tabindex="-1" aria-hidden="false" name="message" rows="4" data-form-field="Message"></textarea>
 					</div>
 
+					</fieldset>
+
 					<div class="d-flex justify-content-between align-items-center printSend">
 						<div class="left">
 							<div class="form-check form-check-inline">
-								<legend>Print Copy</legend>
+
 								<input class="form-check-input position-static" type="checkbox" id="print-copy" value="" aria-label="Print Copy">
 							</div>
 							<label for="print-copy"><p class="white">Check to print a copy for your records&nbsp;<i class="far fa-print"></i></p></label>
@@ -349,7 +359,7 @@
 	</div>
 
 </div>
-</div>
+
 <!-- <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
 <script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
