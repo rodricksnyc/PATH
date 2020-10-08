@@ -950,6 +950,10 @@ margin-bottom:2em;
   padding:0em 4em
 }
 
+.map .col-lg-6 {
+  padding:0em 11em
+}
+
 .map i{
   position: absolute;
   bottom:5px;
