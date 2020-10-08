@@ -76,6 +76,10 @@ border:1px solid blue;
   font-weight:700;
 }
 
+section{
+  position: relative;
+}
+
 h2 {
   padding: 7% 0;
   text-align: center;
@@ -200,6 +204,16 @@ body * {
   left: 0;
   right:0;
   top: -3%;
+  z-index: -1;
+}
+
+.imgBottom {
+  width:100vw;
+  position: absolute;
+  left: 0;
+  right:0;
+  top:100%;
+  bottom:0;
   z-index: -1;
 }
 
@@ -785,7 +799,24 @@ body * {
   top: 0;
 }
 
-
+.backgroundBlue{
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  position: absolute;
+  background-image: url(../images/bottom-blue.svg);
+  height: inherit;
+  min-height: inherit;
+  background-size: cover;
+  left: 0;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-position: top;
+  min-height: 1200px;
+  top: 0;
+}
 
 
 
