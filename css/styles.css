@@ -861,6 +861,20 @@ h4.landing-sec-H {
 }
 
 
+.start{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.absoluteImg{
+  max-height:25em;
+  position: absolute;
+  right:0;
+  top:85px;
+}
+
 
 .menu-buttons.noMargin .menu-buttons-list li:hover .showHover{
   display: block !important
