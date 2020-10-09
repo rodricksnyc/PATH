@@ -276,7 +276,7 @@ body * {
 }
 
 .content-spacer4 {
-  height:3vh
+  height:2vh
 }
 
 .rightBottom{
@@ -1114,7 +1114,7 @@ h4.landing-sec-H {
 .form-check-inline input[type="checkbox"] {
     height: 18px;
     margin-top:-9px !important;
-    margin-left:6px !important;
+    margin-right:6px !important;
     width: 18px;
     border: 1px solid black;
 }
@@ -1131,6 +1131,13 @@ h4.landing-sec-H {
     font-weight: bold;
 
 } */
+
+h3.black{
+  color:#001827;
+  font-size:22px;
+  font-weight:600;
+  margin:.5em 0em
+}
 
 
 .menu-buttons.noMargin .menu-buttons-list li:hover .showHover{
@@ -3069,7 +3076,7 @@ p.modalFooter {
 }
 
 #update .form-row{
-  margin-bottom:1em;
+  margin-bottom:1.75em;
 }
 
 #update .whiteBox p{
@@ -4823,6 +4830,13 @@ button.close {
 
 @media (max-width: 767px) {
 
+
+
+  #update label {
+    color: #004F7F;
+    margin-top: 1em;
+}
+
 .relativeImage{
   display: none;
 }
@@ -4920,13 +4934,16 @@ button.close {
     margin-bottom:1em;
   }
   .black{
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
     font-size: 13px;
-    margin-bottom: -2em;
-
-
+    margin-bottom: 0em;
   }
+
+  #update .customRadio label {
+    color: #004F7F;
+    margin-top: 0em;
+}
 
   #slideOut2 .modal-content {
     width:auto;
