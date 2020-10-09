@@ -3087,6 +3087,58 @@ color:#004F7F
   font-size: 12px !important;
 }
 
+#update label.blue {
+    padding: 1px 0px 0px 5px;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+}
+
+#update p.small{
+  font-size: 15px !important;
+margin-bottom: 0em;
+padding-left: 5px;
+
+}
+
+.customRadio{
+  position: relative;
+}
+
+.customRadio input {
+    height: 18px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 18px;
+}
+
+.customRadio input + label::before {
+    border: 1px solid #07477d;
+    content: "";
+    height: 18px;
+    left: 0;
+    position: absolute;
+    top: 2px;
+    width: 18px;
+    border-radius: 50%;
+}
+
+.customRadio input + label::after {
+    content: "";
+    opacity: 0;
+    border: 6px solid #07477d;
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    top: 5px;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.customRadio input:checked + label::after {
+    opacity: 1;
+}
+
 
 
 .bottomLine {
