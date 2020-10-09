@@ -246,7 +246,7 @@ body * {
   position: absolute;
   left: 0;
   right:0;
-  top: -75px;
+  top: 0;
   z-index: -1;
 }
 
@@ -5366,6 +5366,11 @@ body{
 
 .whole {
   width:100vw
+}
+
+.leftNeg{
+  margin-left: -10%;
+
 }
 
 .rightTop {
