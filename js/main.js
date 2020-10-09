@@ -280,6 +280,7 @@ $(document).ready(function () {
 			$('.form-check-input').attr('tabindex', '-1');
 
 			$("#slideOut2").removeClass('showslideOut2');
+			$('.contactUsOverlay').hide();
 
 			setTimeout(function() {
 				$('body').removeClass('showContact')
@@ -421,6 +422,21 @@ function scrollfn(e) {
 	//   }, false);
 	// }());
 
+	$(".slideForm").validate(
+		{
+			rules:
+			{
+				email:
+				{
+					required: true,
+					email: true
+
+				}
+
+			}
+		});
+
+
 	$("#creditCard").validate(
 		{
 			rules:
@@ -436,19 +452,6 @@ function scrollfn(e) {
 		});
 
 
-		$(".slideForm").validate(
-			{
-				rules:
-				{
-					email:
-					{
-						required: true,
-						email: true
-
-					}
-
-				}
-			});
 
 
 
