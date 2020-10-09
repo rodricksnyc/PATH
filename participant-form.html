@@ -129,76 +129,156 @@
 							<legend>Update Your Name</legend>
 							<div class="whiteBox">
 								<p>Update Your Name</p>
-							<div class="form-row">
+								<div class="form-row">
 
-								<div class="col-sm-12 col-md-9">
+									<div class="col-sm-12 col-md-10">
 
-									<label for="firstName">First Name</label>
-									<input id="firstName" type="text" name="" class="form-control">
+										<label for="firstName">First Name</label>
+										<input id="firstName" type="text" name="" class="form-control">
+
+									</div>
+
+									<div class="col-sm-12 col-md-2">
+
+										<label for="middle-initial">Middle Initial</label>
+										<input id="middle-initial" type="text" name="" class="form-control">
+
+									</div>
 
 								</div>
+								<div class="form-row">
+									<div class="col-sm-12 col-md-9">
 
-								<div class="col-sm-12 col-md-3">
+										<label for="lastName">Last Name</label>
+										<input id="lastName" type="text" name="last-name" class="form-control">
 
-									<label for="middle-initial">Middle Initial</label>
-									<input id="middle-initial" type="text" name="" class="form-control">
+									</div>
 
 								</div>
-
 							</div>
-							<div class="form-row">
-								<div class="col-sm-12 col-md-9">
-
-									<label for="lastName">Last Name</label>
-									<input id="lastName" type="text" name="last-name" class="form-control">
-
-								</div>
-
-							</div>
-						</div>
 						</fieldset>
 
 						<fieldset>
 							<legend>Update Your Contact Information</legend>
 							<div class="whiteBox">
 								<p>Update Your Contact Information</p>
-							<div class="form-row">
-								<div class="col-sm-12 col-md-12">
+								<div class="form-row">
+									<div class="col-sm-12 col-md-12">
 
-									<label for="address1">Address Line 1:</label>
-									<input id="address1" type="text" name="" class="form-control" required>
+										<label for="address1">Address Line 1:</label>
+										<input id="address1" type="text" name="" class="form-control" required>
 
+									</div>
+
+								</div>
+								<div class="form-row">
+									<div class="col-sm-12 col-md-12">
+
+										<label for="address2">Address Line 2:</label>
+										<input id="address2" type="text" name="" class="form-control">
+
+									</div>
+
+								</div>
+
+								<div class="form-row">
+
+									<div class="col-sm-12 col-md-10">
+
+										<label for="city">City</label>
+										<input id="city" type="text" name="" class="form-control">
+
+									</div>
+
+									<div class="col-sm-12 col-md-2">
+
+										<label for="state">State</label>
+										<select name="" id="state" class="form-control">
+											<option selected="selected" value=""></option>
+											<option value="AK">AK</option>
+											<option value="AL">AL</option>
+											<option value="AR">AR</option>
+											<option value="AS">AS</option>
+											<option value="AZ">AZ</option>
+											<option value="CA">CA</option>
+											<option value="CO">CO</option>
+											<option value="CT">CT</option>
+											<option value="DC">DC</option>
+											<option value="DE">DE</option>
+											<option value="FL">FL</option>
+											<option value="FM">FM</option>
+											<option value="GA">GA</option>
+											<option value="GU">GU</option>
+											<option value="HI">HI</option>
+											<option value="IA">IA</option>
+											<option value="ID">ID</option>
+											<option value="IL">IL</option>
+											<option value="IN">IN</option>
+											<option value="KS">KS</option>
+											<option value="KY">KY</option>
+											<option value="LA">LA</option>
+											<option value="MA">MA</option>
+											<option value="MD">MD</option>
+											<option value="ME">ME</option>
+											<option value="MH">MH</option>
+											<option value="MI">MI</option>
+											<option value="MN">MN</option>
+											<option value="MO">MO</option>
+											<option value="MP">MP</option>
+											<option value="MS">MS</option>
+											<option value="MT">MT</option>
+											<option value="NC">NC</option>
+											<option value="ND">ND</option>
+											<option value="NE">NE</option>
+											<option value="NH">NH</option>
+											<option value="NJ">NJ</option>
+											<option value="NM">NM</option>
+											<option value="NV">NV</option>
+											<option value="NY">NY</option>
+											<option value="OH">OH</option>
+											<option value="OK">OK</option>
+											<option value="OR">OR</option>
+											<option value="PA">PA</option>
+											<option value="PR">PR</option>
+											<option value="PW">PW</option>
+											<option value="RI">RI</option>
+											<option value="SC">SC</option>
+											<option value="SD">SD</option>
+											<option value="TN">TN</option>
+											<option value="TX">TX</option>
+											<option value="UT">UT</option>
+											<option value="VA">VA</option>
+											<option value="VI">VI</option>
+											<option value="VT">VT</option>
+											<option value="WA">WA</option>
+											<option value="WI">WI</option>
+											<option value="WV">WV</option>
+											<option value="WY">WY</option>
+
+										</select>
+
+									</div>
+
+								</div>
+							</fieldset>
+
+							<div class="form-group">
+
+
+								<div class="form-group col-lg-5 col-md-5 col-xs-2 padding-0">
+									<label for="cardNumber">VISA last four digits</label>
+									<input id="cardNumber" type="text" name="cardNumber" class="form-control" required maxlength="4">
+
+								</div>
 							</div>
 
-						</div>
-						<div class="form-row">
-							<div class="col-sm-12 col-md-12">
 
-								<label for="address2">Address Line 2:</label>
-								<input id="address2" type="text" name="" class="form-control">
+							<button type="submit" class="subscribe btn btn-primary rounded-pill enterBtn">Log In</button>
 
-						</div>
-
+						</form>
 					</div>
-						</fieldset>
-
-						<div class="form-group">
-
-
-							<div class="form-group col-lg-5 col-md-5 col-xs-2 padding-0">
-								<label for="cardNumber">VISA last four digits</label>
-								<input id="cardNumber" type="text" name="cardNumber" class="form-control" required maxlength="4">
-
-							</div>
-						</div>
-
-
-						<button type="submit" class="subscribe btn btn-primary rounded-pill enterBtn">Log In</button>
-
-					</form>
 				</div>
 			</div>
-</div>
 
 
 			<div class="contactUsOverlay"></div>
