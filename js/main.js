@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-	
+
 
 	$("a, button, input, [tabindex='0'], li, #one").on("keyup", function (e) {
 		var code = (e.keyCode ? e.keyCode : e.which);
