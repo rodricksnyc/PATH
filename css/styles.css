@@ -275,6 +275,10 @@ body * {
   height:5vh
 }
 
+.content-spacer4 {
+  height:3vh
+}
+
 .rightBottom{
   position: relative;
   background-repeat: no-repeat;
