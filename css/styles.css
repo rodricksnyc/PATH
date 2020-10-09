@@ -3068,7 +3068,7 @@ p.modalFooter {
   margin-bottom:1em;
 }
 
-#update p{
+#update .whiteBox p{
   font-size:20px !important;
   color:#004F7F
 }
