@@ -371,7 +371,6 @@ function scrollfn(e) {
 
 
 
-
 	if ($(document).innerWidth() <= 767) {
 
 		$('.openTab .plum').html('<i class="fas fa-envelope"></i>')
@@ -450,6 +449,20 @@ function scrollfn(e) {
 				}
 			}
 		});
+
+		$("#update").validate(
+			{
+				rules:
+				{
+					email:
+					{
+						required: true,
+						email: true
+
+					}
+
+				}
+			});
 
 
 
