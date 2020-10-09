@@ -402,6 +402,32 @@ function scrollfn(e) {
 	});
 
 
+$("input").on("keyup", function (e) {
+
+  var code = (e.keyCode ? e.keyCode : e.which);
+  if (code == 9) {
+    $(this).css('outline', 'dashed 3px #4599ff')
+
+  }
+
+})
+$("input").on('focusout', function() {
+  $(this).css('outline', 'none')
+})
+
+$(".form-check").on("keyup", function (e) {
+
+  var code = (e.keyCode ? e.keyCode : e.which);
+  if (code == 9) {
+    $('.form-check').each(function() {
+      $(this).addClass('focusClass')
+    });
+
+  }
+
+})
+
+
 	// (function() {
 	//   "use strict";
 	//   window.addEventListener("load", function() {
