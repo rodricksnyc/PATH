@@ -1041,7 +1041,9 @@ body * {
 #myModal2 .modal-footer {
   position: relative;
 }
-
+#myModal2 h4 {
+  color:black
+}
 
 .browser {
   font-family: 'Public Sans', sans-serif;
@@ -2833,7 +2835,7 @@ label.togglePassword {
   left: 0px !important;
 }
 
-.modal-content {
+#slideOut .modal-content {
   position: relative;
   background-color: #00559b;
   -webkit-background-clip: padding-box;
