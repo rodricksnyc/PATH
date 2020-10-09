@@ -357,6 +357,13 @@ body * {
 
 }
 
+
+.mobileVersion{
+  display: none;
+}
+
+
+
 .rightTop #title{
   position: absolute;
   right: 300px;
@@ -4233,6 +4240,10 @@ button.close {
   .questionnaire-container{
     min-height: calc(100vh - 205px);
   }
+
+  .veryBottom{
+    min-height:1000px
+  }
 }
 
 @media (max-width: 1599px) and (min-width: 1200px){
@@ -4635,6 +4646,38 @@ button.close {
 }
 
 @media (max-width: 767px) {
+
+.relativeImage{
+  display: none;
+}
+
+.mobileVersion{
+  display: block;
+  position: relative;
+}
+
+.hideMobile{
+  display: none
+}
+
+.absoluteImage {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    position: absolute;
+    background-image: url(../images/whole.svg);
+    height: inherit;
+    min-height: inherit;
+    background-size: cover;
+    left: 0;
+    height: 105%;
+    bottom: 0;
+    right: 0;
+    z-index: -7;
+    background-position: bottom;
+}
+
 
   .centerImage {
     height: 60px;
@@ -5264,9 +5307,22 @@ body{
 }
 
 .noBorder {
-  margin-bottom: -9em !important;
+  margin-bottom: 0em !important;
   font-size: 28px;
   width: 100%;
+}
+
+.content-spacer2 {
+  height:15vh;
+}
+
+.content-spacer3 {
+  height:7vh;
+}
+
+
+.whole {
+  width:100vw
 }
 
 .rightTop {
