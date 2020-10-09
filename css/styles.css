@@ -1135,7 +1135,7 @@ h4.landing-sec-H {
 h3.black{
   color:#001827;
   font-size:22px;
-  font-weight:600;
+  font-weight:500;
   margin:1em 0em
 }
 
@@ -4826,10 +4826,56 @@ button.close {
     margin-top: -0px;
   }
 
+  .form-check-inline input[type="checkbox"] {
+      height: 20px;
+      left: 0;
+      position: absolute;
+      top: 22px;
+      width: 20px;
+      border: 1px solid black;
+  }
+
+  .form-check-inline {
+    position: relative;
+    margin-left: 1em;
+    margin-bottom: .2em;
+}
+
+.form-check-inline label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 0px;
+    font-weight: bold;
+    padding-left: 35px !important;
+}
+
+
 }
 
 @media (max-width: 767px) {
 
+  .form-check-inline input[type="checkbox"] {
+      height: 18px;
+      left: 0;
+      position: absolute;
+      top: 34px;
+      width: 18px;
+      border: 1px solid black;
+  }
+
+  .form-check-inline {
+    position: relative;
+    margin-left: 1em;
+    margin-bottom: .2em;
+}
+
+.form-check-inline label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 0px;
+    font-weight: bold;
+    padding-left: 14px !important;
+}
 
 
   #update label {
