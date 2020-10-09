@@ -35,6 +35,11 @@
   position:relative;
 }
 
+.largeFont{
+  font-size: 36px !important;
+  color:#007AB7
+}
+
 .stop {
   background-color: white;
   min-height: 10%;
@@ -172,6 +177,44 @@ body * {
 
 .strong {
   font-weight:700
+}
+
+.back-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 6rem;
+  z-index: 100;
+  background: #7bc043;
+  color: #00559b;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  font-size: 1.25rem;
+  box-shadow: 0 0 7px rgba(0,0,0,.2);
+  opacity: 0;
+  visibility: hidden;
+}
+.back-to-top:hover i, .back-to-top:focus i {
+  animation: toTop 0.6s ease-in-out 0s infinite alternate;
+}
+
+.back-to-top i {
+  transition: all 0.4s;
+  font-size: 26px;
+}
+@keyframes toTop {
+  0% {
+    margin-bottom: -0.25rem;
+    opacity: 0.72;
+  }
+
+  100% {
+    margin-bottom: 0.25rem;
+    opacity: 1;
+  }
 }
 
 

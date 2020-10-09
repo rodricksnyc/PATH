@@ -47,7 +47,7 @@
 	<div class="container-fluid overflow-hidden position-relative">
 		<div class="pageWrapper">
 
-			<header id="Home">
+			<header id="overview">
 				<nav class="navbar navbar-expand-lg navbar-light">
 					<div class="container-fluid">
 
@@ -179,7 +179,7 @@
 								<div class="left">
 									<div class="form-check form-check-inline">
 
-										<input class="form-check-input position-static" type="checkbox" id="print-copy" value="" aria-label="Print Copy">
+									<input class="form-check-input position-static" type="checkbox" id="print-copy" value="" aria-label="Print Copy" tabindex="-1" aria-hidden="false">
 									</div>
 									<label for="print-copy"><p class="white">Check to print a copy for your records&nbsp;<i class="far fa-print"></i></p></label>
 								</div>
@@ -206,14 +206,10 @@
 				&#x2713; Thank you.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message sent successfully.
 			</div>
 
-
-
 			<section class="block0">
 				<div class="topSection" id="Home">
 
 					<img src="images/path-logo.svg" class="img-responsive centerImage" alt="Population Assessment of Tobacco and Health Logo">
-
-
 
 					<div class="guide-overlay container">
 						<h2 class="landing-sec-H text-center">A Collaboration between the NIH and FDA</h2>
@@ -221,17 +217,17 @@
 						<p class="textBlue"><span class="strong">The Population Assessment of Tobacco and Health (PATH) Study</span> is a national longitudinal study of tobacco use and how it affects the health of people in the United States. People from all over the country take part in this study. The PATH Study, which started in 2013, is one of the first large tobacco research efforts undertaken by the National Institutes of Health (NIH) and the Food and Drug Administration (FDA) since Congress gave FDA authority to regulate tobacco products in 2009.</p>
 						<div class="menu-buttons noMargin">
 							<ul class="menu-buttons-list">
-								<li tabindex="0" data-target="#Guide">
+								<li tabindex="0" class="goToAbout">
 									<div class="limeCircle"><i class="fas fa-info-circle blueColor"></i></div>
 									<p class="zero">About the Study</p>
 									<i class="far fa-arrow-right showHover"></i>
 								</li>
-								<li tabindex="0" data-target="#FAQ">
+								<li tabindex="0" class="goToParticipants">
 									<div class="limeCircle middle"><i class="fas fa-user-friends blueColor"></i></div>
 									<p>Study Participants</p>
 									<i class="far fa-arrow-right showHover"></i>
 								</li>
-								<li tabindex="0" data-target="#Contact">
+								<li tabindex="0" class="goToResearchers">
 									<div class="limeCircle"><i class="fas fa-book-reader blueColor"></i></div>
 									<p>Researchers</p>
 									<i class="far fa-arrow-right showHover"></i>
@@ -245,8 +241,8 @@
 
 			</section>
 
-			<section class="block888">
-				<div class="heros container-fluid position-relative">
+			<section class="block10">
+				<div id="Guide" class="heros container-fluid position-relative">
 
 					<div class="mobileVersion">
 								<div class="content-spacer3"></div>
@@ -294,7 +290,7 @@
 			<div id="Guide" class="landing-sec container-fluid heros">
 
 				<div class="guide-overlay container">
-					<h2 class="landing-sec-H text-center noBorder pt-0 pb-0">About Our Participants</h2>
+					<h2 class="landing-sec-H largeFont text-center noBorder pt-0 pb-0">About Our Participants</h2>
 				</div>
 
 
@@ -472,29 +468,12 @@
 				</a>
 			</div>
 		</div>
+
+		<div class="back-to-top">
+				<i class="far fa-angle-up"></i>
+		</div>
 	</div>
 </div>
-
-<!-- <div class="menu-buttons-floating">
-	<ul class="menu-buttons-floating-list">
-		<li tabindex="0" data-target="#Home"><i class="fal fa-angle-up"></i></li>
-		<li tabindex="0" data-target="#Guide"><i class="fas fa-info-circle"></i></li>
-		<li tabindex="0" data-target="#FAQ"><i class="fas fa-question"></i></li>
-		<li tabindex="0" data-target="#Contact"><i class="fas fa-envelope"></i></li>
-	</ul>
-</div>
-
-
-<div class="menu-buttons-768">
-	<ul class="menu-buttons-768-list">
-
-		<li tabindex="0" data-target="#Guide"><i class="fas fa-info-circle"></i></li>
-		<li tabindex="0" data-target="#FAQ"><i class="fas fa-question"></i></li>
-		<li tabindex="0" data-target="#Contact"><i class="fas fa-envelope"></i></li>
-		<li tabindex="0" data-target="#Home"><i class="fas fa-angle-up"></i></li>
-	</ul>
-</div>
- -->
 
 
 <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
