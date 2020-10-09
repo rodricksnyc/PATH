@@ -1103,6 +1103,27 @@ h4.landing-sec-H {
   top:100px;
 }
 
+.form-check-inline input[type="checkbox"] {
+    height: 18px;
+    margin-top:-9px !important;
+    margin-left:6px !important;
+    width: 18px;
+    border: 1px solid black;
+}
+/* .form-check {
+    position: relative;
+    margin-left: 0em;
+    padding-left: 0em;
+    margin-bottom: .2em;
+}
+ .form-check label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+} */
+
 
 .menu-buttons.noMargin .menu-buttons-list li:hover .showHover{
   display: block !important
