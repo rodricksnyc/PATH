@@ -964,7 +964,7 @@ body * {
 }
 #myModal2 .modal-footer {
   border-top: none !important;
-  /* margin-top: 1em; */
+
   padding-top: 1em;
   display: flex;
   justify-content: center;
@@ -1038,7 +1038,7 @@ body * {
   max-width: 900px !important;
 }
 
-.modal-footer {
+#myModal2 .modal-footer {
   position: relative;
 }
 
