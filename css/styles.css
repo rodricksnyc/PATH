@@ -4759,6 +4759,10 @@ button.close {
 
 
 @media (max-width:991px){
+.menu-buttons-list li{
+  width: calc(32% - 0rem)!important;
+}
+
   .menu-buttons.noMargin .menu-buttons-list {
     flex-direction: column;
   }
