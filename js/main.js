@@ -13,6 +13,17 @@ $(document).ready(function () {
 		$(this).css('outline', 'none')
 	})
 
+	$(".block50 a").on("keyup", function (e) {
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 9) {
+		$(this).find('.whiteBubble').css('outline', 'dashed 3px #4599ff')
+	}
+
+})
+$(".block50 a").on('focusout', function() {
+	$(this).find('.whiteBubble').css('outline', 'none')
+})
+
 	// const prefersColorSchemeDark = window.matchMedia('(prefers-color-scheme: dark)');
 	// if (prefersColorSchemeDark.matches) {
 	// 	// Apply a dark color scheme

@@ -33,6 +33,7 @@
 }
 .rel {
   position:relative;
+  z-index: 9999999999999999;
 }
 
 .largeFont{
@@ -885,7 +886,7 @@ body * {
 }
 
 .bottom-logos.smaller{
-  max-width: 15em
+  max-width: 14em
 }
 
 .last-logos.smaller{
@@ -898,6 +899,10 @@ body * {
 
 .tiles1 .whiteBubble{
   min-height: 11em
+}
+
+.tiles1 .blueColor, .tiles2 .blueColor{
+  font-size:1em
 }
 
 .grayLine{
@@ -1136,7 +1141,10 @@ body * {
   color:#004F7F
 }
 
-
+a{
+  position: relative;
+  z-index:999999999999999999
+}
 
 
 .veryBottom #number1 {
@@ -1187,7 +1195,7 @@ h4.landing-sec-H {
   margin-top: 0%;
   padding-top: 0%;
   font-weight: 400;
-  font-size: 1.3em;
+  font-size: 1.75em;
   border-bottom: none;
 }
 
@@ -2169,8 +2177,23 @@ h1.white.sentMessage {
   font-weight: 700;
 }
 
+.whiteBubble .col-lg-7 .darkBlue{
+  margin:0em 5em
+}
+
+.whiteBubble ul{
+  margin: .5em 3em;
+    font-size: 16px;
+    color: black;
+}
+.whiteBubble ul.first{
+  margin: .5em 6em;
+    font-size: 16px;
+    color: black;
+}
+
 #FAQ {
-  padding: 35px;
+  padding: 0px;
   padding-top: 0px;
   margin-top: 0px;
 }
@@ -2397,6 +2420,7 @@ height: 18px;
   transform: scale(0.9);
   /* transition: all 0.5s; */
   opacity: 0;
+
 }
 
 .menu-buttons-floating.tabletSize {
@@ -2408,6 +2432,7 @@ height: 18px;
   transform: scale(1);
   /* transition: all 0.5s; */
   opacity: 1;
+  z-index: 9999999999999999999;
 }
 
 .menu-buttons-floating.tabletSize li{
@@ -5089,6 +5114,31 @@ button.close {
 
 @media (max-width: 767px) {
 
+  .menu-buttons-list, .guide-list-N{
+    display: none !important
+  }
+
+  #slideOut .modal-content {
+    position: relative;
+    background-color: #00559b;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: none;
+    border-radius: 0;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .6);
+    box-shadow: none;
+    z-index: 99999;
+    height: 930px;
+    /* height: 100%; */
+    width: auto;
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    opacity: .85;
+}
+
   h3.black {
     color: #001827;
     font-size: 22px;
@@ -5573,12 +5623,7 @@ body{
   min-width: 100% !important;
 }
 
-/* .btnContact,
-.menu-buttons-floating,
-.menu-buttons,
-.guide-list-N {
-  display: none;
-} */
+
 
 .landing-panel {
   width: calc(100% - 36px);
@@ -6422,7 +6467,7 @@ body{
 
 @media (max-width: 1320px) and (min-width: 1130px) {
 .container {
-    max-width: 900px !important;
+    max-width: 1078px !important;
 }
 }
 
