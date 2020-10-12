@@ -1232,19 +1232,6 @@ h4.landing-sec-H {
     width: 18px;
     border: 1px solid black;
 }
-/* .form-check {
-    position: relative;
-    margin-left: 0em;
-    padding-left: 0em;
-    margin-bottom: .2em;
-}
- .form-check label {
-    display: inline-block;
-    max-width: 100%;
-    margin-bottom: 5px;
-    font-weight: bold;
-
-} */
 
 h3.black{
   color:#001827;
@@ -1252,6 +1239,7 @@ h3.black{
   font-weight:500;
   margin:1em 0em
 }
+
 
 
 .menu-buttons.noMargin .menu-buttons-list li:hover .showHover{
@@ -2411,24 +2399,24 @@ height: 18px;
   opacity: 0;
 }
 
-.menu-buttons-floating.about {
+.menu-buttons-floating.tabletSize {
   visibility: visible;
   position: fixed;
   top:30%;
-  left: 3%;
+  left: 2%;
   z-index: 1;
   transform: scale(1);
   /* transition: all 0.5s; */
   opacity: 1;
 }
 
-.menu-buttons-floating.about li{
+.menu-buttons-floating.tabletSize li{
   height:75px;
   width:75px;
   font-size:42px;
 }
 
-.menu-buttons-floating.about li:first-child{
+.menu-buttons-floating.tabletSize li:first-child{
   height:75px;
   width:75px;
   font-size:42px;
@@ -4685,8 +4673,18 @@ button.close {
   }
   .noBorder {
     border-bottom: none !important;
-    margin-bottom: -4em !important;
+    margin-bottom: 0em !important;
   }
+
+.relativeImage{
+  top:-100px;
+}
+.menu-buttons.noMargin {
+    width: 100%;
+    margin: 50px 0px;
+    position: relative;
+}
+
   .rightTop {
     top: 400px;
   }
@@ -4712,6 +4710,25 @@ button.close {
   .veryBottom #number2 {
     top: 74%;
   }
+
+  #FAQ {
+    padding: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.landing-sec {
+
+    margin-bottom: 0;
+}
+#FAQ .landing-sec-H {
+
+    padding-top: 0;
+}
+
+.whiteBubble img{
+  max-width:20em
+}
+
 
 }
 
@@ -4761,7 +4778,7 @@ button.close {
   }
   .menu-buttons.noMargin {
     width: 100%;
-    margin: 25px 0px !important;
+    margin: 50px 0px !important;
     position: relative;
   }
 
@@ -4800,11 +4817,18 @@ button.close {
   }
   .noBorder {
 
-    margin-bottom: -5em !important;
-    margin-top: 11em;
+    margin-bottom: 0em !important;
+    margin-top: 0em;
     font-size: 36px;
 
   }
+
+
+  .noBorder.participants {
+    margin-bottom: -5em !important;
+    margin-top: 11em;
+    font-size: 36px;
+}
   .rightTop {
     top: 400px;
     right: 112px;
@@ -4893,6 +4917,15 @@ button.close {
     right: 53px;
   }
 
+  .menu-buttons-768.tabletSize {
+    display: block;
+    opacity: 1;
+}
+.menu-buttons-floating.tabletSize {
+    visibility: hidden;
+    display: none;
+}
+
 }
 
 @media (max-width:991px) and (min-width:768px) {
@@ -4961,6 +4994,94 @@ button.close {
     margin-bottom: 0px;
     font-weight: bold;
     padding-left: 35px !important;
+}
+
+.landing-sec {
+    padding: 30px;
+    margin-bottom: 0;
+}
+#FAQ {
+    padding: 0;
+    padding-top: 0px;
+    margin-top: -0px;
+}
+
+.whiteBubble img{
+  max-width: 17em;
+  padding-top: 1em;
+}
+
+.whiteBubble ul{
+  margin-left: -1em;
+}
+.absoluteImg {
+    max-height: 21em;
+    position: relative;
+    right: 0;
+    top: 0;
+}
+.content-spacer {
+    height: 4vh;
+}
+
+.content-spacer.tabletNone {
+    height: 0vh;
+}
+
+.block50 .offset-md-4 {
+    margin-left: 16.6667%;
+}
+
+.tiles1 .whiteBubble {
+    min-height: 11em;
+    margin: 1em 6em;
+}
+
+.tiles2 .whiteBubble {
+
+    margin: 1em 6em;
+}
+
+.tiles1 .offset-md-1 {
+    margin-left: 0%;
+}
+
+.absoluteText {
+    position: absolute !important;
+    max-width: 13em;
+    z-index: 9999;
+    left: 13%;
+    top: 8%;
+}
+.map .col-lg-4 {
+    padding: 0em 1em;
+
+}
+
+.map .col-lg-4:nth-of-type(1) {
+    padding: 0em 1em;
+    margin-top: 30em;
+}
+
+.map .col-lg-4:nth-of-type(2) {
+    padding: 0em 1em;
+    margin-top: 30em;
+}
+
+.map .col-lg-4:nth-of-type(3) {
+    padding: 0em 1em;
+    margin-left:25%
+}
+.map .col-lg-5 {
+    padding: 0em 1em;
+}
+.map .offset-md-1 {
+    margin-left: 0;
+}
+
+.map .whiteBubble img {
+    max-width: none;
+    padding-top: 0em;
 }
 
 
@@ -5668,10 +5789,11 @@ body{
 
 }
 
-.noBorder {
-  margin-bottom: 0em !important;
-  font-size: 28px;
-  width: 100%;
+.noBorder.participants {
+    margin-bottom: 0em !important;
+    font-size: 28px;
+    width: 100%;
+    margin-top: 0em !important;
 }
 
 .content-spacer2 {
@@ -6288,5 +6410,32 @@ body{
     padding-right: .5em;
   }
 
+
+}
+
+@media (min-width: 1600px){
+.container {
+    max-width: 1400px !important;
+}
+
+}
+
+@media (max-width: 1320px) and (min-width: 1130px) {
+.container {
+    max-width: 900px !important;
+}
+}
+
+@media (max-width: 1129px) and (min-width: 992px) {
+.container {
+    max-width: 830px !important;
+}
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+.guide-overlay {
+    position: relative;
+
+}
 
 }
