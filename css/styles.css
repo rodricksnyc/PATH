@@ -893,8 +893,14 @@ body * {
   max-width: 8em
 }
 
+.last-logos.smaller2{
+  max-width: 10em
+}
+
 .tiles2 .whiteBubble{
-  min-height: 14em
+  min-height: 15.8em;
+  max-height: 16em;
+
 }
 
 .tiles1 .whiteBubble{
