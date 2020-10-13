@@ -4837,6 +4837,17 @@ h4.landing-sec-H {
     top: 28%;
     font-size: 1.75em !important;
 }
+.verify .col-lg-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 75%;
+    max-width: 50.666667%;
+}
+.verify .offset-md-4 {
+    margin-left: 25%;
+}
+.transparent-button{
+  margin-bottom: 3em
+}
 
 
 }
