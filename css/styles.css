@@ -903,6 +903,22 @@ body * {
 
 }
 
+.objectives ul{
+  list-style-type: none
+}
+
+.objectives li::before {
+    font-family: "Font Awesome 5 Pro";
+    content: "\f111";
+    color: #7BC043;
+    font-size: 13px;
+      display: inline-block;
+      width: .3em;
+      margin-left: -1.4em;
+      margin-right: 1em;
+
+}
+
 .moveThisUp {
   margin-top:-4em
 }
