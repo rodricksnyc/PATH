@@ -2450,15 +2450,17 @@ height: 18px;
 }
 
 .menu-buttons-floating.tabletSize li{
-  height:75px;
-  width:75px;
-  font-size:42px;
+  height: 65px;
+  width: 65px;
+  font-size: 35px;
+
 }
 
 .menu-buttons-floating.tabletSize li:first-child{
-  height:75px;
-  width:75px;
-  font-size:42px;
+  height: 65px;
+      width: 65px;
+      font-size: 35px;
+
 }
 
 .embed-responsive-item {
@@ -2724,10 +2726,12 @@ color: #0071ba;
   margin: 0;
   height: 100vh;
   top: 0;
-  z-index: 999999999;
+  z-index: 9999999999999999;
 
 
 }
+
+
 
 .showslideOut2{
   right:0px !important
@@ -4706,6 +4710,8 @@ button.close {
   }
 }
 
+
+
 @media (max-width:1024px) and (min-width:992px) {
   .blue br {
     display: none !important;
@@ -4766,6 +4772,70 @@ button.close {
 
 .whiteBubble img{
   max-width:20em
+}
+
+.whiteBubble .col-lg-7 .darkBlue {
+    margin: 0em 1em;
+}
+
+.whiteBubble ul.first {
+    margin: .5em 0em;
+    font-size: 16px;
+    color: black;
+}
+.whiteBubble ul {
+    margin: .5em 0em;
+    font-size: 16px;
+    color: black;
+}
+.content-spacer {
+    height: 5vh;
+}
+.map .col-lg-4 {
+    padding: 0em 1em;
+}
+.map .col-lg-5 {
+    padding: 0em 3em;
+}
+
+h4.landing-sec-H {
+    margin-top: 0%;
+    padding-top: 0%;
+    font-weight: 400;
+    font-size: 1.5em;
+    border-bottom: none;
+}
+
+.tiles2 .col-lg-3 {
+
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.tiles1 .col-lg-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.tiles1 .offset-md-1 {
+    margin-left: 0;
+}
+
+.absoluteImg {
+    max-height: 27em;
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+
+.absoluteText {
+    position: absolute !important;
+    max-width: 11em;
+    z-index: 9999;
+    left: 34%;
+    top: 28%;
+    font-size: 1.75em !important;
 }
 
 
@@ -5132,6 +5202,23 @@ button.close {
 
 @media (max-width: 767px) {
 
+  .head img {
+    min-width: 23em;
+    margin-top: 0em;
+
+  }
+
+  .mt-5.head {
+    margin-top: 0rem!important;
+}
+
+.transparent-button p {
+    color: #00559b;
+    font-weight: 500;
+    font-size: 19px;
+    margin: 0em;
+}
+
   .menu-buttons-list, .guide-list-N{
     display: none !important
   }
@@ -5157,6 +5244,67 @@ button.close {
     opacity: .85;
 }
 
+.darkBlue {
+    color: #004F7F;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-top: 1em;
+    text-align: center !important;
+}
+
+.block5 .whiteBubble img{
+  max-width:19em
+}
+.whiteBubble .col-lg-7 .darkBlue {
+    margin: 0em 0em;
+}
+.whiteBubble ul.first {
+    margin: .5em 0em;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 2em;
+}
+.whiteBubble .col-lg-7 .darkBlue {
+    margin: 1em 0em;
+}
+.whiteBubble ul {
+    margin: .5em 0em;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 2em;
+}
+.absoluteImg {
+  max-height: 26em;
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-bottom: -4em;
+    z-index: 0;
+
+}
+
+.content-spacer {
+    height: 0vh;
+}
+
+.tiles2 .whiteBubble {
+    min-height: 7.8em;
+    max-height: 16em;
+}
+h2 {
+    padding: 0% 0;
+}
+
+h4.landing-sec-H {
+    margin-top: 0%;
+    padding-top: 0%;
+    font-weight: 400;
+    font-size: 1.5em;
+    border-bottom: none;
+    margin-bottom:1em !important;
+    text-align: center !important;
+}
+
   h3.black {
     color: #001827;
     font-size: 22px;
@@ -5164,6 +5312,11 @@ button.close {
     margin: 1em 0em;
     text-align: left;
     padding-left: .6em;
+}
+
+.noBorder {
+
+    text-align: center !important;
 }
 
   .form-check-inline input[type="checkbox"] {
@@ -5292,8 +5445,8 @@ button.close {
     margin-bottom:1em;
   }
   .black{
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 0em;
+    padding-right: 0em;
     font-size: 15px;
     margin-bottom: 0em;
   }
@@ -5716,7 +5869,8 @@ body{
 
 .landing-sec-H{
   font-size: 22px;
-  width: 90%;
+  width: 100%;
+  margin-top:1em;
 }
 
 .guide-wrapper{

@@ -67,30 +67,6 @@ if ($(document).innerWidth() <= 767) {
 	})
 
 
-	// $('.menu-buttons-768-list li:eq(0)').click(function() {
-	// 	$('.menu-buttons-768-list li:eq(1)').removeClass('activated')
-	// 	$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
-	// 	$('.menu-buttons-768-list li:eq(3)').removeClass('activated')
-	// })
-	//
-	// $('.menu-buttons-768-list li:eq(1)').click(function() {
-	// 	$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
-	// 	$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
-	// 	$('.menu-buttons-768-list li:eq(3)').removeClass('activated')
-	// })
-	//
-	// $('.menu-buttons-768-list li:eq(2)').click(function() {
-	// 	$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
-	// 	$('.menu-buttons-768-list li:eq(1)').removeClass('activated')
-	// 	$('.menu-buttons-768-list li:eq(3)').removeClass('activated')
-	// })
-	//
-	// $('.menu-buttons-768-list li:eq(3)').click(function() {
-	// 	$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
-	// 	$('.menu-buttons-768-list li:eq(1)').removeClass('activated')
-	// 	$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
-	// })
-
 	$('.landing-panel .form-control.access').focus(function () {
 		$('html, body').animate({ scrollTop: ($('.landing-panel .form-control.access').offset().top - 40) }, 600);
 		return false;
@@ -256,8 +232,7 @@ setReasonActive()
 
 
 
-document.getElementById("access").addEventListener("keyup", function (e) {
-
+$("#access").on("keyup", function (e) {
 
 	var code = (e.keyCode ? e.keyCode : e.which);
 	if (code == 13 ) {
@@ -277,8 +252,6 @@ document.getElementById("access").addEventListener("keyup", function (e) {
 
 			$("#eye").attr('src',"images/show-access.svg");
 
-
-
 			$('#access').html('Show')
 		}
 
@@ -287,8 +260,7 @@ document.getElementById("access").addEventListener("keyup", function (e) {
 })
 
 
-document.getElementById("access2").addEventListener("keyup", function (e) {
-
+$("#access2").on("keyup", function (e) {
 
 	var code = (e.keyCode ? e.keyCode : e.which);
 	if (code == 13 ) {
@@ -299,7 +271,6 @@ document.getElementById("access2").addEventListener("keyup", function (e) {
 
 			$("#eye2").attr('src',"images/close-eye.svg");
 
-
 			$('#access2').html('Hide')
 
 		} else {
@@ -307,8 +278,6 @@ document.getElementById("access2").addEventListener("keyup", function (e) {
 			hide2();
 
 			$("#eye2").attr('src',"images/show-access.svg");
-
-
 
 			$('#access2').html('Show')
 		}
@@ -319,30 +288,30 @@ document.getElementById("access2").addEventListener("keyup", function (e) {
 
 
 function show() {
-	var p = document.getElementById('MainContent_txtAccessCode1');
-	p.setAttribute('type', 'text');
+	var p = $('#MainContent_txtAccessCode1');
+	p.attr('type', 'text');
 }
 
 function hide() {
-	var p = document.getElementById('MainContent_txtAccessCode1');
-	p.setAttribute('type', 'password');
+	var p = $('#MainContent_txtAccessCode1');
+	p.attr('type', 'password');
 }
 
 function show2() {
-	var p2 = document.getElementById('MainContent_txtAccessCode2');
-	p2.setAttribute('type', 'text');
+	var p2 = $('#MainContent_txtAccessCode2');
+	p2.attr('type', 'text');
 }
 
 function hide2() {
-	var p2 = document.getElementById('MainContent_txtAccessCode2');
-	p2.setAttribute('type', 'password');
+	var p2 = $('#MainContent_txtAccessCode2');
+	p2.attr('type', 'password');
 }
 
 var pwShown = 0;
 
 var pwShown2 = 0;
 
-document.getElementById("togglepwd").addEventListener("click", function () {
+$("#togglepwd").on("click", function () {
 	if (pwShown == 0) {
 		pwShown = 1;
 		show();
@@ -368,7 +337,7 @@ document.getElementById("togglepwd").addEventListener("click", function () {
 $('.form-login-a')
 
 
-document.getElementById("togglepwd2").addEventListener("click", function () {
+$("#togglepwd2").on("click", function () {
 	if (pwShown2 == 0) {
 		pwShown2 = 1;
 		show2();
