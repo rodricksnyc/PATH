@@ -17,6 +17,39 @@
 
 	<script>
 	$(document).ready(function () {
+
+		var about = function() {
+			window.location.href="about.html"
+		}
+
+		$('.goToAbout').keypress(
+			about
+
+		).click(
+			about
+		);
+
+		var participants = function() {
+			window.location.href="participants.html"
+		}
+
+		$('.goToParticipants').keypress(
+			participants
+
+		).click(
+			participants
+		);
+
+		var researchers = function() {
+			window.location.href="researchers.html"
+		}
+
+		$('.goToParticipants').keypress(
+			researchers
+
+		).click(
+			researchers
+		);
 	//IE message
 
 	var version = detectIE();
