@@ -1123,6 +1123,14 @@ body * {
   transition: transform 1s;
 }
 
+.topFour .whiteBubble .smaller {
+  max-width:11em
+}
+
+.topFour .whiteBubble{
+  min-height: 12em
+}
+
 .map .whiteBubble{
   background: white;
   padding:0em;
@@ -4854,6 +4862,20 @@ h4.landing-sec-H {
 
 
 @media (max-width:991px){
+  .whiteBubble .col-lg-7 .darkBlue {
+      margin: 0em 1em;
+  }
+
+  .whiteBubble ul.first {
+      margin: .5em 0em;
+      font-size: 16px;
+      color: black;
+  }
+  .whiteBubble ul {
+      margin: .5em 0em;
+      font-size: 16px;
+      color: black;
+  }
 .menu-buttons-list li{
   width: calc(32% - 0rem)!important;
 }
@@ -5213,6 +5235,35 @@ h4.landing-sec-H {
 
 @media (max-width: 767px) {
 
+  .map .whiteBubble h4.landing-sec-H{
+    margin-bottom:0em !important
+  }
+
+  .map .col-lg-4:nth-of-type(1) {
+      padding: 0em 4em;
+      margin-top: 8em;
+  }
+  .moveThisUp {
+    margin-top: 0em;
+}
+.map .col-lg-5 {
+    padding: 0em 4em;
+}
+.absoluteText {
+    position: absolute !important;
+    max-width: 13em;
+    z-index: 9999;
+    left: 12%;
+    top: 0%;
+}
+.last-logos {
+    max-width: 15em;
+}
+
+  .transparent-button{
+    margin:2em
+  }
+
   .head img {
     min-width: 23em;
     margin-top: 0em;
@@ -5226,8 +5277,27 @@ h4.landing-sec-H {
 .transparent-button p {
     color: #00559b;
     font-weight: 500;
-    font-size: 19px;
+    font-size: 15px;
     margin: 0em;
+}
+
+.map {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    background-image: none;
+    height: inherit;
+    min-height: inherit;
+    background-size: contain;
+    left: 0;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    z-index: -8;
+    background-position: top;
+    min-height: 0px;
+    top: 0;
 }
 
   .menu-buttons-list, .guide-list-N{
@@ -6648,13 +6718,13 @@ body{
 
 }
 
-@media (max-width: 1320px) and (min-width: 1130px) {
+@media (max-width: 1320px) and (min-width: 1200px) {
 .container {
     max-width: 1078px !important;
 }
 }
 
-@media (max-width: 1129px) and (min-width: 992px) {
+@media (max-width: 1199px) and (min-width: 992px) {
 .container {
     max-width: 830px !important;
 }
