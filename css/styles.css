@@ -4977,6 +4977,143 @@ button.close {
       font-size: 15px;
       margin: 0em;
   }
+  .topFour .col-lg-3 {
+      -ms-flex: 0 0 25%;
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+
+  .topFour .col-lg-8 {
+      -ms-flex: 0 0 66.666667%;
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+
+  .topFour .col-lg-4 {
+      -ms-flex: 0 0 33.333333%;
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+
+  .topFour .col-lg-9 {
+      -ms-flex: 0 0 75%;
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+  .topFour .darkBlue {
+      color: #004F7F;
+      font-size: 1.2em;
+      font-weight: 600;
+  }
+
+  .topFour .whiteBubble {
+      min-height: 15em;
+      padding-top: 3em !important;
+  }
+
+  .topFour .whiteBubble .smaller {
+      max-width: 13.6em;
+  }
+  .study .darkBlue {
+      color: #004F7F;
+      font-size: 1.6em;
+      font-weight: 600;
+      text-align: center;
+      padding-top: 2rem !important;
+  }
+
+  .study .pl-5 {
+      padding-left: 1rem!important;
+  }
+
+  .btn.btn-primary.new{
+    font-size:15px;
+  }
+
+  .lock{
+    max-width:20em;
+    padding:2em 1em 1em 0em
+  }
+
+
+  .whiteBubble img{
+    max-width:20em
+  }
+
+  .whiteBubble .col-lg-7 .darkBlue {
+      margin: 0em 1em;
+  }
+
+  .whiteBubble ul.first {
+      margin: .5em 0em;
+      font-size: 16px;
+      color: black;
+  }
+  .whiteBubble ul {
+      margin: .5em 0em;
+      font-size: 16px;
+      color: black;
+  }
+  .content-spacer {
+      height: 5vh;
+  }
+  .map .col-lg-4 {
+      padding: 0em 1em;
+  }
+  .map .col-lg-5 {
+      padding: 0em 3em;
+  }
+
+  h4.landing-sec-H {
+      margin-top: 0%;
+      padding-top: 0%;
+      font-weight: 400;
+      font-size: 1.5em;
+      border-bottom: none;
+  }
+
+  .tiles2 .col-lg-3 {
+
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+
+  .tiles1 .col-lg-3 {
+      -ms-flex: 0 0 25%;
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+  }
+
+  .tiles1 .offset-md-1 {
+      margin-left: 0;
+  }
+
+  .absoluteImg {
+      max-height: 27em;
+      position: absolute;
+      right: 0;
+      top: 80px;
+  }
+
+  .absoluteText {
+      position: absolute !important;
+      max-width: 11em;
+      z-index: 9999;
+      left: 34%;
+      top: 28%;
+      font-size: 1.75em !important;
+  }
+  .verify .col-lg-5 {
+      -ms-flex: 0 0 41.666667%;
+      flex: 0 0 75%;
+      max-width: 50.666667%;
+  }
+  .verify .offset-md-4 {
+      margin-left: 25%;
+  }
+  .transparent-button{
+    margin-bottom: 3em
+  }
 }
 
 
