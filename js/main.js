@@ -443,15 +443,15 @@ $('.box-container').on("keyup", function (e) {
 	}
 });
 
-if ($(document).innerWidth() <= 767) {
-
-$('.box-container').on("click", function (e) {
-
-		$(this).find('.flip-box').toggleClass('flipIt')
-
-});
-
-}
+// if ($(document).innerWidth() <= 767) {
+//
+// $('.box-container').on("click", function (e) {
+//
+// 		$(this).find('.flip-box').toggleClass('flipIt')
+//
+// });
+//
+// }
 
 	$('li[data-target="#Guide"]').addClass('activated')
 
