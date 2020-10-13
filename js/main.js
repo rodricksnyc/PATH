@@ -363,24 +363,36 @@ $(".block50 a").on('focusout', function() {
 		researchers
 	);
 
-// 
-// $('.back-to-top').click(() => {
-// 	scrollfn("#overview");
-// })
-//
-//
-// $(window).scroll(function () {
-// 	((window.pageYOffset || document.documentElement.scrollTop) > 100) ? $('.back-to-top').css({ opacity: 1, visibility: "visible" }) : $('.back-to-top').css({ opacity: 0, visibility: "hidden" });
-// });
-//
-// function scrollfn(e) {
-// 	let $target = $(e),
-// 	offSet = e === "#overview" ? 0 : $target.offset().top;
-// 	$('html, body').stop().animate({
-// 		'scrollTop': offSet
-// 	}, 1200, 'swing');
-//
-// }
+	$('.back-to-top').click(() => {
+		scrollfn("#overview");
+	})
+
+
+	$(window).scroll(function () {
+		((window.pageYOffset || document.documentElement.scrollTop) > 100) ? $('.back-to-top').css({ opacity: 1, visibility: "visible" }) : $('.back-to-top').css({ opacity: 0, visibility: "hidden" });
+	});
+
+	function scrollfn(e) {
+		let $target = $(e),
+		offSet = e === "#overview" ? 0 : $target.offset().top;
+		$('html, body').stop().animate({
+			'scrollTop': offSet
+		}, 1200, 'swing');
+
+
+	}
+
+	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('click', function (e) {
+
+		e.preventDefault();
+		scrollfn($(this).attr('data-target'));
+	});
+
+	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('keypress', function (e) {
+
+		e.preventDefault();
+		scrollfn($(this).attr('data-target'));
+	});
 
 
 
@@ -440,6 +452,26 @@ $(".form-check").on("keyup", function (e) {
 
 })
 
+
+$(".box-container").on("keyup", function (e) {
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 9) {
+		$(this).find('.flip-box').css('outline', 'dashed 3px #4599ff')
+	}
+
+})
+$(".box-container").on('focusout', function() {
+	$(this).find('.flip-box').css('outline', 'none')
+})
+
+$('.box-container').on("keyup", function (e) {
+
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 13) {
+
+		$(this).find('.flip-box').toggleClass('flipIt')
+	}
+});
 
 
 
