@@ -5222,9 +5222,19 @@ button.close {
   .blue br {
     display: none !important;
   }
+
+  .form-group label {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 19px;
+}
   .noBorder {
     border-bottom: none !important;
     margin-bottom: 0em !important;
+  }
+
+  .footer-img{
+    padding-top: 10em;
   }
 
   .veryBottom{
@@ -5670,6 +5680,11 @@ button.close {
     padding-top: 8em;
     padding-bottom: 2em;
   }
+
+  .ccPadding {
+    padding: 1em 1em 2em 0em;
+    max-width: 23em;
+}
 
   .menu-buttons-768-list li i {
     font-size: 28px;

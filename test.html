@@ -571,6 +571,42 @@ function detectIE() {
 </div>
 
 <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+
+<!-- <script type="text/javascript">
+
+
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({
+pageLanguage: "en",
+
+layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+
+}, "google_translate_element")
+}
+
+
+function triggerHtmlEvent(element, eventName) {
+var event;
+if (document.createEvent) {
+event = document.createEvent('HTMLEvents');
+event.initEvent(eventName, true, true);
+element.dispatchEvent(event);
+} else {
+event = document.createEventObject();
+event.eventType = eventName;
+element.fireEvent('on' + event.eventType, event);
+}
+}
+
+$('.lang-select').click(function() {
+var theLang = jQuery(this).attr('data-lang');
+$('.goog-te-combo').val(theLang);
+
+window.location = jQuery(this).attr('href');
+location.reload();
+
+});
+</script> -->
 </body>
 
 </html>
