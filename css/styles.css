@@ -2409,6 +2409,25 @@ h1.white.sentMessage {
   position: relative;
 }
 
+
+.participant-page .faq-list {
+  margin-top: 24px;
+  background: #dfedf7;
+  width: 100%;
+  padding: 12px 32px 8px 32px;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.participant-page .caret-down {
+    position: absolute;
+    top: -7px !important;
+    right: -7px !important;
+  
+    font-size: 24px;
+}
+
+
 .form-login-a.second {
   display:none
 }
@@ -2453,8 +2472,10 @@ h1.white.sentMessage {
 
 .caret-down {
   position: absolute;
-  top: 5px;
-  right: 20px;
+  top: -7px !important;
+  right: -7px !important;
+  /* top: 5px;
+  right: 20px; */
   /* transition: transform 0.3s; */
   font-size: 24px;
 }
