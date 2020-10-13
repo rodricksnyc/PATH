@@ -1475,7 +1475,7 @@ a{
   z-index: 1;
   border-radius: .8em;
   margin: 1em 0em 2em 0em;
-  z-index:99999999999999;
+  z-index:99;
 }
 
 h4.landing-sec-H {
