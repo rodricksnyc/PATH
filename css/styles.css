@@ -2656,7 +2656,7 @@ h1.white.sentMessage {
   align-items: center;
   box-shadow: 0px -5px 10px rgba(0,0,0,0.1);
   min-height:8em;
-  z-index: 0;
+  z-index: 3;
 }
 
 
@@ -5225,6 +5225,10 @@ button.close {
   .noBorder {
     border-bottom: none !important;
     margin-bottom: 0em !important;
+  }
+
+  .veryBottom{
+    margin-bottom:-7em
   }
 
   .researcher {

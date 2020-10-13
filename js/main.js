@@ -507,7 +507,7 @@ $(window).on('scroll', function() {
 })
 
 
-if ($(document).innerWidth() > 1024) {
+if ($(document).innerWidth() >= 1025) {
 
 	$(window).scroll(function() {
 		if($(window).scrollTop() + $(window).height() > $(document).height() - .01*$(document).height()) {
@@ -537,13 +537,13 @@ if ($(document).innerWidth() <= 1024) {
 		if($(window).scrollTop() + $(window).height() > $(document).height() - .01*$(document).height()) {
 
 			$('.back-to-top').css({
-				'top' : '84%'
+				'top' : '74%'
 			})
 		}
 		else {
 
 			$('.back-to-top').css({
-				'top' : '70%'
+				'top' : '84%'
 			})
 
 		}
