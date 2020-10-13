@@ -6060,11 +6060,15 @@ button.close {
     margin-bottom: 3rem!important;
   }
 
-  .menu-buttons-list, .guide-list-N{
+  .guide-list-N{
     display: none !important
   }
 
-.noMargin  .menu-buttons-list, .guide-list-N{
+  .menu-buttons-list{
+    display: none !important
+  }
+
+.noMargin  .menu-buttons-list{
     display: block !important
   }
 
