@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 	<title class="notranslate" translate="no">PATH</title>
 	<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
+
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
 	<link rel="stylesheet" href="vendorlibs/normalize.min.css">
@@ -15,8 +16,8 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-		<script>
-		$(document).ready(function () {
+	<script>
+	$(document).ready(function () {
 		//IE message
 
 		var version = detectIE();
@@ -60,9 +61,12 @@
 
 
 
-		})
-		</script>
+	})
+	</script>
+
+	<!-- <script type="text/javascript" src="js/index.js"></script> -->
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
 
 	<script type="text/javascript">
 	function googleTranslateElementInit() {
@@ -93,671 +97,381 @@
 
 <body>
 
-	<!-- <div id="translate-a">
-	<div class="wrap-a">
-	<div id="google_translate_element"></div>
-</div>
-</div> -->
-<div class="rel">
-	<div class="container-fluid overflow-hidden position-relative shadow">
-		<div class="modal fade" tabindex="-1" role="dialog" id="myModal2">
-			<div class="modal-dialog" role="document">
+	<div class="outer-wrapper lightBlue">
+		<div class="container-fluid overflow-hidden position-relative shadow">
+			<div class="modal fade" tabindex="-1" role="dialog" id="myModal2">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close Browser Recommendations Modal">
+								<span aria-hidden="true" style="font-size:25px;">&times;</span></button>
+								<h4 class="modal-title">Browser Recommendations</h4>
+
+							</div>
+							<div class="modal-body">
+								<h6 class="black">We recommend using a desktop or laptop computer to complete the study activities. For the best
+									experience, use <span class="strong">Chrome, Edge, Safari, or Firefox.</span> If you don’t have one of the recommended browsers,
+									you can select one of the browser icons below to download the installer.</h6>
+									<div class="flex">
+										<div class="vertical2">
+											<img src="images/google.png" class="img-responsive icon" height="70" width="70" alt="">
+											<p>Chrome</p>
+										</div>
+										<div class="vertical2">
+											<img src="images/edge.png" class="img-responsive icon" height="70" width="70" alt="">
+											<p>Edge</p>
+										</div>
+										<div class="vertical2">
+											<img src="images/safari.png" class="img-responsive icon" height="70" width="70" alt="">
+											<p>Safari</p>
+										</div>
+										<div class="vertical2">
+											<img src="images/firefox.png" class="img-responsive icon" height="70" width="73" alt="">
+											<p>Firefox</p>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<center>
+										<button type="button" class="btn browser" data-dismiss="modal">DONE</button>
+									</center>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<header id="Home">
+						<nav class="navbar navbar-expand-lg navbar-light bg-white">
+							<div class="container-fluid">
+								<a class="pb-0" href="">
+									<img src="images/path-logo.svg" class="img-responsive logo" alt="Population Assessment of Tobacco and Health Logo">
+								</a>
+								<button class="navbar-toggler collapsed mr-2" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+
+								<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+									<ul class="navbar-nav d-block d-lg-flex ml-auto text-right d-flex align-items-center">
+										<li class="nav-item">
+											<a class="nav-link" href="landing.html">Home</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="about.html">About the Study</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="participants.html">Participants</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="researchers.html">Researchers</a>
+										</li>
+
+										<div class="d-flex justify-content-center align-items-center">
+
+											<a id="ingles" href="" class="english activeDot notranslate" data-lang="en" tabindex="0" aria-hidden="false" role="button" translate="no">
+
+												<p class="language notranslate" translate="no">English</p>
+
+											</a>
+
+											<!-- <a id="ingles" href="#googtrans(en|en)" class="lang-en lang-select english activeDot" data-lang="en" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
+
+											<p class="language">English</p>
+
+										</a> -->
+										<div class="flip"></div>
+										<a id="espanol" href="#googtrans(en|es)" class="lang-es lang-select spanish inactiveDot" data-lang="es" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
+
+											<p class="language">Espa&ntilde;ol</p>
+
+										</a>
+									</div>
+									<a class="loginButton" href="login.html"><p>LOG IN</p></a>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</header>
+			</div>
+
+
+			<section class="block10">
+				<div class="container-fluid heros">
+					<div id="Guide" class="landing-sec container-fluid">
+						<div class="guide-overlay container">
+							<h2 class="landing-sec-H">Information for Researchers</h2>
+
+							<div class="row pt-4">
+								<div class="col-lg-7">
+									<p class="black twenty mt-3">For general information about the PATH Study, including access to restricted- and public-use questionnaire and biomarker data files, please visit <a class="blueColor" href="https://www.icpsr.umich.edu/web/NAHDAP/series/606" target="_blank">National Addiction & HIV Data Program (NAHDAP) <i class="far fa-external-link-alt"></i>.</a></p>
+									<p class="black twenty">Questions about the collection, content, weighting, documentation, or structure of PATH Study data may be submitted to:<br>
+
+									<a class="blueColor twenty" href="mailto:PATHDataUserQuestions@Westat.com">PATHDataUserQuestions@Westat.com.</a></p>
+
+									<p class="black twenty">NOTE: This email address is not for questions about statistical analysis or analytic guidance. For analytic questions, researchers may wish to consult with statisticians and analysts at their institutions. Additionally, the <a class="blueColor" href="https://pathstudyforum.icpsr.umich.edu/">PATH Study User Forum <i class="far fa-external-link-alt"></i></a> can be used to engage in discussion with other PATH Study data users.</p>
+								</div>
+
+								<div class="col-lg-5">
+									<img src="images/researcher.svg" class="img-responsive researcher">
+								</div>
+
+							</div>
+
+
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<div class="contactUsOverlay"></div>
+
+
+			<section class="block50">
+
+
+
+				<div class="footer-img">
+					<div class="container-fluid">
+						<img class="" src="images/about-footer.svg" alt="Overlay">
+					</div>
+				</div>
+
+			</section>
+
+			<div id="slideOut2">
+
+				<div id="one" class="openTab" role="button" tabindex="0" aria-label="Contact">
+					<p class="plum"><i class="fas fa-envelope plum"></i>&nbsp;&nbsp;Contact Us</p>
+
+				</div>
+
 				<div class="modal-content">
 					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close Browser Recommendations Modal">
-							<span aria-hidden="true" style="font-size:25px;">&times;</span></button>
-							<h4 class="modal-title">Browser Recommendations</h4>
-
+						<div class="closeThisPlease" id="close">
+							<button role="button" role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
+								&#10005;
+							</button>
 						</div>
-						<div class="modal-body">
-							<h6 class="black">We recommend using a desktop or laptop computer to complete the study activities. For the best
-								experience, use <span class="strong">Chrome, Edge, Safari, or Firefox.</span> If you don’t have one of the recommended browsers,
-								you can select one of the browser icons below to download the installer.</h6>
-								<div class="flex">
-									<div class="vertical2">
-										<img src="images/google.png" class="img-responsive icon" height="70" width="70" alt="">
-										<p>Chrome</p>
-									</div>
-									<div class="vertical2">
-										<img src="images/edge.png" class="img-responsive icon" height="70" width="70" alt="">
-										<p>Edge</p>
-									</div>
-									<div class="vertical2">
-										<img src="images/safari.png" class="img-responsive icon" height="70" width="70" alt="">
-										<p>Safari</p>
-									</div>
-									<div class="vertical2">
-										<img src="images/firefox.png" class="img-responsive icon" height="70" width="73" alt="">
-										<p>Firefox</p>
-									</div>
+						<br>
+						<div class="d-flex justify-content-between align-items-center contactInfo">
+
+							<p class="whiteLarger">Contact Us</p>
+							<a href="participant-form.html"><p class="white update">Update Your Contact Info</p></a>
+						</div>
+
+					</div>
+					<div class="modal-body">
+						<div class="row topContent">
+							<div class="col-lg-8">
+								<div class="text">
+									<p class="white">For general questions or comments, media inquiries, requests for materials, and/or technical comments or questions about the website, please fill out the form here and click the ‘Send Email’ button at the bottom. For details on the site’s use of this information, see Privacy/Disclaimer.</p>
+									<p class="white">Additional information for researchers  not government site is available on the National Addiction & HIV Data Archive Program  not government site website. Among other information this includes how to access PATH Study data and details about the study design.</p>
 								</div>
 							</div>
-							<div class="modal-footer">
-								<center>
-									<button type="button" class="btn browser" data-dismiss="modal">DONE</button>
-								</center>
-
+							<div class="col-lg-4">
+								<div class="right">
+									<img src="images/email-icon.svg" class="img-fluid">
+									<p class="white text-center">A copy of this communication will be sent to you be email.</p>
+								</div>
 							</div>
 						</div>
+
+						<form method="post" data-form-title="CONTACT US" class="slideForm">
+
+							<div class="form-group">
+								<legend>Email</legend>
+								<label for="formControl1">Email</label>
+								<input id="formControl1" type="email" class="form-control required" tabindex="-1" aria-hidden="false" name="Email" data-form-field="Email" required>
+							</div>
+							<div class="form-group">
+								<legend>Affiliated company, institution, or organization</legend>
+								<label for="formControl2">Affiliated company, institution, or organization<span class="light"> (if you are not affiliated enter “None” or “NA”):</span></label>
+								<input type="text" id="formControl2" class="form-control" tabindex="-1" aria-hidden="false" name="company">
+							</div>
+
+							<div class="form-group">
+								<fieldset>
+									<label for="general-inquiry">Contact Category</label>
+									<div class="around2">
+										<div class="vertical">
+
+											<legend>Contact Category</legend>
+											<label class="radio-inline">
+												<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false" id="general-inquiry" checked required>Comment about the study
+											</label>
+										</div>
+										<div class="vertical">
+
+											<label class="radio-inline">
+												<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">problem with this website
+											</label>
+										</div>
+										<div class="vertical">
+
+											<label class="radio-inline">
+												<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">media inquiry
+											</label>
+										</div>
+										<div class="vertical">
+
+											<label class="radio-inline">
+												<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">other
+											</label>
+										</div>
+									</div>
+								</fieldset>
+							</div>
+							<div class="form-group">
+								<label for="formControl4">Message</label>
+								<textarea class="form-control" id="formControl4" tabindex="-1" aria-hidden="false" name="message" rows="4" data-form-field="Message"></textarea>
+							</div>
+
+							<div class="d-flex justify-content-between align-items-center printSend">
+								<div class="left">
+									<div class="form-check form-check-inline">
+										<legend>Print Copy</legend>
+										<input class="form-check-input position-static" type="checkbox" id="print-copy" value="" aria-label="Print Copy" tabindex="-1" aria-hidden="false">
+									</div>
+									<label for="print-copy"><p class="white">Check to print a copy for your records&nbsp;<i class="far fa-print"></i></p></label>
+								</div>
+
+								<button type="submit" class="btn btn-info button-outlined" id="sendMessage" tabindex="-1" aria-hidden="false">
+									<i class="fal fa-envelope brightBlue"></i>&nbsp;Send
+								</button>
+
+							</div>
+
+
+						</form>
+
 					</div>
+					<div class="modal-footer">
+
+					</div>
+
 				</div>
-		<header id="Home">
-			<nav class="navbar navbar-expand-lg navbar-light bg-white">
-				<div class="container-fluid">
-					<a class="pb-0" href="">
-						<img src="images/path-logo.svg" class="img-responsive logo" alt="Population Assessment of Tobacco and Health Logo">
+
+			</div>
+
+			<div class="toast transparent-opacity" role="alert" aria-live="assertive" aria-atomic="true">
+				&#x2713; Thank you.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message sent successfully.
+			</div>
+
+
+
+			<div class="survey-footer">
+				<div class="one">
+
+					<div class="d-flex justify-content-between">
+						<p class="white">Site Map</p>
+						<div class="flip2"></div>
+						<p class="white">Accessibility</p>
+						<div class="flip2"></div>
+						<p class="white">Privacy/Disclaimer</p>
+						<div class="flip2"></div>
+						<p class="white">FOIA</p>
+
+					</div>
+
+					<div class="d-flex justify-content-between align-items-center">
+						<p class="white">last updated: 8/10/2020</p>
+
+
+					</div>
+					<div class="d-flex justify-content-between align-items-center">
+						<p class="white">Download Acrobat Reader</p>
+
+					</div>
+
+				</div>
+				<div class="two">
+					<a href="" target="_blank" title="HHS">
+						<img src="images/hhs.png" alt="HHS Logo">
 					</a>
-					<button class="navbar-toggler collapsed mr-2" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-
-					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-						<ul class="navbar-nav d-block d-lg-flex ml-auto text-right d-flex align-items-center">
-							<li class="nav-item">
-								<a class="nav-link" href="landing.html">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="about.html">About the Study</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="participants.html">Participants</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="researchers.html">Researchers</a>
-							</li>
-
-							<div class="d-flex justify-content-center align-items-center">
-
-								<a id="ingles" href="" class="english activeDot notranslate" data-lang="en" tabindex="0" aria-hidden="false" role="button" translate="no">
-
-									<p class="language notranslate" translate="no">English</p>
-
-								</a>
-
-								<!-- <a id="ingles" href="#googtrans(en|en)" class="lang-en lang-select english activeDot" data-lang="en" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
-
-								<p class="language">English</p>
-
-							</a> -->
-							<div class="flip"></div>
-							<a id="espanol" href="#googtrans(en|es)" class="lang-es lang-select spanish inactiveDot" data-lang="es" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
-
-								<p class="language">Espa&ntilde;ol</p>
-
-							</a>
-						</div>
-						<a class="loginButton" href="login.html"><p>LOG IN</p></a>
-					</ul>
+					<a href="" target="_blank" title="NIH">
+						<img src="images/nih.png" alt="NIH Logo">
+					</a>
+					<a href="" target="_blank" title="NIH Drug">
+						<img src="images/drug.svg" alt="National Institute of Drug Abuse Logo">
+					</a>
+					<a href="" target="_blank" title="FDA">
+						<img src="images/fda.svg" alt="Food and Drug Administration Logo">
+					</a>
 				</div>
 			</div>
-		</nav>
-	</header>
-</div>
-<img class="imgTop img-responsive" src="images/about.svg" alt="">
 
 
-<div class="container-fluid">
-	<div id="Guide" class="landing-sec container-fluid heros">
-		<div class="guide-overlay container">
-			<h2 class="landing-sec-H">Study Overview</h2>
 
-			<div class="row">
-				<div class="col-lg-6">
-					<p class="black twenty mt-3">A collaboration between the National Institutes of Health (NIH) and the Food and Drug Administration (FDA), the study was launched in 2011 and started the first wave of data collection in 2013.</p>
-					<p class="black twenty">The PATH Study was one of the first tobacco projects that NIH and FDA have worked on together since Congress gave FDA authority to regulate tobacco products. The study looks at tobacco use and how it affects the health of people in the U.S.</p>
-				</div>
-				<div class="col-lg-6">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6Mbpv_U9psw" title="Select to play the ECLS video"></iframe><figcaption class="text-center">Study Overview Video 9 Audio Described</figcaption>
-				</div>
+			<!-- <div class="back-to-top">
+				<i class="far fa-angle-up"></i>
 			</div>
-		</div>
-	</div>
-
-	<div class="contactUsOverlay"></div>
-	<div class="content-spacer"></div>
-	<div class="container">
-		<div id="FAQ" class="landing-sec heros">
-			<div class="guide-overlay container">
-				<h2 class="landing-sec-H">Research Objectives</h2>
-				<h4 class="landing-sec-H text-center">The PATH Study is looking at:</h4>
-
-				<div class="d-flex flex-column">
-
-					<div class="whiteBubble">
-						<div class="row">
-							<div class="col-lg-6">
-								<img src="images/bolts.svg" class="img-responsive" alt="Nuts and bolts graphic">
-
-							</div>
-							<div class="col-lg-6 centered">
-								<p class="darkBlue">Reasons why some people use tobacco and others do not.</p>
-
-							</div>
-
-						</div>
-					</div>
-					<div class="whiteBubble">
-						<div class="row">
-							<div class="col-lg-7">
-								<p class="darkBlue text-left">How and why people:</p>
-								<ul>
-									<li>Start using tobacco,</li>
-									<li>Start using different types of tobacco products, </li>
-									<li>Use two or more tobacco products, and </li>
-									<li>Switch from one tobacco product to another.</li>
-
-								</ul>
-
-							</div>
-
-							<div class="col-lg-5">
-								<img src="images/tobacco.svg" class="img-responsive" alt="Cigar and Cigarette graphic">
-
-							</div>
-
-						</div>
-					</div>
-					<div class="whiteBubble">
-						<div class="row">
-							<div class="col-lg-6">
-								<img src="images/Quit-img.svg" class="img-responsive" alt="No smoking graphic">
-
-							</div>
-							<div class="col-lg-6 centered">
-								<p class="darkBlue">How people quit using tobacco.</p>
-
-							</div>
-
-						</div>
-					</div>
-
-					<div class="whiteBubble">
-						<div class="row">
-							<div class="col-lg-7 centered">
-								<p class="darkBlue">Reasons why some people who quit using tobacco start using it again.</p>
-
-							</div>
-
-							<div class="col-lg-5">
-								<img src="images/start-img.svg" class="img-responsive" alt="Start smoking again graphic">
-
-							</div>
-
-						</div>
-					</div>
-					<div class="whiteBubble">
-						<div class="row">
-							<div class="col-lg-6">
-								<img src="images/attitudes-image.svg" class="img-responsive" alt="Quote bubbles graphic">
-
-							</div>
-							<div class="col-lg-6 centered">
-								<p class="darkBlue">Changes in people’s attitudes toward tobacco over time.</p>
-
-							</div>
-
-						</div>
-					</div>
-					<div class="whiteBubble">
-						<div class="row">
-							<div class="col-lg-7 start">
-								<p class="darkBlue text-left">Differences in tobacco-use related attitudes, behaviors, and health among:</p>
-								<ul>
-
-									<li>Men and women,</li>
-									<li>Start using different types of tobacco products, </li>
-									<li>People of different races and ethnic groups, and  </li>
-									<li>People of different ages.</li>
-
-								</ul>
-
-							</div>
-
-							<div class="col-lg-5">
-								<img src="images/differences-image.svg" class="img-responsive" alt="Start smoking again graphic">
-
-							</div>
-
-						</div>
-					</div>
 
 
-				</div>
-				<div class="content-spacer"></div>
-				<div class="row rel">
-					<div class="col-lg-8">
-						<h2 class="landing-sec-H text-left noBorder mb-0">Impact</h2>
-						<p class="black twenty">Information from the PATH Study is helping NIH and FDA to understand tobacco use behaviors and how use affects health over time. Findings from the study inform FDA’s regulatory decisions and actions under the 2009 Family Smoking Prevention and Tobacco Control ACT.</p>
-					</div>
-					<div class="col-lg-4">
-						<img src="images/impact-image.svg" class="img-responsive absoluteImg" alt="Smoking impacts graphic">
-					</div>
+			<div class="menu-buttons-floating tabletSize">
+				<ul class="menu-buttons-floating-list">
 
-				</div>
-
+					<li tabindex="0" data-target="#Guide"><i class="far fa-list"></i></li>
+					<li tabindex="0" data-target="#FAQ"><i class="far fa-bullseye-arrow"></i></li>
+					<li tabindex="0" data-target="#Contact"><i class="fas fa-users"></i></li>
+				</ul>
 			</div>
+
+
+			<div class="menu-buttons-768 tabletSize">
+				<ul class="menu-buttons-768-list">
+
+					<li tabindex="0" data-target="#Guide"><i class="far fa-list"></i></li>
+					<li tabindex="0" data-target="#FAQ"><i class="far fa-bullseye-arrow"></i></li>
+					<li tabindex="0" data-target="#Contact"><i class="fas fa-users"></i></li>
+					<li tabindex="0" data-target="#Home"><i class="fas fa-angle-up"></i></li>
+				</ul>
+			</div> -->
 
 		</div>
-	</div>
+		<!-- <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+		<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/landing.js"></script> -->
+		<!-- <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&amp;languages=en,es"></script> -->
+		<!-- <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
 
 
-	<section class="block50">
 
-		<div id="Contact" class="landing-sec heros">
-			<div class="container">
-				<div class="backgroundBlue"></div>
-				<div class="content-spacer"></div>
-				<div class="content-spacer"></div>
-				<h2 class="landing-sec-H alt">Study Team</h2>
-				<h4 class="landing-sec-H alt text-left mt-4">Leading the Study</h4>
-				<p class="black twenty">Scientists at the National Institutes of Health (NIH) and the Food and Drug Administration (FDA) are leading the PATH Study. They are working with Westat, a research company in Maryland that has expertise in survey design, questionnaire development, data collection, and analysis. Westat manages a team of partner organizations in conducting a variety of health studies.</p>
-				<div class="row tiles1">
-					<div class="col-lg-3 offset-md-1">
-						<div class="whiteBubble vertical">
-							<img src="images/nih-logo.png" class="img-responsive bottom-logos smaller" alt="National Institute of Health Logo">
-							<div class="grayLine"></div>
-							<a href="" class="blueColor">NIH <i class="far fa-external-link"></i></a>
-						</div>
+		<!-- <script type="text/javascript">
 
-					</div>
-					<div class="col-lg-3">
-						<div class="whiteBubble vertical">
-							<img src="images/fda-blue.png" class="img-responsive bottom-logos smaller" alt="Food and Drug Administration Logo">
-							<div class="grayLine"></div>
-							<a href="" class="blueColor">FDA <i class="far fa-external-link"></i></a>
-						</div>
 
-					</div>
-					<div class="col-lg-3">
-						<div class="whiteBubble vertical">
-							<img src="images/Westat.svg" class="img-responsive bottom-logos" alt="Westat Logo">
-							<div class="grayLine"></div>
-							<a href="" class="blueColor">Westat <i class="far fa-external-link"></i></a>
-						</div>
+		function googleTranslateElementInit() {
+		new google.translate.TranslateElement({
+		pageLanguage: "en",
 
-					</div>
+		layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
 
-				</div>
+	}, "google_translate_element")
+}
 
 
-				<h4 class="landing-sec-H alt text-left mt-4">Partner Organizations</h4>
-				<p class="black twenty">Partner organizations involved in the PATH Study have expertise in tobacco research, including tobacco use behaviors, health conditions, and research methods. They also lead focused research studies to address the PATH Study’s objectives. The Principal Investigator of the PATH Study, Dr. Andrew Hyland, is located at one of the partner organizations, Roswell Park Comprehensive Cancer Center. Other scientists participating in the PATH Study are also from Roswell Park Comprehensive Cancer Center, as well as from these organizations:</p>
+function triggerHtmlEvent(element, eventName) {
+var event;
+if (document.createEvent) {
+event = document.createEvent('HTMLEvents');
+event.initEvent(eventName, true, true);
+element.dispatchEvent(event);
+} else {
+event = document.createEventObject();
+event.eventType = eventName;
+element.fireEvent('on' + event.eventType, event);
+}
+}
 
+$('.lang-select').click(function() {
+var theLang = jQuery(this).attr('data-lang');
+$('.goog-te-combo').val(theLang);
 
-				<div class="row d-flex flex-wrap tiles2">
-					<div class="col-lg-3">
-						<div class="whiteBubble vertical">
-							<img src="images/roswell.png" class="img-responsive last-logos" alt="National Institute of Health Logo">
-							<div class="grayLine"></div>
-							<a href="" class="blueColor">NIH <i class="far fa-external-link"></i></a>
-						</div>
+window.location = jQuery(this).attr('href');
+location.reload();
 
-					</div>
-					<div class="col-lg-3">
-						<div class="whiteBubble vertical">
-							<img src="images/dart.png" class="img-responsive last-logos" alt="Food and Drug Administration Logo">
-							<div class="grayLine"></div>
-							<a href="" class="blueColor">FDA <i class="far fa-external-link"></i></a>
-						</div>
-
-					</div>
-					<div class="col-lg-3">
-						<div class="whiteBubble vertical">
-							<img src="images/truth.svg" class="img-responsive last-logos" alt="Westat Logo">
-							<div class="grayLine"></div>
-							<a href="" class="blueColor">Westat <i class="far fa-external-link"></i></a>
-						</div>
-
-					</div>
-
-					<div class="col-lg-3">
-						<div class="whiteBubble vertical">
-							<img src="images/rutgers.png" class="img-responsive last-logos" alt="Westat Logo">
-							<div class="grayLine"></div>
-							<a href="" class="blueColor">Westat <i class="far fa-external-link"></i></a>
-						</div>
-
-					</div>
-					<div class="col-lg-3">
-						<div class="whiteBubble vertical">
-							<img src="images/musc.png" class="img-responsive last-logos smaller" alt="National Institute of Health Logo">
-							<div class="grayLine"></div>
-							<a href="" class="blueColor">NIH <i class="far fa-external-link"></i></a>
-						</div>
-
-					</div>
-					<div class="col-lg-3">
-						<div class="whiteBubble vertical">
-							<img src="images/sd.png" class="img-responsive last-logos" alt="Food and Drug Administration Logo">
-							<div class="grayLine"></div>
-							<a href="" class="blueColor">FDA <i class="far fa-external-link"></i></a>
-						</div>
-
-					</div>
-					<div class="col-lg-3">
-						<div class="whiteBubble vertical">
-							<img src="images/minn.png" class="img-responsive last-logos" alt="Westat Logo">
-							<div class="grayLine"></div>
-							<a href="" class="blueColor">Westat <i class="far fa-external-link"></i></a>
-						</div>
-
-					</div>
-
-					<div class="col-lg-3">
-						<div class="whiteBubble vertical">
-							<img src="images/waterloo.png" class="img-responsive last-logos" alt="Westat Logo">
-							<div class="grayLine"></div>
-							<a href="" class="blueColor">Westat <i class="far fa-external-link"></i></a>
-						</div>
-
-					</div>
-
-				</div>
-				<div class="content-spacer"></div>
-				<div class="row rel">
-					<div class="col-lg-9">
-						<h2 class="landing-sec-H text-left noBorder mb-0">Our Field Interviewers</h2>
-						<p class="black twenty">The PATH Study interviewers love their work. One of the best parts of their job is meeting and talking with you, our participants. <span class="strong">Roll over the areas of the country and see what the interviewers have to say!</span></p>
-						<p class="black twenty">You can recognize our Field Interviewers by their distinctive PATH Study badge.  Did you know that if you are contacted by someone who says they work on the PATH Study you can verify their identity?  It is easy, just click on the “Verify My Field Interviewer” button below and we will check for you.</p>
-					</div>
-					<div class="col-lg-3 mt-5">
-						<img src="images/head.svg" class="img-responsive" alt="Smoking impacts graphic">
-					</div>
-
-				</div>
-				<div class="content-spacer"></div>
-
-				<div class="row rel">
-					<div class="col-lg-5 offset-md-4 col-md-6">
-						<a class="transparent-button"><p>Verify My Field Interviewer</p></a>
-					</div>
-				</div>
-				<div class="content-spacer"></div>
-
-				<div class="map">
-					<div class="row">
-						<div class="col-lg-4">
-
-
-							<div class="whiteBubble vertical">
-								<div class="tile-img-wrapper">
-									<img src="images/02.jpg" class="img-responsive" alt="Food and Drug Administration Logo">
-
-								</div>
-								<div class="pl-3 pr-3">
-									<h4 class="landing-sec-H text-center mt-3">Imely Correa</h4>
-									<p class="blueColor">“I enjoy seeing my PATH Study families. There's no greater pleasure than being welcomed into their homes with open arms. When I see how much our youth participants have grown both mentally and physically it brings great joy to my heart. I really look forward to seeing my PATH Study families!”</p>
-									<i class="far fa-expand-alt"></i>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="col-lg-4">
-							<div class="whiteBubble vertical">
-								<div class="tile-img-wrapper">
-									<img src="images/03.jpg" class="img-responsive" alt="Food and Drug Administration Logo">
-
-								</div>
-								<div class="pl-3 pr-3">
-									<h4 class="landing-sec-H text-center mt-3">Milton A. Smalls</h4>
-									<p class="blueColor">“I think most people participate because they know that they are contributing to something that is going to benefit and help future generations.”</p>
-									<i class="far fa-expand-alt"></i>
-								</div>
-							</div>
-
-						</div>
-						<div class="col-lg-4">
-							<div class="whiteBubble vertical">
-								<div class="tile-img-wrapper">
-									<img src="images/05.jpg" class="img-responsive" alt="Food and Drug Administration Logo">
-
-								</div>
-								<div class="pl-3 pr-3">
-									<h4 class="landing-sec-H text-center mt-3">Helene Stoak</h4>
-									<p class="blueColor">“I love getting to know the participants and their families. I've been witness to their milestones. It's been thrilling to see them graduate high school and college, secure their first full time adult jobs, get married, or have children. The connection to them and their lives makes my life richer and fuller.”</p>
-									<i class="far fa-expand-alt"></i>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-					<h2 class="landing-sec-H text-center noBorder absoluteText">See what our interviewers have to say!</h2>
-
-					<div class="content-spacer"></div>
-					<div class="row">
-						<div class="col-lg-5 offset-md-1">
-							<div class="whiteBubble vertical">
-								<div class="tile-img-wrapper">
-									<img src="images/04.jpg" class="img-responsive" alt="Food and Drug Administration Logo">
-
-								</div>
-								<div class="pl-3 pr-3">
-									<h4 class="landing-sec-H text-center mt-3">ShellyAnn Banwarie</h4>
-									<p class="blueColor">“Their opinion is important to the success of the study. Without their input the study will not be as successful since we cannot substitute another person for them. Our participants were chosen and they have a direct voice for change. That in itself is amazing, especially when only 49,000 persons are chosen to do this study out of 330 million people in America.”</p>
-									<i class="far fa-expand-alt"></i>
-								</div>
-							</div>
-
-						</div>
-						<div class="col-lg-5">
-							<div class="whiteBubble vertical">
-								<div class="tile-img-wrapper">
-									<img src="images/01.jpg" class="img-responsive" alt="Food and Drug Administration Logo">
-
-								</div>
-								<div class="pl-3 pr-3">
-									<h4 class="landing-sec-H text-center mt-3">Steve Moss</h4>
-									<p class="blueColor">“I believe most participants have primarily responded positively to how seriously the science is presented, and the timeliness of the research. Nearly as important, is that the PATH Study is more flexible, than other volunteer opportunities.”</p>
-									<i class="far fa-expand-alt"></i>
-								</div>
-							</div>
-
-						</div>
-
-
-					</div>
-
-				</div>
-
-
-
-
-			</div>
-
-		</div>
-
-		<div class="footer-img">
-			<div class="container-fluid">
-				<img class="" src="images/bottom.svg" alt="Overlay">
-			</div>
-		</div>
-
-	</section>
-
-	<div id="slideOut2">
-
-		<div id="one" class="openTab" role="button" tabindex="0" aria-label="Contact">
-			<p class="plum"><i class="fas fa-envelope plum"></i>&nbsp;&nbsp;Contact Us</p>
-
-		</div>
-
-		<div class="modal-content">
-			<div class="modal-header">
-				<div class="closeThisPlease" id="close">
-					<button role="button" role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
-						&#10005;
-					</button>
-				</div>
-				<br>
-				<div class="d-flex justify-content-between align-items-center contactInfo">
-
-					<p class="whiteLarger">Contact Us</p>
-					<a href="participant-form.html"><p class="white update">Update Your Contact Info</p></a>
-				</div>
-
-			</div>
-			<div class="modal-body">
-				<div class="row topContent">
-					<div class="col-lg-8">
-						<div class="text">
-							<p class="white">For general questions or comments, media inquiries, requests for materials, and/or technical comments or questions about the website, please fill out the form here and click the ‘Send Email’ button at the bottom. For details on the site’s use of this information, see Privacy/Disclaimer.</p>
-							<p class="white">Additional information for researchers  not government site is available on the National Addiction & HIV Data Archive Program  not government site website. Among other information this includes how to access PATH Study data and details about the study design.</p>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="right">
-							<img src="images/email-icon.svg" class="img-fluid">
-							<p class="white text-center">A copy of this communication will be sent to you be email.</p>
-						</div>
-					</div>
-				</div>
-
-				<form method="post" data-form-title="CONTACT US" class="slideForm">
-
-					<div class="form-group">
-						<legend>Email</legend>
-						<label for="formControl1">Email</label>
-						<input id="formControl1" type="email" class="form-control required" tabindex="-1" aria-hidden="false" name="Email" data-form-field="Email" required>
-					</div>
-					<div class="form-group">
-						<legend>Affiliated company, institution, or organization</legend>
-						<label for="formControl2">Affiliated company, institution, or organization<span class="light"> (if you are not affiliated enter “None” or “NA”):</span></label>
-						<input type="text" id="formControl2" class="form-control" tabindex="-1" aria-hidden="false" name="company">
-					</div>
-
-					<div class="form-group">
-						<fieldset>
-							<label for="general-inquiry">Contact Category</label>
-							<div class="around2">
-								<div class="vertical">
-
-									<legend>Contact Category</legend>
-									<label class="radio-inline">
-										<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false" id="general-inquiry" checked required>Comment about the study
-									</label>
-								</div>
-								<div class="vertical">
-
-									<label class="radio-inline">
-										<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">problem with this website
-									</label>
-								</div>
-								<div class="vertical">
-
-									<label class="radio-inline">
-										<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">media inquiry
-									</label>
-								</div>
-								<div class="vertical">
-
-									<label class="radio-inline">
-										<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">other
-									</label>
-								</div>
-							</div>
-						</fieldset>
-					</div>
-					<div class="form-group">
-						<label for="formControl4">Message</label>
-						<textarea class="form-control" id="formControl4" tabindex="-1" aria-hidden="false" name="message" rows="4" data-form-field="Message"></textarea>
-					</div>
-
-					<div class="d-flex justify-content-between align-items-center printSend">
-						<div class="left">
-							<div class="form-check form-check-inline">
-								<legend>Print Copy</legend>
-								<input class="form-check-input position-static" type="checkbox" id="print-copy" value="" aria-label="Print Copy" tabindex="-1" aria-hidden="false">
-							</div>
-							<label for="print-copy"><p class="white">Check to print a copy for your records&nbsp;<i class="far fa-print"></i></p></label>
-						</div>
-
-						<button type="submit" class="btn btn-info button-outlined" id="sendMessage" tabindex="-1" aria-hidden="false">
-							<i class="fal fa-envelope brightBlue"></i>&nbsp;Send
-						</button>
-
-					</div>
-
-
-				</form>
-
-			</div>
-			<div class="modal-footer">
-
-			</div>
-
-		</div>
-
-	</div>
-
-	<div class="toast transparent-opacity" role="alert" aria-live="assertive" aria-atomic="true">
-		&#x2713; Thank you.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message sent successfully.
-	</div>
-
-
-
-
-
-	<div class="survey-footer">
-		<div class="one">
-
-			<div class="d-flex justify-content-between">
-				<p class="white">Site Map</p>
-				<div class="flip2"></div>
-				<p class="white">Accessibility</p>
-				<div class="flip2"></div>
-				<p class="white">Privacy/Disclaimer</p>
-				<div class="flip2"></div>
-				<p class="white">FOIA</p>
-
-			</div>
-
-			<div class="d-flex justify-content-between align-items-center">
-				<p class="white">last updated: 8/10/2020</p>
-
-
-			</div>
-			<div class="d-flex justify-content-between align-items-center">
-				<p class="white">Download Acrobat Reader</p>
-
-			</div>
-
-		</div>
-		<div class="two">
-			<a href="" target="_blank" title="HHS">
-				<img src="images/hhs.png" alt="HHS Logo">
-			</a>
-			<a href="" target="_blank" title="NIH">
-				<img src="images/nih.png" alt="NIH Logo">
-			</a>
-			<a href="" target="_blank" title="NIH Drug">
-				<img src="images/drug.svg" alt="National Institute of Drug Abuse Logo">
-			</a>
-			<a href="" target="_blank" title="FDA">
-				<img src="images/fda.svg" alt="Food and Drug Administration Logo">
-			</a>
-		</div>
-	</div>
-
-</div>
-
-<div class="back-to-top">
-		<i class="far fa-angle-up"></i>
-</div>
-
-</div>
-
-</div>
-<!-- <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
-<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/landing.js"></script> -->
-<!-- <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&amp;languages=en,es"></script> -->
-<!-- <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
-<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
-
+});
+</script> -->
 
 </body>
 
