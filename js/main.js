@@ -537,6 +537,52 @@ $(window).on('scroll', function() {
 })
 
 
+if ($(document).innerWidth() > 1024) {
+
+	$(window).scroll(function() {
+		if($(window).scrollTop() + $(window).height() > $(document).height() - .01*$(document).height()) {
+
+			$('.back-to-top').css({
+				'top' : '72%'
+			})
+		}
+		else {
+
+			$('.back-to-top').css({
+				'top' : '90%'
+			})
+
+		}
+
+	});
+
+
+}
+
+
+
+if ($(document).innerWidth() <= 1024) {
+
+	$(window).scroll(function() {
+		if($(window).scrollTop() + $(window).height() > $(document).height() - .01*$(document).height()) {
+
+			$('.back-to-top').css({
+				'top' : '84%'
+			})
+		}
+		else {
+
+			$('.back-to-top').css({
+				'top' : '70%'
+			})
+
+		}
+
+	});
+
+}
+
+
 
 	// (function() {
 	//   "use strict";

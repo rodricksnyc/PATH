@@ -183,7 +183,7 @@ body * {
 .back-to-top {
   position: fixed;
   right: 2%;
-  bottom: 11rem;
+  bottom: 2rem;
   z-index: 100;
   background: #7bc043;
   color: #00559b;
@@ -5422,7 +5422,9 @@ button.close {
 
 @media (max-width:991px){
 
-
+.back-to-top{
+  display: none
+}
 
   .researcher {
     max-width: 100%;
@@ -5663,6 +5665,25 @@ button.close {
     padding-top: 8em;
     padding-bottom: 2em;
   }
+
+  .menu-buttons-768-list li i {
+    font-size: 28px;
+}
+.menu-buttons-768-list li:nth-of-type(3) {
+    width: 32%;
+
+}
+.menu-buttons-768-list li:nth-of-type(1) {
+    width: 32%;
+
+}
+.menu-buttons-768-list li:nth-of-type(2) {
+    width: 32%;
+
+}
+.menu-buttons-768-list li{
+  padding: 15px 0px 10px 0px;
+}
 
   .researcher {
     max-width: 100%;
