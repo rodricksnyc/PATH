@@ -242,6 +242,7 @@ a.blueColor {
   display: inline-block;
   margin-left: -.5rem;
   padding-left: 0.5rem;
+  z-index: 0;
 
 }
 
