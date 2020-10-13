@@ -5891,6 +5891,11 @@ button.close {
 
 @media (max-width: 767px) {
 
+  .menu-buttons.noMargin .menu-buttons-list li p {
+
+    font-size: 20px;
+}
+
   .researcher {
     max-width: 100%;
     padding-top: 10%;
@@ -5938,6 +5943,7 @@ button.close {
 
   .study .blueColor{
     font-size: 16px !important;
+    text-align: center;
   }
   .btn.btn-primary.new {
     font-size: 15px;
@@ -5956,7 +5962,7 @@ button.close {
     margin-top: 0em;
   }
   .map .col-lg-5 {
-    padding: 0em 2em;
+    padding: 0em 1em;
   }
   .absoluteText {
     /* position: absolute !important;
@@ -5983,7 +5989,7 @@ button.close {
   }
 
   .interviewers p.black.twenty{
-    margin-right:-1em
+    margin-right:-2em
   }
 
   .mt-5.head {
@@ -5993,7 +5999,7 @@ button.close {
   .transparent-button p {
     color: #00559b;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0em;
   }
 
@@ -6022,6 +6028,10 @@ button.close {
 
   .menu-buttons-list, .guide-list-N{
     display: none !important
+  }
+
+.noMargin  .menu-buttons-list, .guide-list-N{
+    display: block !important
   }
 
   #slideOut .modal-content {
@@ -6057,7 +6067,33 @@ button.close {
     display: none
   }
 
-  .tiles1, .tile2{
+  .topFour .col-lg-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.topFour .col-lg-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.topFour .col-lg-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.topFour .col-lg-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.topFour{
+  margin-top:1em
+}
+
+  .tiles1, .tiles2{
     margin-top:1em
   }
 
@@ -6352,7 +6388,7 @@ button.close {
   .survey-footer p.white {
     font-weight: 300;
     font-size: 12px;
-    margin: 6px 5px;
+    margin: 6px 2px;
   }
   .flip2 {
     margin: 0.5em .5em 0em .5em;
@@ -7097,7 +7133,61 @@ body{
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 325px) {
+  .survey-container {
+    padding: 10px 0px;
+}
+.transparent-button p {
+    color: #00559b;
+    font-weight: 500;
+    font-size: 13px;
+    margin: 0em;
+}
+.map .col-lg-4:nth-of-type(1) {
+    padding: 0em 1em;
+    margin-top: 4em;
+}
+.map .col-lg-4 {
+    padding: 0em 2em;
+}
+
+.head img {
+
+    padding-left: 0em;
+}
+.block5 .landing-sec-H {
+    font-size: 22px;
+    width: 100%;
+    margin-top: 3em;
+}
+.absoluteImg {
+    max-height: 20em;
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-bottom: -5em;
+    z-index: 0;
+}
+
+.study .whiteBubble{
+  padding:3em
+}
+.interviewers p.black.twenty {
+    margin-right: -2em;
+}
+.topFour .whiteBubble img {
+    max-width: 10em;
+}
+
+.topFour .whiteBubble .smaller {
+    max-width: 10em;
+    padding: 0em;
+}
+
+  .menu-buttons.noMargin .menu-buttons-list li p {
+    font-size: 15px;
+    margin-left: -.4em;
+}
   html, body{
     min-width: 320px !important;
   }

@@ -552,6 +552,28 @@ if ($(document).innerWidth() <= 1024) {
 
 }
 
+
+if ($(document).innerWidth() <= 767) {
+
+	$(window).scroll(function() {
+		if($(window).scrollTop() + $(window).height() > $(document).height() - .01*$(document).height()) {
+
+			$('.back-to-top').css({
+				'top' : '54%'
+			})
+		}
+		else {
+
+			$('.back-to-top').css({
+				'top' : '84%'
+			})
+
+		}
+
+	});
+
+}
+
 $('.back-to-top').click(() => {
 	scrollfn("#overview");
 })
