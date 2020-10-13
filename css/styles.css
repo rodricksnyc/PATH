@@ -1127,6 +1127,62 @@ body * {
   max-width:11em
 }
 
+.man {
+    font-size: 4rem;
+    color: #00559b !important;
+}
+
+.grayBorder {
+    border-right: 1px solid #dedede;
+    height: auto;
+    min-height: 10em;
+}
+
+.lightGreen {
+    background: #ccf1b0;
+    max-width: 9em;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    margin-right: 1em;
+}
+
+.btn.btn-primary.new:hover {
+    background: #00559b!important;
+    border-color: #00559b!important;
+    color: #D5F2BC!important;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn.btn-primary.new {
+    background: #D5F2BC!important;
+    border-color: #0069AA!important;
+    border-radius: 27px;
+    color: #0069AA!important;
+    font-size: 18px;
+    margin-top: .6em;
+    border: 2px solid #0069AA;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.larger {
+    font-size: 19px;
+    margin-bottom: 0em;
+    margin-top: 1em;
+}
+
+.navy {
+    color: #1b3765;
+    font-size: 1.1em;
+    padding-left: 2.2em;
+    font-weight: 500;
+}
+
 .topFour .whiteBubble{
   min-height: 12em
 }
@@ -1211,6 +1267,7 @@ a{
   z-index: 1;
   border-radius: .8em;
   margin: 1em 0em 2em 0em;
+  z-index:99999999999999;
 }
 
 h4.landing-sec-H {
