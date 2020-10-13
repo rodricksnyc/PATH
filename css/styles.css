@@ -5164,6 +5164,23 @@ h4.landing-sec-H {
 
 
 @media (max-width:991px){
+
+  .study .darkBlue {
+      color: #004F7F;
+      font-size: 1.6em;
+      font-weight: 600;
+      text-align: center;
+      padding-top: 2rem !important;
+  }
+
+  .study .pl-5 {
+      padding-left: 1rem!important;
+  }
+
+  .btn.btn-primary.new{
+    font-size:15px;
+  }
+
   .whiteBubble .col-lg-7 .darkBlue {
       margin: 0em 1em;
   }
@@ -5560,6 +5577,44 @@ h4.landing-sec-H {
 }
 
 @media (max-width: 767px) {
+
+
+  .topFour .whiteBubble .col-sm-12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .topFour .whiteBubble .smaller {
+    max-width: none;
+}
+
+.study .darkBlue {
+    color: #004F7F;
+    font-size: 1.4em;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 0rem !important;
+        margin-top: 0em;
+}
+.grayBorder {
+    border-right: none;
+    height: auto;
+    min-height: 0em;
+}
+.study .pl-5 {
+    padding-left: 0rem!important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.study .blueColor{
+font-size: 16px !important;
+}
+.btn.btn-primary.new {
+    font-size: 15px;
+    margin-top: 2em;
+}
 
   .map .whiteBubble h4.landing-sec-H{
     margin-bottom:0em !important
