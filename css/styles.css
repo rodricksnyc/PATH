@@ -5926,6 +5926,10 @@ button.close {
     font-size: 20px;
 }
 
+.menu-buttons-floating {
+  display: none
+}
+
   .researcher {
     max-width: 100%;
     padding-top: 10%;
