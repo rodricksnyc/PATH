@@ -2423,7 +2423,7 @@ h1.white.sentMessage {
     position: absolute;
     top: -7px !important;
     right: -7px !important;
-  
+
     font-size: 24px;
 }
 
@@ -5101,6 +5101,63 @@ h4.landing-sec-H {
 .transparent-button{
   margin-bottom: 3em
 }
+
+.topFour .col-lg-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.topFour .col-lg-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.topFour .col-lg-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.topFour .col-lg-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.topFour .darkBlue {
+    color: #004F7F;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.topFour .whiteBubble {
+    min-height: 15em;
+    padding-top: 3em !important;
+}
+
+.topFour .whiteBubble .smaller {
+    max-width: 13.6em;
+}
+
+
+.study .darkBlue {
+    color: #004F7F;
+    font-size: 1.6em;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 2rem !important;
+}
+
+.study .pl-5 {
+    padding-left: 1rem!important;
+}
+
+.btn.btn-primary.new{
+  font-size:15px;
+}
+
 
 
 }
