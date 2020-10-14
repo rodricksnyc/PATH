@@ -2,14 +2,14 @@ $(document).ready(function () {
 
 
 
-	$("a, button, input, [tabindex='0'], li, #one").on("keyup", function (e) {
+	$("a, button, input, [tabindex='0'], li, #one, .letter").on("keyup", function (e) {
 		var code = (e.keyCode ? e.keyCode : e.which);
 		if (code == 9) {
 			$(this).css('outline', 'dashed 3px #4599ff')
 		}
 
 	})
-	$("a, button, input, [tabindex='0'], li, #one").on('focusout', function() {
+	$("a, button, input, [tabindex='0'], li, #one, .letter").on('focusout', function() {
 		$(this).css('outline', 'none')
 	})
 
@@ -673,6 +673,26 @@ if ($(document).innerWidth() <= 767) {
 
 				}
 			});
+
+			$("#field-interviewer").validate(
+				{
+					rules:
+					{
+						email:
+						{
+							required: true,
+							email: true
+
+						},
+						fieldName:
+						{
+							required: true
+
+						}
+
+
+					}
+				});
 
 
 

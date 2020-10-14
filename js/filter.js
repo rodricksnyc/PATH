@@ -1,5 +1,8 @@
 	$(document).ready(function () {
 
+
+		$('.letter').attr('tabindex', '0')
+
 // filter functions
 var filterFns = {
   greaterThan50: function() {

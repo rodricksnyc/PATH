@@ -16,54 +16,54 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	<style>
 	@media (max-width: 991px){
-	.back-to-top {
-	    display: flex;
-	}
+		.back-to-top {
+			display: flex;
+		}
 	}
 
 	</style>
 	<script>
 	$(document).ready(function () {
-	//IE message
+		//IE message
 
-	var version = detectIE();
+		var version = detectIE();
 
-	if (version === false) {
+		if (version === false) {
 
-	} else if (version >= 12) {
+		} else if (version >= 12) {
 
-	} else {
-		$('#myModal2').modal('show')
+		} else {
+			$('#myModal2').modal('show')
 
-	}
-
-
-	function detectIE() {
-		var ua = window.navigator.userAgent;
-
-		var msie = ua.indexOf('MSIE ');
-
-		var msie = ua.indexOf('MSIE ');
-		if (msie > 0) {
-
-			return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
 		}
 
-		var trident = ua.indexOf('Trident/');
-		if (trident > 0) {
 
-			var rv = ua.indexOf('rv:');
-			return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+		function detectIE() {
+			var ua = window.navigator.userAgent;
+
+			var msie = ua.indexOf('MSIE ');
+
+			var msie = ua.indexOf('MSIE ');
+			if (msie > 0) {
+
+				return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+			}
+
+			var trident = ua.indexOf('Trident/');
+			if (trident > 0) {
+
+				var rv = ua.indexOf('rv:');
+				return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+			}
+
+			var edge = ua.indexOf('Edge/');
+			if (edge > 0) {
+
+				return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+			}
+
+			return false;
 		}
-
-		var edge = ua.indexOf('Edge/');
-		if (edge > 0) {
-
-			return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
-		}
-
-		return false;
-	}
 
 
 
@@ -146,467 +146,124 @@
 					</div>
 				</div>
 			</div>
-	<header id="Home">
-		<nav class="navbar navbar-expand-lg navbar-light">
-			<div class="container-fluid">
-				<a class="pb-0" href="">
-					<img src="images/path-logo.svg" class="img-fluid logo" alt="Population Assessment of Tobacco and Health Logo">
-				</a>
-				<button class="navbar-toggler collapsed mr-2" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<ul class="navbar-nav d-block d-lg-flex ml-auto text-right d-flex align-items-center">
-
-						<li class="nav-item">
-							<a class="nav-link active" href="landing.html">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="about.html">About the Study</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="participants.html">Participants</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="researchers.html">Researchers</a>
-						</li>
-
-
-						<div class="d-flex justify-content-center align-items-center">
-
-							<a id="ingles" href="" class="english activeDot notranslate" data-lang="en" tabindex="0" aria-hidden="false" role="button" translate="no">
-
-								<p class="language notranslate" translate="no">English</p>
-
-							</a>
-
-							<!-- <a id="ingles" href="#googtrans(en|en)" class="lang-en lang-select english activeDot" data-lang="en" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
-
-							<p class="language">English</p>
-
-						</a> -->
-						<div class="flip"></div>
-						<a id="espanol" href="#googtrans(en|es)" class="lang-es lang-select spanish inactiveDot" data-lang="es" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
-
-							<p class="language">Espa&ntilde;ol</p>
-
+			<header id="Home">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container-fluid">
+						<a class="pb-0" href="">
+							<img src="images/path-logo.svg" class="img-fluid logo" alt="Population Assessment of Tobacco and Health Logo">
 						</a>
-					</div>
-					<a class="loginButton" href="login.html"><p>LOG IN</p></a>
-				</ul>
-			</div>
-		</div>
-	</nav>
-</header>
-</div>
+						<button class="navbar-toggler collapsed mr-2" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
 
-<div class="container-fluid lightBlue">
-	<div id="Guide" class="landing-sec container-fluid heros">
-		<div class="guide-overlay container">
-			<h2 class="landing-sec-H">Participant Form</h2>
-			<h3 class="black">Welcome, <span id="user">Person’s name.</span></h3>
-			<p class="black">If you’ve moved or any of your contact information has changed since you last participated in the Population Assessment of Tobacco and Health (PATH) Study, please give us your new contact information.</p>
-			<p class="black">As a thank you for giving us your new contact information, you will received $5 in the mail (up to $10 per year).</p>
-			<form role="form" novalidate id="update" method="POST" action="">
+						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+							<ul class="navbar-nav d-block d-lg-flex ml-auto text-right d-flex align-items-center">
 
-				<div class="row">
-					<div class="col-12">
-						<div class="form-check-inline">
-							<input id="contact-info" class="form-check-input" type="checkbox" name="" value="1">
-							<label for="contact-info" class="form-check-label"><p class="black strong">Please check this box if none of your contact information has changed, please check this box.</p></label>
+								<li class="nav-item">
+									<a class="nav-link active" href="landing.html">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="about.html">About the Study</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="participants.html">Participants</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="researchers.html">Researchers</a>
+								</li>
 
-						</div>
+
+								<div class="d-flex justify-content-center align-items-center">
+
+									<a id="ingles" href="" class="english activeDot notranslate" data-lang="en" tabindex="0" aria-hidden="false" role="button" translate="no">
+
+										<p class="language notranslate" translate="no">English</p>
+
+									</a>
+
+									<!-- <a id="ingles" href="#googtrans(en|en)" class="lang-en lang-select english activeDot" data-lang="en" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
+
+									<p class="language">English</p>
+
+								</a> -->
+								<div class="flip"></div>
+								<a id="espanol" href="#googtrans(en|es)" class="lang-es lang-select spanish inactiveDot" data-lang="es" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
+
+									<p class="language">Espa&ntilde;ol</p>
+
+								</a>
+							</div>
+							<a class="loginButton" href="login.html"><p>LOG IN</p></a>
+						</ul>
 					</div>
 				</div>
-				<div class="content-spacer1"></div>
-				<div class="row">
-					<div class="col-md-10 col-sm-12">
-						<fieldset>
-							<legend>Update Your Name</legend>
-							<div class="whiteBox">
-								<p>Update Your Name</p>
-								<div class="form-row">
+			</nav>
+		</header>
+	</div>
 
-									<div class="col-sm-12 col-xs-12 col-md-9 col-lg-10">
+	<div class="container-fluid lightBlue">
+		<div id="Guide" class="landing-sec container-fluid heros">
+			<div class="guide-overlay container">
+				<h2 class="landing-sec-H">Participant Form</h2>
+				<h3 class="black">Welcome, <span id="user">Person’s name.</span></h3>
+				<p class="black">If you’ve moved or any of your contact information has changed since you last participated in the Population Assessment of Tobacco and Health (PATH) Study, please give us your new contact information.</p>
+				<p class="black">As a thank you for giving us your new contact information, you will received $5 in the mail (up to $10 per year).</p>
+				<form role="form" novalidate id="update" method="POST" action="">
 
-										<label for="firstName">First Name</label>
-										<input id="firstName" type="text" name="" class="form-control">
+					<div class="row">
+						<div class="col-12">
+							<div class="form-check-inline">
+								<input id="contact-info" class="form-check-input" type="checkbox" name="" value="1">
+								<label for="contact-info" class="form-check-label"><p class="black strong">Please check this box if none of your contact information has changed, please check this box.</p></label>
 
-									</div>
-
-									<div class="col-sm-12 col-xs-12 col-md-3 col-lg-2">
-
-										<label for="middle-initial">Middle Initial</label>
-										<input id="middle-initial" type="text" name="" class="form-control">
-
-									</div>
-
-								</div>
-								<div class="form-row">
-									<div class="col-sm-12 col-md-9">
-
-										<label for="lastName">Last Name</label>
-										<input id="lastName" type="text" name="last-name" class="form-control">
-
-									</div>
-
-								</div>
 							</div>
-						</fieldset>
+						</div>
+					</div>
+					<div class="content-spacer1"></div>
+					<div class="row">
+						<div class="col-md-10 col-sm-12">
+							<fieldset>
+								<legend>Update Your Name</legend>
+								<div class="whiteBox">
+									<p>Update Your Name</p>
+									<div class="form-row">
 
-						<fieldset>
-							<legend>Update Your Contact Information</legend>
-							<div class="whiteBox">
-								<p>Update Your Contact Information</p>
-								<div class="form-row">
-									<div class="col-sm-12 col-md-12">
+										<div class="col-sm-12 col-xs-12 col-md-9 col-lg-10">
 
-										<label for="address1">Address Line 1:</label>
-										<input id="address1" type="text" name="" class="form-control">
+											<label for="firstName">First Name</label>
+											<input id="firstName" type="text" name="" class="form-control">
 
-									</div>
+										</div>
 
-								</div>
-								<div class="form-row">
-									<div class="col-sm-12 col-md-12">
+										<div class="col-sm-12 col-xs-12 col-md-3 col-lg-2">
 
-										<label for="address2">Address Line 2:</label>
-										<input id="address2" type="text" name="" class="form-control">
+											<label for="middle-initial">Middle Initial</label>
+											<input id="middle-initial" type="text" name="" class="form-control">
 
-									</div>
-
-								</div>
-
-								<div class="form-row">
-
-									<div class="col-sm-12 col-md-9">
-
-										<label for="city">City</label>
-										<input id="city" type="text" name="" class="form-control">
+										</div>
 
 									</div>
+									<div class="form-row">
+										<div class="col-sm-12 col-md-9">
 
-									<div class="col-sm-12 col-md-3">
+											<label for="lastName">Last Name</label>
+											<input id="lastName" type="text" name="last-name" class="form-control">
 
-										<label for="state">State</label>
-										<select name="" id="state" class="custom-select form-control">
-											<option selected="selected" value=""></option>
-											<option value="AK">AK</option>
-											<option value="AL">AL</option>
-											<option value="AR">AR</option>
-											<option value="AS">AS</option>
-											<option value="AZ">AZ</option>
-											<option value="CA">CA</option>
-											<option value="CO">CO</option>
-											<option value="CT">CT</option>
-											<option value="DC">DC</option>
-											<option value="DE">DE</option>
-											<option value="FL">FL</option>
-											<option value="FM">FM</option>
-											<option value="GA">GA</option>
-											<option value="GU">GU</option>
-											<option value="HI">HI</option>
-											<option value="IA">IA</option>
-											<option value="ID">ID</option>
-											<option value="IL">IL</option>
-											<option value="IN">IN</option>
-											<option value="KS">KS</option>
-											<option value="KY">KY</option>
-											<option value="LA">LA</option>
-											<option value="MA">MA</option>
-											<option value="MD">MD</option>
-											<option value="ME">ME</option>
-											<option value="MH">MH</option>
-											<option value="MI">MI</option>
-											<option value="MN">MN</option>
-											<option value="MO">MO</option>
-											<option value="MP">MP</option>
-											<option value="MS">MS</option>
-											<option value="MT">MT</option>
-											<option value="NC">NC</option>
-											<option value="ND">ND</option>
-											<option value="NE">NE</option>
-											<option value="NH">NH</option>
-											<option value="NJ">NJ</option>
-											<option value="NM">NM</option>
-											<option value="NV">NV</option>
-											<option value="NY">NY</option>
-											<option value="OH">OH</option>
-											<option value="OK">OK</option>
-											<option value="OR">OR</option>
-											<option value="PA">PA</option>
-											<option value="PR">PR</option>
-											<option value="PW">PW</option>
-											<option value="RI">RI</option>
-											<option value="SC">SC</option>
-											<option value="SD">SD</option>
-											<option value="TN">TN</option>
-											<option value="TX">TX</option>
-											<option value="UT">UT</option>
-											<option value="VA">VA</option>
-											<option value="VI">VI</option>
-											<option value="VT">VT</option>
-											<option value="WA">WA</option>
-											<option value="WI">WI</option>
-											<option value="WV">WV</option>
-											<option value="WY">WY</option>
-
-										</select>
+										</div>
 
 									</div>
-
-								</div>
-
-								<div class="form-row">
-									<div class="col-sm-12 col-md-9">
-
-										<label for="country">Country</label>
-										<select name="" id="country" class="form-control custom-select">
-											<option value=""></option>
-											<option value="Afghanistan">Afghanistan</option>
-											<option value="Albania">Albania</option>
-											<option value="Algeria">Algeria</option>
-											<option value="Andorra">Andorra</option>
-											<option value="Angola">Angola</option>
-											<option value="Anguilla">Anguilla</option>
-											<option value="Antigua and Barbuda">Antigua and Barbuda</option>
-											<option value="Argentina">Argentina</option>
-											<option value="Armenia">Armenia</option>
-											<option value="Aruba">Aruba</option>
-											<option value="Ascension">Ascension</option>
-											<option value="Australia">Australia</option>
-											<option value="Austria">Austria</option>
-											<option value="Azerbaijan">Azerbaijan</option>
-											<option value="Bahamas">Bahamas</option>
-											<option value="Bahrain">Bahrain</option>
-											<option value="Bangladesh">Bangladesh</option>
-											<option value="Barbados">Barbados</option>
-											<option value="Belarus">Belarus</option>
-											<option value="Belgium">Belgium</option>
-											<option value="Belize">Belize</option>
-											<option value="Benin">Benin</option>
-											<option value="Bermuda">Bermuda</option>
-											<option value="Bhutan">Bhutan</option>
-											<option value="Bolivia">Bolivia</option>
-											<option value="Bonaire, Sint Eustatius,and Saba">Bonaire, Sint Eustatius,and Saba</option>
-											<option value="Bosnia-Herzegovina">Bosnia-Herzegovina</option>
-											<option value="Botswana">Botswana</option>
-											<option value="Brazil">Brazil</option>
-											<option value="British Virgin Islands">British Virgin Islands</option>
-											<option value="Brunei Darussalam">Brunei Darussalam</option>
-											<option value="Bulgaria">Bulgaria</option>
-											<option value="Burkina Faso">Burkina Faso</option>
-											<option value="Burma">Burma</option>
-											<option value="Burundi">Burundi</option>
-											<option value="Cambodia">Cambodia</option>
-											<option value="Cameroon">Cameroon</option>
-											<option value="Canada">Canada</option>
-											<option value="Cape Verde">Cape Verde</option>
-											<option value="Cayman Islands">Cayman Islands</option>
-											<option value="Central African Republic">Central African Republic</option>
-											<option value="Chad">Chad</option>
-											<option value="Chile">Chile</option>
-											<option value="China">China</option>
-											<option value="Colombia">Colombia</option>
-											<option value="Comoros">Comoros</option>
-											<option value="Congo, Democratic Republic of the">Congo, Democratic Republic of the</option>
-											<option value="Congo, Republic of the">Congo, Republic of the</option>
-											<option value="Costa Rica">Costa Rica</option>
-											<option value="Cote d’Ivoire">Cote d’Ivoire</option>
-											<option value="Croatia">Croatia</option>
-											<option value="Cuba">Cuba</option>
-											<option value="Curacao">Curacao</option>
-											<option value="Cyprus">Cyprus</option>
-											<option value="Czech Republic">Czech Republic</option>
-											<option value="Denmark">Denmark</option>
-											<option value="Djibouti">Djibouti</option>
-											<option value="Dominica">Dominica</option>
-											<option value="Dominican Republic">Dominican Republic</option>
-											<option value="Ecuador">Ecuador</option>
-											<option value="Egypt">Egypt</option>
-											<option value="El Salvador">El Salvador</option>
-											<option value="Equatorial Guinea">Equatorial Guinea</option>
-											<option value="Eritrea">Eritrea</option>
-											<option value="Estonia">Estonia</option>
-											<option value="Ethiopia">Ethiopia</option>
-											<option value="Falkland Islands">Falkland Islands</option>
-											<option value="Faroe Islands">Faroe Islands</option>
-											<option value="Fiji">Fiji</option>
-											<option value="Finland">Finland</option>
-											<option value="France">France</option>
-											<option value="French Guiana">French Guiana</option>
-											<option value="French Polynesia">French Polynesia</option>
-											<option value="Gabon">Gabon</option>
-											<option value="Gambia">Gambia</option>
-											<option value="Georgia, Republic of">Georgia, Republic of</option>
-											<option value="Germany">Germany</option>
-											<option value="Ghana">Ghana</option>
-											<option value="Gibraltar">Gibraltar</option>
-											<option value="Great Britain and Northern Ireland">Great Britain and Northern Ireland</option>
-											<option value="Greece">Greece</option>
-											<option value="Greenland">Greenland</option>
-											<option value="Grenada">Grenada</option>
-											<option value="Guadeloupe">Guadeloupe</option>
-											<option value="Guatemala">Guatemala</option>
-											<option value="Guinea">Guinea</option>
-											<option value="Guinea-Bissau">Guinea-Bissau</option>
-											<option value="Guyana">Guyana</option>
-											<option value="Haiti">Haiti</option>
-											<option value="Honduras">Honduras</option>
-											<option value="Hong Kong">Hong Kong</option>
-											<option value="Hungary">Hungary</option>
-											<option value="Iceland">Iceland</option>
-											<option value="India">India</option>
-											<option value="Indonesia">Indonesia</option>
-											<option value="Iran">Iran</option>
-											<option value="Iraq">Iraq</option>
-											<option value="Ireland">Ireland</option>
-											<option value="Israel">Israel</option>
-											<option value="Italy">Italy</option>
-											<option value="Jamaica">Jamaica</option>
-											<option value="Japan">Japan</option>
-											<option value="Jordan">Jordan</option>
-											<option value="Kazakhstan">Kazakhstan</option>
-											<option value="Kenya">Kenya</option>
-											<option value="Kiribati">Kiribati</option>
-											<option value="Korea, Democratic People’s Republic of">Korea, Democratic People’s Republic of</option>
-											<option value="Korea, Republic of">Korea, Republic of</option>
-											<option value="Kosovo, Republic of">Kosovo, Republic of</option>
-											<option value="Kuwait">Kuwait</option>
-											<option value="Kyrgyzstan">Kyrgyzstan</option>
-											<option value="Laos">Laos</option>
-											<option value="Latvia">Latvia</option>
-											<option value="Lebanon">Lebanon</option>
-											<option value="Lesotho">Lesotho</option>
-											<option value="Liberia">Liberia</option>
-											<option value="Libya">Libya</option>
-											<option value="Liechtenstein">Liechtenstein</option>
-											<option value="Lithuania">Lithuania</option>
-											<option value="Luxembourg">Luxembourg</option>
-											<option value="Macao">Macao</option>
-											<option value="Macedonia, Republic of">Macedonia, Republic of</option>
-											<option value="Madagascar">Madagascar</option>
-											<option value="Malawi">Malawi</option>
-											<option value="Malaysia">Malaysia</option>
-											<option value="Maldives">Maldives</option>
-											<option value="Mali">Mali</option>
-											<option value="Malta">Malta</option>
-											<option value="Martinique">Martinique</option>
-											<option value="Mauritania">Mauritania</option>
-											<option value="Mauritius">Mauritius</option>
-											<option value="Mexico">Mexico</option>
-											<option value="Moldova">Moldova</option>
-											<option value="Mongolia">Mongolia</option>
-											<option value="Montenegro">Montenegro</option>
-											<option value="Montserrat">Montserrat</option>
-											<option value="Morocco">Morocco</option>
-											<option value="Mozambique">Mozambique</option>
-											<option value="Namibia">Namibia</option>
-											<option value="Nauru">Nauru</option>
-											<option value="Nepal">Nepal</option>
-											<option value="Netherlands">Netherlands</option>
-											<option value="New Caledonia">New Caledonia</option>
-											<option value="New Zealand">New Zealand</option>
-											<option value="Nicaragua">Nicaragua</option>
-											<option value="Niger">Niger</option>
-											<option value="Nigeria">Nigeria</option>
-											<option value="Norway">Norway</option>
-											<option value="Oman">Oman</option>
-											<option value="Pakistan">Pakistan</option>
-											<option value="Panama">Panama</option>
-											<option value="Papua New Guinea">Papua New Guinea</option>
-											<option value="Paraguay">Paraguay</option>
-											<option value="Peru">Peru</option>
-											<option value="Philippines">Philippines</option>
-											<option value="Pitcairn Island">Pitcairn Island</option>
-											<option value="Poland">Poland</option>
-											<option value="Portugal">Portugal</option>
-											<option value="Qatar">Qatar</option>
-											<option value="Reunion">Reunion</option>
-											<option value="Romania">Romania</option>
-											<option value="Russia">Russia</option>
-											<option value="Rwanda">Rwanda</option>
-											<option value="Saint Helena">Saint Helena</option>
-											<option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
-											<option value="Saint Lucia">Saint Lucia</option>
-											<option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
-											<option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
-											<option value="Samoa">Samoa</option>
-											<option value="San Marino">San Marino</option>
-											<option value="Sao Tome and Principe">Sao Tome and Principe</option>
-											<option value="Saudi Arabia">Saudi Arabia</option>
-											<option value="Senegal">Senegal</option>
-											<option value="Serbia, Republic of">Serbia, Republic of</option>
-											<option value="Seychelles">Seychelles</option>
-											<option value="Sierra Leone">Sierra Leone</option>
-											<option value="Singapore">Singapore</option>
-											<option value="Sint Maarten">Sint Maarten</option>
-											<option value="Slovak Republic">Slovak Republic</option>
-											<option value="Slovenia">Slovenia</option>
-											<option value="Solomon Islands">Solomon Islands</option>
-											<option value="Somalia">Somalia</option>
-											<option value="South Africa">South Africa</option>
-											<option value="Spain">Spain</option>
-											<option value="Sri Lanka">Sri Lanka</option>
-											<option value="Sudan">Sudan</option>
-											<option value="Suriname">Suriname</option>
-											<option value="Swaziland">Swaziland</option>
-											<option value="Sweden">Sweden</option>
-											<option value="Switzerland">Switzerland</option>
-											<option value="Syrian Arab Republic (Syria)">Syrian Arab Republic (Syria)</option>
-											<option value="Taiwan">Taiwan</option>
-											<option value="Tajikistan">Tajikistan</option>
-											<option value="Tanzania">Tanzania</option>
-											<option value="Thailand">Thailand</option>
-											<option value="Timor-Leste, Democratic Republic of">Timor-Leste, Democratic Republic of</option>
-											<option value="Togo">Togo</option>
-											<option value="Tonga">Tonga</option>
-											<option value="Trinidad and Tobago">Trinidad and Tobago</option>
-											<option value="Tristan da Cunha">Tristan da Cunha</option>
-											<option value="Tunisia">Tunisia</option>
-											<option value="Turkey">Turkey</option>
-											<option value="Turkmenistan">Turkmenistan</option>
-											<option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
-											<option value="Tuvalu">Tuvalu</option>
-											<option value="Uganda">Uganda</option>
-											<option value="Ukraine">Ukraine</option>
-											<option value="United Arab Emirates">United Arab Emirates</option>
-											<option selected="selected" value="United States">United States</option>
-											<option value="Uruguay">Uruguay</option>
-											<option value="Uzbekistan">Uzbekistan</option>
-											<option value="Vanuatu">Vanuatu</option>
-											<option value="Vatican City">Vatican City</option>
-											<option value="Venezuela">Venezuela</option>
-											<option value="Vietnam">Vietnam</option>
-											<option value="Wallis and Futuna Islands">Wallis and Futuna Islands</option>
-											<option value="Yemen">Yemen</option>
-											<option value="Zambia">Zambia</option>
-											<option value="Zimbabwe">Zimbabwe</option>
-
-										</select>
-
-									</div>
-
-									<div class="col-sm-12 col-md-3">
-
-										<label for="zip">Zip</label>
-										<input id="zip" type="text" name="" class="form-control">
-										<p class="small black">(For US zip enter XXXXX or XXXXX-XXXX)</p>
-									</div>
-
 								</div>
 							</fieldset>
 
 							<fieldset>
-								<legend>Update Your Mailing Address</legend>
+								<legend>Update Your Contact Information</legend>
 								<div class="whiteBox">
-									<p>Update Your Mailing Address</p>
+									<p>Update Your Contact Information</p>
 									<div class="form-row">
 										<div class="col-sm-12 col-md-12">
 
-											<label for="mailing-address1">Address Line 1:</label>
-											<input id="mailing-address1" type="text" name="" class="form-control">
+											<label for="address1">Address Line 1:</label>
+											<input id="address1" type="text" name="" class="form-control">
 
 										</div>
 
@@ -614,8 +271,8 @@
 									<div class="form-row">
 										<div class="col-sm-12 col-md-12">
 
-											<label for="mailing-address2">Address Line 2:</label>
-											<input id="mailing-address2" type="text" name="" class="form-control">
+											<label for="address2">Address Line 2:</label>
+											<input id="address2" type="text" name="" class="form-control">
 
 										</div>
 
@@ -625,15 +282,15 @@
 
 										<div class="col-sm-12 col-md-9">
 
-											<label for="mailing-city">City</label>
-											<input id="mailing-city" type="text" name="" class="form-control">
+											<label for="city">City</label>
+											<input id="city" type="text" name="" class="form-control">
 
 										</div>
 
 										<div class="col-sm-12 col-md-3">
 
-											<label for="mailing-state">State</label>
-											<select name="" id="mailing-state" class="custom-select form-control">
+											<label for="state">State</label>
+											<select name="" id="state" class="custom-select form-control">
 												<option selected="selected" value=""></option>
 												<option value="AK">AK</option>
 												<option value="AL">AL</option>
@@ -704,8 +361,8 @@
 									<div class="form-row">
 										<div class="col-sm-12 col-md-9">
 
-											<label for="mailing-country">Country</label>
-											<select name="" id="mailing-country" class="form-control custom-select">
+											<label for="country">Country</label>
+											<select name="" id="country" class="form-control custom-select">
 												<option value=""></option>
 												<option value="Afghanistan">Afghanistan</option>
 												<option value="Albania">Albania</option>
@@ -933,8 +590,8 @@
 
 										<div class="col-sm-12 col-md-3">
 
-											<label for="mailing-zip">Zip</label>
-											<input id="mailing-zip" type="text" name="" class="form-control">
+											<label for="zip">Zip</label>
+											<input id="zip" type="text" name="" class="form-control">
 											<p class="small black">(For US zip enter XXXXX or XXXXX-XXXX)</p>
 										</div>
 
@@ -942,118 +599,14 @@
 								</fieldset>
 
 								<fieldset>
-									<legend>Update Your Telephone Numbers</legend>
+									<legend>Update Your Mailing Address</legend>
 									<div class="whiteBox">
-										<p>Update Your Telephone Numbers</p>
+										<p>Update Your Mailing Address</p>
 										<div class="form-row">
+											<div class="col-sm-12 col-md-12">
 
-											<div class="col-sm-12 col-md-10 offset-md-1">
-												<p class="small">First Telephone Number</p>
-												<input type="text" id="" name="phone" value="" placeholder="" class="form-control">
-												<br>
-												<div class="form-check form-check-inline customRadio">
-													<input class="form-check-input" type="radio" id="inlineRadio1" value="option1" name="phone">
-													<label class="form-check-label blue" for="inlineRadio1">Cell Phone</label>
-												</div>
-												<div class="form-check form-check-inline customRadio">
-													<input class="form-check-input" type="radio" id="inlineRadio2" value="option2" name="phone">
-													<label class="form-check-label blue" for="inlineRadio2">Home Phone/Landline</label>
-												</div>
-
-
-											</div>
-
-										</div>
-										<div class="content-spacer4"></div>
-
-										<div class="form-row">
-
-											<div class="col-sm-12 col-md-10 offset-md-1">
-												<p class="small">Second Telephone Number</p>
-												<input type="text" id="" name="phone2" value="" placeholder="" class="form-control">
-												<br>
-												<div class="form-check form-check-inline customRadio">
-													<input class="form-check-input" type="radio" id="inlineRadio3" value="option1" name="phone2">
-													<label class="form-check-label blue" for="inlineRadio3">Cell Phone</label>
-												</div>
-												<div class="form-check form-check-inline customRadio">
-													<input class="form-check-input" type="radio" id="inlineRadio4" value="option2" name="phone2">
-													<label class="form-check-label blue" for="inlineRadio4">Home Phone/Landline</label>
-												</div>
-
-
-											</div>
-
-										</div>
-
-									</div>
-								</fieldset>
-
-								<fieldset>
-									<legend>Update Your Preferred Email Address</legend>
-									<div class="whiteBox">
-										<p>Update Your Preferred Email Address</p>
-										<div class="form-row">
-
-											<div class="col-sm-12 col-md-10 offset-md-1">
-												<label for="formControl-email">Email</label>
-												<input id="formControl-email" type="email" class="form-control" name="Email" data-form-field="Email">
-
-											</div>
-										</div>
-									</div>
-								</fieldset>
-
-
-								<fieldset>
-									<legend>Addition to Mail, what is the best way to reach you?</legend>
-									<div class="whiteBox">
-										<p>Addition to Mail, what is the best way to reach you?</p>
-										<div class="content-spacer4"></div>
-										<div class="form-row">
-
-											<div class="col-sm-12 col-md-11 offset-md-1">
-
-												<div class="form-check form-check-inline customRadio">
-													<input class="form-check-input" type="radio" id="inlineRadio5" value="option1" name="contact-method">
-													<label class="form-check-label blue" for="inlineRadio5">Phone</label>
-												</div>
-												<div class="form-check form-check-inline customRadio">
-													<input class="form-check-input" type="radio" id="inlineRadio6" value="option2" name="contact-method">
-													<label class="form-check-label blue" for="inlineRadio6">Text Message</label>
-												</div>
-
-												<div class="form-check form-check-inline customRadio">
-													<input class="form-check-input" type="radio" id="inlineRadio7" value="option2" name="contact-method">
-													<label class="form-check-label blue" for="inlineRadio7">Email</label>
-												</div>
-
-											</div>
-
-										</div>
-
-
-									</div>
-								</fieldset>
-
-
-								<fieldset>
-									<legend>Update Contact Information for Someone Who Will Always Know How to Locate You</legend>
-									<div class="whiteBox">
-										<p>Update Contact Information for Someone Who Will Always Know How to Locate You</p>
-										<div class="form-row">
-
-											<div class="col-sm-12 col-xs-12 col-md-9 col-lg-10">
-
-												<label for="contact-first">First Name</label>
-												<input id="contact-first" type="text" name="" class="form-control">
-
-											</div>
-
-											<div class="col-sm-12 col-xs-12 col-md-3 col-lg-2">
-
-												<label for="contact-initial">Middle Initial</label>
-												<input id="contact-initial" type="text" name="" class="form-control">
+												<label for="mailing-address1">Address Line 1:</label>
+												<input id="mailing-address1" type="text" name="" class="form-control">
 
 											</div>
 
@@ -1061,56 +614,8 @@
 										<div class="form-row">
 											<div class="col-sm-12 col-md-12">
 
-												<label for="contact-last">Last Name</label>
-												<input id="contact-last" type="text" name="last-name" class="form-control">
-
-											</div>
-
-										</div>
-
-										<div class="form-row">
-											<div class="col-sm-12 col-md-12">
-
-												<label for="contact-number">Phone Number</label>
-												<input id="contact-number" type="text" name="last-name" class="form-control">
-
-											</div>
-
-										</div>
-
-										<div class="form-row">
-											<div class="col-sm-12 col-md-12">
-
-												<label for="relationship">Relationship</label>
-												<select name="" id="relationship" class="custom-select form-control">
-													<option selected="selected" value=""></option>
-													<option value="HUSBAND/WIFE">HUSBAND/WIFE</option>
-													<option value="FATHER/MOTHER (INCLUDING IN-LAWS)">FATHER/MOTHER (INCLUDING IN-LAWS)</option>
-													<option value="GRANDPARENT">GRANDPARENT</option>
-													<option value="SON/DAUGHTER (INCLUDING IN-LAWS)">SON/DAUGHTER (INCLUDING IN-LAWS)</option>
-													<option value="GRANDCHILD">GRANDCHILD</option>
-													<option value="BROTHER/SISTER (INCLUDING IN-LAWS)">BROTHER/SISTER (INCLUDING IN-LAWS)</option>
-													<option value="FRIEND/NEIGHBOR">FRIEND/NEIGHBOR</option>
-
-												</select>
-
-											</div>
-										</div>
-
-
-										<div class="form-row">
-											<div class="col-sm-12 col-md-12">
-
-												<label for="address3">Address Line 1:</label>
-												<input id="address3" type="text" name="" class="form-control">
-
-											</div>
-
-										</div>
-										<div class="form-row">
-											<div class="col-sm-12 col-md-12">
-												<label for="address4">Address Line 2:</label>
-												<input id="address4" type="text" name="" class="form-control">
+												<label for="mailing-address2">Address Line 2:</label>
+												<input id="mailing-address2" type="text" name="" class="form-control">
 
 											</div>
 
@@ -1120,15 +625,15 @@
 
 											<div class="col-sm-12 col-md-9">
 
-												<label for="city">City</label>
-												<input id="city" type="text" name="" class="form-control">
+												<label for="mailing-city">City</label>
+												<input id="mailing-city" type="text" name="" class="form-control">
 
 											</div>
 
 											<div class="col-sm-12 col-md-3">
 
-												<label for="state">State</label>
-												<select name="" id="state" class="custom-select form-control">
+												<label for="mailing-state">State</label>
+												<select name="" id="mailing-state" class="custom-select form-control">
 													<option selected="selected" value=""></option>
 													<option value="AK">AK</option>
 													<option value="AL">AL</option>
@@ -1199,8 +704,8 @@
 										<div class="form-row">
 											<div class="col-sm-12 col-md-9">
 
-												<label for="country">Country</label>
-												<select name="" id="country" class="form-control custom-select">
+												<label for="mailing-country">Country</label>
+												<select name="" id="mailing-country" class="form-control custom-select">
 													<option value=""></option>
 													<option value="Afghanistan">Afghanistan</option>
 													<option value="Albania">Albania</option>
@@ -1428,8 +933,8 @@
 
 											<div class="col-sm-12 col-md-3">
 
-												<label for="zip">Zip</label>
-												<input id="zip" type="text" name="" class="form-control">
+												<label for="mailing-zip">Zip</label>
+												<input id="mailing-zip" type="text" name="" class="form-control">
 												<p class="small black">(For US zip enter XXXXX or XXXXX-XXXX)</p>
 											</div>
 
@@ -1437,23 +942,91 @@
 									</fieldset>
 
 									<fieldset>
-										<legend>Do You Expect to Move Either Permanently or Temporarily  in the Next 12 Months?</legend>
+										<legend>Update Your Telephone Numbers</legend>
 										<div class="whiteBox">
-											<p>Do You Expect to Move Either Permanently or Temporarily in the Next 12 Months?</p>
+											<p>Update Your Telephone Numbers</p>
+											<div class="form-row">
+
+												<div class="col-sm-12 col-md-10 offset-md-1">
+													<p class="small">First Telephone Number</p>
+													<input type="text" id="" name="phone" value="" placeholder="" class="form-control">
+													<br>
+													<div class="form-check form-check-inline customRadio">
+														<input class="form-check-input" type="radio" id="inlineRadio1" value="option1" name="phone">
+														<label class="form-check-label blue" for="inlineRadio1">Cell Phone</label>
+													</div>
+													<div class="form-check form-check-inline customRadio">
+														<input class="form-check-input" type="radio" id="inlineRadio2" value="option2" name="phone">
+														<label class="form-check-label blue" for="inlineRadio2">Home Phone/Landline</label>
+													</div>
+
+
+												</div>
+
+											</div>
+											<div class="content-spacer4"></div>
+
+											<div class="form-row">
+
+												<div class="col-sm-12 col-md-10 offset-md-1">
+													<p class="small">Second Telephone Number</p>
+													<input type="text" id="" name="phone2" value="" placeholder="" class="form-control">
+													<br>
+													<div class="form-check form-check-inline customRadio">
+														<input class="form-check-input" type="radio" id="inlineRadio3" value="option1" name="phone2">
+														<label class="form-check-label blue" for="inlineRadio3">Cell Phone</label>
+													</div>
+													<div class="form-check form-check-inline customRadio">
+														<input class="form-check-input" type="radio" id="inlineRadio4" value="option2" name="phone2">
+														<label class="form-check-label blue" for="inlineRadio4">Home Phone/Landline</label>
+													</div>
+
+
+												</div>
+
+											</div>
+
+										</div>
+									</fieldset>
+
+									<fieldset>
+										<legend>Update Your Preferred Email Address</legend>
+										<div class="whiteBox">
+											<p>Update Your Preferred Email Address</p>
+											<div class="form-row">
+
+												<div class="col-sm-12 col-md-10 offset-md-1">
+													<label for="formControl-email">Email</label>
+													<input id="formControl-email" type="email" class="form-control" name="Email" data-form-field="Email">
+
+												</div>
+											</div>
+										</div>
+									</fieldset>
+
+
+									<fieldset>
+										<legend>Addition to Mail, what is the best way to reach you?</legend>
+										<div class="whiteBox">
+											<p>Addition to Mail, what is the best way to reach you?</p>
 											<div class="content-spacer4"></div>
 											<div class="form-row">
 
 												<div class="col-sm-12 col-md-11 offset-md-1">
 
 													<div class="form-check form-check-inline customRadio">
-														<input class="form-check-input" type="radio" id="inlineRadio8" value="option1" name="move">
-														<label class="form-check-label blue" for="inlineRadio8">Yes</label>
+														<input class="form-check-input" type="radio" id="inlineRadio5" value="option1" name="contact-method">
+														<label class="form-check-label blue" for="inlineRadio5">Phone</label>
 													</div>
 													<div class="form-check form-check-inline customRadio">
-														<input class="form-check-input" type="radio" id="inlineRadio9" value="option2" name="move">
-														<label class="form-check-label blue" for="inlineRadio9">No</label>
+														<input class="form-check-input" type="radio" id="inlineRadio6" value="option2" name="contact-method">
+														<label class="form-check-label blue" for="inlineRadio6">Text Message</label>
 													</div>
 
+													<div class="form-check form-check-inline customRadio">
+														<input class="form-check-input" type="radio" id="inlineRadio7" value="option2" name="contact-method">
+														<label class="form-check-label blue" for="inlineRadio7">Email</label>
+													</div>
 
 												</div>
 
@@ -1464,211 +1037,688 @@
 									</fieldset>
 
 
+									<fieldset>
+										<legend>Update Contact Information for Someone Who Will Always Know How to Locate You</legend>
+										<div class="whiteBox">
+											<p>Update Contact Information for Someone Who Will Always Know How to Locate You</p>
+											<div class="form-row">
 
-									<button type="submit" class="subscribe btn btn-primary rounded-pill enterBtn">Submit</button>
+												<div class="col-sm-12 col-xs-12 col-md-9 col-lg-10">
 
-								</form>
-							</div>
-						</div>
-					</div>
+													<label for="contact-first">First Name</label>
+													<input id="contact-first" type="text" name="" class="form-control">
 
-
-					<div class="contactUsOverlay"></div>
-
-
-					<div id="slideOut2">
-
-						<div id="one" class="openTab" role="button" tabindex="0" aria-label="Contact">
-							<p class="plum"><i class="fas fa-envelope plum"></i>&nbsp;&nbsp;Contact Us</p>
-
-						</div>
-
-						<div class="modal-content">
-							<div class="modal-header">
-								<div class="closeThisPlease" id="close">
-									<button role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
-										&#10005;
-									</button>
-								</div>
-								<br>
-								<div class="d-flex justify-content-between align-items-center contactInfo">
-
-									<p class="whiteLarger">Contact Us</p>
-									<a href="participant-form.html"><p class="white update">Update Your Contact Info</p></a>
-								</div>
-
-							</div>
-							<div class="modal-body">
-								<div class="row topContent">
-									<div class="col-lg-8 col-md-8 col-sm-12">
-										<div class="text">
-											<p class="white">For general questions or comments, media inquiries, requests for materials, and/or technical comments or questions about the website, please fill out the form here and click the ‘Send Email’ button at the bottom. For details on the site’s use of this information, see Privacy/Disclaimer.</p>
-											<p class="white">Additional information for researchers  not government site is available on the National Addiction & HIV Data Archive Program  not government site website. Among other information this includes how to access PATH Study data and details about the study design.</p>
-										</div>
-									</div>
-									<div class="col-lg-4 col-md-4 col-sm-12">
-										<div class="right">
-											<img src="images/email-icon.svg" class="img-fluid">
-											<p class="white text-center">A copy of this communication will be sent to you be email.</p>
-										</div>
-									</div>
-								</div>
-
-								<form method="post" data-form-title="CONTACT US" class="slideForm">
-
-									<div class="form-group">
-										<legend>Email</legend>
-										<label for="formControl1">Email</label>
-										<input id="formControl1" type="email" class="form-control required" tabindex="-1" aria-hidden="false" name="Email" data-form-field="Email" required>
-									</div>
-									<div class="form-group">
-										<legend>Affiliated company, institution, or organization</legend>
-										<label for="formControl2">Affiliated company, institution, or organization<span class="light"> (if you are not affiliated enter “None” or “NA”):</span></label>
-										<input type="text" id="formControl2" class="form-control" tabindex="-1" aria-hidden="false" name="company">
-									</div>
-
-									<div class="form-group">
-										<fieldset>
-
-											<legend>Contact Category</legend>
-											<label for="general-inquiry">Contact Category</label>
-											<div class="around2">
-												<div class="vertical">
-
-													<label class="radio-inline">
-														<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false" id="general-inquiry" checked required>Comment about the study
-													</label>
 												</div>
-												<div class="vertical">
 
-													<label class="radio-inline">
-														<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">problem with this website
-													</label>
+												<div class="col-sm-12 col-xs-12 col-md-3 col-lg-2">
+
+													<label for="contact-initial">Middle Initial</label>
+													<input id="contact-initial" type="text" name="" class="form-control">
+
 												</div>
-												<div class="vertical">
 
-													<label class="radio-inline">
-														<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">media inquiry
-													</label>
+											</div>
+											<div class="form-row">
+												<div class="col-sm-12 col-md-12">
+
+													<label for="contact-last">Last Name</label>
+													<input id="contact-last" type="text" name="last-name" class="form-control">
+
 												</div>
-												<div class="vertical">
 
-													<label class="radio-inline">
-														<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">other
-													</label>
+											</div>
+
+											<div class="form-row">
+												<div class="col-sm-12 col-md-12">
+
+													<label for="contact-number">Phone Number</label>
+													<input id="contact-number" type="text" name="last-name" class="form-control">
+
+												</div>
+
+											</div>
+
+											<div class="form-row">
+												<div class="col-sm-12 col-md-12">
+
+													<label for="relationship">Relationship</label>
+													<select name="" id="relationship" class="custom-select form-control">
+														<option selected="selected" value=""></option>
+														<option value="HUSBAND/WIFE">HUSBAND/WIFE</option>
+														<option value="FATHER/MOTHER (INCLUDING IN-LAWS)">FATHER/MOTHER (INCLUDING IN-LAWS)</option>
+														<option value="GRANDPARENT">GRANDPARENT</option>
+														<option value="SON/DAUGHTER (INCLUDING IN-LAWS)">SON/DAUGHTER (INCLUDING IN-LAWS)</option>
+														<option value="GRANDCHILD">GRANDCHILD</option>
+														<option value="BROTHER/SISTER (INCLUDING IN-LAWS)">BROTHER/SISTER (INCLUDING IN-LAWS)</option>
+														<option value="FRIEND/NEIGHBOR">FRIEND/NEIGHBOR</option>
+
+													</select>
+
 												</div>
 											</div>
 
+
+											<div class="form-row">
+												<div class="col-sm-12 col-md-12">
+
+													<label for="address3">Address Line 1:</label>
+													<input id="address3" type="text" name="" class="form-control">
+
+												</div>
+
+											</div>
+											<div class="form-row">
+												<div class="col-sm-12 col-md-12">
+													<label for="address4">Address Line 2:</label>
+													<input id="address4" type="text" name="" class="form-control">
+
+												</div>
+
+											</div>
+
+											<div class="form-row">
+
+												<div class="col-sm-12 col-md-9">
+
+													<label for="city">City</label>
+													<input id="city" type="text" name="" class="form-control">
+
+												</div>
+
+												<div class="col-sm-12 col-md-3">
+
+													<label for="state">State</label>
+													<select name="" id="state" class="custom-select form-control">
+														<option selected="selected" value=""></option>
+														<option value="AK">AK</option>
+														<option value="AL">AL</option>
+														<option value="AR">AR</option>
+														<option value="AS">AS</option>
+														<option value="AZ">AZ</option>
+														<option value="CA">CA</option>
+														<option value="CO">CO</option>
+														<option value="CT">CT</option>
+														<option value="DC">DC</option>
+														<option value="DE">DE</option>
+														<option value="FL">FL</option>
+														<option value="FM">FM</option>
+														<option value="GA">GA</option>
+														<option value="GU">GU</option>
+														<option value="HI">HI</option>
+														<option value="IA">IA</option>
+														<option value="ID">ID</option>
+														<option value="IL">IL</option>
+														<option value="IN">IN</option>
+														<option value="KS">KS</option>
+														<option value="KY">KY</option>
+														<option value="LA">LA</option>
+														<option value="MA">MA</option>
+														<option value="MD">MD</option>
+														<option value="ME">ME</option>
+														<option value="MH">MH</option>
+														<option value="MI">MI</option>
+														<option value="MN">MN</option>
+														<option value="MO">MO</option>
+														<option value="MP">MP</option>
+														<option value="MS">MS</option>
+														<option value="MT">MT</option>
+														<option value="NC">NC</option>
+														<option value="ND">ND</option>
+														<option value="NE">NE</option>
+														<option value="NH">NH</option>
+														<option value="NJ">NJ</option>
+														<option value="NM">NM</option>
+														<option value="NV">NV</option>
+														<option value="NY">NY</option>
+														<option value="OH">OH</option>
+														<option value="OK">OK</option>
+														<option value="OR">OR</option>
+														<option value="PA">PA</option>
+														<option value="PR">PR</option>
+														<option value="PW">PW</option>
+														<option value="RI">RI</option>
+														<option value="SC">SC</option>
+														<option value="SD">SD</option>
+														<option value="TN">TN</option>
+														<option value="TX">TX</option>
+														<option value="UT">UT</option>
+														<option value="VA">VA</option>
+														<option value="VI">VI</option>
+														<option value="VT">VT</option>
+														<option value="WA">WA</option>
+														<option value="WI">WI</option>
+														<option value="WV">WV</option>
+														<option value="WY">WY</option>
+
+													</select>
+
+												</div>
+
+											</div>
+
+											<div class="form-row">
+												<div class="col-sm-12 col-md-9">
+
+													<label for="country">Country</label>
+													<select name="" id="country" class="form-control custom-select">
+														<option value=""></option>
+														<option value="Afghanistan">Afghanistan</option>
+														<option value="Albania">Albania</option>
+														<option value="Algeria">Algeria</option>
+														<option value="Andorra">Andorra</option>
+														<option value="Angola">Angola</option>
+														<option value="Anguilla">Anguilla</option>
+														<option value="Antigua and Barbuda">Antigua and Barbuda</option>
+														<option value="Argentina">Argentina</option>
+														<option value="Armenia">Armenia</option>
+														<option value="Aruba">Aruba</option>
+														<option value="Ascension">Ascension</option>
+														<option value="Australia">Australia</option>
+														<option value="Austria">Austria</option>
+														<option value="Azerbaijan">Azerbaijan</option>
+														<option value="Bahamas">Bahamas</option>
+														<option value="Bahrain">Bahrain</option>
+														<option value="Bangladesh">Bangladesh</option>
+														<option value="Barbados">Barbados</option>
+														<option value="Belarus">Belarus</option>
+														<option value="Belgium">Belgium</option>
+														<option value="Belize">Belize</option>
+														<option value="Benin">Benin</option>
+														<option value="Bermuda">Bermuda</option>
+														<option value="Bhutan">Bhutan</option>
+														<option value="Bolivia">Bolivia</option>
+														<option value="Bonaire, Sint Eustatius,and Saba">Bonaire, Sint Eustatius,and Saba</option>
+														<option value="Bosnia-Herzegovina">Bosnia-Herzegovina</option>
+														<option value="Botswana">Botswana</option>
+														<option value="Brazil">Brazil</option>
+														<option value="British Virgin Islands">British Virgin Islands</option>
+														<option value="Brunei Darussalam">Brunei Darussalam</option>
+														<option value="Bulgaria">Bulgaria</option>
+														<option value="Burkina Faso">Burkina Faso</option>
+														<option value="Burma">Burma</option>
+														<option value="Burundi">Burundi</option>
+														<option value="Cambodia">Cambodia</option>
+														<option value="Cameroon">Cameroon</option>
+														<option value="Canada">Canada</option>
+														<option value="Cape Verde">Cape Verde</option>
+														<option value="Cayman Islands">Cayman Islands</option>
+														<option value="Central African Republic">Central African Republic</option>
+														<option value="Chad">Chad</option>
+														<option value="Chile">Chile</option>
+														<option value="China">China</option>
+														<option value="Colombia">Colombia</option>
+														<option value="Comoros">Comoros</option>
+														<option value="Congo, Democratic Republic of the">Congo, Democratic Republic of the</option>
+														<option value="Congo, Republic of the">Congo, Republic of the</option>
+														<option value="Costa Rica">Costa Rica</option>
+														<option value="Cote d’Ivoire">Cote d’Ivoire</option>
+														<option value="Croatia">Croatia</option>
+														<option value="Cuba">Cuba</option>
+														<option value="Curacao">Curacao</option>
+														<option value="Cyprus">Cyprus</option>
+														<option value="Czech Republic">Czech Republic</option>
+														<option value="Denmark">Denmark</option>
+														<option value="Djibouti">Djibouti</option>
+														<option value="Dominica">Dominica</option>
+														<option value="Dominican Republic">Dominican Republic</option>
+														<option value="Ecuador">Ecuador</option>
+														<option value="Egypt">Egypt</option>
+														<option value="El Salvador">El Salvador</option>
+														<option value="Equatorial Guinea">Equatorial Guinea</option>
+														<option value="Eritrea">Eritrea</option>
+														<option value="Estonia">Estonia</option>
+														<option value="Ethiopia">Ethiopia</option>
+														<option value="Falkland Islands">Falkland Islands</option>
+														<option value="Faroe Islands">Faroe Islands</option>
+														<option value="Fiji">Fiji</option>
+														<option value="Finland">Finland</option>
+														<option value="France">France</option>
+														<option value="French Guiana">French Guiana</option>
+														<option value="French Polynesia">French Polynesia</option>
+														<option value="Gabon">Gabon</option>
+														<option value="Gambia">Gambia</option>
+														<option value="Georgia, Republic of">Georgia, Republic of</option>
+														<option value="Germany">Germany</option>
+														<option value="Ghana">Ghana</option>
+														<option value="Gibraltar">Gibraltar</option>
+														<option value="Great Britain and Northern Ireland">Great Britain and Northern Ireland</option>
+														<option value="Greece">Greece</option>
+														<option value="Greenland">Greenland</option>
+														<option value="Grenada">Grenada</option>
+														<option value="Guadeloupe">Guadeloupe</option>
+														<option value="Guatemala">Guatemala</option>
+														<option value="Guinea">Guinea</option>
+														<option value="Guinea-Bissau">Guinea-Bissau</option>
+														<option value="Guyana">Guyana</option>
+														<option value="Haiti">Haiti</option>
+														<option value="Honduras">Honduras</option>
+														<option value="Hong Kong">Hong Kong</option>
+														<option value="Hungary">Hungary</option>
+														<option value="Iceland">Iceland</option>
+														<option value="India">India</option>
+														<option value="Indonesia">Indonesia</option>
+														<option value="Iran">Iran</option>
+														<option value="Iraq">Iraq</option>
+														<option value="Ireland">Ireland</option>
+														<option value="Israel">Israel</option>
+														<option value="Italy">Italy</option>
+														<option value="Jamaica">Jamaica</option>
+														<option value="Japan">Japan</option>
+														<option value="Jordan">Jordan</option>
+														<option value="Kazakhstan">Kazakhstan</option>
+														<option value="Kenya">Kenya</option>
+														<option value="Kiribati">Kiribati</option>
+														<option value="Korea, Democratic People’s Republic of">Korea, Democratic People’s Republic of</option>
+														<option value="Korea, Republic of">Korea, Republic of</option>
+														<option value="Kosovo, Republic of">Kosovo, Republic of</option>
+														<option value="Kuwait">Kuwait</option>
+														<option value="Kyrgyzstan">Kyrgyzstan</option>
+														<option value="Laos">Laos</option>
+														<option value="Latvia">Latvia</option>
+														<option value="Lebanon">Lebanon</option>
+														<option value="Lesotho">Lesotho</option>
+														<option value="Liberia">Liberia</option>
+														<option value="Libya">Libya</option>
+														<option value="Liechtenstein">Liechtenstein</option>
+														<option value="Lithuania">Lithuania</option>
+														<option value="Luxembourg">Luxembourg</option>
+														<option value="Macao">Macao</option>
+														<option value="Macedonia, Republic of">Macedonia, Republic of</option>
+														<option value="Madagascar">Madagascar</option>
+														<option value="Malawi">Malawi</option>
+														<option value="Malaysia">Malaysia</option>
+														<option value="Maldives">Maldives</option>
+														<option value="Mali">Mali</option>
+														<option value="Malta">Malta</option>
+														<option value="Martinique">Martinique</option>
+														<option value="Mauritania">Mauritania</option>
+														<option value="Mauritius">Mauritius</option>
+														<option value="Mexico">Mexico</option>
+														<option value="Moldova">Moldova</option>
+														<option value="Mongolia">Mongolia</option>
+														<option value="Montenegro">Montenegro</option>
+														<option value="Montserrat">Montserrat</option>
+														<option value="Morocco">Morocco</option>
+														<option value="Mozambique">Mozambique</option>
+														<option value="Namibia">Namibia</option>
+														<option value="Nauru">Nauru</option>
+														<option value="Nepal">Nepal</option>
+														<option value="Netherlands">Netherlands</option>
+														<option value="New Caledonia">New Caledonia</option>
+														<option value="New Zealand">New Zealand</option>
+														<option value="Nicaragua">Nicaragua</option>
+														<option value="Niger">Niger</option>
+														<option value="Nigeria">Nigeria</option>
+														<option value="Norway">Norway</option>
+														<option value="Oman">Oman</option>
+														<option value="Pakistan">Pakistan</option>
+														<option value="Panama">Panama</option>
+														<option value="Papua New Guinea">Papua New Guinea</option>
+														<option value="Paraguay">Paraguay</option>
+														<option value="Peru">Peru</option>
+														<option value="Philippines">Philippines</option>
+														<option value="Pitcairn Island">Pitcairn Island</option>
+														<option value="Poland">Poland</option>
+														<option value="Portugal">Portugal</option>
+														<option value="Qatar">Qatar</option>
+														<option value="Reunion">Reunion</option>
+														<option value="Romania">Romania</option>
+														<option value="Russia">Russia</option>
+														<option value="Rwanda">Rwanda</option>
+														<option value="Saint Helena">Saint Helena</option>
+														<option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+														<option value="Saint Lucia">Saint Lucia</option>
+														<option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+														<option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+														<option value="Samoa">Samoa</option>
+														<option value="San Marino">San Marino</option>
+														<option value="Sao Tome and Principe">Sao Tome and Principe</option>
+														<option value="Saudi Arabia">Saudi Arabia</option>
+														<option value="Senegal">Senegal</option>
+														<option value="Serbia, Republic of">Serbia, Republic of</option>
+														<option value="Seychelles">Seychelles</option>
+														<option value="Sierra Leone">Sierra Leone</option>
+														<option value="Singapore">Singapore</option>
+														<option value="Sint Maarten">Sint Maarten</option>
+														<option value="Slovak Republic">Slovak Republic</option>
+														<option value="Slovenia">Slovenia</option>
+														<option value="Solomon Islands">Solomon Islands</option>
+														<option value="Somalia">Somalia</option>
+														<option value="South Africa">South Africa</option>
+														<option value="Spain">Spain</option>
+														<option value="Sri Lanka">Sri Lanka</option>
+														<option value="Sudan">Sudan</option>
+														<option value="Suriname">Suriname</option>
+														<option value="Swaziland">Swaziland</option>
+														<option value="Sweden">Sweden</option>
+														<option value="Switzerland">Switzerland</option>
+														<option value="Syrian Arab Republic (Syria)">Syrian Arab Republic (Syria)</option>
+														<option value="Taiwan">Taiwan</option>
+														<option value="Tajikistan">Tajikistan</option>
+														<option value="Tanzania">Tanzania</option>
+														<option value="Thailand">Thailand</option>
+														<option value="Timor-Leste, Democratic Republic of">Timor-Leste, Democratic Republic of</option>
+														<option value="Togo">Togo</option>
+														<option value="Tonga">Tonga</option>
+														<option value="Trinidad and Tobago">Trinidad and Tobago</option>
+														<option value="Tristan da Cunha">Tristan da Cunha</option>
+														<option value="Tunisia">Tunisia</option>
+														<option value="Turkey">Turkey</option>
+														<option value="Turkmenistan">Turkmenistan</option>
+														<option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+														<option value="Tuvalu">Tuvalu</option>
+														<option value="Uganda">Uganda</option>
+														<option value="Ukraine">Ukraine</option>
+														<option value="United Arab Emirates">United Arab Emirates</option>
+														<option selected="selected" value="United States">United States</option>
+														<option value="Uruguay">Uruguay</option>
+														<option value="Uzbekistan">Uzbekistan</option>
+														<option value="Vanuatu">Vanuatu</option>
+														<option value="Vatican City">Vatican City</option>
+														<option value="Venezuela">Venezuela</option>
+														<option value="Vietnam">Vietnam</option>
+														<option value="Wallis and Futuna Islands">Wallis and Futuna Islands</option>
+														<option value="Yemen">Yemen</option>
+														<option value="Zambia">Zambia</option>
+														<option value="Zimbabwe">Zimbabwe</option>
+
+													</select>
+
+												</div>
+
+												<div class="col-sm-12 col-md-3">
+
+													<label for="zip">Zip</label>
+													<input id="zip" type="text" name="" class="form-control">
+													<p class="small black">(For US zip enter XXXXX or XXXXX-XXXX)</p>
+												</div>
+
+											</div>
+										</fieldset>
+
+										<fieldset>
+											<legend>Do You Expect to Move Either Permanently or Temporarily  in the Next 12 Months?</legend>
+											<div class="whiteBox">
+												<p>Do You Expect to Move Either Permanently or Temporarily in the Next 12 Months?</p>
+												<div class="content-spacer4"></div>
+												<div class="form-row">
+
+													<div class="col-sm-12 col-md-11 offset-md-1">
+
+														<div class="form-check form-check-inline customRadio">
+															<input class="form-check-input" type="radio" id="inlineRadio8" value="option1" name="move">
+															<label class="form-check-label blue" for="inlineRadio8">Yes</label>
+														</div>
+														<div class="form-check form-check-inline customRadio">
+															<input class="form-check-input" type="radio" id="inlineRadio9" value="option2" name="move">
+															<label class="form-check-label blue" for="inlineRadio9">No</label>
+														</div>
+
+
+													</div>
+
+												</div>
+
+
+											</div>
+										</fieldset>
+
+
+
+										<button type="submit" class="subscribe btn btn-primary rounded-pill enterBtn">Submit</button>
+
+									</form>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="contactUsOverlay"></div>
+
+
+						<div id="slideOut2">
+
+							<div id="one" class="openTab" role="button" tabindex="0" aria-label="Contact">
+								<p class="plum"><i class="fas fa-envelope plum"></i>&nbsp;&nbsp;Contact Us</p>
+
+							</div>
+
+							<div class="modal-content">
+								<div class="modal-header">
+									<div class="closeThisPlease" id="close">
+										<button role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
+											&#10005;
+										</button>
+									</div>
+									<br>
+									<div class="d-flex justify-content-between align-items-center contactInfo">
+
+										<p class="whiteLarger">Contact Us</p>
+										<a href="participant-form.html"><p class="white update">Update Your Contact Info</p></a>
+									</div>
+
+								</div>
+								<div class="modal-body">
+									<div class="row topContent">
+										<div class="col-lg-8 col-md-8 col-sm-12">
+											<div class="text">
+												<p class="white">For general questions or comments, media inquiries, requests for materials, and/or technical comments or questions about the website, please fill out the form here and click the ‘Send Email’ button at the bottom. For details on the site’s use of this information, see Privacy/Disclaimer.</p>
+												<p class="white">Additional information for researchers  not government site is available on the National Addiction & HIV Data Archive Program  not government site website. Among other information this includes how to access PATH Study data and details about the study design.</p>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-12">
+											<div class="right">
+												<img src="images/email-icon.svg" class="img-fluid">
+												<p class="white text-center">A copy of this communication will be sent to you be email.</p>
+											</div>
+										</div>
+									</div>
+
+									<form method="post" data-form-title="CONTACT US" class="slideForm">
+
+										<div class="form-group">
+											<legend>Email</legend>
+											<label for="formControl1">Email</label>
+											<input id="formControl1" type="email" class="form-control required" tabindex="-1" aria-hidden="false" name="Email" data-form-field="Email" required>
 										</div>
 										<div class="form-group">
-											<label for="formControl4">Message</label>
-											<textarea class="form-control" id="formControl4" tabindex="-1" aria-hidden="false" name="message" rows="4" data-form-field="Message"></textarea>
+											<legend>Affiliated company, institution, or organization</legend>
+											<label for="formControl2">Affiliated company, institution, or organization<span class="light"> (if you are not affiliated enter “None” or “NA”):</span></label>
+											<input type="text" id="formControl2" class="form-control" tabindex="-1" aria-hidden="false" name="company">
 										</div>
 
-									</fieldset>
+										<div class="form-group">
+											<fieldset>
 
-									<div class="d-flex justify-content-between align-items-center printSend">
-										<div class="left">
-											<div class="form-check form-check-inline">
+												<legend>Contact Category</legend>
+												<label for="general-inquiry">Contact Category</label>
+												<div class="around2">
+													<div class="vertical">
 
-												<input class="form-check-input position-static" type="checkbox" id="print-copy" value="" aria-label="Print Copy" tabindex="-1" aria-hidden="false">
+														<label class="radio-inline">
+															<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false" id="general-inquiry" checked required>Comment about the study
+														</label>
+													</div>
+													<div class="vertical">
+
+														<label class="radio-inline">
+															<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">problem with this website
+														</label>
+													</div>
+													<div class="vertical">
+
+														<label class="radio-inline">
+															<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">media inquiry
+														</label>
+													</div>
+													<div class="vertical">
+
+														<label class="radio-inline">
+															<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">other
+														</label>
+													</div>
+												</div>
+
 											</div>
-											<label for="print-copy"><p class="white">Check to print a copy for your records&nbsp;<i class="far fa-print"></i></p></label>
+											<div class="form-group">
+												<label for="formControl4">Message</label>
+												<textarea class="form-control" id="formControl4" tabindex="-1" aria-hidden="false" name="message" rows="4" data-form-field="Message"></textarea>
+											</div>
+
+										</fieldset>
+
+										<div class="d-flex justify-content-between align-items-center printSend">
+											<div class="left">
+												<div class="form-check form-check-inline">
+
+													<input class="form-check-input position-static" type="checkbox" id="print-copy" value="" aria-label="Print Copy" tabindex="-1" aria-hidden="false">
+												</div>
+												<label for="print-copy"><p class="white">Check to print a copy for your records&nbsp;<i class="far fa-print"></i></p></label>
+											</div>
+
+											<button type="submit" class="btn btn-info button-outlined" id="sendMessage" tabindex="-1" aria-hidden="false">
+												<i class="fal fa-envelope brightBlue"></i>&nbsp;Send
+											</button>
+
 										</div>
 
-										<button type="submit" class="btn btn-info button-outlined" id="sendMessage" tabindex="-1" aria-hidden="false">
-											<i class="fal fa-envelope brightBlue"></i>&nbsp;Send
-										</button>
+
+									</form>
+
+								</div>
+								<div class="modal-footer">
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="toast transparent-opacity" role="alert" aria-live="assertive" aria-atomic="true">
+							&#x2713; Thank you.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message sent successfully.
+						</div>
+
+					</div>
+
+					<div class="footer-img">
+						<div class="container-fluid">
+							<img class="" src="images/bottom.svg" alt="Overlay">
+						</div>
+					</div>
+
+					<!-- footer -->
+
+					<div class="modal fade footerModal" id="accessibility" tabindex="-1" role="dialog" aria-labelledby="Accessibility" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<p class="darkBlue">Accessibilty</p>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="opacity:1">
+										<i class="fal fa-times blueColor"></i>
+									</button>
+								</div>
+								<div class="modal-body">
+									<h4 class="landing-sec-H alt text-left">Overview</h4>
+									<p class="black">The PATH Study is committed to making its Web site accessible to the widest possible audience, including individuals with disabilities. In keeping with its mission, the PATH Study Web site has been designed to comply with <a class="blueColor" href="http://www.access-board.gov/508.htm" target="_blank">Section 508 of the Rehabilitation Act of 1973, as amended,</a> and the <a class="blueColor" href="http://www.hhs.gov/ocio/policy/508_policy.html" target="_blank">HHS Secretary's Section 508 Implementation Policy</a>.</p>
+									<p class="black">Section 508 requires that individuals with disabilities have equivalent access to and use of all information and communication technology (ICT), unless it would create an undue burden.</p>
+									<h4 class="landing-sec-H alt text-left">For Alternate Access to Web Information</h4>
+
+									<p class="black">Any individual using assistive technology (such as a screen reader, Braille reader, etc.) who experiences difficulty in accessing information on <a href="https://pathstudyinfo.nih.gov/UI/HomeMobile.aspx" class="blueColor" target="_blank">www.PATHstudyinfo.nih.gov</a> should <a href="mailto:PATHInfo@westat.com" class="blueColor" target="_blank">Contact Us</a> via email or phone (1-888-311-1819). The nature of the accessibility problem and information on how you would like us to contact you should be included in any email or telephone message. If the accessibility problem involves a particular web page, including the URL (Web address) of the page would be helpful. A member of the PATH Study user support staff will contact individuals with accessibility problems as soon as possible.</p>
+								</div>
+								<div class="modal-footer">
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal fade footerModal" id="privacy" tabindex="-1" role="dialog" aria-labelledby="Privacy/Disclaimer" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<p class="darkBlue">Privacy</p>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="opacity:1">
+										<i class="fal fa-times blueColor"></i>
+									</button>
+								</div>
+								<div class="modal-body">
+									<h4 class="landing-sec-H alt text-left">PATH Privacy Notice</h4>
+									<p class="black">Thank you for visiting the PATH Study Web site. Protecting your privacy is very important to us, as reflected in our Privacy Policy, detailed below.<p>
+										<p class="black">Policy as of September 1, 2013</p>
+										<ul>
+											<li><p class="black">We do not collect any personally identifiable information (PII) about you during your visit to PATH Web site unless you choose to provide that information to us.</p></li>
+											<li><p class="black">Any PII you chose to provide is fully protected.</p></li>
+											<li><p class="black">Non-PII information related to your visit to our Web site may be automatically collected and temporarily stored. This data can help us better understand how the public uses the site and how to make it more helpful. We collect information from visitors who read, browse, and/or download information from our Web site. The PATH Study never collects information for commercial marketing or any purpose unrelated to PATH's mission and goals.</p></li>
+											<p class="black">NOTE: For more information on your health information privacy and security rights or the HIPAA Privacy and Security Rules, please visit <a href="http://www.hhs.gov/ocr/privacy/index.html" class="blueColor" target="_blank">http://www.hhs.gov/ocr/privacy/index.html</a>.</p>
+										</div>
+										<div class="modal-footer">
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="survey-footer">
+								<div class="one">
+
+									<div class="d-flex justify-content-between">
+
+										<a data-toggle="modal" data-target="#accessibility"><p class="white">Accessibility</p></a>
+										<div class="flip2"></div>
+										<a data-toggle="modal" data-target="#privacy"><p class="white">Privacy/Disclaimer</p></a>
+										<div class="flip2"></div>
+										<a href="https://www.nih.gov/institutes-nih/nih-office-director/office-communications-public-liaison/freedom-information-act-office" target="_blank">
+											<p class="white">FOIA <i class="far fa-external-link-alt"></i></p>
+										</a>
 
 									</div>
 
+									<div class="d-flex justify-content-between align-items-center">
+										<p class="white" id="timeStamp">last updated: 8/10/2020</p>
 
-								</form>
 
+									</div>
+									<div class="d-flex justify-content-between align-items-center">
+										<a target="_blank" href="https://get.adobe.com/reader/"><p class="white">Download Acrobat Reader <i class="far fa-external-link-alt"></i></p></a>
+
+									</div>
+
+								</div>
+								<div class="two">
+									<a href="https://www.hhs.gov/" target="_blank" title="HHS">
+										<img src="images/hhs.png" alt="HHS Logo">
+									</a>
+									<a href="https://www.nih.gov/" target="_blank" title="NIH">
+										<img src="images/nih.png" alt="NIH Logo">
+									</a>
+									<a href="https://www.drugabuse.gov/" target="_blank" title="NIH Drug">
+										<img src="images/drug.svg" alt="National Institute of Drug Abuse Logo">
+									</a>
+									<a href="http://www.fda.gov/" target="_blank" title="FDA">
+										<img src="images/fda.svg" alt="Food and Drug Administration Logo">
+									</a>
+
+									<a href="https://www.usa.gov/" target="_blank" title="USA.GOV">
+										<img src="images/us-gov.png" alt="USA.gov Logo">
+									</a>
+								</div>
 							</div>
-							<div class="modal-footer">
 
+							<div class="back-to-top">
+								<i class="far fa-angle-up"></i>
 							</div>
 
-						</div>
-
-					</div>
-
-					<div class="toast transparent-opacity" role="alert" aria-live="assertive" aria-atomic="true">
-						&#x2713; Thank you.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message sent successfully.
-					</div>
-
-				</div>
-
-				<div class="footer-img">
-					<div class="container-fluid">
-						<img class="" src="images/bottom.svg" alt="Overlay">
-					</div>
-				</div>
 
 
-				<div class="survey-footer">
-					<div class="one">
-
-						<div class="d-flex justify-content-between">
-
-							<p class="white">Accessibility</p>
-							<div class="flip2"></div>
-							<p class="white">Privacy/Disclaimer</p>
-							<div class="flip2"></div>
-							<a href="https://www.nih.gov/institutes-nih/nih-office-director/office-communications-public-liaison/freedom-information-act-office" target="_blank">
-							<p class="white">FOIA <i class="far fa-external-link-alt"></i></p>
-							</a>
-
-						</div>
-
-						<div class="d-flex justify-content-between align-items-center">
-							<p class="white" id="timeStamp">last updated: 8/10/2020</p>
+							<!-- <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+							<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+							<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+							<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+							<script type="text/javascript" src="js/landing.js"></script> -->
+							<!-- <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&amp;languages=en,es"></script> -->
+							<!-- <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+							<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
 
 
-						</div>
-						<div class="d-flex justify-content-between align-items-center">
-							<a target="_blank" href="https://get.adobe.com/reader/"><p class="white">Download Acrobat Reader <i class="far fa-external-link-alt"></i></p></a>
+						</body>
 
-						</div>
-
-					</div>
-					<div class="two">
-						<a href="https://www.hhs.gov/" target="_blank" title="HHS">
-							<img src="images/" alt="HHS Logo">
-						</a>
-						<a href="https://www.nih.gov/" target="_blank" title="NIH">
-							<img src="images/nih.png" alt="NIH Logo">
-						</a>
-						<a href="https://www.drugabuse.gov/" target="_blank" title="NIH Drug">
-							<img src="images/drug.svg" alt="National Institute of Drug Abuse Logo">
-						</a>
-						<a href="http://www.fda.gov/" target="_blank" title="FDA">
-							<img src="images/fda.svg" alt="Food and Drug Administration Logo">
-						</a>
-
-						<a href="https://www.usa.gov/" target="_blank" title="USA.GOV">
-							<img src="images/us-gov.png" alt="USA.gov Logo">
-						</a>
-					</div>
-				</div>
-
-				<div class="back-to-top">
-					<i class="far fa-angle-up"></i>
-				</div>
-
-
-
-				<!-- <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
-				<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
-				<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-				<script type="text/javascript" src="js/landing.js"></script> -->
-				<!-- <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&amp;languages=en,es"></script> -->
-				<!-- <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
-				<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
-
-
-</body>
-
-</html>
+						</html>

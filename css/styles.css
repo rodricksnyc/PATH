@@ -18,7 +18,88 @@ a{
   z-index:8
 }
 
-.middle{
+a:hover{
+  cursor: grab;
+}
+
+.smaller{
+  font-size:99% !important
+
+}
+#fieldModal .form-control {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: none;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: black;
+    background-color: white;
+    background-clip: padding-box;
+    border: 2px solid #006CA9;
+    border-radius: .5rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    text-align: left;
+    max-height: 40px;
+
+  }
+
+  #fieldModal .modal-header, .footerModal .modal-header {
+    padding:1em !important;
+    border-bottom: 1px solid #0069AA;
+  }
+  #fieldModal .modal-header p, .footerModal .modal-header p{
+  margin-bottom: 0em;
+font-weight: 400;
+
+}
+
+  #fieldModal .modal-dialog {
+    max-width: 660px;
+    margin: 1.75rem auto;
+}
+
+.footerModal .modal-dialog {
+  max-width: 950px;
+  margin: 1.75rem auto;
+}
+
+.footerModal h4 {
+  font-size:19px !important;
+}
+  #fieldModal .modal-body{
+    padding:2em 4em
+  }
+
+  .footerModal .modal-body{
+    padding:2em
+  }
+
+  #fieldModal label, .footerModal label  {
+    color: #004F7F;
+    font-size:16px
+}
+
+#fieldModal .form-row{
+  margin:1em 0em
+}
+
+#verify {
+
+    width: auto;
+
+
+    padding: .5rem 3rem;
+    border-radius: 2rem;
+
+    color: black;
+    background: #7bc043;
+    margin: 2em 0em;
+}
+
+
+.middleLink{
 
   width:19em;
   left:calc(50% - 9.5em)
@@ -1461,7 +1542,7 @@ font-weight: 500;
 
 a{
   position: relative;
-  z-index:999999999999999999
+  z-index:12
 }
 
 
@@ -5950,6 +6031,13 @@ button.close {
 
 @media (max-width: 767px) {
 
+  #fieldModal .modal-body {
+    padding: 2em 1em;
+}
+#fieldModal label:last-of-type{
+  margin-top:1em
+}
+
   .menu-buttons.noMargin .menu-buttons-list a p {
 
     font-size: 20px;
@@ -6129,6 +6217,10 @@ button.close {
     margin-top: 1em;
     text-align: center !important;
   }
+
+  #fieldModal .modal-header p {
+    margin-top:0em
+}
 
   .back-to-top{
     display: none
