@@ -221,7 +221,21 @@ body * {
 
 .video{
   position: relative;
-  margin-top:1em
+  margin-top:1em;
+  z-index:2
+}
+.absoluteI i {
+  color:white;
+  font-size: 9em;
+}
+
+.absoluteI {
+  position: absolute;
+
+  width:9em;
+  z-index:99;
+  left:calc(50% - 4.5em);
+  top:calc(50% - 4.5em)
 }
 
 .textBlue {
@@ -4906,9 +4920,7 @@ button.close {
     min-height:1000px
   }
 
-  .imgTop {
-    top:-1%
-  }
+
 }
 
 @media (max-width: 1599px) and (min-width: 1200px){
@@ -4920,11 +4932,6 @@ button.close {
   }
 
 
-
-
-  .imgTop {
-    top:-2%
-  }
 
   .img-r{
     right: -100px;
