@@ -13,6 +13,11 @@
   font-weight:300;
 }
 
+a{
+  position:relative;
+  z-index:8
+}
+
 .line {
   background: #e5eef5;
   background:   #c7dbe3;
