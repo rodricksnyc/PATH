@@ -18,6 +18,12 @@ a{
   z-index:8
 }
 
+.middle{
+
+  width:19em;
+  left:calc(50% - 9.5em)
+}
+
 .line {
   background: #e5eef5;
   background:   #c7dbe3;
