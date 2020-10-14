@@ -1020,7 +1020,7 @@ width: calc(100% - 0.5rem);
   display: inline-block;
   width: .3em;
   margin-left: -1.4em;
-  margin-right: 1em;
+  margin-right: 1.2em;
 
 }
 
@@ -2502,12 +2502,12 @@ h1.white.sentMessage {
 
 .whiteBubble ul{
   margin: .5em 3em;
-  font-size: 16px;
+  font-size: 19px;
   color: black;
 }
 .whiteBubble ul.first{
-  margin: .5em 5em;
-  font-size: 16px;
+  margin: .5em 3em;
+  font-size: 19px;
   color: black;
   font-weight:400;
 }
@@ -5745,8 +5745,14 @@ button.close {
   }
 
   .survey-footer .two {
-    padding-top:6em
+    padding-top:4em
   }
+
+  .survey-footer .two {
+
+    min-height: 15em;
+
+}
 
   .nav-link:after {
     border-bottom: none;

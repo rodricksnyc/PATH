@@ -66,8 +66,8 @@
 
 
 	<script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript" src="js/filter.js"></script>
-			<script type="text/javascript" src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+	<script type="text/javascript" src="js/filter.js"></script>
+	<script type="text/javascript" src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
 
 	<script type="text/javascript">
@@ -96,53 +96,92 @@
 	</script>
 </head>
 <style>
+
+.letter{
+
+    color: #00559b !important;
+    background: #d9f0fe;
+
+    border-radius: 50%;
+
+    border-radius: 50%;
+
+    display: block;
+    height: 2.5em;
+    width: 2.5em;
+
+    position: relative;
+
+}
+
+.letter p {
+	font-size:1.2em;
+
+	position: absolute;
+
+	width: 2em;
+
+	left:calc(50% - 1em)
+}
+
+.filter-attr-list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0em;
+    padding-left: 0rem;
+}
+
+
 .button {
-  display: inline-block;
-  padding: 0.5em 1.0em;
-  background: #EEE;
-  border: none;
-  border-radius: 7px;
-  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
-  color: #222;
-  font-family: sans-serif;
-  font-size: 16px;
-  text-shadow: 0 1px white;
-  cursor: pointer;
+	display: inline-block;
+	padding: 0.5em 1.0em;
+	background: #EEE;
+	border: none;
+	border-radius: 7px;
+	background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
+	color: #222;
+	font-family: sans-serif;
+	font-size: 16px;
+	text-shadow: 0 1px white;
+	cursor: pointer;
 }
 
 .button:hover {
-  background-color: #8CF;
-  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
-  color: #222;
+	background-color: #8CF;
+	text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+	color: #222;
 }
 
 .button:active,
 .button.is-checked {
-  background-color: #28F;
+	background-color: #28F;
 }
 
 .button.is-checked {
-  color: white;
-  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+	color: white;
+	text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
 }
 
 .button:active {
-  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+	box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
 }
 
 /* ---- button-group ---- */
 
 .button-group:after {
-  content: '';
-  display: block;
-  clear: both;
+	content: '';
+	display: block;
+	clear: both;
 }
 
 .button-group .button {
-  float: left;
-  border-radius: 0;
-  margin-left: 0;
-  margin-right: 1px;
+	float: left;
+	border-radius: 0;
+	margin-left: 0;
+	margin-right: 1px;
 }
 
 .button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
@@ -151,51 +190,48 @@
 /* ---- grid ---- */
 
 .grid {
-  background: #DDD;
-  max-width: 1200px;
+	background: #DDD;
+	max-width: 1200px;
 }
 
 /* clear fix */
 .grid:after {
-  content: '';
-  display: block;
-  clear: both;
+	content: '';
+	display: block;
+	clear: both;
 }
 
 /* ui group */
 
-.ui-group {
-  display: inline-block;
-}
 
 .ui-group h3 {
-  display: inline-block;
-  vertical-align: top;
-  line-height: 32px;
-  margin-right: 0.2em;
-  font-size: 16px;
+	display: inline-block;
+	vertical-align: top;
+	line-height: 32px;
+	margin-right: 0.2em;
+	font-size: 16px;
 }
 
 .ui-group .button-group {
-  display: inline-block;
-  margin-right: 20px;
+	display: inline-block;
+	margin-right: 20px;
 }
 
 /* color-shape */
 
 .color-shape {
-  width: 70px;
-  height: 70px;
-  margin: 5px;
-  float: left;
+	width: 70px;
+	height: 70px;
+	margin: 5px;
+	float: left;
 }
 
 .color-shape.round {
-  border-radius: 35px;
+	border-radius: 35px;
 }
 
 .color-shape.big.round {
-  border-radius: 75px;
+	border-radius: 75px;
 }
 
 .color-shape.red { background: red; }
@@ -206,9 +242,9 @@
 .color-shape.tall, .color-shape.big { height: 150px; }
 
 .color-shape .number {
-  text-align: center;
-  font-size: 24px;
-  margin: 22px 0 0;
+	text-align: center;
+	font-size: 24px;
+	margin: 22px 0 0;
 }
 </style>
 
@@ -290,315 +326,364 @@
 
 											</a>
 
-										<div class="flip"></div>
-										<a id="espanol" href="#googtrans(en|es)" class="lang-es lang-select spanish inactiveDot" data-lang="es" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
+											<div class="flip"></div>
+											<a id="espanol" href="#googtrans(en|es)" class="lang-es lang-select spanish inactiveDot" data-lang="es" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
 
-											<p class="language">Espa&ntilde;ol</p>
+												<p class="language">Espa&ntilde;ol</p>
 
+											</a>
+										</div>
+										<a class="loginButton" href="login.html"><p>LOG IN</p></a>
+									</ul>
+								</div>
+							</div>
+						</nav>
+					</header>
+				</div>
+				<img class="imgTop img-fluid" src="images/about.svg" alt="">
+
+				<section class="block10">
+					<div class="container-fluid heros">
+						<div id="Guide" class="landing-sec container-fluid">
+							<div class="guide-overlay container">
+								<a href="participants.html" tabindex="0"><h2 class="landing-sec-H"><i class="fas fa-arrow-circle-left"></i> Adult Show Cards</h2></a>
+
+								<div class="row">
+									<div class="col-lg-4 col-md-6 col-sm-12">
+
+
+
+										<div id="filters">
+
+											<div class="ui-group">
+											<div class="whiteBubble">
+												<p class="darkBlue text-center">Questionnaire Sections</p>
+												<div class="grayLine"></div>
+
+												<div class="filter-attr-list">
+													<div class="letter"><p>A</p></div>
+
+													<div class="letter"><p>B</p></div>
+
+
+													<div class="letter"><p>C</p></div>
+
+													<div class="letter"><p>D</p></div>
+
+													<div class="letter"><p>E</p></div>
+
+													<div class="letter"><p>F</p></div>
+
+													<div class="letter"><p>G</p></div>
+
+													<div class="letter"><p>H</p></div>
+
+													<div class="letter"><p>I</p></div>
+
+													<div class="letter"><p>J</p></div>
+
+													<div class="letter"><p>K</p></div>
+
+													<div class="letter"><p>L</p></div>
+
+													<div class="letter"><p>M</p></div>
+
+													<div class="letter"><p>N</p></div>
+												</div>
+
+
+											</div>
+
+										</div>
+
+
+											<div class="ui-group">
+												<h3>Color</h3>
+												<div class="button-group js-radio-button-group" data-filter-group="color">
+													<button class="button is-checked" data-filter="">any</button>
+													<button class="button" data-filter=".red">red</button>
+													<button class="button" data-filter=".blue">blue</button>
+													<button class="button" data-filter=".yellow">yellow</button>
+												</div>
+											</div>
+
+											<div class="ui-group">
+												<h3>Number</h3>
+												<div class="button-group js-radio-button-group" data-filter-group="size">
+													<button class="button is-checked" data-filter="">any</button>
+													<button class="button" data-filter="greaterThan50">> 50</button>
+													<button class="button" data-filter="even">even</button>
+												</div>
+											</div>
+
+										</div>
+
+									</div>
+
+									<div class="col-lg-8 col-md-6 col-sm-12">
+
+										<div class="grid">
+											<div class="color-shape small round red"><p class="number">19</p></div>
+											<div class="color-shape small round blue"><p class="number">56</p></div>
+											<div class="color-shape small round yellow"><p class="number">47</p></div>
+											<div class="color-shape small square red"><p class="number">38</p></div>
+											<div class="color-shape small square blue"><p class="number">2</p></div>
+											<div class="color-shape small square yellow"><p class="number">14</p></div>
+											<div class="color-shape wide round red"><p class="number">95</p></div>
+											<div class="color-shape wide round blue"><p class="number">46</p></div>
+											<div class="color-shape wide round yellow"><p class="number">94</p></div>
+											<div class="color-shape wide square red"><p class="number">67</p></div>
+											<div class="color-shape wide square blue"><p class="number">52</p></div>
+											<div class="color-shape wide square yellow"><p class="number">23</p></div>
+											<div class="color-shape big round red"><p class="number">48</p></div>
+											<div class="color-shape big round blue"><p class="number">31</p></div>
+											<div class="color-shape big round yellow"><p class="number">88</p></div>
+											<div class="color-shape big square red"><p class="number">47</p></div>
+											<div class="color-shape big square blue"><p class="number">16</p></div>
+											<div class="color-shape big square yellow"><p class="number">27</p></div>
+											<div class="color-shape tall round red"><p class="number">6</p></div>
+											<div class="color-shape tall round blue"><p class="number">91</p></div>
+											<div class="color-shape tall round yellow"><p class="number">75</p></div>
+											<div class="color-shape tall square red"><p class="number">36</p></div>
+											<div class="color-shape tall square blue"><p class="number">48</p></div>
+											<div class="color-shape tall square yellow"><p class="number">38</p></div>
+										</div>
+
+
+									</div>
+
+								</div>
+
+
+
+							</div>
+						</div>
+
+					</div>
+				</section>
+				<div class="contactUsOverlay"></div>
+
+				<section class="block5 study">
+
+					<div class="container heros">
+
+					</div>
+				</section>
+
+				<section class="block50">
+
+					<div id="Contact" class="landing-sec heros">
+
+
+					</div>
+
+					<div class="footer-img">
+						<div class="container-fluid">
+							<img class="" src="images/about-footer.svg" alt="Overlay">
+						</div>
+					</div>
+
+				</section>
+
+				<div id="slideOut2">
+
+					<div id="one" class="openTab" role="button" tabindex="0" aria-label="Contact">
+						<p class="plum"><i class="fas fa-envelope plum"></i>&nbsp;&nbsp;Contact Us</p>
+
+					</div>
+
+					<div class="modal-content">
+						<div class="modal-header">
+							<div class="closeThisPlease" id="close">
+								<button role="button" role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
+									&#10005;
+								</button>
+							</div>
+							<br>
+							<div class="d-flex justify-content-between align-items-center contactInfo">
+
+								<p class="whiteLarger">Contact Us</p>
+								<a href="participant-form.html"><p class="white update">Update Your Contact Info</p></a>
+							</div>
+
+						</div>
+						<div class="modal-body">
+							<div class="row topContent">
+								<div class="col-lg-8 col-md-8 col-sm-12">
+									<div class="text">
+										<p class="white">For general questions or comments, media inquiries, requests for materials, and/or technical comments or questions about the website, please fill out the form here and click the ‘Send Email’ button at the bottom. For details on the site’s use of this information, see Privacy/Disclaimer.</p>
+										<p class="white">Additional information for researchers  not government site is available on the National Addiction & HIV Data Archive Program  not government site website. Among other information this includes how to access PATH Study data and details about the study design.</p>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-12">
+									<div class="right">
+										<img src="images/email-icon.svg" class="img-fluid">
+										<p class="white text-center">A copy of this communication will be sent to you be email.</p>
+									</div>
+								</div>
+							</div>
+
+							<form method="post" data-form-title="CONTACT US" class="slideForm">
+
+								<div class="form-group">
+									<legend>Email</legend>
+									<label for="formControl1">Email</label>
+									<input id="formControl1" type="email" class="form-control required" tabindex="-1" aria-hidden="false" name="Email" data-form-field="Email" required>
+								</div>
+								<div class="form-group">
+									<legend>Affiliated company, institution, or organization</legend>
+									<label for="formControl2">Affiliated company, institution, or organization<span class="light"> (if you are not affiliated enter “None” or “NA”):</span></label>
+									<input type="text" id="formControl2" class="form-control" tabindex="-1" aria-hidden="false" name="company">
+								</div>
+
+								<div class="form-group">
+									<fieldset>
+										<label for="general-inquiry">Contact Category</label>
+										<div class="around2">
+											<div class="vertical">
+
+												<legend>Contact Category</legend>
+												<label class="radio-inline">
+													<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false" id="general-inquiry" checked required>Comment about the study
+												</label>
+											</div>
+											<div class="vertical">
+
+												<label class="radio-inline">
+													<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">problem with this website
+												</label>
+											</div>
+											<div class="vertical">
+
+												<label class="radio-inline">
+													<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">media inquiry
+												</label>
+											</div>
+											<div class="vertical">
+
+												<label class="radio-inline">
+													<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">other
+												</label>
+											</div>
+										</div>
+									</fieldset>
+								</div>
+								<div class="form-group">
+									<label for="formControl4">Message</label>
+									<textarea class="form-control" id="formControl4" tabindex="-1" aria-hidden="false" name="message" rows="4" data-form-field="Message"></textarea>
+								</div>
+
+								<div class="d-flex justify-content-between align-items-center printSend">
+									<div class="left">
+										<div class="form-check form-check-inline">
+											<legend>Print Copy</legend>
+											<input class="form-check-input position-static" type="checkbox" id="print-copy" value="" aria-label="Print Copy" tabindex="-1" aria-hidden="false">
+										</div>
+										<label for="print-copy"><p class="white">Check to print a copy for your records&nbsp;<i class="far fa-print"></i></p></label>
+									</div>
+
+									<button type="submit" class="btn btn-info button-outlined" id="sendMessage" tabindex="-1" aria-hidden="false">
+										<i class="fal fa-envelope brightBlue"></i>&nbsp;Send
+									</button>
+
+								</div>
+
+
+							</form>
+
+						</div>
+						<div class="modal-footer">
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="toast transparent-opacity" role="alert" aria-live="assertive" aria-atomic="true">
+					&#x2713; Thank you.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message sent successfully.
+				</div>
+
+
+								<div class="survey-footer">
+									<div class="one">
+
+										<div class="d-flex justify-content-between">
+
+											<p class="white">Accessibility</p>
+											<div class="flip2"></div>
+											<p class="white">Privacy/Disclaimer</p>
+											<div class="flip2"></div>
+											<a href="https://www.nih.gov/institutes-nih/nih-office-director/office-communications-public-liaison/freedom-information-act-office" target="_blank">
+											<p class="white">FOIA <i class="far fa-external-link-alt"></i></p>
+											</a>
+
+										</div>
+
+										<div class="d-flex justify-content-between align-items-center">
+											<p class="white" id="timeStamp">last updated: 8/10/2020</p>
+
+
+										</div>
+										<div class="d-flex justify-content-between align-items-center">
+											<a target="_blank" href="https://get.adobe.com/reader/"><p class="white">Download Acrobat Reader <i class="far fa-external-link-alt"></i></p></a>
+
+										</div>
+
+									</div>
+									<div class="two">
+										<a href="https://www.hhs.gov/" target="_blank" title="HHS">
+											<img src="images/" alt="HHS Logo">
+										</a>
+										<a href="https://www.nih.gov/" target="_blank" title="NIH">
+											<img src="images/nih.png" alt="NIH Logo">
+										</a>
+										<a href="https://www.drugabuse.gov/" target="_blank" title="NIH Drug">
+											<img src="images/drug.svg" alt="National Institute of Drug Abuse Logo">
+										</a>
+										<a href="http://www.fda.gov/" target="_blank" title="FDA">
+											<img src="images/fda.svg" alt="Food and Drug Administration Logo">
+										</a>
+
+										<a href="https://www.usa.gov/" target="_blank" title="USA.GOV">
+											<img src="images/us-gov.png" alt="USA.gov Logo">
 										</a>
 									</div>
-									<a class="loginButton" href="login.html"><p>LOG IN</p></a>
-								</ul>
-							</div>
-						</div>
-					</nav>
-				</header>
-			</div>
-			<img class="imgTop img-fluid" src="images/about.svg" alt="">
-
-			<section class="block10">
-				<div class="container-fluid heros">
-					<div id="Guide" class="landing-sec container-fluid">
-						<div class="guide-overlay container">
-							<a href="participants.html" tabindex="0"><h2 class="landing-sec-H"><i class="fas fa-arrow-circle-left"></i> Adult Show Cards</h2></a>
-
-							<div class="row">
-								<div class="col-lg-4 col-md-6 col-sm-12">
-									<div id="filters">
-
-  <div class="ui-group">
-    <h3>Color</h3>
-    <div class="button-group js-radio-button-group" data-filter-group="color">
-      <button class="button is-checked" data-filter="">any</button>
-      <button class="button" data-filter=".red">red</button>
-      <button class="button" data-filter=".blue">blue</button>
-      <button class="button" data-filter=".yellow">yellow</button>
-    </div>
-  </div>
-
-  <div class="ui-group">
-    <h3>Number</h3>
-    <div class="button-group js-radio-button-group" data-filter-group="size">
-      <button class="button is-checked" data-filter="">any</button>
-      <button class="button" data-filter="greaterThan50">> 50</button>
-      <button class="button" data-filter="even">even</button>
-    </div>
-  </div>
-
-</div>
-
 								</div>
 
-								<div class="col-lg-8 col-md-6 col-sm-12">
-
-									<div class="grid">
-  <div class="color-shape small round red"><p class="number">19</p></div>
-  <div class="color-shape small round blue"><p class="number">56</p></div>
-  <div class="color-shape small round yellow"><p class="number">47</p></div>
-  <div class="color-shape small square red"><p class="number">38</p></div>
-  <div class="color-shape small square blue"><p class="number">2</p></div>
-  <div class="color-shape small square yellow"><p class="number">14</p></div>
-  <div class="color-shape wide round red"><p class="number">95</p></div>
-  <div class="color-shape wide round blue"><p class="number">46</p></div>
-  <div class="color-shape wide round yellow"><p class="number">94</p></div>
-  <div class="color-shape wide square red"><p class="number">67</p></div>
-  <div class="color-shape wide square blue"><p class="number">52</p></div>
-  <div class="color-shape wide square yellow"><p class="number">23</p></div>
-  <div class="color-shape big round red"><p class="number">48</p></div>
-  <div class="color-shape big round blue"><p class="number">31</p></div>
-  <div class="color-shape big round yellow"><p class="number">88</p></div>
-  <div class="color-shape big square red"><p class="number">47</p></div>
-  <div class="color-shape big square blue"><p class="number">16</p></div>
-  <div class="color-shape big square yellow"><p class="number">27</p></div>
-  <div class="color-shape tall round red"><p class="number">6</p></div>
-  <div class="color-shape tall round blue"><p class="number">91</p></div>
-  <div class="color-shape tall round yellow"><p class="number">75</p></div>
-  <div class="color-shape tall square red"><p class="number">36</p></div>
-  <div class="color-shape tall square blue"><p class="number">48</p></div>
-  <div class="color-shape tall square yellow"><p class="number">38</p></div>
-</div>
-
-
-								</div>
-
-							</div>
-
-
-
-						</div>
-					</div>
-
-				</div>
-			</section>
-			<div class="contactUsOverlay"></div>
-
-			<section class="block5 study">
-
-				<div class="container heros">
-
-				</div>
-			</section>
-
-			<section class="block50">
-
-				<div id="Contact" class="landing-sec heros">
-
-
+				<div class="back-to-top">
+					<i class="far fa-angle-up"></i>
 				</div>
 
-				<div class="footer-img">
-					<div class="container-fluid">
-						<img class="" src="images/about-footer.svg" alt="Overlay">
-					</div>
-				</div>
-
-			</section>
-
-			<div id="slideOut2">
-
-				<div id="one" class="openTab" role="button" tabindex="0" aria-label="Contact">
-					<p class="plum"><i class="fas fa-envelope plum"></i>&nbsp;&nbsp;Contact Us</p>
-
-				</div>
-
-				<div class="modal-content">
-					<div class="modal-header">
-						<div class="closeThisPlease" id="close">
-							<button role="button" role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
-								&#10005;
-							</button>
-						</div>
-						<br>
-						<div class="d-flex justify-content-between align-items-center contactInfo">
-
-							<p class="whiteLarger">Contact Us</p>
-							<a href="participant-form.html"><p class="white update">Update Your Contact Info</p></a>
-						</div>
-
-					</div>
-					<div class="modal-body">
-						<div class="row topContent">
-							<div class="col-lg-8 col-md-8 col-sm-12">
-								<div class="text">
-									<p class="white">For general questions or comments, media inquiries, requests for materials, and/or technical comments or questions about the website, please fill out the form here and click the ‘Send Email’ button at the bottom. For details on the site’s use of this information, see Privacy/Disclaimer.</p>
-									<p class="white">Additional information for researchers  not government site is available on the National Addiction & HIV Data Archive Program  not government site website. Among other information this includes how to access PATH Study data and details about the study design.</p>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-12">
-								<div class="right">
-									<img src="images/email-icon.svg" class="img-fluid">
-									<p class="white text-center">A copy of this communication will be sent to you be email.</p>
-								</div>
-							</div>
-						</div>
-
-						<form method="post" data-form-title="CONTACT US" class="slideForm">
-
-							<div class="form-group">
-								<legend>Email</legend>
-								<label for="formControl1">Email</label>
-								<input id="formControl1" type="email" class="form-control required" tabindex="-1" aria-hidden="false" name="Email" data-form-field="Email" required>
-							</div>
-							<div class="form-group">
-								<legend>Affiliated company, institution, or organization</legend>
-								<label for="formControl2">Affiliated company, institution, or organization<span class="light"> (if you are not affiliated enter “None” or “NA”):</span></label>
-								<input type="text" id="formControl2" class="form-control" tabindex="-1" aria-hidden="false" name="company">
-							</div>
-
-							<div class="form-group">
-								<fieldset>
-									<label for="general-inquiry">Contact Category</label>
-									<div class="around2">
-										<div class="vertical">
-
-											<legend>Contact Category</legend>
-											<label class="radio-inline">
-												<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false" id="general-inquiry" checked required>Comment about the study
-											</label>
-										</div>
-										<div class="vertical">
-
-											<label class="radio-inline">
-												<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">problem with this website
-											</label>
-										</div>
-										<div class="vertical">
-
-											<label class="radio-inline">
-												<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">media inquiry
-											</label>
-										</div>
-										<div class="vertical">
-
-											<label class="radio-inline">
-												<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">other
-											</label>
-										</div>
-									</div>
-								</fieldset>
-							</div>
-							<div class="form-group">
-								<label for="formControl4">Message</label>
-								<textarea class="form-control" id="formControl4" tabindex="-1" aria-hidden="false" name="message" rows="4" data-form-field="Message"></textarea>
-							</div>
-
-							<div class="d-flex justify-content-between align-items-center printSend">
-								<div class="left">
-									<div class="form-check form-check-inline">
-										<legend>Print Copy</legend>
-										<input class="form-check-input position-static" type="checkbox" id="print-copy" value="" aria-label="Print Copy" tabindex="-1" aria-hidden="false">
-									</div>
-									<label for="print-copy"><p class="white">Check to print a copy for your records&nbsp;<i class="far fa-print"></i></p></label>
-								</div>
-
-								<button type="submit" class="btn btn-info button-outlined" id="sendMessage" tabindex="-1" aria-hidden="false">
-									<i class="fal fa-envelope brightBlue"></i>&nbsp;Send
-								</button>
-
-							</div>
-
-
-						</form>
-
-					</div>
-					<div class="modal-footer">
-
-					</div>
-
-				</div>
-
-			</div>
-
-			<div class="toast transparent-opacity" role="alert" aria-live="assertive" aria-atomic="true">
-				&#x2713; Thank you.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message sent successfully.
-			</div>
-
-			<div class="survey-footer">
-				<div class="one">
-
-					<div class="d-flex justify-content-between">
-						<p class="white">Site Map</p>
-						<div class="flip2"></div>
-						<p class="white">Accessibility</p>
-						<div class="flip2"></div>
-						<p class="white">Privacy/Disclaimer</p>
-						<div class="flip2"></div>
-						<a href="https://www.nih.gov/institutes-nih/nih-office-director/office-communications-public-liaison/freedom-information-act-office" target="_blank">
-						<p class="white">FOIA</p>
-						</a>
-
-					</div>
-
-					<div class="d-flex justify-content-between align-items-center">
-						<p class="white" id="timeStamp">last updated: 8/10/2020</p>
-
-
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<a target="_blank" href="https://get.adobe.com/reader/"><p class="white">Download Acrobat Reader</p></a>
-
-					</div>
-
-				</div>
-				<div class="two">
-					<a href="https://www.hhs.gov/" target="_blank" title="HHS">
-						<img src="images/hhs.png" alt="HHS Logo">
-					</a>
-					<a href="https://www.nih.gov/" target="_blank" title="NIH">
-						<img src="images/nih.png" alt="NIH Logo">
-					</a>
-					<a href="https://www.drugabuse.gov/" target="_blank" title="NIH Drug">
-						<img src="images/drug.svg" alt="National Institute of Drug Abuse Logo">
-					</a>
-					<a href="http://www.fda.gov/" target="_blank" title="FDA">
-						<img src="images/fda.svg" alt="Food and Drug Administration Logo">
-					</a>
-				</div>
-			</div>
-
-			<div class="back-to-top">
-				<i class="far fa-angle-up"></i>
-			</div>
-
-<!--
-			<div class="menu-buttons-floating tabletSize">
+				<!--
+				<div class="menu-buttons-floating tabletSize">
 				<ul class="menu-buttons-floating-list">
 
-					<li tabindex="0" data-target="#Guide"><i class="far fa-list"></i></li>
-					<li tabindex="0" data-target="#FAQ"><i class="fas fa-file-alt"></i></li>
-					<li tabindex="0" data-target="#Contact"><i class="fas fa-info-circle"></i></li>
-				</ul>
-			</div>
-
-
-			<div class="menu-buttons-768 tabletSize">
-				<ul class="menu-buttons-768-list">
-
-					<li tabindex="0" data-target="#Guide"><i class="far fa-list"></i></li>
-					<li tabindex="0" data-target="#FAQ"><i class="fas fa-file-alt"></i></li>
-					<li tabindex="0" data-target="#Contact"><i class="fas fa-info-circle"></i></li>
-					<li tabindex="0" data-target="#Home"><i class="fas fa-angle-up"></i></li>
-				</ul>
-			</div> -->
-
+				<li tabindex="0" data-target="#Guide"><i class="far fa-list"></i></li>
+				<li tabindex="0" data-target="#FAQ"><i class="fas fa-file-alt"></i></li>
+				<li tabindex="0" data-target="#Contact"><i class="fas fa-info-circle"></i></li>
+			</ul>
 		</div>
-		<!-- <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
-		<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="js/landing.js"></script> -->
-		<!-- <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&amp;languages=en,es"></script> -->
-		<!-- <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+
+
+		<div class="menu-buttons-768 tabletSize">
+		<ul class="menu-buttons-768-list">
+
+		<li tabindex="0" data-target="#Guide"><i class="far fa-list"></i></li>
+		<li tabindex="0" data-target="#FAQ"><i class="fas fa-file-alt"></i></li>
+		<li tabindex="0" data-target="#Contact"><i class="fas fa-info-circle"></i></li>
+		<li tabindex="0" data-target="#Home"><i class="fas fa-angle-up"></i></li>
+	</ul>
+</div> -->
+
+</div>
+<!-- <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/landing.js"></script> -->
+<!-- <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&amp;languages=en,es"></script> -->
+<!-- <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
 
 
 
