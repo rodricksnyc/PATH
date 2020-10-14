@@ -64,8 +64,9 @@
 	})
 	</script>
 
-	<!-- <script type="text/javascript" src="js/index.js"></script> -->
+
 	<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/filter.js"></script>
 	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
 
 	<script type="text/javascript">
@@ -197,10 +198,60 @@
 
 							<div class="row">
 								<div class="col-lg-4 col-md-6 col-sm-12">
+									<div id="filters">
+
+  <div class="ui-group">
+    <h3>Color</h3>
+    <div class="button-group js-radio-button-group" data-filter-group="color">
+      <button class="button is-checked" data-filter="">any</button>
+      <button class="button" data-filter=".red">red</button>
+      <button class="button" data-filter=".blue">blue</button>
+      <button class="button" data-filter=".yellow">yellow</button>
+    </div>
+  </div>
+
+  <div class="ui-group">
+    <h3>Number</h3>
+    <div class="button-group js-radio-button-group" data-filter-group="size">
+      <button class="button is-checked" data-filter="">any</button>
+      <button class="button" data-filter="greaterThan50">> 50</button>
+      <button class="button" data-filter="even">even</button>
+    </div>
+  </div>
+
+</div>
 
 								</div>
 
 								<div class="col-lg-8 col-md-6 col-sm-12">
+
+									<div class="grid">
+  <div class="color-shape small round red"><p class="number">19</p></div>
+  <div class="color-shape small round blue"><p class="number">56</p></div>
+  <div class="color-shape small round yellow"><p class="number">47</p></div>
+  <div class="color-shape small square red"><p class="number">38</p></div>
+  <div class="color-shape small square blue"><p class="number">2</p></div>
+  <div class="color-shape small square yellow"><p class="number">14</p></div>
+  <div class="color-shape wide round red"><p class="number">95</p></div>
+  <div class="color-shape wide round blue"><p class="number">46</p></div>
+  <div class="color-shape wide round yellow"><p class="number">94</p></div>
+  <div class="color-shape wide square red"><p class="number">67</p></div>
+  <div class="color-shape wide square blue"><p class="number">52</p></div>
+  <div class="color-shape wide square yellow"><p class="number">23</p></div>
+  <div class="color-shape big round red"><p class="number">48</p></div>
+  <div class="color-shape big round blue"><p class="number">31</p></div>
+  <div class="color-shape big round yellow"><p class="number">88</p></div>
+  <div class="color-shape big square red"><p class="number">47</p></div>
+  <div class="color-shape big square blue"><p class="number">16</p></div>
+  <div class="color-shape big square yellow"><p class="number">27</p></div>
+  <div class="color-shape tall round red"><p class="number">6</p></div>
+  <div class="color-shape tall round blue"><p class="number">91</p></div>
+  <div class="color-shape tall round yellow"><p class="number">75</p></div>
+  <div class="color-shape tall square red"><p class="number">36</p></div>
+  <div class="color-shape tall square blue"><p class="number">48</p></div>
+  <div class="color-shape tall square yellow"><p class="number">38</p></div>
+</div>
+
 
 								</div>
 
