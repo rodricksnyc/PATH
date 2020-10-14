@@ -25,38 +25,6 @@
 	<script>
 	$(document).ready(function () {
 
-		var about = function() {
-			window.location.href="about.html"
-		}
-
-		$('.goToAbout').keypress(
-			about
-
-		).click(
-			about
-		);
-
-		var participants = function() {
-			window.location.href="participants.html"
-		}
-
-		$('.goToParticipants').keypress(
-			participants
-
-		).click(
-			participants
-		);
-
-		var researchers = function() {
-			window.location.href="researchers.html"
-		}
-
-		$('.goToParticipants').keypress(
-			researchers
-
-		).click(
-			researchers
-		);
 	//IE message
 
 	var version = detectIE();
@@ -225,7 +193,6 @@
 
 							<ul class="acrossNavbar navbar-nav d-block d-lg-flex ml-auto text-right d-flex align-items-center">
 
-
 								<div class="d-flex justify-content-center align-items-center">
 
 									<a id="ingles" href="" class="english activeDot notranslate" data-lang="en" tabindex="0" aria-hidden="false" role="button" translate="no">
@@ -384,21 +351,30 @@
 						<p class="textBlue"><span class="strong">The Population Assessment of Tobacco and Health (PATH) Study</span> is a national longitudinal study of tobacco use and how it affects the health of people in the United States. People from all over the country take part in this study. The PATH Study, which started in 2013, is one of the first large tobacco research efforts undertaken by the National Institutes of Health (NIH) and the Food and Drug Administration (FDA) since Congress gave FDA authority to regulate tobacco products in 2009.</p>
 						<div class="menu-buttons noMargin">
 							<ul class="menu-buttons-list">
-								<li tabindex="0" class="goToAbout">
+						<a href="about.html" tabindex="0">
+
 									<div class="limeCircle"><i class="fas fa-info-circle blueColor"></i></div>
 									<p class="zero">About the Study</p>
 									<i class="far fa-arrow-right showHover"></i>
-								</li>
-								<li tabindex="0" class="goToParticipants">
+
+							</a>
+								<a href="participants.html" tabindex="0">
+
 									<div class="limeCircle middle"><i class="fas fa-user-friends blueColor"></i></div>
 									<p>Study Participants</p>
 									<i class="far fa-arrow-right showHover"></i>
-								</li>
-								<li tabindex="0" class="goToResearchers">
-									<div class="limeCircle"><i class="fas fa-book-reader blueColor"></i></div>
+
+							</a>
+								<a href="researchers.html" tabindex="0">
+
+
+									<div class="limeCircle">
+									<i class="fas fa-book-reader blueColor"></i></div>
 									<p>Researchers</p>
 									<i class="far fa-arrow-right showHover"></i>
-								</li>
+
+
+							</a>
 							</ul>
 						</div>
 

@@ -1539,17 +1539,17 @@ h3.black{
 
 
 
-.menu-buttons.noMargin .menu-buttons-list li:hover .showHover{
+.menu-buttons.noMargin .menu-buttons-list a:hover .showHover{
   display: block !important
 }
-.menu-buttons.noMargin .menu-buttons-list li:hover{
+.menu-buttons.noMargin .menu-buttons-list a:hover{
   transform: scale(1.1);
 }
-.menu-buttons.noMargin .menu-buttons-list li:hover .lime{
+.menu-buttons.noMargin .menu-buttons-list a:hover .lime{
   transform: scale(1.1);
 }
 
-.menu-buttons.noMargin .menu-buttons-list li:hover .lime i{
+.menu-buttons.noMargin .menu-buttons-list a:hover .lime i{
   transform: scale(1.1);
 }
 
@@ -2232,7 +2232,7 @@ height: 30px;
   margin-top:-10px;
 }
 
-.menu-buttons-list li {
+.menu-buttons-list a {
   font-size: 24px;
   font-weight: 600;
   color: white;
@@ -2256,7 +2256,7 @@ height: 30px;
   padding-top:45px;
 }
 
-.menu-buttons.noMargin .menu-buttons-list li {
+.menu-buttons.noMargin .menu-buttons-list a {
   font-size: 24px;
   font-weight: 600;
   color: white;
@@ -5485,7 +5485,7 @@ button.close {
   .menu-buttons.noMargin .menu-buttons-list {
     flex-direction: column;
   }
-  .menu-buttons.noMargin .menu-buttons-list li{
+  .menu-buttons.noMargin .menu-buttons-list a{
     width:100% !important;
     margin-bottom:1em;
 
@@ -5500,7 +5500,7 @@ button.close {
   }
 
 
-  .menu-buttons.noMargin .menu-buttons-list li p {
+  .menu-buttons.noMargin .menu-buttons-list a p {
     margin-top: 0;
     margin-bottom: 0rem;
   }
@@ -5921,7 +5921,7 @@ button.close {
 
 @media (max-width: 767px) {
 
-  .menu-buttons.noMargin .menu-buttons-list li p {
+  .menu-buttons.noMargin .menu-buttons-list a p {
 
     font-size: 20px;
 }
@@ -7222,7 +7222,7 @@ body{
     padding: 0em;
 }
 
-  .menu-buttons.noMargin .menu-buttons-list li p {
+  .menu-buttons.noMargin .menu-buttons-list a p {
     font-size: 15px;
     margin-left: -.4em;
 }

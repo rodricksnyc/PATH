@@ -330,38 +330,72 @@ $(".block50 a").on('focusout', function() {
 
 	})
 
-	var about = function() {
-		window.location.href="about.html"
+
+
+	$('.back-to-top').click(() => {
+		scrollfn("#overview");
+	})
+
+
+	$(window).scroll(function () {
+		((window.pageYOffset || document.documentElement.scrollTop) > 100) ? $('.back-to-top').css({ opacity: 1, visibility: "visible" }) : $('.back-to-top').css({ opacity: 0, visibility: "hidden" });
+	});
+
+	function scrollfn(e) {
+		let $target = $(e),
+		offSet = e === "#overview" ? 0 : $target.offset().top;
+		$('html, body').stop().animate({
+			'scrollTop': offSet
+		}, 1200, 'swing');
+
+
 	}
 
-	$('.goToAbout').keypress(
-		about
+	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('click', function (e) {
 
-	).click(
-		about
-	);
+		e.preventDefault();
+		scrollfn($(this).attr('data-target'));
+	});
 
-	var participants = function() {
-		window.location.href="participants.html"
-	}
+	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('keypress', function (e) {
 
-	$('.goToParticipants').keypress(
-		participants
+		e.preventDefault();
+		scrollfn($(this).attr('data-target'));
+	});
 
-	).click(
-		participants
-	);
 
-	var researchers = function() {
-		window.location.href="researchers.html"
-	}
-
-	$('.goToParticipants').keypress(
-		researchers
-
-	).click(
-		researchers
-	);
+	// var about = function() {
+	// 	window.location.href="about.html"
+	// }
+	//
+	// $('.goToAbout').keypress(
+	// 	about
+	//
+	// ).click(
+	// 	about
+	// );
+	//
+	// var participants = function() {
+	// 	window.location.href="participants.html"
+	// }
+	//
+	// $('.goToParticipants').keypress(
+	// 	participants
+	//
+	// ).click(
+	// 	participants
+	// );
+	//
+	// var researchers = function() {
+	// 	window.location.href="researchers.html"
+	// }
+	//
+	// $('.goToParticipants').keypress(
+	// 	researchers
+	//
+	// ).click(
+	// 	researchers
+	// );
 
 
 
@@ -574,36 +608,6 @@ if ($(document).innerWidth() <= 767) {
 
 }
 
-$('.back-to-top').click(() => {
-	scrollfn("#overview");
-})
-
-
-$(window).scroll(function () {
-	((window.pageYOffset || document.documentElement.scrollTop) > 100) ? $('.back-to-top').css({ opacity: 1, visibility: "visible" }) : $('.back-to-top').css({ opacity: 0, visibility: "hidden" });
-});
-
-function scrollfn(e) {
-	let $target = $(e),
-	offSet = e === "#overview" ? 0 : $target.offset().top;
-	$('html, body').stop().animate({
-		'scrollTop': offSet
-	}, 1200, 'swing');
-
-
-}
-
-$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('click', function (e) {
-
-	e.preventDefault();
-	scrollfn($(this).attr('data-target'));
-});
-
-$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('keypress', function (e) {
-
-	e.preventDefault();
-	scrollfn($(this).attr('data-target'));
-});
 
 
 
