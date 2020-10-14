@@ -99,6 +99,8 @@ font-weight: 400;
 }
 
 
+
+
 .middleLink{
 
   width:19em;
@@ -2812,6 +2814,7 @@ h1.white.sentMessage {
   height: 36px;
 }
 
+
 .flip2 {
   background: white;
   writing-mode: tb-rl;
@@ -5321,6 +5324,17 @@ button.close {
   }
 }
 
+
+@media (min-width:1025px){
+  .two a:first-child img {
+      height: 50px;
+  }
+
+  .two a:last-child img {
+      height: 50px;
+  }
+
+}
 
 
 @media (max-width:1024px) and (min-width:992px) {
