@@ -63,6 +63,16 @@ font-weight: 400;
 .footerModal .modal-dialog {
   max-width: 950px;
   margin: 1.75rem auto;
+  height: auto;
+overflow-y: initial !important;
+}
+
+.footerModal .modal-body {
+
+    overflow-y: auto;
+    max-height: 500px;
+    height: auto;
+
 }
 
 .footerModal h4 {
@@ -3399,11 +3409,11 @@ label.togglePassword {
   color:#0069AA;
   font-weight:900 !important
 }
-
+/* 
 ::-webkit-scrollbar {
-  width: 0px;  /* Remove scrollbar space */
-  background: transparent;  /* Optional: just make scrollbar invisible */
-}
+  width: 0px;
+  background: transparent;
+} */
 
 
 #slideOut2 button.close {
