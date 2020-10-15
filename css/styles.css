@@ -3409,11 +3409,17 @@ label.togglePassword {
   color:#0069AA;
   font-weight:900 !important
 }
-/* 
+
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
-} */
+}
+
+
+.footerModal ::-webkit-scrollbar {
+  width: 8px;
+  background: #ababab
+}
 
 
 #slideOut2 button.close {
