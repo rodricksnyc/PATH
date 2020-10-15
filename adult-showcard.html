@@ -115,6 +115,11 @@
 
 }
 
+.letter.is-checked{
+	background: #A3E56A;
+	font-weight:600
+}
+
 .letter.number{
 	width:auto;
 	height:auto;
@@ -358,11 +363,11 @@ padding: .6em;
 												<div class="grayLine"></div>
 
 												<div class="ui-group">
-													<div class="js-radio-button-group" data-filter-group="letter">
+													<div class="firstGroup" data-filter-group="letter">
 														<div class="filter-attr-list button-group">
 
 
-															<div class="letter" data-filter=".a"><p>A</p></div>
+															<div class="letter is-checked" data-filter=".a"><p>A</p></div>
 
 															<div class="letter" data-filter=".b"><p>B</p></div>
 
@@ -398,7 +403,7 @@ padding: .6em;
 												<h4 class="landing-sec-H text-center smaller mt-3 mb-3">TABLE OF CONTENTS</h4>
 
 												<div class="ui-group">
-													<div class="js-radio-button-group" data-filter-group="number">
+													<div class="secondGroup" data-filter-group="number">
 
 														<div class="filter-attr-list button-group">
 															<div class="letter number" data-filter=".a-1"><p>A-1</p></div>
@@ -522,24 +527,49 @@ padding: .6em;
 															<p>4. Asian Indian</p>
 															<p>5. Chinese</p>
 															<p>6. Filipino</p>
-															<p>7. </p>
-															<p></p>
-															<p></p>
-															<p></p>
-															<p></p>
-															<p></p>
+															<p>7. Japanese</p>
+															<p>8. Korean</p>
+															<p>9. Vietnamese</p>
+															<p>10. Other Asian</p>
+															<p>11. Native Hawaiian</p>
+															<p>12. Guamanian or Chamorro </p>
+															<p>13. Samoan</p>
+															<p>14. Other Pacific Islander</p>
 
-
-															<p></p>
-
- 
 														</div>
 
 													</div>
 												</div>
 
 												<div class="letter-number a a-3">
-														<h2>33333 A</h2>
+													<div class="startBox">
+														<div class="label"><h2>A-3</h2></div>
+														<div class="rBorder d-flex flex-column">
+															<p>1. Yes, now on active duty</p>
+															<p>2. Yes, on active duty in the past, but not now</p>
+															<p>3. No, training for Reserves or National Guard only</p>
+
+															<p>4. No, never served in the military </p>
+
+														</div>
+
+													</div>
+												</div>
+
+												<div class="letter-number a a-4">
+													<div class="startBox">
+														<div class="label"><h2>A-4</h2></div>
+														<div class="rBorder d-flex flex-column">
+															<p>1. Yes, born in the United States</p>
+															<p>2. Yes, born in Puerto Rico, Guam, the U.S. Virgin Islands, or Northern Marianas</p>
+															<p>3. Yes, born abroad of U.S. citizen parent or parents</p>
+
+															<p>4. Yes, U.S. citizen by naturalization</p>
+															<p>5. No, not a U.S. citizen</p>
+
+														</div>
+
+													</div>
 												</div>
 
 
