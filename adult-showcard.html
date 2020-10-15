@@ -99,112 +99,89 @@
 
 .letter{
 
-    color: #00559b !important;
-    background: #d9f0fe;
+	color: #00559b !important;
+	background: #d9f0fe;
 
-    border-radius: 50%;
+	border-radius: 50%;
 
-    border-radius: 50%;
+	border-radius: 50%;
 
-    display: inline-block;
-    height: 2.5em;
-    width: 2.5em;
+	display: inline-block;
+	height: 2.5em;
+	width: 2.5em;
 
-    position: relative;
-		margin:1em .5em;
+	position: relative;
+	margin:1em .5em;
 
 }
+
+.letter.number{
+	width:auto;
+	height:auto;
+	padding: 0em 2em;
+	border-radius: .6rem;
+
+
+}
+
+.letter-number {
+	border-bottom:1px solid #004F7F;
+	width:100%;
+}
+
+.letter-number:last-child{
+	border-bottom:none
+}
+
+
 .letter:hover{
 	cursor: grab;
 }
 
 .letter p {
-    font-size: 1.2em;
-    /* position: absolute;
-    width: auto;
-    top: calc(50% - .72em);
+	font-size: 1.2em;
+	/* position: absolute;
+	width: auto;
+	top: calc(50% - .72em);
 
-		left:32%; */
+	left:32%; */
 
-		display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    text-decoration: none;
-		height: 35px;
-width: 35px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	height: 35px;
+	width: 35px;
+
+
+}
+
+.letter.number p{
+	width:auto;
+
 
 
 }
 
 .filter-attr-list {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 1em;
-    padding-left: 0rem;
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	margin-left: 0em;
+	padding-left: 0rem;
 }
 
 
-.button {
-	display: inline-block;
-	padding: 0.5em 1.0em;
-	background: #EEE;
-	border: none;
-	border-radius: 7px;
-	background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
-	color: #222;
-	font-family: sans-serif;
-	font-size: 16px;
-	text-shadow: 0 1px white;
-	cursor: pointer;
+.startBox{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
-.button:hover {
-	background-color: #8CF;
-	text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
-	color: #222;
-}
 
-.button:active,
-.button.is-checked {
-	background-color: #28F;
-}
 
-.button.is-checked {
-	color: white;
-	text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
-}
-
-.button:active {
-	box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
-}
-
-/* ---- button-group ---- */
-
-.button-group:after {
-	content: '';
-	display: block;
-	clear: both;
-}
-
-.button-group .button {
-	float: left;
-	border-radius: 0;
-	margin-left: 0;
-	margin-right: 1px;
-}
-
-.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
-.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
-
-/* ---- grid ---- */
-
-.grid {
-	background: #DDD;
-	max-width: 1200px;
-}
 
 /* clear fix */
 .grid:after {
@@ -213,51 +190,39 @@ width: 35px;
 	clear: both;
 }
 
-/* ui group */
 
 
-.ui-group h3 {
-	display: inline-block;
-	vertical-align: top;
-	line-height: 32px;
-	margin-right: 0.2em;
-	font-size: 16px;
+.topBlue {
+	background: #B2E1FF;
+	border-bottom:1px solid #004F7F;
 }
 
-.ui-group .button-group {
-	display: inline-block;
-	margin-right: 20px;
+.rBorder {
+	border-left:1px solid #004F7F;
+	padding:2em 1em;
 }
 
-/* color-shape */
-
-.color-shape {
-	width: 70px;
-	height: 70px;
-	margin: 5px;
-	float: left;
+.label{
+	width:75px;
+	display: flex;
+justify-content: center;
 }
 
-.color-shape.round {
-	border-radius: 35px;
+.rBorder p {
+	color:black;
+	margin-bottom:0em
+
 }
 
-.color-shape.big.round {
-	border-radius: 75px;
+.topBlue .rBorder{
+	padding:1em
 }
 
-.color-shape.red { background: red; }
-.color-shape.blue { background: blue; }
-.color-shape.yellow { background: yellow; }
-
-.color-shape.wide, .color-shape.big { width: 150px; }
-.color-shape.tall, .color-shape.big { height: 150px; }
-
-.color-shape .number {
-	text-align: center;
-	font-size: 24px;
-	margin: 22px 0 0;
+.outerBorder{
+	border:1px solid #004F7F;
 }
+
+
 </style>
 
 <body>
@@ -365,113 +330,240 @@ width: 35px;
 								<div class="row">
 									<div class="col-lg-4 col-md-6 col-sm-12">
 
-
-
 										<div id="filters">
 
-											<div class="ui-group">
 											<div class="whiteBubble">
 												<p class="darkBlue text-center">Questionnaire Sections</p>
 												<div class="grayLine"></div>
-												<div class="js-radio-button-group" data-filter-group="color">
-												<div class="filter-attr-list">
-													<div class="letter" data-filter=".a"><p>A</p></div>
 
-													<div class="letter" data-filter=".b"><p>B</p></div>
+												<div class="ui-group">
+													<div class="js-radio-button-group" data-filter-group="letter">
+														<div class="filter-attr-list button-group">
 
 
-													<div class="letter" data-filter=".c"><p>C</p></div>
+															<div class="letter" data-filter=".a"><p>A</p></div>
 
-													<div class="letter"><p>D</p></div>
+															<div class="letter" data-filter=".b"><p>B</p></div>
 
-													<div class="letter"><p>E</p></div>
 
-													<div class="letter"><p>F</p></div>
+															<div class="letter" data-filter=".c"><p>C</p></div>
 
-													<div class="letter"><p>G</p></div>
+															<div class="letter" data-filter=".d"><p>D</p></div>
 
-													<div class="letter"><p>H</p></div>
+															<div class="letter" data-filter=".e"><p>E</p></div>
 
-													<div class="letter"><p>I</p></div>
+															<div class="letter" data-filter=".f"><p>F</p></div>
 
-													<div class="letter"><p>J</p></div>
+															<div class="letter" data-filter=".g"><p>G</p></div>
 
-													<div class="letter"><p>K</p></div>
+															<div class="letter" data-filter=".h"><p>H</p></div>
 
-													<div class="letter"><p>L</p></div>
+															<div class="letter" data-filter=".i"><p>I</p></div>
 
-													<div class="letter"><p>M</p></div>
+															<div class="letter" data-filter=".j"><p>J</p></div>
 
-													<div class="letter"><p>N</p></div>
+															<div class="letter" data-filter=".k"><p>K</p></div>
+
+															<div class="letter" data-filter=".l"><p>L</p></div>
+
+															<div class="letter" data-filter=".m"><p>M</p></div>
+
+															<div class="letter" data-filter=".n"><p>N</p></div>
+														</div>
+
+													</div>
 												</div>
-
-											</div>
 
 												<h4 class="landing-sec-H text-center smaller mt-3 mb-3">TABLE OF CONTENTS</h4>
 
+												<div class="ui-group">
+													<div class="js-radio-button-group" data-filter-group="number">
+
+														<div class="filter-attr-list button-group">
+															<div class="letter number" data-filter=".a-1"><p>A-1</p></div>
+
+															<div class="letter number" data-filter=".a-2"><p>A-2</p></div>
+															<div class="letter number" data-filter=".a-3"><p>A-3</p></div>
+
+															<div class="letter number" data-filter=".a-4"><p>A-4</p></div>
+															<div class="letter number" data-filter=".a-5"><p>A-5</p></div>
+
+															<div class="letter number" data-filter=".a-6"><p>A-6</p></div>
+															<div class="letter number" data-filter=".a-7"><p>A-7</p></div>
+
+															<div class="letter number" data-filter=".a-8"><p>A-8</p></div>
+															<div class="letter number" data-filter=".a-9"><p>A-9</p></div>
+
+															<div class="letter number" data-filter=".a-10"><p>A-10</p></div>
+															<div class="letter number" data-filter=".a-11"><p>A-11</p></div>
+
+															<div class="letter number" data-filter=".a-12"><p>A-12</p></div>
+															<div class="letter number" data-filter=".a-13"><p>A-13</p></div>
+
+															<div class="letter number" data-filter=".a-14"><p>A-14</p></div>
+															<div class="letter number" data-filter=".a-15"><p>A-15</p></div>
+
+															<div class="letter number" data-filter=".a-16"><p>A-16</p></div>
+															<div class="letter number" data-filter=".a-17"><p>A-17</p></div>
+
+															<div class="letter number" data-filter=".a-18"><p>A-18</p></div>
+															<div class="letter number" data-filter=".a-19"><p>A-19</p></div>
+
+															<div class="letter number" data-filter=".a-20"><p>A-20</p></div>
+
+															<div class="letter number" data-filter=".a-21"><p>A-21</p></div>
+
+															<div class="letter number" data-filter=".a-22"><p>A-22</p></div>
+															<div class="letter number" data-filter=".a-23"><p>A-23</p></div>
+
+															<div class="letter number" data-filter=".a-24"><p>A-24</p></div>
+															<div class="letter number" data-filter=".a-25"><p>A-25</p></div>
+
+															<div class="letter number" data-filter=".a-26"><p>A-26</p></div>
+															<div class="letter number" data-filter=".a-27"><p>A-27</p></div>
+
+															<div class="letter number" data-filter=".a-28"><p>A-28</p></div>
+															<div class="letter number" data-filter=".a-29"><p>A-29</p></div>
+
+															<div class="letter number" data-filter=".a-30"><p>A-30</p></div>
+
+															<div class="letter number" data-filter=".a-31"><p>A-31</p></div>
+
+															<div class="letter number" data-filter=".a-32"><p>A-32</p></div>
+															<div class="letter number" data-filter=".a-33"><p>A-33</p></div>
+
+															<div class="letter number" data-filter=".a-34"><p>A-34</p></div>
+															<div class="letter number" data-filter=".a-35"><p>A-35</p></div>
+
+															<div class="letter number" data-filter=".a-36"><p>A-36</p></div>
+															<div class="letter number" data-filter=".a-37"><p>A-37</p></div>
+
+															<div class="letter number" data-filter=".a-38"><p>A-38</p></div>
+															<div class="letter number" data-filter=".a-39"><p>A-39</p></div>
+
+															<div class="letter number" data-filter=".a-40"><p>A-40</p></div>
+
+															<div class="letter number" data-filter=".a-41"><p>A-41</p></div>
+
+															<div class="letter number" data-filter=".a-42"><p>A-42</p></div>
+															<div class="letter number" data-filter=".a-43"><p>A-43</p></div>
 
 
+														</div>
+													</div>
 
-											</div>
-
-										</div>
-
-
-											<div class="ui-group">
-												<h3>Color</h3>
-												<div class="button-group js-radio-button-group" data-filter-group="color">
-													<button class="button is-checked" data-filter="">any</button>
-													<button class="button" data-filter=".red">red</button>
-													<button class="button" data-filter=".blue">blue</button>
-													<button class="button" data-filter=".yellow">yellow</button>
 												</div>
+
+
 											</div>
 
-											<div class="ui-group">
-												<h3>Number</h3>
-												<div class="button-group js-radio-button-group" data-filter-group="size">
-													<button class="button is-checked" data-filter="">any</button>
-													<button class="button" data-filter="greaterThan50">> 50</button>
-													<button class="button" data-filter="even">even</button>
-												</div>
-											</div>
 
 										</div>
 
 									</div>
 
 									<div class="col-lg-8 col-md-6 col-sm-12">
+										<div class="outerBorder">
+										<div class="startBox topBlue">
+											<div class="label"><h1>A</h1></div>
+											<div class="rBorder d-flex flex-column">
+												<h1>Show Card</h1>
+											</div>
+
+										</div>
 
 										<div class="grid">
-											<div class="color-shape small round red"><p class="number">19</p></div>
-											<div class="color-shape small round blue"><p class="number">56</p></div>
-											<div class="color-shape small round yellow"><p class="number">47</p></div>
-											<div class="color-shape small square red"><p class="number">38</p></div>
-											<div class="color-shape small square blue"><p class="number">2</p></div>
-											<div class="color-shape small square yellow"><p class="number">14</p></div>
-											<div class="color-shape wide round red"><p class="number">95</p></div>
-											<div class="color-shape wide round blue"><p class="number">46</p></div>
-											<div class="color-shape wide round yellow"><p class="number">94</p></div>
-											<div class="color-shape wide square red"><p class="number">67</p></div>
-											<div class="color-shape wide square blue"><p class="number">52</p></div>
-											<div class="color-shape wide square yellow"><p class="number">23</p></div>
-											<div class="color-shape big round red"><p class="number">48</p></div>
-											<div class="color-shape big round blue"><p class="number">31</p></div>
-											<div class="color-shape big round yellow"><p class="number">88</p></div>
-											<div class="color-shape big square red"><p class="number">47</p></div>
-											<div class="color-shape big square blue"><p class="number">16</p></div>
-											<div class="color-shape big square yellow"><p class="number">27</p></div>
-											<div class="color-shape tall round red"><p class="number">6</p></div>
-											<div class="color-shape tall round blue"><p class="number">91</p></div>
-											<div class="color-shape tall round yellow"><p class="number">75</p></div>
-											<div class="color-shape tall square red"><p class="number">36</p></div>
-											<div class="color-shape tall square blue"><p class="number">48</p></div>
-											<div class="color-shape tall square yellow"><p class="number">38</p></div>
-										</div>
+											<div class="outer">
+
+												<div class="letter-number a a-1">
+														<div class="startBox">
+															<div class="label"><h1>A-1</h1></div>
+															<div class="rBorder d-flex flex-column">
+																<p>1. No, not of Hispanic, Latino or Latina, or Spanish origin</p>
+																<p>2. Yes, Mexican, Mexican American, Chicano or Chicana</p>
+																<p>3. Yes, Puerto Rican</p>
+																<p>4. Yes, Cuban</p>
+																<p>Yes, another Hispanic, Latino or Latina, or Spanish origin</p>
+ 
+															</div>
+
+														</div>
+												</div>
+
+												<div class="letter-number a a-2">
+													<div class="startBox">
+														<div class="label"><h1>A-2</h1></div>
+														<div class="rBorder d-flex flex-column">
+															<p>1. White</p>
+															<p>2. Black or African American</p>
+															<p>3. American Indian or Alaska Native</p>
+
+															<p>4. Asian Indian</p>
+															<p>5. Chinese</p>
+															<p>6. </p>
+															<p></p>
+															<p></p>
+															<p></p>
+															<p></p>
+															<p></p>
+															<p></p>
+
+
+															<p></p>
+
+ 
+														</div>
+
+													</div>
+												</div>
+
+												<div class="letter-number a a-3">
+														<h1>33333 A</h1>
+												</div>
 
 
 									</div>
 
+
+											<div class="outer">
+
+
+												<div class="letter-number b b-1">
+
+													<h1>111 BBBBBBB</h1>
+
+												</div>
+
+												<div class="letter-number b b-2">
+															<h1>2222 BBBBBBB</h1>
+												</div>
+
+												<div class="letter-number b b-3">
+													<h1>333 BBBBBBB</h1>
+												</div>
+
+
+											</div>
+
+
+											<div class="outer">
+
+												<div class="letter-number c-1"></div>
+
+												<div class="letter-number c-2"></div>
+
+												<div class="letter-number c-3"></div>
+
+
+											</div>
+
+
+
+
+
+										</div>
+
+									</div>
 								</div>
 
 
@@ -625,51 +717,51 @@ width: 35px;
 				</div>
 
 
-								<div class="survey-footer">
-									<div class="one">
+				<div class="survey-footer">
+					<div class="one">
 
-										<div class="d-flex justify-content-between">
+						<div class="d-flex justify-content-between">
 
-											<p class="white">Accessibility</p>
-											<div class="flip2"></div>
-											<p class="white">Privacy/Disclaimer</p>
-											<div class="flip2"></div>
-											<a href="https://www.nih.gov/institutes-nih/nih-office-director/office-communications-public-liaison/freedom-information-act-office" target="_blank">
-											<p class="white">FOIA <i class="far fa-external-link-alt"></i></p>
-											</a>
+							<p class="white">Accessibility</p>
+							<div class="flip2"></div>
+							<p class="white">Privacy/Disclaimer</p>
+							<div class="flip2"></div>
+							<a href="https://www.nih.gov/institutes-nih/nih-office-director/office-communications-public-liaison/freedom-information-act-office" target="_blank">
+								<p class="white">FOIA <i class="far fa-external-link-alt"></i></p>
+							</a>
 
-										</div>
+						</div>
 
-										<div class="d-flex justify-content-between align-items-center">
-											<p class="white" id="timeStamp">last updated: 8/10/2020</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<p class="white" id="timeStamp">last updated: 8/10/2020</p>
 
 
-										</div>
-										<div class="d-flex justify-content-between align-items-center">
-											<a target="_blank" href="https://get.adobe.com/reader/"><p class="white">Download Acrobat Reader <i class="far fa-external-link-alt"></i></p></a>
+						</div>
+						<div class="d-flex justify-content-between align-items-center">
+							<a target="_blank" href="https://get.adobe.com/reader/"><p class="white">Download Acrobat Reader <i class="far fa-external-link-alt"></i></p></a>
 
-										</div>
+						</div>
 
-									</div>
-									<div class="two">
-										<a href="https://www.hhs.gov/" target="_blank" title="HHS">
-											<img src="images/" alt="HHS Logo">
-										</a>
-										<a href="https://www.nih.gov/" target="_blank" title="NIH">
-											<img src="images/nih.png" alt="NIH Logo">
-										</a>
-										<a href="https://www.drugabuse.gov/" target="_blank" title="NIH Drug">
-											<img src="images/drug.svg" alt="National Institute of Drug Abuse Logo">
-										</a>
-										<a href="http://www.fda.gov/" target="_blank" title="FDA">
-											<img src="images/fda.svg" alt="Food and Drug Administration Logo">
-										</a>
+					</div>
+					<div class="two">
+						<a href="https://www.hhs.gov/" target="_blank" title="HHS">
+							<img src="images/" alt="HHS Logo">
+						</a>
+						<a href="https://www.nih.gov/" target="_blank" title="NIH">
+							<img src="images/nih.png" alt="NIH Logo">
+						</a>
+						<a href="https://www.drugabuse.gov/" target="_blank" title="NIH Drug">
+							<img src="images/drug.svg" alt="National Institute of Drug Abuse Logo">
+						</a>
+						<a href="http://www.fda.gov/" target="_blank" title="FDA">
+							<img src="images/fda.svg" alt="Food and Drug Administration Logo">
+						</a>
 
-										<a href="https://www.usa.gov/" target="_blank" title="USA.GOV">
-											<img src="images/us-gov.png" alt="USA.gov Logo">
-										</a>
-									</div>
-								</div>
+						<a href="https://www.usa.gov/" target="_blank" title="USA.GOV">
+							<img src="images/us-gov.png" alt="USA.gov Logo">
+						</a>
+					</div>
+				</div>
 
 				<div class="back-to-top">
 					<i class="far fa-angle-up"></i>

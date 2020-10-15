@@ -3,24 +3,46 @@
 
 		$('.letter').attr('tabindex', '0')
 
-// filter functions
-var filterFns = {
-  greaterThan50: function() {
-    var number = $(this).find('.number').text();
-    return parseInt( number, 10 ) > 50;
-  },
-  even: function() {
-    var number = $(this).find('.number').text();
-    return parseInt( number, 10 ) % 2 === 0;
-  }
-};
+// 		// external js: isotope.pkgd.js
+//
+// // init Isotope
+// var $grid = $('.grid').isotope({
+//   itemSelector: '.color-shape'
+// });
+//
+// // store filter for each group
+// var filters = {};
+//
+// $('.button').on( 'click', function( event ) {
+//   var $select = $( event.target );
+//   // get group key
+//   var filterGroup = $select.attr('value-group');
+//   // set filter for group
+//   filters[ filterGroup ] = event.target.value;
+//   // combine filters
+//   var filterValue = concatValues( filters );
+//   // set filter for Isotope
+//   $grid.isotope({ filter: filterValue });
+// });
+//
+// // flatten object by concatting values
+// function concatValues( obj ) {
+//   var value = '';
+//   for ( var prop in obj ) {
+//     value += obj[ prop ];
+//   }
+//   return value;
+// }
+
+
+
 
 // store filter for each group
 var filters = {};
 
 // init Isotope
 var $grid = $('.grid').isotope({
-  itemSelector: '.color-shape',
+  itemSelector: '.letter-number',
   filter: function() {
 
     var isMatched = true;
@@ -29,7 +51,7 @@ var $grid = $('.grid').isotope({
     for ( var prop in filters ) {
       var filter = filters[ prop ];
       // use function if it matches
-      filter = filterFns[ filter ] || filter;
+      filter = filter;
       // test each filter
       if ( filter ) {
         isMatched = isMatched && $(this).is( filter );
@@ -45,8 +67,10 @@ var $grid = $('.grid').isotope({
 
 
 
-$('#filters').on( 'click', '.button', function() {
+$('#filters').on( 'click', '.letter', function() {
   var $this = $(this);
+
+
   // get group key
   var $buttonGroup = $this.parents('.button-group');
   var filterGroup = $buttonGroup.attr('data-filter-group');
@@ -59,7 +83,8 @@ $('#filters').on( 'click', '.button', function() {
 // change is-checked class on buttons
 $('.button-group').each( function( i, buttonGroup ) {
   var $buttonGroup = $( buttonGroup );
-  $buttonGroup.on( 'click', 'button', function() {
+  $buttonGroup.on( 'click', '.letter', function() {
+	
     $buttonGroup.find('.is-checked').removeClass('is-checked');
     $( this ).addClass('is-checked');
   });
