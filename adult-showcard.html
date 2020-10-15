@@ -178,6 +178,7 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	background: white
 }
 
 
@@ -195,7 +196,15 @@
 .topBlue {
 	background: #B2E1FF;
 	border-bottom:1px solid #004F7F;
+	position: relative;
 }
+
+.topBlue .rBorder {
+	position: relative;
+	width: calc(100% - 100px)
+}
+
+
 
 .rBorder {
 	border-left:1px solid #004F7F;
@@ -220,6 +229,18 @@ justify-content: center;
 
 .outerBorder{
 	border:1px solid #004F7F;
+}
+
+.outerBorder h2 {
+	color:#00559b;
+	font-size:22px;
+	font-weight:600
+}
+
+.topBlue .rBorder h2 {
+margin: 0em !important;
+padding: .6em;
+
 }
 
 
@@ -463,11 +484,11 @@ justify-content: center;
 									</div>
 
 									<div class="col-lg-8 col-md-6 col-sm-12">
-										<div class="outerBorder">
+										<div class="outerBorder mt-3">
 										<div class="startBox topBlue">
-											<div class="label"><h1>A</h1></div>
-											<div class="rBorder d-flex flex-column">
-												<h1>Show Card</h1>
+											<div class="label"><h2>A</h2></div>
+											<div class="rBorder d-flex justify-content-center align-items-center">
+												<h2 class="text-center">Show Card</h2>
 											</div>
 
 										</div>
@@ -477,7 +498,7 @@ justify-content: center;
 
 												<div class="letter-number a a-1">
 														<div class="startBox">
-															<div class="label"><h1>A-1</h1></div>
+															<div class="label"><h2>A-1</h2></div>
 															<div class="rBorder d-flex flex-column">
 																<p>1. No, not of Hispanic, Latino or Latina, or Spanish origin</p>
 																<p>2. Yes, Mexican, Mexican American, Chicano or Chicana</p>
@@ -492,7 +513,7 @@ justify-content: center;
 
 												<div class="letter-number a a-2">
 													<div class="startBox">
-														<div class="label"><h1>A-2</h1></div>
+														<div class="label"><h2>A-2</h2></div>
 														<div class="rBorder d-flex flex-column">
 															<p>1. White</p>
 															<p>2. Black or African American</p>
@@ -500,8 +521,8 @@ justify-content: center;
 
 															<p>4. Asian Indian</p>
 															<p>5. Chinese</p>
-															<p>6. </p>
-															<p></p>
+															<p>6. Filipino</p>
+															<p>7. </p>
 															<p></p>
 															<p></p>
 															<p></p>
@@ -518,7 +539,7 @@ justify-content: center;
 												</div>
 
 												<div class="letter-number a a-3">
-														<h1>33333 A</h1>
+														<h2>33333 A</h2>
 												</div>
 
 
