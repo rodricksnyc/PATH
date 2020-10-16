@@ -3,8 +3,6 @@ $(document).ready(function () {
 
 	$('.letter').attr('tabindex', '0')
 
-
-
 	var Opt01 = "";
 	$('.firstGroup .letter p').each(function() {
 		Opt01 = $(this).html();
@@ -19,9 +17,23 @@ $(document).ready(function () {
 		})
 
 
-
-
 	})
+
+
+	// var width = 	$('.rBorder').width()
+	//
+	//
+	// var children = $('.rBorder').children().width() / 2
+	//
+	// console.log(width)
+	// 	console.log(children)
+	//
+	//
+	//
+	// $('.rBorder').children().css({
+	// 	'position':'relative',
+	// 	'left':children
+	// })
 
 
 	// store filter for each group
