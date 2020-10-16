@@ -76,13 +76,26 @@ $(document).ready(function () {
 			}
 			return isMatched;
 		}
+
+
 	});
 
-	// $('.grid').imagesLoadedMB().progress( function() {
-	// 	 $('.grid').isotope('layout');
- // });
 
-// $('.grid').isotope('reloadItems').isotope();
+//
+// $('.grid').imagesLoadedMB().progress( function() {
+// 				 $('.grid').isotope('layout');
+// 	});
+
+$('.grid').imagesLoaded(function(){
+
+	$('.grid').isotope('layout');
+		 // $('.grid').masonry({
+			//  itemSelector: '.grid-item',
+			//  columnWidth: 100
+		 // });
+	 });
+
+$('.grid').isotope('reloadItems').isotope();
 
 
 	$('.filters').on( 'click', '.letter', function() {
