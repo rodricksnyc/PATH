@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 
-	$('.letter').attr('tabindex', '0')
+	$('.firstGroup .letter').attr('tabindex', '0')
 
 	var Opt01 = "";
 	$('.firstGroup .letter p').each(function() {
@@ -80,6 +80,30 @@ $(document).ready(function () {
 		$grid.isotope();
 	});
 
+
+	$('.letter').on("keyup", function (e) {
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 13) {
+			var $this = $(this);
+
+
+			// get group key
+			var $buttonGroup = $this.parents('.button-group');
+			var filterGroup = $buttonGroup.attr('data-filter-group');
+			// set filter for group
+			filters[ filterGroup ] = $this.attr('data-filter');
+			// arrange, and use filter fn
+			$grid.isotope();
+
+		}
+
+
+	})
+
+
+
+
+
 	// change is-checked class on buttons
 	$('.button-group').each( function( i, buttonGroup ) {
 		var $buttonGroup = $( buttonGroup );
@@ -88,6 +112,19 @@ $(document).ready(function () {
 			$buttonGroup.find('.is-checked').removeClass('is-checked');
 			$( this ).addClass('is-checked');
 		});
+
+		$buttonGroup.on( 'keyup', '.letter', function(e) {
+			var code = (e.keyCode ? e.keyCode : e.which);
+			if (code == 13) {
+
+			$buttonGroup.find('.is-checked').removeClass('is-checked');
+			$( this ).addClass('is-checked');
+
+		}
+		});
+
+
+
 	});
 
 })
