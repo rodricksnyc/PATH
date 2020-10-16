@@ -42,7 +42,8 @@ $(document).ready(function () {
 	// init Isotope
 	var $grid = $('.grid').isotope({
 		itemSelector: '.filter-item',
-		percentPosition: true,
+
+
 		filter: function() {
 
 			var isMatched = true;
@@ -67,9 +68,24 @@ $(document).ready(function () {
 
 
 
+$('.grid').isotope('reloadItems').isotope();
+
+
 	$('.filters').on( 'click', '.letter', function() {
 		var $this = $(this);
 
+
+var gridHeight = $('.secondGrid').height()
+
+
+
+$(window).css({
+	'height': $('.secondGrid').height()
+})
+
+console.log(gridHeight)
+
+console.log($(window).height())
 
 		// get group key
 		var $buttonGroup = $this.parents('.button-group');
