@@ -47,11 +47,14 @@ $(document).ready(function () {
 
 	// init Isotope
 	var $grid = $('.grid').isotope({
+
+
+
 		itemSelector: '.filter-item',
 		percentPosition: true,
-		resize: true,
+		resizable: false,
 		masonry: {
-			resize: true
+		
 
 	},
 
@@ -169,5 +172,12 @@ $('.grid').isotope('reloadItems').isotope();
 
 
 	});
+
+
+
+
+
+
+
 
 })
