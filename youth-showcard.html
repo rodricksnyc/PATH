@@ -1,0 +1,2643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+	<title class="notranslate" translate="no">PATH</title>
+	<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
+	<link rel="stylesheet" href="vendorlibs/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/path-favicon_blue.png">
+	<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+	<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+	<script>
+	$(document).ready(function () {
+		//IE message
+
+		var version = detectIE();
+
+		if (version === false) {
+
+		} else if (version >= 12) {
+
+		} else {
+			$('#myModal2').modal('show')
+
+		}
+
+
+		function detectIE() {
+			var ua = window.navigator.userAgent;
+
+			var msie = ua.indexOf('MSIE ');
+
+			var msie = ua.indexOf('MSIE ');
+			if (msie > 0) {
+
+				return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+			}
+
+			var trident = ua.indexOf('Trident/');
+			if (trident > 0) {
+
+				var rv = ua.indexOf('rv:');
+				return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+			}
+
+			var edge = ua.indexOf('Edge/');
+			if (edge > 0) {
+
+				return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+			}
+
+			return false;
+		}
+
+
+
+	})
+	</script>
+
+
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/filter.js"></script>
+	<script type="text/javascript" src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+
+	<script type="text/javascript">
+	function googleTranslateElementInit() {
+		new google.translate.TranslateElement({pageLanguage: 'ro',
+		includedLanguages: 'af,ar,de,en,es,fr,hu,it,ja,no,ro,ru,tr,zh-CN',
+		layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+		autoDisplay: false}, 'google_translate_element');
+	}
+
+	function loadGoogleTranslate() {
+		var googleTranslateScript = document.createElement('script');
+		googleTranslateScript.type = 'text/javascript';
+		googleTranslateScript.async = true;
+		googleTranslateScript.src = 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild(googleTranslateScript);
+	}
+	$('.lang-select').click(function() {
+		var theLang = jQuery(this).attr('data-lang');
+		$('.goog-te-combo').val(theLang);
+
+		window.location = jQuery(this).attr('href');
+		location.reload();
+
+	});
+	</script>
+</head>
+<style>
+
+.letter{
+
+	color: #00559b !important;
+	background: #d9f0fe;
+
+	border-radius: 50%;
+
+	border-radius: 50%;
+
+	display: inline-block;
+	height: 2.5em;
+	width: 2.5em;
+
+	position: relative;
+	margin:1em .5em;
+
+}
+
+.letter.is-checked{
+	background: #A3E56A;
+	font-weight:600
+}
+
+.letter.number{
+	width:auto;
+	height:auto;
+	padding: 0em 1.55em;
+	border-radius: .6rem;
+
+
+}
+
+.letter-number {
+	border-bottom:1px solid #004F7F;
+	width:100%;
+}
+
+.letter-number:last-child{
+	border-bottom:none
+}
+
+
+.letter:hover{
+	cursor: grab;
+}
+
+.letter p {
+	font-size: 1.2em;
+	/* position: absolute;
+	width: auto;
+	top: calc(50% - .72em);
+
+	left:32%; */
+
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	height: 35px;
+	width: 35px;
+
+
+}
+
+.letter.number p{
+	width:auto;
+
+
+
+}
+
+.filter-attr-list {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	margin-left: 0em;
+	padding-left: 0rem;
+}
+
+
+.startBox{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	/* background: white */
+}
+
+
+
+
+/* clear fix */
+.grid:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.grid{
+	position: relative;
+}
+
+.back-to-top{
+right:1%
+
+}
+
+
+.topBlue {
+	background: #B2E1FF;
+	border-bottom:1px solid #004F7F;
+	position: relative;
+	width:100%;
+}
+
+.topBlue .rBorder {
+	position: relative;
+	width: calc(100% - 100px)
+}
+
+
+
+.rBorder {
+	border-left:1px solid #004F7F;
+	padding:1em 2em 1em 2em;
+	position:relative;
+	width:100%
+}
+
+.label{
+	width:75px;
+	display: flex;
+	justify-content: center;
+}
+
+.rBorder p {
+	color:black;
+	margin-bottom:0em;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 27px;
+	margin-bottom: 0em !important;
+}
+
+.topBlue .rBorder{
+	padding:1em
+}
+
+.outerBorder{
+	border:1px solid #004F7F;
+}
+
+.outerBorder h2 {
+	color:#00559b;
+	font-size:22px;
+	font-weight:600;
+	width:5em
+}
+
+.topBlue .rBorder h2 {
+	margin: 0em !important;
+	padding: .6em;
+	width:10em
+
+}
+
+.startBox img {
+	max-height: 200px;
+	border-bottom:1px solid black
+}
+
+@media (min-width: 1200px){
+	.container.bigger {
+		max-width: 1300px;
+	}
+}
+
+
+.blackBorder{
+	width:100%;
+	height:1px;
+	background: black
+}
+
+.filter-item {
+	transition: background 1s, box-shadow 1s !important;
+}
+
+.filter-attr-list:first-child{
+	margin-left:1em
+}
+
+.tight p{
+	line-height: 19px;
+}
+
+.no-border {
+	border-bottom:none !important
+}
+
+.bTop{
+	border-top:1px solid black;
+}
+
+</style>
+
+<body>
+
+	<div class="outer-wrapper">
+		<div class="container-fluid overflow-hidden position-relative shadow">
+			<div class="modal fade" tabindex="-1" role="dialog" id="myModal2">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close Browser Recommendations Modal">
+								<span aria-hidden="true" style="font-size:25px;">&times;</span></button>
+								<h4 class="modal-title">Browser Recommendations</h4>
+
+							</div>
+							<div class="modal-body">
+								<h6 class="black">We recommend using a desktop or laptop computer to complete the study activities. For the best
+									experience, use <span class="strong">Chrome, Edge, Safari, or Firefox.</span> If you don’t have one of the recommended browsers,
+									you can select one of the browser icons below to download the installer.</h6>
+									<div class="flex">
+										<div class="vertical2">
+											<img src="images/google.png" class="img-fluid icon" height="70" width="70" alt="">
+											<p>Chrome</p>
+										</div>
+										<div class="vertical2">
+											<img src="images/edge.png" class="img-fluid icon" height="70" width="70" alt="">
+											<p>Edge</p>
+										</div>
+										<div class="vertical2">
+											<img src="images/safari.png" class="img-fluid icon" height="70" width="70" alt="">
+											<p>Safari</p>
+										</div>
+										<div class="vertical2">
+											<img src="images/firefox.png" class="img-fluid icon" height="70" width="73" alt="">
+											<p>Firefox</p>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<center>
+										<button type="button" class="btn browser" data-dismiss="modal">DONE</button>
+									</center>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<header id="Home">
+						<nav class="navbar navbar-expand-lg navbar-light bg-white">
+							<div class="container-fluid">
+								<a class="pb-0" href="">
+									<img src="images/path-logo.svg" class="img-fluid logo" alt="Population Assessment of Tobacco and Health Logo">
+								</a>
+								<button class="navbar-toggler collapsed mr-2" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+
+								<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+									<ul class="navbar-nav d-block d-lg-flex ml-auto text-right d-flex align-items-center">
+										<li class="nav-item">
+											<a class="nav-link" href="landing.html">Home</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="about.html">About the Study</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="participants.html">Participants</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="researchers.html">Researchers</a>
+										</li>
+
+										<div class="d-flex justify-content-center align-items-center">
+
+											<a id="ingles" href="" class="english activeDot notranslate" data-lang="en" tabindex="0" aria-hidden="false" role="button" translate="no">
+
+												<p class="language notranslate" translate="no">English</p>
+
+											</a>
+
+											<div class="flip"></div>
+											<a id="espanol" href="#googtrans(en|es)" class="lang-es lang-select spanish inactiveDot" data-lang="es" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
+
+												<p class="language">Espa&ntilde;ol</p>
+
+											</a>
+										</div>
+										<a class="loginButton" href="login.html"><p>LOG IN</p></a>
+									</ul>
+								</div>
+							</div>
+						</nav>
+					</header>
+				</div>
+				<img class="imgTop img-fluid" src="images/about.svg" alt="">
+
+				<section class="block10">
+					<div class="container-fluid heros">
+						<div id="Guide" class="landing-sec container-fluid">
+							<div class="guide-overlay container bigger">
+								<a href="participants.html" tabindex="0">
+									<h2 class="landing-sec-H"><i class="fas fa-arrow-circle-left"></i> Youth Show Cards</h2>
+								</a>
+
+								<div class="row">
+									<div class="col-lg-4 col-md-5 col-sm-12 rel">
+
+										<div class="whiteBubble">
+											<p class="darkBlue text-center">Questionnaire Sections</p>
+											<div class="grayLine"></div>
+
+											<div class="filters">
+
+												<div class="ui-group">
+													<div class="firstGroup" data-filter-group="letter">
+														<div class="filter-attr-list button-group">
+
+
+															<div class="letter is-checked" data-filter=".a"><p>A</p></div>
+
+															<div class="letter" data-filter=".b"><p>B</p></div>
+
+															<div class="letter" data-filter=".c"><p>C</p></div>
+
+															<div class="letter" data-filter=".d"><p>D</p></div>
+
+															<div class="letter" data-filter=".e"><p>E</p></div>
+
+															<div class="letter" data-filter=".f"><p>F</p></div>
+
+															<div class="letter" data-filter=".g"><p>G</p></div>
+
+															<div class="letter" data-filter=".h"><p>H</p></div>
+
+															<div class="letter" data-filter=".i"><p>I</p></div>
+
+															<div class="letter" data-filter=".j"><p>J</p></div>
+
+															<div class="letter" data-filter=".k"><p>K</p></div>
+
+															<div class="letter" data-filter=".l"><p>L</p></div>
+
+															<div class="letter" data-filter=".m"><p>M</p></div>
+
+															<div class="letter" data-filter=".n"><p>N</p></div>
+														</div>
+
+													</div>
+												</div>
+
+
+											</div>
+
+											<h4 class="landing-sec-H text-center smaller mt-3 mb-3">TABLE OF CONTENTS</h4>
+
+											<div class="grid">
+												<div class="secondGroup">
+
+													<div class="filter-attr-list">
+
+														<div class="filter-item a">
+															<a href="#a-1"><div class="letter number"><p>A-1</p></div></a>
+
+															<a href="#a-2"><div class="letter number"><p>A-2</p></div></a>
+															<a href="#a-3"><div class="letter number"><p>A-3</p></div></a>
+
+															<a href="#a-4"><div class="letter number"><p>A-4</p></div></a>
+															<a href="#a-5"><div class="letter number"><p>A-5</p></div></a>
+
+															<a href="#a-6"><div class="letter number"><p>A-6</p></div></a>
+															<a href="#a-7"><div class="letter number"><p>A-7</p></div></a>
+
+															<a href="#a-8"><div class="letter number"><p>A-8</p></div></a>
+															<a href="#a-9"><div class="letter number"><p>A-9</p></div></a>
+
+															<a href="#a-10"><div class="letter number"><p>A-10</p></div></a>
+															<a href="#a-11"><div class="letter number"><p>A-11</p></div></a>
+
+															<a href="#a-12"><div class="letter number"><p>A-12</p></div></a>
+															<a href="#a-13"><div class="letter number"><p>A-13</p></div></a>
+
+															<a href="#a-14"><div class="letter number"><p>A-14</p></div></a>
+															<a href="#a-15"><div class="letter number"><p>A-15</p></div></a>
+
+															<a href="#a-16"><div class="letter number"><p>A-16</p></div></a>
+															<a href="#a-17"><div class="letter number"><p>A-17</p></div></a>
+
+															<a href="#a-18"><div class="letter number"><p>A-18</p></div></a>
+															<a href="#a-19"><div class="letter number"><p>A-19</p></div></a>
+
+															<a href="#a-20"><div class="letter number"><p>A-20</p></div></a>
+
+															<a href="#a-21"><div class="letter number"><p>A-21</p></div></a>
+
+															<a href="#a-22"><div class="letter number"><p>A-22</p></div></a>
+															<a href="#a-23"><div class="letter number"><p>A-23</p></div></a>
+
+															<a href="#a-24"><div class="letter number"><p>A-24</p></div></a>
+															<a href="#a-25"><div class="letter number"><p>A-25</p></div></a>
+
+															<a href="#a-26"><div class="letter number"><p>A-26</p></div></a>
+															<a href="#a-27"><div class="letter number"><p>A-27</p></div></a>
+
+															<a href="#a-28"><div class="letter number"><p>A-28</p></div></a>
+															<a href="#a-29"><div class="letter number"><p>A-29</p></div></a>
+
+															<a href="#a-30"><div class="letter number"><p>A-30</p></div></a>
+
+															<a href="#a-31"><div class="letter number"><p>A-31</p></div></a>
+
+															<a href="#a-32"><div class="letter number"><p>A-32</p></div><a/>
+																<a href="#a-33"><div class="letter number"><p>A-33</p></div></a>
+
+																<a href="#a-34"><div class="letter number"><p>A-34</p></div></a>
+																<a href="#a-35"><div class="letter number"><p>A-35</p></div></a>
+
+																<a href="#a-36"><div class="letter number"><p>A-36</p></div></a>
+																<a href="#a-37"><div class="letter number"><p>A-37</p></div></a>
+
+																<a href="#a-38"><div class="letter number"><p>A-38</p></div></a>
+																<a href="#a-39"><div class="letter number"><p>A-39</p></div></a>
+
+																<a href="#a-40"><div class="letter number"><p>A-40</p></div></a>
+
+																<a href="#a-41"><div class="letter number"><p>A-41</p></div></a>
+
+																<a href="#a-42"><div class="letter number"><p>A-42</p></div></a>
+																<a href="#a-43"><div class="letter number"><p>A-43</p></div></a>
+															</div>
+
+
+															<div class="filter-item b">
+																<a href="#b-1"><div class="letter number"><p>B-1</p></div></a>
+
+																<a href="#b-2"><div class="letter number"><p>B-2</p></div></a>
+																<a href="#b-3"><div class="letter number"><p>B-3</p></div></a>
+
+																<a href="#b-4"><div class="letter number"><p>B-4</p></div></a>
+																<a href="#b-5"><div class="letter number"><p>B-5</p></div></a>
+																<a href="#b-6"><div class="letter number"><p>B-6</p></div></a>
+																<a href="#b-7"><div class="letter number"><p>B-7</p></div></a>
+
+																<a href="#b-8"><div class="letter number"><p>B-8</p></div></a>
+																<a href="#b-9"><div class="letter number"><p>B-9</p></div></a>
+
+
+
+															</div>
+
+															<div class="filter-item c">
+																<a href="#c-1"><div class="letter number"><p>C-1</p></div></a>
+
+																<a href="#c-2"><div class="letter number"><p>C-2</p></div></a>
+																<a href="#c-3"><div class="letter number"><p>C-3</p></div></a>
+
+																<a href="#c-4"><div class="letter number"><p>C-4</p></div></a>
+																<a href="#c-5"><div class="letter number"><p>C-5</p></div></a>
+																<a href="#c-6"><div class="letter number"><p>C-6</p></div></a>
+																<a href="#c-7"><div class="letter number"><p>C-7</p></div></a>
+
+																<a href="#c-8"><div class="letter number"><p>C-8</p></div></a>
+																<a href="#c-9"><div class="letter number"><p>C-9</p></div></a>
+
+																<a href="#c-10"><div class="letter number"><p>C-10</p></div></a>
+																<a href="#c-11"><div class="letter number"><p>C-11</p></div></a>
+
+																<a href="#c-12"><div class="letter number"><p>C-12</p></div></a>
+																<a href="#c-13"><div class="letter number"><p>C-13</p></div></a>
+
+																<a href="#c-14"><div class="letter number"><p>C-14</p></div></a>
+																<a href="#c-15"><div class="letter number"><p>C-15</p></div></a>
+
+																<a href="#c-16"><div class="letter number"><p>C-16</p></div></a>
+																<a href="#c-17"><div class="letter number"><p>C-17</p></div></a>
+
+																<a href="#c-18"><div class="letter number"><p>C-18</p></div></a>
+																<a href="#c-19"><div class="letter number"><p>C-19</p></div></a>
+
+																<a href="#c-20"><div class="letter number"><p>C-20</p></div></a>
+
+																<a href="#c-21"><div class="letter number"><p>C-21</p></div></a>
+
+																<a href="#c-22"><div class="letter number"><p>C-22</p></div></a>
+																<a href="#c-23"><div class="letter number"><p>C-23</p></div></a>
+
+																<a href="#c-24"><div class="letter number"><p>C-24</p></div></a>
+
+
+															</div>
+
+
+															<div class="filter-item d">
+																<a href="#d-1"><div class="letter number"><p>D-1</p></div></a>
+
+																<a href="#d-2"><div class="letter number"><p>D-2</p></div></a>
+																<a href="#d-3"><div class="letter number"><p>D-3</p></div></a>
+
+																<a href="#d-4"><div class="letter number"><p>D-4</p></div></a>
+																<a href="#d-5"><div class="letter number"><p>D-5</p></div></a>
+																<a href="#d-6"><div class="letter number"><p>D-6</p></div></a>
+																<a href="#d-7"><div class="letter number"><p>D-7</p></div></a>
+
+																<a href="#d-8"><div class="letter number"><p>D-8</p></div></a>
+																<a href="#d-9"><div class="letter number"><p>D-9</p></div></a>
+
+																<a href="#d-10"><div class="letter number"><p>D-10</p></div></a>
+																<a href="#d-11"><div class="letter number"><p>D-11</p></div></a>
+
+																<a href="#d-12"><div class="letter number"><p>D-12</p></div></a>
+																<a href="#d-13"><div class="letter number"><p>D-13</p></div></a>
+
+																<a href="#d-14"><div class="letter number"><p>D-14</p></div></a>
+
+															</div>
+
+
+															<div class="filter-item e">
+																<a href="#e-1"><div class="letter number"><p>E-1</p></div></a>
+
+																<a href="#e-2"><div class="letter number"><p>E-2</p></div></a>
+																<a href="#e-3"><div class="letter number"><p>E-3</p></div></a>
+
+																<a href="#e-4"><div class="letter number"><p>E-4</p></div></a>
+																<a href="#e-5"><div class="letter number"><p>E-5</p></div></a>
+																<a href="#e-6"><div class="letter number"><p>E-6</p></div></a>
+																<a href="#e-7"><div class="letter number"><p>E-7</p></div></a>
+
+																<a href="#e-8"><div class="letter number"><p>E-8</p></div></a>
+																<a href="#e-9"><div class="letter number"><p>E-9</p></div></a>
+
+
+
+															</div>
+
+														</div>
+													</div>
+
+												</div>
+
+
+											</div>
+
+
+										</div>
+
+										<div class="col-lg-8 col-md-7 col-sm-12 rel">
+											<div class="outerBorder mt-3">
+												<div class="startBox topBlue">
+													<div class="label"><h2 id="changeLetter">A</h2></div>
+													<div class="rBorder d-flex justify-content-center align-items-center">
+														<h2 class="text-center">Show Card</h2>
+													</div>
+
+												</div>
+
+
+												<div class="grid secondGrid">
+
+													<div class="letter-number filter-item a a-1">
+														<a name="a-1"></a>
+														<div class="startBox bg-white">
+															<div class="label"><h2>A-1</h2></div>
+															<div class="rBorder d-flex flex-column">
+																<p>1. No, not of Hispanic, Latino or Latina, or Spanish origin</p>
+																<p>2. Yes, Mexican, Mexican American, Chicano or Chicana</p>
+																<p>3. Yes, Puerto Rican</p>
+																<p>4. Yes, Cuban</p>
+																<p>Yes, another Hispanic, Latino or Latina, or Spanish origin</p>
+
+															</div>
+
+														</div>
+													</div>
+
+													<div class="letter-number filter-item a a-2">
+														<a name="a-2"></a>
+														<div class="startBox bg-white">
+															<div class="label"><h2>A-2</h2></div>
+															<div class="rBorder d-flex flex-column">
+																<p>1. White</p>
+																<p>2. Black or African American</p>
+																<p>3. American Indian or Alaska Native</p>
+
+																<p>4. Asian Indian</p>
+																<p>5. Chinese</p>
+																<p>6. Filipino</p>
+																<p>7. Japanese</p>
+																<p>8. Korean</p>
+																<p>9. Vietnamese</p>
+																<p>10. Other Asian</p>
+																<p>11. Native Hawaiian</p>
+																<p>12. Guamanian or Chamorro </p>
+																<p>13. Samoan</p>
+																<p>14. Other Pacific Islander</p>
+
+															</div>
+
+														</div>
+													</div>
+
+													<div class="letter-number filter-item a a-3">
+														<a name="a-3"></a>
+														<div class="startBox bg-white">
+															<div class="label"><h2>A-3</h2></div>
+															<div class="rBorder d-flex flex-column">
+																<p>1. Yes, now on active duty</p>
+																<p>2. Yes, on active duty in the past, but not now</p>
+																<p>3. No, training for Reserves or National Guard only</p>
+
+																<p>4. No, never served in the military </p>
+
+															</div>
+
+														</div>
+													</div>
+
+													<div class="letter-number filter-item a a-4">
+														<a name="a-4"></a>
+														<div class="startBox">
+															<div class="label"><h2>A-4</h2></div>
+															<div class="rBorder d-flex flex-column">
+																<p>1. Yes, born in the United States</p>
+																<p>2. Yes, born in Puerto Rico, Guam, the U.S. Virgin Islands, or Northern Marianas</p>
+																<p>3. Yes, born abroad of U.S. citizen parent or parents</p>
+
+																<p>4. Yes, U.S. citizen by naturalization</p>
+																<p>5. No, not a U.S. citizen</p>
+
+															</div>
+
+														</div>
+													</div>
+
+													<div class="letter-number filter-item a a-5">
+														<a name="a-5"></a>
+														<div class="startBox">
+															<div class="label"><h2>A-5</h2></div>
+															<div class="rBorder d-flex flex-column">
+																<p>1. Very curious</p>
+																<p>2. Somewhat curious</p>
+																<p>3. A little curious</p>
+
+																<p>4. Not at all curious</p>
+
+															</div>
+
+														</div>
+													</div>
+
+													<div class="letter-number filter-item a a-6">
+														<a name="a-6"></a>
+														<div class="startBox">
+															<div class="label"><h2>A-6</h2></div>
+
+															<div class="rBorder d-flex flex-column">
+																<p>1. Definitely yes</p>
+																<p>2. Probably yes</p>
+																<p>3. Probably not</p>
+
+																<p>4. Definitely not</p>
+
+															</div>
+
+
+														</div>
+													</div>
+
+
+													<div class="letter-number filter-item a a-7">
+														<a name="a-7"></a>
+														<div class="startBox">
+															<div class="d-flex justify-content-start">
+																<div class="label"><h2>A-7</h2></div>
+															</div>
+
+															<div class="rBorder d-flex flex-column">
+																<div class="row">
+																	<div class="col-lg-12 d-flex justify-content-center">
+																		<img src="images/A7.jpg" class="img-fluid" alt="">
+																	</div>
+																</div>
+
+
+																<div class="d-flex justify-content-center"><p>E-cigarettes and other Electronic Nicotine Products</p></div>
+
+
+															</div>
+
+														</div>
+													</div>
+
+													<div class="letter-number filter-item a a-8">
+														<a name="a-8"></a>
+														<div class="startBox">
+															<div class="label"><h2>A-8</h2></div>
+															<div class="rBorder d-flex flex-column">
+
+																<div class="row">
+																	<div class="col-lg-12 d-flex  justify-content-center">
+																		<img src="images/A8.jpg" class="img-fluid" alt="">
+																	</div>
+																</div>
+																<div class="d-flex justify-content-center"><p>Traditional Cigars</p></div>
+
+															</div>
+
+														</div>
+													</div>
+
+													<div class="letter-number filter-item a a-9">
+														<a name="a-9"></a>
+														<div class="startBox">
+															<div class="label"><h2>A-9</h2></div>
+															<div class="rBorder d-flex flex-column align-items-center">
+																<div class="row">
+																	<div class="col-lg-12 d-flex  justify-content-center">
+																		<img src="images/A9.jpg" class="img-fluid" alt="">
+																	</div>
+																</div>
+
+																<div class="d-flex justify-content-between">
+																	<p class="mr-5">Cigarillos</p>
+																	<p class="ml-5">Filtered Cigars</p>
+																</div>
+
+															</div>
+
+														</div>
+													</div>
+
+													<div class="letter-number filter-item a a-10">
+														<a name="a-10"></a>
+														<div class="startBox">
+															<div class="label"><h2>A-10</h2></div>
+															<div class="rBorder d-flex flex-column align-items-center">
+																<div class="row">
+																	<div class="col-lg-12 d-flex  justify-content-center">
+
+																		<img src="images/A10.jpg" class="img-fluid" alt="">
+
+																	</div>
+																</div>
+
+																<div class="d-flex justify-content-between">
+																	<p>Traditional Cigars</p>
+																	<p class="mr-5 ml-5">Cigarillos</p>
+																	<p>Filtered Cigars</p></div>
+
+																</div>
+
+															</div>
+														</div>
+
+														<div class="letter-number filter-item a a-11">
+															<a name="a-11"></a>
+															<div class="startBox">
+																<div class="label"><h2>A-11</h2></div>
+																<div class="rBorder d-flex flex-column align-items-center">
+																	<div class="row">
+																		<div class="col-lg-12 d-flex  justify-content-center">
+																			<img src="images/A11.jpg" class="img-fluid" alt="">
+																		</div>
+																	</div>
+
+																	<div class="d-flex justify-content-between tight">
+																		<p class="text-center">With a plastic<br>or wooden tip</p>
+																		<p class="text-center mr-4 ml-4">With a filter<br>(like a cigarette filter)</p>
+																		<p class="text-center">Without a tip<br>or filter</p></div>
+																	</div>
+
+																</div>
+															</div>
+
+
+
+															<div class="letter-number filter-item a a-12">
+																<a name="a-12"></a>
+																<div class="startBox">
+																	<div class="label"><h2>A-12</h2></div>
+																	<div class="rBorder d-flex flex-column align-items-center">
+																		<div class="row">
+																			<div class="col-lg-12 d-flex  justify-content-center">
+																				<img src="images/A12.jpg" class="img-fluid" alt="">
+																			</div>
+																		</div>
+
+																		<div class="d-flex justify-content-between">
+																			<div class="d-flex justify-content-center"><p>With a tip</p></div>
+																		</div>
+
+																	</div>
+																</div>
+															</div>
+
+															<div class="letter-number filter-item a a-13">
+																<a name="a-13"></a>
+																<div class="startBox">
+																	<div class="label"><h2>A-13</h2></div>
+																	<div class="rBorder d-flex flex-column align-items-center">
+																		<div class="row">
+																			<div class="col-lg-12 d-flex  justify-content-center">
+																				<img src="images/A13.jpg" class="img-fluid" alt="">
+																			</div>
+																		</div>
+
+																		<div class="d-flex justify-content-between">
+																			<div class="d-flex justify-content-center"><p>With a filter</p></div>
+																		</div>
+																	</div>
+
+																</div>
+															</div>
+
+
+															<div class="letter-number filter-item a a-14">
+																<a name="a-14"></a>
+																<div class="startBox">
+																	<div class="label"><h2>A-14</h2></div>
+																	<div class="rBorder d-flex flex-column align-items-center">
+																		<div class="row">
+																			<div class="col-lg-12 d-flex  justify-content-center">
+																				<img src="images/A14.jpg" class="img-fluid" alt="">
+																			</div>
+																		</div>
+
+																		<div class="d-flex justify-content-between">
+																			<div class="d-flex justify-content-center"><p>Without a tip or filter</p></div>
+																		</div>
+																	</div>
+
+																</div>
+															</div>
+
+															<div class="letter-number filter-item a a-15">
+																<a name="a-15"></a>
+																<div class="startBox">
+																	<div class="label"><h2>A-15</h2></div>
+																	<div class="rBorder d-flex flex-column align-items-center">
+																		<div class="row">
+																			<div class="col-lg-12 d-flex  justify-content-center">
+																				<img src="images/A15.jpg" class="img-fluid" alt="">
+																			</div>
+																		</div>
+
+																		<div class="d-flex justify-content-between">
+																			<p class="text-center">Group 1</p>
+																			<p class="text-center mr-5 ml-5">Group 2</p>
+																			<p class="text-center">Group 3</p></div>
+																		</div>
+																	</div>
+
+																</div>
+
+
+																<div class="letter-number filter-item a a-16">
+																	<a name="a-16"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-16</h2></div>
+																		<div class="rBorder d-flex flex-column align-items-center">
+																			<div class="row">
+																				<div class="col-lg-12 d-flex  justify-content-center">
+																					<img src="images/A16.jpg" class="img-fluid no-border" alt="">
+																				</div>
+																			</div>
+
+																		</div>
+
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item a a-17">
+																	<a name="a-17"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-17</h2></div>
+																		<div class="rBorder d-flex flex-column align-items-center">
+																			<div class="row">
+																				<div class="col-lg-12 d-flex  justify-content-center">
+																					<img src="images/A17.jpg" class="img-fluid no-border" alt="">
+																				</div>
+																			</div>
+
+																		</div>
+
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item a a-18">
+																	<a name="a-18"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-18</h2></div>
+																		<div class="rBorder d-flex flex-column align-items-center">
+																			<div class="row">
+																				<div class="col-lg-12 d-flex  justify-content-center">
+																					<img src="images/A18.jpg" class="img-fluid no-border" alt="">
+																				</div>
+																			</div>
+
+																		</div>
+
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item a a-19">
+																	<a name="a-19"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-19</h2></div>
+																		<div class="rBorder d-flex flex-column align-items-center">
+																			<div class="row">
+																				<div class="col-lg-12 d-flex  justify-content-center">
+																					<img src="images/A19.jpg" class="img-fluid" alt="">
+																				</div>
+																			</div>
+
+																			<div class="d-flex justify-content-between">
+																				<div class="d-flex justify-content-center"><p>Traditional Cigars</p></div>
+																			</div>
+
+																		</div>
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item a a-20">
+																	<a name="a-20"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-20</h2></div>
+																		<div class="rBorder d-flex flex-column align-items-center">
+																			<div class="row">
+																				<div class="col-lg-12 d-flex  justify-content-center">
+																					<img src="images/A20.jpg" class="img-fluid" alt="">
+																				</div>
+																			</div>
+
+																			<div class="d-flex justify-content-between">
+																				<div class="d-flex justify-content-center"><p>Cigarillos</p></div>
+																			</div>
+																		</div>
+
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item a a-21">
+																	<a name="a-21"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-21</h2></div>
+																		<div class="rBorder d-flex flex-column align-items-center">
+																			<div class="row">
+																				<div class="col-lg-12 d-flex  justify-content-center">
+																					<img src="images/A21.jpg" class="img-fluid" alt="">
+																				</div>
+																			</div>
+
+																			<div class="d-flex justify-content-between">
+																				<div class="d-flex justify-content-center">	<p>Filtered Cigars</p></div>
+
+																			</div>
+																		</div>
+
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item a a-22">
+																	<a name="a-22"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-22</h2></div>
+																		<div class="rBorder d-flex flex-column align-items-center">
+																			<div class="row">
+																				<div class="col-lg-12 d-flex  justify-content-center">
+																					<img src="images/A8.jpg" class="img-fluid" alt="">
+																				</div>
+																			</div>
+
+																			<div class="d-flex justify-content-between">
+																				<div class="d-flex flex-column">
+																					<p>1. Very curious</p>
+																					<p>2. Somewhat curious</p>
+																					<p>3. A little curious</p>
+
+																					<p>4. Not at all curious</p>
+
+																				</div>
+																			</div>
+																		</div>
+
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item a a-23">
+																	<a name="a-23"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-23</h2></div>
+																		<div class="rBorder d-flex flex-column align-items-center">
+																			<div class="row">
+																				<div class="col-lg-12 d-flex  justify-content-center">
+																					<img src="images/A8.jpg" class="img-fluid" alt="">
+																				</div>
+																			</div>
+
+																			<div class="d-flex justify-content-between">
+																				<div class="d-flex flex-column">
+																					<p>1. Definitely yes</p>
+																					<p>2. Probably yes</p>
+																					<p>3. Probably not</p>
+
+																					<p>4. Definitely not</p>
+
+																				</div>
+
+																			</div>
+																		</div>
+
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item a a-24">
+																	<a name="a-24"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-24</h2></div>
+																		<div class="rBorder d-flex flex-column align-items-center">
+																			<div class="row">
+																				<div class="col-lg-12 d-flex  justify-content-center">
+																					<img src="images/A20.jpg" class="img-fluid" alt="">
+																				</div>
+																			</div>
+
+																			<div class="d-flex justify-content-between">
+																				<div class="d-flex flex-column">
+																					<p>1. Very curious</p>
+																					<p>2. Somewhat curious</p>
+																					<p>3. A little curious</p>
+
+																					<p>4. Not at all curious</p>
+
+																				</div>
+																			</div>
+
+																		</div>
+																	</div>
+																</div>
+
+
+																<div class="letter-number filter-item a a-25">
+																	<a name="a-25"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-25</h2></div>
+																		<div class="rBorder d-flex flex-column align-items-center">
+																			<div class="row">
+																				<div class="col-lg-12 d-flex  justify-content-center">
+																					<img src="images/A20.jpg" class="img-fluid" alt="">
+																				</div>
+																			</div>
+
+																			<div class="d-flex justify-content-between">
+																				<div class="d-flex flex-column">
+																					<p>1. Definitely yes</p>
+																					<p>2. Probably yes</p>
+																					<p>3. Probably not</p>
+
+																					<p>4. Definitely not</p>
+
+																				</div>
+
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+
+																<div class="letter-number filter-item a a-26">
+																	<a name="a-26"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-26</h2></div>
+																		<div class="rBorder d-flex flex-column align-items-center">
+																			<div class="row">
+																				<div class="col-lg-12 d-flex  justify-content-center">
+																					<img src="images/A21.jpg" class="img-fluid" alt="">
+																				</div>
+																			</div>
+
+																			<div class="d-flex justify-content-between">
+																				<div class="d-flex flex-column">
+																					<p>1. Very curious</p>
+																					<p>2. Somewhat curious</p>
+																					<p>3. A little curious</p>
+
+																					<p>4. Not at all curious</p>
+
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item a a-27">
+																	<a name="a-27"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-27</h2></div>
+																		<div class="rBorder d-flex flex-column align-items-center">
+																			<div class="row">
+																				<div class="col-lg-12 d-flex  justify-content-center">
+																					<img src="images/A21.jpg" class="img-fluid" alt="">
+																				</div>
+																			</div>
+
+																			<div class="d-flex justify-content-between">
+																				<div class="d-flex flex-column">
+																					<p>1. Definitely yes</p>
+																					<p>2. Probably yes</p>
+																					<p>3. Probably not</p>
+
+																					<p>4. Definitely not</p>
+
+																				</div>
+
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item a a-28">
+																	<a name="a-28"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-28</h2></div>
+																		<div class="rBorder d-flex flex-column align-items-center">
+																			<div class="row">
+																				<div class="col-lg-12 d-flex  justify-content-center">
+																					<img src="images/A28.jpg" class="img-fluid pt-5" alt="">
+																				</div>
+																			</div>
+
+
+																			<div class="d-flex justify-content-center">	<p>Pipe</p>
+																			</div>
+
+																		</div>
+																	</div>
+																</div>
+
+
+
+
+																<div class="letter-number filter-item a a-29">
+																	<a name="a-29"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-29</h2></div>
+																		<div class="rBorder d-flex flex-column align-items-center">
+																			<div class="row">
+																				<div class="col-lg-12 d-flex  justify-content-center">
+																					<img src="images/A29.jpg" class="img-fluid" alt="">
+																				</div>
+																			</div>
+
+
+																			<div class="d-flex justify-content-center">	<p>Hookah</p></div>
+
+
+																		</div>
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item a a-30">
+																	<a name="a-30"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-30</h2></div>
+																		<div class="d-flex justify-content-center aling-items-center">
+																			<div class="rBorder d-flex flex-column">
+																				<p>1. Very curious</p>
+																				<p>2. Somewhat curious</p>
+																				<p>3. A little curious</p>
+
+																				<p>4. Not at all curious</p>
+
+																			</div>
+																		</div>
+
+																	</div>
+																</div>
+																<div class="letter-number filter-item a a-31">
+																	<a name="a-31"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-31</h2></div>
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. Definitely yes</p>
+																			<p>2. Probably yes</p>
+																			<p>3. Probably not</p>
+
+																			<p>4. Definitely not</p>
+
+																		</div>
+
+																	</div>
+																</div>
+
+
+																<div class="letter-number filter-item a a-32">
+																	<a name="a-32"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-32</h2></div>
+																		<div class="rBorder d-flex flex-column align-items-center">
+																			<div class="row">
+																				<div class="col-lg-12 d-flex  justify-content-center">
+																					<img src="images/A32.jpg" class="img-fluid" alt="">
+																				</div>
+																			</div>
+
+
+																			<div class="d-flex justify-content-center">	<p>Smokeless Tobacco</p></div>
+
+
+																		</div>
+																	</div>
+																</div>
+
+
+																<div class="letter-number filter-item a a-33">
+																	<a name="a-33"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-33</h2></div>
+																		<div class="rBorder d-flex flex-column align-items-center">
+																			<div class="row">
+																				<div class="col-lg-12 d-flex  justify-content-center">
+																					<img src="images/A33.jpg" class="img-fluid" alt="">
+																				</div>
+																			</div>
+
+
+																			<div class="d-flex justify-content-center">	<p>Snus</p></div>
+
+
+																		</div>
+																	</div>
+																</div>
+																<div class="letter-number filter-item a a-34">
+																	<a name="a-34"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-34</h2></div>
+																		<div class="rBorder d-flex flex-column align-items-center">
+																			<div class="row">
+																				<div class="col-lg-12 d-flex  justify-content-center">
+																					<img src="images/A34.jpg" class="img-fluid p-5" alt="">
+																				</div>
+																			</div>
+
+
+																			<div class="d-flex justify-content-center">	<p>Smokeless Tobacco</p></div>
+
+
+																		</div>
+																	</div>
+																</div>
+																<div class="letter-number filter-item a a-35">
+																	<a name="a-35"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-35</h2></div>
+																		<div class="rBorder d-flex flex-column align-items-center">
+																			<div class="row">
+																				<div class="col-lg-12 d-flex  justify-content-center">
+																					<img src="images/A35.jpg" class="img-fluid" alt="">
+																				</div>
+																			</div>
+
+
+																			<div class="d-flex justify-content-center">	<p>Dissolvable Tobacco</p></div>
+
+
+																		</div>
+																	</div>
+																</div>
+
+
+																<div class="letter-number filter-item a a-36">
+																	<a name="a-36"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-36</h2></div>
+																		<div class="rBorder d-flex flex-column">
+
+																			<p>1. I have not seen any advertisements in the past 30 days</p>
+																			<p>2. At gas stations, convenience stores, or other retail stores</p>
+																			<p>3. On billboards</p>
+
+																			<p>4. In newspapers or magazines</p>
+																			<p>5. On radio</p>
+																			<p>6. On television</p>
+																			<p>7. At events like fairs, festivals, or sporting events</p>
+																			<p>8. At nightclubs, bars, or music concerts</p>
+
+																			<p>9. In email messages</p>
+
+																			<p>10. In email messages</p>
+																			<p>11. On other websites online</p>
+																			<p>12. Somewhere else (SPECIFY)</p>
+																		</div>
+
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item a a-37">
+																	<a name="a-37"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-37</h2></div>
+																		<div class="rBorder d-flex flex-column">
+
+																			<p>1. I have never bought IQOS</p>
+																			<p>2. IQOS store</p>
+																			<p>3. QOS website</p>
+
+																			<p>4. Or from somewhere else (SPECIFY)</p>
+
+																		</div>
+
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item a a-38">
+																	<a name="a-38"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-38</h2></div>
+																		<div class="rBorder d-flex flex-column">
+
+																			<p>1. I have never bought HeatSticks</p>
+																			<p>2. IQOS store</p>
+																			<p>3. IQOS website</p>
+
+																			<p>4. A convenience store or gas station</p>
+																			<p>5. A supermarket, grocery store, or drug store</p>
+																			<p>6. A warehouse club, such as Sam's or Costco</p>
+																			<p>7. A smoke shop, tobacco specialty store, or tobacco outlet store</p>
+																			<p>8. A duty free shop or military commissary</p>
+
+																			<p>9. A bar, pub, restaurant, or casino</p>
+
+																			<p>10. A friend or relative</p>
+																			<p>11. A swap meet or flea market</p>
+																			<p>12. A liquor store</p>
+																			<p>13. Or from somewhere else (SPECIFY)</p>
+																		</div>
+
+																	</div>
+																</div>
+
+
+																<div class="letter-number filter-item a">
+																	<a name="a-39"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-39</h2></div>
+																		<div class="rBorder d-flex flex-column">
+
+																			<p>1. In the past hour</p>
+																			<p>2. Sometime today, but more than an hour ago</p>
+																			<p>3. Yesterday</p>
+
+																			<p>4. Day before yesterday</p>
+																			<p>5. Three or more days ago</p>
+
+																		</div>
+
+																	</div>
+																</div>
+
+																<!-- <div class="letter-number filter-item a">
+																	<a name="a-39"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-39</h2></div>
+																		<div class="rBorder d-flex flex-column">
+
+																			<p>1. In the past hour</p>
+																			<p>2. Sometime today, but more than an hour ago</p>
+																			<p>3. Yesterday</p>
+
+																			<p>4. Day before yesterday</p>
+																			<p>5. Three or more days ago</p>
+
+																		</div>
+
+																	</div>
+																</div> -->
+																<div class="letter-number filter-item a">
+																	<a name="a-40"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-40</h2></div>
+																		<div class="rBorder d-flex flex-column">
+
+																			<p>1. Between midnight and 6AM</p>
+																			<p>2. After 6AM but before noon</p>
+																			<p>3. Between noon and 6PM</p>
+
+																			<p>4. After 6PM but before midnight</p>
+
+
+																		</div>
+
+																	</div>
+																</div>
+																<div class="letter-number filter-item a">
+																	<a name="a-41"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-41</h2></div>
+																		<div class="rBorder d-flex flex-column">
+
+																			<p>1. Very curious</p>
+																			<p>2. Somewhat curious</p>
+																			<p>3. A little curious</p>
+
+																			<p>4. Not at all curious</p>
+
+																		</div>
+
+																	</div>
+																</div>
+																<div class="letter-number filter-item a">
+																	<a name="a-42"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-42</h2></div>
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. Definitely yes</p>
+																			<p>2. Probably yes</p>
+																			<p>3. Probably not</p>
+
+																			<p>4. Definitely not</p>
+
+																		</div>
+
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item a">
+																	<a name="a-43"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>A-43</h2></div>
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. Not at all harmful</p>
+																			<p>2. Slightly harmful</p>
+																			<p>3. Somewhat harmful</p>
+
+																			<p>4. Very harmful</p>
+																			<p>5. Extremely harmful</p>
+
+																		</div>
+
+																	</div>
+																</div>
+
+
+																<!-- b starts -->
+
+																<div class="letter-number filter-item b">
+																	<a name="b-1"></a>
+																	<div class="startBox bg-white">
+																		<div class="label"><h2>B-1</h2></div>
+																		<div class="rBorder d-flex flex-column">
+
+																			<p>1. 1 or more puffs but never a whole cigarette</p>
+																			<p>2. 1 to 10 cigarettes (about ½ pack total)</p>
+																			<p>3. 11 to 20 cigarettes (about ½ pack to 1 pack)</p>
+																			<p>4. 21 to 50 cigarettes (more than 1 pack but less than 3 packs)</p>
+																			<p>5. 51 to 99 cigarettes (more than 2 ½ packs but less than 5 packs)</p>
+																			<p>6. 100 or more cigarettes (5 packs or more)<p>
+
+																			</div>
+
+																		</div>
+																	</div>
+
+																	<div class="letter-number filter-item b">
+																		<a name="b-2"></a>
+																		<div class="startBox bg-white">
+																			<div class="label"><h2>B-2</h2></div>
+																			<div class="rBorder d-flex flex-column">
+																				<p>1. Not at all</p>
+																				<p>2. A little</p>
+																				<p>3. Somewhat</p>
+																				<p>4. A lot</p>
+
+																			</div>
+
+																		</div>
+																	</div>
+
+																	<div class="letter-number filter-item b">
+																		<a name="b-3"></a>
+																		<div class="startBox bg-white">
+																			<div class="label"><h2>B-3</h2></div>
+																			<div class="rBorder d-flex flex-column">
+																				<p>1. In the past hour</p>
+																				<p>2. Sometime today, but more than an hour ago</p>
+																				<p>3. Yesterday</p>
+
+																				<p>4. Day before yesterday</p>
+																				<p>5. Three or more days ago</p>
+
+																			</div>
+
+																		</div>
+																	</div>
+
+																	<div class="letter-number filter-item b">
+																		<a name="b-4"></a>
+																		<div class="startBox">
+																			<div class="label"><h2>B-4</h2></div>
+																			<div class="rBorder d-flex flex-column">
+																				<p>1. Between midnight and 6AM</p>
+																				<p>2. After 6AM but before noon</p>
+																				<p>3. Between noon and 6PM</p>
+
+																				<p>4. After 6PM but before midnight</p>
+
+
+																			</div>
+
+																		</div>
+																	</div>
+
+																	<div class="letter-number filter-item b">
+																		<a name="b-5"></a>
+																		<div class="startBox">
+																			<div class="label"><h2>B-5</h2></div>
+																			<div class="rBorder d-flex flex-column">
+																				<p>1. I give someone else money to buy them/it for me</p>
+																				<p>2. I ask someone to give me one/some</p>
+																				<p>3. Someone offers them/it to me</p>
+
+																				<p>4. I buy them/it from another person</p>
+																				<p>5. I take them/it from a store or another person</p>
+																				<p>6. I get them/it some other way (SPECIFY) </p>
+
+																			</div>
+
+																		</div>
+																	</div>
+
+																	<div class="letter-number filter-item b">
+																		<a name="b-6"></a>
+																		<div class="startBox">
+																			<div class="label"><h2>B-6</h2></div>
+																			<div class="rBorder d-flex flex-column">
+
+
+																				<p>1. A convenience store or gas station</p>
+																				<p>2. A supermarket, grocery store, or drug store</p>
+																				<p>3. A warehouse club, such as Sam's or Costco</p>
+																				<p>4. A smoke shop, tobacco specialty store, or tobacco outlet store</p>
+																				<p>5. A duty free shop or military commissary</p>
+
+																				<p>6. A bar, pub, restaurant, or casino</p>
+
+																				<p>7. A friend or relative</p>
+																				<p>8. A swap meet or flea market</p>
+																				<p>9. A store on an Indian reservation</p>
+
+																				<p>10. A liquor store</p>
+																				<p>11. Or from somewhere else (SPECIFY)</p>
+																			</div>
+																		</div>
+
+																	</div>
+
+
+
+																	<div class="letter-number filter-item b">
+																		<a name="b-7"></a>
+																		<div class="startBox">
+																			<div class="label"><h2>B-7</h2></div>
+																			<div class="rBorder d-flex flex-column">
+
+
+																				<p>1. In an ash tray or cigarette disposal</p>
+																				<p>2. In the trash</p>
+																				<p>3. On the ground</p>
+																				<p>4. In the sink or toilet</p>
+																				<p>5. Out of a car window</p>
+
+																				<p>6. Somewhere else (SPECIFY) </p>
+
+																			</div>
+																		</div>
+
+																	</div>
+
+																	<div class="letter-number filter-item b">
+																		<a name="b-8"></a>
+																		<div class="startBox">
+																			<div class="label"><h2>B-8</h2></div>
+																			<div class="rBorder d-flex flex-column">
+
+
+																				<p>1. Throw it away in an ash tray or cigarette disposal</p>
+																				<p>2. Throw it away in the trash</p>
+																				<p>3. Throw it away on the ground</p>
+																				<p>4. Recycle it</p>
+																				<p>5. Throw it out of a car window</p>
+
+																				<p>6. Somewhere else (SPECIFY) </p>
+
+																			</div>
+
+
+																		</div>
+																	</div>
+
+																	<div class="letter-number filter-item b">
+																		<a name="b-9"></a>
+																		<div class="startBox">
+																			<div class="label"><h2>B-9</h2></div>
+																			<div class="rBorder d-flex flex-column">
+																				<p>1. Not at all harmful</p>
+																				<p>2. Slightly harmful</p>
+																				<p>3. Somewhat harmful</p>
+
+																				<p>4. Very harmful</p>
+																				<p>5. Extremely harmful</p>
+
+																			</div>
+
+																		</div>
+																	</div>
+
+																	<!--c starts -->
+
+																	<div class="letter-number filter-item c">
+																		<a name="c-1"></a>
+																		<div class="startBox bg-white">
+																			<div class="d-flex justify-content-start">
+																				<div class="label"><h2>C-1</h2></div>
+																			</div>
+
+																			<div class="rBorder d-flex flex-column">
+																				<div class="row">
+																					<div class="col-lg-12 d-flex justify-content-center">
+																						<img src="images/A7.jpg" class="img-fluid" alt="">
+																					</div>
+																				</div>
+
+
+																				<div class="d-flex justify-content-center"><p>E-cigarettes and other Electronic Nicotine Products</p></div>
+
+
+																			</div>
+
+																		</div>
+																	</div>
+
+
+																	<div class="letter-number filter-item c">
+																		<a name="c-2"></a>
+																		<div class="startBox bg-white">
+																			<div class="label"><h2>C-2</h2></div>
+
+																			<div class="rBorder d-flex flex-column">
+																				<p>1. 1 time, even just a few puffs</p>
+																				<p>2. 2 to 10 times</p>
+																				<p>3. 11 to 20 times</p>
+																				<p>4. 21 to 50 times</p>
+																				<p>5. 51 to 99 times</p>
+																				<p>6. 100 or more times</p>
+
+																			</div>
+
+																		</div>
+																	</div>
+
+																	<div class="letter-number filter-item c">
+																		<a name="c-3"></a>
+																		<div class="startBox bg-white">
+																			<div class="label"><h2>C-3</h2></div>
+
+																			<div class="rBorder d-flex flex-column">
+																				<p>1. Tobacco-flavored</p>
+																				<p>2. Menthol</p>
+																				<p>3. Mint</p>
+																				<p>4. Clove or spice</p>
+																				<p>5. Fruit</p>
+																				<p>6. Chocolate</p>
+																				<p>7. An alcoholic drink (such as wine, cognac, margarita, or other cocktails)</p>
+																				<p>8. A non-alcoholic drink (such as coffee, soda, energy drinks, or other beverages)</p>
+
+																				<p>9. Candy, desserts, or other sweets</p>
+																				<p>10. Some other flavor (SPECIFY)</p>
+
+																			</div>
+
+																		</div>
+																	</div>
+
+																	<div class="letter-number filter-item c">
+																		<a name="c-4"></a>
+																		<div class="startBox bg-white">
+																			<div class="label"><h2>C-4</h2></div>
+
+																			<div class="rBorder d-flex flex-column">
+																				<p>1. E-cigarette including a pod device, vape pen, tank system, or mod</p>
+																				<p>2. E-cigar</p>
+																				<p>3. E-pipe</p>
+																				<p>4. E-hookah including a hookah pen</p>
+																				<p>5. Something else (SPECIFY)</p>
+
+																			</div>
+
+																		</div>
+																	</div>
+																	<div class="letter-number filter-item c">
+																		<a name="c-5"></a>
+																		<div class="startBox bg-white">
+																			<div class="label"><h2>C-5</h2></div>
+
+																			<div class="rBorder d-flex flex-column">
+																				<p>1. A disposable device</p>
+																				<p>2. A device that uses replaceable pods or cartridges</p>
+																				<p>3. A device with a tank that you refill with liquids</p>
+																				<p>4. A mod system</p>
+																				<p>5. Something else (SPECIFY)</p>
+
+																			</div>
+
+																		</div>
+																	</div>
+
+																	<div class="letter-number filter-item c">
+																		<a name="c-6"></a>
+																		<div class="startBox">
+																			<div class="label"><h2>C-6</h2></div>
+																			<div class="rBorder d-flex flex-column">
+																				<div class="row">
+																					<div class="col-lg-12  d-flex justify-content-between flex-wrap">
+																						<div class="d-flex flex-column">
+																							<img src="images/C6-1.jpg" class="img-fluid" alt="">
+																							<p class="text-center">Group 1</p>
+																						</div>
+																						<div class="d-flex flex-column">
+																							<img src="images/C6-2.jpg" class="img-fluid" alt="">
+																							<p class="text-center">Group 2</p>
+																						</div>
+																						<div class="d-flex flex-column">
+																							<img src="images/C6-3.jpg" class="img-fluid" alt="">
+																							<p class="text-center">Group 3</p>
+																						</div>
+																						<div class="d-flex flex-column">
+																							<img src="images/C6-4.jpg" class="img-fluid" alt="">
+																							<p class="text-center">Group 4</p>
+																						</div>
+																						<div class="d-flex flex-column">
+																							<img src="images/C6-05.jpg" class="img-fluid" alt="">
+																							<p class="text-center">Group 5</p>
+																						</div>
+																						<div class="d-flex flex-column">
+																							<img src="images/C6-5.jpg" class="img-fluid" alt="">
+																							<p class="text-center">Group 6</p>
+																						</div>
+																						<div class="d-flex flex-column">
+																							<img src="images/C6-6.jpg" class="img-fluid" alt="">
+																							<p class="text-center">Group 7</p>
+																						</div>
+																					</div>
+																				</div>
+
+																		</div>
+																	</div>
+
+																</div>
+
+																<div class="letter-number filter-item c">
+																	<a name="c-7"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>C-7</h2></div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. At least once a day</p>
+																			<p>2. Once every couple of days</p>
+																			<p>3. Once a week</p>
+																			<p>4. A few times a month</p>
+																			<p>5. Once a month</p>
+																			<p>6. A few times a year</p>
+																			<p>7. Once a year</p>
+																			<p>8. Never</p>
+																		</div>
+
+																	</div>
+																</div>
+
+
+																<div class="letter-number filter-item c">
+																	<a name="c-8"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>C-8</h2></div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. At least once a day</p>
+																			<p>2. Once every couple of days</p>
+																			<p>3. Once a week</p>
+																			<p>4. A few times a month</p>
+																			<p>5. Once a month</p>
+																			<p>6. A few times a year</p>
+																			<p>7. Once a year</p>
+																			<p>8. Never</p>
+																		</div>
+
+																	</div>
+																</div>
+
+
+																<div class="letter-number filter-item c">
+																	<a name="c-9"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>C-9</h2></div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. At least once a day</p>
+																			<p>2. Once every couple of days</p>
+																			<p>3. Once a week</p>
+																			<p>4. A few times a month</p>
+																			<p>5. Once a month</p>
+																			<p>6. A few times a year</p>
+																			<p>7. Once a year</p>
+																			<p>8. Never</p>
+																		</div>
+
+																	</div>
+																</div>
+
+
+																<div class="letter-number filter-item c">
+																	<a name="c-10"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>C-10</h2></div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. At least once a day</p>
+																			<p>2. Once every couple of days</p>
+																			<p>3. Once a week</p>
+																			<p>4. A few times a month</p>
+																			<p>5. Once a month</p>
+																			<p>6. A few times a year</p>
+																			<p>7. Once a year</p>
+																			<p>8. Never</p>
+																		</div>
+
+																	</div>
+																</div>
+
+
+																<div class="letter-number filter-item c">
+																	<a name="c-11"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>C-11</h2></div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. At least once a day</p>
+																			<p>2. Once every couple of days</p>
+																			<p>3. Once a week</p>
+																			<p>4. A few times a month</p>
+																			<p>5. Once a month</p>
+																			<p>6. A few times a year</p>
+																			<p>7. Once a year</p>
+																			<p>8. Never</p>
+																		</div>
+
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item c">
+																	<a name="c-12"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>C-12</h2></div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. At least once a day</p>
+																			<p>2. Once every couple of days</p>
+																			<p>3. Once a week</p>
+																			<p>4. A few times a month</p>
+																			<p>5. Once a month</p>
+																			<p>6. A few times a year</p>
+																			<p>7. Once a year</p>
+																			<p>8. Never</p>
+																		</div>
+
+																	</div>
+																</div>
+
+
+																<div class="letter-number filter-item c">
+																	<a name="c-13"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>C-13</h2></div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. At least once a day</p>
+																			<p>2. Once every couple of days</p>
+																			<p>3. Once a week</p>
+																			<p>4. A few times a month</p>
+																			<p>5. Once a month</p>
+																			<p>6. A few times a year</p>
+																			<p>7. Once a year</p>
+																			<p>8. Never</p>
+																		</div>
+
+																	</div>
+																</div>
+
+
+																<div class="letter-number filter-item c">
+																	<a name="c-14"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>C-14</h2></div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. At least once a day</p>
+																			<p>2. Once every couple of days</p>
+																			<p>3. Once a week</p>
+																			<p>4. A few times a month</p>
+																			<p>5. Once a month</p>
+																			<p>6. A few times a year</p>
+																			<p>7. Once a year</p>
+																			<p>8. Never</p>
+																		</div>
+
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item c">
+																	<a name="c-15"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>C-15</h2></div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. At least once a day</p>
+																			<p>2. Once every couple of days</p>
+																			<p>3. Once a week</p>
+																			<p>4. A few times a month</p>
+																			<p>5. Once a month</p>
+																			<p>6. A few times a year</p>
+																			<p>7. Once a year</p>
+																			<p>8. Never</p>
+																		</div>
+
+																	</div>
+																</div>
+
+
+																<div class="letter-number filter-item c">
+																	<a name="c-16"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>C-16</h2></div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. At least once a day</p>
+																			<p>2. Once every couple of days</p>
+																			<p>3. Once a week</p>
+																			<p>4. A few times a month</p>
+																			<p>5. Once a month</p>
+																			<p>6. A few times a year</p>
+																			<p>7. Once a year</p>
+																			<p>8. Never</p>
+																		</div>
+
+																	</div>
+																</div>
+
+
+																<div class="letter-number filter-item c">
+																	<a name="c-17"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>C-17</h2></div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. At least once a day</p>
+																			<p>2. Once every couple of days</p>
+																			<p>3. Once a week</p>
+																			<p>4. A few times a month</p>
+																			<p>5. Once a month</p>
+																			<p>6. A few times a year</p>
+																			<p>7. Once a year</p>
+																			<p>8. Never</p>
+																		</div>
+
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item c">
+																	<a name="c-18"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>C-18</h2></div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. At least once a day</p>
+																			<p>2. Once every couple of days</p>
+																			<p>3. Once a week</p>
+																			<p>4. A few times a month</p>
+																			<p>5. Once a month</p>
+																			<p>6. A few times a year</p>
+																			<p>7. Once a year</p>
+																			<p>8. Never</p>
+																		</div>
+
+																	</div>
+																</div>
+
+
+																<div class="letter-number filter-item c">
+																	<a name="c-19"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>C-19</h2></div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. At least once a day</p>
+																			<p>2. Once every couple of days</p>
+																			<p>3. Once a week</p>
+																			<p>4. A few times a month</p>
+																			<p>5. Once a month</p>
+																			<p>6. A few times a year</p>
+																			<p>7. Once a year</p>
+																			<p>8. Never</p>
+																		</div>
+
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item c">
+																	<a name="c-20"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>C-20</h2></div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. At least once a day</p>
+																			<p>2. Once every couple of days</p>
+																			<p>3. Once a week</p>
+																			<p>4. A few times a month</p>
+																			<p>5. Once a month</p>
+																			<p>6. A few times a year</p>
+																			<p>7. Once a year</p>
+																			<p>8. Never</p>
+																		</div>
+
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item c">
+																	<a name="c-21"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>C-21</h2></div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. At least once a day</p>
+																			<p>2. Once every couple of days</p>
+																			<p>3. Once a week</p>
+																			<p>4. A few times a month</p>
+																			<p>5. Once a month</p>
+																			<p>6. A few times a year</p>
+																			<p>7. Once a year</p>
+																			<p>8. Never</p>
+																		</div>
+
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item c">
+																	<a name="c-22"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>C-22</h2></div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. At least once a day</p>
+																			<p>2. Once every couple of days</p>
+																			<p>3. Once a week</p>
+																			<p>4. A few times a month</p>
+																			<p>5. Once a month</p>
+																			<p>6. A few times a year</p>
+																			<p>7. Once a year</p>
+																			<p>8. Never</p>
+																		</div>
+
+																	</div>
+																</div>
+
+
+																<div class="letter-number filter-item c">
+																	<a name="c-23"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>C-23</h2></div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. At least once a day</p>
+																			<p>2. Once every couple of days</p>
+																			<p>3. Once a week</p>
+																			<p>4. A few times a month</p>
+																			<p>5. Once a month</p>
+																			<p>6. A few times a year</p>
+																			<p>7. Once a year</p>
+																			<p>8. Never</p>
+																		</div>
+
+																	</div>
+																</div>
+
+
+																<div class="letter-number filter-item c">
+																	<a name="c-23"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>C-23</h2></div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. At least once a day</p>
+																			<p>2. Once every couple of days</p>
+																			<p>3. Once a week</p>
+																			<p>4. A few times a month</p>
+																			<p>5. Once a month</p>
+																			<p>6. A few times a year</p>
+																			<p>7. Once a year</p>
+																			<p>8. Never</p>
+																		</div>
+
+																	</div>
+																</div>
+
+
+																<div class="letter-number filter-item c">
+																	<a name="c-24"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>C-24</h2></div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. At least once a day</p>
+																			<p>2. Once every couple of days</p>
+																			<p>3. Once a week</p>
+																			<p>4. A few times a month</p>
+																			<p>5. Once a month</p>
+																			<p>6. A few times a year</p>
+																			<p>7. Once a year</p>
+																			<p>8. Never</p>
+																		</div>
+
+																	</div>
+																</div>
+
+
+																<div class="letter-number filter-item d">
+																	<a name="d-1"></a>
+																	<div class="startBox bg-white">
+																		<div class="label"><h2>D-1</h2></div>
+																		<div class="rBorder d-flex flex-column align-items-center">
+																			<div class="row">
+																				<div class="col-lg-12 d-flex  justify-content-center">
+																					<img src="images/A19.jpg" class="img-fluid" alt="">
+																				</div>
+																			</div>
+
+																			<div class="d-flex justify-content-between">
+																				<div class="d-flex justify-content-center"><p>Traditional Cigars</p></div>
+																			</div>
+
+																		</div>
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item d">
+																	<a name="d-2"></a>
+																	<div class="startBox bg-white">
+																		<div class="label"><h2>D-2</h2></div>
+																		<div class="rBorder d-flex flex-column align-items-center">
+																			<div class="row">
+																				<div class="col-lg-12 d-flex  justify-content-center">
+																					<img src="images/A20.jpg" class="img-fluid" alt="">
+																				</div>
+																			</div>
+
+																			<div class="d-flex justify-content-between">
+																				<div class="d-flex justify-content-center"><p>Cigarillos</p></div>
+																			</div>
+																		</div>
+
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item d">
+																	<a name="d-3"></a>
+																	<div class="startBox bg-white">
+																		<div class="label"><h2>D-3</h2></div>
+																		<div class="rBorder d-flex flex-column align-items-center">
+																			<div class="row">
+																				<div class="col-lg-12 d-flex  justify-content-center">
+																					<img src="images/A21.jpg" class="img-fluid" alt="">
+																				</div>
+																			</div>
+
+																			<div class="d-flex justify-content-between">
+																				<div class="d-flex justify-content-center">	<p>Filtered Cigars</p></div>
+
+																			</div>
+																		</div>
+
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item d">
+																	<a name="d-4"></a>
+																	<div class="startBox bg-white">
+																		<div class="label"><h2>D-4</h2></div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. 1 time, even just a few puffs</p>
+																			<p>2. 2 to 10 times</p>
+																			<p>3. 11 to 20 times</p>
+																			<p>4. 21 to 50 times</p>
+																			<p>5. 51 to 99 times</p>
+																			<p>6. 100 or more times</p>
+
+																		</div>
+
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item d">
+																	<a name="d-5"></a>
+																	<div class="startBox bg-white">
+																		<div class="label"><h2>D-5</h2></div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. Tobacco-flavored</p>
+																			<p>2. Menthol</p>
+																			<p>3. Mint</p>
+																			<p>4. Clove or spice</p>
+																			<p>5. Fruit</p>
+																			<p>6. Chocolate</p>
+																			<p>7. An alcoholic drink (such as wine, cognac, margarita, or other cocktails)</p>
+																			<p>8. A non-alcoholic drink (such as coffee, soda, energy drinks, or other beverages)</p>
+
+																			<p>9. Candy, desserts, or other sweets</p>
+																			<p>10. Some other flavor (SPECIFY)</p>
+
+																		</div>
+
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item d">
+																	<a name="d-6"></a>
+																	<div class="startBox bg-white">
+																		<div class="label"><h2>D-6</h2></div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. All of the time</p>
+																			<p>2. Most of the time</p>
+																			<p>3. Sometimes</p>
+																			<p>4. Rarely</p>
+																			<p>5. Never</p>
+
+
+																		</div>
+
+																	</div>
+																</div>
+
+																<div class="letter-number filter-item d">
+																	<a name="d-7"></a>
+																	<div class="startBox bg-white">
+																		<div class="label"><h2>D-7</h2></div>
+																		<div class="rBorder d-flex flex-column">
+
+																			<p>1. In the past hour</p>
+																			<p>2. Sometime today, but more than an hour ago</p>
+																			<p>3. Yesterday</p>
+
+																			<p>4. Day before yesterday</p>
+																			<p>5. Three or more days ago</p>
+
+																		</div>
+
+
+																	</div>
+																</div>
+
+
+																<div class="letter-number filter-item d">
+																	<a name="d-8"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>D-8</h2></div>
+																		<div class="rBorder d-flex flex-column">
+
+																			<p>1. Between midnight and 6AM</p>
+																			<p>2. After 6AM but before noon</p>
+																			<p>3. Between noon and 6PM</p>
+
+																			<p>4. After 6PM but before midnight</p>
+
+
+																		</div>
+
+																	</div>
+																</div>
+
+
+																<div class="letter-number filter-item d">
+																	<a name="d-9"></a>
+																	<div class="startBox">
+																		<div class="label"><h2>D-9</h2></div>
+																		<div class="rBorder d-flex flex-column">
+																			<p>1. I give someone else money to buy them for me</p>
+																			<p>2. I ask someone to give me one</p>
+																			<p>3. Someone offers it to me</p>
+
+																			<p>4. I buy them from another person</p>
+																			<p>5. I take them from a store or another person</p>
+																			<p>6. I get them some other way (SPECIFY) </p>
+
+																		</div>
+
+																	</div>
+																</div>
+
+																<!-- e starts -->
+																<div class="letter-number filter-item e">
+																	<a name="e-1"></a>
+																	<div class="startBox bg-white">
+																		<div class="d-flex justify-content-start">
+																			<div class="label"><h2>E-1</h2></div>
+																		</div>
+
+																		<div class="rBorder d-flex flex-column">
+																			<div class="row">
+																				<div class="col-lg-12 d-flex justify-content-center">
+																					<img src="images/E1.jpg" class="img-fluid" alt="">
+																				</div>
+																			</div>
+
+
+																			<div class="d-flex justify-content-center"><p>Pipe and Pipe Tobacco</p></div>
+
+
+																		</div>
+
+																	</div>
+																</div>
+
+
+
+
+
+
+
+
+
+															</div>
+
+														</div>
+													</div>
+
+
+
+												</div>
+											</div>
+
+										</div>
+											</div>
+									</section>
+									<div class="contactUsOverlay"></div>
+
+
+
+										<div class="footer-img">
+											<div class="container-fluid">
+												<img class="" src="images/about-footer.svg" alt="Overlay">
+											</div>
+										</div>
+
+
+
+									<div id="slideOut2">
+
+										<div id="one" class="openTab" role="button" tabindex="0" aria-label="Contact">
+											<p class="plum"><i class="fas fa-envelope plum"></i>&nbsp;&nbsp;Contact Us</p>
+
+										</div>
+
+										<div class="modal-content">
+											<div class="modal-header">
+												<div class="closeThisPlease" id="close">
+													<button role="button" role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
+														&#10005;
+													</button>
+												</div>
+												<br>
+												<div class="d-flex justify-content-between align-items-center contactInfo">
+
+													<p class="whiteLarger">Contact Us</p>
+													<a href="participant-form.html"><p class="white update">Update Your Contact Info</p></a>
+												</div>
+
+											</div>
+											<div class="modal-body">
+												<div class="row topContent">
+													<div class="col-lg-8 col-md-8 col-sm-12">
+														<div class="text">
+															<p class="white">For general questions or comments, media inquiries, requests for materials, and/or technical comments or questions about the website, please fill out the form here and click the ‘Send Email’ button at the bottom. For details on the site’s use of this information, see Privacy/Disclaimer.</p>
+															<p class="white">Additional information for researchers  not government site is available on the National Addiction & HIV Data Archive Program  not government site website. Among other information this includes how to access PATH Study data and details about the study design.</p>
+														</div>
+													</div>
+													<div class="col-lg-4 col-md-4 col-sm-12">
+														<div class="right">
+															<img src="images/email-icon.svg" class="img-fluid">
+															<p class="white text-center">A copy of this communication will be sent to you be email.</p>
+														</div>
+													</div>
+												</div>
+
+												<form method="post" data-form-title="CONTACT US" class="slideForm">
+
+													<div class="form-group">
+														<legend>Email</legend>
+														<label for="formControl1">Email</label>
+														<input id="formControl1" type="email" class="form-control required" tabindex="-1" aria-hidden="false" name="Email" data-form-field="Email" required>
+													</div>
+													<div class="form-group">
+														<legend>Affiliated company, institution, or organization</legend>
+														<label for="formControl2">Affiliated company, institution, or organization<span class="light"> (if you are not affiliated enter “None” or “NA”):</span></label>
+														<input type="text" id="formControl2" class="form-control" tabindex="-1" aria-hidden="false" name="company">
+													</div>
+
+													<div class="form-group">
+														<fieldset>
+															<label for="general-inquiry">Contact Category</label>
+															<div class="around2">
+																<div class="vertical">
+
+																	<legend>Contact Category</legend>
+																	<label class="radio-inline">
+																		<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false" id="general-inquiry" checked required>Comment about the study
+																	</label>
+																</div>
+																<div class="vertical">
+
+																	<label class="radio-inline">
+																		<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">problem with this website
+																	</label>
+																</div>
+																<div class="vertical">
+
+																	<label class="radio-inline">
+																		<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">media inquiry
+																	</label>
+																</div>
+																<div class="vertical">
+
+																	<label class="radio-inline">
+																		<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false">other
+																	</label>
+																</div>
+															</div>
+														</fieldset>
+													</div>
+													<div class="form-group">
+														<label for="formControl4">Message</label>
+														<textarea class="form-control" id="formControl4" tabindex="-1" aria-hidden="false" name="message" rows="4" data-form-field="Message"></textarea>
+													</div>
+
+													<div class="d-flex justify-content-between align-items-center printSend">
+														<div class="left">
+															<div class="form-check form-check-inline">
+																<legend>Print Copy</legend>
+																<input class="form-check-input position-static" type="checkbox" id="print-copy" value="" aria-label="Print Copy" tabindex="-1" aria-hidden="false">
+															</div>
+															<label for="print-copy"><p class="white">Check to print a copy for your records&nbsp;<i class="far fa-print"></i></p></label>
+														</div>
+
+														<button type="submit" class="btn btn-info button-outlined" id="sendMessage" tabindex="-1" aria-hidden="false">
+															<i class="fal fa-envelope brightBlue"></i>&nbsp;Send
+														</button>
+
+													</div>
+
+
+												</form>
+
+											</div>
+											<div class="modal-footer">
+
+											</div>
+
+										</div>
+
+									</div>
+
+									<div class="toast transparent-opacity" role="alert" aria-live="assertive" aria-atomic="true">
+										&#x2713; Thank you.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message sent successfully.
+									</div>
+
+</div>
+									<div class="survey-footer">
+										<div class="one">
+
+											<div class="d-flex justify-content-between">
+
+												<p class="white">Accessibility</p>
+												<div class="flip2"></div>
+												<p class="white">Privacy/Disclaimer</p>
+												<div class="flip2"></div>
+												<a href="https://www.nih.gov/institutes-nih/nih-office-director/office-communications-public-liaison/freedom-information-act-office" target="_blank">
+													<p class="white">FOIA <i class="far fa-external-link-alt"></i></p>
+												</a>
+
+											</div>
+
+											<div class="d-flex justify-content-between align-items-center">
+												<p class="white" id="timeStamp">last updated: 8/10/2020</p>
+
+
+											</div>
+											<div class="d-flex justify-content-between align-items-center">
+												<a target="_blank" href="https://get.adobe.com/reader/"><p class="white">Download Acrobat Reader <i class="far fa-external-link-alt"></i></p></a>
+
+											</div>
+
+										</div>
+										<div class="two">
+											<a href="https://www.hhs.gov/" target="_blank" title="HHS">
+												<img src="images/" alt="HHS Logo">
+											</a>
+											<a href="https://www.nih.gov/" target="_blank" title="NIH">
+												<img src="images/nih.png" alt="NIH Logo">
+											</a>
+											<a href="https://www.drugabuse.gov/" target="_blank" title="NIH Drug">
+												<img src="images/drug.svg" alt="National Institute of Drug Abuse Logo">
+											</a>
+											<a href="http://www.fda.gov/" target="_blank" title="FDA">
+												<img src="images/fda.svg" alt="Food and Drug Administration Logo">
+											</a>
+
+											<a href="https://www.usa.gov/" target="_blank" title="USA.GOV">
+												<img src="images/us-gov.png" alt="USA.gov Logo">
+											</a>
+										</div>
+									</div>
+
+									<div class="back-to-top">
+										<i class="far fa-angle-up"></i>
+									</div>
+
+
+
+
+			</body>
+
+			</html>
