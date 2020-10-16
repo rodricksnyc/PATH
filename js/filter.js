@@ -48,7 +48,7 @@ $(document).ready(function () {
 	// init Isotope
 	var $grid = $('.grid').isotope({
 		itemSelector: '.filter-item',
-
+	layoutMode:'fitRows',
 
 		filter: function() {
 
@@ -73,8 +73,8 @@ $(document).ready(function () {
 	});
 
 
-
-$('.grid').isotope('reloadItems').isotope();
+// 
+// $('.grid').isotope('reloadItems').isotope();
 
 
 	$('.filters').on( 'click', '.letter', function() {
