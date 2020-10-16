@@ -30,6 +30,7 @@ $(document).ready(function () {
 	// init Isotope
 	var $grid = $('.grid').isotope({
 		itemSelector: '.filter-item',
+		percentPosition: true,
 		filter: function() {
 
 			var isMatched = true;
