@@ -48,8 +48,13 @@ $(document).ready(function () {
 	// init Isotope
 	var $grid = $('.grid').isotope({
 		itemSelector: '.filter-item',
-	layoutMode:'fitRows',
-	fitWidth: true,
+		percentPosition: true,
+		resize: true,
+		masonry: {
+			resize: true
+
+	},
+
 
 		filter: function() {
 
@@ -73,9 +78,11 @@ $(document).ready(function () {
 		}
 	});
 
+	// $('.grid').imagesLoadedMB().progress( function() {
+	// 	 $('.grid').isotope('layout');
+ // });
 
-
-$('.grid').isotope('reloadItems').isotope();
+// $('.grid').isotope('reloadItems').isotope();
 
 
 	$('.filters').on( 'click', '.letter', function() {
