@@ -49,6 +49,7 @@ $(document).ready(function () {
 	var $grid = $('.grid').isotope({
 		itemSelector: '.filter-item',
 	layoutMode:'fitRows',
+	fitWidth: true,
 
 		filter: function() {
 
@@ -73,25 +74,25 @@ $(document).ready(function () {
 	});
 
 
-// 
-// $('.grid').isotope('reloadItems').isotope();
+
+$('.grid').isotope('reloadItems').isotope();
 
 
 	$('.filters').on( 'click', '.letter', function() {
 		var $this = $(this);
 
-
-var gridHeight = $('.secondGrid').height()
-
-
-
-$(window).css({
-	'height': $('.secondGrid').height()
-})
-
-console.log(gridHeight)
-
-console.log($(window).height())
+//
+// var gridHeight = $('.secondGrid').height()
+//
+//
+//
+// $(window).css({
+// 	'height': $('.secondGrid').height()
+// })
+//
+// console.log(gridHeight)
+//
+// console.log($(window).height())
 
 		// get group key
 		var $buttonGroup = $this.parents('.button-group');
