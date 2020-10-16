@@ -1,93 +1,80 @@
-	$(document).ready(function () {
+$(document).ready(function () {
 
 
-		$('.letter').attr('tabindex', '0')
+	$('.letter').attr('tabindex', '0')
 
-// 		// external js: isotope.pkgd.js
-//
-// // init Isotope
-// var $grid = $('.grid').isotope({
-//   itemSelector: '.color-shape'
-// });
-//
-// // store filter for each group
-// var filters = {};
-//
-// $('.button').on( 'click', function( event ) {
-//   var $select = $( event.target );
-//   // get group key
-//   var filterGroup = $select.attr('value-group');
-//   // set filter for group
-//   filters[ filterGroup ] = event.target.value;
-//   // combine filters
-//   var filterValue = concatValues( filters );
-//   // set filter for Isotope
-//   $grid.isotope({ filter: filterValue });
-// });
-//
-// // flatten object by concatting values
-// function concatValues( obj ) {
-//   var value = '';
-//   for ( var prop in obj ) {
-//     value += obj[ prop ];
-//   }
-//   return value;
-// }
+
+
+	var Opt01 = "";
+	$('.firstGroup .letter p').each(function() {
+		Opt01 = $(this).html();
+
+
+		$(this).click(function() {
+			console.log($(this).html())
+
+			var storeLetter = $(this).html()
+
+			$('#changeLetter').html(storeLetter)
+		})
 
 
 
 
-// store filter for each group
-var filters = {};
-
-// init Isotope
-var $grid = $('.grid').isotope({
-  itemSelector: '.letter-number',
-  filter: function() {
-
-    var isMatched = true;
-    var $this = $(this);
-
-    for ( var prop in filters ) {
-      var filter = filters[ prop ];
-      // use function if it matches
-      filter = filter;
-      // test each filter
-      if ( filter ) {
-        isMatched = isMatched && $(this).is( filter );
-      }
-      // break if not matched
-      if ( !isMatched ) {
-        break;
-      }
-    }
-    return isMatched;
-  }
-});
+	})
 
 
+	// store filter for each group
+	var filters = {};
 
-$('#filters').on( 'click', '.letter', function() {
-  var $this = $(this);
+	// init Isotope
+	var $grid = $('.grid').isotope({
+		itemSelector: '.filter-item',
+		filter: function() {
+
+			var isMatched = true;
+			var $this = $(this);
+
+			for ( var prop in filters ) {
+				var filter = filters[ prop ];
+				// use function if it matches
+				filter = filter;
+				// test each filter
+				if ( filter ) {
+					isMatched = isMatched && $(this).is( filter );
+				}
+				// break if not matched
+				if ( !isMatched ) {
+					break;
+				}
+			}
+			return isMatched;
+		}
+	});
 
 
-  // get group key
-  var $buttonGroup = $this.parents('.button-group');
-  var filterGroup = $buttonGroup.attr('data-filter-group');
-  // set filter for group
-  filters[ filterGroup ] = $this.attr('data-filter');
-  // arrange, and use filter fn
-  $grid.isotope();
-});
 
-// change is-checked class on buttons
-$('.button-group').each( function( i, buttonGroup ) {
-  var $buttonGroup = $( buttonGroup );
-  $buttonGroup.on( 'click', '.letter', function() {
-	
-    $buttonGroup.find('.is-checked').removeClass('is-checked');
-    $( this ).addClass('is-checked');
-  });
-});
+	$('.filters').on( 'click', '.letter', function() {
+		var $this = $(this);
+
+
+		// get group key
+		var $buttonGroup = $this.parents('.button-group');
+		var filterGroup = $buttonGroup.attr('data-filter-group');
+		// set filter for group
+		filters[ filterGroup ] = $this.attr('data-filter');
+		// arrange, and use filter fn
+		$grid.isotope();
+	});
+
+	// change is-checked class on buttons
+	$('.button-group').each( function( i, buttonGroup ) {
+		var $buttonGroup = $( buttonGroup );
+		$buttonGroup.on( 'click', '.letter', function() {
+
+			$buttonGroup.find('.is-checked').removeClass('is-checked');
+			$( this ).addClass('is-checked');
+		});
+	});
 
 })
