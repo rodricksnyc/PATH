@@ -22,9 +22,9 @@ $(document).ready(function () {
 
 	$(".secondGroup .letter.number").click(function () {
 
-	    $(".letter.number").removeClass("is-active");
+		$(".letter.number").removeClass("is-active");
 
-	    $(this).addClass("is-active");
+		$(this).addClass("is-active");
 	});
 
 
@@ -48,13 +48,13 @@ $(document).ready(function () {
 
 
 
-		$(".numberTags").attr('tabindex', '0')
+	$(".numberTags").attr('tabindex', '0')
 
 
 
-		$(window).scroll(function () {
-			((window.pageYOffset || document.documentElement.scrollTop) > 100) ? $('.back-to-top').css({ opacity: 1, visibility: "visible" }) : $('.back-to-top').css({ opacity: 1, visibility: "visible" });
-		});
+	$(window).scroll(function () {
+		((window.pageYOffset || document.documentElement.scrollTop) > 100) ? $('.back-to-top').css({ opacity: 1, visibility: "visible" }) : $('.back-to-top').css({ opacity: 1, visibility: "visible" });
+	});
 
 
 	// var width = 	$('.rBorder').width()
@@ -87,7 +87,7 @@ $(document).ready(function () {
 		masonry: {
 
 
-	},
+		},
 
 
 		filter: function() {
@@ -115,21 +115,21 @@ $(document).ready(function () {
 	});
 
 
-//
-// $('.grid').imagesLoadedMB().progress( function() {
-// 				 $('.grid').isotope('layout');
-// 	});
+	//
+	// $('.grid').imagesLoadedMB().progress( function() {
+	// 				 $('.grid').isotope('layout');
+	// 	});
 
-$('.grid').imagesLoaded(function(){
+	$('.grid').imagesLoaded(function(){
 
-	$('.grid').isotope('layout');
-		 // $('.grid').masonry({
-			//  itemSelector: '.grid-item',
-			//  columnWidth: 100
-		 // });
-	 });
+		$('.grid').isotope('layout');
+		// $('.grid').masonry({
+		//  itemSelector: '.grid-item',
+		//  columnWidth: 100
+		// });
+	});
 
-$('.grid').isotope('reloadItems').isotope();
+	$('.grid').isotope('reloadItems').isotope();
 
 
 	$('.filters').on( 'click', '.letter', function() {
@@ -138,18 +138,18 @@ $('.grid').isotope('reloadItems').isotope();
 
 		$('.hideInitial').show()
 
-//
-// var gridHeight = $('.secondGrid').height()
-//
-//
-//
-// $(window).css({
-// 	'height': $('.secondGrid').height()
-// })
-//
-// console.log(gridHeight)
-//
-// console.log($(window).height())
+		//
+		// var gridHeight = $('.secondGrid').height()
+		//
+		//
+		//
+		// $(window).css({
+		// 	'height': $('.secondGrid').height()
+		// })
+		//
+		// console.log(gridHeight)
+		//
+		// console.log($(window).height())
 
 		// get group key
 		var $buttonGroup = $this.parents('.button-group');
@@ -196,10 +196,10 @@ $('.grid').isotope('reloadItems').isotope();
 			var code = (e.keyCode ? e.keyCode : e.which);
 			if (code == 13) {
 
-			$buttonGroup.find('.is-checked').removeClass('is-checked');
-			$( this ).addClass('is-checked');
+				$buttonGroup.find('.is-checked').removeClass('is-checked');
+				$( this ).addClass('is-checked');
 
-		}
+			}
 		});
 
 

@@ -117,7 +117,7 @@
 }
 
 .back-to-top{
-right:1%
+	right:1%
 
 }
 
@@ -192,11 +192,11 @@ right:1%
 }
 
 .smallest {
-    font-size: 10px !important;
-    margin-top: 0;
-    max-width: 30em;
-    line-height: 15px !important;
-    text-align: center;
+	font-size: 10px !important;
+	margin-top: 0;
+	max-width: 30em;
+	line-height: 15px !important;
+	text-align: center;
 }
 
 .blackBorder{
@@ -230,7 +230,7 @@ right:1%
 }
 
 .position-fixed{
-	    z-index: 999;
+	z-index: 999;
 }
 
 
@@ -239,7 +239,7 @@ right:1%
 
 		flex: 0 0 18%;
 		max-width: 18%;
-}
+	}
 }
 
 
@@ -248,7 +248,7 @@ right:1%
 
 		flex: 0 0 21%;
 		max-width: 21%;
-}
+	}
 }
 
 
@@ -257,16 +257,16 @@ right:1%
 
 		flex: 0 0 25%;
 		max-width: 25%;
-}
+	}
 }
 
 
 @media (max-width:1800px) and (min-width:1680px){
 	.col-lg-3 {
 
-    flex: 0 0 27%;
-    max-width: 27%;
-}
+		flex: 0 0 27%;
+		max-width: 27%;
+	}
 }
 
 @media (max-width:1679px) and (min-width:1400px){
@@ -274,7 +274,7 @@ right:1%
 
 		flex: 0 0 29%;
 		max-width: 29%;
-}
+	}
 }
 
 @media (max-width:1500px){
@@ -289,14 +289,14 @@ right:1%
 
 		flex: 0 0 27%;
 		max-width: 27%;
-}
+	}
 }
 
 
 @media (max-width:1199px){
 	p.text-center{
 
-			margin-bottom:2em !important
+		margin-bottom:2em !important
 	}
 
 	p.text-center.margin0{
@@ -304,12 +304,12 @@ right:1%
 	}
 
 	.smallest {
-    font-size: 10px !important;
-    margin-top: 0;
-    max-width: none;
-    line-height: 15px !important;
-    text-align: center;
-}
+		font-size: 10px !important;
+		margin-top: 0;
+		max-width: none;
+		line-height: 15px !important;
+		text-align: center;
+	}
 
 
 
@@ -330,9 +330,9 @@ right:1%
 
 	.rBorder {
 
-    padding: 1em 1em 1em 1em;
+		padding: 1em 1em 1em 1em;
 
-}
+	}
 
 
 }
@@ -344,20 +344,20 @@ right:1%
 
 	.position-fixed {
 
-	    top: 0;
+		top: 0;
 	}
 
 	.position-fixed {
-    position: relative !important;
-}
+		position: relative !important;
+	}
 	.mobileOnly{
 		display: block !important;
 		font-size: 30px;
-    margin: 0;
-    padding: 0;
-    background: #C4EDA1;
-    border-radius: 1rem;
-    width:100%
+		margin: 0;
+		padding: 0;
+		background: #C4EDA1;
+		border-radius: 1rem;
+		width:100%
 	}
 	.secondGroup{
 		display: none
@@ -376,24 +376,24 @@ right:1%
 
 	}
 
-  .five-column{
-    padding: 0em 5em;
-  }
+	.five-column{
+		padding: 0em 5em;
+	}
 
-  .pt-5{
-    padding-top: 0rem!important;
-}
+	.pt-5{
+		padding-top: 0rem!important;
+	}
 
- p.text-center{
+	p.text-center{
 
 		line-height: 19px;
-			margin-bottom:2em !important
+		margin-bottom:2em !important
 	}
 
 	.rBorder .row .d-flex{
 		flex-direction: column;
-    justify-content: center;
-    align-items: center;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.grid{
