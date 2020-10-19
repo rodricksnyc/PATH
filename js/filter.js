@@ -29,18 +29,24 @@ $(document).ready(function () {
 
 
 
+
+
 	$(".numberTags").on("keyup", function (e) {
 		var code = (e.keyCode ? e.keyCode : e.which);
 		if (code == 9) {
 			$(this).css('outline', 'dashed 3px #4599ff')
-			$(this).find(".letter.number").addClass("is-active");
+			$(this).find(".letter.number").addClass("green-active");
 		}
 
 	})
 	$(".numberTags").on('focusout', function() {
+
 		$(this).css('outline', 'none')
-		$(this).find(".letter.number").removeClass("is-active");
+		$(this).find(".letter.number").removeClass("green-active");
+
 	})
+
+
 
 
 
