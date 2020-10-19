@@ -101,6 +101,10 @@ $(".block50 a").on('focusout', function() {
 
 
 	$('.spanish').on('click', function(e) {
+
+			$('.grid').isotope('reloadItems').isotope();
+
+		$('.spanish-spacer').css('height', '2vh')
 		// e.preventDefault()
 
 		$(this).removeClass('inactiveDot').addClass('activeDot')
