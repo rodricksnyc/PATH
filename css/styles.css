@@ -3421,6 +3421,22 @@ label.togglePassword {
   background: #ababab
 }
 
+.grid ::-webkit-scrollbar-track {
+    background-color: #F1FAFC;
+    border-radius: 1rem;
+}
+
+.grid ::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+}
+
+.grid ::-webkit-scrollbar-thumb {
+    background-color: #d9f0fe;
+    border-radius: 1rem;
+    height: 100px;
+}
+
 
 #slideOut2 button.close {
   color: #A3E56A;

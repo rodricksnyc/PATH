@@ -356,9 +356,17 @@ $(".block50 a").on('focusout', function() {
 	})
 
 
-	$('.numberTags:eq(0)').click(() => {
+	var firstOne = $('.secondGroup .filter-item').find('.numberTags:eq(0)')
+
+	$(firstOne).click(() => {
 		scrollfn("#overview");
 	})
+
+	$('.back-to-top').click(() => {
+		scrollfn("#overview");
+	})
+
+
 
 
 	$(window).scroll(function () {
