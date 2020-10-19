@@ -1,0 +1,357 @@
+.letter{
+
+	color: #00559b !important;
+	background: #d9f0fe;
+
+	border-radius: 50%;
+
+	border-radius: 50%;
+
+	display: inline-block;
+	height: 2.5em;
+	width: 2.5em;
+
+	position: relative;
+	margin:1em .5em;
+
+}
+
+.letter.is-checked{
+	background: #A3E56A;
+	font-weight:600
+}
+
+.letter.number{
+	width:auto;
+	height:auto;
+	padding: 0em 1.55em;
+	border-radius: .6rem;
+
+
+}
+
+.letter-number {
+	border-bottom:1px solid #004F7F;
+	width:100%;
+}
+
+.letter-number:last-child{
+	border-bottom:none
+}
+
+
+.letter:hover{
+	cursor: grab;
+}
+
+.letter p {
+	font-size: 1.2em;
+	/* position: absolute;
+	width: auto;
+	top: calc(50% - .72em);
+
+	left:32%; */
+
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	height: 35px;
+	width: 35px;
+
+
+}
+
+.letter.number p{
+	width:auto;
+
+
+
+}
+
+.filter-attr-list {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	margin-left: 0em;
+	padding-left: 0rem;
+}
+
+
+.startBox{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	/* background: white */
+}
+
+
+
+
+/* clear fix */
+.grid:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.grid{
+	position: relative;
+}
+
+.back-to-top{
+right:1%
+
+}
+
+
+.topBlue {
+	background: #B2E1FF;
+	border-bottom:1px solid #004F7F;
+	position: relative;
+	width:100%;
+}
+
+.topBlue .rBorder {
+	position: relative;
+	width: calc(100% - 100px)
+}
+
+
+
+.rBorder {
+	border-left:1px solid #004F7F;
+	padding:1em 2em 1em 2em;
+	position:relative;
+	width:100%
+}
+
+.label{
+	width:75px;
+	display: flex;
+	justify-content: center;
+}
+
+.rBorder p {
+	color:black;
+	margin-bottom:0em;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 27px;
+	margin-bottom: 0em !important;
+}
+
+.topBlue .rBorder{
+	padding:1em
+}
+
+.outerBorder{
+	border:1px solid #004F7F;
+}
+
+.outerBorder h2 {
+	color:#00559b;
+	font-size:22px;
+	font-weight:600;
+	width:5em
+}
+
+.topBlue .rBorder h2 {
+	margin: 0em !important;
+	padding: .6em;
+	width:10em
+
+}
+
+.startBox img {
+	height: 150px;
+	border-bottom:1px solid black
+}
+
+@media (min-width: 1200px){
+	.container.bigger {
+		max-width: 1300px;
+	}
+}
+
+.smallest {
+    font-size: 10px !important;
+    margin-top: 0;
+    max-width: 30em;
+    line-height: 15px !important;
+    text-align: center;
+}
+
+.blackBorder{
+	width:100%;
+	height:1px;
+	background: black
+}
+
+.filter-item {
+	transition: background 1s, box-shadow 1s !important;
+}
+
+.filter-attr-list:first-child{
+	margin-left:0em
+}
+
+.tight p{
+	line-height: 19px;
+}
+
+.no-border {
+	border-bottom:none !important
+}
+
+.bTop{
+	border-top:1px solid black;
+}
+
+.mobileOnly{
+	display: none;
+}
+
+
+
+@media (min-width:2501px){
+	.col-lg-3 {
+
+		flex: 0 0 18%;
+		max-width: 18%;
+}
+}
+
+
+@media (min-width:2051px) and (max-width:2500px){
+	.col-lg-3 {
+
+		flex: 0 0 21%;
+		max-width: 21%;
+}
+}
+
+
+@media (min-width:1801px) and (max-width:2050px){
+	.col-lg-3 {
+
+		flex: 0 0 25%;
+		max-width: 25%;
+}
+}
+
+
+@media (max-width:1800px) and (min-width:1680px){
+	.col-lg-3 {
+
+    flex: 0 0 27%;
+    max-width: 27%;
+}
+}
+
+@media (max-width:1679px) and (min-width:991px){
+	.col-lg-3 {
+
+		flex: 0 0 29%;
+		max-width: 29%;
+}
+}
+
+
+@media (max-width:1199px){
+	p.text-center{
+
+			margin-bottom:2em !important
+	}
+}
+
+
+@media (max-width:991px){
+	.back-to-top{
+		display: flex
+	}
+
+	.filter-item{
+
+		height:auto !important;
+
+	}
+
+
+	.rBorder {
+
+    padding: 1em 1em 1em 1em;
+
+}
+
+.position-fixed {
+
+    top: 0;
+}
+}
+
+@media (max-width:767px) {
+	.label{
+		width:75px;
+	}
+
+	.position-fixed {
+    position: relative !important;
+}
+	.mobileOnly{
+		display: block;
+		font-size: 30px;
+    margin: 0;
+    padding: 0;
+    background: #C4EDA1;
+    border-radius: 1rem;
+    width:100%
+	}
+	.secondGroup{
+		display: none
+	}
+	h4.landing-sec-H{
+		margin-bottom:.5em
+	}
+	.filter-item{
+		position: relative !important;
+		height:auto !important;
+		top:auto !important
+	}
+	.startBox img{
+		height:auto;
+		max-width:100%;
+
+	}
+
+  .five-column{
+    padding: 0em 5em;
+  }
+
+  .pt-5{
+    padding-top: 0rem!important;
+}
+
+	p.text-center{
+
+		    font-size: 13px;
+		line-height: 19px;
+			margin-bottom:2em !important
+	}
+
+	.rBorder .row .d-flex{
+		flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	}
+
+	.grid{
+		height:auto !important
+	}
+
+	.rotateIt{
+		transform: rotate(180deg)
+	}
+}
