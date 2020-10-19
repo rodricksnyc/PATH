@@ -302,6 +302,54 @@ right:1%
 	border-top:1px solid black;
 }
 
+.mobileOnly{
+	display: none;
+}
+
+@media (max-width:767px) {
+	.label{
+		width:75px;
+	}
+	.mobileOnly{
+		display: block;
+		font-size: 30px;
+    margin: 0;
+    padding: 0;
+    background: #C4EDA1;
+    border-radius: 1rem;
+	}
+	.secondGroup{
+		display: none
+	}
+	h4.landing-sec-H{
+		margin-bottom:.5em
+	}
+	.filter-item{
+		position: relative !important;
+		height:auto !important;
+		top:auto !important
+	}
+	.startBox img{
+		height:auto;
+		max-width:7em;
+
+	}
+
+	p.text-center{
+		text-align:left !important;
+		line-height: 19px;
+			margin-bottom:2em !important
+	}
+
+	.rBorder .row .d-flex{
+		flex-direction: column;
+	}
+
+	.grid{
+		height:auto !important
+	}
+}
+
 </style>
 
 <body>
@@ -454,7 +502,7 @@ right:1%
 
 												<h4 class="landing-sec-H text-center smaller mt-3 mb-3">TABLE OF CONTENTS</h4>
 
-												<div class="ui-group">
+												<div class="ui-group secondGrid">
 													<div class="secondGroup">
 
 														<div class="filter-attr-list">
@@ -489,7 +537,11 @@ right:1%
 														</div>
 
 														</div>
+
+
 													</div>
+
+													<center><i class="far fa-angle-down blueColor mobileOnly"></i></center>
 
 												</div>
 
