@@ -74,8 +74,6 @@
 .letter.number p{
 	width:auto;
 
-
-
 }
 
 .filter-attr-list {
@@ -96,7 +94,9 @@
 	/* background: white */
 }
 
-
+.contentSpacer{
+	height:2.5vh
+}
 
 
 /* clear fix */
@@ -223,6 +223,9 @@ right:1%
 	display: none !important;
 }
 
+.position-fixed{
+	    z-index: 999;
+}
 
 
 @media (min-width:2501px){
@@ -260,7 +263,7 @@ right:1%
 }
 }
 
-@media (max-width:1679px) and (min-width:1300px){
+@media (max-width:1679px) and (min-width:1400px){
 	.col-lg-3 {
 
 		flex: 0 0 29%;
@@ -268,7 +271,13 @@ right:1%
 }
 }
 
-@media (max-width:1299px) and (min-width:991px){
+@media (max-width:1500px){
+	.contentSpacer{
+		height:1vh
+	}
+}
+
+@media (max-width:1399px) and (min-width:991px){
 
 	.col-lg-3 {
 
@@ -295,6 +304,8 @@ right:1%
     line-height: 15px !important;
     text-align: center;
 }
+
+
 
 }
 
