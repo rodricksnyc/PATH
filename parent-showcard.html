@@ -306,10 +306,43 @@ right:1%
 	display: none;
 }
 
+
+@media (min-width:2100px){
+	.col-lg-3 {
+
+		flex: 0 0 18%;
+		max-width: 18%;
+}
+}
+
+
+@media (min-width:1801px) and (max-width:2099px){
+	.col-lg-3 {
+
+		flex: 0 0 23%;
+		max-width: 23%;
+}
+}
+
+
+@media (max-width:1800px){
+	.col-lg-3 {
+
+    flex: 0 0 27%;
+    max-width: 27%;
+}
+}
+
+
+
 @media (max-width:767px) {
 	.label{
 		width:75px;
 	}
+
+	.position-fixed {
+    position: relative !important;
+}
 	.mobileOnly{
 		display: block;
 		font-size: 30px;
@@ -455,9 +488,9 @@ right:1%
 								</a>
 
 								<div class="row">
-									<div class="col-lg-4 col-md-6 col-sm-12 rel">
+									<div class="col-lg-3 position-fixed col-md-4 col-sm-12 rel">
 
-										<div class="filters rel">
+										<div class="filters">
 
 											<div class="whiteBubble">
 												<p class="darkBlue text-center">Questionnaire Sections</p>
@@ -553,7 +586,7 @@ right:1%
 
 									</div>
 
-									<div class="col-lg-8 col-md-6 col-sm-12">
+									<div class="offset-lg-4 col-lg-8 col-md-8 offset-md-4 col-sm-12">
 										<div class="outerBorder mt-3">
 										<div class="startBox topBlue">
 											<div class="label"><h2>P</h2></div>
