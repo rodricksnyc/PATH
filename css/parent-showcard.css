@@ -97,12 +97,6 @@
 .contentSpacer{
 	height:1vh
 }
-@media (min-width:1800px){
-	.contentSpacer{
-		height:1.2vh
-	}
-}
-
 
 
 /* clear fix */
