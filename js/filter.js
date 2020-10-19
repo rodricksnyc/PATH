@@ -20,7 +20,18 @@ $(document).ready(function () {
 	})
 
 
+$('.filter-item a').on("focusout", function (e) {
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 9) {
 
+
+$('.secondGroup .filter-item a').focus()
+
+
+	}
+
+
+	})
 
 
 		$(window).scroll(function () {
