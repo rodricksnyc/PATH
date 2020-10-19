@@ -21,6 +21,11 @@
 	font-weight:600
 }
 
+
+.letter.is-active{
+	background: #C4EDA1
+}
+
 .letter.number{
 	width:auto;
 	height:auto;
