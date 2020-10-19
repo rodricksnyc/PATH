@@ -46,6 +46,11 @@ $(document).ready(function () {
 
 	})
 
+		$(".anchorTag").on('focusout', function() {
+			$(".numberTags").focus()
+
+		})
+
 
 
 
