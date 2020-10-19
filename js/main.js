@@ -47,6 +47,8 @@ $(".block50 a").on('focusout', function() {
 	});
 
 
+
+
 	var path = window.location.href
 
 	$('.navbar-nav li .nav-link').each(function() {

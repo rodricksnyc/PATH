@@ -46,13 +46,9 @@ $(document).ready(function () {
 
 	})
 
-		$(".anchorTag").on('blur', function() {
-			alert("ewrgubigewbiuewgwbegiuy")
-		$(document).children().attr('tabindex' , '-1')
-
-		})
 
 
+		$(".numberTags").attr('tabindex', '0')
 
 
 
