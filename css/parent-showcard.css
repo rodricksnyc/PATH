@@ -211,7 +211,7 @@ right:1%
 }
 
 .mobileOnly{
-	display: none;
+	display: none !important;
 }
 
 
@@ -301,7 +301,7 @@ right:1%
     position: relative !important;
 }
 	.mobileOnly{
-		display: block;
+		display: block !important;
 		font-size: 30px;
     margin: 0;
     padding: 0;
