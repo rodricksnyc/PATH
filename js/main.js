@@ -30,6 +30,23 @@ $(".block50 a").on('focusout', function() {
 	// }
 
 
+
+	$(window).scroll(function () {
+		var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+		if (distanceY > 300) {
+
+			$('.position-fixed').css({
+				top: '0'
+			})
+		} else {
+
+			$('.position-fixed').css({
+				top: 'auto'
+			})
+		}
+	});
+
+
 	var path = window.location.href
 
 	$('.navbar-nav li .nav-link').each(function() {
