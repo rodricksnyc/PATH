@@ -46,8 +46,9 @@ $(document).ready(function () {
 
 	})
 
-		$(".anchorTag").on('focusout', function() {
-			$(".numberTags").focus()
+		$(".anchorTag").on('blur', function() {
+			alert("ewrgubigewbiuewgwbegiuy")
+		$(document).children().attr('tabindex' , '-1')
 
 		})
 
