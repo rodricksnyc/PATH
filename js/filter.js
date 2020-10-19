@@ -21,6 +21,9 @@ $(document).ready(function () {
 
 
 
+
+
+
 		$(window).scroll(function () {
 			((window.pageYOffset || document.documentElement.scrollTop) > 100) ? $('.back-to-top').css({ opacity: 1, visibility: "visible" }) : $('.back-to-top').css({ opacity: 1, visibility: "visible" });
 		});
@@ -54,7 +57,7 @@ $(document).ready(function () {
 		percentPosition: true,
 		resizable: false,
 		masonry: {
-		
+
 
 	},
 

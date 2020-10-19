@@ -405,6 +405,12 @@ $(".block50 a").on('focusout', function() {
 		$('.openTab .plum').html('<i class="fas fa-envelope"></i>')
 		$('#one').css('right', '-20px')
 
+
+		$('.mobileOnly').click(function() {
+			$(this).closest('.ui-group').find('.secondGroup').slideToggle()
+			$(this).toggleClass('rotateIt')
+		})
+
 	}
 
 

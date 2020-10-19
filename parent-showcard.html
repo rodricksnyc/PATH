@@ -265,7 +265,7 @@ right:1%
 }
 
 .startBox img {
-	height: 170px;
+	height: 150px;
 	border-bottom:1px solid black
 }
 
@@ -275,6 +275,13 @@ right:1%
 	}
 }
 
+.smallest {
+    font-size: 10px !important;
+    margin-top: 0;
+    max-width: 30em;
+    line-height: 15px !important;
+    text-align: center;
+}
 
 .blackBorder{
 	width:100%;
@@ -343,7 +350,7 @@ right:1%
 }
 }
 
-@media (max-width:1679px){
+@media (max-width:1679px) and (min-width:991px){
 	.col-lg-3 {
 
 		flex: 0 0 29%;
@@ -352,6 +359,37 @@ right:1%
 }
 
 
+@media (max-width:1199px){
+	p.text-center{
+
+			margin-bottom:2em !important
+	}
+}
+
+
+@media (max-width:991px){
+	.back-to-top{
+		display: flex
+	}
+
+	.filter-item{
+
+		height:auto !important;
+
+	}
+
+
+	.rBorder {
+
+    padding: 1em 1em 1em 1em;
+
+}
+
+.position-fixed {
+
+    top: 0;
+}
+}
 
 @media (max-width:767px) {
 	.label{
@@ -398,6 +436,10 @@ right:1%
 
 	.grid{
 		height:auto !important
+	}
+
+	.rotateIt{
+		transform: rotate(180deg)
 	}
 }
 
@@ -518,34 +560,8 @@ right:1%
 													<div class="firstGroup" data-filter-group="letter">
 														<div class="filter-attr-list button-group">
 
-
 															<div class="letter is-checked" data-filter=".p"><p>P</p></div>
 
-															<!-- <div class="letter" data-filter=".b"><p>B</p></div>
-
-															<div class="letter" data-filter=".c"><p>C</p></div>
-
-															<div class="letter" data-filter=".d"><p>D</p></div>
-
-															<div class="letter" data-filter=".e"><p>E</p></div>
-
-															<div class="letter" data-filter=".f"><p>F</p></div>
-
-															<div class="letter" data-filter=".g"><p>G</p></div>
-
-															<div class="letter" data-filter=".h"><p>H</p></div>
-
-															<div class="letter" data-filter=".i"><p>I</p></div>
-
-															<div class="letter" data-filter=".j"><p>J</p></div>
-
-															<div class="letter" data-filter=".k"><p>K</p></div>
-
-															<div class="letter" data-filter=".l"><p>L</p></div>
-
-															<div class="letter" data-filter=".m"><p>M</p></div>
-
-															<div class="letter" data-filter=".n"><p>N</p></div> -->
 														</div>
 
 													</div>
@@ -558,12 +574,12 @@ right:1%
 
 														<div class="filter-attr-list">
 															<div class="filter-item p">
-															<a href="#p-1"><div class="letter number"><p>P-1</p></div></a>
+															<a href="#p-1" tabindex="0"><div class="letter number"><p>P-1</p></div></a>
 
-															<a href="#p-2"><div class="letter number"><p>P-2</p></div></a>
-															<a href="#p-3"><div class="letter number"><p>P-3</p></div></a>
+															<a href="#p-2" tabindex="0"><div class="letter number"><p>P-2</p></div></a>
+															<a href="#p-3" tabindex="0"><div class="letter number"><p>P-3</p></div></a>
 
-															<a href="#p-4"><div class="letter number"><p>P-4</p></div></a>
+															<a href="#p-4" tabindex="0"><div class="letter number"><p>P-4</p></div></a>
 															<a href="#p-5"><div class="letter number"><p>P-5</p></div></a>
 
 															<a href="#p-6"><div class="letter number"><p>P-6</p></div></a>
@@ -824,6 +840,7 @@ right:1%
 															<div class="d-flex flex-column">
 																<img src="images/P10-1.jpg" class="img-fluid" alt="">
 																<p class="text-center">Other Types of Smokeless Tobacco</p>
+																<p class="smallest">(such as moist snuff, dip, spit, chewing tobacco, or smokeless tobacco pouches)</p>
 															</div>
 
 
