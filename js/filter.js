@@ -91,14 +91,14 @@ $(document).ready(function () {
 // 				 $('.grid').isotope('layout');
 // 	});
 
-// $('.grid').imagesLoaded(function(){
-//
-// 	$('.grid').isotope('layout');
-// 		 // $('.grid').masonry({
-// 			//  itemSelector: '.grid-item',
-// 			//  columnWidth: 100
-// 		 // });
-// 	 });
+$('.grid').imagesLoaded(function(){
+
+	$('.grid').isotope('layout');
+		 // $('.grid').masonry({
+			//  itemSelector: '.grid-item',
+			//  columnWidth: 100
+		 // });
+	 });
 
 $('.grid').isotope('reloadItems').isotope();
 
