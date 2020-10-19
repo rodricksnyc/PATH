@@ -33,7 +33,7 @@ $(".block50 a").on('focusout', function() {
 
 	$(window).scroll(function () {
 		var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-		if (distanceY > 300) {
+		if (distanceY > 200) {
 
 			$('.position-fixed').css({
 				top: '0'
