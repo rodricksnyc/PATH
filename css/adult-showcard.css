@@ -394,6 +394,11 @@ margin-left:1em
     position: relative;
     padding-bottom: 7em;
 }
+.letter {
+
+    margin: 1em .3em;
+}
+
 
 	.position-fixed {
 

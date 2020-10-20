@@ -350,7 +350,10 @@
 }
 
 @media (max-width:767px) {
+	.letter {
 
+	    margin: 1em .3em;
+	}
 
 	.label{
 		width:75px;
