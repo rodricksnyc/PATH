@@ -351,10 +351,7 @@
 
 @media (max-width:767px) {
 
-	.guide-overlay {
-    position: relative;
-    padding-bottom: 7em;
-}
+
 	.label{
 		width:75px;
 	}

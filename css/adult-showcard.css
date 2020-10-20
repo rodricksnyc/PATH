@@ -304,10 +304,7 @@ margin-left:1em
 }
 
 @media (max-width:767px){
-  .guide-overlay {
-    position: relative;
-    padding-bottom: 7em;
-}
+
 	.ml-3 {
 		margin-left: 0rem!important;
 	}
@@ -392,6 +389,11 @@ margin-left:1em
 	.label{
 		width:75px;
 	}
+
+  .guide-overlay {
+    position: relative;
+    padding-bottom: 7em;
+}
 
 	.position-fixed {
 
