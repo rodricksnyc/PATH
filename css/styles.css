@@ -6077,6 +6077,13 @@ button.close {
 
 @media (max-width: 767px) {
 
+  .loginButton p {
+    color: #00559b !important;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0em;
+}
+
   #fieldModal .modal-body {
     padding: 2em 1em;
   }
