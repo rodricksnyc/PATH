@@ -129,6 +129,11 @@ $(document).ready(function () {
 		// });
 	});
 
+	$(window).resize(function(){
+    isotope.isotope('layout');
+  });
+
+
 	$('.grid').isotope('reloadItems').isotope();
 
 
