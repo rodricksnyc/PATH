@@ -76,25 +76,25 @@ $(document).ready(function () {
 	// store filter for each group
 	var filters = {};
 
-	var $grid2 = $('.secondGrid').isotope({
 
-		// transformsEnabled: false,
-		hiddenStyle: {
-			// opacity: 0,
-			 transform: 'translateY(0px)',
+var $grid = $('.secondGrid').isotope({
+	transformsEnabled: false,
+	hiddenStyle: {
+		// opacity: 0,
+		 transform: 'translateY(0px)',
 
-		},
-		visibleStyle: {
-			// opacity: 1,
-			 transform: 'translateY(100)',
-		}
+	},
+	visibleStyle: {
+		// opacity: 1,
+		 transform: 'translateY(200)',
+	}
+})
 
-	})
 
 	// init Isotope
 	var $grid = $('.grid').isotope({
-		//
-		// // transformsEnabled: false,
+
+		// transformsEnabled: false,
 		// hiddenStyle: {
 		// 	// opacity: 0,
 		// 	 transform: 'translateY(0px)',
@@ -147,7 +147,7 @@ $(document).ready(function () {
 	$('.filters').on( 'click', '.letter', function() {
 		var $this = $(this);
 
-		$('.hideInitial').show()
+		$('.hideInitial').fadeIn()
 
 		var $buttonGroup = $this.parents('.button-group');
 		var filterGroup = $buttonGroup.attr('data-filter-group');
