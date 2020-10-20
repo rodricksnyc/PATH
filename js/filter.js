@@ -78,16 +78,17 @@ $(document).ready(function () {
 
 	// init Isotope
 	var $grid = $('.grid').isotope({
-
-
-
+		transformsEnabled: false,
+		hiddenStyle: {
+			opacity: 0
+		},
+		visibleStyle: {
+			opacity: 1
+		},
 		itemSelector: '.filter-item',
 		percentPosition: true,
-		resizable: false,
-		masonry: {
-
-
-		},
+		transitionDuration: 0,
+	  isResizeBound: false,
 
 
 		filter: function() {
@@ -97,13 +98,13 @@ $(document).ready(function () {
 
 			for ( var prop in filters ) {
 				var filter = filters[ prop ];
-				// use function if it matches
+
 				filter = filter;
-				// test each filter
+
 				if ( filter ) {
 					isMatched = isMatched && $(this).is( filter );
 				}
-				// break if not matched
+
 				if ( !isMatched ) {
 					break;
 				}
@@ -114,25 +115,9 @@ $(document).ready(function () {
 
 	});
 
-
-	//
-	// $('.grid').imagesLoadedMB().progress( function() {
-	// 				 $('.grid').isotope('layout');
-	// 	});
-
-	$('.grid').imagesLoaded(function(){
-
-		$('.grid').isotope('layout');
-		// $('.grid').masonry({
-		//  itemSelector: '.grid-item',
-		//  columnWidth: 100
-		// });
-	});
-
-	$(window).resize(function(){
-    isotope.isotope('layout');
-  });
-
+	$(window).resize(function () {
+  $('.grid').isotope('layout');
+});
 
 	$('.grid').isotope('reloadItems').isotope();
 
@@ -140,28 +125,13 @@ $(document).ready(function () {
 	$('.filters').on( 'click', '.letter', function() {
 		var $this = $(this);
 
-
 		$('.hideInitial').show()
 
-		//
-		// var gridHeight = $('.secondGrid').height()
-		//
-		//
-		//
-		// $(window).css({
-		// 	'height': $('.secondGrid').height()
-		// })
-		//
-		// console.log(gridHeight)
-		//
-		// console.log($(window).height())
-
-		// get group key
 		var $buttonGroup = $this.parents('.button-group');
 		var filterGroup = $buttonGroup.attr('data-filter-group');
-		// set filter for group
+
 		filters[ filterGroup ] = $this.attr('data-filter');
-		// arrange, and use filter fn
+
 		$grid.isotope();
 	});
 
@@ -171,13 +141,11 @@ $(document).ready(function () {
 		if (code == 13) {
 			var $this = $(this);
 
-
-			// get group key
 			var $buttonGroup = $this.parents('.button-group');
 			var filterGroup = $buttonGroup.attr('data-filter-group');
-			// set filter for group
+
 			filters[ filterGroup ] = $this.attr('data-filter');
-			// arrange, and use filter fn
+
 			$grid.isotope();
 
 		}
@@ -187,8 +155,6 @@ $(document).ready(function () {
 
 
 
-
-	// change is-checked class on buttons
 	$('.button-group').each( function( i, buttonGroup ) {
 		var $buttonGroup = $( buttonGroup );
 		$buttonGroup.on( 'click', '.letter', function() {
@@ -212,6 +178,12 @@ $(document).ready(function () {
 	});
 
 
+
+		$('.grid').imagesLoaded(function(){
+
+			$('.grid').isotope('layout');
+
+		});
 
 
 
