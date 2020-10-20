@@ -90,7 +90,7 @@ $(document).ready(function () {
 		// },
 		itemSelector: '.filter-item',
 		percentPosition: true,
-		transitionDuration: 0,
+		// transitionDuration: 0,
 	  isResizeBound: false,
 
 
@@ -117,6 +117,9 @@ $(document).ready(function () {
 
 
 	});
+
+
+
 
 	$(window).resize(function () {
   $('.grid').isotope('layout');
