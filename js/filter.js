@@ -78,13 +78,16 @@ $(document).ready(function () {
 
 	// init Isotope
 	var $grid = $('.grid').isotope({
-		transformsEnabled: false,
-		hiddenStyle: {
-			opacity: 0
-		},
-		visibleStyle: {
-			opacity: 1
-		},
+
+		// transformsEnabled: false,
+		// hiddenStyle: {
+		// 	opacity: 0,
+		// 	 transform: 'translateY(100px)',
+		// },
+		// visibleStyle: {
+		// 	opacity: 1,
+		// 	 transform: 'translateY(0)',
+		// },
 		itemSelector: '.filter-item',
 		percentPosition: true,
 		transitionDuration: 0,
