@@ -90,6 +90,18 @@ var $grid = $('.secondGrid').isotope({
 	}
 })
 
+	if ($(document).innerWidth() <= 767) {
+
+
+		var $grid3 = $('#numberGrid').isotope({
+				itemSelector: '.filter-item',
+			percentPosition: true,
+			transitionDuration: 0,
+		  isResizeBound: false,
+		})
+
+	}
+
 
 	// init Isotope
 	var $grid = $('.grid').isotope({

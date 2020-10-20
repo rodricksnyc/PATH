@@ -205,12 +205,7 @@
 	background: black
 }
 
-.relative{
-	position:relative !important;
-	width:100%;
-	right:0;
-	left:0
-}
+
 
 .filter-item {
 	transition: all .3s;
@@ -299,6 +294,14 @@
 		flex: 0 0 27%;
 		max-width: 27%;
 	}
+}
+
+
+.relative{
+	position:relative !important;
+	width:100%;
+	right:0;
+	left:0
 }
 
 
