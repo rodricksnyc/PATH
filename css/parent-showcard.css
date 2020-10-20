@@ -205,9 +205,18 @@
 	background: black
 }
 
-/* .filter-item {
-	transition: background 1s, box-shadow 1s !important;
-} */
+.relative{
+	position:relative !important;
+	width:100%;
+	right:0;
+	left:0
+}
+
+.filter-item {
+	transition: all .3s;
+	transition: background .3s, box-shadow .3s;
+
+}
 
 .filter-attr-list:first-child{
 	margin-left:0em
@@ -360,8 +369,13 @@
 		width:100%
 	}
 	.secondGroup{
+		position: relative !important;
 		display: none
 	}
+.secondGrid{
+	height:auto !important
+}
+
 	h4.landing-sec-H{
 		margin-bottom:.5em
 	}
