@@ -76,8 +76,7 @@ $(document).ready(function () {
 	// store filter for each group
 	var filters = {};
 
-	// init Isotope
-	var $grid = $('.grid').isotope({
+	var $grid2 = $('.secondGrid').isotope({
 
 		// transformsEnabled: false,
 		hiddenStyle: {
@@ -88,7 +87,23 @@ $(document).ready(function () {
 		visibleStyle: {
 			// opacity: 1,
 			 transform: 'translateY(100)',
-		},
+		}
+
+	})
+
+	// init Isotope
+	var $grid = $('.grid').isotope({
+		//
+		// // transformsEnabled: false,
+		// hiddenStyle: {
+		// 	// opacity: 0,
+		// 	 transform: 'translateY(0px)',
+		//
+		// },
+		// visibleStyle: {
+		// 	// opacity: 1,
+		// 	 transform: 'translateY(100)',
+		// },
 		itemSelector: '.filter-item',
 		percentPosition: true,
 		// transitionDuration: 0,
