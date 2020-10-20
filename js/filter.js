@@ -80,14 +80,15 @@ $(document).ready(function () {
 	var $grid = $('.grid').isotope({
 
 		// transformsEnabled: false,
-		// hiddenStyle: {
-		// 	opacity: 0,
-		// 	 transform: 'translateY(100px)',
-		// },
-		// visibleStyle: {
-		// 	opacity: 1,
-		// 	 transform: 'translateY(0)',
-		// },
+		hiddenStyle: {
+			// opacity: 0,
+			 transform: 'translateY(0px)',
+
+		},
+		visibleStyle: {
+			// opacity: 1,
+			 transform: 'translateY(100)',
+		},
 		itemSelector: '.filter-item',
 		percentPosition: true,
 		// transitionDuration: 0,
