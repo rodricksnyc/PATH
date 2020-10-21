@@ -445,6 +445,11 @@ margin-left:1em
 	}
 
 
+	.secondGroup .filter-item {
+		overflow-y: scroll;
+		height:250px !important;
+
+	}
 
 	.startBox img{
 		height:auto;
