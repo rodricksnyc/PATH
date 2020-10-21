@@ -92,13 +92,35 @@ var $grid = $('.secondGrid').isotope({
 
 	if ($(document).innerWidth() <= 767) {
 
+		$('.mobileOnly').click(function() {
+			$(this).closest('.ui-group').find('.secondGroup').slideToggle()
+			$(this).toggleClass('rotateIt')
+		})
+
 
 		var $grid3 = $('#numberGrid').isotope({
-				itemSelector: '.filter-item',
+			itemSelector: '.filter-item',
 			percentPosition: true,
 			transitionDuration: 0,
 		  isResizeBound: false,
 		})
+
+		$('.letter').first().removeClass('is-checked')
+
+
+		$('.letter').click(function() {
+			$(this).closest('.whiteBubble').find('.secondGroup').slideDown()
+			$('.mobileOnlyAll').addClass('rotateAll');
+			$('.mobileOnlyAll').addClass('showIt');
+			$('.mobileDash').remove()
+		})
+
+		$('.letter.number, .mobileOnlyAll').click(function() {
+			$('.ui-group').slideToggle()
+			$('.mobileOnlyAll').toggleClass('rotateAll')
+		})
+
+
 
 	}
 

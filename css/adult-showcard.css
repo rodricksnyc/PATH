@@ -146,7 +146,9 @@
 
 }
 
-.mobileOnly{
+
+
+.mobileOnlyAll, .mobileDash{
 	display: none !important;
 }
 
@@ -408,15 +410,22 @@ margin-left:1em
 	.position-fixed {
 		position: relative !important;
 	}
-	.mobileOnly{
-		display: block !important;
+	.mobileOnlyAll{
+
 		font-size: 30px;
 		margin: 0;
 		padding: 0;
 		background: #C4EDA1;
 		border-radius: 1rem;
-		width:100%
+		width:100%;
+    display: none
 	}
+
+
+  .mobileDash{
+    display: block !important;
+    margin-bottom:0em;
+  }
 	.secondGroup{
 		position: relative !important;
 		display: none
@@ -447,6 +456,16 @@ margin-left:1em
 		padding-top: 0rem!important;
 	}
 
+	.whiteBubble .grayLine{
+		display: none;
+	}
+
+	.whiteBubble p.text-center {
+    line-height: 19px;
+    margin-bottom: 1em !important;
+}
+
+
 	p.text-center{
 
 		line-height: 19px;
@@ -462,8 +481,16 @@ margin-left:1em
 	.grid{
 		height:auto !important
 	}
+	.whiteBubble{
+		  margin: 1em 0em 1em 0em;
+	}
 
-	.rotateIt{
+	.showIt{
+		display: block !important
+	}
+
+	.rotateAll{
+
 		transform: rotate(180deg)
 	}
 }

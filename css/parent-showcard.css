@@ -228,8 +228,7 @@
 .bTop{
 	border-top:1px solid black;
 }
-
-.mobileOnly{
+.mobileOnlyAll, .mobileDash{
 	display: none !important;
 }
 
@@ -367,8 +366,8 @@
 	.position-fixed {
 		position: relative !important;
 	}
-	.mobileOnly{
-		display: block !important;
+	.mobileOnlyAll{
+
 		font-size: 30px;
 		margin: 0;
 		padding: 0;
@@ -412,6 +411,21 @@
 		margin-bottom:2em !important
 	}
 
+	.whiteBubble .grayLine{
+		display: none;
+	}
+
+	.whiteBubble p.text-center {
+		line-height: 19px;
+		margin-bottom: 1em !important;
+}
+
+.mobileDash{
+	    margin-bottom: 0em;
+	display: block !important
+}
+
+
 	.rBorder .row .d-flex{
 		flex-direction: column;
 		justify-content: center;
@@ -422,7 +436,16 @@
 		height:auto !important
 	}
 
-	.rotateIt{
+	.whiteBubble{
+		  margin: 1em 0em 1em 0em;
+	}
+
+	.showIt{
+		display: block !important
+	}
+
+	.rotateAll{
+
 		transform: rotate(180deg)
 	}
 }
