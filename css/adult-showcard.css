@@ -440,9 +440,16 @@ margin-left:1em
 	}
 	.filter-item{
 		position: relative !important;
-		height:200px !important;
+		height:250px !important;
 		top:auto !important
 	}
+
+
+	.secondGroup .filter-item {
+		overflow-y: scroll;
+		height: 400px
+	}
+
 	.startBox img{
 		height:auto;
 		max-width:100%;
