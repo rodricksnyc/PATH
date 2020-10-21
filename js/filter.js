@@ -1,6 +1,12 @@
 $(document).ready(function () {
 
 
+// if ($(document).innerWidth() <= 767) {
+//
+// 	$('.letter').first().removeClass('is-checked')
+//
+// }
+
 	$('.firstGroup .letter').attr('tabindex', '0')
 
 	var Opt01 = "";
@@ -105,7 +111,7 @@ var $grid = $('.secondGrid').isotope({
 		  isResizeBound: false,
 		})
 
-		$('.letter').first().removeClass('is-checked')
+
 
 
 		$('.letter').click(function() {
