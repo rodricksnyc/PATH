@@ -484,7 +484,11 @@ margin-left:1em
 }
 
 .mr-3 {
-   margin-right: 0rem!important; 
+   margin-right: 0rem!important;
+}
+
+.p-5 {
+    padding: 2rem!important;
 }
 
 
