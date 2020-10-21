@@ -440,7 +440,7 @@ margin-left:1em
 	}
 	.filter-item{
 		position: relative !important;
-		height:auto !important;
+		height:200px !important;
 		top:auto !important
 	}
 	.startBox img{
