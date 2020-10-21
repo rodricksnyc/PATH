@@ -536,7 +536,7 @@ width: calc(100% - 0.5rem);
 
 }
 
-.leftTop #number {
+.leftTop .number {
   position: absolute;
   left: 360px;
   top: 15%;
@@ -548,7 +548,7 @@ width: calc(100% - 0.5rem);
 
 }
 
-.leftTop #description {
+.leftTop .description {
   position: absolute;
   left: 360px;
   max-width: 12em;
@@ -557,7 +557,7 @@ width: calc(100% - 0.5rem);
 
 }
 
-.rightBottom #description {
+.rightBottom .description {
   position: absolute;
   right: 388px;
   max-width: 12em;
@@ -566,14 +566,14 @@ width: calc(100% - 0.5rem);
 
 }
 
-.bottomCenter #number {
+.bottomCenter .number {
   position: absolute;
   left: 285px;
   top: 13%;
 
 }
 
-.bottomCenter #description {
+.bottomCenter .description {
   position: absolute;
   left: 284px;
   max-width: 16em;
@@ -620,25 +620,25 @@ width: calc(100% - 0.5rem);
 
 }
 
-.rightTop #number {
+.rightTop .number {
   position: absolute;
   top: 55%;
   right: 100px;
 }
 
-.rightTop #description {
+.rightTop .description {
   position: absolute;
   top: 65%;
   right: 96px;
 }
 
-.rightTop #number2 {
+.rightTop .number2 {
   position: absolute;
   top: 55%;
   right: 400px;
 }
 
-.rightTop #description2 {
+.rightTop .description2 {
   position: absolute;
   top: 65%;
   right: 410px;
@@ -695,20 +695,20 @@ width: calc(100% - 0.5rem);
   top: -60px;
 
 }
-.leftBottom #number1 {
+.leftBottom .number1 {
   position: absolute;
   top: -17%;
   left: 184px;
 }
 
-.leftBottom #description1 {
+.leftBottom .description1 {
   position: absolute;
   top: -8%;
   left: 171px;
 
 }
 
-.leftBottom #number2 {
+.leftBottom .number2 {
   position: absolute;
   top: 6%;
   left: 281px;
@@ -716,21 +716,21 @@ width: calc(100% - 0.5rem);
 
 }
 
-.leftBottom #description2 {
+.leftBottom .description2 {
   position: absolute;
   top: 16%;
   left: 270px;
 }
 
 
-.leftBottom #number3 {
+.leftBottom .number3 {
   position: absolute;
   top: 23%;
   left: 385px;
 
 }
 
-.leftBottom #description3 {
+.leftBottom .description3 {
   position: absolute;
   top: 32%;
   left: 367px;
@@ -738,26 +738,26 @@ width: calc(100% - 0.5rem);
 }
 
 
-.leftBottom #number4 {
+.leftBottom .number4 {
   position: absolute;
   top: 23%;
   left: 476px;
 }
 
-.leftBottom #description4 {
+.leftBottom .description4 {
   position: absolute;
   top: 32%;
   left: 464px;
 }
 
-.leftBottom #number5 {
+.leftBottom .number5 {
   position: absolute;
   top: 2%;
   left: 578px;
 
 }
 
-.leftBottom #description5 {
+.leftBottom .description5 {
   position: absolute;
   top: 11%;
   left: 588px;
@@ -793,13 +793,13 @@ width: calc(100% - 0.5rem);
 
 }
 
-.rightMiddle #number2 {
+.rightMiddle .number2 {
   position: absolute;
   top: 7%;
   right: 220px;
 }
 
-.rightMiddle #description2 {
+.rightMiddle .description2 {
   position: absolute;
   top: 7%;
   right: 114px;
@@ -807,13 +807,13 @@ width: calc(100% - 0.5rem);
   line-height: 1;
 }
 
-.rightMiddle #number {
+.rightMiddle .number {
   position: absolute;
   top: 3%;
   right: 424px;
 }
 
-.rightMiddle #description {
+.rightMiddle .description {
   position: absolute;
   right: 295px;
   max-width: 9em;
@@ -822,7 +822,7 @@ width: calc(100% - 0.5rem);
 
 }
 
-.rightMiddle #description .textBlue {
+.rightMiddle .description .textBlue {
   color: #004F7F;
   font-size: 19px;
   font-weight: 400;
@@ -856,26 +856,26 @@ width: calc(100% - 0.5rem);
   top: -60px;
 
 }
-.leftBottom2 #number1 {
+.leftBottom2 .number1 {
   position: absolute;
   top: 75%;
   left: 137px;
 }
 
-.leftBottom2 #description1 {
+.leftBottom2 .description1 {
   position: absolute;
   top: 83%;
   left: 135px;
 }
 
-.leftBottom2 #number2 {
+.leftBottom2 .number2 {
   position: absolute;
   top: 75%;
   left: 228px;
 
 }
 
-.leftBottom2 #description2 {
+.leftBottom2 .description2 {
   position: absolute;
   top: 84%;
   left: 194px;
@@ -885,17 +885,17 @@ width: calc(100% - 0.5rem);
 }
 
 
-.leftBottom2 #description2 p {
+.leftBottom2 .description2 p {
   font-size:18px
 }
 
-.leftBottom2 #number3 {
+.leftBottom2 .number3 {
   position: absolute;
   top: 75%;
   left: 336px;
 }
 
-.leftBottom2 #description3 {
+.leftBottom2 .description3 {
   position: absolute;
   top: 84%;
   left: 331px;
@@ -904,14 +904,14 @@ width: calc(100% - 0.5rem);
 }
 
 
-.leftBottom2 #number4 {
+.leftBottom2 .number4 {
   position: absolute;
   top: 75%;
   left: 445px;
 
 }
 
-.leftBottom2 #description4 {
+.leftBottom2 .description4 {
   position: absolute;
   top: 85%;
   left: 415px;
@@ -919,18 +919,18 @@ width: calc(100% - 0.5rem);
   line-height: 1;
 }
 
-.leftBottom2 #description4 p {
+.leftBottom2 .description4 p {
   font-size:18px
 }
 
-.leftBottom2 #number5 {
+.leftBottom2 .number5 {
   position: absolute;
   top: 2%;
   left: 578px;
 
 }
 
-.leftBottom2 #description5 {
+.leftBottom2 .description5 {
   position: absolute;
   top: 11%;
   left: 588px;
@@ -965,7 +965,7 @@ width: calc(100% - 0.5rem);
   top: -60px;
 
 }
-.rightBottom2 #number1 {
+.rightBottom2 .number1 {
   position: absolute;
   right: 618px;
   top: 75%;
@@ -973,64 +973,64 @@ width: calc(100% - 0.5rem);
 
 }
 
-.rightBottom2 #description1 {
+.rightBottom2 .description1 {
   position: absolute;
   top: 83%;
   right: 628px;
 }
 
-.rightBottom2 #number2 {
+.rightBottom2 .number2 {
   position: absolute;
   top: 75%;
   right: 444px;
 
 }
 
-.rightBottom2 #description2 {
+.rightBottom2 .description2 {
   top: 84%;
   right: 439px;
   position: absolute
 }
 
 
-.rightBottom2 #description2 p {
+.rightBottom2 .description2 p {
   font-size:19px
 }
 
-.rightBottom2 #number3 {
+.rightBottom2 .number3 {
   position: absolute;
   top: 75%;
   right: 270px;
 }
 
-.rightBottom2 #description3 {
+.rightBottom2 .description3 {
   position: absolute;
   top: 84%;
   right: 275px;
 }
 
 
-.rightBottom2 #number4 {
+.rightBottom2 .number4 {
   position: absolute;
   top: 75%;
   right: 100px;
 
 }
 
-.rightBottom2 #description4 {
+.rightBottom2 .description4 {
   position: absolute;
   top: 83%;
   right: 83px;
 }
 
-.rightBottom2 #number5 {
+.rightBottom2 .number5 {
   position: absolute;
   top: 2%;
   right: 578px;
 
 }
 
-.rightBottom2 #description5 {
+.rightBottom2 .description5 {
   position: absolute;
   top: 11%;
   right: 588px;
@@ -1558,7 +1558,7 @@ a{
 }
 
 
-.veryBottom #number1 {
+.veryBottom .number1 {
   position: absolute;
   top: 17%;
   left: 240px;
@@ -1566,19 +1566,19 @@ a{
 
 }
 
-.veryBottom #description1 {
+.veryBottom .description1 {
   position: absolute;
   top: 17%;
   left: 17%
 }
 
-.veryBottom #number2 {
+.veryBottom .number2 {
   position: absolute;
   top: 60%;
   right: 30%;
 }
 
-.veryBottom #description2 {
+.veryBottom .description2 {
   position: absolute;
   top: 55.75%;
   right: 439px;
@@ -5188,10 +5188,10 @@ button.close {
   .rightBottom2{
     top:100px
   }
-  .veryBottom #number1{
+  .veryBottom .number1{
     top:30%;
   }
-  .veryBottom #number2 {
+  .veryBottom .number2 {
     top: 68%;
 
   }
@@ -5425,10 +5425,10 @@ button.close {
   .veryBottom{
     min-height: 880px;
   }
-  .veryBottom #number1 {
+  .veryBottom .number1 {
     top: 45%;
   }
-  .veryBottom #number2 {
+  .veryBottom .number2 {
     top: 74%;
   }
 
@@ -5761,11 +5761,11 @@ button.close {
   .relativeImage{
     min-height:3800px
   }
-  .veryBottom #number1 {
+  .veryBottom .number1 {
     top: 56%;
     left: 22%;
   }
-  .veryBottom #number2 {
+  .veryBottom .number2 {
     top: 56%;
     right: 14%;
   }
@@ -5774,42 +5774,42 @@ button.close {
     right: 220px;
     top: 0px;
   }
-  .rightBottom2 #number1 {
+  .rightBottom2 .number1 {
     position: absolute;
     right: 465px;
     top: 69%;
   }
-  .rightBottom2 #description1 {
+  .rightBottom2 .description1 {
     position: absolute;
     top: 77%;
     right: 483px;
   }
-  .rightBottom2 #number2 {
+  .rightBottom2 .number2 {
     position: absolute;
     top: 69%;
     right: 335px;
   }
-  .rightBottom2 #description2 {
+  .rightBottom2 .description2 {
     top: 78%;
     right: 332px;
     position: absolute;
   }
-  .rightBottom2 #number3 {
+  .rightBottom2 .number3 {
     position: absolute;
     top: 69%;
     right: 200px;
   }
-  .rightBottom2 #description3 {
+  .rightBottom2 .description3 {
     position: absolute;
     top: 78%;
     right: 207px;
   }
-  .rightBottom2 #number4 {
+  .rightBottom2 .number4 {
     position: absolute;
     top: 69%;
     right: 73px;
   }
-  .rightBottom2 #description4 {
+  .rightBottom2 .description4 {
     position: absolute;
     top: 78%;
     right: 53px;
@@ -7053,12 +7053,12 @@ body{
   top: 0;
   transform: scale(1);
 }
-.leftTop #number {
+.leftTop .number {
 
   left: 47%;
 
 }
-.leftTop #description {
+.leftTop .description {
 
   left: 48%;
 
@@ -7069,7 +7069,7 @@ body{
   top: 0;
   transform: scale(1);
 }
-.rightBottom #description {
+.rightBottom .description {
   max-width: 9em;
   right: 9%;
 
@@ -7079,13 +7079,13 @@ body{
   top: 0;
   transform: scale(1);
 }
-.bottomCenter #number {
+.bottomCenter .number {
 
   left: 48%;
 
 }
 
-.bottomCenter #description {
+.bottomCenter .description {
   top: 25%;
   left: 49%;
 
@@ -7131,19 +7131,19 @@ body{
   right: 45%;
   top: -9%;
 }
-.rightTop #number, .rightTop #description {
+.rightTop .number, .rightTop .description {
 
   right: 10%;
 }
-.rightTop #description, .rightTop #description2 {
+.rightTop .description, .rightTop .description2 {
   top: 63%;
 
 }
 
-.rightTop #number2{
+.rightTop .number2{
   right:77%;
 }
-.rightTop #description2{
+.rightTop .description2{
   right:80%;
 }
 .leftBottom {
@@ -7173,59 +7173,59 @@ body{
   left: 36%;
   top: -3%;
 }
-.leftBottom #number1 {
+.leftBottom .number1 {
   position: absolute;
   top: 15%;
   left: 23%;
 }
-.leftBottom #description1 {
+.leftBottom .description1 {
   position: absolute;
   top: 20%;
   left: 20%;
 
 }
-.leftBottom #number2 {
+.leftBottom .number2 {
   position: absolute;
   top: 27%;
   left: 36%;
 
 }
-.leftBottom #description2 {
+.leftBottom .description2 {
   position: absolute;
   top: 32%;
   left: 32.5%;
 
 }
 
-.leftBottom #number3 {
+.leftBottom .number3 {
   position: absolute;
   top: 35%;
   left: 50%;
 }
-.leftBottom #description3 {
+.leftBottom .description3 {
   position: absolute;
   top: 40%;
   left: 45%;
 
 }
-.leftBottom #number4 {
+.leftBottom .number4 {
   position: absolute;
   top: 35%;
   left: 63%;
 }
 
-.leftBottom #description4 {
+.leftBottom .description4 {
   position: absolute;
   top: 40%;
   left: 61%;
 }
-.leftBottom #description5 {
+.leftBottom .description5 {
   position: absolute;
   top: 29%;
   left: 78%;
 }
 
-.leftBottom #number5 {
+.leftBottom .number5 {
   position: absolute;
   top: 24%;
   left: 77%;
@@ -7242,29 +7242,29 @@ body{
   top: -6%;
 }
 
-.rightMiddle #number {
+.rightMiddle .number {
   position: absolute;
   top: 12%;
   right: 85%;
 }
 
-.rightMiddle #description .textBlue {
+.rightMiddle .description .textBlue {
   color: #004F7F;
   font-size: 13px;
   font-weight: 400;
 }
 
-.rightMiddle #description2 .textBlue {
+.rightMiddle .description2 .textBlue {
   color: #004F7F;
   font-size: 13px;
   font-weight: 400;
 }
-.rightMiddle #number {
+.rightMiddle .number {
   position: absolute;
   top: 12%;
   right: 85%;
 }
-.rightMiddle #description {
+.rightMiddle .description {
   position: absolute;
   right: 61%;
   max-width: 6em;
@@ -7272,12 +7272,12 @@ body{
   top: 14%;
 }
 
-.rightMiddle #number2 {
+.rightMiddle .number2 {
   position: absolute;
   top: 15%;
   right: 161px;
 }
-.rightMiddle #description2 {
+.rightMiddle .description2 {
   position: absolute;
   top: 17%;
   right: 98px;
