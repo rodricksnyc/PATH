@@ -403,13 +403,13 @@ margin-left:1em
 }
 
 
-	.position-fixed {
-
-		top: 0;
-	}
 
 	.position-fixed {
 		position: relative !important;
+	}
+
+	.sticky {
+		position: fixed !important
 	}
 	.mobileOnlyAll{
 
@@ -448,6 +448,11 @@ margin-left:1em
 		max-width:100%;
 
 	}
+
+.mobileBlue{
+	background: #d9f0fe !important;
+	font-weight:400 !important
+}
 
 	.five-column{
 		padding: 0em 5em;

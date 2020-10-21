@@ -114,7 +114,10 @@ var $grid = $('.secondGrid').isotope({
 
 
 
+
+
 		$('.letter').click(function() {
+			$(this).removeClass('mobileBlue')
 			$(this).closest('.whiteBubble').find('.secondGroup').slideDown()
 			$('.mobileOnlyAll').addClass('rotateAll');
 			$('.mobileOnlyAll').addClass('showIt');
