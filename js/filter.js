@@ -99,7 +99,8 @@ var $grid = $('.secondGrid').isotope({
 	if ($(document).innerWidth() <= 767) {
 
 		$('.mobileOnly').click(function() {
-			$(this).closest('.ui-group').find('.secondGroup').slideToggle()
+			$(this).closest('.whiteBubble').find('.secondGroup').slideToggle()
+
 			$(this).toggleClass('rotateIt')
 		})
 
@@ -113,9 +114,6 @@ var $grid = $('.secondGrid').isotope({
 
 
 
-
-
-
 		$('.letter').click(function() {
 			$(this).removeClass('mobileBlue')
 			$(this).closest('.whiteBubble').find('.secondGroup').slideDown()
@@ -124,8 +122,10 @@ var $grid = $('.secondGrid').isotope({
 			$('.mobileDash').remove()
 		})
 
-		$('.letter.number, .mobileOnlyAll').click(function() {
+		$('.adult .letter.number, .mobileOnlyAll').click(function() {
 			$('.ui-group').slideToggle()
+
+
 			$('.mobileOnlyAll').toggleClass('rotateAll')
 		})
 

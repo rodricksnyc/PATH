@@ -453,7 +453,7 @@
 	}
 
 
-	.rotateAll{
+	.rotateIt{
 
 		transform: rotate(180deg)
 	}
