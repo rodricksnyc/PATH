@@ -97,7 +97,6 @@ $(".block50 a").on('focusout', function() {
 		$('#espanol p').html('ES')
 		$('.loginButton').html('<i class="fas fa-sign-in-alt"></i>').addClass('addMobile')
 
-			$('.letter').first().removeClass('is-checked')
 
 	}
 

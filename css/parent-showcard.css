@@ -228,7 +228,7 @@
 .bTop{
 	border-top:1px solid black;
 }
-.mobileOnlyAll, .mobileDash{
+.mobileOnly, .mobileDash{
 	display: none !important;
 }
 
@@ -366,15 +366,18 @@
 	.position-fixed {
 		position: relative !important;
 	}
-	.mobileOnlyAll{
+	.mobileOnly{
 
 		font-size: 30px;
 		margin: 0;
 		padding: 0;
 		background: #C4EDA1;
 		border-radius: 1rem;
-		width:100%
+		width:100%;
+		display: block !important
 	}
+
+
 	.secondGroup{
 		position: relative !important;
 		display: none
@@ -443,6 +446,12 @@
 	.showIt{
 		display: block !important
 	}
+
+	.firstGroup .letter {
+	    background: #A3E56A;
+	    font-weight: 600;
+	}
+
 
 	.rotateAll{
 
