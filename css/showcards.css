@@ -102,9 +102,15 @@
 
 }
 
-.secondGroup .filter-item {
+.adult .secondGroup .filter-item.a, .adult  .secondGroup .filter-item.c, .adult .secondGroup .filter-item.j, .adult .secondGroup .filter-item.k, .adult .secondGroup .filter-item.l {
 	overflow-y: scroll;
 	height: 400px
+}
+
+.youth .secondGroup .filter-item.c, .youth .secondGroup .filter-item.j, .youth .secondGroup .filter-item.l, .youth .secondGroup .filter-item.m{
+	overflow-y: scroll;
+	height: 400px
+
 }
 
 
