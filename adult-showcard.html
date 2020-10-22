@@ -105,7 +105,8 @@
 
 <body>
 
-
+		<a href="#themaincontent" id="skiptocontent" tabindex="0" aria-hidden="false">skip to main content</a>
+		<h1 class="invisible">Population Assessment of Tobacco and Health</h1
 
 	<div class="outer-wrapper adult">
 		<div class="container-fluid overflow-hidden position-relative shadow">
@@ -123,22 +124,30 @@
 									experience, use <span class="strong">Chrome, Edge, Safari, or Firefox.</span> If you don’t have one of the recommended browsers,
 									you can select one of the browser icons below to download the installer.</h6>
 									<div class="flex">
-										<div class="vertical2">
+										<a href="https://www.google.com/chrome/">
+											<div class="vertical2">
 											<img src="images/google.png" class="img-fluid icon" height="70" width="70" alt="">
 											<p>Chrome</p>
 										</div>
+										</a>
+										<a href="https://www.microsoft.com/en-us/edge">
 										<div class="vertical2">
 											<img src="images/edge.png" class="img-fluid icon" height="70" width="70" alt="">
 											<p>Edge</p>
 										</div>
+										</a>
+										<a href="https://www.apple.com/safari/">
 										<div class="vertical2">
 											<img src="images/safari.png" class="img-fluid icon" height="70" width="70" alt="">
 											<p>Safari</p>
 										</div>
+										</a>
+										<a href="https://www.mozilla.org/en-US/firefox/new/">
 										<div class="vertical2">
 											<img src="images/firefox.png" class="img-fluid icon" height="70" width="73" alt="">
 											<p>Firefox</p>
 										</div>
+										</a>
 									</div>
 								</div>
 								<div class="modal-footer">
@@ -199,7 +208,7 @@
 				</div>
 				<img class="imgTop img-fluid" src="images/about.svg" alt="">
 
-				<section class="block10">
+				<section class="block10"  id="themaincontent">
 					<div class="container-fluid heros">
 						<div id="Guide" class="landing-sec container-fluid">
 							<div class="guide-overlay container bigger">
@@ -6902,25 +6911,25 @@
 													</div>
 
 													<form method="post" data-form-title="CONTACT US" class="slideForm">
+														<fieldset>
+															<legend>Contact Us</legend>
 
 														<div class="form-group">
-															<legend>Email</legend>
+
 															<label for="formControl1">Email</label>
 															<input id="formControl1" type="email" class="form-control required" tabindex="-1" aria-hidden="false" name="Email" data-form-field="Email" required>
 														</div>
 														<div class="form-group">
-															<legend>Affiliated company, institution, or organization</legend>
+
 															<label for="formControl2">Affiliated company, institution, or organization<span class="light"> (if you are not affiliated enter “None” or “NA”):</span></label>
 															<input type="text" id="formControl2" class="form-control" tabindex="-1" aria-hidden="false" name="company">
 														</div>
 
 														<div class="form-group">
-															<fieldset>
 																<label for="general-inquiry">Contact Category</label>
 																<div class="around2">
 																	<div class="vertical">
 
-																		<legend>Contact Category</legend>
 																		<label class="radio-inline">
 																			<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false" id="general-inquiry" checked required>Comment about the study
 																		</label>
@@ -6944,17 +6953,19 @@
 																		</label>
 																	</div>
 																</div>
-															</fieldset>
-														</div>
-														<div class="form-group">
-															<label for="formControl4">Message</label>
-															<textarea class="form-control" id="formControl4" tabindex="-1" aria-hidden="false" name="message" rows="4" data-form-field="Message"></textarea>
-														</div>
+
+															</div>
+															<div class="form-group">
+																<label for="formControl4">Message</label>
+																<textarea class="form-control" id="formControl4" tabindex="-1" aria-hidden="false" name="message" rows="4" data-form-field="Message"></textarea>
+															</div>
+
+
 
 														<div class="d-flex justify-content-between align-items-center printSend">
 															<div class="left">
 																<div class="form-check form-check-inline">
-																	<legend>Print Copy</legend>
+
 																	<input class="form-check-input position-static" type="checkbox" id="print-copy" value="" aria-label="Print Copy" tabindex="-1" aria-hidden="false">
 																</div>
 																<label for="print-copy"><p class="white">Check to print a copy for your records&nbsp;<i class="far fa-print"></i></p></label>
@@ -6966,7 +6977,7 @@
 
 														</div>
 
-
+														</fieldset>
 													</form>
 
 												</div>

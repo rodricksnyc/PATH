@@ -141,7 +141,8 @@ function detectIE() {
 </head>
 <body>
 
-
+	<a href="#themaincontent" id="skiptocontent" tabindex="0" aria-hidden="false">skip to main content</a>
+	<h1 class="invisible">Population Assessment of Tobacco and Health</h1>
 	<div class="container-fluid overflow-hidden position-relative">
 		<div class="modal fade" tabindex="-1" role="dialog" id="myModal2">
 			<div class="modal-dialog" role="document">
@@ -157,22 +158,30 @@ function detectIE() {
 								experience, use <span class="strong">Chrome, Edge, Safari, or Firefox.</span> If you don’t have one of the recommended browsers,
 								you can select one of the browser icons below to download the installer.</h6>
 								<div class="flex">
-									<div class="vertical2">
+									<a href="https://www.google.com/chrome/">
+										<div class="vertical2">
 										<img src="images/google.png" class="img-fluid icon" height="70" width="70" alt="">
 										<p>Chrome</p>
 									</div>
+									</a>
+									<a href="https://www.microsoft.com/en-us/edge">
 									<div class="vertical2">
 										<img src="images/edge.png" class="img-fluid icon" height="70" width="70" alt="">
 										<p>Edge</p>
 									</div>
+									</a>
+									<a href="https://www.apple.com/safari/">
 									<div class="vertical2">
 										<img src="images/safari.png" class="img-fluid icon" height="70" width="70" alt="">
 										<p>Safari</p>
 									</div>
+									</a>
+									<a href="https://www.mozilla.org/en-US/firefox/new/">
 									<div class="vertical2">
 										<img src="images/firefox.png" class="img-fluid icon" height="70" width="73" alt="">
 										<p>Firefox</p>
 									</div>
+									</a>
 								</div>
 							</div>
 							<div class="modal-footer">
@@ -257,6 +266,8 @@ function detectIE() {
 							</div>
 
 							<form method="post" data-form-title="CONTACT US" class="slideForm">
+								<fieldset>
+									<legend>Contact Us</legend>
 
 								<div class="form-group">
 
@@ -270,9 +281,6 @@ function detectIE() {
 								</div>
 
 								<div class="form-group">
-									<fieldset>
-
-										<legend>Reason for Contact</legend>
 										<label for="general-inquiry">Contact Category</label>
 										<div class="around2">
 											<div class="vertical">
@@ -307,7 +315,7 @@ function detectIE() {
 										<textarea class="form-control" id="formControl4" tabindex="-1" aria-hidden="false" name="message" rows="4" data-form-field="Message"></textarea>
 									</div>
 
-								</fieldset>
+
 
 								<div class="d-flex justify-content-between align-items-center printSend">
 									<div class="left">
@@ -324,7 +332,7 @@ function detectIE() {
 
 								</div>
 
-
+								</fieldset>
 							</form>
 
 						</div>
@@ -345,7 +353,8 @@ function detectIE() {
 
 						<img src="images/path-logo.svg" class="img-fluid centerImage" alt="Population Assessment of Tobacco and Health Logo">
 
-						<div class="guide-overlay container">
+						<div class="guide-overlay container" id="themaincontent">
+
 							<h2 class="landing-sec-H text-center">A Collaboration between the NIH and FDA</h2>
 							<center><div class="greenLine"></div></center>
 							<p class="textBlue"><span class="strong">The Population Assessment of Tobacco and Health (PATH) Study</span> is a national longitudinal study of tobacco use and how it affects the health of people in the United States. People from all over the country take part in this study. The PATH Study, which started in 2013, is one of the first large tobacco research efforts undertaken by the National Institutes of Health (NIH) and the Food and Drug Administration (FDA) since Congress gave FDA authority to regulate tobacco products in 2009.</p>
