@@ -102,7 +102,7 @@
 
 }
 
-.secondGroup .filter-item.a, .secondGroup .filter-item.c, .secondGroup .filter-item.j, .secondGroup .filter-item.k, .secondGroup .filter-item.l {
+.secondGroup .filter-item {
 	overflow-y: scroll;
 	height: 400px
 }
