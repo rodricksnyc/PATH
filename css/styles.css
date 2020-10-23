@@ -636,7 +636,7 @@ width: calc(100% - 0.5rem);
 
 
 
-.rightTop #title{
+.rightTop .title{
   position: absolute;
   right: 300px;
   top: -60px;
@@ -712,7 +712,7 @@ width: calc(100% - 0.5rem);
 
 
 
-.leftBottom #title{
+.leftBottom .title{
   position: absolute;
   left: 340px;
   top: -60px;
@@ -809,7 +809,7 @@ width: calc(100% - 0.5rem);
 }
 
 
-.rightMiddle #title{
+.rightMiddle .title{
   position: absolute;
   right: 225px;
   top: -60px;
@@ -873,7 +873,7 @@ width: calc(100% - 0.5rem);
 }
 
 
-.leftBottom2 #title{
+.leftBottom2 .title{
   position: absolute;
   left: 285px;
   top: -60px;
@@ -982,7 +982,7 @@ width: calc(100% - 0.5rem);
 }
 
 
-.rightBottom2 #title{
+.rightBottom2 .title{
   position: absolute;
   right: 340px;
   top: -60px;
@@ -5792,7 +5792,7 @@ button.close {
     top: 56%;
     right: 14%;
   }
-  .rightBottom2 #title {
+  .rightBottom2 .title {
     position: absolute;
     right: 220px;
     top: 0px;
@@ -7149,7 +7149,7 @@ body{
   right: 0;
   transform: scale(1);
 }
-.rightTop #title {
+.rightTop .title {
   position: absolute;
   right: 45%;
   top: -9%;
@@ -7191,7 +7191,7 @@ body{
   font-size: 26px;
   transform: scale(.8) !important;
 }
-.leftBottom #title {
+.leftBottom .title {
   position: absolute;
   left: 36%;
   top: -3%;
@@ -7259,7 +7259,7 @@ body{
   right: -6%;
   transform: scale(1);
 }
-.rightMiddle #title {
+.rightMiddle .title {
   position: absolute;
   right: 41%;
   top: -6%;
@@ -7314,7 +7314,7 @@ body{
   transform: scale(1.2);
 }
 
-.leftBottom2 #title {
+.leftBottom2 .title {
   position: absolute;
   left: 45%;
   top: -2%;
@@ -7325,7 +7325,7 @@ body{
   transform: scale(1.4);
   left: -14%;
 }
-.rightBottom2 #title {
+.rightBottom2 .title {
   position: absolute;
   right: 23%;
   top: 12%;
