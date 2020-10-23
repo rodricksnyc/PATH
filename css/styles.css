@@ -424,18 +424,6 @@ transition: width 0.3s ease-in-out;
 width: calc(100% - 0.5rem);
 } */
 
-.invisible{
-  display: inline-block !important;
-      height: 0 !important;
-      margin: 0 !important;
-      padding: 0 !important;
-      border: none !important;
-      overflow: hidden !important;
-      position: absolute !important;
-      color: transparent !important;
-      background: transparent !important;
-      z-index: 1 !important;
-}
 
 #skiptocontent {
     padding: 6px;
