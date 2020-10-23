@@ -3205,9 +3205,9 @@ color: #0071ba;
   right:0px !important
 }
 
-#slideOut2  .white:last-child {
-  color: white;
-  margin-bottom: 0em;
+#slideOut2  label.white {
+  color: white !important;
+  margin-bottom: 0em !important;
 }
 
 .right .white {
