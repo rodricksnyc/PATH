@@ -500,7 +500,7 @@
 								</div>
 							</div>
 
-							<div class="modal fade" id="fieldModal" tabindex="-1" role="dialog" aria-labelledby="Verify field interviewer" aria-hidden="true">
+							<div class="modal fade" id="fieldModal" tabindex="-1" role="dialog" aria-hidden="true">
 										<div class="modal-dialog" role="document">
 											<div class="modal-content">
 												<div class="modal-header">
@@ -514,7 +514,7 @@
 
 													<p class="black">Enter the following information to verify your Field Interviewer. We will get back to you with a verification email within the next business day.</p>
 
-													<form role="form" novalidate id="field-interviewer" method="POST" action="">
+													<form role="form" novalidate id="field-interviewer" method="POST">
 														<fieldset>
 
 															<div class="form-row">
@@ -550,7 +550,7 @@
 																<div class="col-sm-12 col-md-3">
 
 																	<label for="state">State</label>
-																	<select name="" id="state" class="custom-select form-control">
+																	<select id="state" class="custom-select form-control">
 																		<option selected="selected" value=""></option>
 																		<option value="AK">AK</option>
 																		<option value="AL">AL</option>
@@ -618,11 +618,11 @@
 
 															</div>
 
-															<center>
+
 																<button type="submit" class="btn" id="verify">
 																	Verify
 																</button>
-															</center>
+
 
 														</fieldset>
 													</form>
@@ -899,6 +899,9 @@
 							</div>
 
 							<form method="post" data-form-title="CONTACT US" class="slideForm">
+								<fieldset>
+
+								<legend>Contact Us</legend>
 
 								<div class="form-group">
 
@@ -912,11 +915,10 @@
 								</div>
 
 								<div class="form-group">
-									<fieldset>
-										<label for="general-inquiry">Contact Category</label>
+
 										<div class="around2">
 											<div class="vertical">
-												<legend>Contact Us</legend>
+
 												<label class="radio-inline">
 													<input type="radio" name="optradio" class="" tabindex="-1" aria-hidden="false" id="general-inquiry" checked required>Comment about the study
 												</label>
@@ -940,8 +942,9 @@
 												</label>
 											</div>
 										</div>
-									</fieldset>
+
 								</div>
+								
 								<div class="form-group">
 									<label for="formControl4">Message</label>
 									<textarea class="form-control" id="formControl4" tabindex="-1" aria-hidden="false" name="message" rows="4" data-form-field="Message"></textarea>
@@ -962,7 +965,7 @@
 
 								</div>
 
-
+								</fieldset>
 							</form>
 
 						</div>
@@ -981,7 +984,7 @@
 
 				<!-- footer -->
 
-				<div class="modal fade footerModal" id="accessibility" tabindex="-1" role="dialog" aria-labelledby="Accessibility" aria-hidden="true">
+				<div class="modal fade footerModal" id="accessibility" tabindex="-1" role="dialog"  aria-hidden="true">
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
 							<div class="modal-header">
@@ -1004,7 +1007,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="modal fade footerModal" id="privacy" tabindex="-1" role="dialog" aria-labelledby="Privacy/Disclaimer" aria-hidden="true">
+				<div class="modal fade footerModal" id="privacy" tabindex="-1" role="dialog"  aria-hidden="true">
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
 							<div class="modal-header">
