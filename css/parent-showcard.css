@@ -367,7 +367,7 @@
 		position: relative !important;
 	}
 	.mobileOnly{
-
+			text-align: center;
 		font-size: 30px;
 		margin: 0;
 		padding: 0;

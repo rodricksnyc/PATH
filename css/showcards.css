@@ -417,8 +417,10 @@ margin-left:1em
 	.sticky {
 		position: fixed !important
 	}
-	.mobileOnlyAll{
 
+
+	.mobileOnlyAll{
+		text-align: center;
 		font-size: 30px;
 		margin: 0;
 		padding: 0;
@@ -427,6 +429,7 @@ margin-left:1em
 		width:100%;
     display: none
 	}
+
 
 
   .mobileDash{
