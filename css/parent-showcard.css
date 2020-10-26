@@ -272,11 +272,11 @@
 	}
 }
 
-@media (max-width:1679px) and (min-width:1400px){
+@media (max-width:1679px) and (min-width:1300px){
 	.col-lg-3 {
 
-		flex: 0 0 29%;
-		max-width: 29%;
+		flex: 0 0 28%;
+		max-width: 28%;
 	}
 }
 
@@ -286,7 +286,7 @@
 	}
 }
 
-@media (max-width:1399px) and (min-width:991px){
+@media (max-width:1299px) and (min-width:991px){
 
 	.col-lg-3 {
 
