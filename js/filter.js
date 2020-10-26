@@ -1,11 +1,11 @@
 $(document).ready(function () {
 
 
-// if ($(document).innerWidth() <= 767) {
-//
-// 	$('.letter').first().removeClass('is-checked')
-//
-// }
+	// if ($(document).innerWidth() <= 767) {
+	//
+	// 	$('.letter').first().removeClass('is-checked')
+	//
+	// }
 
 	$('.firstGroup .letter').attr('tabindex', '0')
 
@@ -33,6 +33,25 @@ $(document).ready(function () {
 		$(this).addClass("is-active");
 	});
 
+	$('.anchorTag').attr('tabindex', '0')
+	$('.numberTags').attr('tabindex', '0')
+
+
+
+
+	$('.anchorTag').on("keyup", function (e) {
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 9) {
+
+
+			var activeOne = $('.firstGroup .letter.is-checked')
+
+			$(activeOne).focus().css('outline', 'dashed 3px #4599ff')
+
+
+		}
+	})
+
 
 
 
@@ -41,12 +60,20 @@ $(document).ready(function () {
 		var code = (e.keyCode ? e.keyCode : e.which);
 		if (code == 9) {
 
+			 if ($(this).is(':last-child')) {
+				 	var activeOne = $('.firstGroup .letter.is-checked')
+				 console.log("weuigb")
+				$(activeOne).blur().css('outline', 'none')
+			 }
+
 			$(this).css('outline', 'dashed 3px #4599ff')
 			$(this).find(".letter.number").addClass("green-active");
 		}
 
 	})
+
 	$(".numberTags").on('focusout', function() {
+
 
 		$(this).css('outline', 'none')
 		$(this).find(".letter.number").removeClass("green-active");
@@ -54,20 +81,6 @@ $(document).ready(function () {
 	})
 
 
-
-	$(".numberTags").attr('tabindex', '0')
-
-
-	$(".numberTags").on("keypress", function (e) {
-		var code = (e.keyCode ? e.keyCode : e.which);
-		if (code == 13) {
-			console.log("vruiebri")
-			// $(document).children().attr('tabindex', '-1')
-
-		}
-
-
-	})
 
 
 
@@ -98,18 +111,18 @@ $(document).ready(function () {
 	var filters = {};
 
 
-var $grid = $('.secondGrid').isotope({
-	transformsEnabled: false,
-	hiddenStyle: {
-		// opacity: 0,
-		 transform: 'translateY(0px)',
+	var $grid = $('.secondGrid').isotope({
+		transformsEnabled: false,
+		hiddenStyle: {
+			// opacity: 0,
+			transform: 'translateY(0px)',
 
-	},
-	visibleStyle: {
-		// opacity: 1,
-		 transform: 'translateY(200)',
-	}
-})
+		},
+		visibleStyle: {
+			// opacity: 1,
+			transform: 'translateY(200)',
+		}
+	})
 
 	if ($(document).innerWidth() <= 767) {
 
@@ -124,7 +137,7 @@ var $grid = $('.secondGrid').isotope({
 			itemSelector: '.filter-item',
 			percentPosition: true,
 			transitionDuration: 0,
-		  isResizeBound: false,
+			isResizeBound: false,
 		})
 
 
@@ -165,7 +178,7 @@ var $grid = $('.secondGrid').isotope({
 		itemSelector: '.filter-item',
 		percentPosition: true,
 		// transitionDuration: 0,
-	  isResizeBound: false,
+		isResizeBound: false,
 
 
 		filter: function() {
@@ -196,8 +209,8 @@ var $grid = $('.secondGrid').isotope({
 
 
 	$(window).resize(function () {
-  $('.grid').isotope('layout');
-});
+		$('.grid').isotope('layout');
+	});
 
 	$('.grid').isotope('reloadItems').isotope();
 
@@ -221,7 +234,7 @@ var $grid = $('.secondGrid').isotope({
 		if (code == 13) {
 			var $this = $(this);
 
-					$('.hideInitial').fadeIn()
+			$('.hideInitial').fadeIn()
 
 			var $buttonGroup = $this.parents('.button-group');
 			var filterGroup = $buttonGroup.attr('data-filter-group');
@@ -261,11 +274,11 @@ var $grid = $('.secondGrid').isotope({
 
 
 
-		$('.grid').imagesLoaded(function(){
+	$('.grid').imagesLoaded(function(){
 
-			$('.grid').isotope('layout');
+		$('.grid').isotope('layout');
 
-		});
+	});
 
 
 
