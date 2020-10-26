@@ -13,6 +13,15 @@ $(document).ready(function () {
 		$(this).css('outline', 'none')
 	})
 
+	$("#espanol").parent().on("keyup", function (e) {
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 9) {
+			$(this).css('outline', 'none')
+		}
+
+	})
+
+
 	$(".block50 a").on("keyup", function (e) {
 	var code = (e.keyCode ? e.keyCode : e.which);
 	if (code == 9) {

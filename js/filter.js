@@ -40,6 +40,7 @@ $(document).ready(function () {
 	$(".numberTags").on("keyup", function (e) {
 		var code = (e.keyCode ? e.keyCode : e.which);
 		if (code == 9) {
+
 			$(this).css('outline', 'dashed 3px #4599ff')
 			$(this).find(".letter.number").addClass("green-active");
 		}
@@ -56,6 +57,20 @@ $(document).ready(function () {
 
 	$(".numberTags").attr('tabindex', '0')
 
+
+	$(".numberTags").on("keyup", function (e) {
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 13) {
+			console.log("vruiebri")
+			// $(document).children().attr('tabindex', '-1')
+
+		}
+
+
+	})
+
+
+	$(".anchorTag").attr('tabindex', '-1')
 
 
 	$(window).scroll(function () {
