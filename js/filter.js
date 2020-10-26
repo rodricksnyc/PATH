@@ -58,7 +58,7 @@ $(document).ready(function () {
 	$(".numberTags").attr('tabindex', '0')
 
 
-	$(".numberTags").on("keyup", function (e) {
+	$(".numberTags").on("keypress", function (e) {
 		var code = (e.keyCode ? e.keyCode : e.which);
 		if (code == 13) {
 			console.log("vruiebri")
@@ -70,7 +70,7 @@ $(document).ready(function () {
 	})
 
 
-	$(".anchorTag").attr('tabindex', '-1')
+
 
 
 	$(window).scroll(function () {
