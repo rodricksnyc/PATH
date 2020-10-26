@@ -409,13 +409,29 @@ margin-left:1em
 }
 
 
+/* .outerBorder{
+	    margin-top: 360px !important;
+} */
+
+
+.row {
+	position: relative;
+}
 
 	.position-fixed {
-		position: relative !important;
+		position: relative !important
 	}
 
-	.sticky {
-		position: fixed !important
+	.position-fixed.addFixed {
+		position: fixed !important;
+top:0;
+overflow: auto;
+		left:0;
+		right:0;
+		position: fixed; /*fallback*/
+position: -webkit-sticky; /* still needed for ios */
+position: sticky;
+z-index: 99999
 	}
 
 

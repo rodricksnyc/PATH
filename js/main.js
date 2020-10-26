@@ -24,13 +24,10 @@ $(".block50 a").on('focusout', function() {
 	$(this).find('.whiteBubble').css('outline', 'none')
 })
 
-	// const prefersColorSchemeDark = window.matchMedia('(prefers-color-scheme: dark)');
-	// if (prefersColorSchemeDark.matches) {
-	// 	// Apply a dark color scheme
-	// }
 
 
 
+	if ($(document).innerWidth() > 767) {
 	$(window).scroll(function () {
 		var distanceY = window.pageYOffset || document.documentElement.scrollTop;
 		if (distanceY > 200) {
@@ -47,6 +44,8 @@ $(".block50 a").on('focusout', function() {
 	});
 
 
+
+}
 
 
 	var path = window.location.href
@@ -96,6 +95,15 @@ $(".block50 a").on('focusout', function() {
 		$('#ingles p').html('EN')
 		$('#espanol p').html('ES')
 		$('.loginButton').html('<i class="fas fa-sign-in-alt"></i>').addClass('addMobile')
+
+		$(window).scroll(function(){
+		  var sticky = $('.position-fixed'),
+		      scroll = $(window).scrollTop();
+
+		  if (scroll >= 40) sticky.addClass('addFixed');
+
+		  else sticky.removeClass('addFixed');
+		});
 
 
 	}
@@ -363,7 +371,13 @@ $(".block50 a").on('focusout', function() {
 
 	var firstOne = $('.secondGroup .filter-item').find('.numberTags:eq(0)')
 
+	var theLetters = $('.firstGroup .letter')
+
 	$(firstOne).click(() => {
+		scrollfn("#overview");
+	})
+
+	$(theLetters).click(() => {
 		scrollfn("#overview");
 	})
 
