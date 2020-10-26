@@ -363,9 +363,26 @@
 		top: 0;
 	}
 
-	.position-fixed {
-		position: relative !important;
+	.row {
+		position: relative;
 	}
+
+		.position-fixed {
+			position: relative !important
+		}
+
+		.position-fixed.addFixed {
+			position: fixed !important;
+	top:0;
+	overflow: auto;
+			left:0;
+			right:0;
+			position: fixed; /*fallback*/
+	position: -webkit-sticky; /* still needed for ios */
+	position: sticky;
+	z-index: 99999
+		}
+
 	.mobileOnly{
 			text-align: center;
 		font-size: 30px;
