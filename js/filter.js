@@ -206,6 +206,8 @@ var $grid = $('.secondGrid').isotope({
 		if (code == 13) {
 			var $this = $(this);
 
+					$('.hideInitial').fadeIn()
+
 			var $buttonGroup = $this.parents('.button-group');
 			var filterGroup = $buttonGroup.attr('data-filter-group');
 
