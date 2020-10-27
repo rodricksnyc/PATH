@@ -150,7 +150,7 @@ $(document).ready(function () {
 			$('.mobileDash').remove()
 		})
 
-		$('.adult .letter.number, .mobileOnlyAll').click(function() {
+		$('.letter.number, .mobileOnlyAll').click(function() {
 			$('.ui-group').slideToggle()
 
 

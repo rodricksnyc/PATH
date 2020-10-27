@@ -197,6 +197,16 @@
 										<li><a class="loginButton" href="login.html"><p>LOG IN</p></a></li>
 									</ul>
 								</div>
+								<div class="hideMobile">
+									<a id="ingles" href="" class="english activeDot notranslate" data-lang="en" tabindex="0" aria-hidden="false" role="button" translate="no">
+										<p class="language notranslate" translate="no">English</p>
+									</a>
+
+									<span class="flip"></span>
+									<a id="espanol" href="" class="lang-es lang-select spanish inactiveDot" data-lang="es" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
+										<p class="language">Espa&ntilde;ol</p>
+									</a>
+								</div>
 							</div>
 						</nav>
 					</header>
@@ -275,14 +285,17 @@
 
 													</div>
 
+													<div class="relative d-flex justify-content-center">
+													<p class="mobileDash">--</p>
 
+												</div>
 
 
 												</div>
 
-												<div class="relative d-flex justify-content-center">
+												<div class="relative d-flex justify-content-center none">
 
-													<i class="far fa-angle-down blueColor mobileOnly"></i>
+													<i class="far fa-angle-down blueColor mobileOnlyAll"></i>
 												</div>
 
 
@@ -1016,37 +1029,56 @@
 								<i class="far fa-angle-up"></i>
 							</div>
 
-							<!--
-							<div class="menu-buttons-floating tabletSize">
-							<ul class="menu-buttons-floating-list">
+							<div class="rel">
+								<div class="blockBottom">
+									<div class="whiteToggle openIt">
+										<i class="far fa-bars"></i>
+									</div>
+									<div class="menuBubble">
 
-							<li tabindex="0" data-target="#Guide"><i class="far fa-list"></i></li>
-							<li tabindex="0" data-target="#FAQ"><i class="fas fa-file-alt"></i></li>
-							<li tabindex="0" data-target="#Contact"><i class="fas fa-info-circle"></i></li>
-						</ul>
-					</div>
+										<div class="d-flex flex-column mobileLinks">
+
+											<a class="bottomLogin" href="login.html"><p>LOG IN</p></a>
+
+											<a class="d-flex justify-content-start align-items-center mb-4" href="landing.html">
+												<div class="limeCircle"><i class="fas fa-home blueColor"></i></div>
+												<p class="white">Home</p>
+											</a>
 
 
-					<div class="menu-buttons-768 tabletSize">
-					<ul class="menu-buttons-768-list">
 
-					<li tabindex="0" data-target="#Guide"><i class="far fa-list"></i></li>
-					<li tabindex="0" data-target="#FAQ"><i class="fas fa-file-alt"></i></li>
-					<li tabindex="0" data-target="#Contact"><i class="fas fa-info-circle"></i></li>
-					<li tabindex="0" data-target="#Home"><i class="fas fa-angle-up"></i></li>
-				</ul>
-			</div> -->
+											<a class="d-flex justify-content-start align-items-center mb-4" href="about.html">
+												<div class="limeCircle"><i class="fas fa-info-circle blueColor"></i></div>
+												<p class="white">About the Study</p>
+											</a>
+
+
+											<a class="d-flex justify-content-start align-items-center mb-4" href="participants.html">
+												<div class="limeCircle"><i class="fas fa-user-friends blueColor"></i></div>
+												<p class="white">Participants</p>
+											</a>
+
+
+											<a class="d-flex justify-content-start align-items-center" href="researchers.html">
+												<div class="limeCircle"><i class="fas fa-book-reader blueColor"></i></div>
+												<p class="white">Researchers</p>
+											</a>
+
+
+										</div>
+
+										<div class="whiteToggle shadow closeIt">
+											<i class="fal fa-times"></i>
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
 
 		</div>
 	</div>
-		<!-- <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
-		<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="js/landing.js"></script> -->
-		<!-- <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&amp;languages=en,es"></script> -->
-		<!-- <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
-
 
 
 	</body>

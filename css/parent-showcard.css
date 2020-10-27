@@ -229,7 +229,7 @@
 .bTop{
 	border-top:1px solid black;
 }
-.mobileOnly, .mobileDash{
+.mobileOnlyAll, .mobileDash{
 	display: none !important;
 }
 
@@ -385,7 +385,7 @@
 		z-index: 99999
 	}
 
-	.mobileOnly{
+	.mobileOnlyAll{
 		text-align: center;
 		font-size: 30px;
 		margin: 0;
@@ -393,7 +393,7 @@
 		background: #C4EDA1;
 		border-radius: 1rem;
 		width:100%;
-		display: block !important
+		display: none
 	}
 
 
@@ -460,6 +460,7 @@
 
 	.whiteBubble{
 		margin: 1em 0em 1em 0em;
+		padding: 1em 1em;
 	}
 
 	.showIt{
@@ -479,7 +480,7 @@
 	}
 
 
-	.rotateIt{
+	.rotateAll{
 
 		transform: rotate(180deg)
 	}

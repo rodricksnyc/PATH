@@ -23,38 +23,38 @@ $(document).ready(function () {
 
 
 	$(".block50 a").on("keyup", function (e) {
-	var code = (e.keyCode ? e.keyCode : e.which);
-	if (code == 9) {
-		$(this).find('.whiteBubble').css('outline', 'dashed 3px #4599ff')
-	}
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 9) {
+			$(this).find('.whiteBubble').css('outline', 'dashed 3px #4599ff')
+		}
 
-})
-$(".block50 a").on('focusout', function() {
-	$(this).find('.whiteBubble').css('outline', 'none')
-})
+	})
+	$(".block50 a").on('focusout', function() {
+		$(this).find('.whiteBubble').css('outline', 'none')
+	})
 
 
 
 
 	if ($(document).innerWidth() > 767) {
-	$(window).scroll(function () {
-		var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-		if (distanceY > 200) {
+		$(window).scroll(function () {
+			var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+			if (distanceY > 200) {
 
-			$('.position-fixed').css({
-				top: '0'
-			})
-		} else {
+				$('.position-fixed').css({
+					top: '0'
+				})
+			} else {
 
-			$('.position-fixed').css({
-				top: 'auto'
-			})
-		}
-	});
+				$('.position-fixed').css({
+					top: 'auto'
+				})
+			}
+		});
 
 
 
-}
+	}
 
 
 	var path = window.location.href
@@ -106,12 +106,12 @@ $(".block50 a").on('focusout', function() {
 		$('.loginButton').html('<i class="fas fa-sign-in-alt"></i>').addClass('addMobile')
 
 		$(window).scroll(function(){
-		  var sticky = $('.position-fixed'),
-		      scroll = $(window).scrollTop();
+			var sticky = $('.position-fixed'),
+			scroll = $(window).scrollTop();
 
-		  if (scroll >= 40) sticky.addClass('addFixed');
+			if (scroll >= 40) sticky.addClass('addFixed');
 
-		  else sticky.removeClass('addFixed');
+			else sticky.removeClass('addFixed');
 		});
 
 
@@ -120,7 +120,7 @@ $(".block50 a").on('focusout', function() {
 
 	$('.spanish').on('click', function(e) {
 
-			$('.grid').isotope('reloadItems').isotope();
+		$('.grid').isotope('reloadItems').isotope();
 
 		$('.spanish-spacer').css('height', '2.2vh')
 		// e.preventDefault()
@@ -460,10 +460,31 @@ $(".block50 a").on('focusout', function() {
 
 
 
+
+
 	if ($(document).innerWidth() <= 767) {
 
 		$('.openTab .plum').html('<i class="fas fa-envelope"></i>')
 		$('#one').css('right', '-20px')
+
+		$('.openIt').click(function() {
+
+			$('.menuBubble').animate({
+
+				'bottom' : '0vh'
+
+			}, 500);
+		})
+
+		$('.closeIt').click(function() {
+
+			$('.menuBubble').animate({
+
+				'bottom' : '-100vh'
+
+			}, 500);
+		})
+
 
 	}
 
@@ -491,182 +512,203 @@ $(".block50 a").on('focusout', function() {
 	});
 
 
-$("input").on("keyup", function (e) {
+	$("input").on("keyup", function (e) {
 
-  var code = (e.keyCode ? e.keyCode : e.which);
-  if (code == 9) {
-    $(this).css('outline', 'dashed 3px #4599ff')
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 9) {
+			$(this).css('outline', 'dashed 3px #4599ff')
 
-  }
-
-})
-$("input").on('focusout', function() {
-  $(this).css('outline', 'none')
-})
-
-$(".form-check").on("keyup", function (e) {
-
-  var code = (e.keyCode ? e.keyCode : e.which);
-  if (code == 9) {
-    $('.form-check').each(function() {
-      $(this).addClass('focusClass')
-    });
-
-  }
-
-})
-
-
-$(".box-container").on("keyup", function (e) {
-	var code = (e.keyCode ? e.keyCode : e.which);
-	if (code == 9) {
-		$(this).find('.flip-box').css('outline', 'dashed 3px #4599ff')
-	}
-
-})
-$(".box-container").on('focusout', function() {
-	$(this).find('.flip-box').css('outline', 'none')
-})
-
-$('.box-container').on("keyup", function (e) {
-
-	var code = (e.keyCode ? e.keyCode : e.which);
-	if (code == 13) {
-
-		$(this).find('.flip-box').toggleClass('flipIt')
-	}
-});
-
-// if ($(document).innerWidth() <= 767) {
-//
-// $('.box-container').on("click", function (e) {
-//
-// 		$(this).find('.flip-box').toggleClass('flipIt')
-//
-// });
-//
-// }
-
-	$('li[data-target="#Guide"]').addClass('activated')
-
-$(window).on('scroll', function() {
-	var screenTop = $(window).scrollTop();
-	var screenBottom = $(window).scrollTop() + window.innerHeight;
-
-	$('section').each(function() {
-		var elementTop = $(this).offset().top;
-		var elementBottom = $(this).offset().top + $(this).outerHeight();
-
-		if ((screenBottom > elementTop + ($(this).find('.heros').height() / 5 )) && (screenTop < elementBottom)) {
-			$('section').removeClass('active')
-			$(this).addClass('active')
 		}
-		else {
-			$(this).removeClass('active')
+
+	})
+	$("input").on('focusout', function() {
+		$(this).css('outline', 'none')
+	})
+
+	$(".form-check").on("keyup", function (e) {
+
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 9) {
+			$('.form-check').each(function() {
+				$(this).addClass('focusClass')
+			});
+
 		}
+
 	})
 
 
-	if ($('.block10').hasClass('active')) {
+	$(".box-container").on("keyup", function (e) {
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 9) {
+			$(this).find('.flip-box').css('outline', 'dashed 3px #4599ff')
+		}
+
+	})
+	$(".box-container").on('focusout', function() {
+		$(this).find('.flip-box').css('outline', 'none')
+	})
+
+	$('.box-container').on("keyup", function (e) {
+
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 13) {
+
+			$(this).find('.flip-box').toggleClass('flipIt')
+		}
+	});
+
+	// if ($(document).innerWidth() <= 767) {
+	//
+	// $('.box-container').on("click", function (e) {
+	//
+	// 		$(this).find('.flip-box').toggleClass('flipIt')
+	//
+	// });
+	//
+	// }
+
+	$('li[data-target="#Guide"]').addClass('activated')
+
+	$(window).on('scroll', function() {
+		var screenTop = $(window).scrollTop();
+		var screenBottom = $(window).scrollTop() + window.innerHeight;
+
+		$('section').each(function() {
+			var elementTop = $(this).offset().top;
+			var elementBottom = $(this).offset().top + $(this).outerHeight();
+
+			if ((screenBottom > elementTop + ($(this).find('.heros').height() / 5 )) && (screenTop < elementBottom)) {
+				$('section').removeClass('active')
+				$(this).addClass('active')
+			}
+			else {
+				$(this).removeClass('active')
+			}
+		})
+
+
+		if ($('.block10').hasClass('active')) {
 			$('li[data-target="#Guide"]').addClass('activated')
-	}
-
-	else {
-	$('li[data-target="#Guide"]').removeClass('activated')
-	}
-
-
-	if ($('.block5').hasClass('active')) {
-		$('li[data-target="#FAQ"]').addClass('activated')
-	}
-
-	else {
-		$('li[data-target="#FAQ"]').removeClass('activated')
-	}
-
-
-	if ($('.block50').hasClass('active')) {
-	$('li[data-target="#Contact"]').addClass('activated')
-	}
-
-	else {
-		$('li[data-target="#Contact"]').removeClass('activated')
-	}
-
-	if ($('.block0').hasClass('active')) {
-
-	}
-
-
-})
-
-
-if ($(document).innerWidth() >= 1025) {
-
-	$(window).scroll(function() {
-		if($(window).scrollTop() + $(window).height() > $(document).height() - .01*$(document).height()) {
-
-			$('.back-to-top').css({
-				'top' : '72%'
-			})
 		}
+
 		else {
-
-			$('.back-to-top').css({
-				'top' : '90%'
-			})
-
+			$('li[data-target="#Guide"]').removeClass('activated')
 		}
 
-	});
 
-
-}
-
-
-
-if ($(document).innerWidth() <= 1024) {
-
-	$(window).scroll(function() {
-		if($(window).scrollTop() + $(window).height() > $(document).height() - .01*$(document).height()) {
-
-			$('.back-to-top').css({
-				'top' : '74%'
-			})
+		if ($('.block5').hasClass('active')) {
+			$('li[data-target="#FAQ"]').addClass('activated')
 		}
+
 		else {
-
-			$('.back-to-top').css({
-				'top' : '78%'
-			})
-
+			$('li[data-target="#FAQ"]').removeClass('activated')
 		}
 
-	});
 
-}
-
-
-if ($(document).innerWidth() <= 767) {
-
-	$(window).scroll(function() {
-		if($(window).scrollTop() + $(window).height() > $(document).height() - .01*$(document).height()) {
-
-			$('.back-to-top').css({
-				'top' : '54%'
-			})
+		if ($('.block50').hasClass('active')) {
+			$('li[data-target="#Contact"]').addClass('activated')
 		}
+
 		else {
+			$('li[data-target="#Contact"]').removeClass('activated')
+		}
 
-			$('.back-to-top').css({
-				'top' : '74%'
-			})
+		if ($('.block0').hasClass('active')) {
 
 		}
 
-	});
 
-}
+	})
+
+
+	if ($(document).innerWidth() >= 1025) {
+
+		$(window).scroll(function() {
+			if($(window).scrollTop() + $(window).height() > $(document).height() - .01*$(document).height()) {
+
+				$('.back-to-top').css({
+					'top' : '72%'
+				})
+			}
+			else {
+
+				$('.back-to-top').css({
+					'top' : '90%'
+				})
+
+			}
+
+		});
+
+
+	}
+
+
+
+	if ($(document).innerWidth() <= 1024) {
+
+		$(window).scroll(function() {
+			if($(window).scrollTop() + $(window).height() > $(document).height() - .01*$(document).height()) {
+
+				$('.back-to-top').css({
+					'top' : '74%'
+				})
+			}
+			else {
+
+				$('.back-to-top').css({
+					'top' : '78%'
+				})
+
+			}
+
+		});
+
+	}
+
+
+	if ($(document).innerWidth() <= 767 && $(document).innerWidth() > 325) {
+
+		$(window).scroll(function() {
+			if($(window).scrollTop() + $(window).height() > $(document).height() - .01*$(document).height()) {
+
+				$('.back-to-top').css({
+					'top' : '44%'
+				})
+			}
+			else {
+
+				$('.back-to-top').css({
+					'top' : '68%'
+				})
+
+			}
+
+		});
+
+	}
+
+	if ($(document).innerWidth() <= 325) {
+
+		$(window).scroll(function() {
+			if($(window).scrollTop() + $(window).height() > $(document).height() - .01*$(document).height()) {
+
+				$('.back-to-top').css({
+					'top' : '39%'
+				})
+			}
+			else {
+
+				$('.back-to-top').css({
+					'top' : '68%'
+				})
+
+			}
+
+		});
+
+	}
 
 
 
@@ -706,35 +748,21 @@ if ($(document).innerWidth() <= 767) {
 		});
 
 
-	$("#creditCard").validate(
-		{
-			rules:
-			{
-				cardNumber:
-				{
-					required: true,
-					maxlength: 4,
-					minlength:4,
-					digits: true
-				}
-			}
-		});
-
-		$("#update").validate(
+		$("#creditCard").validate(
 			{
 				rules:
 				{
-					email:
+					cardNumber:
 					{
 						required: true,
-						email: true
-
+						maxlength: 4,
+						minlength:4,
+						digits: true
 					}
-
 				}
 			});
 
-			$("#field-interviewer").validate(
+			$("#update").validate(
 				{
 					rules:
 					{
@@ -743,80 +771,94 @@ if ($(document).innerWidth() <= 767) {
 							required: true,
 							email: true
 
-						},
-						fieldName:
-						{
-							required: true
-
 						}
-
 
 					}
 				});
 
+				$("#field-interviewer").validate(
+					{
+						rules:
+						{
+							email:
+							{
+								required: true,
+								email: true
+
+							},
+							fieldName:
+							{
+								required: true
+
+							}
+
+
+						}
+					});
 
 
 
 
-			// $("#creditCard").validate({
-			//   // Specify validation rules
-			//   rules: {
-			//     lastName: "required",
-			//     lastName: "required",
-			//     cardNumber: {
-			//       required: true,
-			// 			maxlength: 4,
-			// 			minlength:4
-			//     },
-			//   //   phone: {
-			//   //     required: true,
-			//   //     digits: true,
-			//   //     minlength: 10,
-			//   //     maxlength: 10,
-			//   //   },
-			//   //   password: {
-			//   //     required: true,
-			//   //     minlength: 5,
-			//   //   }
-			//   // },
-			//   messages: {
-			//     firstName: {
-			//     required: "Please enter first name",
-			//    },
-			//    lastName: {
-			//     required: "Please enter last name",
-			//    },
-			// 	 cardNumber: {
-			// 		  required: "Please enter 4 digits",
-			// 	 }
-			//    // phone: {
-			//    //  required: "Please enter phone number",
-			//    //  digits: "Please enter valid phone number",
-			//    //  minlength: "Phone number field accept only 10 digits",
-			//    //  maxlength: "Phone number field accept only 10 digits",
-			//    // },
-			//    // email: {
-			//    //  required: "Please enter email address",
-			//    //  email: "Please enter a valid email address.",
-			//    // },
-			//   }
-			// }
-			//
-			// });
 
-			// var defaultState = {
-			//    current: window.location.pathname
-			// };
-			//
-			// var requestParameters = [
-			//    '#googtrans(en|es)'
-			// ];
-			//
-			//
-			//
-			//
-			// var path = window.location.pathname + requestParameters.join("");
-			// window.history.pushState(defaultState, 'Title', path);
-			//
+					// $("#creditCard").validate({
+					//   // Specify validation rules
+					//   rules: {
+					//     lastName: "required",
+					//     lastName: "required",
+					//     cardNumber: {
+					//       required: true,
+					// 			maxlength: 4,
+					// 			minlength:4
+					//     },
+					//   //   phone: {
+					//   //     required: true,
+					//   //     digits: true,
+					//   //     minlength: 10,
+					//   //     maxlength: 10,
+					//   //   },
+					//   //   password: {
+					//   //     required: true,
+					//   //     minlength: 5,
+					//   //   }
+					//   // },
+					//   messages: {
+					//     firstName: {
+					//     required: "Please enter first name",
+					//    },
+					//    lastName: {
+					//     required: "Please enter last name",
+					//    },
+					// 	 cardNumber: {
+					// 		  required: "Please enter 4 digits",
+					// 	 }
+					//    // phone: {
+					//    //  required: "Please enter phone number",
+					//    //  digits: "Please enter valid phone number",
+					//    //  minlength: "Phone number field accept only 10 digits",
+					//    //  maxlength: "Phone number field accept only 10 digits",
+					//    // },
+					//    // email: {
+					//    //  required: "Please enter email address",
+					//    //  email: "Please enter a valid email address.",
+					//    // },
+					//   }
+					// }
+					//
+					// });
 
-		})
+					// var defaultState = {
+					//    current: window.location.pathname
+					// };
+					//
+					// var requestParameters = [
+					//    '#googtrans(en|es)'
+					// ];
+					//
+					//
+					//
+					//
+					// var path = window.location.pathname + requestParameters.join("");
+					// window.history.pushState(defaultState, 'Title', path);
+					//
+
+				})
