@@ -18,6 +18,10 @@ a{
   z-index:8
 }
 
+.hideMobile{
+  display: none
+}
+
 a:hover{
   cursor: grab;
 }
@@ -6100,6 +6104,72 @@ button.close {
 
 @media (max-width: 767px) {
 
+  .blockBottom {
+    background: rgb(0,105,170);
+  background: linear-gradient(38deg, rgba(0,105,170,1) 52%, rgba(34,129,190,1) 84%);
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    height:4em;
+    z-index: 99999;
+}
+
+.whiteToggle{
+
+  position: relative;
+
+  background: white;
+  border-radius:50%;
+  height:4rem;
+  width:4rem;
+  right:1em;
+  float:right;
+  top:-1em;
+}
+
+.whiteToggle i {
+  font-size:36px;
+  width:36px;
+  color:#0069aa;
+  position: absolute;
+  top: calc(50% - 18px);
+  left: calc(50% - 16px);
+
+}
+
+.menuBubble {
+  position: absolute;
+  height:300px;
+  width:100vw;
+  background: rgb(0,105,170);
+background: linear-gradient(38deg, rgba(0,105,170,1) 52%, rgba(34,129,190,1) 84%);
+bottom:0;
+border-radius:1rem;
+}
+
+.back-to-top {
+    right: 2px;
+}
+
+#slideOut2 label.white {
+    color: white !important;
+    margin-bottom: 1em !important;
+}
+
+  #navbarNavAltMarkup {
+    display: none;
+  }
+  .navbar-toggler {
+    display: none
+  }
+
+  .hideMobile{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .loginButton p {
     color: #00559b !important;
     font-weight: 500;
@@ -6869,6 +6939,7 @@ h6.blue {
   padding-top: .5em;
   padding-bottom: .5em;
   padding-right: .5em;
+  min-width: 15em;
 }
 
 span.heading {

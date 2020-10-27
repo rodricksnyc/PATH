@@ -637,7 +637,7 @@ if ($(document).innerWidth() <= 1024) {
 		else {
 
 			$('.back-to-top').css({
-				'top' : '84%'
+				'top' : '78%'
 			})
 
 		}
@@ -659,7 +659,7 @@ if ($(document).innerWidth() <= 767) {
 		else {
 
 			$('.back-to-top').css({
-				'top' : '84%'
+				'top' : '74%'
 			})
 
 		}
