@@ -112,15 +112,27 @@
 
 }
 
-.adult .secondGroup .filter-item.a, .adult  .secondGroup .filter-item.c, .secondGroup .filter-item.i, .adult .secondGroup .filter-item.j, .adult .secondGroup .filter-item.k, .adult .secondGroup .filter-item.l {
+.adult .secondGroup .filter-item.a, .adult  .secondGroup .filter-item.c, .adult .secondGroup .filter-item.i, .adult .secondGroup .filter-item.j, .adult .secondGroup .filter-item.k, .adult .secondGroup .filter-item.l,  .adult .secondGroup .filter-item.m {
 	overflow-y: scroll;
 	height: 250px
 }
 
-.youth .secondGroup .filter-item.c, .youth .secondGroup .filter-item.j, .youth .secondGroup .filter-item.l, .youth .secondGroup .filter-item.m{
+
+.adult .secondGroup .filter-item.newClass {
+	overflow-y: hidden;
+	height: auto;
+}
+
+
+.youth .secondGroup .filter-item.b, .youth .secondGroup .filter-item.c, .youth .secondGroup .filter-item.e, .youth .secondGroup .filter-item.f, .youth .secondGroup .filter-item.j, .youth .secondGroup .filter-item.k, .youth .secondGroup .filter-item.l, .youth .secondGroup .filter-item.m{
 	overflow-y: scroll;
 	height: 250px
 
+}
+
+.youth .secondGroup .filter-item.newClass {
+	overflow-y: hidden;
+	height: auto;
 }
 
 
@@ -156,6 +168,12 @@
 .grid{
 	position: relative;
 	overflow:hidden !important
+}
+
+#numberGrid.smallDiv{
+height: 300px !important;
+overflow-y: scroll !important;
+
 }
 
 .back-to-top{
