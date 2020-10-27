@@ -6123,6 +6123,13 @@ button.close {
     right: 0;
   }
 
+    .blockBottom.notShowing{
+      background: none;
+      
+    }
+
+
+
   .bottomLogin p{
     margin-bottom:0em;
     font-size: 17px;
@@ -6466,7 +6473,8 @@ left: 6px;
   }
 
   .back-to-top{
-    display: none
+    display: flex;
+  z-index: 999999;
   }
 
   .topFour .col-lg-8 {
@@ -6631,8 +6639,8 @@ left: 6px;
     position: relative;
   }
 
-  .hideMobile{
-    display: none
+  .hideMobile2{
+    display: none !important
   }
 
   .absoluteImage {
@@ -6765,8 +6773,21 @@ left: 6px;
     max-width:8rem
   }
 
+.bottomNav{
 
+      z-index: 999999999;
+}
 
+  .homepage .survey-footer {
+    min-height:19em;
+  }
+
+  .homepage .survey-footer .two {
+    padding-top: 6em;
+    min-height: 15em;
+    flex-wrap: wrap;
+    padding-bottom: 0em;
+}
   .survey-footer {
     min-height:23em;
   }
