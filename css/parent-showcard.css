@@ -12,7 +12,7 @@
 	width: 2.5em;
 
 	position: relative;
-	margin:1em .5em;
+	margin:.5em .5em;
 
 }
 
@@ -35,7 +35,7 @@
 	height:auto;
 	padding: 0em 1.55em;
 	border-radius: .6rem;
-
+	width:7em;
 
 }
 
@@ -73,7 +73,8 @@
 
 .letter.number p{
 	width:auto;
-
+	width: 4em;
+	margin-bottom:0em !important
 }
 
 .filter-attr-list {
@@ -351,8 +352,9 @@
 @media (max-width:767px) {
 	.letter {
 
-	    margin: 1em .3em;
+		margin: .5em .3em;
 	}
+
 
 	.label{
 		width:75px;
@@ -367,24 +369,24 @@
 		position: relative;
 	}
 
-		.position-fixed {
-			position: relative !important
-		}
+	.position-fixed {
+		position: relative !important
+	}
 
-		.position-fixed.addFixed {
-			position: fixed !important;
-	top:0;
-	overflow: auto;
-			left:0;
-			right:0;
-			position: fixed; /*fallback*/
-	position: -webkit-sticky; /* still needed for ios */
-	position: sticky;
-	z-index: 99999
-		}
+	.position-fixed.addFixed {
+		position: fixed !important;
+		top:0;
+		overflow: auto;
+		left:0;
+		right:0;
+		position: fixed; /*fallback*/
+		position: -webkit-sticky; /* still needed for ios */
+		position: sticky;
+		z-index: 99999
+	}
 
 	.mobileOnly{
-			text-align: center;
+		text-align: center;
 		font-size: 30px;
 		margin: 0;
 		padding: 0;
@@ -399,9 +401,9 @@
 		position: relative !important;
 		display: none
 	}
-.secondGrid{
-	height:auto !important
-}
+	.secondGrid{
+		height:auto !important
+	}
 
 	h4.landing-sec-H{
 		margin-bottom:.5em
@@ -438,12 +440,12 @@
 	.whiteBubble p.text-center {
 		line-height: 19px;
 		margin-bottom: 1em !important;
-}
+	}
 
-.mobileDash{
-	    margin-bottom: 0em;
-	display: block !important
-}
+	.mobileDash{
+		margin-bottom: 0em;
+		display: block !important
+	}
 
 
 	.rBorder .row .d-flex{
@@ -457,7 +459,7 @@
 	}
 
 	.whiteBubble{
-		  margin: 1em 0em 1em 0em;
+		margin: 1em 0em 1em 0em;
 	}
 
 	.showIt{
@@ -465,8 +467,15 @@
 	}
 
 	.firstGroup .letter {
-	    background: #A3E56A;
-	    font-weight: 600;
+		background: #A3E56A;
+		font-weight: 600;
+	}
+
+	.letter p {
+		font-size: 1em;
+	}
+	.letter.number{
+		width:6em
 	}
 
 
