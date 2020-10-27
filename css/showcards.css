@@ -256,8 +256,8 @@ transition: background 1s, box-shadow 1s !important;
 margin-left:1em
 } */
 
-.tight p{
-	line-height: 19px;
+.tight {
+	line-height: 19px !important;
 }
 
 .no-border {
