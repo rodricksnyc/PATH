@@ -406,7 +406,9 @@ $('.letter').not('.allLetter').click(function() {
   $('#numberGrid').removeClass('smallDiv')
 })
 
+$('.tabletSize .menu-buttons-768-list li:nth-of-type(4)').click(function(e) {
 
+})
 
 
 	$(window).scroll(function () {
@@ -423,53 +425,17 @@ $('.letter').not('.allLetter').click(function() {
 
 	}
 
-	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('click', function (e) {
+	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li:not(:last-child)').on('click', function (e) {
 
 		e.preventDefault();
 		scrollfn($(this).attr('data-target'));
 	});
 
-	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('keypress', function (e) {
+	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li:not(:last-child)').on('keypress', function (e) {
 
 		e.preventDefault();
 		scrollfn($(this).attr('data-target'));
 	});
-
-
-	// var about = function() {
-	// 	window.location.href="about.html"
-	// }
-	//
-	// $('.goToAbout').keypress(
-	// 	about
-	//
-	// ).click(
-	// 	about
-	// );
-	//
-	// var participants = function() {
-	// 	window.location.href="participants.html"
-	// }
-	//
-	// $('.goToParticipants').keypress(
-	// 	participants
-	//
-	// ).click(
-	// 	participants
-	// );
-	//
-	// var researchers = function() {
-	// 	window.location.href="researchers.html"
-	// }
-	//
-	// $('.goToParticipants').keypress(
-	// 	researchers
-	//
-	// ).click(
-	// 	researchers
-	// );
-
-
 
 
 
@@ -486,6 +452,10 @@ $('.letter').not('.allLetter').click(function() {
 				'bottom' : '0vh'
 
 			}, 500);
+
+			$('.menu-buttons-768-list li, .tabletSize .activated').addClass('negative')
+
+			$('li .bottomNav').css('z-index', '9999999999')
 		})
 
 		$('.closeIt').click(function() {
@@ -495,6 +465,10 @@ $('.letter').not('.allLetter').click(function() {
 				'bottom' : '-100vh'
 
 			}, 500);
+
+			$('.menu-buttons-768-list li, .tabletSize .activated').removeClass('negative')
+				$('li .bottomNav').css('z-index', '-1')
+
 		})
 
 
