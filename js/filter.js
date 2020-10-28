@@ -86,8 +86,6 @@ $(document).ready(function () {
 			$(this).css('outline', 'none')
 			$(this).find(".letter.number").removeClass("green-active");
 
-
-			console.log("wefiywefi")
 			var activeOne = $('.firstGroup .letter.is-checked')
 
 			$(activeOne).blur().css('outline', 'none')
@@ -172,7 +170,15 @@ $(document).ready(function () {
 		})
 
 		$('.letter.number, .mobileOnlyAll').click(function() {
+
 			$('.ui-group').slideToggle()
+			if ($('.allLetter').hasClass('is-checked')){
+			$('.secondGroup .filter-item').toggleClass('newClass')
+
+			$('#numberGrid').toggleClass('smallDiv')
+
+
+		}
 
 
 			$('.mobileOnlyAll').toggleClass('rotateAll')
