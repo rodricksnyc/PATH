@@ -7587,7 +7587,7 @@ body{
 }
 
 .survey-container{
-  padding: 5px;
+  padding: 0px;
 }
 
 .btnResources{
@@ -7601,6 +7601,17 @@ body{
 
 .mobileLinks .active p{
   border-bottom: 3px solid #A3E56A
+}
+
+
+.mobileLinks .bottomLogin.active{
+  border: 3px solid #A3E56A;
+
+}
+
+.mobileLinks .bottomLogin.active p{
+  border-bottom:none
+
 }
 
 .leftTop {
