@@ -427,13 +427,13 @@ margin-left:1em
 @media (max-width:767px) {
 	.adult .secondGroup .filter-item.newClass {
 		overflow-y: hidden;
-		height: auto;
+		height: auto !important;
 		margin-bottom:1em;
 	}
 
 	.youth .secondGroup .filter-item.newClass {
 		overflow-y: hidden;
-		height: auto;
+		height: auto !important;
 		margin-bottom:1em;
 	}
 	.label{
