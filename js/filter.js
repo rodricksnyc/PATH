@@ -36,7 +36,7 @@ $(document).ready(function () {
 
 
 		if ($('.allLetter').hasClass('is-checked')){
-			console.log('yes')
+		
 
 			$('.secondGroup .filter-item').addClass('newClass')
 
