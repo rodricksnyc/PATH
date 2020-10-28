@@ -33,8 +33,6 @@ $(document).ready(function () {
 		$(this).addClass("is-active");
 
 
-
-
 		if ($('.allLetter').hasClass('is-checked')){
 
 
@@ -169,16 +167,19 @@ $(document).ready(function () {
 			$('.mobileDash').remove()
 		})
 
-		$('.letter.number, .mobileOnlyAll').click(function() {
+		$('.letter.number, .mobileOnlyAll, .allLetter').click(function() {
+			$('.secondGroup .filter-item').removeClass('newClass')
+
+				$('#numberGrid').removeClass('smallDiv')
 
 			$('.ui-group').slideToggle()
-			if ($('.allLetter').hasClass('is-checked')){
-			$('.secondGroup .filter-item').toggleClass('newClass')
-
-			$('#numberGrid').toggleClass('smallDiv')
-
-
-		}
+		// 	if ($('.allLetter').hasClass('is-checked')){
+		// 	$('.secondGroup .filter-item').toggleClass('newClass')
+		//
+		// 	$('#numberGrid').toggleClass('smallDiv')
+		//
+		//
+		// }
 
 
 			$('.mobileOnlyAll').toggleClass('rotateAll')
