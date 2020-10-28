@@ -120,7 +120,7 @@
 
 .adult .secondGroup .filter-item.newClass {
 	overflow-y: hidden;
-	height: auto;
+	height: auto !important;
 }
 
 
@@ -132,7 +132,7 @@
 
 .youth .secondGroup .filter-item.newClass {
 	overflow-y: hidden;
-	height: auto;
+	height: auto !important;
 }
 
 

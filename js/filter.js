@@ -63,8 +63,6 @@ $(document).ready(function () {
 
 
 
-
-
 	$(".numberTags").on("keyup", function (e) {
 		var code = (e.keyCode ? e.keyCode : e.which);
 		if (code == 9) {
@@ -99,7 +97,28 @@ $(document).ready(function () {
 
 
 
+	$('.allLetter').click(function() {
+		$('.secondGroup .filter-item').addClass('newClass')
 
+		$('#numberGrid').addClass('smallDiv')
+
+
+
+	})
+
+	if ($(document).innerWidth() > 767) {
+	$('.secondGroup .filter-item').addClass('newClass')
+
+	$('#numberGrid').addClass('smallDiv')
+
+}
+
+
+	$('.letter').not('.allLetter').click(function() {
+		$('.secondGroup .filter-item').removeClass('newClass')
+
+		$('#numberGrid').removeClass('smallDiv')
+	})
 
 
 
@@ -170,16 +189,10 @@ $(document).ready(function () {
 		$('.letter.number, .mobileOnlyAll, .allLetter').click(function() {
 			$('.secondGroup .filter-item').removeClass('newClass')
 
-				$('#numberGrid').removeClass('smallDiv')
+			$('#numberGrid').removeClass('smallDiv')
 
 			$('.ui-group').slideToggle()
-		// 	if ($('.allLetter').hasClass('is-checked')){
-		// 	$('.secondGroup .filter-item').toggleClass('newClass')
-		//
-		// 	$('#numberGrid').toggleClass('smallDiv')
-		//
-		//
-		// }
+
 
 
 			$('.mobileOnlyAll').toggleClass('rotateAll')

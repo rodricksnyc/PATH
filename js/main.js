@@ -402,34 +402,7 @@ $(document).ready(function () {
 		scrollfn("#overview");
 	})
 
-	$('.allLetter').click(function() {
-		$('.secondGroup .filter-item').addClass('newClass')
 
-		$('#numberGrid').addClass('smallDiv')
-
-
-
-	})
-
-	// $('.letter.number').on('click', function() {
-	//
-	// 	if ($('.allLetter').hasClass('is-checked')){
-	// 		console.log('yes')
-	//
-	// 		$('.secondGroup .filter-item').addClass('newClass')
-	//
-	// 	 $('#numberGrid').addClass('smallDiv')
-	// 	}
-	//
-	// })
-
-
-
-	$('.letter').not('.allLetter').click(function() {
-		$('.secondGroup .filter-item').removeClass('newClass')
-
-		$('#numberGrid').removeClass('smallDiv')
-	})
 
 	$('.tabletSize .menu-buttons-768-list li:nth-of-type(4)').click(function(e) {
 
