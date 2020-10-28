@@ -287,6 +287,9 @@ $(document).ready(function () {
 
 	setReasonActive()
 
+
+	$('#slideOut2 .modal-header a').attr('tabindex', '-1')
+
 	var open = function() {
 
 		$('.contactUsOverlay').show();
@@ -297,6 +300,8 @@ $(document).ready(function () {
 		$('.radio-inline input').each(function () {
 			$(this).attr('tabindex', '0');
 		});
+
+		$('#slideOut2 .modal-header a').attr('tabindex', '0')
 
 		$('.form-check-input').attr('tabindex', '0');
 
@@ -328,6 +333,8 @@ $(document).ready(function () {
 
 			$('#slideOut2 .form-control').attr('tabindex', '-1');
 
+				$('#slideOut2 .modal-header a').attr('tabindex', '-1')
+
 			$('#closeThisPlease').attr('tabindex', '-1');
 
 			$('#sendMessage').attr('tabindex', '-1');
@@ -351,6 +358,7 @@ $(document).ready(function () {
 		$('#sendMessage').attr('tabindex', '-1');
 		$("#slideOut2").removeClass('showslideOut2');
 		$('.form-check-input').attr('tabindex', '-1');
+			$('#slideOut2 .modal-header a').attr('tabindex', '-1')
 
 	}
 

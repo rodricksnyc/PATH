@@ -60,11 +60,7 @@ $(document).ready(function () {
 		var code = (e.keyCode ? e.keyCode : e.which);
 		if (code == 9) {
 
-			 if ($(this).is(':last-child')) {
-				 	var activeOne = $('.firstGroup .letter.is-checked')
-				 console.log("weuigb")
-				$(activeOne).blur().css('outline', 'none')
-			 }
+
 
 			$(this).css('outline', 'dashed 3px #4599ff')
 			$(this).find(".letter.number").addClass("green-active");
@@ -73,6 +69,20 @@ $(document).ready(function () {
 	})
 
 	$(".numberTags").on('focusout', function() {
+
+		if ($(this).is(':last-child')) {
+
+		 $(this).css('outline', 'none')
+		 $(this).find(".letter.number").removeClass("green-active");
+
+
+			console.log("wefiywefi")
+		 var activeOne = $('.firstGroup .letter.is-checked')
+
+		 $(activeOne).blur().css('outline', 'none')
+
+		 $('#one').focus().css('outline', 'dashed 3px #4599ff')
+		}
 
 
 		$(this).css('outline', 'none')
