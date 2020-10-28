@@ -173,8 +173,8 @@
 }
 
 #numberGrid.smallDiv{
-height: 300px !important;
-overflow-y: scroll !important;
+	height: 300px !important;
+	overflow-y: scroll !important;
 
 }
 
