@@ -498,11 +498,6 @@ margin-left:1em
 	h4.landing-sec-H{
 		margin-bottom:.5em
 	}
-	.filter-item{
-		position: relative !important;
-		height:auto !important;
-		top:auto !important
-	}
 
 
 	.secondGroup .filter-item {
@@ -576,6 +571,7 @@ margin-left:1em
 		font-size: 1em;
 	}
 	.letter.number{
+		position:relative !important;
 		width:6em
 	}
 
@@ -587,4 +583,11 @@ margin-left:1em
 
 		transform: rotate(180deg)
 	}
+
+	.filter-item{
+		position: relative !important;
+		height:auto !important;
+		top:auto !important
+	}
+
 }
