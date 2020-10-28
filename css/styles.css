@@ -5406,6 +5406,10 @@ button.close {
     display: none !important;
   }
 
+  .topFour .whiteBubble .smaller {
+    max-width: 14em;
+}
+
   .form-group label {
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
