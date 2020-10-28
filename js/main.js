@@ -59,7 +59,7 @@ $(document).ready(function () {
 
 	var path = window.location.href
 
-	$('.navbar-nav li .nav-link').each(function() {
+	$('.mobileLinks a').each(function() {
 		if (this.href === path) {
 			$(this).addClass('active');
 		}
@@ -68,6 +68,21 @@ $(document).ready(function () {
 		}
 
 	});
+
+	var pathMobile = window.location.href
+
+	$('.navbar-nav li .nav-link').each(function() {
+		if (this.href === pathMobile) {
+			$(this).addClass('active');
+		}
+		else {
+			$(this).removeClass('active');
+		}
+
+	});
+
+
+
 
 	var mainURL = window.location.href;
 
