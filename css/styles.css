@@ -4098,7 +4098,7 @@ p.modalFooter {
   width: 100%;
   box-shadow: 0px -3px 7px rgba(0,0,0,0.1);
   /* transition: 0.4s all; */
-  z-index: 999999999999;
+  z-index: 99999999;
 }
 
 .menu-buttons-768-list{
@@ -6148,7 +6148,7 @@ button.close {
     height: 3rem;
     width: 3rem;
     float: right;
-    z-index: 999999999999999999;
+
 }
 
 .tabletSize .menu-buttons-768-list li:nth-of-type(4) .openIt {
@@ -6157,6 +6157,7 @@ button.close {
     -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.26);
     -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.26);
     box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.26);
+      z-index: 9999999999999999;
 }
 
 .tabletSize .menu-buttons-768-list li:nth-of-type(4) .openIt i {
@@ -6176,6 +6177,7 @@ button.close {
     position: absolute;
     top: calc(50% - 19px);
     left: calc(50% - 19px);
+    z-index: 999999999999999999;
 }
 
 .tabletSize .menu-buttons-768-list li:nth-of-type(4) .closeIt {
