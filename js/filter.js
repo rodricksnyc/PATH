@@ -31,6 +31,17 @@ $(document).ready(function () {
 		$(".letter.number").removeClass("is-active");
 
 		$(this).addClass("is-active");
+
+
+
+
+		if ($('.allLetter').hasClass('is-checked')){
+			console.log('yes')
+
+			$('.secondGroup .filter-item').addClass('newClass')
+
+		 $('#numberGrid').addClass('smallDiv')
+		}
 	});
 
 	$('.anchorTag').attr('tabindex', '0')
