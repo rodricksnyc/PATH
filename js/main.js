@@ -462,13 +462,7 @@ $(document).ready(function () {
 		scrollfn($(this).attr('data-target'));
 	});
 
-
-
-
-	if ($(document).innerWidth() <= 767) {
-
-		$('.openTab .plum').html('<i class="fas fa-envelope"></i>')
-		$('#one').css('right', '-20px')
+	if ($(document).innerWidth() <= 991) {
 
 		$('.openIt').click(function() {
 
@@ -496,6 +490,15 @@ $(document).ready(function () {
 
 		})
 
+
+
+	}
+
+
+	if ($(document).innerWidth() <= 767) {
+
+		$('.openTab .plum').html('<i class="fas fa-envelope"></i>')
+		$('#one').css('right', '-20px')
 
 	}
 
