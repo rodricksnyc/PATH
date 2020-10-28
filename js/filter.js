@@ -184,7 +184,7 @@ $(document).ready(function () {
 			$('.mobileOnlyAll').toggleClass('rotateAll')
 		})
 
-
+		$('.filter-item').css('position', 'relative')
 
 	}
 
