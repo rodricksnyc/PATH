@@ -72,15 +72,15 @@ $(document).ready(function () {
 	var mainURL = window.location.href;
 
 
-	$('#ingles').attr('href' , mainURL)
+	$('#ingles, #ingles2').attr('href' , mainURL)
 
 	$(window).on('load', function() {
 		if(mainURL.includes('googtrans(en|es)')) {
 
-			$('#espanol').removeClass('inactiveDot').addClass('activeDot')
-			$('#ingles').removeClass('activeDot').addClass('inactiveDot')
+			$('#espanol, #espanol2').removeClass('inactiveDot').addClass('activeDot')
+			$('#ingles, #ingles2').removeClass('activeDot').addClass('inactiveDot')
 
-			$('#espanol').on('keyup', function(e) {
+			$('#espanol, #espanol2').on('keyup', function(e) {
 
 				var code = (e.keyCode ? e.keyCode : e.which);
 				if (code == 13 ) {
@@ -101,8 +101,8 @@ $(document).ready(function () {
 	// })
 
 	if ($(document).innerWidth() <= 767) {
-		$('#ingles p').html('EN')
-		$('#espanol p').html('ES')
+		$('#ingles2 p').html('EN')
+		$('#espanol2 p').html('ES')
 		$('.loginButton').html('<i class="fas fa-sign-in-alt"></i>').addClass('addMobile')
 
 		$(window).scroll(function(){
