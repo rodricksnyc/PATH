@@ -36,11 +36,11 @@ $(document).ready(function () {
 
 
 		if ($('.allLetter').hasClass('is-checked')){
-		
+
 
 			$('.secondGroup .filter-item').addClass('newClass')
 
-		 $('#numberGrid').addClass('smallDiv')
+			$('#numberGrid').addClass('smallDiv')
 		}
 	});
 
@@ -83,16 +83,16 @@ $(document).ready(function () {
 
 		if ($(this).is(':last-child')) {
 
-		 $(this).css('outline', 'none')
-		 $(this).find(".letter.number").removeClass("green-active");
+			$(this).css('outline', 'none')
+			$(this).find(".letter.number").removeClass("green-active");
 
 
 			console.log("wefiywefi")
-		 var activeOne = $('.firstGroup .letter.is-checked')
+			var activeOne = $('.firstGroup .letter.is-checked')
 
-		 $(activeOne).blur().css('outline', 'none')
+			$(activeOne).blur().css('outline', 'none')
 
-		 $('#one').focus().css('outline', 'dashed 3px #4599ff')
+			$('#one').focus().css('outline', 'dashed 3px #4599ff')
 		}
 
 

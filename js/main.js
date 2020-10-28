@@ -333,7 +333,7 @@ $(document).ready(function () {
 
 			$('#slideOut2 .form-control').attr('tabindex', '-1');
 
-				$('#slideOut2 .modal-header a').attr('tabindex', '-1')
+			$('#slideOut2 .modal-header a').attr('tabindex', '-1')
 
 			$('#closeThisPlease').attr('tabindex', '-1');
 
@@ -358,7 +358,7 @@ $(document).ready(function () {
 		$('#sendMessage').attr('tabindex', '-1');
 		$("#slideOut2").removeClass('showslideOut2');
 		$('.form-check-input').attr('tabindex', '-1');
-			$('#slideOut2 .modal-header a').attr('tabindex', '-1')
+		$('#slideOut2 .modal-header a').attr('tabindex', '-1')
 
 	}
 
@@ -402,38 +402,38 @@ $(document).ready(function () {
 		scrollfn("#overview");
 	})
 
-$('.allLetter').click(function() {
-	$('.secondGroup .filter-item').addClass('newClass')
+	$('.allLetter').click(function() {
+		$('.secondGroup .filter-item').addClass('newClass')
 
- $('#numberGrid').addClass('smallDiv')
-
-
-
-})
-
-// $('.letter.number').on('click', function() {
-//
-// 	if ($('.allLetter').hasClass('is-checked')){
-// 		console.log('yes')
-//
-// 		$('.secondGroup .filter-item').addClass('newClass')
-//
-// 	 $('#numberGrid').addClass('smallDiv')
-// 	}
-//
-// })
+		$('#numberGrid').addClass('smallDiv')
 
 
 
-$('.letter').not('.allLetter').click(function() {
-	$('.secondGroup .filter-item').removeClass('newClass')
+	})
 
-  $('#numberGrid').removeClass('smallDiv')
-})
+	// $('.letter.number').on('click', function() {
+	//
+	// 	if ($('.allLetter').hasClass('is-checked')){
+	// 		console.log('yes')
+	//
+	// 		$('.secondGroup .filter-item').addClass('newClass')
+	//
+	// 	 $('#numberGrid').addClass('smallDiv')
+	// 	}
+	//
+	// })
 
-$('.tabletSize .menu-buttons-768-list li:nth-of-type(4)').click(function(e) {
 
-})
+
+	$('.letter').not('.allLetter').click(function() {
+		$('.secondGroup .filter-item').removeClass('newClass')
+
+		$('#numberGrid').removeClass('smallDiv')
+	})
+
+	$('.tabletSize .menu-buttons-768-list li:nth-of-type(4)').click(function(e) {
+
+	})
 
 
 	$(window).scroll(function () {
@@ -492,7 +492,7 @@ $('.tabletSize .menu-buttons-768-list li:nth-of-type(4)').click(function(e) {
 			}, 500);
 
 			$('.menu-buttons-768-list li, .tabletSize .activated').removeClass('negative')
-				$('li .bottomNav').css('z-index', '-1')
+			$('li .bottomNav').css('z-index', '-1')
 
 		})
 
