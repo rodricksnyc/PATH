@@ -5899,8 +5899,9 @@ button.close {
 
   .researcher {
     max-width: 100%;
-    padding-top: 10%;
+    padding-top: 0;
     padding: 0em;
+    margin-top:2em;
   }
 
   .navbar-nav .nav-link {
@@ -6381,6 +6382,28 @@ button.close {
 }
 
 @media (max-width: 767px) {
+
+  .customRadio input + label::before {
+    border: 1px solid #07477d;
+    content: "";
+    height: 18px;
+    left: 0;
+    position: absolute;
+    top: 1.4em;
+    width: 18px;
+    border-radius: 50%;
+  }
+
+  .customRadio input + label::after {
+    content: "";
+    opacity: 0;
+    border: 6px solid #07477d;
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    top: 1.6em;
+    transition: opacity 0.2s ease-in-out;
+  }
 
   .blockBottom {
     background: rgb(0,105,170);
