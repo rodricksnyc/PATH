@@ -157,6 +157,8 @@
 	font-size: 15px;
 	line-height: 27px;
 	margin-bottom: 0em !important;
+	padding-left: 20px;
+	text-indent: -20px;
 }
 
 .topBlue .rBorder{
