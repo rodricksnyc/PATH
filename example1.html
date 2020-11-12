@@ -116,7 +116,7 @@ $('.lang-select').click(function() {
 
 }
 
-@media (max-width:1299px) {
+@media (max-width:1299px) and (min-width:768px) {
 .aThird {
 	width:50%
 }
@@ -124,6 +124,20 @@ $('.lang-select').click(function() {
 .rightBlock {
     opacity: 0;
 		width:0%
+}
+
+}
+
+@media (max-width:767px) {
+.aThird {
+    width: auto;
+    margin-bottom: 2em;
+}
+
+.justify-content-between {
+    -ms-flex-pack: justify!important;
+    justify-content: center;
+    flex-direction: column;
 }
 
 }
