@@ -435,8 +435,8 @@ $(document).ready(function () {
 			'scrollTop': offSet
 		}, 1200, 'swing');
 
-
 	}
+	
 
 	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li:not(:last-child)').on('click', function (e) {
 
