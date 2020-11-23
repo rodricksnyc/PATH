@@ -347,6 +347,45 @@ margin-left:1em
 	}
 }
 
+
+@media (min-width:1300px) {
+	.aThird {
+		width:25%
+	}
+
+	.rightBlock {
+		opacity: 0;
+		width:24%
+	}
+
+}
+
+@media (max-width:1299px) and (min-width:768px) {
+	.aThird {
+		width:50%
+	}
+
+	.rightBlock {
+		opacity: 0;
+		width:0%
+	}
+
+}
+
+@media (max-width:767px) {
+	.aThird {
+		width: auto;
+		margin-bottom: 2em;
+	}
+
+	.justify-content-between {
+		-ms-flex-pack: justify!important;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+}
+
 @media (max-width:1299px) and (min-width:991px){
 
 	.col-lg-3 {
