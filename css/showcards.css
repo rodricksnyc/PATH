@@ -370,6 +370,24 @@ margin-left:1em
 		width:0%
 	}
 
+
+
+}
+
+
+@media (max-width:1024px){
+	.flex-wrap .aThird{
+		margin-bottom:2em
+	}
+
+	.stack{
+		justify-content: space-evenly !important;
+		flex-wrap: wrap;
+	}
+
+	.stack .flex-column {
+		margin:0em .2em
+	}
 }
 
 @media (max-width:767px) {
@@ -383,6 +401,16 @@ margin-left:1em
 		justify-content: center;
 		flex-direction: column;
 	}
+
+	.longBlack .justify-content-between {
+
+    justify-content: space-between!important;
+		flex-direction: row;
+}
+
+.mobileStart{
+	align-items: flex-start !important
+}
 
 }
 
