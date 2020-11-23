@@ -376,11 +376,8 @@ margin-left:1em
 
 }
 
+@media (max-width:1200px){
 
-@media (max-width:1024px){
-	.flex-wrap .aThird{
-		margin-bottom:2em
-	}
 
 	.stack{
 		justify-content: space-evenly !important;
@@ -390,6 +387,15 @@ margin-left:1em
 	.stack .flex-column {
 		margin:0em .2em
 	}
+}
+
+
+@media (max-width:1024px){
+	.flex-wrap .aThird{
+		margin-bottom:2em
+	}
+
+
 }
 
 @media (max-width:767px) {
