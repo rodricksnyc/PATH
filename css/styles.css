@@ -4153,7 +4153,7 @@ p.modalFooter {
 
 .menu-buttons-768-list li:nth-of-type(1) {
   width:25%;
-  border-top-left-radius: 5px;
+  /* border-top-left-radius: 5px; */
 }
 
 .menu-buttons-768-list li:nth-of-type(2) {
@@ -4162,7 +4162,7 @@ p.modalFooter {
 
 .menu-buttons-768-list li:nth-of-type(3) {
   width:25%;
-  border-top-right-radius: 5px;
+  /* border-top-right-radius: 5px; */
 }
 
 .menu-buttons-768-list li:nth-of-type(4) {
@@ -4170,8 +4170,8 @@ p.modalFooter {
   margin-left:3%;
   color: #00559b;
   background:#7bc043;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  /* border-top-left-radius: 5px;
+  border-top-right-radius: 5px; */
 }
 
 
@@ -6412,7 +6412,7 @@ button.close {
     bottom: 0px;
     left: 0px;
     width: 100vw;
-    height:4em;
+    height:3em;
     z-index: 1;
     display: block;
     opacity: .96;
@@ -6426,12 +6426,12 @@ button.close {
 
 
   .tabletSize .menu-buttons-768-list li:nth-of-type(4) {
-    width: 23%;
+    width: 25%;
     margin-left: 0%;
     color: #0069aa;
     background: #0069aa;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    /* border-top-left-radius: 5px;
+    border-top-right-radius: 5px; */
     position: relative;
     z-index: 1;
   }
@@ -6536,13 +6536,13 @@ button.close {
     position: relative;
     background: white;
     border-radius:50%;
-    height:4rem;
-    width:4rem;
+    height:3rem;
+    width:3rem;
     float:right;
   }
 
   .openIt {
-    top:-2em;
+    top:-1em;
     right:1em;
     -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.26);
     -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.26);
@@ -6550,12 +6550,12 @@ button.close {
   }
 
   .openIt i {
-    font-size:36px;
-    width:36px;
-    color:#0069aa;
-    position: absolute;
-    top: calc(50% - 18px);
-    left: calc(50% - 16px);
+    font-size: 25px !important;
+        width: 27px;
+        color: #0069aa;
+        position: absolute;
+        top: calc(50% - 13px);
+        left: calc(50% - 11px);
   }
 
   .closeIt{
@@ -7233,7 +7233,7 @@ button.close {
     color: #a4e371 !important;
 
     outline: none;
-    border-radius: 5px;
+    /* border-radius: 5px; */
   }
 
   #FAQ {
