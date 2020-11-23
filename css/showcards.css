@@ -550,7 +550,20 @@ margin-left:1em
 
 	.position-fixed.addFixed {
 		position: fixed !important;
-		/* top:0; */
+		top:0;
+		overflow: auto;
+		left:0;
+		right:0;
+		position: fixed; /*fallback*/
+		position: -webkit-sticky; /* still needed for ios */
+		position: sticky;
+		z-index: 99999999999999;
+
+	}
+
+	.position-fixed.addFixed.bottomFixed {
+		position: fixed !important;
+		top:auto;
 		overflow: auto;
 		left:0;
 		right:0;
@@ -559,6 +572,7 @@ margin-left:1em
 		position: sticky;
 		z-index: 99999999999999;
 		bottom:0
+
 	}
 
 

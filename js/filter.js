@@ -187,6 +187,10 @@ $(document).ready(function () {
 		})
 
 		$('.letter.number, .mobileOnlyAll, .allLetter').click(function() {
+
+
+			$('.position-fixed').addClass('bottomFixed')
+
 			$('.secondGroup .filter-item').removeClass('newClass')
 
 			$('#numberGrid').removeClass('smallDiv')
