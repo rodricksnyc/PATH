@@ -6561,8 +6561,8 @@ button.close {
   .closeIt{
     right: 0em;
     top: auto;
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 3rem;
+    width: 3rem;
     bottom: 0;
 
 
@@ -6570,12 +6570,14 @@ button.close {
 
 
   .closeIt i {
-    font-size:50px;
-    width:50px;
-    color:#0069aa;
+    font-size: 38px !important;
+    width: 38px;
+    color: #0069aa;
     position: absolute;
-    top: calc(50% - 25px);
-    left: calc(50% - 16px);
+    top: calc(50% - 19px);
+    left: calc(50% - 12px);
+    z-index: 999999999999999999;
+
 
   }
 
