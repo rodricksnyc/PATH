@@ -34,6 +34,20 @@ $(document).ready(function () {
 	})
 
 
+	$(".goBack").on("keyup", function (e) {
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 9) {
+			$(this).find('i').css('outline', 'dashed 3px #4599ff')
+		}
+
+	})
+	$(".goBack").on('focusout', function() {
+		$(this).find('i').css('outline', 'none')
+	})
+
+
+
+
 
 
 	if ($(document).innerWidth() > 767) {
@@ -436,7 +450,7 @@ $(document).ready(function () {
 		}, 1200, 'swing');
 
 	}
-	
+
 
 	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li:not(:last-child)').on('click', function (e) {
 
