@@ -418,7 +418,7 @@ $(document).ready(function () {
 	var firstOne = $('.secondGroup .filter-item').find('.numberTags:eq(0)')
 
 	var theLetters = $('.firstGroup .letter')
-
+	if ($(document).innerWidth() > 767) {
 	$(firstOne).click(() => {
 		scrollfn("#overview");
 	})
@@ -426,6 +426,8 @@ $(document).ready(function () {
 	$(theLetters).click(() => {
 		scrollfn("#overview");
 	})
+
+}
 
 	$('.back-to-top').click(() => {
 		scrollfn("#overview");
