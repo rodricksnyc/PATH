@@ -246,7 +246,7 @@ if ($(document).innerWidth() > 767) {
 				$('.bottomFixed').animate({
 					"height" : "0"
 				},
-				100);
+				200);
 
 				setTimeout(function() {
 					$('.bottomFixed').removeClass('showHeight')
@@ -266,10 +266,11 @@ if ($(document).innerWidth() > 767) {
 				$('.bottomFixed').animate({
 					"height" : "0"
 				},
-				600);
+				200);
+
 				setTimeout(function() {
 					$('.bottomFixed').removeClass('showHeight')
-				}, 400)
+				}, 500)
 
 				$('.mobileOnlyAll').removeClass('rotateAll')
 
