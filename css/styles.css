@@ -842,12 +842,12 @@ width: calc(100% - 0.5rem);
 .rightMiddle .number {
   position: absolute;
   top: 3%;
-  right: 424px;
+  right: 420px;
 }
 
 .rightMiddle .description {
   position: absolute;
-  right: 295px;
+  right: 293px;
   max-width: 9em;
   line-height: 1;
   top: 3%;
