@@ -226,18 +226,18 @@
 	font-size: 15px;
 	line-height: 27px;
 	margin-bottom: 0em !important;
- padding-left: 20px;
- text-indent: -20px;
+	padding-left: 20px;
+	text-indent: -20px;
 }
 .longBlack p {
-padding-left: 0px;
-text-indent: 0px;
+	padding-left: 0px;
+	text-indent: 0px;
 
 }
 
 p.tight{
-padding-left: 0px !important;
-text-indent: 0px !important;
+	padding-left: 0px !important;
+	text-indent: 0px !important;
 
 }
 
@@ -412,13 +412,13 @@ margin-left:1em
 
 	.longBlack .justify-content-between {
 
-    justify-content: space-between!important;
+		justify-content: space-between!important;
 		flex-direction: row;
-}
+	}
 
-.mobileStart{
-	align-items: flex-start !important
-}
+	.mobileStart{
+		align-items: flex-start !important
+	}
 
 }
 
@@ -548,7 +548,7 @@ margin-left:1em
 		position: relative !important
 	}
 
-.addFixed {
+	.addFixed {
 		position: fixed !important;
 		top:0;
 		overflow: auto;
@@ -561,7 +561,7 @@ margin-left:1em
 
 	}
 
-	 .bottomFixed {
+	.bottomFixed {
 		position: fixed !important;
 		top: auto;
 		overflow: auto;
@@ -573,8 +573,8 @@ margin-left:1em
 		/* z-index: 99999999999999; */
 		bottom:0;
 		z-index: 88;
-bottom: 0;
-height: 0;
+		bottom: 0;
+		height: 0;
 
 
 	}
@@ -582,19 +582,19 @@ height: 0;
 
 	.mobileOnlyAll{
 		text-align: center;
-		    font-size: 26px;
-		    margin: 0;
-		    padding: .1em;
-		    background: #388daf !important;
-		    /* background: #C4EDA1; */
-		    border-radius: 1rem;
-		    /* width: 100%; */
-		    width: 2.5em;
-		    display: none;
-		    position: absolute;
-		    top: 5px;
+		font-size: 26px;
+		margin: 0;
+		padding: .1em;
+		background: #388daf !important;
+		/* background: #C4EDA1; */
+		border-radius: 1rem;
+		/* width: 100%; */
+		width: 2.5em;
+		display: none;
+		position: absolute;
+		top: 5px;
 
-		    height: 1.2em;
+		height: 1.2em;
 		display: none
 	}
 
@@ -692,7 +692,7 @@ height: 0;
 	}
 
 	.fa-ellipsis-h.rotateAll:before{
-	  font-family: "Font Awesome 5 Pro";
+		font-family: "Font Awesome 5 Pro";
 		content: "\f78c";
 
 		/* transform: rotate(180deg) */
@@ -706,13 +706,13 @@ height: 0;
 
 	.filter-attr-list {
 
-    padding-left: 6%;
-}
-.secondGroup .filter-item {
-	overflow-y: scroll;
-	height:400px !important;
+		padding-left: 6%;
+	}
+	.secondGroup .filter-item {
+		overflow-y: scroll;
+		height:400px !important;
 
-}
+	}
 
 }
 
@@ -726,6 +726,11 @@ height: 0;
 		height:340px !important;
 
 	}
+
+	#numberGrid.smallDiv {
+		height: 360px !important;
+		overflow-y: scroll !important;
+	}
 }
 
 
@@ -737,5 +742,9 @@ height: 0;
 		overflow-y: scroll;
 		height:200px !important;
 
+	}
+	#numberGrid.smallDiv {
+		height: 200px !important;
+		overflow-y: scroll !important;
 	}
 }

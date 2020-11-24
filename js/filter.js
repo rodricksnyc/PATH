@@ -105,18 +105,18 @@ $(document).ready(function () {
 
 	})
 
-// 	if ($(document).innerWidth() > 767) {
-// 	// $('.secondGroup .filter-item').addClass('newClass')
-// 	//
-// 	// $('#numberGrid').addClass('smallDiv')
-// 	$('.allLetter').click(function() {
-// 		$('.secondGroup .filter-item').addClass('newClass')
-//
-// 		$('#numberGrid').addClass('smallDiv')
-//
-// 	})
-//
-// }
+	// 	if ($(document).innerWidth() > 767) {
+	// 	// $('.secondGroup .filter-item').addClass('newClass')
+	// 	//
+	// 	// $('#numberGrid').addClass('smallDiv')
+	// 	$('.allLetter').click(function() {
+	// 		$('.secondGroup .filter-item').addClass('newClass')
+	//
+	// 		$('#numberGrid').addClass('smallDiv')
+	//
+	// 	})
+	//
+	// }
 
 
 	// $('.letter').not('.allLetter').click(function() {
@@ -211,55 +211,55 @@ $(document).ready(function () {
 
 
 
-				$('.mobileOnlyAll').click(function() {
-					if(!$('.bottomFixed').hasClass('showHeight')) {
+		$('.mobileOnlyAll').click(function() {
+			if(!$('.bottomFixed').hasClass('showHeight')) {
 
-						setTimeout(function() {
+				setTimeout(function() {
 					$('.bottomFixed').addClass('showHeight')
 				}, 500)
-					$('.bottomFixed').animate({
-						"height" : "100%"
-					},
-						1000);
+				$('.bottomFixed').animate({
+					"height" : "100%"
+				},
+				1000);
 
-					}
+			}
 
 			if($('.bottomFixed').hasClass('showHeight')) {
 
 
-						$('.bottomFixed').animate({
-							"height" : "0"
-						},
-							600);
-						setTimeout(function() {
-								$('.bottomFixed').removeClass('showHeight')
-						}, 400)
+				$('.bottomFixed').animate({
+					"height" : "0"
+				},
+				600);
+				setTimeout(function() {
+					$('.bottomFixed').removeClass('showHeight')
+				}, 400)
 
-					}
-					$(this).toggleClass('rotateAll')
+			}
+			$(this).toggleClass('rotateAll')
 
-				})
-
-
-					$('.letter.number').click(function() {
-
-						if($('.bottomFixed').hasClass('showHeight')) {
+		})
 
 
-									$('.bottomFixed').animate({
-										"height" : "0"
-									},
-										600);
-									setTimeout(function() {
-											$('.bottomFixed').removeClass('showHeight')
-									}, 400)
+		$('.letter.number').click(function() {
 
-									$('.mobileOnlyAll').removeClass('rotateAll')
-
-								}
+			if($('.bottomFixed').hasClass('showHeight')) {
 
 
-					})
+				$('.bottomFixed').animate({
+					"height" : "0"
+				},
+				600);
+				setTimeout(function() {
+					$('.bottomFixed').removeClass('showHeight')
+				}, 400)
+
+				$('.mobileOnlyAll').removeClass('rotateAll')
+
+			}
+
+
+		})
 
 
 

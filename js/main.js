@@ -419,15 +419,15 @@ $(document).ready(function () {
 
 	var theLetters = $('.firstGroup .letter')
 	if ($(document).innerWidth() > 767) {
-	$(firstOne).click(() => {
-		scrollfn("#overview");
-	})
+		$(firstOne).click(() => {
+			scrollfn("#overview");
+		})
 
-	$(theLetters).click(() => {
-		scrollfn("#overview");
-	})
+		$(theLetters).click(() => {
+			scrollfn("#overview");
+		})
 
-}
+	}
 
 	$('.back-to-top').click(() => {
 		scrollfn("#overview");
