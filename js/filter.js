@@ -181,15 +181,15 @@ $(document).ready(function () {
 		$('.letter').click(function() {
 			$(this).removeClass('mobileBlue')
 			$(this).closest('.whiteBubble').find('.secondGroup').slideDown()
-			$('.mobileOnlyAll').addClass('rotateAll');
-			$('.mobileOnlyAll').addClass('showIt');
+			// $('.mobileOnlyAll').addClass('rotateAll');
+
 			$('.mobileDash').remove()
 		})
 
 		$('.letter.number, .mobileOnlyAll, .allLetter').click(function() {
 
-
-			$('.position-fixed').addClass('bottomFixed')
+			$('.mobileOnlyAll').addClass('showIt');
+			$('.position-fixed').addClass('bottomFixed').removeClass('addFixed')
 
 			$('.secondGroup .filter-item').removeClass('newClass')
 
@@ -199,10 +199,22 @@ $(document).ready(function () {
 
 
 
-			$('.mobileOnlyAll').toggleClass('rotateAll')
+			// $('.mobileOnlyAll').toggleClass('rotateAll')
 		})
 
 		$('.filter-item').css('position', 'relative')
+
+
+
+				$('.mobileOnlyAll').click(function() {
+
+					$('.bottomFixed').animate({
+						"height" : "100%"
+					},
+						1000);
+					$(this).toggleClass('rotateAll')
+
+				})
 
 	}
 

@@ -6448,7 +6448,7 @@ button.close {
   }
 
   .tabletSize .menu-buttons-768-list li:nth-of-type(4) .openIt {
-    top: 0em;
+    top: -1em;
     right: 5%;
     -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.26);
     -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.26);
@@ -6628,7 +6628,7 @@ button.close {
   }
 
   .back-to-top {
-    right: 2px;
+    right: 7px;
   }
 
   #slideOut2 label.white {
@@ -6849,7 +6849,7 @@ button.close {
 
   .back-to-top{
     display: flex;
-    z-index: 999999;
+    z-index: 3;
   }
 
   .topFour .col-lg-8 {

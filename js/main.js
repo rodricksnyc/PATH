@@ -138,7 +138,7 @@ $(document).ready(function () {
 			var sticky = $('.position-fixed'),
 			scroll = $(window).scrollTop();
 
-			if (scroll >= 40) sticky.addClass('addFixed');
+			if (scroll >= 100) sticky.addClass('addFixed');
 
 			else sticky.removeClass('addFixed');
 		});
@@ -696,7 +696,7 @@ $(document).ready(function () {
 			else {
 
 				$('.back-to-top').css({
-					'top' : '68%'
+					'top' : '78%'
 				})
 
 			}
@@ -717,7 +717,7 @@ $(document).ready(function () {
 			else {
 
 				$('.back-to-top').css({
-					'top' : '68%'
+					'top' : '78%'
 				})
 
 			}

@@ -404,7 +404,7 @@ margin-left:1em
 		margin-bottom: 2em;
 	}
 
-	.justify-content-between {
+	.grid .justify-content-between {
 		-ms-flex-pack: justify!important;
 		justify-content: center;
 		flex-direction: column;
@@ -548,7 +548,7 @@ margin-left:1em
 		position: relative !important
 	}
 
-	.position-fixed.addFixed {
+.addFixed {
 		position: fixed !important;
 		top:0;
 		overflow: auto;
@@ -561,29 +561,40 @@ margin-left:1em
 
 	}
 
-	.position-fixed.addFixed.bottomFixed {
+	 .bottomFixed {
 		position: fixed !important;
-		top:auto;
+		top: auto;
 		overflow: auto;
 		left:0;
 		right:0;
 		position: fixed; /*fallback*/
 		position: -webkit-sticky; /* still needed for ios */
 		position: sticky;
-		z-index: 99999999999999;
-		bottom:0
+		/* z-index: 99999999999999; */
+		bottom:0;
+		z-index: 88;
+bottom: 0;
+height: 0;
+
 
 	}
 
 
 	.mobileOnlyAll{
 		text-align: center;
-		font-size: 30px;
-		margin: 0;
-		padding: 0;
-		background: #C4EDA1;
-		border-radius: 1rem;
-		width:100%;
+		    font-size: 26px;
+		    margin: 0;
+		    padding: .1em;
+		    background: #388daf !important;
+		    /* background: #C4EDA1; */
+		    border-radius: 1rem;
+		    /* width: 100%; */
+		    width: 2.5em;
+		    display: none;
+		    position: absolute;
+		    top: 5px;
+
+		    height: 1.2em;
 		display: none
 	}
 
@@ -605,11 +616,7 @@ margin-left:1em
 	}
 
 
-	.secondGroup .filter-item {
-		overflow-y: scroll;
-		height:250px !important;
 
-	}
 
 	.startBox img{
 		height:auto;
@@ -684,9 +691,11 @@ margin-left:1em
 		display: block !important
 	}
 
-	.rotateAll{
+	.fa-ellipsis-h.rotateAll:before{
+	  font-family: "Font Awesome 5 Pro";
+		content: "\f78c";
 
-		transform: rotate(180deg)
+		/* transform: rotate(180deg) */
 	}
 
 	.filter-item{
@@ -695,4 +704,38 @@ margin-left:1em
 		top:auto !important
 	}
 
+	.filter-attr-list {
+
+    padding-left: 6%;
+}
+.secondGroup .filter-item {
+	overflow-y: scroll;
+	height:400px !important;
+
+}
+
+}
+
+
+@media (max-width:378px){
+	.filter-attr-list {
+		padding-left: 2%;
+	}
+	.secondGroup .filter-item {
+		overflow-y: scroll;
+		height:340px !important;
+
+	}
+}
+
+
+@media (max-width:322px){
+	.filter-attr-list {
+		padding-left: 0%;
+	}
+	.secondGroup .filter-item {
+		overflow-y: scroll;
+		height:200px !important;
+
+	}
 }
