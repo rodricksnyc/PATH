@@ -6383,6 +6383,20 @@ button.close {
 
 @media (max-width: 767px) {
 
+  .footerModal .modal-body h4.landing-sec-H {
+margin-top:1em
+
+    }
+
+    .footerModal .modal-body {
+    padding: 1em 1em;
+}
+.footerModal ::-webkit-scrollbar {
+    width: 5px;
+    background: #ababab;
+}
+
+
   .customRadio input + label::before {
     border: 1px solid #07477d;
     content: "";

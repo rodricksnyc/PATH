@@ -195,7 +195,7 @@ $(document).ready(function () {
 
 			$('#numberGrid').removeClass('smallDiv')
 
-			$('.ui-group').slideToggle()
+			// $('.ui-group').slideToggle()
 
 
 
@@ -207,14 +207,57 @@ $(document).ready(function () {
 
 
 				$('.mobileOnlyAll').click(function() {
+					if(!$('.bottomFixed').hasClass('showHeight')) {
 
+						setTimeout(function() {
+					$('.bottomFixed').addClass('showHeight')
+				}, 500)
 					$('.bottomFixed').animate({
 						"height" : "100%"
 					},
 						1000);
+
+					}
+
+			if($('.bottomFixed').hasClass('showHeight')) {
+
+
+						$('.bottomFixed').animate({
+							"height" : "0"
+						},
+							600);
+						setTimeout(function() {
+								$('.bottomFixed').removeClass('showHeight')
+						}, 400)
+
+					}
 					$(this).toggleClass('rotateAll')
 
 				})
+
+
+					$('.letter.number').click(function() {
+
+						if($('.bottomFixed').hasClass('showHeight')) {
+
+
+									$('.bottomFixed').animate({
+										"height" : "0"
+									},
+										600);
+									setTimeout(function() {
+											$('.bottomFixed').removeClass('showHeight')
+									}, 400)
+
+									$('.mobileOnlyAll').removeClass('rotateAll')
+
+								}
+
+
+					})
+
+
+
 
 	}
 
