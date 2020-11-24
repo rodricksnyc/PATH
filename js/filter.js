@@ -26,6 +26,20 @@ $(document).ready(function () {
 	})
 
 
+
+
+
+
+	if ($('.allLetter').hasClass('is-checked')){
+
+
+		$('.secondGroup .filter-item').addClass('newClass')
+
+
+		$('#numberGrid').addClass('smallDiv')
+	}
+
+
 	$(".secondGroup .letter.number").click(function () {
 
 		$(".letter.number").removeClass("is-active");
@@ -349,7 +363,17 @@ if ($(document).innerWidth() > 767) {
 
 			$grid.isotope();
 
+
+
+			var storeLetter = $(this).html()
+
+			$('#changeLetter').html(storeLetter)
+
+
+
 		}
+
+
 
 
 	})
