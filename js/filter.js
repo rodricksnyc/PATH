@@ -62,7 +62,7 @@ $(document).ready(function () {
 		}
 	})
 
-
+if ($(document).innerWidth() > 767) {
 
 	$(".numberTags").on("keyup", function (e) {
 		var code = (e.keyCode ? e.keyCode : e.which);
@@ -95,6 +95,8 @@ $(document).ready(function () {
 		$(this).find(".letter.number").removeClass("green-active");
 
 	})
+
+}
 
 
 
