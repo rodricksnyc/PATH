@@ -232,10 +232,11 @@ if ($(document).innerWidth() > 767) {
 				setTimeout(function() {
 					$('.bottomFixed').addClass('showHeight')
 				}, 500)
+
 				$('.bottomFixed').animate({
 					"height" : "100%"
 				},
-				400);
+				200);
 
 			}
 
@@ -245,10 +246,11 @@ if ($(document).innerWidth() > 767) {
 				$('.bottomFixed').animate({
 					"height" : "0"
 				},
-				400);
+				100);
+
 				setTimeout(function() {
 					$('.bottomFixed').removeClass('showHeight')
-				}, 400)
+				}, 500)
 
 			}
 			$(this).toggleClass('rotateAll')
