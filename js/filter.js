@@ -29,17 +29,6 @@ $(document).ready(function () {
 
 
 
-
-	if ($('.allLetter').hasClass('is-checked')){
-
-
-		$('.secondGroup .filter-item').addClass('newClass')
-
-
-		$('#numberGrid').addClass('smallDiv')
-	}
-
-
 	$(".secondGroup .letter.number").click(function () {
 
 		$(".letter.number").removeClass("is-active");
@@ -77,6 +66,16 @@ $(document).ready(function () {
 	})
 
 if ($(document).innerWidth() > 767) {
+
+	if ($('.allLetter').hasClass('is-checked')){
+
+
+		$('.secondGroup .filter-item').addClass('newClass')
+
+
+		$('#numberGrid').addClass('smallDiv')
+	}
+
 
 	$(".numberTags").on("keyup", function (e) {
 		var code = (e.keyCode ? e.keyCode : e.which);
@@ -236,7 +235,7 @@ if ($(document).innerWidth() > 767) {
 				$('.bottomFixed').animate({
 					"height" : "100%"
 				},
-				1000);
+				400);
 
 			}
 
@@ -246,7 +245,7 @@ if ($(document).innerWidth() > 767) {
 				$('.bottomFixed').animate({
 					"height" : "0"
 				},
-				600);
+				400);
 				setTimeout(function() {
 					$('.bottomFixed').removeClass('showHeight')
 				}, 400)
