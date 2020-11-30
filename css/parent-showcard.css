@@ -303,9 +303,9 @@ p.tight{
 
 
 
-@media (max-width:1375px) and (min-width:1078px){
+@media (max-width:1375px) and (min-width:1299px){
 	.five-column .flex-column{
-		margin:.275em 1em
+		margin:.275em 3em
 	}
 }
 
@@ -315,6 +315,9 @@ p.tight{
 
 		flex: 0 0 27%;
 		max-width: 27%;
+	}
+	.five-column .flex-column{
+		margin:.275em 2em
 	}
 }
 
