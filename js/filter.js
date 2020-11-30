@@ -134,11 +134,11 @@ if ($(document).innerWidth() > 767) {
 	// }
 
 
-	// $('.letter').not('.allLetter').click(function() {
-	// 	$('.secondGroup .filter-item').removeClass('newClass')
-	//
-	// 	$('#numberGrid').removeClass('smallDiv')
-	// })
+	$('.letter').not('.allLetter').click(function() {
+		$('.secondGroup .filter-item').removeClass('newClass')
+
+		$('#numberGrid').removeClass('smallDiv')
+	})
 
 
 
@@ -341,6 +341,8 @@ if ($(document).innerWidth() > 767) {
 		var $this = $(this);
 
 		$('.hideInitial').fadeIn()
+
+
 
 		var $buttonGroup = $this.parents('.button-group');
 		var filterGroup = $buttonGroup.attr('data-filter-group');
