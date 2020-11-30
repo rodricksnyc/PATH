@@ -709,7 +709,7 @@ width: calc(100% - 0.5rem);
   position: relative;
   background-repeat: no-repeat;
 
-  background-image: url(../images/age.svg);
+  background-image: url(../images/ages-desktop.svg);
   height: inherit;
   min-height: inherit;
 
@@ -748,15 +748,14 @@ width: calc(100% - 0.5rem);
 
 .leftBottom .number2 {
   position: absolute;
-  top: 6%;
+  top: 2%;
   left: 281px;
-
 
 }
 
 .leftBottom .description2 {
   position: absolute;
-  top: 16%;
+  top: 11%;
   left: 270px;
 }
 
@@ -808,7 +807,7 @@ width: calc(100% - 0.5rem);
   background-repeat: no-repeat;
 
 
-  background-image: url(../images/ethnicity.svg);
+  background-image: url(../images/ethnicity-desktop.svg);
   height: inherit;
   min-height: inherit;
 
@@ -840,7 +839,7 @@ width: calc(100% - 0.5rem);
 .rightMiddle .description2 {
   position: absolute;
   top: 7%;
-  right: 114px;
+  right: 110px;
   max-width: 7em;
   line-height: 1;
 }
@@ -848,12 +847,12 @@ width: calc(100% - 0.5rem);
 .rightMiddle .number {
   position: absolute;
   top: 3%;
-  right: 420px;
+  right: 437px;
 }
 
 .rightMiddle .description {
   position: absolute;
-  right: 293px;
+  right: 303px;
   max-width: 9em;
   line-height: 1;
   top: 3%;
