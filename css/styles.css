@@ -529,6 +529,12 @@ width: calc(100% - 0.5rem);
   background-size: contain;
 }
 
+.w70 {
+  width: 44%;
+  margin-right: 28%;
+  margin-left: 28%;
+  margin-top: 10px;
+}
 
 .bottomCenter{
   position: relative;
@@ -5408,7 +5414,7 @@ button.close {
 
   .topFour .whiteBubble .smaller {
     max-width: 14em;
-}
+  }
 
   .form-group label {
     color: white;
@@ -5757,9 +5763,17 @@ button.close {
 
   }
 
+  .w70 {
+    width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 10px;
+    margin-bottom: -6em;
+  }
+
 
   .noBorder.participants {
-    margin-bottom: -5em !important;
+
     margin-top: 11em;
     font-size: 36px;
   }
@@ -6383,18 +6397,20 @@ button.close {
 
 @media (max-width: 767px) {
 
+
+
   .footerModal .modal-body h4.landing-sec-H {
-margin-top:1em
+    margin-top:1em
 
-    }
+  }
 
-    .footerModal .modal-body {
+  .footerModal .modal-body {
     padding: 1em 1em;
-}
-.footerModal ::-webkit-scrollbar {
+  }
+  .footerModal ::-webkit-scrollbar {
     width: 5px;
     background: #ababab;
-}
+  }
 
 
   .customRadio input + label::before {
@@ -6565,11 +6581,11 @@ margin-top:1em
 
   .openIt i {
     font-size: 25px !important;
-        width: 27px;
-        color: #0069aa;
-        position: absolute;
-        top: calc(50% - 13px);
-        left: calc(50% - 11px);
+    width: 27px;
+    color: #0069aa;
+    position: absolute;
+    top: calc(50% - 13px);
+    left: calc(50% - 11px);
   }
 
   .closeIt{
@@ -7712,11 +7728,21 @@ body{
 }
 
 .noBorder.participants {
-  margin-bottom: -1em !important;
+  margin-bottom: 0em !important;
   font-size: 26px !important;
   width: 100%;
   margin-top: 0em !important;
 
+}
+
+
+
+.w70 {
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 10px;
+  margin-bottom: -1em;
 }
 
 .whiteBubble ul {
