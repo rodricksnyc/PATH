@@ -25,8 +25,16 @@ $(document).ready(function () {
 
 	})
 
+	$('.letter').on("keyup", function (e) {
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 9) {
+			$('.backToSection').css('display', 'inline-block')
+			// if (!$('.allLetter').hasClass('is-checked')){
+			$('.newClass').css('overflow-y', 'visible')
 
-
+			// }
+		}
+	})
 
 
 	$(".secondGroup .letter.number").click(function () {
@@ -46,24 +54,39 @@ $(document).ready(function () {
 		}
 	});
 
-	$('.anchorTag').attr('tabindex', '0')
+	$('.anchorTag').attr('tabindex', '-1')
 	$('.numberTags').attr('tabindex', '0')
+	$('.backToSection').attr('tabindex', '0')
 
 
 
 
-	$('.anchorTag').on("keyup", function (e) {
-		var code = (e.keyCode ? e.keyCode : e.which);
-		if (code == 9) {
+	// $('.anchorTag').on("keyup", function (e) {
+	// 	var code = (e.keyCode ? e.keyCode : e.which);
+	// 	if (code == 9) {
+	//
+	// 		// $('.backToLetters').focus().css('outline', 'dashed 3px #4599ff')
+	// 		var activeOne = $('.firstGroup .letter.is-checked')
+	//
+	// 		$(activeOne).focus().css('outline', 'dashed 3px #4599ff')
+	//
+	//
+	// 	}
+	// })
 
 
-			var activeOne = $('.firstGroup .letter.is-checked')
-
-			$(activeOne).focus().css('outline', 'dashed 3px #4599ff')
-
-
-		}
-	})
+	// $('.backToLetters').on("keyup", function (e) {
+	// 	var code = (e.keyCode ? e.keyCode : e.which);
+	// 	if (code == 13) {
+	//
+	// 		// $('.backToLetters').focus().css('outline', 'dashed 3px #4599ff')
+	// 		var activeOne = $('.firstGroup .letter.is-checked')
+	//
+	// 		$(activeOne).focus().css('outline', 'dashed 3px #4599ff')
+	// 		$('.backToLetters').css('outline', 'none')
+	//
+	// 	}
+	// })
 
 if ($(document).innerWidth() > 767) {
 
@@ -89,19 +112,70 @@ if ($(document).innerWidth() > 767) {
 
 	})
 
+$('.backToSection').on("keyup", function (e) {
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 13) {
+		$(this).css('outline', 'none')
+		$(this).find(".letter.number").removeClass("green-active");
+
+		var activeOne = $('.firstGroup .letter.is-checked')
+
+		$(activeOne).blur().css('outline', 'none')
+
+
+		var activeNext = $('.firstGroup .letter.is-checked').next()
+
+		$(activeNext).focus().css('outline', 'dashed 3px #4599ff').addClass('is-checked').prev().removeClass('is-checked')
+
+}
+
+
+})
+
+
+
+
+
+
+
 	$(".numberTags").on('focusout', function() {
 
-		if ($(this).is(':last-child')) {
+				if ($(this).is(':last-child') && !$('.letter.allLetter').hasClass('is-checked')) {
 
-			$(this).css('outline', 'none')
-			$(this).find(".letter.number").removeClass("green-active");
 
-			var activeOne = $('.firstGroup .letter.is-checked')
+					// $(this).css('outline', 'none')
+					// $(this).find(".letter.number").removeClass("green-active");
+					//
+					// var activeOne = $('.firstGroup .letter.is-checked')
+					//
+					// $(activeOne).blur().css('outline', 'none')
+					//
+					//
+					// var activeNext = $('.firstGroup .letter.is-checked').next()
+					//
+					// $(activeNext).focus().css('outline', 'dashed 3px #4599ff').addClass('is-checked').prev().removeClass('is-checked')
 
-			$(activeOne).blur().css('outline', 'none')
 
-			$('#one').focus().css('outline', 'dashed 3px #4599ff')
-		}
+				}
+
+
+		// if ($(this).is('.veryLastOne')) {
+		//
+		// // if ($(this).is(':last-child')) {
+		//
+		// 	$(this).css('outline', 'none')
+		// 	$(this).find(".letter.number").removeClass("green-active");
+		//
+		// 	// var activeOne = $('.firstGroup .letter.is-checked')
+		// 	//
+		// 	// $(activeOne).blur().css('outline', 'none').removeClass('is-checked')
+		// 	//
+		// 	// var activeOne = $('.firstGroup .letter.is-checked')
+		//
+		// 	// $(activeOne).focus().css('outline', 'dashed 3px #4599ff')
+		//
+		// 	$('#one').focus().css('outline', 'dashed 3px #4599ff')
+		// }
 
 
 		$(this).css('outline', 'none')
@@ -112,6 +186,23 @@ if ($(document).innerWidth() > 767) {
 }
 
 
+// $('#one').on('keydown blur', function(e) {
+//   if (e.shiftKey && e.keyCode === 9) {
+//     console.log('shift tab')
+//
+// 		// $('#one').css('outline', 'none')
+//
+// 		$('.veryLastOne').focus().css('outline', 'dashed 3px #4599ff')
+//
+//
+// 		var makeGreen = $('.veryLastOne').find('.letter.number')
+//
+// 		$('.veryLastOne').focus().css('outline', 'dashed 3px #4599ff')
+//
+// 		$(makeGreen).addClass("green-active");
+//
+//   }
+// });
 
 	$('.allLetter').click(function() {
 		$('.secondGroup .filter-item').addClass('newClass')

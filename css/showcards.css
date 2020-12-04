@@ -32,6 +32,23 @@
 
 }
 
+.backToSection {
+	background-color: #d9f0fe;
+	height: auto;
+
+	padding: .5em 1.55em;
+
+	border-radius: .6rem;
+	width: auto;
+	position: relative;
+	margin: 0em .5em;
+	color: #00559b !important;
+	display: none;
+
+}
+
+
+
 .allLetter{
 	background: transparent;
 	border: 1px solid;
