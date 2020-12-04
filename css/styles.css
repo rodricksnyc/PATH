@@ -576,8 +576,8 @@ width: calc(100% - 0.5rem);
 
 .leftTop .number {
   position: absolute;
-  left: 360px;
-  top: 15%;
+      left: 360px;
+      top: 18%;
 
 }
 
@@ -587,12 +587,10 @@ width: calc(100% - 0.5rem);
 }
 
 .leftTop .description {
-  position: absolute;
-  left: 360px;
-  max-width: 12em;
-  top: 24%;
-
-
+      position: absolute;
+      left: 360px;
+      max-width: 16em;
+      top: 28%;
 }
 
 .rightBottom .description {
