@@ -254,256 +254,257 @@ $('.backToSection').on("keyup", function (e) {
 	// })
 
 
-	// store filter for each group
-	var filters = {};
-
-
-	var $grid = $('.secondGrid').isotope({
-		transformsEnabled: false,
-		hiddenStyle: {
-			// opacity: 0,
-			transform: 'translateY(0px)',
-
-		},
-		visibleStyle: {
-			// opacity: 1,
-			transform: 'translateY(200)',
-		}
-	})
-
-	if ($(document).innerWidth() <= 767) {
-
-		$('.mobileOnly').click(function() {
-			$(this).closest('.whiteBubble').find('.secondGroup').slideToggle()
-
-			$(this).toggleClass('rotateIt')
-		})
-
-
-		var $grid3 = $('#numberGrid').isotope({
-			itemSelector: '.filter-item',
-			percentPosition: true,
-			transitionDuration: 0,
-			isResizeBound: false,
-		})
-
-
-
-		$('.letter').click(function() {
-			$(this).removeClass('mobileBlue')
-			$(this).closest('.whiteBubble').find('.secondGroup').slideDown()
-			// $('.mobileOnlyAll').addClass('rotateAll');
-
-			$('.mobileDash').remove()
-		})
-
-		$('.letter.number, .mobileOnlyAll, .allLetter').click(function() {
-
-			$('.mobileOnlyAll').addClass('showIt');
-			$('.position-fixed').addClass('bottomFixed').removeClass('addFixed')
-
-			// $('.secondGroup .filter-item').removeClass('newClass')
-
-			// $('#numberGrid').removeClass('smallDiv')
-
-			// $('.ui-group').slideToggle()
-
-
-
-			// $('.mobileOnlyAll').toggleClass('rotateAll')
-		})
-
-		$('.filter-item').css('position', 'relative')
-
-
-
-		$('.mobileOnlyAll').click(function() {
-			if(!$('.bottomFixed').hasClass('showHeight')) {
-
-				setTimeout(function() {
-					$('.bottomFixed').addClass('showHeight')
-				}, 500)
-
-				$('.bottomFixed').animate({
-					"height" : "100%"
-				},
-				200);
-
-			}
-
-			if($('.bottomFixed').hasClass('showHeight')) {
-
-
-				$('.bottomFixed').animate({
-					"height" : "0"
-				},
-				200);
-
-				setTimeout(function() {
-					$('.bottomFixed').removeClass('showHeight')
-				}, 500)
-
-			}
-			$(this).toggleClass('rotateAll')
-
-		})
-
-
-		$('.letter.number').click(function() {
-
-			if($('.bottomFixed').hasClass('showHeight')) {
-
-
-				$('.bottomFixed').animate({
-					"height" : "0"
-				},
-				200);
-
-				setTimeout(function() {
-					$('.bottomFixed').removeClass('showHeight')
-				}, 500)
-
-				$('.mobileOnlyAll').removeClass('rotateAll')
-
-			}
-
-
-		})
-
-
-
-	}
-
-
-	// init Isotope
-	var $grid = $('.grid').isotope({
-
-		// transformsEnabled: false,
-		// hiddenStyle: {
-		// 	// opacity: 0,
-		// 	 transform: 'translateY(0px)',
-		//
-		// },
-		// visibleStyle: {
-		// 	// opacity: 1,
-		// 	 transform: 'translateY(100)',
-		// },
-		itemSelector: '.filter-item',
-		percentPosition: true,
-		// transitionDuration: 0,
-		isResizeBound: false,
-
-
-		filter: function() {
-
-			var isMatched = true;
-			var $this = $(this);
-
-			for ( var prop in filters ) {
-				var filter = filters[ prop ];
-
-				filter = filter;
-
-				if ( filter ) {
-					isMatched = isMatched && $(this).is( filter );
-				}
-
-				if ( !isMatched ) {
-					break;
-				}
-			}
-			return isMatched;
-		}
-
-
-	});
-
-
-
-
-	$(window).resize(function () {
-		$('.grid').isotope('layout');
-	});
-
-	$('.grid').isotope('reloadItems').isotope();
-
-
-	$('.filters').on( 'click', '.letter', function() {
-		var $this = $(this);
-
-		$('.hideInitial').fadeIn()
-
-
-
-		var $buttonGroup = $this.parents('.button-group');
-		var filterGroup = $buttonGroup.attr('data-filter-group');
-
-		filters[ filterGroup ] = $this.attr('data-filter');
-
-		$grid.isotope();
-	});
-
-
-	$('.letter').on("keyup", function (e) {
-		var code = (e.keyCode ? e.keyCode : e.which);
-		if (code == 13) {
-			var $this = $(this);
-
-			$('.hideInitial').fadeIn()
-
-			var $buttonGroup = $this.parents('.button-group');
-			var filterGroup = $buttonGroup.attr('data-filter-group');
-
-			filters[ filterGroup ] = $this.attr('data-filter');
-
-			$grid.isotope();
-
-
-
-			var storeLetter = $(this).html()
-
-			$('#changeLetter').html(storeLetter)
-
-
-
-		}
-
-
-
-
-	})
-
-
-
-	$('.button-group').each( function( i, buttonGroup ) {
-		var $buttonGroup = $( buttonGroup );
-		$buttonGroup.on( 'click', '.letter', function() {
-
-			$buttonGroup.find('.is-checked').removeClass('is-checked');
-			$( this ).addClass('is-checked');
-		});
-
-		$buttonGroup.on( 'keyup', '.letter', function(e) {
-			var code = (e.keyCode ? e.keyCode : e.which);
-			if (code == 13) {
-
-				$buttonGroup.find('.is-checked').removeClass('is-checked');
-				$( this ).addClass('is-checked');
-
-			}
-		});
-
-
-
-	});
-
-
-
-	$('.grid').imagesLoaded(function(){
-
-		$('.grid').isotope('layout');
-
-	});
+	// // store filter for each group
+	// var filters = {};
+	//
+	//
+	// var $grid = $('.secondGrid').isotope({
+	// 	transformsEnabled: false,
+	// 	hiddenStyle: {
+	// 		// opacity: 0,
+	// 		transform: 'translateY(0px)',
+	//
+	// 	},
+	// 	visibleStyle: {
+	// 		// opacity: 1,
+	// 		transform: 'translateY(200)',
+	// 	}
+	// })
+	//
+	// if ($(document).innerWidth() <= 767) {
+	//
+	// 	$('.mobileOnly').click(function() {
+	// 		$(this).closest('.whiteBubble').find('.secondGroup').slideToggle()
+	//
+	// 		$(this).toggleClass('rotateIt')
+	// 	})
+	//
+	//
+	// 	var $grid3 = $('#numberGrid').isotope({
+	// 		itemSelector: '.filter-item',
+	// 		percentPosition: true,
+	// 		transitionDuration: 0,
+	// 		isResizeBound: false,
+	//
+	// 	})
+	//
+	//
+	//
+	// 	$('.letter').click(function() {
+	// 		$(this).removeClass('mobileBlue')
+	// 		$(this).closest('.whiteBubble').find('.secondGroup').slideDown()
+	// 		// $('.mobileOnlyAll').addClass('rotateAll');
+	//
+	// 		$('.mobileDash').remove()
+	// 	})
+	//
+	// 	$('.letter.number, .mobileOnlyAll, .allLetter').click(function() {
+	//
+	// 		$('.mobileOnlyAll').addClass('showIt');
+	// 		$('.position-fixed').addClass('bottomFixed').removeClass('addFixed')
+	//
+	// 		// $('.secondGroup .filter-item').removeClass('newClass')
+	//
+	// 		// $('#numberGrid').removeClass('smallDiv')
+	//
+	// 		// $('.ui-group').slideToggle()
+	//
+	//
+	//
+	// 		// $('.mobileOnlyAll').toggleClass('rotateAll')
+	// 	})
+	//
+	// 	$('.filter-item').css('position', 'relative')
+	//
+	//
+	//
+	// 	$('.mobileOnlyAll').click(function() {
+	// 		if(!$('.bottomFixed').hasClass('showHeight')) {
+	//
+	// 			setTimeout(function() {
+	// 				$('.bottomFixed').addClass('showHeight')
+	// 			}, 500)
+	//
+	// 			$('.bottomFixed').animate({
+	// 				"height" : "100%"
+	// 			},
+	// 			200);
+	//
+	// 		}
+	//
+	// 		if($('.bottomFixed').hasClass('showHeight')) {
+	//
+	//
+	// 			$('.bottomFixed').animate({
+	// 				"height" : "0"
+	// 			},
+	// 			200);
+	//
+	// 			setTimeout(function() {
+	// 				$('.bottomFixed').removeClass('showHeight')
+	// 			}, 500)
+	//
+	// 		}
+	// 		$(this).toggleClass('rotateAll')
+	//
+	// 	})
+	//
+	//
+	// 	$('.letter.number').click(function() {
+	//
+	// 		if($('.bottomFixed').hasClass('showHeight')) {
+	//
+	//
+	// 			$('.bottomFixed').animate({
+	// 				"height" : "0"
+	// 			},
+	// 			200);
+	//
+	// 			setTimeout(function() {
+	// 				$('.bottomFixed').removeClass('showHeight')
+	// 			}, 500)
+	//
+	// 			$('.mobileOnlyAll').removeClass('rotateAll')
+	//
+	// 		}
+	//
+	//
+	// 	})
+	//
+	//
+	//
+	// }
+	//
+	//
+	// // init Isotope
+	// var $grid = $('.grid').isotope({
+	//
+	// 	// transformsEnabled: false,
+	// 	// hiddenStyle: {
+	// 	// 	// opacity: 0,
+	// 	// 	 transform: 'translateY(0px)',
+	// 	//
+	// 	// },
+	// 	// visibleStyle: {
+	// 	// 	// opacity: 1,
+	// 	// 	 transform: 'translateY(100)',
+	// 	// },
+	// 	itemSelector: '.filter-item',
+	// 	percentPosition: true,
+	// 	// transitionDuration: 0,
+	// 	isResizeBound: false,
+	//
+	//
+	// 	filter: function() {
+	//
+	// 		var isMatched = true;
+	// 		var $this = $(this);
+	//
+	// 		for ( var prop in filters ) {
+	// 			var filter = filters[ prop ];
+	//
+	// 			filter = filter;
+	//
+	// 			if ( filter ) {
+	// 				isMatched = isMatched && $(this).is( filter );
+	// 			}
+	//
+	// 			if ( !isMatched ) {
+	// 				break;
+	// 			}
+	// 		}
+	// 		return isMatched;
+	// 	}
+	//
+	//
+	// });
+	//
+	//
+	//
+	//
+	// $(window).resize(function () {
+	// 	$('.grid').isotope('layout');
+	// });
+	//
+	// $('.grid').isotope('reloadItems').isotope();
+	//
+	//
+	// $('.filters').on( 'click', '.letter', function() {
+	// 	var $this = $(this);
+	//
+	// 	$('.hideInitial').fadeIn()
+	//
+	//
+	//
+	// 	var $buttonGroup = $this.parents('.button-group');
+	// 	var filterGroup = $buttonGroup.attr('data-filter-group');
+	//
+	// 	filters[ filterGroup ] = $this.attr('data-filter');
+	//
+	// 	$grid.isotope();
+	// });
+	//
+	//
+	// $('.letter').on("keyup", function (e) {
+	// 	var code = (e.keyCode ? e.keyCode : e.which);
+	// 	if (code == 13) {
+	// 		var $this = $(this);
+	//
+	// 		$('.hideInitial').fadeIn()
+	//
+	// 		var $buttonGroup = $this.parents('.button-group');
+	// 		var filterGroup = $buttonGroup.attr('data-filter-group');
+	//
+	// 		filters[ filterGroup ] = $this.attr('data-filter');
+	//
+	// 		$grid.isotope();
+	//
+	//
+	//
+	// 		var storeLetter = $(this).html()
+	//
+	// 		$('#changeLetter').html(storeLetter)
+	//
+	//
+	//
+	// 	}
+	//
+	//
+	//
+	//
+	// })
+	//
+	//
+	//
+	// $('.button-group').each( function( i, buttonGroup ) {
+	// 	var $buttonGroup = $( buttonGroup );
+	// 	$buttonGroup.on( 'click', '.letter', function() {
+	//
+	// 		$buttonGroup.find('.is-checked').removeClass('is-checked');
+	// 		$( this ).addClass('is-checked');
+	// 	});
+	//
+	// 	$buttonGroup.on( 'keyup', '.letter', function(e) {
+	// 		var code = (e.keyCode ? e.keyCode : e.which);
+	// 		if (code == 13) {
+	//
+	// 			$buttonGroup.find('.is-checked').removeClass('is-checked');
+	// 			$( this ).addClass('is-checked');
+	//
+	// 		}
+	// 	});
+	//
+	//
+	//
+	// });
+	//
+	//
+	//
+	// $('.grid').imagesLoaded(function(){
+	//
+	// 	$('.grid').isotope('layout');
+	//
+	// });
 
 
 
