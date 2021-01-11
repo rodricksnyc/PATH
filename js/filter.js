@@ -282,8 +282,8 @@ $('.backToSection').on("keyup", function (e) {
 
 		var $grid3 = $('#numberGrid').isotope({
 			itemSelector: '.filter-item',
-			// percentPosition: true,
-			// transitionDuration: 0,
+			percentPosition: true,
+			transitionDuration: 0,
 			isResizeBound: false,
 
 		})
@@ -420,13 +420,24 @@ $('.backToSection').on("keyup", function (e) {
 	});
 
 
-
+	if ($(document).innerWidth() > 767) {
 
 	$(window).resize(function () {
 		$('.grid').isotope('layout');
 	});
 
 	$('.grid').isotope('reloadItems').isotope();
+
+
+	$('.grid').imagesLoaded(function(){
+
+		$('.grid').isotope('layout');
+
+	});
+
+}
+
+
 
 
 	$('.filters').on( 'click', '.letter', function() {
@@ -500,11 +511,6 @@ $('.backToSection').on("keyup", function (e) {
 
 
 
-	$('.grid').imagesLoaded(function(){
-
-		$('.grid').isotope('layout');
-
-	});
 
 
 
