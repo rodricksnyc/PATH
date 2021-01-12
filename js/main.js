@@ -419,13 +419,19 @@ $(document).ready(function () {
 
 	var theLetters = $('.firstGroup .letter')
 	if ($(document).innerWidth() > 767) {
+	if (!$('.allLetter').hasClass('is-checked')){
+		alert("skybwei")
 		$(firstOne).click(() => {
 			scrollfn("#overview");
 		})
 
+	}
+	// if (!$('.allLetter').hasClass('is-checked')){
 		$(theLetters).click(() => {
 			scrollfn("#overview");
 		})
+
+	// }
 
 	}
 
