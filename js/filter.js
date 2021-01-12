@@ -88,126 +88,136 @@ $(document).ready(function () {
 	// 	}
 	// })
 
-if ($(document).innerWidth() > 767) {
+	if ($(document).innerWidth() > 767) {
 
-	if ($('.allLetter').hasClass('is-checked')){
-
-
-		$('.secondGroup .filter-item').addClass('newClass')
+		if ($('.allLetter').hasClass('is-checked')){
 
 
-		$('#numberGrid').addClass('smallDiv')
+			$('.secondGroup .filter-item').addClass('newClass')
+
+
+			$('#numberGrid').addClass('smallDiv')
+		}
+
+
+		$(".numberTags").on("keyup", function (e) {
+			var code = (e.keyCode ? e.keyCode : e.which);
+			if (code == 9) {
+
+
+
+				$(this).css('outline', 'dashed 3px #4599ff')
+				$(this).find(".letter.number").addClass("green-active");
+			}
+
+		})
+
+		$('.backToSection').on("keyup", function (e) {
+			var code = (e.keyCode ? e.keyCode : e.which);
+			if (code == 13) {
+				$(this).css('outline', 'none')
+				$(this).find(".letter.number").removeClass("green-active");
+
+				var activeOne = $('.firstGroup .letter.is-checked')
+
+				$(activeOne).blur().css('outline', 'none')
+
+
+				var activeNext = $('.firstGroup .letter.is-checked').next()
+
+				$(activeNext).focus().css('outline', 'dashed 3px #4599ff').addClass('is-checked').prev().removeClass('is-checked')
+
+			}
+
+
+		})
+
+
+
+
+
+
+
+		$(".numberTags").on('focusout', function() {
+
+			if ($(this).is(':last-child') && !$('.letter.allLetter').hasClass('is-checked')) {
+
+
+				// $(this).css('outline', 'none')
+				// $(this).find(".letter.number").removeClass("green-active");
+				//
+				// var activeOne = $('.firstGroup .letter.is-checked')
+				//
+				// $(activeOne).blur().css('outline', 'none')
+				//
+				//
+				// var activeNext = $('.firstGroup .letter.is-checked').next()
+				//
+				// $(activeNext).focus().css('outline', 'dashed 3px #4599ff').addClass('is-checked').prev().removeClass('is-checked')
+
+
+			}
+
+
+			// if ($(this).is('.veryLastOne')) {
+			//
+			// // if ($(this).is(':last-child')) {
+			//
+			// 	$(this).css('outline', 'none')
+			// 	$(this).find(".letter.number").removeClass("green-active");
+			//
+			// 	// var activeOne = $('.firstGroup .letter.is-checked')
+			// 	//
+			// 	// $(activeOne).blur().css('outline', 'none').removeClass('is-checked')
+			// 	//
+			// 	// var activeOne = $('.firstGroup .letter.is-checked')
+			//
+			// 	// $(activeOne).focus().css('outline', 'dashed 3px #4599ff')
+			//
+			// 	$('#one').focus().css('outline', 'dashed 3px #4599ff')
+			// }
+
+
+			$(this).css('outline', 'none')
+			$(this).find(".letter.number").removeClass("green-active");
+
+		})
+
 	}
 
 
-	$(".numberTags").on("keyup", function (e) {
-		var code = (e.keyCode ? e.keyCode : e.which);
-		if (code == 9) {
-
-
-
-			$(this).css('outline', 'dashed 3px #4599ff')
-			$(this).find(".letter.number").addClass("green-active");
-		}
-
-	})
-
-$('.backToSection').on("keyup", function (e) {
-	var code = (e.keyCode ? e.keyCode : e.which);
-	if (code == 13) {
-		$(this).css('outline', 'none')
-		$(this).find(".letter.number").removeClass("green-active");
-
-		var activeOne = $('.firstGroup .letter.is-checked')
-
-		$(activeOne).blur().css('outline', 'none')
-
-
-		var activeNext = $('.firstGroup .letter.is-checked').next()
-
-		$(activeNext).focus().css('outline', 'dashed 3px #4599ff').addClass('is-checked').prev().removeClass('is-checked')
-
-}
-
-
-})
-
-
-
-
-
-
-
-	$(".numberTags").on('focusout', function() {
-
-				if ($(this).is(':last-child') && !$('.letter.allLetter').hasClass('is-checked')) {
-
-
-					// $(this).css('outline', 'none')
-					// $(this).find(".letter.number").removeClass("green-active");
-					//
-					// var activeOne = $('.firstGroup .letter.is-checked')
-					//
-					// $(activeOne).blur().css('outline', 'none')
-					//
-					//
-					// var activeNext = $('.firstGroup .letter.is-checked').next()
-					//
-					// $(activeNext).focus().css('outline', 'dashed 3px #4599ff').addClass('is-checked').prev().removeClass('is-checked')
-
-
-				}
-
-
-		// if ($(this).is('.veryLastOne')) {
-		//
-		// // if ($(this).is(':last-child')) {
-		//
-		// 	$(this).css('outline', 'none')
-		// 	$(this).find(".letter.number").removeClass("green-active");
-		//
-		// 	// var activeOne = $('.firstGroup .letter.is-checked')
-		// 	//
-		// 	// $(activeOne).blur().css('outline', 'none').removeClass('is-checked')
-		// 	//
-		// 	// var activeOne = $('.firstGroup .letter.is-checked')
-		//
-		// 	// $(activeOne).focus().css('outline', 'dashed 3px #4599ff')
-		//
-		// 	$('#one').focus().css('outline', 'dashed 3px #4599ff')
-		// }
-
-
-		$(this).css('outline', 'none')
-		$(this).find(".letter.number").removeClass("green-active");
-
-	})
-
-}
-
-
-// $('#one').on('keydown blur', function(e) {
-//   if (e.shiftKey && e.keyCode === 9) {
-//     console.log('shift tab')
-//
-// 		// $('#one').css('outline', 'none')
-//
-// 		$('.veryLastOne').focus().css('outline', 'dashed 3px #4599ff')
-//
-//
-// 		var makeGreen = $('.veryLastOne').find('.letter.number')
-//
-// 		$('.veryLastOne').focus().css('outline', 'dashed 3px #4599ff')
-//
-// 		$(makeGreen).addClass("green-active");
-//
-//   }
-// });
+	// $('#one').on('keydown blur', function(e) {
+	//   if (e.shiftKey && e.keyCode === 9) {
+	//     console.log('shift tab')
+	//
+	// 		// $('#one').css('outline', 'none')
+	//
+	// 		$('.veryLastOne').focus().css('outline', 'dashed 3px #4599ff')
+	//
+	//
+	// 		var makeGreen = $('.veryLastOne').find('.letter.number')
+	//
+	// 		$('.veryLastOne').focus().css('outline', 'dashed 3px #4599ff')
+	//
+	// 		$(makeGreen).addClass("green-active");
+	//
+	//   }
+	// });
 
 	$('.allLetter').click(function() {
 		$('.secondGroup .filter-item').addClass('newClass')
 
 		$('#numberGrid').addClass('smallDiv')
+
+	})
+
+	$('.filter-item').click(function() {
+		if ($('.allLetter').hasClass('is-checked')) {
+
+			$('.secondGroup .filter-item').addClass('newClass')
+			$('#numberGrid').addClass('smallDiv')
+		}
+
 
 	})
 
@@ -422,20 +432,20 @@ $('.backToSection').on("keyup", function (e) {
 
 	if ($(document).innerWidth() > 767) {
 
-	$(window).resize(function () {
-		$('.grid').isotope('layout');
-	});
+		$(window).resize(function () {
+			$('.grid').isotope('layout');
+		});
 
-	$('.grid').isotope('reloadItems').isotope();
+		$('.grid').isotope('reloadItems').isotope();
 
 
-	$('.grid').imagesLoaded(function(){
+		$('.grid').imagesLoaded(function(){
 
-		$('.grid').isotope('layout');
+			$('.grid').isotope('layout');
 
-	});
+		});
 
-}
+	}
 
 
 
