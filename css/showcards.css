@@ -147,6 +147,14 @@
 
 }
 
+@media (max-width:1200px) and (max-height:700px){
+	.youth .secondGroup .filter-item, .adult .secondGroup .filter-item{
+		overflow-y: scroll;
+		height: 250px
+
+	}
+}
+
 .youth .secondGroup .filter-item.newClass {
 	overflow-y: hidden;
 	height: auto !important;
@@ -407,6 +415,18 @@ margin-left:1em
 }
 
 
+@media (max-width:1299px) and (min-width:992px){
+
+	.col-lg-3 {
+
+		flex: 0 0 28%;
+		max-width: 28%;
+	}
+}
+}
+
+
+
 @media (max-width:1024px){
 	.flex-wrap .aThird{
 		margin-bottom:2em
@@ -439,15 +459,7 @@ margin-left:1em
 
 }
 
-@media (max-width:1299px) and (min-width:991px){
 
-	.col-lg-3 {
-
-		flex: 0 0 27%;
-		max-width: 27%;
-	}
-}
-}
 
 @media (max-width:767px){
 
@@ -484,7 +496,7 @@ margin-left:1em
 @media (max-width:1199px){
 	p.text-center{
 
-		margin-bottom:2em !important
+		margin-bottom:1em !important
 	}
 
 	p.text-center.margin0{

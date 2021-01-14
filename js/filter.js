@@ -206,7 +206,7 @@ $(document).ready(function () {
 
 	$('.allLetter').click(function() {
 		$('.secondGroup .filter-item').addClass('newClass')
-
+		$(".letter.number").removeClass("is-active");
 		$('#numberGrid').addClass('smallDiv')
 
 	})

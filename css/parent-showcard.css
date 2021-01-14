@@ -203,6 +203,14 @@ p.tight{
 	border-bottom:1px solid black
 }
 
+@media (max-width:1200px) and (max-height:700px){
+ .secondGroup .filter-item{
+		overflow-y: scroll;
+		height: 250px
+
+	}
+}
+
 @media (min-width: 1200px){
 	.container.bigger {
 		max-width: 1300px;
@@ -312,12 +320,12 @@ p.tight{
 	}
 }
 
-@media (max-width:1299px) and (min-width:991px){
+@media (max-width:1299px) and (min-width:992px){
 
 	.col-lg-3 {
 
-		flex: 0 0 27%;
-		max-width: 27%;
+		flex: 0 0 28%;
+		max-width: 28%;
 	}
 	.six-column .flex-column{
 		margin:.275em 2em
@@ -336,7 +344,7 @@ p.tight{
 @media (max-width:1199px){
 	p.text-center{
 
-		margin-bottom:2em !important
+		margin-bottom:1em !important
 	}
 
 	p.text-center.margin0{
