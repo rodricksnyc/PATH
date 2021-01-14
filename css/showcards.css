@@ -147,7 +147,7 @@
 
 }
 
-@media (max-width:1200px) and (max-height:700px){
+@media (max-width:1200px) and (max-height:1024px){
 	.youth .secondGroup .filter-item, .adult .secondGroup .filter-item{
 		overflow-y: scroll;
 		height: 250px

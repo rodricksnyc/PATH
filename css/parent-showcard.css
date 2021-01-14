@@ -203,7 +203,7 @@ p.tight{
 	border-bottom:1px solid black
 }
 
-@media (max-width:1200px) and (max-height:700px){
+@media (max-width:1200px) and (max-height:1024px){
  .secondGroup .filter-item{
 		overflow-y: scroll;
 		height: 250px
