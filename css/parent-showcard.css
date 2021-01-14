@@ -211,6 +211,15 @@ p.tight{
 	}
 }
 
+
+@media (max-width:1200px) {
+ .secondGroup .filter-item{
+		overflow-y: scroll;
+		height: 250px
+
+	}
+}
+
 @media  (max-height:800px){
  .secondGroup .filter-item{
 		overflow-y: scroll;

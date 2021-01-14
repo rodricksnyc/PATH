@@ -156,6 +156,15 @@
 }
 
 
+@media (max-width:1200px) {
+	.youth .secondGroup .filter-item, .adult .secondGroup .filter-item{
+		overflow-y: scroll;
+		height: 250px
+
+	}
+}
+
+
 @media  (max-height:800px){
 	.youth .secondGroup .filter-item, .adult .secondGroup .filter-item{
 		overflow-y: scroll;
