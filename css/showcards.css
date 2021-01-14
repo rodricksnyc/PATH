@@ -155,6 +155,15 @@
 	}
 }
 
+
+@media  (max-height:800px){
+	.youth .secondGroup .filter-item, .adult .secondGroup .filter-item{
+		overflow-y: scroll;
+		height: 250px
+
+	}
+}
+
 .youth .secondGroup .filter-item.newClass {
 	overflow-y: hidden;
 	height: auto !important;
