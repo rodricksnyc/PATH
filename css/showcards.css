@@ -555,12 +555,11 @@ margin-left:1em
 		display: flex
 	}
 
-	.filter-item{
-
-		height:auto !important;
+	.youth .secondGroup .filter-item, .adult .secondGroup .filter-item{
+		overflow-y: scroll;
+		height: 250px !important
 
 	}
-
 
 	.rBorder {
 
